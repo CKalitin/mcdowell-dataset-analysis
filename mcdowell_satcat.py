@@ -15,48 +15,21 @@ class McDowellSatcat:
         
         self.file_path = file_path
         
-        dtypes = {
-            "JCAT": str,
-            "SatcatLaunch_Tag": str,
-            "Piece": str,
-            "Type": str,
-            "Name": str,
-            "PLName": str,
-            "LDate": str, # Load as string to clean later
-            "Parent": str,
-            "SDate": str,
-            "Primary": str,
-            "DDate": str,
-            "Status": str,
-            "Dest": str,
-            "Owner": str,
-            "State": str,
-            "Manufacturer": str,
-            "Bus": str,
-            "Motor": str,
-            "Mass": str, # Handle ? and mixed types
-            "DryMass": str,
-            "TotMass": str,
-            "Length": str,
-            "Diamete": str, # Note: 'Diamete' seems misspelled in dataset
-            "Span": str,
-            "Shape": str,
-            "ODate": str,
-            "Perigee": str,
-            "Apogee": str,
-            "Inc": str,
-            "OpOrbitOQU": str,
-            "AltNames": str
-        }
-        
-        self.satcat_df = pd.read_csv(self.file_path, sep="\t", encoding="utf-8", dtype=dtypes, low_memory=False)
+        self.satcat_df = pd.read_csv(self.file_path, sep="\t", encoding="utf-8", low_memory=False)
         
         self.preprocess_satcat_df()
 
     def preprocess_satcat_df(self):
         """
         Create new columns from existing columns in satcat dataframe to make it more pandas friendly.
+        Lots of string manipulation to get the dates into a format that pandas can understand.
         """
+        
+        date_columns = ["LDate", "SDate", "DDate", "ODate"]
+        
+        for col in date_columns:
+            # Remove leading/trailing whitespace and convert to string
+            self.satcat_df[col] = self.satcat_df[col].astype(str).str.strip()
         
         # Remove problematic characters from date columns (?, -) and handle NaN
         self.satcat_df["LDate"] = self.satcat_df["LDate"].fillna("").str.replace(r"[?-]", "", regex=True).str.strip()
@@ -82,6 +55,11 @@ class McDowellSatcat:
         self.satcat_df["Decay_Date_Pandas"] = pd.to_datetime(self.satcat_df["DDate"], format="%Y %b %d", errors="coerce")
         self.satcat_df["Canonical_Orbit_Date_Pandas"] = pd.to_datetime(self.satcat_df["ODate"], format="%Y %b %d", errors="coerce") # This is the date on which the orbit data was taken
 
+        # Convert mass to float (in kg) and handle NaN
+        self.satcat_df["Mass"] = pd.to_numeric(self.satcat_df["Mass"], errors="coerce").fillna(0)
+        self.satcat_df["DryMass"] = pd.to_numeric(self.satcat_df["DryMass"], errors="coerce").fillna(0)
+        self.satcat_df["TotMass"] = pd.to_numeric(self.satcat_df["TotMass"], errors="coerce").fillna(0)
+        
     def filter_by_sat_type_coarse(self, sat_types):
         """
         Remove all launches that are not in the given launch categories.
@@ -129,10 +107,11 @@ class McDowellSatcat:
         if end_date is not None:
             self.satcat_df = self.satcat_df[self.satcat_df["Decay_Date_Pandas"] <= end_date]
 
+if __name__ == "__main__":
+    pd.set_option('display.max_columns', None)
+            
+    dataset = McDowellSatcat()
+    dataset.filter_by_launch_date(start_date="2000-01-01", end_date="2000-02-01")
+    dataset.filter_by_sat_type_coarse(["P"])
 
-pd.set_option('display.max_columns', None)
-        
-dataset = McDowellSatcat()
-dataset.filter_by_launch_date(start_date="2000-01-01", end_date="2000-02-01")
-
-print(dataset.satcat_df.head(20))  # Display the first few rows of the DataFrame for verification
+    print(dataset.satcat_df.head(20))  # Display the first few rows of the DataFrame for verification

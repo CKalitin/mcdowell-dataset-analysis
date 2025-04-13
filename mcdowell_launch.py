@@ -1,4 +1,5 @@
 import pandas as pd
+import mcdowell_satcat # TEMPORARY FOR TESTING DELETE ME
 
 class McDowellLaunch:
     """
@@ -20,7 +21,53 @@ class McDowellLaunch:
         
         # Convert Mcdowell's Vague date format to pandas datetime format
         self.launch_df["Date_Pandas"] = pd.to_datetime(self.launch_df["Launch_Date"], errors="coerce")
+        
+        # Remove column "#Launch_Tag" to "Launch_Tag"
+        self.launch_df.rename(columns={"#Launch_Tag": "Launch_Tag"}, inplace=True)
 
+    def process_satcat_dependent_columns(self, satcat_df):
+        """
+        Create columns: Payload mass, satellite tags (pieces), canonical orbit
+        Args:
+            satcat_df: DataFrame containing the satcat class. Note this isn't the mcdowell_satcat class
+        """
+        
+        satcat_df = satcat_df.copy()  # Avoid modifying the original DataFrame
+        
+        # Group satcat_df by Launch_Tag
+        grouped = satcat_df.groupby("Launch_Tag")
+        
+        # Payload Mass: Sum Mass for Type="P"
+        payload_mass = grouped.apply(
+            lambda x: x[x["Type"].str.startswith("P")]["Mass"].sum(),
+            include_groups=False
+        ).reindex(self.launch_df["Launch_Tag"], fill_value=0).reset_index(name="Payload_Mass")
+        
+        # Satellite Tags: Collect Piece values
+        satellite_tags = grouped["Piece"].agg(lambda x: ",".join(x)).reindex(
+            self.launch_df["Launch_Tag"], fill_value=""
+        ).reset_index(name="Satellite_Tags")
+        
+        # Canonical Orbit: First non-null OpOrbit
+        canonical_orbit = grouped["OpOrbit"].agg(
+            lambda x: next((o for o in x if pd.notnull(o) and o != "-"), "")
+        ).reindex(self.launch_df["Launch_Tag"], fill_value="").reset_index(name="Canonical_Orbit")
+
+        # Merge results into launch_df
+        self.launch_df = self.launch_df.merge(
+            payload_mass.rename(columns={"Launch_Tag": "Launch_Tag"}),
+            on="Launch_Tag",
+            how="left"
+        ).merge(
+            satellite_tags.rename(columns={"Launch_Tag": "Launch_Tag"}),
+            on="Launch_Tag",
+            how="left"
+        ).merge(
+            canonical_orbit.rename(columns={"Launch_Tag": "Launch_Tag"}),
+            on="Launch_Tag",
+            how="left"
+        )
+    
     def filter_by_launch_category(self, launch_categories):
         """
         Remove all launches that are not in the given launch categories.
@@ -63,9 +110,12 @@ class McDowellLaunch:
             self.launch_df = self.launch_df[self.launch_df["Date_Pandas"] <= end_date]
 
 
-pd.set_option('display.max_columns', None)
+if __name__ == "__main__":
+    pd.set_option('display.max_columns', None)
         
-dataset = McDowellLaunch()
-dataset.filter_by_date(start_date="2000-01-01", end_date="2000-02-01")
+    launch = McDowellLaunch()
+    satcat = mcdowell_satcat.McDowellSatcat()
+    launch.process_satcat_dependent_columns(satcat.satcat_df)
+    launch.filter_by_date(start_date="2000-01-01", end_date="2000-02-01")
 
-print(dataset.launch_df.head(20))  # Display the first few rows of the DataFrame for verification
+    print(launch.launch_df.head(20))  # Display the first few rows of the DataFrame for verification

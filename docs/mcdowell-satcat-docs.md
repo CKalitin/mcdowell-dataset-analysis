@@ -1,6 +1,8 @@
 # filter_by_sat_type_coarse
+Remove all launches that are not in the given launch categories.
 
-
+Args:
+    launch_categories: List of launch categories to filter by. eg. ["P", "R"]
 
 ### SatType Coarse Categories:  
 P: Payload
@@ -12,8 +14,6 @@ X: Catalog entry that has been deleted (used in auxcat etc.)
 Z: Spurious catalog entry (was in SATCAT, perhaps in TLEs, but there was no real object)
 
 # preprocess_satcat_df
-
-
 
 ### Date Columns:
 We create the following date columns from the original SATCAT data (in pandas datetime format):
