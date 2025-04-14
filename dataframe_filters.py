@@ -54,11 +54,19 @@ def filter_by_launch_site(dataset_class, launch_sites):
         dataset_class.df["Launch_Site"].isin(launch_sites)
     ]
 
+def filter_by_launch_pad(dataset_class, launch_pads):
+    """
+    Remove all launches that are not in the given launch pads.
+    Args:
+        launch_pads: List of launch pads to filter by. eg. ["SLC-40", "SLC-41"]
+    """
+    
+    dataset_class.df = dataset_class.df[
+        dataset_class.df["Launch_Pad"].isin(launch_pads)
+    ]
+
 # TODO:
-# filter by launch vehicle
-# filter by launch provider
-# filter by launch site (simple site)
-# filter by launch country (state code)
+# filter by launch country (state code), harder for launch since no country code, need sites! TODO: add site codes dataset
 # filter by simple category
 # filter by satellite category!
 # filter by simple orbit
@@ -169,6 +177,6 @@ launch = mcdowell_launch.McDowellLaunch()
 launch.process_satcat_dependent_columns(satcat.df)
 satcat.process_launch_dependent_columns(launch.df)
 
-filter_by_launch_site(satcat, ["KSC"])
+filter_by_launch_pad(launch, ["LC39A"])
 
-print(satcat.df.head(20))  # Display the first few rows of the DataFrame for verification
+print(launch.df.head(20))  # Display the first few rows of the DataFrame for verification
