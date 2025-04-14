@@ -2,7 +2,7 @@ import pandas as pd
 import mcdowell_satcat
 import mcdowell_launch
 
-class filters:
+class Filters:
     """
     This class contains all functions required for filtering the datasets. This includes filtering by date, launch vehicle, launch site, etc.
     """
@@ -20,6 +20,9 @@ class filters:
         if (type(dataset_class) != mcdowell_launch.Launch):
             raise ValueError("launch dataset expected by filter_by_launch_category(). Cannot sort by launch category in satcat dataset.")
         
+        if (type(launch_categories) == str):
+            launch_categories = [launch_categories]
+        
         # vectorized operation to filter the DataFrame
         # Faster than a for loop for some reason, kind vibe coding here tbh
         dataset_class.df = dataset_class.df[
@@ -36,6 +39,9 @@ class filters:
         if (type(dataset_class) != mcdowell_launch.Launch):
             raise ValueError("launch dataset expected by filter_by_launch_success_fraction(). Cannot sort by launch success fraction in satcat dataset.")
         
+        if (type(launch_success_fractions) == str):
+            launch_success_fractions = [launch_success_fractions]
+        
         dataset_class.df = dataset_class.df[
             dataset_class.df["Launch_Code"].str[1].isin(launch_success_fractions)
         ]
@@ -47,27 +53,36 @@ class filters:
             launch_vehicles: List of launch vehicles to filter by. eg. ["Electron", "Falcon 9"]
         """
         
+        if (type(launch_vehicles) == str):
+            launch_vehicles = [launch_vehicles]
+        
         dataset_class.df = dataset_class.df[
             dataset_class.df["LV_Type"].isin(launch_vehicles)
         ]
 
-    def filter_by_launch_site(dataset_class, launch_sites):
+    def filter_by_launch_site_raw(dataset_class, launch_sites):
         """
         Remove all launches that are not in the given launch sites.
         Args:
             launch_sites: List of launch sites to filter by. eg. ["VFSB", "KSC"]
         """
         
+        if (type(launch_sites) == str):
+            launch_sites = [launch_sites]
+            
         dataset_class.df = dataset_class.df[
             dataset_class.df["Launch_Site"].isin(launch_sites)
         ]
 
-    def filter_by_launch_pad(dataset_class, launch_pads):
+    def filter_by_launch_pad_raw(dataset_class, launch_pads):
         """
         Remove all launches that are not in the given launch pads.
         Args:
             launch_pads: List of launch pads to filter by. eg. ["SLC4E", "LC39A"]
         """
+        
+        if (type(launch_pads) == str):
+            launch_pads = [launch_pads]
         
         dataset_class.df = dataset_class.df[
             dataset_class.df["Launch_Pad"].isin(launch_pads)
@@ -93,6 +108,9 @@ class filters:
 
         if (type(dataset_class) != mcdowell_satcat.Satcat):
             raise ValueError("satcat dataset expected by filter_by_sat_type_coarse(). Cannot sort by sat type in launch dataset.")
+        
+        if (type(sat_types) == str):
+            sat_types = [sat_types]
         
         # vectorized operation to filter the DataFrame
         # Faster than a for loop for some reason, kind vibe coding here tbh
@@ -177,14 +195,15 @@ class filters:
         if end_date is not None:
             dataset_class.df = dataset_class.df[dataset_class.df["Orbit_Canonical_Date"] <= end_date]
 
-pd.set_option('display.max_columns', 200)
+if __name__ == "__main__":
+    pd.set_option('display.max_columns', 200)
 
-satcat = mcdowell_satcat.Satcat()
-launch = mcdowell_launch.Launch()
+    satcat = mcdowell_satcat.Satcat()
+    launch = mcdowell_launch.Launch()
 
-launch.process_satcat_dependent_columns(satcat.df)
-satcat.process_launch_dependent_columns(launch.df)
+    launch.process_satcat_dependent_columns(satcat.df)
+    satcat.process_launch_dependent_columns(launch.df)
 
-filters.filter_by_launch_pad(satcat, ["LC39A"])
+    Filters.filter_by_launch_pad(satcat, ["LC39A"])
 
-print(satcat.df.head(20))  # Display the first few rows of the DataFrame for verification
+    print(satcat.df.head(20))  # Display the first few rows of the DataFrame for verification
