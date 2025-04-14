@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import mcdowell_launch
 
-class McDowellSatcat:
+class Satcat:
     """
     This contains all functions required for using McDowell's satellite catalog dataset. This includes filtering the dataset by year, etc.
     """
@@ -162,8 +162,8 @@ if __name__ == "__main__":
     pd.set_option('display.max_columns', None)
     pd.set_option('display.max_rows', 100)  
     
-    launch = mcdowell_launch.McDowellLaunch()
-    satcat = McDowellSatcat()
+    launch = mcdowell_launch.Launch()
+    satcat = Satcat()
     #dataset.filter_by_launch_date(start_date="2000-01-01", end_date="2000-02-01")
     #dataset.filter_by_sat_type_coarse(["P"])
 

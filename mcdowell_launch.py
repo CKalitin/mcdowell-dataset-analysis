@@ -1,7 +1,7 @@
 import pandas as pd
 import mcdowell_satcat
 
-class McDowellLaunch:
+class Launch:
     """
     This contains all functions required for using McDowell's launch dataset. This includes filtering the dataset by year, etc.
     """
@@ -83,8 +83,8 @@ class McDowellLaunch:
 if __name__ == "__main__":
     pd.set_option('display.max_columns', 200)
         
-    launch = McDowellLaunch()
-    satcat = mcdowell_satcat.McDowellSatcat()
+    launch = Launch()
+    satcat = mcdowell_satcat.Satcat()
     
     launch.filter_by_launch_date(start_date="1957-10-01", end_date="1958-10-25")
     launch.filter_by_launch_category(["O"])

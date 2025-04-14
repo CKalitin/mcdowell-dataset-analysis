@@ -8,8 +8,8 @@ class McDowellDataset:
     """
 
     def __init__(self):
-        self.launch = mcdowell_launch.McDowellLaunch()
-        self.satcat = mcdowell_satcat.McDowellSatcat()
+        self.launch = mcdowell_launch.Launch()
+        self.satcat = mcdowell_satcat.Satcat()
         
         index = ["Launch_Tag", "Launch_Date", "Launch_Code", "Launch_Success_Fraction", "LV_Type"] # fill later
         
@@ -27,8 +27,8 @@ class McDowellDataset:
 
 pd.set_option('display.max_columns', None)
         
-launch = mcdowell_launch.McDowellLaunch()
-satcat = mcdowell_satcat.McDowellSatcat()
+launch = mcdowell_launch.Launch()
+satcat = mcdowell_satcat.Satcat()
 launch.process_satcat_dependent_columns(satcat.satcat_df)
 launch.filter_by_date(start_date="2000-01-01", end_date="2000-02-01")
 
