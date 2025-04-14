@@ -28,6 +28,12 @@ class McDowellSatcat:
         # Strip Launch_Tags
         self.satcat_df["Launch_Tag"] = self.satcat_df["Launch_Tag"].astype(str).str.upper().str.strip()
         
+        # Replace double space "  " with single space " " - Sputnik 1 edge case!
+        self.satcat_df["LDate"] = self.satcat_df["LDate"].str.replace(r"\s{2,}", " ", regex=True).str.strip()
+        self.satcat_df["SDate"] = self.satcat_df["SDate"].str.replace(r"\s{2,}", " ", regex=True).str.strip()
+        self.satcat_df["DDate"] = self.satcat_df["DDate"].str.replace(r"\s{2,}", " ", regex=True).str.strip()
+        self.satcat_df["ODate"] = self.satcat_df["ODate"].str.replace(r"\s{2,}", " ", regex=True).str.strip()
+    
         # Remove problematic characters from date columns (?, -) and handle NaN
         self.satcat_df["LDate"] = self.satcat_df["LDate"].fillna("").str.replace(r"[?-]", "", regex=True).str.strip()
         self.satcat_df["SDate"] = self.satcat_df["SDate"].fillna("").str.replace(r"[?-]", "", regex=True).str.strip()

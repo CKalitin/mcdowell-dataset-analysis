@@ -66,7 +66,25 @@ class McDowellLaunch:
         
         # Create new column in launch_df for payload mass
         self.launch_df['Payload_Mass'] = self.launch_df['Launch_Tag'].map(payload_masses)
-
+        
+        #pick the first payload row for every Launch_Tag
+        first_payload = (
+            satcat_df
+              .loc[satcat_df['Type'].str.startswith('P', na=False)]
+              .drop_duplicates('Launch_Tag', keep='first')
+              .set_index('Launch_Tag')
+        )
+        
+        print(first_payload["Apogee"].head(20))  # Display the first few rows of the DataFrame for verification
+        
+        # Create new columns in launch_df for canonical orbit data
+        for col in ['ODate', 'Perigee', 'Apogee', 'Inc', 'OpOrbit']:
+            self.launch_df[col] = self.launch_df['Launch_Tag'].map(first_payload[col])
+        self.launch_df.rename(columns={"OpOrbit": "Orbit"}, inplace=True)
+        
+        print(" - - - -")
+        print(self.launch_df["Apogee"].head(20))  # Display the first few rows of the DataFrame for verification
+        
         
     def filter_by_launch_category(self, launch_categories):
         """
