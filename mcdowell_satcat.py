@@ -149,6 +149,9 @@ class McDowellSatcat:
         if end_date is not None:
             self.satcat_df = self.satcat_df[self.satcat_df["DDate"] <= end_date]
 
+    # TODO:
+    # Create a separate filter script so they are synced between satcat and launch
+    
 if __name__ == "__main__":
     pd.set_option('display.max_columns', None)
             

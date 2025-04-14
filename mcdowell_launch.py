@@ -121,6 +121,19 @@ class McDowellLaunch:
         if end_date is not None:
             self.launch_df = self.launch_df[self.launch_df["Launch_Date"] <= end_date]
 
+    # TODO:
+    # filter by launch vehicle
+    # filter by launch provider
+    # filter by launch site (simple site)
+    # filter by launch country (state code)
+    # filter by simple category
+    # filter by simple orbit
+    # filter by apogee
+    # filter by perigee
+    # filter by inclination
+    # filter by launch pad
+    # filter by satellite program (requires adding another dataset, psatcat)
+
 
 if __name__ == "__main__":
     pd.set_option('display.max_columns', 200)

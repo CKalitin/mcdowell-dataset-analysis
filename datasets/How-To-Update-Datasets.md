@@ -11,6 +11,9 @@ Launch Lists > Full List (TSV)
 orgs.tsv:
 Organizations Database > Orgs File (TSV)
 
+psatcat.tsv:
+Object Catalogs > Payload Catalogs > psatcat (TSV)
+
 satcat.tsv:
 Object Catalogs > Main catalogs > satcat (TSV)
 
