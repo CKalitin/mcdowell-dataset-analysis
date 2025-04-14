@@ -10,3 +10,4 @@ TODO:
 4. Add simplified site names and beautified country names
 5. For launch orbits use category column, as satcat has edge cases (roadster)  
     a. See: https://planet4589.org/space/gcat/web/intro/profile.html
+6. Put all column translations in their own config file (ie. OpOrbit raw to Simplified Orbit, or category to orbit)
