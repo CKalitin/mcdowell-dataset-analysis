@@ -17,6 +17,9 @@ class Launch:
         self.df = pd.read_csv(self.file_path, sep="\t", encoding="utf-8") # load csv into dataframe
         
         self.preprocess_launch_df()
+
+    def reload(self):
+        self.__init__()
     
     def preprocess_launch_df(self):
         """

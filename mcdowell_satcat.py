@@ -19,6 +19,9 @@ class Satcat:
         
         self.preprocess_satcat_df()
 
+    def reload(self):
+        self.__init__()
+
     def preprocess_satcat_df(self):
         """
         Create new columns from existing columns in satcat dataframe to make it more pandas friendly.
