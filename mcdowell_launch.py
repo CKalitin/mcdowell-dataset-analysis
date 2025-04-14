@@ -46,16 +46,16 @@ class Launch:
             # Convert Mcdowell's Vague date format to pandas datetime format
             self.df[col] = pd.to_datetime(self.df[col], format="%Y %b %d", errors="coerce")
 
-    def process_satcat_dependent_columns(self, satcat_df):
+    def process_satcat_dependent_columns(self, satcat):
         """
         Create columns in launch_df derived from satcat data:
         - Payload_Mass: Sum of masses for all payloads in a launch
         - Canonical Orbit Parameters: [ODate, Ap, Pe, Inc, OpOrbit, Simplified Orbit]
         Args:
-            satcat_df: DataFrame containing the satcat class. Note this isn't the mcdowell_satcat class
+            satcat_df: DataFrame containing the satcat class.
         """
         
-        satcat_df = satcat_df.copy()
+        satcat_df = satcat.df.copy()
         
         payload_masses = (
             satcat_df
@@ -81,6 +81,7 @@ class Launch:
         self.df.rename(columns={"OpOrbit": "Orbit"}, inplace=True)
 
 
+# For testing
 if __name__ == "__main__":
     pd.set_option('display.max_columns', 200)
         

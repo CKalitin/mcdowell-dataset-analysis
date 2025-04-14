@@ -94,7 +94,7 @@ class Satcat:
             }
         )
     
-    def process_launch_dependent_columns(self, launch_df):
+    def process_launch_dependent_columns(self, launch):
         """
         Create columns in satcat_df derived from launch data:
         - LV_Type: The tag of the launch that the satellite was launched on
@@ -102,11 +102,11 @@ class Satcat:
         - Launch Site
         - Launch Pad
         Args:
-            launch_df: DataFrame containing the launch class. Note this isn't the mcdowell_launch class, but the dataframe itself.
+            launch_df: DataFrame containing the launch class.
         """
         
         # For every satellite, get the corresponding launch vehicle from the launch_df by using the Launch_Tag column to merge the two dataframes
-        launch_df = launch_df.copy()
+        launch_df = launch.df.copy()
         
         # Merge satcat_df with launch_df to get LV_Type, using left join to keep all satellites
         self.df = self.df.merge(
@@ -143,6 +143,7 @@ class Satcat:
         self.df["Launch_Pad"] = self.df["Launch_Pad"].fillna("")
         
     
+# For testing
 if __name__ == "__main__":
     pd.set_option('display.max_columns', None)
     pd.set_option('display.max_rows', 100)  
