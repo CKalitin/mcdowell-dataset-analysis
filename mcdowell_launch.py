@@ -1,5 +1,5 @@
 import pandas as pd
-import mcdowell_satcat # TEMPORARY FOR TESTING DELETE ME
+import mcdowell_satcat
 
 class McDowellLaunch:
     """
@@ -14,7 +14,7 @@ class McDowellLaunch:
         """
         
         self.file_path = file_path
-        self.launch_df = pd.read_csv(self.file_path, sep="\t", encoding="utf-8")
+        self.df = pd.read_csv(self.file_path, sep="\t", encoding="utf-8") # load csv into dataframe
         
         self.preprocess_launch_df()
     
@@ -24,26 +24,26 @@ class McDowellLaunch:
         Lots of string manipulation to get the dates into a format that pandas can understand.
         """
         
-        # Remove column "#Launch_Tag" to "Launch_Tag"
-        self.launch_df.rename(columns={"#Launch_Tag": "Launch_Tag"}, inplace=True)
+        # Rename column "#Launch_Tag" to "Launch_Tag"
+        self.df.rename(columns={"#Launch_Tag": "Launch_Tag"}, inplace=True)
         
         # Strip Launch_Tags
-        self.launch_df["Launch_Tag"] = self.launch_df["Launch_Tag"].astype(str).str.upper().str.strip()
+        self.df["Launch_Tag"] = self.df["Launch_Tag"].astype(str).str.upper().str.strip()
         
         # Remove problematic characters from date columns (?, -) and handle NaN
-        self.launch_df["Launch_Date"] = self.launch_df["Launch_Date"].str.strip().fillna("").str.replace(r"[?-]", "", regex=True).str.strip()
+        self.df["Launch_Date"] = self.df["Launch_Date"].str.strip().fillna("").str.replace(r"[?-]", "", regex=True).str.strip()
     
         # Replace double space "  " with single space " " - Sputnik 1 edge case!
-        self.launch_df["Launch_Date"] = self.launch_df["Launch_Date"].str.replace(r"\s{2,}", " ", regex=True).str.strip()
+        self.df["Launch_Date"] = self.df["Launch_Date"].str.replace(r"\s{2,}", " ", regex=True).str.strip()
     
         # Only include characters before the third space in all date columns (Remove hour/min/sec as unneeded and messes with data frame time formatting)
-        self.launch_df["Launch_Date"] = self.launch_df["Launch_Date"].str.split(" ", n=3).str[:3].str.join(" ").str.strip()
+        self.df["Launch_Date"] = self.df["Launch_Date"].str.split(" ", n=3).str[:3].str.join(" ").str.strip()
     
         # Add " 1" to the end of all dates that only contain year and month (assuming this is all 8 character dates) eg. "2023 Feb" -> "2023 Feb 1"
-        self.launch_df["Launch_Date"] = self.launch_df["Launch_Date"].where(self.launch_df["Launch_Date"].str.len() != 8, self.launch_df["Launch_Date"] + " 1")
+        self.df["Launch_Date"] = self.df["Launch_Date"].where(self.df["Launch_Date"].str.len() != 8, self.df["Launch_Date"] + " 1")
 
         # Convert Mcdowell's Vague date format to pandas datetime format
-        self.launch_df["Launch_Date"] = pd.to_datetime(self.launch_df["Launch_Date"], format="%Y %b %d", errors="coerce")
+        self.df["Launch_Date"] = pd.to_datetime(self.df["Launch_Date"], format="%Y %b %d", errors="coerce")
 
     def process_satcat_dependent_columns(self, satcat_df):
         """
@@ -64,7 +64,7 @@ class McDowellLaunch:
         )
         
         # Create new column in launch_df for payload mass
-        self.launch_df['Payload_Mass'] = self.launch_df['Launch_Tag'].map(payload_masses)
+        self.df['Payload_Mass'] = self.df['Launch_Tag'].map(payload_masses)
         
         #pick the first payload row for every Launch_Tag
         first_payload = (
@@ -75,64 +75,9 @@ class McDowellLaunch:
         )
         
         # Create new columns in launch_df for canonical orbit data
-        for col in ['ODate', 'Perigee', 'Apogee', 'Inc', 'OpOrbit', 'Simplified_Orbit']:
-            self.launch_df[col] = self.launch_df['Launch_Tag'].map(first_payload[col])
-        self.launch_df.rename(columns={"OpOrbit": "Orbit"}, inplace=True)
-        
-        
-    def filter_by_launch_category(self, launch_categories):
-        """
-        Remove all launches that are not in the given launch categories.
-        Args:
-            launch_categories: List of launch categories to filter by. eg. ["O", "R", "M"]
-        """
-        
-        # vectorized operation to filter the DataFrame
-        # Faster than a for loop for some reason, kind vibe coding here tbh
-        self.launch_df = self.launch_df[
-            self.launch_df["Launch_Code"].str[0].isin(launch_categories)
-        ]
-        
-    def filter_by_launch_success_fraction(self, launch_success_fractions):
-        """
-        Remove all launches that are not in the given launch success fractions.
-        Args:
-            launch_success_fractions: List of launch success fractions to filter by. eg. ["S", "f"]
-        """
-        
-        self.launch_df = self.launch_df[
-            self.launch_df["Launch_Code"].str[1].isin(launch_success_fractions)
-        ]
-
-    def filter_by_launch_date(self, start_date=None, end_date=None):
-        """
-        Remove all launches that are not in the given date range (inclusive range).
-        Args:
-            start_date: Start date to filter by. eg. "2000-01-01"
-            end_date: End date to filter by. eg. "2020-01-01"
-        """
-        
-        start_date = pd.to_datetime(start_date)
-        end_date = pd.to_datetime(end_date)
-        
-        if start_date is not None:
-            self.launch_df = self.launch_df[self.launch_df["Launch_Date"] >= start_date]
-        
-        if end_date is not None:
-            self.launch_df = self.launch_df[self.launch_df["Launch_Date"] <= end_date]
-
-    # TODO:
-    # filter by launch vehicle
-    # filter by launch provider
-    # filter by launch site (simple site)
-    # filter by launch country (state code)
-    # filter by simple category
-    # filter by simple orbit
-    # filter by apogee
-    # filter by perigee
-    # filter by inclination
-    # filter by launch pad
-    # filter by satellite program (requires adding another dataset, psatcat)
+        for col in ['Orbit_Canonical_Date', 'Perigee', 'Apogee', 'Inc', 'OpOrbit', 'Simplified_Orbit']:
+            self.df[col] = self.df['Launch_Tag'].map(first_payload[col])
+        self.df.rename(columns={"OpOrbit": "Orbit"}, inplace=True)
 
 
 if __name__ == "__main__":
