@@ -63,6 +63,45 @@ class McDowellSatcat:
         self.satcat_df["DryMass"] = pd.to_numeric(self.satcat_df["DryMass"], errors="coerce").fillna(0)
         self.satcat_df["TotMass"] = pd.to_numeric(self.satcat_df["TotMass"], errors="coerce").fillna(0)
         
+        # Create Simplified Orbit Column
+        # Orbits: https://planet4589.org/space/gcat/web/intro/orbits.html
+        self.satcat_df["Simplified_Orbit"] = self.satcat_df["OpOrbit"].str.split(" ", n=1).str[0].str.strip()
+        self.satcat_df["Simplified_Orbit"] = self.satcat_df["Simplified_Orbit"].replace(
+            {
+                "ATM": "SO",      # Atmospheric
+                "SO": "SO",        # Suborbital
+                "TA": "SO",        # Trans-Atmospheric
+                "LLEO/E": "LEO",   # Lower LEO/Equatorial
+                "LLEO/I": "LEO",   # Lower LEO/Intermediate
+                "LLEO/P": "SSO",   # Lower LEO/Polar
+                "LLEO/S": "SSO",   # Lower LEO/Sun-Sync
+                "LLEO/R": "LEO",   # Lower LEO/Retrograde
+                "LEO/E": "LEO",    # Upper LEO/Equatorial
+                "LEO/I": "LEO",    # Upper LEO/Intermediate
+                "LEO/P": "SSO",    # Upper LEO/Polar
+                "LEO/S": "SSO",    # Upper LEO/Sun-Sync
+                "LEO/R": "LEO",    # Upper LEO/Retrograde
+                "MEO": "MEO",      # Medium Earth Orbit
+                "HEO": "HEO",      # Highly Elliptical Orbit
+                "HEO/M": "HEO",    # Molniya
+                "GTO": "GTO",      # Geotransfer
+                "GEO/S": "GEO",    # Stationary
+                "GEO/I": "GEO",    # Inclined GEO
+                "GEO/T": "GEO",    # Synchronous
+                "GEO/D": "GEO",    # Drift GEO
+                "GEO/SI": "GEO",   # Inclined GEO (same as GEO/I)
+                "GEO/ID": "GEO",   # Inclined Drift
+                "GEO/NS": "GEO",   # Near-sync
+                "VHEO": "HEO",    # Very High Earth Orbit
+                "DSO": "BEO",      # Deep Space Orbit
+                "CLO": "BEO",      # Cislunar/Translunar
+                "EEO": "BEO",      # Earth Escape
+                "HCO": "BEO",      # Heliocentric
+                "PCO": "BEO",      # Planetocentric
+                "SSE": "BEO"       # Solar System Escape
+            }
+        )
+        
     def filter_by_sat_type_coarse(self, sat_types):
         """
         Remove all launches that are not in the given launch categories.

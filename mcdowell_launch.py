@@ -49,7 +49,7 @@ class McDowellLaunch:
         """
         Create columns in launch_df derived from satcat data:
         - Payload_Mass: Sum of masses for all payloads in a launch
-        - Canonical Orbit Parameters: Dictionary of canonical orbit data from satcat
+        - Canonical Orbit Parameters: [ODate, Ap, Pe, Inc, OpOrbit, Simplified Orbit]
         Args:
             satcat_df: DataFrame containing the satcat class. Note this isn't the mcdowell_satcat class
         """
@@ -75,7 +75,7 @@ class McDowellLaunch:
         )
         
         # Create new columns in launch_df for canonical orbit data
-        for col in ['ODate', 'Perigee', 'Apogee', 'Inc', 'OpOrbit']:
+        for col in ['ODate', 'Perigee', 'Apogee', 'Inc', 'OpOrbit', 'Simplified_Orbit']:
             self.launch_df[col] = self.launch_df['Launch_Tag'].map(first_payload[col])
         self.launch_df.rename(columns={"OpOrbit": "Orbit"}, inplace=True)
         
