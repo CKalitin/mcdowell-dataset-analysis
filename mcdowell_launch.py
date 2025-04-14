@@ -3,7 +3,7 @@ import mcdowell_satcat
 
 class Launch:
     """
-    This contains all functions required for using McDowell's launch dataset. This includes filtering the dataset by year, etc.
+    This contains all functions required for using McDowell's launch dataset.
     """
 
     def __init__(self, file_path="datasets/launch.tsv"):
@@ -30,20 +30,18 @@ class Launch:
         # Strip Launch_Tags
         self.df["Launch_Tag"] = self.df["Launch_Tag"].astype(str).str.upper().str.strip()
         
-        # Remove problematic characters from date columns (?, -) and handle NaN
-        self.df["Launch_Date"] = self.df["Launch_Date"].str.strip().fillna("").str.replace(r"[?-]", "", regex=True).str.strip()
-    
-        # Replace double space "  " with single space " " - Sputnik 1 edge case!
-        self.df["Launch_Date"] = self.df["Launch_Date"].str.replace(r"\s{2,}", " ", regex=True).str.strip()
-    
-        # Only include characters before the third space in all date columns (Remove hour/min/sec as unneeded and messes with data frame time formatting)
-        self.df["Launch_Date"] = self.df["Launch_Date"].str.split(" ", n=3).str[:3].str.join(" ").str.strip()
-    
-        # Add " 1" to the end of all dates that only contain year and month (assuming this is all 8 character dates) eg. "2023 Feb" -> "2023 Feb 1"
-        self.df["Launch_Date"] = self.df["Launch_Date"].where(self.df["Launch_Date"].str.len() != 8, self.df["Launch_Date"] + " 1")
-
-        # Convert Mcdowell's Vague date format to pandas datetime format
-        self.df["Launch_Date"] = pd.to_datetime(self.df["Launch_Date"], format="%Y %b %d", errors="coerce")
+        date_cols = ["Launch_Date"]
+        for col in date_cols:
+            # Remove problematic characters from date columns (?, -) and handle NaN
+            self.df[col] = self.df[col].str.strip().fillna("").str.replace(r"[?-]", "", regex=True).str.strip()
+            # Replace double space "  " with single space " " - Sputnik 1 edge case!
+            self.df[col] = self.df[col].str.replace(r"\s{2,}", " ", regex=True).str.strip()
+            # Only include characters before the third space in all date columns (Remove hour/min/sec as unneeded and messes with data frame time formatting)
+            self.df[col] = self.df[col].str.split(" ", n=3).str[:3].str.join(" ").str.strip()
+            # Add " 1" to the end of all dates that only contain year and month (assuming this is all 8 character dates) eg. "2023 Feb" -> "2023 Feb 1"
+            self.df[col] = self.df[col].where(self.df[col].str.len() != 8, self.df[col] + " 1")
+            # Convert Mcdowell's Vague date format to pandas datetime format
+            self.df[col] = pd.to_datetime(self.df[col], format="%Y %b %d", errors="coerce")
 
     def process_satcat_dependent_columns(self, satcat_df):
         """

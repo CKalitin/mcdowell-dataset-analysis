@@ -185,6 +185,6 @@ launch = mcdowell_launch.Launch()
 launch.process_satcat_dependent_columns(satcat.df)
 satcat.process_launch_dependent_columns(launch.df)
 
-filters.filter_by_launch_pad(launch, ["LC39A"])
+filters.filter_by_launch_pad(satcat, ["LC39A"])
 
-print(launch.df.head(20))  # Display the first few rows of the DataFrame for verification
+print(satcat.df.head(20))  # Display the first few rows of the DataFrame for verification

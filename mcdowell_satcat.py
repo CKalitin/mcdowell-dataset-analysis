@@ -4,7 +4,7 @@ import mcdowell_launch
 
 class Satcat:
     """
-    This contains all functions required for using McDowell's satellite catalog dataset. This includes filtering the dataset by year, etc.
+    This contains all functions required for using McDowell's satellite catalog dataset.
     """
 
     def __init__(self, file_path="datasets/satcat.tsv"):
@@ -32,36 +32,19 @@ class Satcat:
         # Strip Launch_Tags
         self.df["Launch_Tag"] = self.df["Launch_Tag"].astype(str).str.upper().str.strip()
         
-        # Replace double space "  " with single space " " - Sputnik 1 edge case!
-        self.df["LDate"] = self.df["LDate"].str.replace(r"\s{2,}", " ", regex=True).str.strip()
-        self.df["SDate"] = self.df["SDate"].str.replace(r"\s{2,}", " ", regex=True).str.strip()
-        self.df["DDate"] = self.df["DDate"].str.replace(r"\s{2,}", " ", regex=True).str.strip()
-        self.df["ODate"] = self.df["ODate"].str.replace(r"\s{2,}", " ", regex=True).str.strip()
-    
-        # Remove problematic characters from date columns (?, -) and handle NaN
-        self.df["LDate"] = self.df["LDate"].fillna("").str.replace(r"[?-]", "", regex=True).str.strip()
-        self.df["SDate"] = self.df["SDate"].fillna("").str.replace(r"[?-]", "", regex=True).str.strip()
-        self.df["DDate"] = self.df["DDate"].fillna("").str.replace(r"[?-]", "", regex=True).str.strip()
-        self.df["ODate"] = self.df["ODate"].fillna("").str.replace(r"[?-]", "", regex=True).str.strip()
+        date_cols = ["LDate", "SDate", "DDate", "ODate"]
+        for col in date_cols:
+            # Remove problematic characters from date columns (?, -) and handle NaN
+            self.df[col] = self.df[col].str.strip().fillna("").str.replace(r"[?-]", "", regex=True).str.strip()
+            # Replace double space "  " with single space " " - Sputnik 1 edge case!
+            self.df[col] = self.df[col].str.replace(r"\s{2,}", " ", regex=True).str.strip()
+            # Only include characters before the third space in all date columns (Remove hour/min/sec as unneeded and messes with data frame time formatting)
+            self.df[col] = self.df[col].str.split(" ", n=3).str[:3].str.join(" ").str.strip()
+            # Add " 1" to the end of all dates that only contain year and month (assuming this is all 8 character dates) eg. "2023 Feb" -> "2023 Feb 1"
+            self.df[col] = self.df[col].where(self.df[col].str.len() != 8, self.df[col] + " 1")
+            # Convert Mcdowell's Vague date format to pandas datetime format
+            self.df[col] = pd.to_datetime(self.df[col], format="%Y %b %d", errors="coerce")
         
-        # Only include characters before the third space in all date columns (Remove hour/min/sec as unneeded and messes with data frame time formatting)
-        self.df["LDate"] = self.df["LDate"].str.split(" ", n=3).str[:3].str.join(" ").str.strip()
-        self.df["SDate"] = self.df["SDate"].str.split(" ", n=3).str[:3].str.join(" ").str.strip()
-        self.df["DDate"] = self.df["DDate"].str.split(" ", n=3).str[:3].str.join(" ").str.strip()
-        self.df["ODate"] = self.df["ODate"].str.split(" ", n=3).str[:3].str.join(" ").str.strip()
-        
-        # Add " 1" to the end of all dates that only contain year and month (assuming this is all 8 character dates) eg. "2023 Feb" -> "2023 Feb 1"
-        self.df["LDate"] = self.df["LDate"].where(self.df["LDate"].str.len() != 8, self.df["LDate"] + " 1")
-        self.df["SDate"] = self.df["SDate"].where(self.df["SDate"].str.len() != 8, self.df["SDate"] + " 1")
-        self.df["DDate"] = self.df["DDate"].where(self.df["DDate"].str.len() != 8, self.df["DDate"] + " 1")
-        self.df["ODate"] = self.df["ODate"].where(self.df["ODate"].str.len() != 8, self.df["ODate"] + " 1")
-        
-        # Convert Mcdowell's Vague date format to pandas datetime format
-        self.df["LDate"] = pd.to_datetime(self.df["LDate"], format="%Y %b %d", errors="coerce")
-        self.df["SDate"] = pd.to_datetime(self.df["SDate"], format="%Y %b %d", errors="coerce")
-        self.df["DDate"] = pd.to_datetime(self.df["DDate"], format="%Y %b %d", errors="coerce")
-        self.df["ODate"] = pd.to_datetime(self.df["ODate"], format="%Y %b %d", errors="coerce") # This is the date on which the orbit data was taken
-
         # Rename date columns
         self.df.rename(columns={"LDate": "Launch_Date", "SDate": "Separation_Date", "DDate": "Decay_Date", "ODate": "Orbit_Canonical_Date"}, inplace=True)
 
