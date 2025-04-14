@@ -16,58 +16,58 @@ class McDowellLaunch:
         self.file_path = file_path
         self.launch_df = pd.read_csv(self.file_path, sep="\t", encoding="utf-8")
         
-        # Only include characters before the third space in the launch_date column (Remove hour/min/sec as unneeded and messes with data frame time formatting)
-        self.launch_df["Launch_Date"] = self.launch_df["Launch_Date"].str.split(" ", n=3).str[:3].str.join(" ")
-        
-        # Convert Mcdowell's Vague date format to pandas datetime format
-        self.launch_df["Date_Pandas"] = pd.to_datetime(self.launch_df["Launch_Date"], errors="coerce")
+        self.preprocess_launch_df()
+    
+    def preprocess_launch_df(self):
+        """
+        Create new columns from existing columns in satcat dataframe to make it more pandas friendly.
+        Lots of string manipulation to get the dates into a format that pandas can understand.
+        """
         
         # Remove column "#Launch_Tag" to "Launch_Tag"
         self.launch_df.rename(columns={"#Launch_Tag": "Launch_Tag"}, inplace=True)
+        
+        # Strip Launch_Tags
+        self.launch_df["Launch_Tag"] = self.launch_df["Launch_Tag"].astype(str).str.upper().str.strip()
+        
+        # Remove problematic characters from date columns (?, -) and handle NaN
+        self.launch_df["Launch_Date"] = self.launch_df["Launch_Date"].str.strip().fillna("").str.replace(r"[?-]", "", regex=True).str.strip()
+    
+        # Replace double space "  " with single space " " - Sputnik 1 edge case!
+        self.launch_df["Launch_Date"] = self.launch_df["Launch_Date"].str.replace(r"\s{2,}", " ", regex=True).str.strip()
+    
+        # Only include characters before the third space in all date columns (Remove hour/min/sec as unneeded and messes with data frame time formatting)
+        self.launch_df["Launch_Date"] = self.launch_df["Launch_Date"].str.split(" ", n=3).str[:3].str.join(" ").str.strip()
+    
+        # Add " 1" to the end of all dates that only contain year and month (assuming this is all 8 character dates) eg. "2023 Feb" -> "2023 Feb 1"
+        self.launch_df["Launch_Date"] = self.launch_df["Launch_Date"].where(self.launch_df["Launch_Date"].str.len() != 8, self.launch_df["Launch_Date"] + " 1")
+
+        # Convert Mcdowell's Vague date format to pandas datetime format
+        self.launch_df["Launch_Date"] = pd.to_datetime(self.launch_df["Launch_Date"], format="%Y %b %d", errors="coerce")
 
     def process_satcat_dependent_columns(self, satcat_df):
         """
-        Create columns: Payload mass, satellite tags (pieces), canonical orbit
+        Create columns in launch_df derived from satcat data:
+        - Satellite_IDs: List of satellite IDs for a given launch
+        - Payload_Mass: Sum of masses for all payloads in a launch
+        - Canonical_Orbit_Parameters: Dictionary of canonical orbit data from satcat
         Args:
             satcat_df: DataFrame containing the satcat class. Note this isn't the mcdowell_satcat class
         """
         
-        satcat_df = satcat_df.copy()  # Avoid modifying the original DataFrame
+        satcat_df = satcat_df.copy()
         
-        # Group satcat_df by Launch_Tag
-        grouped = satcat_df.groupby("Launch_Tag")
-        
-        # Payload Mass: Sum Mass for Type="P"
-        payload_mass = grouped.apply(
-            lambda x: x[x["Type"].str.startswith("P")]["Mass"].sum(),
-            include_groups=False
-        ).reindex(self.launch_df["Launch_Tag"], fill_value=0).reset_index(name="Payload_Mass")
-        
-        # Satellite Tags: Collect Piece values
-        satellite_tags = grouped["Piece"].agg(lambda x: ",".join(x)).reindex(
-            self.launch_df["Launch_Tag"], fill_value=""
-        ).reset_index(name="Satellite_Tags")
-        
-        # Canonical Orbit: First non-null OpOrbit
-        canonical_orbit = grouped["OpOrbit"].agg(
-            lambda x: next((o for o in x if pd.notnull(o) and o != "-"), "")
-        ).reindex(self.launch_df["Launch_Tag"], fill_value="").reset_index(name="Canonical_Orbit")
-
-        # Merge results into launch_df
-        self.launch_df = self.launch_df.merge(
-            payload_mass.rename(columns={"Launch_Tag": "Launch_Tag"}),
-            on="Launch_Tag",
-            how="left"
-        ).merge(
-            satellite_tags.rename(columns={"Launch_Tag": "Launch_Tag"}),
-            on="Launch_Tag",
-            how="left"
-        ).merge(
-            canonical_orbit.rename(columns={"Launch_Tag": "Launch_Tag"}),
-            on="Launch_Tag",
-            how="left"
+        payload_masses = (
+            satcat_df
+            .loc[satcat_df['Type'].str.startswith('P', na=False)] # Keep only payloads from satcat
+            .groupby('Launch_Tag')['Mass'] # Group by launch tag and sum the masses of the payloads
+            .sum()
         )
-    
+        
+        # Create new column in launch_df for payload mass
+        self.launch_df['Payload_Mass'] = self.launch_df['Launch_Tag'].map(payload_masses)
+
+        
     def filter_by_launch_category(self, launch_categories):
         """
         Remove all launches that are not in the given launch categories.
@@ -104,18 +104,24 @@ class McDowellLaunch:
         end_date = pd.to_datetime(end_date)
         
         if start_date is not None:
-            self.launch_df = self.launch_df[self.launch_df["Date_Pandas"] >= start_date]
+            self.launch_df = self.launch_df[self.launch_df["Launch_Date"] >= start_date]
         
         if end_date is not None:
-            self.launch_df = self.launch_df[self.launch_df["Date_Pandas"] <= end_date]
+            self.launch_df = self.launch_df[self.launch_df["Launch_Date"] <= end_date]
 
 
 if __name__ == "__main__":
-    pd.set_option('display.max_columns', None)
+    pd.set_option('display.max_columns', 200)
         
     launch = McDowellLaunch()
     satcat = mcdowell_satcat.McDowellSatcat()
+    
+    launch.filter_by_date(start_date="1957-10-01", end_date="1958-10-25")
+    launch.filter_by_launch_category(["O"])
+    launch.filter_by_launch_success_fraction(["S"])
+    
+    #print(launch.launch_df.head(50))  # Display the first few rows of the DataFrame for verification
+    
     launch.process_satcat_dependent_columns(satcat.satcat_df)
-    launch.filter_by_date(start_date="2000-01-01", end_date="2000-02-01")
 
     print(launch.launch_df.head(20))  # Display the first few rows of the DataFrame for verification

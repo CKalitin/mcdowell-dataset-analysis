@@ -17,10 +17,10 @@ Z: Spurious catalog entry (was in SATCAT, perhaps in TLEs, but there was no real
 
 ### Date Columns:
 We create the following date columns from the original SATCAT data (in pandas datetime format):
-- Launch Date (Launch_Date_Pandas)
-- Separation Date (Separation_Date_Pandas) - separation from the launch vehicle
-- Decay Date (Decay_Date_Pandas)
-- Canonical Orbit Date (Canonical_Orbit_Date_Pandas) - date of the first TLE in the catalog
+- Launch Date (LDate)
+- Separation Date (SDate) - separation from the launch vehicle
+- Decay Date (DDate)
+- Canonical Orbit Date (ODate) - date of the first TLE in the catalog
 
 Context for canonical orbit date:  
 The following set of fields (ODate, Perigee, Apogee, Inc, OpOrbit, OQUAL) describe a 'canonical orbit'. The orbit of an object changes with time due to atmospheric drag and other perturbations, and in some cases it changes drastically due to active manuevering. I pick one orbit (the `canonical orbit') that is representative of the spacecraft's early operations, after initial positioning, to include in the catalog. But detailed analysis should consult detailed orbital data versus time for each object, from the Space-Track TLEs or other sources. 

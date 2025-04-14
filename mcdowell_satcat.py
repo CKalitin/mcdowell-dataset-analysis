@@ -24,12 +24,9 @@ class McDowellSatcat:
         Create new columns from existing columns in satcat dataframe to make it more pandas friendly.
         Lots of string manipulation to get the dates into a format that pandas can understand.
         """
-        
-        date_columns = ["LDate", "SDate", "DDate", "ODate"]
-        
-        for col in date_columns:
-            # Remove leading/trailing whitespace and convert to string
-            self.satcat_df[col] = self.satcat_df[col].astype(str).str.strip()
+
+        # Strip Launch_Tags
+        self.satcat_df["Launch_Tag"] = self.satcat_df["Launch_Tag"].astype(str).str.upper().str.strip()
         
         # Remove problematic characters from date columns (?, -) and handle NaN
         self.satcat_df["LDate"] = self.satcat_df["LDate"].fillna("").str.replace(r"[?-]", "", regex=True).str.strip()
@@ -50,10 +47,10 @@ class McDowellSatcat:
         self.satcat_df["ODate"] = self.satcat_df["ODate"].where(self.satcat_df["ODate"].str.len() != 8, self.satcat_df["ODate"] + " 1")
         
         # Convert Mcdowell's Vague date format to pandas datetime format
-        self.satcat_df["Launch_Date_Pandas"] = pd.to_datetime(self.satcat_df["LDate"], format="%Y %b %d", errors="coerce")
-        self.satcat_df["Separation_Date_Pandas"] = pd.to_datetime(self.satcat_df["SDate"], format="%Y %b %d", errors="coerce")
-        self.satcat_df["Decay_Date_Pandas"] = pd.to_datetime(self.satcat_df["DDate"], format="%Y %b %d", errors="coerce")
-        self.satcat_df["Canonical_Orbit_Date_Pandas"] = pd.to_datetime(self.satcat_df["ODate"], format="%Y %b %d", errors="coerce") # This is the date on which the orbit data was taken
+        self.satcat_df["LDate"] = pd.to_datetime(self.satcat_df["LDate"], format="%Y %b %d", errors="coerce")
+        self.satcat_df["SDate"] = pd.to_datetime(self.satcat_df["SDate"], format="%Y %b %d", errors="coerce")
+        self.satcat_df["DDate"] = pd.to_datetime(self.satcat_df["DDate"], format="%Y %b %d", errors="coerce")
+        self.satcat_df["ODate"] = pd.to_datetime(self.satcat_df["ODate"], format="%Y %b %d", errors="coerce") # This is the date on which the orbit data was taken
 
         # Convert mass to float (in kg) and handle NaN
         self.satcat_df["Mass"] = pd.to_numeric(self.satcat_df["Mass"], errors="coerce").fillna(0)
@@ -85,10 +82,10 @@ class McDowellSatcat:
         end_date = pd.to_datetime(end_date)
         
         if start_date is not None:
-            self.satcat_df = self.satcat_df[self.satcat_df["Launch_Date_Pandas"] >= start_date]
+            self.satcat_df = self.satcat_df[self.satcat_df["LDate"] >= start_date]
         
         if end_date is not None:
-            self.satcat_df = self.satcat_df[self.satcat_df["Launch_Date_Pandas"] <= end_date]
+            self.satcat_df = self.satcat_df[self.satcat_df["LDate"] <= end_date]
 
     def filter_by_decay_date(self, start_date=None, end_date=None):
         """
@@ -102,10 +99,10 @@ class McDowellSatcat:
         end_date = pd.to_datetime(end_date)
         
         if start_date is not None:
-            self.satcat_df = self.satcat_df[self.satcat_df["Decay_Date_Pandas"] >= start_date]
+            self.satcat_df = self.satcat_df[self.satcat_df["DDate"] >= start_date]
         
         if end_date is not None:
-            self.satcat_df = self.satcat_df[self.satcat_df["Decay_Date_Pandas"] <= end_date]
+            self.satcat_df = self.satcat_df[self.satcat_df["DDate"] <= end_date]
 
 if __name__ == "__main__":
     pd.set_option('display.max_columns', None)
