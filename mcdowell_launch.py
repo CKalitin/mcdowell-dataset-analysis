@@ -48,9 +48,8 @@ class McDowellLaunch:
     def process_satcat_dependent_columns(self, satcat_df):
         """
         Create columns in launch_df derived from satcat data:
-        - Satellite_IDs: List of satellite IDs for a given launch
         - Payload_Mass: Sum of masses for all payloads in a launch
-        - Canonical_Orbit_Parameters: Dictionary of canonical orbit data from satcat
+        - Canonical Orbit Parameters: Dictionary of canonical orbit data from satcat
         Args:
             satcat_df: DataFrame containing the satcat class. Note this isn't the mcdowell_satcat class
         """
@@ -75,15 +74,10 @@ class McDowellLaunch:
               .set_index('Launch_Tag')
         )
         
-        print(first_payload["Apogee"].head(20))  # Display the first few rows of the DataFrame for verification
-        
         # Create new columns in launch_df for canonical orbit data
         for col in ['ODate', 'Perigee', 'Apogee', 'Inc', 'OpOrbit']:
             self.launch_df[col] = self.launch_df['Launch_Tag'].map(first_payload[col])
         self.launch_df.rename(columns={"OpOrbit": "Orbit"}, inplace=True)
-        
-        print(" - - - -")
-        print(self.launch_df["Apogee"].head(20))  # Display the first few rows of the DataFrame for verification
         
         
     def filter_by_launch_category(self, launch_categories):
@@ -110,7 +104,7 @@ class McDowellLaunch:
             self.launch_df["Launch_Code"].str[1].isin(launch_success_fractions)
         ]
 
-    def filter_by_date(self, start_date=None, end_date=None):
+    def filter_by_launch_date(self, start_date=None, end_date=None):
         """
         Remove all launches that are not in the given date range (inclusive range).
         Args:
@@ -134,7 +128,7 @@ if __name__ == "__main__":
     launch = McDowellLaunch()
     satcat = mcdowell_satcat.McDowellSatcat()
     
-    launch.filter_by_date(start_date="1957-10-01", end_date="1958-10-25")
+    launch.filter_by_launch_date(start_date="1957-10-01", end_date="1958-10-25")
     launch.filter_by_launch_category(["O"])
     launch.filter_by_launch_success_fraction(["S"])
     
