@@ -8,3 +8,5 @@ TODO:
 2. Add remaining filters since these new datasets
 3. Write documentation for everything (for the AIs)
 4. Add simplified site names and beautified country names
+5. For launch orbits use category column, as satcat has edge cases (roadster)  
+    a. See: https://planet4589.org/space/gcat/web/intro/profile.html
