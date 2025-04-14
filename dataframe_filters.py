@@ -213,6 +213,37 @@ class Filters:
         
         if max_max is not None:
             dataset_class.df = dataset_class.df[dataset_class.df[mass_col] <= max_max]
+            
+    def filter_by_orbit_raw(dataset_class, orbits):
+        """
+        Remove all launches that are not in the given orbit. This uses Jonathan McDowell's raw orbit tags. Eg. "LLEO/I", "VHEO", "DSO", "GEO/NS"
+        See https://planet4589.org/space/gcat/web/intro/orbits.html for more information.
+        Args:
+            dataset_class: launch or satcat
+            orbit (string or string array): orbit tag, see: https://planet4589.org/space/gcat/web/intro/orbits.html
+        """
+        
+        if type(orbits) == str:
+            orbits = [orbits]
+        
+        dataset_class.df = dataset_class.df[
+            dataset_class.df["OpOrbit"].isin(orbits)
+        ]
+
+    def filter_by_orbit(dataset_class, orbits):
+        """
+        Remove all launches that are not in the given orbit. This uses simplified orbit categories. Eg. "LEO", "MEO", "GTO", "BEO"
+        Args:
+            dataset_class: launch or satcat
+            orbits (string or string array): simple orbit tags 
+        """
+        
+        if type(orbits) == str:
+            orbits = [orbits]
+            
+        dataset_class.df = dataset_class.df[
+            dataset_class.df["Simplified_Orbit"].isin(orbits)
+        ]
 
 
 # For testing
