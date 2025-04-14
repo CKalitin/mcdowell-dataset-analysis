@@ -17,5 +17,5 @@ Object Catalogs > Payload Catalogs > psatcat (TSV)
 satcat.tsv:
 Object Catalogs > Main catalogs > satcat (TSV)
 
-sties.tsv:
+sites.tsv:
 Launch Origins Database > Sites File (TSV)
