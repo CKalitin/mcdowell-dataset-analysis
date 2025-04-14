@@ -194,6 +194,25 @@ class Filters:
         
         if end_date is not None:
             dataset_class.df = dataset_class.df[dataset_class.df["Orbit_Canonical_Date"] <= end_date]
+    
+    def filter_by_mass(dataset_class, min_mass=None, max_max=None):
+        """
+        Remove all launches or satellties that are not in the given mass range (inclusive range).
+        Args:
+            dataset_class: launch or satcat
+            min_mass (float, optional): Minimum mass (inclusive). Defaults to None.
+            max_max (float, optional): Maximum mass (inclusive). Defaults to None.
+        """
+        
+        mass_col = "Payload_Mass"
+        if (type(dataset_class) == mcdowell_satcat.Satcat):
+            mass_col = "Mass"
+            
+        if min_mass is not None:
+            dataset_class.df = dataset_class.df[dataset_class.df[mass_col] >= min_mass]
+        
+        if max_max is not None:
+            dataset_class.df = dataset_class.df[dataset_class.df[mass_col] <= max_max]
 
 
 # For testing
