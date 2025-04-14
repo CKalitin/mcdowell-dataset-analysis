@@ -1,6 +1,0 @@
-TODO:
-1. Create separate filter class so it's synced between satcat and launch
-    a. Create a function for each filter and a case for being given either launch or satcat, throw an error if you are trying to a filter on the wrong dataset
-2. Add psatcat dataset in for satellite program
-3. Add sites dataset and simplify site names
-4. Add orgs dataset and simplify country names
