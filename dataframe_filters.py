@@ -30,7 +30,7 @@ class filters:
         """
         Remove all launches that are not in the given launch success fractions.
         Args:
-            launch_success_fractions: List of launch success fractions to filter by. eg. ["S", "f"]
+            launch_success_fractions: List of launch success fractions to filter by. eg. ["S", "F"]
         """
         
         if (type(dataset_class) != mcdowell_launch.Launch):
@@ -44,7 +44,7 @@ class filters:
         """
         Remove all launches that are not in the given launch vehicles.
         Args:
-            launch_vehicles: List of launch vehicles to filter by. eg. ["Atlas", "Falcon"]
+            launch_vehicles: List of launch vehicles to filter by. eg. ["Electron", "Falcon 9"]
         """
         
         dataset_class.df = dataset_class.df[
@@ -55,7 +55,7 @@ class filters:
         """
         Remove all launches that are not in the given launch sites.
         Args:
-            launch_sites: List of launch sites to filter by. eg. ["Cape Canaveral", "Vandenberg"]
+            launch_sites: List of launch sites to filter by. eg. ["VFSB", "KSC"]
         """
         
         dataset_class.df = dataset_class.df[
@@ -66,7 +66,7 @@ class filters:
         """
         Remove all launches that are not in the given launch pads.
         Args:
-            launch_pads: List of launch pads to filter by. eg. ["SLC-40", "SLC-41"]
+            launch_pads: List of launch pads to filter by. eg. ["SLC4E", "LC39A"]
         """
         
         dataset_class.df = dataset_class.df[
