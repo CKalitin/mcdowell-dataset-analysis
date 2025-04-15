@@ -1,6 +1,6 @@
 import pandas as pd
-import mcdowell_satcat
-import mcdowell_launch
+import dataset_satcat
+import dataset_launch
 
 class Filters:
     """
@@ -29,7 +29,7 @@ class Filters:
         Source: https://planet4589.org/space/gcat/web/launch/lcols.html  
         """
         
-        if (type(dataset_class) != mcdowell_launch.Launch):
+        if (type(dataset_class) != dataset_launch.Launch):
             raise ValueError("launch dataset expected by filter_by_launch_category(). Cannot sort by launch category in satcat dataset.")
         
         if (type(launch_categories) == str):
@@ -54,7 +54,7 @@ class Filters:
         Source: https://planet4589.org/space/gcat/web/launch/lcols.html
         """
         
-        if (type(dataset_class) != mcdowell_launch.Launch):
+        if (type(dataset_class) != dataset_launch.Launch):
             raise ValueError("launch dataset expected by filter_by_launch_success_fraction(). Cannot sort by launch success fraction in satcat dataset.")
         
         if (type(launch_success_fractions) == str):
@@ -124,7 +124,7 @@ class Filters:
             launch_categories: List of launch categories to filter by. eg. ["P", "R"]
         """
 
-        if (type(dataset_class) != mcdowell_satcat.Satcat):
+        if (type(dataset_class) != dataset_satcat.Satcat):
             raise ValueError("satcat dataset expected by filter_by_sat_type_coarse(). Cannot sort by sat type in launch dataset.")
         
         if (type(sat_types) == str):
@@ -161,7 +161,7 @@ class Filters:
             end_date: End date to filter by. eg. "2020-01-01"
         """
         
-        if (type(dataset_class) != mcdowell_satcat.Satcat):
+        if (type(dataset_class) != dataset_satcat.Satcat):
             raise ValueError("satcat dataset expected by filter_by_separation_date(). Cannot sort by separation date in launch dataset.")
         
         start_date = pd.to_datetime(start_date)
@@ -181,7 +181,7 @@ class Filters:
             end_date: End date to filter by. eg. "2020-01-01"
         """
         
-        if (type(dataset_class) != mcdowell_satcat.Satcat):
+        if (type(dataset_class) != dataset_satcat.Satcat):
             raise ValueError("satcat dataset  expected by filter_by_decay_date(). Cannot sort by decay date in launch dataset.")
         
         start_date = pd.to_datetime(start_date)
@@ -201,7 +201,7 @@ class Filters:
             end_date: End date to filter by. eg. "2020-01-01"
         """
         
-        if (type(dataset_class) != mcdowell_satcat.Satcat):
+        if (type(dataset_class) != dataset_satcat.Satcat):
             raise ValueError("satcat dataset class expected by filter_by_orbit_canonical_date(). Cannot sort by orbit canonical date in launch dataset.")
         
         start_date = pd.to_datetime(start_date)
@@ -223,7 +223,7 @@ class Filters:
         """
         
         mass_col = "Payload_Mass"
-        if (type(dataset_class) == mcdowell_satcat.Satcat):
+        if (type(dataset_class) == dataset_satcat.Satcat):
             mass_col = "Mass"
             
         if min_mass is not None:
@@ -268,8 +268,8 @@ class Filters:
 if __name__ == "__main__":
     pd.set_option('display.max_columns', 200)
 
-    satcat = mcdowell_satcat.Satcat()
-    launch = mcdowell_launch.Launch()
+    satcat = dataset_satcat.Satcat()
+    launch = dataset_launch.Launch()
 
     launch.process_satcat_dependent_columns(satcat.df)
     satcat.process_launch_dependent_columns(launch.df)

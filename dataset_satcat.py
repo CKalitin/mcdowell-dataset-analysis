@@ -2,7 +2,7 @@ import pandas as pd
 import translations
 
 import dataframe_filters
-import mcdowell_launch
+import dataset_launch
 
 class Satcat:
     """
@@ -117,7 +117,7 @@ if __name__ == "__main__":
     pd.set_option('display.max_columns', None)
     pd.set_option('display.max_rows', 100)  
     
-    launch = mcdowell_launch.Launch()
+    launch = dataset_launch.Launch()
     satcat = Satcat()
     #dataset.filter_by_launch_date(start_date="2000-01-01", end_date="2000-02-01")
     #dataset.filter_by_sat_type_coarse(["P"])
