@@ -5,9 +5,9 @@ from dataframe_filters import Filters
 from translations import Translation
 
 # Expose Launch and Satcat directly in this module's namespace
-__all__ = ['Launch', 'Satcat', 'Filters', 'McdowellDatasetAnalysis', 'Translation']
+__all__ = ['Launch', 'Satcat', 'Filters', 'McdowellDataset', 'Translation']
 
-class McdowellDatasetAnalysis:
+class McdowellDataset:
     """
     This class serves as a wrapper for the Launch and Satcat classes, providing a unified interface for analysis.
     """

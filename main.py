@@ -1,7 +1,7 @@
 import mcdowell_dataset_analysis as mda
 import pandas as pd
 
-dataset = mda.McdowellDatasetAnalysis()
+dataset = mda.McdowellDataset()
 
 pd.set_option('display.max_columns', None)
 pd.set_option('display.max_rows', None)
