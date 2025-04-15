@@ -6,7 +6,7 @@ class Launch:
     This contains all functions required for using McDowell's launch dataset.
     """
 
-    def __init__(self, translation=None, file_path="datasets/launch.tsv"):
+    def __init__(self, translation=None, file_path="./datasets/launch.tsv"):
         """
         Initialize launch tsv file path and load the dataset into a pandas DataFrame.
         

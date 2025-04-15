@@ -95,8 +95,8 @@ class Filters:
         """
         Remove all launches that are not in the given launch vehicle families.
         Args:
-            launch_vehicle_families: List of launch vehicles to filter by. eg. ["Electron", "Falcon 9"]
-        Launch Vehicle Family List: https://planet4589.org/space/gcat/data/tables/family.html
+            launch_vehicle_families: List of launch vehicles to filter by. eg. ["Electron", "Falcon9"]
+        Launch Vehicle Family List: https://planet4589.org/space/gcat/data/tables/family.html  
         Launch Vehicle List (With Family): https://planet4589.org/space/gcat/data/tables/lv.html
         """
         

@@ -70,7 +70,7 @@ class Translation:
             "XO": "BEO"      # Extraterrestrial launch
         }
 
-    def generate_lv_translation(self, filePath = "datasets/lv.tsv"):
+    def generate_lv_translation(self, filePath = "./datasets/lv.tsv"):
         """
         Generate a dictionary that translate LV_Type to LV_Family.
         This requires lv.tsv file
