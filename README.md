@@ -11,13 +11,10 @@ Going to manually write the csv analysis library and use plotly for display. Mus
 
 TODO:
 1. Add psatcat and sites and orgs datasets in separate files
-2. Add remaining filters since these new datasets
+2. Add remaining filters with these new datasets
 3. Write documentation for everything (for the AIs)
 4. Add simplified site names and beautified country names
-5. For launch orbits use category column, as satcat has edge cases (roadster)
-    a. See: https://planet4589.org/space/gcat/web/intro/profile.html
-6. Put all column translations in their own config file (ie. OpOrbit raw to Simplified Orbit, or category to orbit)
-8. Dictionary to translate LV_Type into easier names (eg. "Starship" instead of "Starship V1.0")
+5. Dictionary to translate LV_Type into easier names (eg. "Starship" instead of "Starship V1.0")
 
 # Dictionary to translate raw orbit categories to simplified ones
 orbit_translation = {

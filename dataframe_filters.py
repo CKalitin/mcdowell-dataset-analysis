@@ -2,6 +2,18 @@ import pandas as pd
 import dataset_satcat
 import dataset_launch
 
+# TODO:
+# filter by launch vehicle family (requires adding another dataset, lv.tsv)
+# filter by launch country (state code), harder for launch since no country code, need sites! TODO: add site codes dataset
+# filter by simple category
+# filter by satellite category raw
+# filter by simple orbit
+# filter by apogee
+# filter by perigee
+# filter by inclination
+# filter by launch pad
+# filter by satellite program (requires adding another dataset, psatcat)
+    
 class Filters:
     """
     This class contains all functions required for filtering the datasets. This includes filtering by date, launch vehicle, launch site, etc.
@@ -64,11 +76,12 @@ class Filters:
             dataset_class.df["Launch_Code"].str[1].isin(launch_success_fractions)
         ]
 
-    def filter_by_launch_vehicle(dataset_class, launch_vehicles):
+    def filter_by_launch_vehicle_raw(dataset_class, launch_vehicles):
         """
         Remove all launches that are not in the given launch vehicles.
         Args:
-            launch_vehicles: List of launch vehicles to filter by. eg. ["Electron", "Falcon 9"]
+            launch_vehicles: List of launch vehicles to filter by. eg. ["Kosmos 11K65M", "Falcon 9", "Starship V1.0 Ship"]
+        Launch Vehicle List: https://planet4589.org/space/gcat/data/tables/lv.html
         """
         
         if (type(launch_vehicles) == str):
@@ -76,6 +89,22 @@ class Filters:
         
         dataset_class.df = dataset_class.df[
             dataset_class.df["LV_Type"].isin(launch_vehicles)
+        ]
+        
+    def filter_by_launch_vehicle_family(dataset_class, launch_vehicles):
+        """
+        Remove all launches that are not in the given launch vehicle families.
+        Args:
+            launch_vehicles: List of launch vehicles to filter by. eg. ["Electron", "Falcon 9"]
+        Launch Vehicle Family List: https://planet4589.org/space/gcat/data/tables/family.html
+        Launch Vehicle List (With Family): https://planet4589.org/space/gcat/data/tables/lv.html
+        """
+        
+        if (type(launch_vehicles) == str):
+            launch_vehicles = [launch_vehicles]
+        
+        dataset_class.df = dataset_class.df[
+            dataset_class.df["Launch_Vehicle_Family"].isin(launch_vehicles)
         ]
 
     def filter_by_launch_site_raw(dataset_class, launch_sites):
@@ -105,17 +134,6 @@ class Filters:
         dataset_class.df = dataset_class.df[
             dataset_class.df["Launch_Pad"].isin(launch_pads)
         ]
-
-    # TODO:
-    # filter by launch country (state code), harder for launch since no country code, need sites! TODO: add site codes dataset
-    # filter by simple category
-    # filter by satellite category!
-    # filter by simple orbit
-    # filter by apogee
-    # filter by perigee
-    # filter by inclination
-    # filter by launch pad
-    # filter by satellite program (requires adding another dataset, psatcat)
 
     def filter_by_sat_type_coarse(dataset_class, sat_types):
         """
