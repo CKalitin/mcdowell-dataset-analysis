@@ -12,3 +12,23 @@ TODO:
     a. See: https://planet4589.org/space/gcat/web/intro/profile.html
 6. Put all column translations in their own config file (ie. OpOrbit raw to Simplified Orbit, or category to orbit)
 7. Check Starship Flight 1 Date and realize that all dates are wrong
+
+# Dictionary to translate raw orbit categories to simplified ones
+orbit_translation = {
+    "DSO": "BEO",    # Deep space orbit
+    "EEO": "BEO",    # Earth escape orbit
+    "GEO": "GEO",    # Direct geosync insertion
+    "GTO": "GTO",    # Geosync transfer orbit
+    "HEO": "HEO",    # Highly elliptical orbit
+    "ISS": "LEO",    # International Space Station
+    "LEO": "LEO",    # Low Earth Orbit
+    "LSS": "LEO",    # LEO space station other than ISS
+    "MEO": "MEO",    # Medium Earth Orbit
+    "MOL": "HEO",    # Molniya orbit
+    "MTO": "MEO",    # MEO transfer orbit
+    "SSO": "SSO",    # Sun-sync orbit
+    "STO": "GTO",    # Supersync transfer orbit
+    "XO": "BEO"      # Extraterrestrial launch
+}
+
+Note: There'll be some edge cases with SSO where in satcat a simplified orbit is given as SSO but the raw orbit is LEO/S or something. In the launch dataset this might be recorded as LEO instead of SSO.
