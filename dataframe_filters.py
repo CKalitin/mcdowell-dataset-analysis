@@ -91,20 +91,20 @@ class Filters:
             dataset_class.df["LV_Type"].isin(launch_vehicles)
         ]
         
-    def filter_by_launch_vehicle_family(dataset_class, launch_vehicles):
+    def filter_by_launch_vehicle_family(dataset_class, launch_vehicle_families):
         """
         Remove all launches that are not in the given launch vehicle families.
         Args:
-            launch_vehicles: List of launch vehicles to filter by. eg. ["Electron", "Falcon 9"]
+            launch_vehicle_families: List of launch vehicles to filter by. eg. ["Electron", "Falcon 9"]
         Launch Vehicle Family List: https://planet4589.org/space/gcat/data/tables/family.html
         Launch Vehicle List (With Family): https://planet4589.org/space/gcat/data/tables/lv.html
         """
         
-        if (type(launch_vehicles) == str):
-            launch_vehicles = [launch_vehicles]
+        if (type(launch_vehicle_families) == str):
+            launch_vehicle_families = [launch_vehicle_families]
         
         dataset_class.df = dataset_class.df[
-            dataset_class.df["Launch_Vehicle_Family"].isin(launch_vehicles)
+            dataset_class.df["Launch_Vehicle_Family"].isin(launch_vehicle_families)
         ]
 
     def filter_by_launch_site_raw(dataset_class, launch_sites):

@@ -14,7 +14,6 @@ TODO:
 2. Add remaining filters with these new datasets
 3. Write documentation for everything (for the AIs)
 4. Add simplified site names and beautified country names
-5. Dictionary to translate LV_Type into easier names (eg. "Starship" instead of "Starship V1.0")
 
 # Dictionary to translate raw orbit categories to simplified ones
 orbit_translation = {
