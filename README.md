@@ -11,7 +11,7 @@ TODO:
 5. For launch orbits use category column, as satcat has edge cases (roadster)
     a. See: https://planet4589.org/space/gcat/web/intro/profile.html
 6. Put all column translations in their own config file (ie. OpOrbit raw to Simplified Orbit, or category to orbit)
-7. Check Starship Flight 1 Date and realize that all dates are wrong
+8. Dictionary to translate LV_Type into easier names (eg. "Starship" instead of "Starship V1.0")
 
 # Dictionary to translate raw orbit categories to simplified ones
 orbit_translation = {
@@ -31,4 +31,4 @@ orbit_translation = {
     "XO": "BEO"      # Extraterrestrial launch
 }
 
-Note: There'll be some edge cases with SSO where in satcat a simplified orbit is given as SSO but the raw orbit is LEO/S or something. In the launch dataset this might be recorded as LEO instead of SSO.
+Note: There'll be some edge cases with SSO where in satcat a simplified orbit is given as SSO but the raw orbit is LEO/S or something. In the launch dataset this might be recorded as LEO instead of SSO. Or polar.
