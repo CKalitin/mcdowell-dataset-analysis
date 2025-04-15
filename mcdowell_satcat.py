@@ -1,4 +1,7 @@
 import pandas as pd
+import translations
+
+import dataframe_filters
 import mcdowell_launch
 
 class Satcat:
@@ -15,7 +18,7 @@ class Satcat:
         
         self.file_path = file_path
         
-        self.df = pd.read_csv(self.file_path, sep="\t", encoding="utf-8", low_memory=False) # load csv into dataframe
+        self.df = pd.read_csv(self.file_path, sep="\t", encoding="utf-8", low_memory=False) # load tsv into dataframe
         
         self.preprocess_satcat_df()
 
@@ -57,42 +60,8 @@ class Satcat:
         
         # Create Simplified Orbit Column
         # Orbits: https://planet4589.org/space/gcat/web/intro/orbits.html
-        self.df["Simplified_Orbit"] = self.df["OpOrbit"].str.split(" ", n=1).str[0].str.strip()
-        self.df["Simplified_Orbit"] = self.df["Simplified_Orbit"].replace(
-            {
-                "ATM": "SO",      # Atmospheric
-                "SO": "SO",        # Suborbital
-                "TA": "SO",        # Trans-Atmospheric
-                "LLEO/E": "LEO",   # Lower LEO/Equatorial
-                "LLEO/I": "LEO",   # Lower LEO/Intermediate
-                "LLEO/P": "SSO",   # Lower LEO/Polar
-                "LLEO/S": "SSO",   # Lower LEO/Sun-Sync
-                "LLEO/R": "LEO",   # Lower LEO/Retrograde
-                "LEO/E": "LEO",    # Upper LEO/Equatorial
-                "LEO/I": "LEO",    # Upper LEO/Intermediate
-                "LEO/P": "SSO",    # Upper LEO/Polar
-                "LEO/S": "SSO",    # Upper LEO/Sun-Sync
-                "LEO/R": "LEO",    # Upper LEO/Retrograde
-                "MEO": "MEO",      # Medium Earth Orbit
-                "HEO": "HEO",      # Highly Elliptical Orbit
-                "HEO/M": "HEO",    # Molniya
-                "GTO": "GTO",      # Geotransfer
-                "GEO/S": "GEO",    # Stationary
-                "GEO/I": "GEO",    # Inclined GEO
-                "GEO/T": "GEO",    # Synchronous
-                "GEO/D": "GEO",    # Drift GEO
-                "GEO/SI": "GEO",   # Inclined GEO (same as GEO/I)
-                "GEO/ID": "GEO",   # Inclined Drift
-                "GEO/NS": "GEO",   # Near-sync
-                "VHEO": "HEO",    # Very High Earth Orbit
-                "DSO": "BEO",      # Deep Space Orbit
-                "CLO": "BEO",      # Cislunar/Translunar
-                "EEO": "BEO",      # Earth Escape
-                "HCO": "BEO",      # Heliocentric
-                "PCO": "BEO",      # Planetocentric
-                "SSE": "BEO"       # Solar System Escape
-            }
-        )
+        self.df["Simplified_Orbit"] = self.df["OpOrbit"].str.strip()
+        self.df["Simplified_Orbit"] = self.df["Simplified_Orbit"].replace(translations.opOrbit_to_simplified_orbit)
     
     def process_launch_dependent_columns(self, launch):
         """
@@ -153,8 +122,10 @@ if __name__ == "__main__":
     #dataset.filter_by_launch_date(start_date="2000-01-01", end_date="2000-02-01")
     #dataset.filter_by_sat_type_coarse(["P"])
 
-    print(satcat.df.head(20))  # Display the first few rows of the DataFrame for verification
+    satcat.process_launch_dependent_columns(launch)
+
+    dataframe_filters.Filters.filter_by_launch_vehicle(satcat, launch_vehicles=["Electron"])
+    #dataframe_filters.Filters.filter_by_orbit(satcat, orbits=["SSO"])
     
-    satcat.process_launch_dependent_columns(launch.df)
-    
-    print(satcat.df.head(20))  # Display the first few rows of the DataFrame for verification
+    print(satcat.df.tail(25))  # Display the first few rows of the DataFrame for verification
+    print(len(satcat.df))

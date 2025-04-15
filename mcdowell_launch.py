@@ -1,5 +1,5 @@
 import pandas as pd
-import mcdowell_satcat
+import translations
 
 class Launch:
     """
@@ -14,7 +14,7 @@ class Launch:
         """
         
         self.file_path = file_path
-        self.df = pd.read_csv(self.file_path, sep="\t", encoding="utf-8") # load csv into dataframe
+        self.df = pd.read_csv(self.file_path, sep="\t", encoding="utf-8") # load tsv into dataframe
         
         self.preprocess_launch_df()
 
@@ -46,6 +46,9 @@ class Launch:
             # Convert Mcdowell's Vague date format to pandas datetime format
             self.df[col] = pd.to_datetime(self.df[col], format="%Y %b %d", errors="coerce")
 
+        self.df["Simplified_Orbit"] = self.df["Category"].str.split(" ").str[1].str.strip()
+        self.df["Simplified_Orbit"] = self.df["Simplified_Orbit"].replace(translations.opOrbit_to_simplified_orbit)
+        
     def process_satcat_dependent_columns(self, satcat):
         """
         Create columns in launch_df derived from satcat data:
@@ -76,24 +79,5 @@ class Launch:
         )
         
         # Create new columns in launch_df for canonical orbit data
-        for col in ['Orbit_Canonical_Date', 'Perigee', 'Apogee', 'Inc', 'OpOrbit', 'Simplified_Orbit']:
+        for col in ['Orbit_Canonical_Date', 'Perigee', 'Apogee', 'Inc', 'OpOrbit']:
             self.df[col] = self.df['Launch_Tag'].map(first_payload[col])
-        self.df.rename(columns={"OpOrbit": "Orbit"}, inplace=True)
-
-
-# For testing
-if __name__ == "__main__":
-    pd.set_option('display.max_columns', 200)
-        
-    launch = Launch()
-    satcat = mcdowell_satcat.Satcat()
-    
-    launch.filter_by_launch_date(start_date="1957-10-01", end_date="1958-10-25")
-    launch.filter_by_launch_category(["O"])
-    launch.filter_by_launch_success_fraction(["S"])
-    
-    #print(launch.launch_df.head(50))  # Display the first few rows of the DataFrame for verification
-    
-    launch.process_satcat_dependent_columns(satcat.satcat_df)
-
-    print(launch.launch_df.head(20))  # Display the first few rows of the DataFrame for verification
