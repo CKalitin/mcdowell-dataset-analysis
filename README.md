@@ -1,3 +1,8 @@
+# Block Diagram
+
+![Code Block Diagram](https://github.com/CKalitin/mcdowell-dataset-analysis/blob/main/docs/block-diagram.png)
+![Link](https://app.diagrams.net/#G1IRLoI8Vcy9faPdhrrpZJAQ3iU27p1e-x#%7B%22pageId%22%3A%22hL2WBVDFGfZaWTC3ArIe%22%7D)
+
 # Jonathan McDowell Dataset Analysis
 Google sheets is terrible software once you reach 10000 lines, excel too
 
