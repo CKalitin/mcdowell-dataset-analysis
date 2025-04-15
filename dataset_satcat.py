@@ -9,7 +9,7 @@ class Satcat:
     This contains all functions required for using McDowell's satellite catalog dataset.
     """
 
-    def __init__(self, file_path="datasets/satcat.tsv"):
+    def __init__(self, translation=None, file_path="datasets/satcat.tsv"):
         """
         Load the raw satcat dataset into a pandas DataFrame.
         
@@ -17,6 +17,7 @@ class Satcat:
         """
         
         self.file_path = file_path
+        self.translation = translations.Translation()
         
         self.df = pd.read_csv(self.file_path, sep="\t", encoding="utf-8", low_memory=False) # load tsv into dataframe
         
@@ -61,7 +62,7 @@ class Satcat:
         # Create Simplified Orbit Column
         # Orbits: https://planet4589.org/space/gcat/web/intro/orbits.html
         self.df["Simplified_Orbit"] = self.df["OpOrbit"].str.strip()
-        self.df["Simplified_Orbit"] = self.df["Simplified_Orbit"].replace(translations.opOrbit_to_simplified_orbit)
+        self.df["Simplified_Orbit"] = self.df["Simplified_Orbit"].replace(self.translation.opOrbit_to_simplified_orbit)
     
     def process_launch_dependent_columns(self, launch):
         """
@@ -105,11 +106,18 @@ class Satcat:
             how="left"
         )
         
+        self.df = self.df.merge(
+            launch_df[["Launch_Tag", "Launch_Vehicle_Family"]],
+            on="Launch_Tag",
+            how="left"
+        )
+        
         # Fill NaN with empty string for unmatched launches
         self.df["LV_Type"] = self.df["LV_Type"].fillna("")
         self.df["Agency"] = self.df["Agency"].fillna("")
         self.df["Launch_Site"] = self.df["Launch_Site"].fillna("")
         self.df["Launch_Pad"] = self.df["Launch_Pad"].fillna("")
+        self.df["Launch_Vehicle_Family"] = self.df["Launch_Vehicle_Family"].fillna("")
         
     
 # For testing

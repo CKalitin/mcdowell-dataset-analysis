@@ -6,7 +6,7 @@ class Launch:
     This contains all functions required for using McDowell's launch dataset.
     """
 
-    def __init__(self, file_path="datasets/launch.tsv"):
+    def __init__(self, translation=None, file_path="datasets/launch.tsv"):
         """
         Initialize launch tsv file path and load the dataset into a pandas DataFrame.
         
@@ -14,6 +14,8 @@ class Launch:
         """
         
         self.file_path = file_path
+        self.translation = translations.Translation()
+        
         self.df = pd.read_csv(self.file_path, sep="\t", encoding="utf-8") # load tsv into dataframe
         
         self.preprocess_launch_df()
@@ -32,6 +34,7 @@ class Launch:
         
         # Strip Launch_Tags
         self.df["Launch_Tag"] = self.df["Launch_Tag"].astype(str).str.upper().str.strip()
+        self.df["LV_Type"] = self.df["LV_Type"].astype(str).str.strip()
         
         date_cols = ["Launch_Date"]
         for col in date_cols:
@@ -47,8 +50,10 @@ class Launch:
             self.df[col] = pd.to_datetime(self.df[col], format="%Y %b %d", errors="coerce")
 
         self.df["Simplified_Orbit"] = self.df["Category"].str.split(" ").str[1].str.strip() # Extract orbit from category eg. "Sat SSO SD 0"
-        self.df["Simplified_Orbit"] = self.df["Simplified_Orbit"].where(self.df["Simplified_Orbit"].isin(translations.launch_category_to_simplified_orbit.keys()), float("nan")) # If raw orbit not present in dictionary keys, NaN
-        self.df["Simplified_Orbit"] = self.df["Simplified_Orbit"].replace(translations.launch_category_to_simplified_orbit) # Translate to simplified orbit
+        self.df["Simplified_Orbit"] = self.df["Simplified_Orbit"].where(self.df["Simplified_Orbit"].isin(self.translation.launch_category_to_simplified_orbit.keys()), float("nan")) # If raw orbit not present in dictionary keys, NaN
+        self.df["Simplified_Orbit"] = self.df["Simplified_Orbit"].replace(self.translation.launch_category_to_simplified_orbit) # Translate to simplified orbit
+
+        self.df["Launch_Vehicle_Family"] = self.df["LV_Type"].map(self.translation.lv_type_to_lv_family) # Translate LV_Type to LV_Family using the translation dictionary
 
     def process_satcat_dependent_columns(self, satcat):
         """
