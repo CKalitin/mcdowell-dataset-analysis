@@ -13,7 +13,7 @@ pd.set_option('display.max_rows', None)
 print(type(launch_dataset))
 
 mda.Filters.filter_by_launch_date(launch_dataset, start_date="1957-10-01", end_date="1958-10-25")
-mda.Filters.filter_by_launch_category(launch_dataset, launch_categories=["S"])
+mda.Filters.filter_by_launch_category(launch_dataset, launch_categories=["O"])
 mda.Filters.filter_by_launch_success_fraction(launch_dataset, "S")
 
 print(launch_dataset.df.head(20))  # Display the first few rows of the DataFrame for verification

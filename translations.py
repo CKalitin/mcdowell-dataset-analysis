@@ -52,3 +52,6 @@ opOrbit_to_simplified_orbit = {
     "PCO": "BEO",      # Planetocentric
     "SSE": "BEO"       # Solar System Escape
 }
+
+# launch vehicle families
+# https://planet4589.org/space/gcat/web/lvs/family/index.html

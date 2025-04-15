@@ -18,6 +18,9 @@ The columns are:
 - Inclination: Inclination in degrees
 - OpOrbit: Orbit type (e.g. "GEO", "LEO", "HEO", "MEO", "SSO", "GTO", "TLI", "HLO", "HCO", "HPO")
 
+Example of why translating simplified_orbit from launch category and not satcat:
+1958 ETA is Pioneer 1 launched on a Thor Delta. OpOrbit from satcat is SO (suborbital) while launch category is Sat EEO E (simplified to Beyond Earth Orbit).
+
 # filter_by_launch_category()
 
 Remove all launches that are not in the given launch categories.

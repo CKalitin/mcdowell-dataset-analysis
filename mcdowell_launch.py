@@ -46,9 +46,10 @@ class Launch:
             # Convert Mcdowell's Vague date format to pandas datetime format
             self.df[col] = pd.to_datetime(self.df[col], format="%Y %b %d", errors="coerce")
 
-        self.df["Simplified_Orbit"] = self.df["Category"].str.split(" ").str[1].str.strip()
-        self.df["Simplified_Orbit"] = self.df["Simplified_Orbit"].replace(translations.opOrbit_to_simplified_orbit)
-        
+        self.df["Simplified_Orbit"] = self.df["Category"].str.split(" ").str[1].str.strip() # Extract orbit from category eg. "Sat SSO SD 0"
+        self.df["Simplified_Orbit"] = self.df["Simplified_Orbit"].where(self.df["Simplified_Orbit"].isin(translations.launch_category_to_simplified_orbit.keys()), float("nan")) # If raw orbit not present in dictionary keys, NaN
+        self.df["Simplified_Orbit"] = self.df["Simplified_Orbit"].replace(translations.launch_category_to_simplified_orbit) # Translate to simplified orbit
+
     def process_satcat_dependent_columns(self, satcat):
         """
         Create columns in launch_df derived from satcat data:

@@ -5,17 +5,21 @@ Go to the source website above and download the files specified below, then copy
 
 Note that you shouldn't have to leave the website linked above, the download hyperlinks are all on that site, no need to navigate anywhere else.
 
-launch.tsv:
+launch.tsv:  
 Launch Lists > Full List (TSV)
 
-orgs.tsv:
+lv.tsv:  
+This is the only one where you have to go to another page: https://planet4589.org/space/gcat/web/lvs/index.html  
+Launch Vehicles > Launch Vehicle List (TSV)
+
+orgs.tsv:  
 Organizations Database > Orgs File (TSV)
 
-psatcat.tsv:
+psatcat.tsv:  
 Object Catalogs > Payload Catalogs > psatcat (TSV)
 
-satcat.tsv:
+satcat.tsv:  
 Object Catalogs > Main catalogs > satcat (TSV)
 
-sites.tsv:
+sites.tsv:  
 Launch Origins Database > Sites File (TSV)
