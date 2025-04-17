@@ -9,7 +9,7 @@ class Satcat:
     This contains all functions required for using McDowell's satellite catalog dataset.
     """
 
-    def __init__(self, translation=None, file_path="./datasets/satcat.tsv"):
+    def __init__(self, translation=None, file_path="./datasets/satcat.tsv", psatcat_path="./datasets/psatcat.tsv"):
         """
         Load the raw satcat dataset into a pandas DataFrame.
         
@@ -19,9 +19,12 @@ class Satcat:
         self.file_path = file_path
         self.translation = translations.Translation()
         
-        self.df = pd.read_csv(self.file_path, sep="\t", encoding="utf-8", low_memory=False) # load tsv into dataframe
+        self.df = pd.read_csv(self.file_path, sep="\t", encoding="utf-8", low_memory=False) # load satcat tsv into dataframe
+        self.psatcat_df = pd.read_csv(psatcat_path, sep="\t", encoding="utf-8", low_memory=False) # load psatcat tsv into dataframe
         
         self.preprocess_satcat_df()
+        
+        self.process_psatcat_dependent_columns(self.psatcat_df)
 
     def reload(self):
         self.__init__()
@@ -35,8 +38,9 @@ class Satcat:
         # Rename column "#Launch_Tag" to "Launch_Tag"
         self.df.rename(columns={"#JCAT": "JCAT"}, inplace=True)
         
-        # Strip Launch_Tags
+        # Strip Launch_Tags & Piece & JCAT
         self.df["Launch_Tag"] = self.df["Launch_Tag"].astype(str).str.upper().str.strip()
+        self.df["Piece"] = self.df["Piece"].astype(str).str.upper().str.strip()
         
         date_cols = ["LDate", "SDate", "DDate", "ODate"]
         for col in date_cols:
@@ -63,6 +67,73 @@ class Satcat:
         # Orbits: https://planet4589.org/space/gcat/web/intro/orbits.html
         self.df["Simplified_Orbit"] = self.df["OpOrbit"].str.strip()
         self.df["Simplified_Orbit"] = self.df["Simplified_Orbit"].replace(self.translation.opOrbit_to_simplified_orbit)
+    
+    def process_psatcat_dependent_columns(self, psatcat):
+        """
+        Create columns in satcat dataframe derived from psatcat data:
+        - Payload_Name (Name)
+        - Payload_Program (Program)
+        - Payload_Class (Class)
+        - Payload_Category (Category)
+        - Payload_Discipline (Discipline)
+        - Payload_Result (Result)
+        - Payload_Comment (Comment)
+        Args:
+            psatcat: dataframe containing psatcat tsv
+        Psatcat: https://planet4589.org/space/gcat/data/cat/psatcat.html  
+        Psatcat column descriptions: https://planet4589.org/space/gcat/web/cat/pscols.html
+        """
+        
+        psatcat_df = psatcat.copy()
+        
+        # Rename to avoid confusion with satcat columns
+        psatcat_df.rename(columns={"#JCAT": "JCAT", "Name": "Payload_Name", "Program": "Payload_Program", "Class": "Payload_Class", "Category": "Payload_Category", "Discipline": "Payload_Discipline", "Result": "Payload_Result", "Comment": "Payload_Comment"}, inplace=True)
+        
+        # Strip Piece
+        psatcat_df["Piece"] = psatcat_df["Piece"].astype(str).str.upper().str.strip()
+        
+        # Merge satcat_df with psatcat_df to get Name, using left join to keep all satellites
+        self.df = self.df.merge(
+            psatcat_df[["JCAT", "Payload_Name"]],
+            on="JCAT",
+            how="left"
+        )
+        
+        self.df = self.df.merge(
+            psatcat_df[["JCAT", "Payload_Program"]],
+            on="JCAT",
+            how="left"
+        )
+        
+        self.df = self.df.merge(
+            psatcat_df[["JCAT", "Payload_Class"]],
+            on="JCAT",
+            how="left"
+        )
+        
+        self.df = self.df.merge(
+            psatcat_df[["JCAT", "Payload_Category"]],
+            on="JCAT",
+            how="left"
+        )
+        
+        self.df = self.df.merge(
+            psatcat_df[["JCAT", "Payload_Discipline"]],
+            on="JCAT",
+            how="left"
+        )
+        
+        self.df = self.df.merge(
+            psatcat_df[["JCAT", "Payload_Result"]],
+            on="JCAT",
+            how="left"
+        )
+        
+        self.df = self.df.merge(
+            psatcat_df[["JCAT", "Payload_Comment"]],
+            on="JCAT",
+            how="left"
+        )
     
     def process_launch_dependent_columns(self, launch):
         """
