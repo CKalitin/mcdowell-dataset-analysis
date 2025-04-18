@@ -1,4 +1,5 @@
 import csv
+import sys
 
 class Translation:
     """
@@ -41,8 +42,7 @@ class Translation:
         "PCO": "BEO",      # Planetocentric
         "SSE": "BEO"       # Solar System Escape
     }
-
-
+    
     # Note:
     # There might be some edge cases where a satcat simple orbit is SSO
     # while launch simple orbit is LEO.
@@ -92,16 +92,30 @@ class Translation:
     }
     
     def __init__(self):
-        self.generate_lv_translation()
+        self.generate_lv_type_to_lv_family()
+        self.generate_launch_site_to_state_code()
 
-    def generate_lv_translation(self, filePath = "./datasets/lv.tsv"):
+    def generate_lv_type_to_lv_family(self, filePath = "./datasets/lv.tsv"):
         """
         Generate a dictionary that translate LV_Type to LV_Family.
         This requires lv.tsv file
         Launch Vehicle Families Text File: https://planet4589.org/space/gcat/web/lvs/family/index.html
         """
-        with open(filePath, 'r') as file:
+        with open(filePath, 'r', encoding='utf-8') as file:
             reader = csv.reader(file, delimiter='\t')
             reader.__next__() # Skip the index row
             reader.__next__() # Skip the header row
             self.lv_type_to_lv_family = {row[0].strip(): row[1].strip() for row in reader}
+            
+    def generate_launch_site_to_state_code(self, filePath = "./datasets/sites.tsv"):
+        """
+        Generate a dictionary that translate Launch_Site to State_Code.
+        This requires launch_site.tsv file
+        Launch Sites Text File: https://planet4589.org/space/gcat/data/tables/sites.html
+        """
+        
+        with open(filePath, 'r', encoding='utf-8') as file:
+            reader = csv.reader(file, delimiter='\t')
+            reader.__next__() # Skip the index row
+            reader.__next__() # Skip the header row
+            self.launch_site_to_state_code = {row[0].strip(): row[4].strip() for row in reader}

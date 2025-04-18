@@ -12,16 +12,19 @@ class Launch:
         
         Launch.tsv column descriptions: https://planet4589.org/space/gcat/web/launch/lcols.html
         """
-        
+    
         self.file_path = file_path
-        self.translation = translations.Translation()
+        self.translation = translation or translations.Translation() # beautiful pythonic syntax!
         
         self.df = pd.read_csv(self.file_path, sep="\t", encoding="utf-8") # load tsv into dataframe
         
         self.preprocess_launch_df()
 
     def reload(self):
-        self.__init__()
+        """ 
+        Undo all filters
+        """
+        self.__init__(translation=self.translation, file_path=self.file_path)
     
     def preprocess_launch_df(self):
         """
@@ -54,6 +57,8 @@ class Launch:
         self.df["Simple_Orbit"] = self.df["Simple_Orbit"].replace(self.translation.launch_category_to_simple_orbit) # Translate to simple orbit
 
         self.df["Launch_Vehicle_Family"] = self.df["LV_Type"].map(self.translation.lv_type_to_lv_family) # Translate LV_Type to LV_Family using the translation dictionary
+        
+        self.df["State"] = self.df["Launch_Site"].map(self.translation.launch_site_to_state_code) # Translate Launch_Site to State using the translation dictionary
 
     def process_satcat_dependent_columns(self, satcat):
         """

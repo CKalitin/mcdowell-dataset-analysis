@@ -17,7 +17,7 @@ class Satcat:
         """
         
         self.file_path = file_path
-        self.translation = translations.Translation()
+        self.translation = translation or translations.Translation()
         
         self.df = pd.read_csv(self.file_path, sep="\t", encoding="utf-8", low_memory=False) # load satcat tsv into dataframe
         self.psatcat_df = pd.read_csv(psatcat_path, sep="\t", encoding="utf-8", low_memory=False) # load psatcat tsv into dataframe
@@ -27,7 +27,10 @@ class Satcat:
         self.process_psatcat_dependent_columns(self.psatcat_df)
 
     def reload(self):
-        self.__init__()
+        """ 
+        Undo all filters
+        """
+        self.__init__(translation=self.translation, file_path=self.file_path)
 
     def preprocess_satcat_df(self):
         """
