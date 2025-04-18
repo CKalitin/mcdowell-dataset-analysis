@@ -12,8 +12,9 @@ mda.Filters.filter_by_launch_date(dataset.satcat, start_date="1977-10-01")
 #mda.Filters.filter_by_launch_success_fraction(dataset.launch, "S")
 
 # sort by satellite type category, only payload
-mda.Filters.filter_by_sat_type_coarse(dataset.satcat, sat_types=["P"])
-mda.Filters.filter_by_payload_category_raw(dataset.satcat, payload_categories=["NAV"])
-mda.Filters.filter_by_inclination(dataset.satcat, min_inclination=75, max_inclination=90)  # Example values for perigee
+#mda.Filters.filter_by_sat_type_coarse(dataset.satcat, sat_types=["P"])
+#mda.Filters.filter_by_payload_category_raw(dataset.satcat, payload_categories=["NAV"])
+#mda.Filters.filter_by_inclination(dataset.satcat, min_inclination=75, max_inclination=90)  # Example values for perigee
+mda.Filters.filter_by_payload_program_raw(dataset.satcat, payload_programs=["OneWeb"])
 
 print(dataset.satcat.df.head(20))  # Display the first few rows of the DataFrame for verification

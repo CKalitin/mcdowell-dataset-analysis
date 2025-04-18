@@ -4,7 +4,6 @@ import dataset_launch
 
 # TODO:
 # filter by launch country (state code), harder for launch since no country code, need sites! TODO: add site codes dataset
-# filter by satellite program (requires adding another dataset, psatcat)
 # filter by simplified launch site
 # filter by simplified launch pad
     
@@ -186,6 +185,25 @@ class Filters:
             dataset_class.df["Simple_Payload_Category"].isin(payload_categories)
         ]
         
+    def filter_by_payload_program_raw(dataset_class, payload_programs):
+        """
+        Remove all launches that are not in the given payload programs.
+        Args:
+            payload_programs: List of payload programs to filter by. eg. ["Other", "Communications"]
+        """
+        
+        if (type(dataset_class) != dataset_satcat.Satcat):
+            raise ValueError("satcat dataset expected by filter_by_payload_program_raw(). Cannot sort by sat type in launch dataset.")
+        
+        if (type(payload_programs) == str):
+            payload_programs = [payload_programs]
+        
+        # vectorized operation to filter the DataFrame
+        # Faster than a for loop for some reason, kind vibe coding here tbh
+        dataset_class.df = dataset_class.df[
+            dataset_class.df["Payload_Program"].isin(payload_programs)
+        ]
+        
     def filter_by_launch_date(dataset_class, start_date=None, end_date=None):
         """
         Remove all launches that are not in the given date range (inclusive range).
@@ -357,18 +375,21 @@ class Filters:
         
         if max_inclination is not None:
             dataset_class.df = dataset_class.df[dataset_class.df["Inc"] <= max_inclination]
-    
 
-# For testing
-if __name__ == "__main__":
-    pd.set_option('display.max_columns', 200)
-
-    satcat = dataset_satcat.Satcat()
-    launch = dataset_launch.Launch()
-
-    launch.process_satcat_dependent_columns(satcat.df)
-    satcat.process_launch_dependent_columns(launch.df)
-
-    Filters.filter_by_launch_pad(satcat, ["LC39A"])
-
-    print(satcat.df.head(20))  # Display the first few rows of the DataFrame for verification
+    def filter_by_manufacturer(dataset_class, manufacturers):
+        """
+        Remove all launches that are not in the given manufacturers.
+        Args:
+            dataset_class: launch or satcat
+            manufacturers: List of manufacturers to filter by. eg. ["SpaceX", "Rocket Lab"]
+        """
+        
+        if (type(dataset_class) != dataset_satcat.Satcat):
+            raise ValueError("satcat dataset expected by filter_by_manufacturer(). Cannot sort by manufacturer in launch dataset.")
+        
+        if (type(manufacturers) == str):
+            manufacturers = [manufacturers]
+        
+        dataset_class.df = dataset_class.df[
+            dataset_class.df["Manufacturer"].isin(manufacturers)
+        ]
