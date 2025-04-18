@@ -148,3 +148,4 @@ class Translation:
             reader.__next__() # Skip the index row
             reader.__next__() # Skip the header row
             self.state_code_to_state_name = {row[0].strip(): row[7].strip() for row in reader}
+            self.org_code_to_org_name = self.state_code_to_state_name.copy()

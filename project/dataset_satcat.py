@@ -77,6 +77,8 @@ class Satcat:
         # Orbits: https://planet4589.org/space/gcat/web/intro/orbits.html
         self.df["Simple_Orbit"] = self.df["OpOrbit"].str.strip()
         self.df["Simple_Orbit"] = self.df["Simple_Orbit"].replace(self.translation.opOrbit_to_simple_orbit)
+        
+        self.df["Country"] = self.df["State"].map(self.translation.state_code_to_state_name)
     
     def process_psatcat_dependent_columns(self, psatcat):
         """

@@ -408,3 +408,18 @@ class Filters:
         dataset_class.df = dataset_class.df[
             dataset_class.df["State"].isin(state_codes)
         ]
+
+    def filter_by_country_name(dataset_class, country_names):
+        """
+        Remove all launches that are not in the given country names.
+        Args:
+            dataset_class: launch or satcat
+            country_names: List of country names to filter by. eg. ["USA", "CAN"]
+        """
+        
+        if (type(country_names) == str):
+            country_names = [country_names]
+        
+        dataset_class.df = dataset_class.df[
+            dataset_class.df["Country"].isin(country_names)
+        ]
