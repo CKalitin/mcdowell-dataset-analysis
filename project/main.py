@@ -13,6 +13,6 @@ mda.Filters.filter_by_launch_date(dataset.satcat, start_date="1977-10-01", end_d
 
 # sort by satellite type category, only payload
 mda.Filters.filter_by_sat_type_coarse(dataset.satcat, sat_types=["P"])
-mda.Filters.filter_by_simple_payload_category(dataset.satcat, payload_categories=["Communications"])
+mda.Filters.filter_by_payload_category_raw(dataset.satcat, payload_categories=["NAV"])
 
 print(dataset.satcat.df.head(20))  # Display the first few rows of the DataFrame for verification

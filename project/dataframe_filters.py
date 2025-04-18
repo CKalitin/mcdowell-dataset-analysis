@@ -153,7 +153,26 @@ class Filters:
         dataset_class.df = dataset_class.df[
             dataset_class.df["Type"].str[0].isin(sat_types)
         ]
+    
+    def filter_by_payload_category_raw(dataset_class, payload_categories):
+        """
+        Remove all launches that are not in the given payload types.
+        Args:
+            payload_categories: List of payload types to filter by. eg. ["Other", "Communications"]
+        """
         
+        if (type(dataset_class) != dataset_satcat.Satcat):
+            raise ValueError("satcat dataset expected by filter_by_payload_category_raw(). Cannot sort by sat type in launch dataset.")
+        
+        if (type(payload_categories) == str):
+            payload_categories = [payload_categories]
+        
+        # vectorized operation to filter the DataFrame
+        # Faster than a for loop for some reason, kind vibe coding here tbh
+        dataset_class.df = dataset_class.df[
+            dataset_class.df["Payload_Category"].isin(payload_categories)
+        ]
+    
     def filter_by_simple_payload_category(dataset_class, payload_categories):
         """
         Remove all launches that are not in the given payload types.
