@@ -59,10 +59,16 @@ class Satcat:
         # Rename date columns
         self.df.rename(columns={"LDate": "Launch_Date", "SDate": "Separation_Date", "DDate": "Decay_Date", "ODate": "Orbit_Canonical_Date"}, inplace=True)
 
-        # Convert mass to float (in kg) and handle NaN
+        # Convert numeric fields to int or float and handle NaN
         self.df["Mass"] = pd.to_numeric(self.df["Mass"], errors="coerce").fillna(0)
         self.df["DryMass"] = pd.to_numeric(self.df["DryMass"], errors="coerce").fillna(0)
         self.df["TotMass"] = pd.to_numeric(self.df["TotMass"], errors="coerce").fillna(0)
+        self.df["Length"] = pd.to_numeric(self.df["Length"], errors="coerce").fillna(0)
+        self.df["Diameter"] = pd.to_numeric(self.df["Diameter"], errors="coerce").fillna(0)
+        self.df["Span"] = pd.to_numeric(self.df["Span"], errors="coerce").fillna(0)
+        self.df["Perigee"] = pd.to_numeric(self.df["Perigee"], errors="coerce").fillna(0)
+        self.df["Apogee"] = pd.to_numeric(self.df["Apogee"], errors="coerce").fillna(0)
+        self.df["Inc"] = pd.to_numeric(self.df["Inc"], errors="coerce").fillna(0)
         
         # Create Simple Orbit Column
         # Orbits: https://planet4589.org/space/gcat/web/intro/orbits.html

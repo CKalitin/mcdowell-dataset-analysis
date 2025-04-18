@@ -3,16 +3,10 @@ import dataset_satcat
 import dataset_launch
 
 # TODO:
-# filter by launch vehicle family (requires adding another dataset, lv.tsv)
 # filter by launch country (state code), harder for launch since no country code, need sites! TODO: add site codes dataset
-# filter by simple category
-# filter by satellite category raw
-# filter by simple orbit
-# filter by apogee
-# filter by perigee
-# filter by inclination
-# filter by launch pad
 # filter by satellite program (requires adding another dataset, psatcat)
+# filter by simplified launch site
+# filter by simplified launch pad
     
 class Filters:
     """
@@ -319,6 +313,51 @@ class Filters:
             dataset_class.df["Simple_Orbit"].isin(orbits)
         ]
 
+    def filter_by_apogee(dataset_class, min_apogee=None, max_apogee=None):
+        """
+        Remove all launches that are not in the given apogee range (inclusive range).
+        Args:
+            dataset_class: launch or satcat
+            min_apogee (float, optional): Minimum apogee (inclusive). Defaults to None.
+            max_apogee (float, optional): Maximum apogee (inclusive). Defaults to None.
+        """
+        
+        if min_apogee is not None:
+            dataset_class.df = dataset_class.df[dataset_class.df["Apogee"] >= min_apogee]
+        
+        if max_apogee is not None:
+            dataset_class.df = dataset_class.df[dataset_class.df["Apogee"] <= max_apogee]
+    
+    def filter_by_perigee(dataset_class, min_perigee=None, max_perigee=None):
+        """
+        Remove all launches that are not in the given perigee range (inclusive range).
+        Args:
+            dataset_class: launch or satcat
+            min_perigee (float, optional): Minimum perigee (inclusive). Defaults to None.
+            max_perigee (float, optional): Maximum perigee (inclusive). Defaults to None.
+        """
+        
+        if min_perigee is not None:
+            dataset_class.df = dataset_class.df[dataset_class.df["Perigee"] >= min_perigee]
+        
+        if max_perigee is not None:
+            dataset_class.df = dataset_class.df[dataset_class.df["Perigee"] <= max_perigee]
+
+    def filter_by_inclination(dataset_class, min_inclination=None, max_inclination=None):
+        """
+        Remove all launches that are not in the given inclination range (inclusive range).
+        Args:
+            dataset_class: launch or satcat
+            min_inclination (float, optional): Minimum inclination (inclusive). Defaults to None.
+            max_inclination (float, optional): Maximum inclination (inclusive). Defaults to None.
+        """
+        
+        if min_inclination is not None:
+            dataset_class.df = dataset_class.df[dataset_class.df["Inc"] >= min_inclination]
+        
+        if max_inclination is not None:
+            dataset_class.df = dataset_class.df[dataset_class.df["Inc"] <= max_inclination]
+    
 
 # For testing
 if __name__ == "__main__":
