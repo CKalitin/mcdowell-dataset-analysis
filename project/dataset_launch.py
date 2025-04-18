@@ -63,6 +63,9 @@ class Launch:
         
         self.df["State"] = self.df["Launch_Site"].map(self.translation.launch_site_to_state_code) # Translate Launch_Site to State using the translation dictionary
         self.df["Country"] = self.df["State"].map(self.translation.state_code_to_state_name)
+        
+        self.df["Launch_Site_Parent"] = self.df["Launch_Site"].map(self.translation.launch_site_to_launch_site_parent)
+        self.df["Launch_Site_Name"] = self.df["Launch_Site_Parent"].map(self.translation.launch_site_to_launch_site_name) # Translate Launch_Site to Launch_Site_Name using the translation dictionary
 
     def process_satcat_dependent_columns(self, satcat):
         """

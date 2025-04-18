@@ -96,6 +96,8 @@ class Translation:
         self.generate_launch_site_to_state_code()
         self.generate_org_to_state_code()
         self.generate_state_code_to_state_name()
+        self.generate_launch_site_to_launch_site_parent()
+        self.generate_launch_site_to_launch_site_name()
 
     def generate_lv_type_to_lv_family(self, filePath = "./datasets/lv.tsv"):
         """
@@ -148,4 +150,33 @@ class Translation:
             reader.__next__() # Skip the index row
             reader.__next__() # Skip the header row
             self.state_code_to_state_name = {row[0].strip(): row[7].strip() for row in reader}
-            self.org_code_to_org_name = self.state_code_to_state_name.copy()
+    
+    def generate_launch_site_to_launch_site_parent(self, filePath = "./datasets/sites.tsv"):
+        """
+        Generate a dictionary that translate Launch_Site to Launch_Site_Parent.
+        This requires launch_site.tsv file
+        Launch Sites Text File: https://planet4589.org/space/gcat/data/tables/sites.html
+        """
+        
+        with open(filePath, 'r', encoding='utf-8') as file:
+            reader = csv.reader(file, delimiter='\t')
+            reader.__next__() # Skip the index row
+            reader.__next__() # Skip the header row
+            self.launch_site_to_launch_site_parent = {row[0].strip(): row[7].replace("-","").strip() for row in reader}
+    
+    def generate_launch_site_to_launch_site_name(self, filePath = "./datasets/sites.tsv"):
+        """
+        Generate a dictionary that translate Launch_Site to Launch_Site_Name.
+        This requires launch_site.tsv file
+        Launch Sites Text File: https://planet4589.org/space/gcat/data/tables/sites.html
+        """
+        
+        with open(filePath, 'r', encoding='utf-8') as file:
+            reader = csv.reader(file, delimiter='\t')
+            reader.__next__() # Skip the index row
+            reader.__next__() # Skip the header row
+            # If short name is "-", use default name instead
+            self.launch_site_to_launch_site_name = {
+                row[0].strip(): row[14].strip() if row[14].strip() != "-" else row[8].strip()
+                for row in reader if len(row) > 14
+            }

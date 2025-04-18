@@ -1,9 +1,6 @@
 import pandas as pd
 import translations
 
-import dataframe_filters
-import dataset_launch
-
 class Satcat:
     """
     This contains all functions required for using McDowell's satellite catalog dataset.
@@ -198,6 +195,18 @@ class Satcat:
         
         self.df = self.df.merge(
             launch_df[["Launch_Tag", "Launch_Vehicle_Family"]],
+            on="Launch_Tag",
+            how="left"
+        )
+        
+        self.df = self.df.merge(
+            launch_df[["Launch_Tag", "Launch_Site_Parent"]],
+            on="Launch_Tag",
+            how="left"
+        )
+        
+        self.df = self.df.merge(
+            launch_df[["Launch_Tag", "Launch_Site_Name"]],
             on="Launch_Tag",
             how="left"
         )

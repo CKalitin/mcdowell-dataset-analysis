@@ -1,11 +1,6 @@
 import pandas as pd
 import dataset_satcat
 import dataset_launch
-
-# TODO:
-# filter by launch country (state code), harder for launch since no country code, need sites! TODO: add site codes dataset
-# filter by simplified launch site
-# filter by simplified launch pad
     
 class Filters:
     """
@@ -409,17 +404,51 @@ class Filters:
             dataset_class.df["State"].isin(state_codes)
         ]
 
-    def filter_by_country_name(dataset_class, country_names):
+    def filter_by_country(dataset_class, countries):
         """
         Remove all launches that are not in the given country names.
         Args:
             dataset_class: launch or satcat
-            country_names: List of country names to filter by. eg. ["USA", "CAN"]
+            countries: List of country names to filter by. eg. ["Canada", "Indonesia"]
         """
         
-        if (type(country_names) == str):
-            country_names = [country_names]
+        if (type(countries) == str):
+            countries = [countries]
         
         dataset_class.df = dataset_class.df[
-            dataset_class.df["Country"].isin(country_names)
+            dataset_class.df["Country"].isin(countries)
+        ]
+        
+    def filter_by_launch_site(dataset_class, launch_sites):
+        """
+        Remove all launches that are not in the given launch sites.
+        Args:
+            dataset_class: launch or satcat
+            launch_sites: List of launch sites to filter by. eg. ["Vandenberg Space Force Base", "Kennedy Space Center"]
+        See https://planet4589.org/space/gcat/data/tables/sites.html
+        """
+        
+        if (type(launch_sites) == str):
+            launch_sites = [launch_sites]
+        
+        dataset_class.df = dataset_class.df[
+            dataset_class.df["Launch_Site_Parent"].isin(launch_sites)
+        ]
+        
+    def filter_by_launch_site_name(dataset_class, launch_site_names):
+        """
+        Remove all launches that are not in the given launch site names.
+        Args:
+            dataset_class: launch or satcat
+            launch_site_names: List of launch site names to filter by. eg. ["Vandenberg Space Force Base", "Canaveral"]
+        See https://planet4589.org/space/gcat/data/tables/sites.html
+        Note that this is done off of launch site parents, which groups based on the ShortName column of sites.tsv.
+        It then converts into either the ShortEName or Name column if ShortEName is not present.
+        """
+        
+        if (type(launch_site_names) == str):
+            launch_site_names = [launch_site_names]
+        
+        dataset_class.df = dataset_class.df[
+            dataset_class.df["Launch_Site_Name"].isin(launch_site_names)
         ]
