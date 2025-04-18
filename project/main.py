@@ -20,4 +20,7 @@ mda.Filters.filter_by_state_code(dataset.launch, state_codes=["IN"])
 #mda.Filters.filter_by_inclination(dataset.satcat, min_inclination=75, max_inclination=90)  # Example values for perigee
 #mda.Filters.filter_by_payload_program_raw(dataset.launch, payload_programs=["OneWeb"])
 
-print(dataset.launch.df.head(20))  # Display the first few rows of the DataFrame for verification
+#print(dataset.launch.df.head(20))  # Display the first few rows of the DataFrame for verification
+
+print(dataset.translation.org_to_state_code["IN-AP"])
+print(dataset.translation.state_code_to_state_name[dataset.translation.org_to_state_code["IN-AP"]])

@@ -94,6 +94,8 @@ class Translation:
     def __init__(self):
         self.generate_lv_type_to_lv_family()
         self.generate_launch_site_to_state_code()
+        self.generate_org_to_state_code()
+        self.generate_state_code_to_state_name()
 
     def generate_lv_type_to_lv_family(self, filePath = "./datasets/lv.tsv"):
         """
@@ -101,6 +103,7 @@ class Translation:
         This requires lv.tsv file
         Launch Vehicle Families Text File: https://planet4589.org/space/gcat/web/lvs/family/index.html
         """
+        
         with open(filePath, 'r', encoding='utf-8') as file:
             reader = csv.reader(file, delimiter='\t')
             reader.__next__() # Skip the index row
@@ -119,3 +122,29 @@ class Translation:
             reader.__next__() # Skip the index row
             reader.__next__() # Skip the header row
             self.launch_site_to_state_code = {row[0].strip(): row[4].strip() for row in reader}
+            
+    def generate_org_to_state_code(self, filePath = "./datasets/orgs.tsv"):
+        """
+        Generate a dictionary that translate Launch_Site to State_Code.
+        This requires orgs.tsv file
+        Launch Sites Text File: https://planet4589.org/space/gcat/data/tables/orgs.html
+        """
+        
+        with open(filePath, 'r', encoding='utf-8') as file:
+            reader = csv.reader(file, delimiter='\t')
+            reader.__next__() # Skip the index row
+            reader.__next__() # Skip the header row
+            self.org_to_state_code = {row[0].strip(): row[2].strip() for row in reader}
+            
+    def generate_state_code_to_state_name(self, filePath = "./datasets/orgs.tsv"):
+        """
+        Generate a dictionary that translate State_Code to State_Name.
+        This requires orgs.tsv file
+        Launch Sites Text File: https://planet4589.org/space/gcat/data/tables/orgs.html
+        """
+        
+        with open(filePath, 'r', encoding='utf-8') as file:
+            reader = csv.reader(file, delimiter='\t')
+            reader.__next__() # Skip the index row
+            reader.__next__() # Skip the header row
+            self.state_code_to_state_name = {row[0].strip(): row[7].strip() for row in reader}
