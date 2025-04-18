@@ -10,11 +10,12 @@ class Filters:
     def __init__(self):
         pass
 
-    def filter_by_launch_category(dataset_class, launch_categories):
+    def filter_by_launch_category(dataset_class, launch_categories, negate=False):
         """
         Remove all launches that are not in the given launch categories.
         Args:
             launch_categories: List of launch categories to filter by. eg. ["O", "R", "M"]
+            negate: If True, remove all launches that are in the given launch categories. Defaults to False.
             
         O: Orbital  
         S: Suborbital (non-missile)  
@@ -35,17 +36,20 @@ class Filters:
         if (type(launch_categories) == str):
             launch_categories = [launch_categories]
         
+        condition = dataset_class.df["Launch_Code"].str[0].isin(launch_categories)
+        if negate:
+            condition = ~condition
+        
         # vectorized operation to filter the DataFrame
         # Faster than a for loop for some reason, kind vibe coding here tbh
-        dataset_class.df = dataset_class.df[
-            dataset_class.df["Launch_Code"].str[0].isin(launch_categories)
-        ]
+        dataset_class.df = dataset_class.df[condition]
         
-    def filter_by_launch_success_fraction(dataset_class, launch_success_fractions):
+    def filter_by_launch_success_fraction(dataset_class, launch_success_fractions, negate=False):
         """
         Remove all launches that are not in the given launch success fractions.
         Args:
             launch_success_fractions: List of launch success fractions to filter by. eg. ["S", "F"]
+            negate: If True, remove all launches that are in the given launch success fractions. Defaults to False.
             
         S: Success (propulsive success, regardless of payload data)  
         F: Failure  
@@ -60,30 +64,36 @@ class Filters:
         if (type(launch_success_fractions) == str):
             launch_success_fractions = [launch_success_fractions]
         
-        dataset_class.df = dataset_class.df[
-            dataset_class.df["Launch_Code"].str[1].isin(launch_success_fractions)
-        ]
+        condition = dataset_class.df["Launch_Code"].str[1].isin(launch_success_fractions)
+        if negate:
+            condition = ~condition
+        
+        dataset_class.df = dataset_class.df[condition]
 
-    def filter_by_launch_vehicle_raw(dataset_class, launch_vehicles):
+    def filter_by_launch_vehicle_raw(dataset_class, launch_vehicles, negate=False):
         """
         Remove all launches that are not in the given launch vehicles.
         Args:
             launch_vehicles: List of launch vehicles to filter by. eg. ["Kosmos 11K65M", "Falcon 9", "Starship V1.0 Ship"]
+            negate: If True, remove all launches that are in the given launch vehicles. Defaults to False.
         Launch Vehicle List: https://planet4589.org/space/gcat/data/tables/lv.html
         """
         
         if (type(launch_vehicles) == str):
             launch_vehicles = [launch_vehicles]
         
-        dataset_class.df = dataset_class.df[
-            dataset_class.df["LV_Type"].isin(launch_vehicles)
-        ]
+        condition = dataset_class.df["LV_Type"].isin(launch_vehicles)
+        if negate:
+            condition = ~condition
         
-    def filter_by_launch_vehicle_family(dataset_class, launch_vehicle_families):
+        dataset_class.df = dataset_class.df[condition]
+        
+    def filter_by_launch_vehicle_family(dataset_class, launch_vehicle_families, negate=False):
         """
         Remove all launches that are not in the given launch vehicle families.
         Args:
             launch_vehicle_families: List of launch vehicles to filter by. eg. ["Electron", "Falcon9"]
+            negate: If True, remove all launches that are in the given launch vehicle families. Defaults to False.
         Launch Vehicle Family List: https://planet4589.org/space/gcat/data/tables/family.html  
         Launch Vehicle List (With Family): https://planet4589.org/space/gcat/data/tables/lv.html
         """
@@ -91,43 +101,52 @@ class Filters:
         if (type(launch_vehicle_families) == str):
             launch_vehicle_families = [launch_vehicle_families]
         
-        dataset_class.df = dataset_class.df[
-            dataset_class.df["Launch_Vehicle_Family"].isin(launch_vehicle_families)
-        ]
+        condition = dataset_class.df["Launch_Vehicle_Family"].isin(launch_vehicle_families)
+        if negate:
+            condition = ~condition
+        
+        dataset_class.df = dataset_class.df[condition]
 
-    def filter_by_launch_site_raw(dataset_class, launch_sites):
+    def filter_by_launch_site_raw(dataset_class, launch_sites, negate=False):
         """
         Remove all launches that are not in the given launch sites.
         Args:
             launch_sites: List of launch sites to filter by. eg. ["VFSB", "KSC"]
+            negate: If True, remove all launches that are in the given launch sites. Defaults to False.
         """
         
         if (type(launch_sites) == str):
             launch_sites = [launch_sites]
-            
-        dataset_class.df = dataset_class.df[
-            dataset_class.df["Launch_Site"].isin(launch_sites)
-        ]
+        
+        condition = dataset_class.df["Launch_Site"].isin(launch_sites)
+        if negate:
+            condition = ~condition
+        
+        dataset_class.df = dataset_class.df[condition]
 
-    def filter_by_launch_pad_raw(dataset_class, launch_pads):
+    def filter_by_launch_pad_raw(dataset_class, launch_pads, negate=False):
         """
         Remove all launches that are not in the given launch pads.
         Args:
             launch_pads: List of launch pads to filter by. eg. ["SLC4E", "LC39A"]
+            negate: If True, remove all launches that are in the given launch pads. Defaults to False.
         """
         
         if (type(launch_pads) == str):
             launch_pads = [launch_pads]
         
-        dataset_class.df = dataset_class.df[
-            dataset_class.df["Launch_Pad"].isin(launch_pads)
-        ]
+        condition = dataset_class.df["Launch_Pad"].isin(launch_pads)
+        if negate:
+            condition = ~condition
+        
+        dataset_class.df = dataset_class.df[condition]
 
-    def filter_by_sat_type_coarse(dataset_class, sat_types):
+    def filter_by_sat_type_coarse(dataset_class, sat_types, negate=False):
         """
         Remove all launches that are not in the given launch categories.
         Args:
             launch_categories: List of launch categories to filter by. eg. ["P", "R"]
+            negate: If True, remove all launches that are in the given launch categories. Defaults to False.
         """
 
         if (type(dataset_class) != dataset_satcat.Satcat):
@@ -136,17 +155,20 @@ class Filters:
         if (type(sat_types) == str):
             sat_types = [sat_types]
         
+        condition = dataset_class.df["Type"].str[0].isin(sat_types)
+        if negate:
+            condition = ~condition
+        
         # vectorized operation to filter the DataFrame
-        # Faster than a for loop for some reason, kind vibe coding here tbh
-        dataset_class.df = dataset_class.df[
-            dataset_class.df["Type"].str[0].isin(sat_types)
-        ]
+        # Faster than a for loop for some reason, kind vibe coding here tbh - nvm I've learned now python is not a real language
+        dataset_class.df = dataset_class.df[condition]
     
-    def filter_by_payload_category_raw(dataset_class, payload_categories):
+    def filter_by_payload_category_raw(dataset_class, payload_categories, negate=False):
         """
         Remove all launches that are not in the given payload types.
         Args:
             payload_categories: List of payload types to filter by. eg. ["Other", "Communications"]
+            negate: If True, remove all launches that are in the given payload types. Defaults to False.
         """
         
         if (type(dataset_class) != dataset_satcat.Satcat):
@@ -155,17 +177,17 @@ class Filters:
         if (type(payload_categories) == str):
             payload_categories = [payload_categories]
         
-        # vectorized operation to filter the DataFrame
-        # Faster than a for loop for some reason, kind vibe coding here tbh
-        dataset_class.df = dataset_class.df[
-            dataset_class.df["Payload_Category"].isin(payload_categories)
-        ]
+        condition = dataset_class.df["Payload_Category"].isin(payload_categories)
+        if negate:
+            condition = ~condition
+        dataset_class.df = dataset_class.df[condition]
     
-    def filter_by_simple_payload_category(dataset_class, payload_categories):
+    def filter_by_simple_payload_category(dataset_class, payload_categories, negate=False):
         """
         Remove all launches that are not in the given payload types.
         Args:
             payload_categories: List of payload types to filter by. eg. ["Other", "Communications"]
+            negate: If True, remove all launches that are in the given payload types. Defaults to False.
         """
         
         if (type(dataset_class) != dataset_satcat.Satcat):
@@ -174,17 +196,18 @@ class Filters:
         if (type(payload_categories) == str):
             payload_categories = [payload_categories]
         
-        # vectorized operation to filter the DataFrame
-        # Faster than a for loop for some reason, kind vibe coding here tbh
-        dataset_class.df = dataset_class.df[
-            dataset_class.df["Simple_Payload_Category"].isin(payload_categories)
-        ]
+        condition = dataset_class.df["Simple_Payload_Category"].isin(payload_categories)
+        if negate:
+            condition = ~condition
         
-    def filter_by_payload_program_raw(dataset_class, payload_programs):
+        dataset_class.df = dataset_class.df[condition]
+        
+    def filter_by_payload_program_raw(dataset_class, payload_programs, negate=False):
         """
         Remove all launches that are not in the given payload programs.
         Args:
             payload_programs: List of payload programs to filter by. eg. ["Other", "Communications"]
+            negate: If True, remove all launches that are in the given payload programs. Defaults to False.
         """
         
         if (type(dataset_class) != dataset_satcat.Satcat):
@@ -193,11 +216,13 @@ class Filters:
         if (type(payload_programs) == str):
             payload_programs = [payload_programs]
         
+        condition = dataset_class.df["Payload_Program"].isin(payload_programs)
+        if negate:
+            condition = ~condition
+        
         # vectorized operation to filter the DataFrame
         # Faster than a for loop for some reason, kind vibe coding here tbh
-        dataset_class.df = dataset_class.df[
-            dataset_class.df["Payload_Program"].isin(payload_programs)
-        ]
+        dataset_class.df = dataset_class.df[condition]
         
     def filter_by_launch_date(dataset_class, start_date=None, end_date=None):
         """
@@ -295,36 +320,42 @@ class Filters:
         if max_max is not None:
             dataset_class.df = dataset_class.df[dataset_class.df[mass_col] <= max_max]
             
-    def filter_by_orbit_raw(dataset_class, orbits):
+    def filter_by_orbit_raw(dataset_class, orbits, negate=False):
         """
         Remove all launches that are not in the given orbit. This uses Jonathan McDowell's raw orbit tags. Eg. "LLEO/I", "VHEO", "DSO", "GEO/NS"
         See https://planet4589.org/space/gcat/web/intro/orbits.html for more information.
         Args:
             dataset_class: launch or satcat
             orbit (string or string array): orbit tag, see: https://planet4589.org/space/gcat/web/intro/orbits.html
+            negate (bool, optional): If True, remove all launches that are in the given orbit. Defaults to False.
         """
         
         if type(orbits) == str:
             orbits = [orbits]
         
-        dataset_class.df = dataset_class.df[
-            dataset_class.df["OpOrbit"].isin(orbits)
-        ]
+        condition = dataset_class.df["OpOrbit"].isin(orbits)
+        if negate:
+            condition = ~condition
+        
+        dataset_class.df = dataset_class.df[condition]
 
-    def filter_by_orbit(dataset_class, orbits):
+    def filter_by_orbit(dataset_class, orbits, negate=False):
         """
         Remove all launches that are not in the given orbit. This uses simple orbit categories. Eg. "LEO", "MEO", "GTO", "BEO"
         Args:
             dataset_class: launch or satcat
             orbits (string or string array): simple orbit tags 
+            negate (bool, optional): If True, remove all launches that are in the given orbit. Defaults to False.
         """
         
         if type(orbits) == str:
             orbits = [orbits]
-            
-        dataset_class.df = dataset_class.df[
-            dataset_class.df["Simple_Orbit"].isin(orbits)
-        ]
+        
+        condition = dataset_class.df["Simple_Orbit"].isin(orbits)
+        if negate:
+            condition = ~condition
+        
+        dataset_class.df = dataset_class.df[condition]
 
     def filter_by_apogee(dataset_class, min_apogee=None, max_apogee=None):
         """
@@ -371,12 +402,13 @@ class Filters:
         if max_inclination is not None:
             dataset_class.df = dataset_class.df[dataset_class.df["Inc"] <= max_inclination]
 
-    def filter_by_manufacturer(dataset_class, manufacturers):
+    def filter_by_manufacturer(dataset_class, manufacturers, negate=False):
         """
         Remove all launches that are not in the given manufacturers.
         Args:
             dataset_class: launch or satcat
             manufacturers: List of manufacturers to filter by. eg. ["SpaceX", "Rocket Lab"]
+            negate: If True, remove all launches that are in the given manufacturers. Defaults to False.
         """
         
         if (type(dataset_class) != dataset_satcat.Satcat):
@@ -385,62 +417,74 @@ class Filters:
         if (type(manufacturers) == str):
             manufacturers = [manufacturers]
         
-        dataset_class.df = dataset_class.df[
-            dataset_class.df["Manufacturer"].isin(manufacturers)
-        ]
+        condition = dataset_class.df["Manufacturer"].isin(manufacturers)
+        if negate:
+            condition = ~condition
         
-    def filter_by_state_code(dataset_class, state_codes):
+        dataset_class.df = dataset_class.df[condition]
+        
+    def filter_by_state_code(dataset_class, state_codes, negate=False):
         """
         Remove all launches that are not in the given state codes.
         Args:
             dataset_class: launch or satcat
-            state_codes: List of state codes to filter by. eg. ["USA", "CAN"]
+            state_codes: List of state codes to filter by. eg. ["US", "ID"]
+            negate: If True, remove all launches that are in the given state codes. Defaults to False.
         """
         
         if (type(state_codes) == str):
             state_codes = [state_codes]
         
-        dataset_class.df = dataset_class.df[
-            dataset_class.df["State"].isin(state_codes)
-        ]
+        condition = dataset_class.df["State"].isin(state_codes)
+        if negate:
+            condition = ~condition
+        
+        dataset_class.df = dataset_class.df[condition]
 
-    def filter_by_country(dataset_class, countries):
+    def filter_by_country(dataset_class, countries, negate=False):
         """
         Remove all launches that are not in the given country names.
         Args:
             dataset_class: launch or satcat
             countries: List of country names to filter by. eg. ["Canada", "Indonesia"]
+            negate: If True, remove all launches that are in the given country names. Defaults to False.
         """
         
         if (type(countries) == str):
             countries = [countries]
         
-        dataset_class.df = dataset_class.df[
-            dataset_class.df["Country"].isin(countries)
-        ]
+        condition = dataset_class.df["Country"].isin(countries)
+        if negate:
+            condition = ~condition
         
-    def filter_by_launch_site(dataset_class, launch_sites):
+        dataset_class.df = dataset_class.df[condition]
+        
+    def filter_by_launch_site(dataset_class, launch_sites, negate=False):
         """
         Remove all launches that are not in the given launch sites.
         Args:
             dataset_class: launch or satcat
             launch_sites: List of launch sites to filter by. eg. ["Vandenberg Space Force Base", "Kennedy Space Center"]
+            negate: If True, remove all launches that are in the given launch sites. Defaults to False.
         See https://planet4589.org/space/gcat/data/tables/sites.html
         """
         
         if (type(launch_sites) == str):
             launch_sites = [launch_sites]
         
-        dataset_class.df = dataset_class.df[
-            dataset_class.df["Launch_Site_Parent"].isin(launch_sites)
-        ]
+        condition = dataset_class.df["Launch_Site_Parent"].isin(launch_sites)
+        if negate:
+            condition = ~condition
         
-    def filter_by_launch_site_name(dataset_class, launch_site_names):
+        dataset_class.df = dataset_class.df[condition]
+        
+    def filter_by_launch_site_name(dataset_class, launch_site_names, negate=False):
         """
         Remove all launches that are not in the given launch site names.
         Args:
             dataset_class: launch or satcat
             launch_site_names: List of launch site names to filter by. eg. ["Vandenberg Space Force Base", "Canaveral"]
+            negate: If True, remove all launches that are in the given launch site names. Defaults to False.
         See https://planet4589.org/space/gcat/data/tables/sites.html
         Note that this is done off of launch site parents, which groups based on the ShortName column of sites.tsv.
         It then converts into either the ShortEName or Name column if ShortEName is not present.
@@ -449,6 +493,8 @@ class Filters:
         if (type(launch_site_names) == str):
             launch_site_names = [launch_site_names]
         
-        dataset_class.df = dataset_class.df[
-            dataset_class.df["Launch_Site_Name"].isin(launch_site_names)
-        ]
+        condition = dataset_class.df["Launch_Site_Name"].isin(launch_site_names)
+        if negate:
+            condition = ~condition
+        
+        dataset_class.df = dataset_class.df[condition]
