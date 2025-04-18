@@ -154,6 +154,25 @@ class Filters:
             dataset_class.df["Type"].str[0].isin(sat_types)
         ]
         
+    def filter_by_simple_payload_category(dataset_class, payload_categories):
+        """
+        Remove all launches that are not in the given payload types.
+        Args:
+            payload_categories: List of payload types to filter by. eg. ["Other", "Communications"]
+        """
+        
+        if (type(dataset_class) != dataset_satcat.Satcat):
+            raise ValueError("satcat dataset expected by filter_by_simple_payload_type(). Cannot sort by sat type in launch dataset.")
+        
+        if (type(payload_categories) == str):
+            payload_categories = [payload_categories]
+        
+        # vectorized operation to filter the DataFrame
+        # Faster than a for loop for some reason, kind vibe coding here tbh
+        dataset_class.df = dataset_class.df[
+            dataset_class.df["Simple_Payload_Category"].isin(payload_categories)
+        ]
+        
     def filter_by_launch_date(dataset_class, start_date=None, end_date=None):
         """
         Remove all launches that are not in the given date range (inclusive range).
@@ -268,7 +287,7 @@ class Filters:
 
     def filter_by_orbit(dataset_class, orbits):
         """
-        Remove all launches that are not in the given orbit. This uses simplified orbit categories. Eg. "LEO", "MEO", "GTO", "BEO"
+        Remove all launches that are not in the given orbit. This uses simple orbit categories. Eg. "LEO", "MEO", "GTO", "BEO"
         Args:
             dataset_class: launch or satcat
             orbits (string or string array): simple orbit tags 
@@ -278,7 +297,7 @@ class Filters:
             orbits = [orbits]
             
         dataset_class.df = dataset_class.df[
-            dataset_class.df["Simplified_Orbit"].isin(orbits)
+            dataset_class.df["Simple_Orbit"].isin(orbits)
         ]
 
 

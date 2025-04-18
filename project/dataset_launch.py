@@ -49,9 +49,9 @@ class Launch:
             # Convert Mcdowell's Vague date format to pandas datetime format
             self.df[col] = pd.to_datetime(self.df[col], format="%Y %b %d", errors="coerce")
 
-        self.df["Simplified_Orbit"] = self.df["Category"].str.split(" ").str[1].str.strip() # Extract orbit from category eg. "Sat SSO SD 0"
-        self.df["Simplified_Orbit"] = self.df["Simplified_Orbit"].where(self.df["Simplified_Orbit"].isin(self.translation.launch_category_to_simplified_orbit.keys()), float("nan")) # If raw orbit not present in dictionary keys, NaN
-        self.df["Simplified_Orbit"] = self.df["Simplified_Orbit"].replace(self.translation.launch_category_to_simplified_orbit) # Translate to simplified orbit
+        self.df["Simple_Orbit"] = self.df["Category"].str.split(" ").str[1].str.strip() # Extract orbit from category eg. "Sat SSO SD 0"
+        self.df["Simple_Orbit"] = self.df["Simple_Orbit"].where(self.df["Simple_Orbit"].isin(self.translation.launch_category_to_simple_orbit.keys()), float("nan")) # If raw orbit not present in dictionary keys, NaN
+        self.df["Simple_Orbit"] = self.df["Simple_Orbit"].replace(self.translation.launch_category_to_simple_orbit) # Translate to simple orbit
 
         self.df["Launch_Vehicle_Family"] = self.df["LV_Type"].map(self.translation.lv_type_to_lv_family) # Translate LV_Type to LV_Family using the translation dictionary
 
@@ -59,7 +59,7 @@ class Launch:
         """
         Create columns in launch_df derived from satcat data:
         - Payload_Mass: Sum of masses for all payloads in a launch
-        - Canonical Orbit Parameters: [ODate, Ap, Pe, Inc, OpOrbit, Simplified Orbit]
+        - Canonical Orbit Parameters: [ODate, Ap, Pe, Inc, OpOrbit, Simple Orbit]
         Args:
             satcat_df: DataFrame containing the satcat class.
         """

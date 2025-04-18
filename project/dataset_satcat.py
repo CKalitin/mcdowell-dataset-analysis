@@ -41,6 +41,7 @@ class Satcat:
         # Strip Launch_Tags & Piece & JCAT
         self.df["Launch_Tag"] = self.df["Launch_Tag"].astype(str).str.upper().str.strip()
         self.df["Piece"] = self.df["Piece"].astype(str).str.upper().str.strip()
+        self.df["JCAT"] = self.df["JCAT"].astype(str).str.upper().str.strip()
         
         date_cols = ["LDate", "SDate", "DDate", "ODate"]
         for col in date_cols:
@@ -63,10 +64,10 @@ class Satcat:
         self.df["DryMass"] = pd.to_numeric(self.df["DryMass"], errors="coerce").fillna(0)
         self.df["TotMass"] = pd.to_numeric(self.df["TotMass"], errors="coerce").fillna(0)
         
-        # Create Simplified Orbit Column
+        # Create Simple Orbit Column
         # Orbits: https://planet4589.org/space/gcat/web/intro/orbits.html
-        self.df["Simplified_Orbit"] = self.df["OpOrbit"].str.strip()
-        self.df["Simplified_Orbit"] = self.df["Simplified_Orbit"].replace(self.translation.opOrbit_to_simplified_orbit)
+        self.df["Simple_Orbit"] = self.df["OpOrbit"].str.strip()
+        self.df["Simple_Orbit"] = self.df["Simple_Orbit"].replace(self.translation.opOrbit_to_simple_orbit)
     
     def process_psatcat_dependent_columns(self, psatcat):
         """
@@ -89,8 +90,8 @@ class Satcat:
         # Rename to avoid confusion with satcat columns
         psatcat_df.rename(columns={"#JCAT": "JCAT", "Name": "Payload_Name", "Program": "Payload_Program", "Class": "Payload_Class", "Category": "Payload_Category", "Discipline": "Payload_Discipline", "Result": "Payload_Result", "Comment": "Payload_Comment"}, inplace=True)
         
-        # Strip Piece
-        psatcat_df["Piece"] = psatcat_df["Piece"].astype(str).str.upper().str.strip()
+        # Strip JCAT
+        psatcat_df["JCAT"] = psatcat_df["JCAT"].astype(str).str.upper().str.strip()
         
         # Merge satcat_df with psatcat_df to get Name, using left join to keep all satellites
         self.df = self.df.merge(
@@ -134,6 +135,10 @@ class Satcat:
             on="JCAT",
             how="left"
         )
+        
+        self.df["Simple_Payload_Category"] = self.df["Payload_Category"].str.strip()
+        self.df["Simple_Payload_Category"] = self.df["Simple_Payload_Category"].replace(self.translation.payload_category_to_simple_payload_category)
+        
     
     def process_launch_dependent_columns(self, launch):
         """
