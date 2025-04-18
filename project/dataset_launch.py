@@ -32,6 +32,9 @@ class Launch:
         Lots of string manipulation to get the dates into a format that pandas can understand.
         """
         
+        # Remove second row of tsv, signifies date of last update
+        self.df = self.df.drop(index=0).reset_index(drop=True)
+        
         # Rename column "#Launch_Tag" to "Launch_Tag"
         self.df.rename(columns={"#Launch_Tag": "Launch_Tag"}, inplace=True)
         

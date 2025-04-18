@@ -38,6 +38,9 @@ class Satcat:
         Lots of string manipulation to get the dates into a format that pandas can understand.
         """
 
+        # Remove second row of tsv, signifies date of last update
+        self.df = self.df.drop(index=0).reset_index(drop=True)
+
         # Rename column "#Launch_Tag" to "Launch_Tag"
         self.df.rename(columns={"#JCAT": "JCAT"}, inplace=True)
         
@@ -205,22 +208,3 @@ class Satcat:
         self.df["Launch_Site"] = self.df["Launch_Site"].fillna("")
         self.df["Launch_Pad"] = self.df["Launch_Pad"].fillna("")
         self.df["Launch_Vehicle_Family"] = self.df["Launch_Vehicle_Family"].fillna("")
-        
-    
-# For testing
-if __name__ == "__main__":
-    pd.set_option('display.max_columns', None)
-    pd.set_option('display.max_rows', 100)  
-    
-    launch = dataset_launch.Launch()
-    satcat = Satcat()
-    #dataset.filter_by_launch_date(start_date="2000-01-01", end_date="2000-02-01")
-    #dataset.filter_by_sat_type_coarse(["P"])
-
-    satcat.process_launch_dependent_columns(launch)
-
-    dataframe_filters.Filters.filter_by_launch_vehicle(satcat, launch_vehicles=["Electron"])
-    #dataframe_filters.Filters.filter_by_orbit(satcat, orbits=["SSO"])
-    
-    print(satcat.df.tail(25))  # Display the first few rows of the DataFrame for verification
-    print(len(satcat.df))
