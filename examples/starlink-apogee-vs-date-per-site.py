@@ -31,5 +31,5 @@ mda.ChartUtils.plot_scatter(
     title='Starlink Launches: Apogee vs. Launch Date by Launch Pad',
     xlabel='Launch Date',
     ylabel='Apogee (km)',
-    output_path='charts/starlink_apogee_vs_date.png'
+    output_path='examples/outputs/starlink_apogee_vs_date.png'
 )

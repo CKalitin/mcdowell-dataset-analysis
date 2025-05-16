@@ -48,5 +48,5 @@ plt.legend(title='Launch Pad')
 plt.grid(True)
 
 # Save plot
-plt.savefig('charts/starlink_inclination_vs_date.png')
+plt.savefig('examples/outputs/starlink_inclination_vs_date.png')
 print("Plot saved as 'starlink_inclination_vs_date.png'.")

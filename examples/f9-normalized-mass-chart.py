@@ -51,6 +51,6 @@ mda.ChartUtils.plot_histogram(
     title='Falcon 9 Launches: Total Payload Mass by Orbit and Mass Range',
     xlabel='Payload Mass Range (Tons)',
     ylabel='Total Payload Mass (kg)',
-    output_path='charts/total_mass_by_orbit_and_mass_range.png',
+    output_path='examples/outputs/total_mass_by_orbit_and_mass_range.png',
     stacked=True  # Enable stacked bars
 )
