@@ -62,12 +62,12 @@ class ChartUtils:
         plt.close()
         print(f"Plot saved as '{output_path}'.")
 
-    def plot_histogram(df, title, xlabel, ylabel, output_path, figsize=(10, 6)):
+    def plot_histogram(df, title, xlabel, ylabel, output_path, stacked=True, figsize=(10, 6)):
         """
         Generate a histogram-like plot for a DataFrame with binned data.
         """
         plt.figure(figsize=figsize)
-        df.plot(kind='bar', stacked=False)
+        df.plot(kind='bar', stacked=stacked)
         plt.title(title)
         plt.xlabel(xlabel)
         plt.ylabel(ylabel)
