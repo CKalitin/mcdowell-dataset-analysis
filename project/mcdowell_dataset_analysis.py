@@ -3,9 +3,10 @@ from dataset_launch import Launch
 from dataset_satcat import Satcat
 from dataframe_filters import Filters
 from translations import Translation
+from chart_utils import ChartUtils
 
 # Expose Launch and Satcat directly in this module's namespace
-__all__ = ['Launch', 'Satcat', 'Filters', 'McdowellDataset', 'Translation']
+__all__ = ['Launch', 'Satcat', 'Filters', 'McdowellDataset', 'Translation', 'ChartUtils']
 
 class McdowellDataset:
     """
