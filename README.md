@@ -10,7 +10,6 @@ Google sheets is terrible software once you reach 10000 lines, excel too
 Going to manually write the csv analysis library and use plotly for display. Must be end-to-end, start with a natural language prompt, get a chart as a result in a couple of iterations. 
 
 TODO:
-1. Add psatcat and sites and orgs datasets in separate files
-2. Create example chart csv outputs for google sheets graphs
-3. Use plotly to create a chart from the csv output
-4. Make plotly beautiful
+1. Plotly
+2. Use auxcat / parents of satellites to get their initial orbits
+3. Documentation of everything and what to use for the AIs
