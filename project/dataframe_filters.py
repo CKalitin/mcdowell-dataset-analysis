@@ -10,6 +10,36 @@ class Filters:
     def __init__(self):
         pass
 
+    def filter_by_mission(dataset_class, pattern, column="Mission", case=False, negate=False):
+        """
+        Filter by regex pattern in a specified column (e.g., 'Starlink' in Mission).
+        Used to filter by mission type (eg. if you want all Starlink launches)
+        """
+        
+        if (type(dataset_class) != dataset_launch.Launch):
+            raise ValueError("Launch dataset expected by filter_by_mission(). Cannot sort by mission in satcat dataset.")
+        
+        condition = dataset_class.df[column].str.contains(pattern, case=case, na=False, regex=True)
+        if negate:
+            condition = ~condition
+            
+        dataset_class.df = dataset_class.df[condition]
+
+    def filter_by_Object_Name(dataset_class, pattern, column="PLName", case=False, negate=False):
+        """
+        Filter by regex pattern in a specified column (e.g., 'Starlink' in Object_Name).
+        Used to filter by objects of the same series, eg. all Starlink satellites
+        """
+        
+        if (type(dataset_class) != dataset_satcat.Satcat):
+            raise ValueError("Satcat dataset expected by filter_by_Object_Name(). Cannot sort by object name in launch dataset.")
+        
+        condition = dataset_class.df[column].str.contains(pattern, case=case, na=False, regex=True)
+        if negate:
+            condition = ~condition
+            
+        dataset_class.df = dataset_class.df[condition]
+
     def filter_by_launch_category(dataset_class, launch_categories, negate=False):
         """
         Remove all launches that are not in the given launch categories.
@@ -31,7 +61,7 @@ class Filters:
         """
         
         if (type(dataset_class) != dataset_launch.Launch):
-            raise ValueError("launch dataset expected by filter_by_launch_category(). Cannot sort by launch category in satcat dataset.")
+            raise ValueError("Launch dataset expected by filter_by_launch_category(). Cannot sort by launch category in satcat dataset.")
         
         if (type(launch_categories) == str):
             launch_categories = [launch_categories]
@@ -59,7 +89,7 @@ class Filters:
         """
         
         if (type(dataset_class) != dataset_launch.Launch):
-            raise ValueError("launch dataset expected by filter_by_launch_success_fraction(). Cannot sort by launch success fraction in satcat dataset.")
+            raise ValueError("Launch dataset expected by filter_by_launch_success_fraction(). Cannot sort by launch success fraction in satcat dataset.")
         
         if (type(launch_success_fractions) == str):
             launch_success_fractions = [launch_success_fractions]

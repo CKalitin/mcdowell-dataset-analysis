@@ -42,7 +42,7 @@ orbit_counts = {}
 
 for orbit, orbit_df in orbit_dfs.items():
     orbit_counts[orbit] = pd.cut(orbit_df.df['Payload_Mass'], bins=bins, labels=mass_labels, include_lowest=True).value_counts()
-    orbit_counts[orbit] = orbit_counts[orbit].reindex(mass_labels)  # Reindex to ensure all mass ranges are present
+    orbit_counts[orbit] = orbit_counts[orbit].reindex(mass_labels)  # Reindex to ensure all mass ranges in the right order
 
 # Now create a new dataframe with the payload mass range as the index and the orbit types as columns
 # Y axis should be mass ranges, x axis should be orbit types
