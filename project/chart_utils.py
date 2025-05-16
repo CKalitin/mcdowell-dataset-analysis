@@ -72,6 +72,8 @@ class ChartUtils:
         plt.xlabel(xlabel)
         plt.ylabel(ylabel)
         plt.grid(True)
+        plt.tight_layout()
         plt.savefig(output_path)
         plt.close()
+        
         print(f"Plot saved as '{output_path}'.")
