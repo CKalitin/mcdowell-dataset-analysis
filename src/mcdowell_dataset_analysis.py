@@ -13,11 +13,11 @@ class McdowellDataset:
     This class serves as a wrapper for the Launch and Satcat classes, providing a unified interface for analysis.
     """
     
-    def __init__(self, dataset_directory=None):
-        self.translation = Translation()
+    def __init__(self, dataset_directory="./datasets/"):
+        self.translation = Translation(dataset_directory=dataset_directory)
         
-        self.launch = Launch(self.translation)
-        self.satcat = Satcat(self.translation)
+        self.launch = Launch(self.translation, dataset_directory=dataset_directory)
+        self.satcat = Satcat(self.translation, dataset_directory=dataset_directory)
         
         self.launch.process_satcat_dependent_columns(self.satcat)
         self.satcat.process_launch_dependent_columns(self.launch)

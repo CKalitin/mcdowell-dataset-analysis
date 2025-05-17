@@ -91,87 +91,99 @@ class Translation:
         "SS": "Other"
     }
     
-    def __init__(self):
-        self.generate_lv_type_to_lv_family()
-        self.generate_launch_site_to_state_code()
-        self.generate_org_to_state_code()
-        self.generate_state_code_to_state_name()
-        self.generate_launch_site_to_launch_site_parent()
-        self.generate_launch_site_to_launch_site_name()
+    def __init__(self, dataset_directory="./datasets/"):
+        self.generate_lv_type_to_lv_family(dataset_directory=dataset_directory)
+        self.generate_launch_site_to_state_code(dataset_directory=dataset_directory)
+        self.generate_org_to_state_code(dataset_directory=dataset_directory)
+        self.generate_state_code_to_state_name(dataset_directory=dataset_directory)
+        self.generate_launch_site_to_launch_site_parent(dataset_directory=dataset_directory)
+        self.generate_launch_site_to_launch_site_name(dataset_directory=dataset_directory)
 
-    def generate_lv_type_to_lv_family(self, filePath = "./datasets/lv.tsv"):
+    def generate_lv_type_to_lv_family(self, dataset_directory = "./datasets/"):
         """
         Generate a dictionary that translate LV_Type to LV_Family.
         This requires lv.tsv file
         Launch Vehicle Families Text File: https://planet4589.org/space/gcat/web/lvs/family/index.html
         """
         
-        with open(filePath, 'r', encoding='utf-8') as file:
+        file_path = f"{dataset_directory}lv.tsv"
+        
+        with open(file_path, 'r', encoding='utf-8') as file:
             reader = csv.reader(file, delimiter='\t')
             reader.__next__() # Skip the index row
             reader.__next__() # Skip the header row
             self.lv_type_to_lv_family = {row[0].strip(): row[1].strip() for row in reader}
             
-    def generate_launch_site_to_state_code(self, filePath = "./datasets/sites.tsv"):
+    def generate_launch_site_to_state_code(self, dataset_directory = "./datasets/"):
         """
         Generate a dictionary that translate Launch_Site to State_Code.
         This requires launch_site.tsv file
         Launch Sites Text File: https://planet4589.org/space/gcat/data/tables/sites.html
         """
         
-        with open(filePath, 'r', encoding='utf-8') as file:
+        file_path = f"{dataset_directory}sites.tsv"
+        
+        with open(file_path, 'r', encoding='utf-8') as file:
             reader = csv.reader(file, delimiter='\t')
             reader.__next__() # Skip the index row
             reader.__next__() # Skip the header row
             self.launch_site_to_state_code = {row[0].strip(): row[4].strip() for row in reader}
             
-    def generate_org_to_state_code(self, filePath = "./datasets/orgs.tsv"):
+    def generate_org_to_state_code(self, dataset_directory = "./datasets/"):
         """
         Generate a dictionary that translate Launch_Site to State_Code.
         This requires orgs.tsv file
         Launch Sites Text File: https://planet4589.org/space/gcat/data/tables/orgs.html
         """
         
-        with open(filePath, 'r', encoding='utf-8') as file:
+        file_path = f"{dataset_directory}orgs.tsv"
+        
+        with open(file_path, 'r', encoding='utf-8') as file:
             reader = csv.reader(file, delimiter='\t')
             reader.__next__() # Skip the index row
             reader.__next__() # Skip the header row
             self.org_to_state_code = {row[0].strip(): row[2].strip() for row in reader}
             
-    def generate_state_code_to_state_name(self, filePath = "./datasets/orgs.tsv"):
+    def generate_state_code_to_state_name(self, dataset_directory = "./datasets/"):
         """
         Generate a dictionary that translate State_Code to State_Name.
         This requires orgs.tsv file
         Launch Sites Text File: https://planet4589.org/space/gcat/data/tables/orgs.html
         """
         
-        with open(filePath, 'r', encoding='utf-8') as file:
+        file_path = f"{dataset_directory}orgs.tsv"
+        
+        with open(file_path, 'r', encoding='utf-8') as file:
             reader = csv.reader(file, delimiter='\t')
             reader.__next__() # Skip the index row
             reader.__next__() # Skip the header row
             self.state_code_to_state_name = {row[0].strip(): row[7].strip() for row in reader}
     
-    def generate_launch_site_to_launch_site_parent(self, filePath = "./datasets/sites.tsv"):
+    def generate_launch_site_to_launch_site_parent(self, dataset_directory = "./datasets/"):
         """
         Generate a dictionary that translate Launch_Site to Launch_Site_Parent.
         This requires launch_site.tsv file
         Launch Sites Text File: https://planet4589.org/space/gcat/data/tables/sites.html
         """
         
-        with open(filePath, 'r', encoding='utf-8') as file:
+        file_path = f"{dataset_directory}sites.tsv"
+        
+        with open(file_path, 'r', encoding='utf-8') as file:
             reader = csv.reader(file, delimiter='\t')
             reader.__next__() # Skip the index row
             reader.__next__() # Skip the header row
             self.launch_site_to_launch_site_parent = {row[0].strip(): row[7].replace("-","").strip() for row in reader}
     
-    def generate_launch_site_to_launch_site_name(self, filePath = "./datasets/sites.tsv"):
+    def generate_launch_site_to_launch_site_name(self, dataset_directory = "./datasets/"):
         """
         Generate a dictionary that translate Launch_Site to Launch_Site_Name.
         This requires launch_site.tsv file
         Launch Sites Text File: https://planet4589.org/space/gcat/data/tables/sites.html
         """
         
-        with open(filePath, 'r', encoding='utf-8') as file:
+        file_path = f"{dataset_directory}sites.tsv"
+        
+        with open(file_path, 'r', encoding='utf-8') as file:
             reader = csv.reader(file, delimiter='\t')
             reader.__next__() # Skip the index row
             reader.__next__() # Skip the header row

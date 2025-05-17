@@ -6,14 +6,15 @@ class Launch:
     This contains all functions required for using McDowell's launch dataset.
     """
 
-    def __init__(self, translation=None, file_path="./datasets/launch.tsv"):
+    def __init__(self, translation=None, dataset_directory="./datasets/"):
         """
         Initialize launch tsv file path and load the dataset into a pandas DataFrame.
         
         Launch.tsv column descriptions: https://planet4589.org/space/gcat/web/launch/lcols.html
         """
     
-        self.file_path = file_path
+        self.dataset_directory = dataset_directory
+        self.file_path = f"{dataset_directory}launch.tsv"
         self.translation = translation or translations.Translation() # beautiful pythonic syntax!
         
         self.df = pd.read_csv(self.file_path, sep="\t", encoding="utf-8") # load tsv into dataframe
@@ -24,7 +25,7 @@ class Launch:
         """ 
         Undo all filters
         """
-        self.__init__(translation=self.translation, file_path=self.file_path)
+        self.__init__(translation=self.translation, dataset_directory=self.dataset_directory)
     
     def preprocess_launch_df(self):
         """

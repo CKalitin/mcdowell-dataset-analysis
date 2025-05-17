@@ -6,18 +6,20 @@ class Satcat:
     This contains all functions required for using McDowell's satellite catalog dataset.
     """
 
-    def __init__(self, translation=None, file_path="./datasets/satcat.tsv", psatcat_path="./datasets/psatcat.tsv"):
+    def __init__(self, translation=None, dataset_directory="./datasets/"):
         """
         Load the raw satcat dataset into a pandas DataFrame.
         
         satcat.tsv column descriptions: https://planet4589.org/space/gcat/web/cat/cols.html
         """
         
-        self.file_path = file_path
+        self.dataset_directory = dataset_directory
+        self.satcat_path = f"{dataset_directory}satcat.tsv"
+        self.psatcat_path = f"{dataset_directory}psatcat.tsv"
         self.translation = translation or translations.Translation()
         
-        self.df = pd.read_csv(self.file_path, sep="\t", encoding="utf-8", low_memory=False) # load satcat tsv into dataframe
-        self.psatcat_df = pd.read_csv(psatcat_path, sep="\t", encoding="utf-8", low_memory=False) # load psatcat tsv into dataframe
+        self.df = pd.read_csv(self.satcat_path, sep="\t", encoding="utf-8", low_memory=False) # load satcat tsv into dataframe
+        self.psatcat_df = pd.read_csv(self.psatcat_path, sep="\t", encoding="utf-8", low_memory=False) # load psatcat tsv into dataframe
         
         self.preprocess_satcat_df()
         
@@ -27,7 +29,7 @@ class Satcat:
         """ 
         Undo all filters
         """
-        self.__init__(translation=self.translation, file_path=self.file_path)
+        self.__init__(translation=self.translation, dataset_directory=self.dataset_directory)
 
     def preprocess_satcat_df(self):
         """
