@@ -1,10 +1,22 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+import plotly.express as px
+import plotly.io as pio
 
 class ChartUtils:
     """
     This class contains utility functions for working with dataframes and generating charts.
     """
+    
+    orbit_color_map = {
+        'LEO': '#ffc000',
+        'SSO': "#ffdf80",
+        'MEO': '#cc0000',
+        'GTO': '#3d85c6',
+        'GEO': '#1155cc',
+        'HEO': "#51606e",
+        'BEO': '#3c4043'
+    }
     
     def pivot_dataframe(df, index_col, column_col, value_col):
         """
@@ -62,18 +74,50 @@ class ChartUtils:
         plt.close()
         print(f"Plot saved as '{output_path}'.")
 
-    def plot_histogram(df, title, xlabel, ylabel, output_path, stacked=True, figsize=(10, 6)):
-        """
-        Generate a histogram-like plot for a DataFrame with binned data.
-        """
-        plt.figure(figsize=figsize)
-        df.plot(kind='bar', stacked=stacked)
-        plt.title(title)
-        plt.xlabel(xlabel)
-        plt.ylabel(ylabel)
-        plt.grid(True)
-        plt.tight_layout()
-        plt.savefig(output_path)
-        plt.close()
+    def plot_histogram(df, title, subtitle, xlabel, ylabel, output_path, color_map, barmode='stack'):
+        fig = px.histogram(df,
+                    x=df.index,
+                    y=df.columns,
+                    title=f'<b>{title}</b><br><sup>{subtitle}</sup>',
+                    labels={'x': f'{xlabel}', 'y': f'{ylabel}'},
+                    barmode=barmode,
+                    color_discrete_map=color_map,
+                    )
+
+        fig.update_layout(
+            # Font settings
+            font=dict(family='Arial, sans-serif', size=20, color="#000000"),
+            title=dict(font=dict(size=40, family='Arial, sans-serif', color="#000000"), x=0.025, xanchor="left"),
+            # Background and borders
+            plot_bgcolor="white",
+            paper_bgcolor="white",
+            # Gridlines
+            xaxis=dict(
+                gridcolor="rgba(200, 200, 200, 0.5)",
+                linecolor="#000000",
+                tickangle=45,
+                title_font=dict(size=24, family="Arial, sans-serif"),
+                title_text=xlabel,
+            ),
+            yaxis=dict(
+                gridcolor="rgba(200, 200, 200, 0.5)",
+                linecolor="#000000",
+                title_font=dict(size=24, family="Arial, sans-serif"),
+                title_text=ylabel,
+            ),
+            # Legend
+            showlegend=True,
+            legend=dict(
+                font=dict(size=24, family="Arial, sans-serif"),
+                bordercolor="white",
+                borderwidth=1,
+                bgcolor="white",
+                title=dict(text=""),  # Add this line to remove title: "variable"
+            ),
+            # Remove hover effects and other embellishments
+            hovermode="x",
+        )
+
+        pio.write_image(fig, output_path, format='png', width=1280, height=720)
         
         print(f"Plot saved as '{output_path}'.")
