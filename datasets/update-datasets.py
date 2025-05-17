@@ -1,7 +1,6 @@
 import requests
 import os
 
-# Array of TSV file URLs
 urls = [
     "https://planet4589.org/space/gcat/tsv/launch/launch.tsv",
     "https://planet4589.org/space/gcat/tsv/tables/lv.tsv",
@@ -14,7 +13,6 @@ urls = [
 # Get the directory of the current script
 save_directory = os.path.dirname(os.path.abspath(__file__))
 
-# Download each file
 for url in urls:
     # Extract the file name from the URL
     file_name = os.path.basename(url)
@@ -28,7 +26,6 @@ for url in urls:
         with open(file_path, 'wb') as file:
             file.write(response.content)
         print(f"File downloaded successfully and saved to {file_path}")
-
     except requests.exceptions.RequestException as e:
         print(f"Error downloading {url}: {e}")
     except OSError as e:

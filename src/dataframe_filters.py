@@ -66,7 +66,7 @@ class Filters:
         if (type(launch_categories) == str):
             launch_categories = [launch_categories]
         
-        condition = dataset_class.df["Launch_Code"].str[0].isin(launch_categories)
+        condition = dataset_class.df["LaunchCode"].str[0].isin(launch_categories)
         if negate:
             condition = ~condition
         

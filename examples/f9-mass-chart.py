@@ -1,6 +1,8 @@
 import mcdowell_dataset_analysis as mda
 import pandas as pd
 import copy
+import plotly.express as px
+import plotly.io as pio
 
 # Initialize dataset
 dataset = mda.McdowellDataset()
@@ -34,10 +36,19 @@ output_df.to_csv('examples/outputs/f9_mass_by_orbit.csv', index=True)
 print("CSV file 'f9_mass_by_orbit.csv' has been created.")
 
 # Plot histogram
-mda.ChartUtils.plot_histogram(
+"""mda.ChartUtils.plot_histogram(
     output_df,
     title='Falcon 9 Launches: Payload Mass by Orbit',
     xlabel='Payload Mass Range (Tons)',
     ylabel='Number of Launches',
     output_path='examples/outputs/f9_mass_by_orbit.png'
-)
+)"""
+
+fig = px.histogram(output_df,
+                   x=output_df.index,
+                   y=output_df.columns,
+                   title='Falcon 9 Launches: Payload Mass by Orbit',
+                   labels={'x': 'Payload Mass Range (Tons)', 'y': 'Number of Launches'},
+                   barmode='group')
+
+pio.write_image(fig, 'examples/outputs/f9_mass_by_orbit.png', format='png', width=800, height=600)
