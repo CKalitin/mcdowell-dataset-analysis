@@ -1,3 +1,5 @@
+This is for manually updating the datasets, or use the python script.
+
 Source:
 https://planet4589.org/space/gcat/index.html
 
@@ -9,7 +11,7 @@ launch.tsv:
 Launch Lists > Full List (TSV)
 
 lv.tsv:  
-This is the only one where you have to go to another page: https://planet4589.org/space/gcat/web/lvs/index.html  
+This is the only one where you have to download from another page: https://planet4589.org/space/gcat/web/lvs/index.html  
 Launch Vehicles > Launch Vehicle List (TSV)
 
 orgs.tsv:  

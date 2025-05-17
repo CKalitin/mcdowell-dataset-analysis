@@ -30,7 +30,7 @@ output_df.columns = orbit_counts.keys()
 print(output_df)
 
 # Save to CSV
-output_df.to_csv('charts/f9_mass_by_orbit.csv', index=True)
+output_df.to_csv('examples/outputs/f9_mass_by_orbit.csv', index=True)
 print("CSV file 'f9_mass_by_orbit.csv' has been created.")
 
 # Plot histogram

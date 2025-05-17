@@ -20,7 +20,7 @@ print(filtered_df['Launch_Pad'].unique())
 pivoted_df = mda.ChartUtils.pivot_dataframe(filtered_df, 'Launch_Date', 'Launch_Pad', 'Apogee')
 
 # Save to CSV
-pivoted_df.to_csv('charts/starlink_apogee_vs_date.csv', index=False)
+pivoted_df.to_csv('examples/outputs/starlink_apogee_vs_date.csv', index=False)
 print("CSV file 'starlink_apogee_vs_date.csv' has been created.")
 
 # Create scatter plot

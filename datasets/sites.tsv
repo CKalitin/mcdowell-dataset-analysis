@@ -1,5 +1,5 @@
 #Site	Code	UCode	Type	StateCode	TStart	TStop	ShortName	Name	Location	Longitude	Latitude	Error	Parent	ShortEName	EName	Group	UName
-# Updated 2025 Apr 13 0451:06
+# Updated 2025 May 15 0336:04
 OCEAN	-	OCEAN	LS	EARTH	-	-	Ocean	Ocean launch sites	-	-	-	0.0000 	-	Ocean	-	-	Ocean launch sites
 A51	-	A51	LS	US	1968	1972	Area 51	Groom Lake Air Force Base, Area 51, Nevada	Groom Lake, Nevada	   -115.8000 	   37.2300 	0.1000 	NRO	-	-	-	Groom Lake Air Force Base, Area 51, Nevada
 AAAF	-	HADC	LS	US	1941 Apr 13	1949 Dec  2	AAAF	Alamagordo Army Air Field	-	   -106.1030 	   32.8496 	0.0001 	USAF	-	-	WS	Alamagordo Army Air Field
@@ -257,6 +257,7 @@ MINAKH	-	MINAKH	LS	SY	1992 Jul	*	MINAK -	Syrian missile base, Minakh, N of Halab
 MLD	-	MLD	LS	AAT	1970?	1984	MLD   -	Molodezhnaya, Enderby Land, Australian Antarctic Territory	-	     45.8500 	  -67.6600 	0.0200 	SU	-	-	-	Molodezhnaya, Enderby Land, Australian Antarctic Territory
 MRL	-	MRL	LS	N	1983 Nov 30	1984 Jan 15	MRL   -	Marka Range, Lista, Norway	-	      7.3000 	   58.2000 	0.1000 	N	-	-	-	Marka Range, Lista, Norway
 MRNV	-	MRNV	LS	US	1957	1957	MRNV  -	Mercury, Nevada	-	   -115.9800 	   36.6700 	0.0400 	USN/AEC	-	-	-	Mercury, Nevada
+MTWHITE	-	MTWHITE	LS	NZ	2024	-	Mt White Station	Mt White Station, Canterbury, New Zealand	-	    171.9400 	  -43.0500 	0.0200 	NZRA	-	-	-	Mt White Station
 MUPYONG	-	MUPYONG	LS	KP	2017	-	Mupyong-ni	Mupyong-ni, Chagang province	-	    126.4257 	   40.6112 	0.0001 	KP	-	-	-	Mupyong-ni, Chagang province
 NAMFI	-	NAMFI	LS	GR	1994	-	NAMFI	NATO Missile Firing Installation (NAMFI)	Chania, Crete	     24.2000 	   35.6000 	0.1500 	NATO	-	- -	-	NATO Missile Firing Installation (NAMFI)
 NAMPO	-	NAMPO	LS	KP	2015	-	Nampo	Scud launch site near Nampo, South Pyongan Prov. (Pyong'annam-do)	-	    125.5000 	   38.7500 	0.3000 	CMIK	-	-	-	Scud launch site near Nampo, South Pyongan Prov. (Pyong'annam-do)

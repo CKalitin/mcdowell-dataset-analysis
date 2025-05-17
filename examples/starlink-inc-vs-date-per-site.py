@@ -32,7 +32,7 @@ pivoted_df = pivoted_df.reset_index()
 pivoted_df = pivoted_df.sort_values(by='Launch_Date')
 
 # Save to CSV without index
-pivoted_df.to_csv('charts/starlink_inclination_vs_date.csv', index=False)
+pivoted_df.to_csv('examples/outputs/starlink_inclination_vs_date.csv', index=False)
 print("CSV file 'starlink_inclination_vs_date.csv' has been created.")
 
 # Create scatter plot

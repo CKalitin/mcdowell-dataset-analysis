@@ -1,5 +1,5 @@
 #Code	UCode	StateCode	Type	Class	TStart	TStop	ShortName	Name	Location	Longitude	Latitude	Error	Parent	ShortEName	EName	UName
-# Updated 2025 Apr 13 0451:06
+# Updated 2025 May 15 0336:04
 EARTH	EARTH	EARTH	AP	C	-	-	Earth	Earth	Earth	-	-	0.0200 	-	Earth (Terra)	Earth	Earth
 LUNA	LUNA	LUNA	AP	C	-	-	Luna	Luna	Luna	-	-	0.0200 	-	Moon	Moon	Luna
 AAT	AAT	AAT	CYP	C	1841	-	Aus. Antarctic	Australian Antarctic Territory	Davis Staton, Princess Elizabeth Land	     77.9700 	  -68.5800 	0.0200 	AU	AAT	Australian Antarctic Territory	Australian Antarctic Territory
@@ -54,6 +54,7 @@ CN-JL	CN-JL	CN	CYP	C	1949 Oct  1	-	Jilin	Jilin sheng	Changchun	    125.3300 	   
 CN-JS	CN-JS	CN	CYP	C	1949 Oct  1	-	Jiangsu	Jiangsu sheng	Nanjing	    118.7600 	   32.0600 	0.0200 	CN	Jiangsu	Jiangsu Province	江苏省
 CN-JX	CN-JX	CN	CYP	C	1949 Oct  1	-	Jiangxi	Jiangxi sheng	Nanchang	    115.8600 	   28.6800 	0.0200 	CN	Jiangxi	Jiangxi Province	江西省
 CN-LN	CN-LN	CN	CYP	C	1949 Oct  1	-	Liaoning	Liaoning sheng	Shenyang	    123.4300 	   41.8000 	0.0200 	CN	Liaoning	Liaoning Province	辽宁省
+CN-NM	CN-NM	CN	CYP	C	1949 Oct  1	-	Nei Menggu	Nei Menggu Zhizhiqu	Hohhot	    111.7500 	   40.8400 	0.0200 	CN	Inner Mongolia	Inner Mongolia Autonomous Region	内蒙古自治区
 CN-QH	CN-QH	CN	CYP	C	1949 Oct  1	-	Qinghai	Qinghai sheng	Xining	    101.7800 	   36.6200 	0.0200 	CN	Qinghai	Qinghai Province	青海省
 CN-SC	CN-SC	CN	CYP	C	1949 Oct  1	-	Sichuan	Sichuan sheng	Chengdu	    104.0600 	   30.6600 	0.0200 	CN	Sichuan	Sichuan Province	四川省
 CN-SD	CN-SD	CN	CYP	C	1949 Oct  1	-	Shandong	Shandong sheng	Jinan	    117.0200 	   36.6700 	0.0200 	CN	Shandong	Shandong Province	山东省
@@ -646,6 +647,7 @@ ATLR	ATLR	US	LV/E/S	B	1951	2003	ARC Corp	Atlantic Research Corp. (Solid Propulsi
 ATLRA	ATLR	US	LV/E/S	B	2003	2005	ARC Corp	Aerojet Atlantic Research Corp. (Solid Propulsion Div).	Gainesville, Virginia	    -77.6200 	   38.7900 	0.0200 	AJGC	-	-	Atlantic Research Corp. (Solid Propulsion Div).
 ATLU	RPEW	UK	-	D	1998	2004	RO	Atlantic Research Corp. UK	Westcott, Buckinghamshire	     -0.9600 	   51.8500 	0.0200 	-	-	-	Atlantic Research Corp. UK
 ATMIR	ATMIR	AT	O	C	1988	1992	Austromir	Projekt AUSTROMIR 91	Wien	     16.3600 	   48.2100 	0.0200 	BMWFO	-	-	Projekt AUSTROMIR 91
+ATMOS	ATMOS	D	O/PL	B	2021	-	ATMOS Space Cargo	ATMOS Space Cargo GmbH	Lichtenau, Baden-Wurttemberg	      8.0100 	   48.7300 	0.0200 	-	-	-	Atmos Space Cargo GmbH
 ATOMOS	ATOMOS	US	O/PL	B	2018	-	Atomos	Atomos Space	Broomfield, Colorado	   -105.1100 	   39.9100 	0.0200 	-	-	-	Atomos Space
 ATSB	ATSB	MY	O/PL	B	-	-	ATSB	Astronautic Technology (M) Sdn Bhd	Shah Alam, Selangor, Malaysia	    101.5100 	    3.0700 	0.0200 	-	-	-	Astronautic Technology (M) Sdn Bhd
 ATSP	ATSP	AU	O	B	2021	-	ATSpace	ATSpace Pty Ltd	Wingfield, S Australia	    138.5300 	   34.8500 	0.0200 	TISPACE	-	-	ATSpace Pty Ltd.
@@ -735,7 +737,7 @@ BLORCC	BLORCC	US	LV	B	2016	-	Blue Origin	Blue Origin Manufacturing Facility, Exp
 BLORH	BLORH	US	E	B	2020	-	Blue Origin	Blue Origin LLC, Huntsville Operations	Huntsville, Alabama	    -86.6900 	   34.7300 	0.0200 	-	-	-	Blue Origin LLC, Huntsville operations
 BLORTX	BLORTX	US	E	B	2000	-	Blue Origin	Blue Origin LLC, West Texas operations	Van Horn, Texas	   -104.8300 	   31.0400 	0.0200 	BLOR	-	-	Blue Origin LLC, West Texas operations
 BLOT	BLOT	US	O	B	2021	-	Blue Origin	Blue Origin spaceflight passengers	Van Horn, Texas	   -104.8300 	   31.0400 	0.0200 	BLOR	-	-	Blue Origin spaceflight passengers
-BLS	BLS	US	O/LA	B	1990s	*	Boeing	Boeing Launch Services (?)	Huntington Beach, California	   -118.0000 	   33.6900 	0.0200 	BOHB	-	-	Boeing Launch Services (?)
+BLS	MDSSC	US	O/LA	B	1996	-	Boeing	Boeing Launch Services (?)	Huntington Beach, California	   -118.0000 	   33.6900 	0.0200 	BOHB	-	-	Boeing Launch Services (?)
 BMBF	BMWF	D	-	C	1994	-	BMBF	Bundesministerium fur Bildung und Forschung	Bonn?	      7.1000 	   50.7300 	0.0200 	D	-	Ministry of Education and Research	Bundesministerium für Bildung und Forschung
 BMBW	BMWF	D	O	C	1969 Sep	1994	BMBW	Bundesministerium fur Bildung und Wissenschaft	Bonn	      7.1000 	   50.7300 	0.0200 	D	-	Ministry of Education and Science	Bundesministerium für Bildung und Wissenschaft
 BME	BME	HU	O/PL	A	1782	-	BME	Budapesti Muszakies Gazdasagtudomanyi Egyetem  (BME)	Budapest	     19.0600 	   47.4800 	0.0200 	-	BUTE	Budapest University of Technology and Economics	Budapesti Műszaki és Gazdaságtudományi Egyetem
@@ -900,7 +902,7 @@ CFTH	CFTH	F	LV/S	B	1893	1966	CFTH	Compagnie Francaise Thomson-Houston	Paris	    
 CFTHB	CFTH	F	LV/E	B	1966	1968	CFTH-HB	CFTH-Hotchkiss-Brant	Paris	      2.3000 	   48.8600 	0.0200 	-	-	-	CFTH-Hotchkiss-Brant
 CGS	CGS	I	PL	B	1981	2011	CGS	Carlo Gavazzi Space	Milano	      9.1800 	   45.4700 	0.0200 	FUCHS	-	-	Carlo Gavazzi Space
 CGSO	CGS	I	PL	B	2011	2015?	CGS	OHB CGS S.p.A., Compagnia Generale per lo Spazio	Milano	      9.1800 	   45.4700 	0.0200 	FUCHS	-	-	OHB CGS S.p.A., Compagnia Generale per lo Spazio
-CGSTL	CGSTL	CN	O/PL	B	2014 Dec	-	Changguang WJ	Changuang weixing jishu youxian gongsi	Changchun, Jilin	    125.3200 	   43.8900 	0.0200 	CIOMP	Chang Guang	Chang Guang Satellite Technology Ltd	长光卫星技术有限公司
+CGSTL	CGSTL	CN	O/PL	B	2014 Dec	-	Changguang WJ	Changguang weixing jishu youxian gongsi	Changchun, Jilin	    125.3200 	   43.8900 	0.0200 	CIOMP	Chang Guang	Chang Guang Satellite Technology Ltd	长光卫星技术有限公司
 CGSTZ	CGSTZ	CN	O	B	2018 Jan	-	Zhejiang CG	Zhejiang Changuang weixing xinxi jishu youxian gongsi	Deqing, Zhejiang	    119.9800 	   30.5400 	0.0200 	-	Chang Guang	Zhejiang Chuang Guang Satellite Information Tech Co. Ltd.	浙江长光卫星信息技术有限公司
 CHAIL	CHAIL	US	PL/S	B	1958	2000	Cutler-Hammer/AIL	Cutler-Hammer Airborne Instruments Laboratory	Mineola and Deer Park, New York	    -73.6400 	   40.7400 	0.0200 	-	-	-	Cutler-Hammer Airborne Instruments Laboratory
 CHDB	CHDB	CN	-	B	2008 Jan  1	-	China DBSAT	Zhongguo zhiboxing youxianggongsi	Beijing	    116.3800 	   39.9200 	0.0200 	CHIS	-	China Direct Broadcast Satellite Co.	中国直播星有限公司
@@ -2118,7 +2120,7 @@ MDDI	MDDI	I	O	D	-	-	M.d. Difesa	Ministero della Difesa, Amministrazione Difesa	R
 MDHSV	MDHSV	US	PL	B	1962?	1997	MDA Huntsville	McDonnell Douglas Aerospace - Huntsville	Huntsville, Alabama	    -86.5900 	   34.7300 	0.0200 	MDC	-	McDonnell Douglas/Huntsville	McDonnell Douglas Aerospace - Huntsville
 MDPE	MDPE	PE	O	D	1987	-	MOD Peru	Ministerio de Defensa del Peru	Lima	    -77.0300 	  -12.0400 	0.0200 	-	-	Ministry of Defense of Peru	Ministerio de Defensa del Perú
 MDR	SPAR	CA	PL	B	1999 Mar	2017 Oct	MDA Robotics	MDA (MacDonald Dettwiler Assoc.) Robotics	Brampton, Ontario	    -79.7700 	   43.6800 	0.0200 	MDABC	-	MDA Robotics	MDA (MacDonald Dettwiler Assoc.) Robotics
-MDSSC	MDSSC	US	LA	B	-	-	MDSSC	McDonnell Douglas Space Systems Corp. (MDSSC-HB)	Huntington Beach, California	   -118.0000 	   33.6900 	0.0200 	MDC	-	McDonnell Douglas/HB	McDonnell Douglas Space Systems Corp. (MDSSC-HB)
+MDSSC	MDSSC	US	LA	B	1967	1996	MDSSC	McDonnell Douglas Space Systems Corp. (MDSSC-HB)	Huntington Beach, California	   -118.0000 	   33.6900 	0.0200 	MDC	-	McDonnell Douglas/HB	McDonnell Douglas Space Systems Corp. (MDSSC-HB)
 MEAS	BINA	MY	O	B	2001	-	Measat	MEASAT Satellite Systems Sdn Bhd.	Cyberjaya, Sepang, Selangor	    101.6600 	    2.9200 	0.0200 	-	-	Measat	MEASAT Satellite Systems Sdn Bhd.
 MEGS	MEGS	I	O/PL	B	-	-	MegSat	Meggiorin Group, Brescia	Brescia, Italia	     10.2200 	   45.5400 	0.0200 	-	-	Meggiorin Group	Meggiorin Group, Brescia
 MEI	MEI	SU	PL	A	1930	-	MEI	Moskovskiy Energeticheskiy Institut	Moskva	     37.6200 	   55.7500 	0.0200 	-	-	Moscow Power Engineering Institute	Московский энергетический институт
@@ -2503,6 +2505,7 @@ NYSH	NYSH	US	O	B	2014 Aug	2016 Apr	NY Sat Holdings	New York Satellite Holdings L
 NYSI	FAI	US	O/PL	B	2001	2014?	NYSI	New York Satellite Industries LLC	Greenbelt, Maryland	    -76.8900 	   38.9900 	0.0200 	-	-	-	New York Satellite Industries LLC
 NYU	NYU	US	O	A	1831	-	NYU	New York University	New York, New York	    -74.0000 	   40.7300 	0.0200 	-	-	-	New York University
 NYUAD	NYUAD	UAE	O	A	2010	-	NYU Abu Dhabi	Jamiyat Niwyurk 'Abu Zaby	Abu Dhabi	     54.4300 	   24.5200 	0.0200 	NYU	-	New York University Abu Dhabi	جامعة نيويورك أبوظبي
+NZRA	NZRA	NZ	O	A	-	-	NZRA	New Zealand Rocket Association	Waikato	    175.0000 	   37.6000 	0.1000 	-	-	-	New Zealand Rocketry Association
 O3B	O3B	UK	O	B	2007	2017 May	O3B	O3B Networks Ltd.	St John, Jersey, Channel Islands	     -2.1300 	   49.2400 	0.0200 	-	-	-	O3B Networks Ltd.
 O3BS	O3B	UK	O	B	2017 May	-	O3B SES	SES O3B Networks Ltd.	St John, Jersey, Channel Islands	     -2.1300 	   49.2400 	0.0200 	SES	-	-	O3B Networks Ltd.
 OAKAE	OAKAE	US	PL	B	2012 Jul	-	Oakman	Oakman Aerospace Inc.	Littleton, Colorado	   -105.0100 	   39.6000 	0.0200 	-	-	-	Oakman Aerospace Inc.
@@ -3237,6 +3240,7 @@ STO	STO	S	S	A	1878	-	Stockholm	Stockholms universitet	Stockholm	     18.0600 	  
 STONE	STONE	BR	O	B	2000 Dec	-	Star One	Star One	Rio de Janeiro	    -43.2000 	  -22.9100 	0.0200 	EMBR	-	Star One	Star One
 STP	STP	US	O/PL	D	1971 Jun	-	USAF STP	USAF SMC/DoD Space Test Program	Kirtland AFB, Albuquerque, New Mexico	   -106.6100 	   35.0400 	0.0200 	USAF	-	-	USAF SMC/DoD Space Test Program
 STRAT	STRAT	RU	O	B	2011	-	Stratonavtika	OOO Stratonavtika	Moskva	     37.5300 	   55.7600 	0.0200 	-	-	-	ООО "Стратонавтика"
+STRATO	STRATO	US	O	B	2011	-	Stratolaunch	Stratolaunch Systems LLC	Mojave, California	   -118.1200 	   35.0300 	0.0200 	-	-	-	Stratolaunch Systems LLC
 STRELA	ZAV47	SU	LV	B	1986 Apr  7	-	PO Strela	PO Strela	Orenburg	     55.1000 	   51.7800 	0.0200 	-	-	-	Производственное объединение «Стрела»
 STSM	STSM	F	O/LA	B	1996 Aug  6	*	Starsem	Starsem	Paris:Evry	      2.4300 	   48.6200 	0.0200 	-	-	-	Starsem
 STST	STST	US	LA/LV/E/S	B	1980	1985?	Starstruck	Starstruck Inc.	San Francisco:Redwood City, California	   -122.2400 	   37.4800 	0.0200 	-	-	-	Starstruck Inc.
@@ -3506,6 +3510,7 @@ ULLAF	SLII	US	O/PL	A	1999	-	UL-Lafayette	University of Louisiana-Lafayette	Lafay
 ULM	ULM	D	S	A	1967	-	Ulm	Universitat Ulm	Ulm, Baden-Wurttemburg	      9.9800 	   48.4000 	0.0200 	-	-	University of Ulm	Universitat Ulm
 ULUX	ULUX	L	O/PL	A	2003	-	U Lux.	Universite du Luxembourg	Luxembourg:Kirchberg	      6.1600 	   49.6300 	0.0200 	-	-	-	University of Luxembourg
 UM5R	UM5R	MA	O/PL	A	1957	-	UM5R	Jameat Muhammad Alkhamis	Rabat	     -6.8600 	   33.9900 	0.0200 	-	-	Mohammed V University, Rabat	جامعة محمد الخامس
+UMAJ	UMAJ	US	E	B	2015	-	Ursa Major	Ursa Major Technologies	Berthoud, Colorado	   -105.0800 	   40.3100 	0.0200 	-	-	-	Ursa Major Technologies
 UMAL	UMAL	US	PL/S	A	1975	-	UMass Lowell	University of Massachusetts Lowell	Lowell, Massachusetts	    -71.3300 	   42.6400 	0.0200 	-	-	-	University of Massachusetts Lowell
 UMANI	UMANI	CA	O/PL	A	1877	-	U Manitoba	University of Manitoba	Winnipeg, Manitoba	    -97.1300 	   49.8100 	0.0200 	-	-	-	University of Manitoba
 UMARB	UMARB	SI	PL	A	1975	-	U. Maribor	Univerza v Mariboru	Maribor	     15.6400 	   46.5600 	0.0200 	-	-	University of Maribor	Univerza v Mariboru
@@ -3830,6 +3835,7 @@ ZHIX	ZHIX	CN	PL	B	2018 May 10	-	SMART	Beijing Zhixing Kongjian Keji YG	Beijing:C
 ZHK	ZHK	CN	O	B	-	-	Zhiyu Hangyu	Zhiyi Hangyu (Beijing) Keji YG	Beijing	    116.5000 	   40.1000 	0.0200 	-	-	Zhiyi Aerospace (Beijing) Technology Co. Ltd	知一航宇（北京）科技有限公司
 ZHKO	ZHKO	CN	O	B	-	-	Zhihuo Kongjian	Ningbo Zhihui Kongjian Jishu YG	Ningbo	    121.6200 	   29.8600 	0.0200 	-	-	Zhihui Space	宁波智晖空间技术有限公司
 ZHONG	ZHONG	CN	O	A	1924	-	Zhongda	Zhongshan Daxue	Shenzhen	    113.9000 	   22.8000 	0.0500 	-	-	Sun Yat-sen University	中山大学
+ZHSH	ZHSH	CN	O/LA	B	2025	-	ZHKJ Shangye H.	Zhongguo hangtian keji jituan shangye huojian YG	Shanghai:Minghan	    121.3800 	   31.1100 	0.0200 	CASC	-	CASC Commercial Rocket YG	中国航天科技集团商业火箭有限公司
 ZHUORB	ZHUORB	CN	O/PL	B	2015?	-	Zhuhai Orbita	Zhuhai Orbita Kongzhi gongcheng gufen youxian gongsi	Zhuhai, Guangdong	    113.5700 	   22.2800 	0.0200 	-	-	Zhuhai Orbital Control Engineering Ltd	珠海欧比特控制工程股份有限公司
 ZHWK	ZHWK	CN	O	B	-	-	Zhongke Weixing	Zhongke Weixing Keji Jituan YG	Jinan, Shandong	    117.0200 	   36.6700 	0.0200 	-	-	Zhongke Satellite Tech. Group	中科卫星科技集团有限公司
 ZHYE	ZHYE	CN	O/PL	B	2020?	-	Zhangye Xingzuo	Zhangye Xingzuo Kongjian Keji YG	Zhangye, Gansu	    100.4500 	   39.9300 	0.0200 	-	-	Zhangye Constellation Space Tech. Co. Ltd.	张掖星座空间科技有限公司

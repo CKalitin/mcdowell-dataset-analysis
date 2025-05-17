@@ -1,5 +1,5 @@
 #LV_Name	LV_Family	LV_Manufacturer	LV_Variant	LV_Alias	LV_Min_Stage	LV_Max_Stage	Length	LFlag	Diameter	DFlag	Launch_Mass	MFlag	LEO_Capacity	GTO_Capacity	TO_Thrust	Class	Apogee	Range
-# Updated 2025 Apr 14 2205:25
+# Updated 2025 May 15 0336:04
 ?	Unknown             	-	-	-	  1	1	  0.0 	 	 0.00 	 	     0.0 	 	       0 	       0 	       0 	R	     0 	-
 Unknown	Unknown             	-	-	-	  1	1	  0.0 	 	 0.00 	 	     0.0 	 	       0 	       0 	       0 	R	     0 	-
 N-1 11A52	N-1                 	OKB1	-	-	  1	3	105.3 	 	14.00 	 	  2788.0 	 	   70000 	       0 	   45300 	O	   200 	-
@@ -34,8 +34,8 @@ Proton-K/17S40	Proton              	KHRU	DM2	-	  1	6	 57.2 	 	 7.40 	 	   691.5 
 Proton-K/17S40	Proton              	KHRU	DM-5	-	  1	6	 57.2 	 	 7.40 	 	   691.5 	 	    5000 	    4350 	    9500 	O	 40000 	-
 Proton-K/Briz-M	Proton              	KHRU	-	-	  1	4	 53.0 	 	 7.40 	 	   700.0 	?	   21000 	    4500 	    9500 	O	 40000 	-
 Proton-M/Briz-M	Proton              	KHRU	-	-	  1	4	 53.0 	 	 7.40 	 	   712.8 	 	   21000 	    4500 	   10000 	O	 40000 	-
-Neutron	Neutron	RLABU	-	-	  1	2	 42.8 	 	 7.00 	 	   480.0 	 	-	-	    6570 	0	 40000 	-
-New Glenn	NewGlenn	BLORCC	-	-	  1	2	 98.0 	 	 7.00 	 	  1050.0 	?	-	-	   17150 	0	   500 	-
+Neutron	Neutron	RLABU	-	-	  1	2	 42.8 	 	 7.00 	 	   480.0 	 	-	-	    6570 	O	 40000 	-
+New Glenn	NewGlenn	BLORCC	-	-	  1	2	 98.0 	 	 7.00 	 	  1050.0 	?	-	-	   17150 	O	   500 	-
 Saturn C-1	Saturn              	MSFC	-	-	  1	3	 49.6 	 	 6.60 	 	   420.0 	 	    9000 	       0 	    5768 	O	   200 	-
 Saturn I	Saturn              	MSFC	-	-	  1	3	 50.4 	 	 6.60 	 	   420.0 	 	    9000 	       0 	    5768 	O	   200 	-
 Saturn I	Saturn              	MSFC	Blk2	-	  1	2	 58.0 	 	 6.53 	 	   508.0 	?	    9000 	       0 	    5768 	O	   200 	-
@@ -940,6 +940,7 @@ HS9	ASLV                	ISRO	-	-	  1	1	 19.0 	 	 1.00 	 	     9.0 	 	       0 	
 KSR-III	KSR-3               	KARI	-	-	  1	1	 13.5 	 	 1.00 	 	     5.6 	 	       0 	       0 	     126 	R	   100 	-
 HANBIT-TLV	HANBIT	INNOSP	-	-	  1	1	 16.3 	 	 1.00 	 	     8.4 	 	       0 	       0 	-	R	   100 	-
 Vesta	Vesta               	LRBA	-	-	  1	1	 10.2 	 	 1.00 	 	     6.0 	 	       0 	       0 	     140 	R	   250 	-
+Talon-A	Talon	STRATO	-	-	  0	1	  8.5 	 	 1.00 	 	     6.0 	 	       0 	       0 	      22 	A	    20 	-
 DF-15	DF-15               	ARMT	-	-	  1	1	  9.1 	 	 1.00 	?	     6.2 	 	       0 	       0 	-	B	   100 	   600
 Shaheen 1A	DF-15               	PKNDC	-	-	  1	1	  9.1 	 	 1.00 	?	     6.2 	?	       0 	       0 	-	B	   100 	   750
 Shaheen 1	DF-15               	PKNDC	-	-	  1	1	  9.1 	 	 1.00 	?	     6.2 	?	       0 	       0 	-	B	   100 	   750
@@ -1745,6 +1746,7 @@ Shadow 1	SuperLoki           	LRRC	-	-	  1	1	  3.3 	 	 0.10 	 	     0.0 	 	     
 Stable Super Loki	SuperLoki           	SDCO	-	-	  1	1	  3.3 	 	 0.10 	 	     0.0 	 	       0 	       0 	      18 	Y	    90 	-
 FalconLaunch	SuperLoki           	USAFA	-	-	  1	1	  3.3 	 	 0.10 	?	     0.0 	 	       0 	       0 	      22 	Y	   108 	-
 Microstar	SuperLoki           	SPFL	-	-	  1	1	  3.3 	?	 0.10 	?	     0.0 	 	       0 	       0 	-	W	    75 	-
+Meraki	Amateur	NZRA	-	-	  1	2	  4.0 	 	 0.10 	 	     0.1 	 	       0 	       0 	       0 	R	   120 	-
 SPEAR-HRT	Amateur	USMA	-	-	  1	2	  3.0 	 	 0.10 	 	     0.0 	 	       0 	       0 	-	T	    90 	-
 Skylark Micro	SkylarkMicro	SKYR	-	-	  1	2	  3.3 	 	 0.10 	 	     0.0 	 	       0 	       0 	-	W	    30 	-
 Epona	Belisama            	CFTHB	-	-	  1	2	  4.4 	 	 0.10 	 	     0.1 	 	       0 	       0 	-	W	    60 	-

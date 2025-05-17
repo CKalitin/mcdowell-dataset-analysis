@@ -42,7 +42,7 @@ print("\nFinal DataFrame (Total Payload Mass in kg):")
 print(output_df)
 
 # Save to CSV
-output_df.to_csv('charts/total_mass_by_orbit_and_mass_range.csv', index=True)
+output_df.to_csv('examples/outputs/total_mass_by_orbit_and_mass_range.csv', index=True)
 print("CSV file 'total_mass_by_orbit_and_mass_range.csv' has been created.")
 
 # Plot stacked bar chart
