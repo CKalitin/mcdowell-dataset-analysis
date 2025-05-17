@@ -31,6 +31,16 @@ The package requires:
 
 These are automatically installed when you use `pip`.
 
+## Updating Datasets
+
+The datasets currently have data up until May 16 2025.
+
+To update the datasets, you can use the `update_datasets.py` script. This script fetches the latest data from Jonathan McDowell's website and updates the local TSV files.
+
+If the script fails, manually download the datasets as instructed in How-To-Update-Datasets.md.
+
+Use this sparingly, we don't want to ddos Jonathan McDowell!
+
 # Jonathan McDowell Dataset Analysis
 Google sheets is terrible software once you reach 10000 lines, excel is ugly.
 
