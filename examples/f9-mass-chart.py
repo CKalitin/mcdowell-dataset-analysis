@@ -37,8 +37,8 @@ mda.ChartUtils.plot_histogram(
     output_df,
     title='Falcon 9 Launches vs. Payload Mass by Orbit',
     subtitle='Christopher Kalitin 2025 - Data Cutoff: May 16 2025',
-    xlabel='Payload Mass Range (tonnes)',
-    ylabel='Number of Launches',
+    x_label='Payload Mass Range (tonnes)',
+    y_label='Number of Launches',
     output_path='examples/outputs/f9_mass_by_orbit.png',
     color_map=mda.ChartUtils.orbit_color_map
 )

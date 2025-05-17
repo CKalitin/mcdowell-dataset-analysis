@@ -57,29 +57,13 @@ class ChartUtils:
         """
         binned = pd.cut(df[value_col], bins=bins, labels=labels, include_lowest=True).value_counts()
         return binned.reindex(labels)
-
-    def plot_scatter(df, x_col, y_cols, title, xlabel, ylabel, output_path, figsize=(10, 6)):
-        """
-        Generate a scatter plot for multiple y-columns against an x-column.
-        """
-        plt.figure(figsize=figsize)
-        for col in y_cols:
-            plt.scatter(df[x_col], df[col], label=col, alpha=0.7)
-        plt.title(title)
-        plt.xlabel(xlabel)
-        plt.ylabel(ylabel)
-        plt.legend(title=y_cols.name if hasattr(y_cols, 'name') else 'Series')
-        plt.grid(True)
-        plt.savefig(output_path)
-        plt.close()
-        print(f"Plot saved as '{output_path}'.")
-
-    def plot_histogram(df, title, subtitle, xlabel, ylabel, output_path, color_map, barmode='stack'):
-        fig = px.histogram(df,
-                    x=df.index,
-                    y=df.columns,
+ 
+    def plot_histogram(dataframe, title, subtitle, x_label, y_label, output_path, color_map, barmode='stack'):
+        fig = px.histogram(dataframe,
+                    x=dataframe.index,
+                    y=dataframe.columns,
                     title=f'<b>{title}</b><br><sup>{subtitle}</sup>',
-                    labels={'x': f'{xlabel}', 'y': f'{ylabel}'},
+                    labels={'x': f'{x_label}', 'y': f'{y_label}'},
                     barmode=barmode,
                     color_discrete_map=color_map,
                     )
@@ -97,13 +81,13 @@ class ChartUtils:
                 linecolor="#000000",
                 tickangle=45,
                 title_font=dict(size=24, family="Arial, sans-serif"),
-                title_text=xlabel,
+                title_text=x_label,
             ),
             yaxis=dict(
                 gridcolor="rgba(200, 200, 200, 0.5)",
                 linecolor="#000000",
                 title_font=dict(size=24, family="Arial, sans-serif"),
-                title_text=ylabel,
+                title_text=y_label,
             ),
             # Legend
             showlegend=True,
@@ -118,6 +102,68 @@ class ChartUtils:
             hovermode="x",
         )
 
+        pio.write_image(fig, output_path, format='png', width=1280, height=720)
+        
+        print(f"Plot saved as '{output_path}'.")
+    
+    # Example: plot_scatter_plotly(df, 'Payload_Mass', ['LEO', 'SSO', 'MEO'], 'Falcon 9 Launches vs. Payload Mass by Orbit', 'Payload Mass (tonnes)', 'Number of Launches', 'examples/outputs/f9_mass_by_orbit.png')
+    def plot_scatter(dataframe, x_col, y_cols, title, subtitle, x_label, y_label, dot_diameter, output_path, color_map):
+        """
+        Create a scatter plot using Plotly Express.
+        Args:
+            dataframe (Pandas dataframe): Dataframe containing the x_col and y_cols data
+            x_col (string): Title of the column to be used for the x-axis
+            y_cols (string): Titles of the column to be used for the series data
+            title (string): It's simple
+            subtitle (string): Best to include the date of the data cut-off "Date Cutoff: YYYY-MM-DD"
+            x_label (string): It's simple
+            y_label (string): It's simple
+            output_path (string): Full path including filename to save the plot
+            color_map (dictionary): y_col to color mapping, eg. {'LC40': '#ff0000', 'LC39A': '#00ff00'}
+        """
+        
+        fig = px.scatter(dataframe,
+                         x=x_col,
+                         y=y_cols,
+                         title=f'<b>{title}</b><br><sup>{subtitle}</sup>',
+                         color_discrete_map=color_map,
+                         )
+        
+        fig.update_traces(marker=dict(size=dot_diameter))
+        
+        fig.update_layout(
+            # Font settings
+            font=dict(family='Arial, sans-serif', size=20, color="#000000"),
+            title=dict(font=dict(size=40, family='Arial, sans-serif', color="#000000"), x=0.025, xanchor="left"),
+            # Background and borders
+            plot_bgcolor="white",
+            paper_bgcolor="white",
+            # Gridlines
+            xaxis=dict(
+                gridcolor="rgba(200, 200, 200, 0.5)",
+                linecolor="#000000",
+                tickangle=45,
+                title_font=dict(size=24, family="Arial, sans-serif"),
+                title_text=x_label,
+            ),
+            yaxis=dict(
+                gridcolor="rgba(200, 200, 200, 0.5)",
+                linecolor="#000000",
+                title_font=dict(size=24, family="Arial, sans-serif"),
+                title_text=y_label,
+            ),
+            # Legend
+            showlegend=True,
+            legend=dict(
+                font=dict(size=24, family="Arial, sans-serif"),
+                bordercolor="white",
+                borderwidth=1,
+                bgcolor="white",
+                title=dict(text=""),  # Add this line to remove title: "variable"
+            ),
+            # Remove hover effects and other embellishments
+            hovermode="x",
+        )
         pio.write_image(fig, output_path, format='png', width=1280, height=720)
         
         print(f"Plot saved as '{output_path}'.")
