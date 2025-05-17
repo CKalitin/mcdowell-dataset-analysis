@@ -12,6 +12,10 @@ print(f"Number of Starlink launches: {len(filtered_df)}")
 
 # Select relevant columns and drop missing Apogee
 filtered_df = filtered_df[['Launch_Date', 'Apogee', 'Launch_Pad']].dropna(subset=['Apogee'])
+
+# Remove 0 apogee values
+filtered_df = filtered_df[filtered_df['Apogee'] != 0]
+
 print(f"Number of launches with valid Apogee: {len(filtered_df)}")
 print("Unique launch pads for Starlink launches:")
 print(filtered_df['Launch_Pad'].unique())

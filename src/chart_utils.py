@@ -86,6 +86,7 @@ class ChartUtils:
             yaxis=dict(
                 gridcolor="rgba(200, 200, 200, 0.5)",
                 linecolor="#000000",
+                rangemode='tozero',           # <— force start at 0
                 title_font=dict(size=24, family="Arial, sans-serif"),
                 title_text=y_label,
             ),
@@ -106,8 +107,7 @@ class ChartUtils:
         
         print(f"Plot saved as '{output_path}'.")
     
-    # Example: plot_scatter_plotly(df, 'Payload_Mass', ['LEO', 'SSO', 'MEO'], 'Falcon 9 Launches vs. Payload Mass by Orbit', 'Payload Mass (tonnes)', 'Number of Launches', 'examples/outputs/f9_mass_by_orbit.png')
-    def plot_scatter(dataframe, x_col, y_cols, title, subtitle, x_label, y_label, dot_diameter, output_path, color_map):
+    def plot_scatter(dataframe, x_col, y_cols, title, subtitle, x_label, y_label, dot_diameter, output_path, color_map, y_scaling_factor=1):
         """
         Create a scatter plot using Plotly Express.
         Args:
@@ -118,17 +118,24 @@ class ChartUtils:
             subtitle (string): Best to include the date of the data cut-off "Date Cutoff: YYYY-MM-DD"
             x_label (string): It's simple
             y_label (string): It's simple
+            y_scaling_factor (float/int): Multiplicative factor to scale the y-axis
             output_path (string): Full path including filename to save the plot
             color_map (dictionary): y_col to color mapping, eg. {'LC40': '#ff0000', 'LC39A': '#00ff00'}
         """
         
-        fig = px.scatter(dataframe,
+        df = dataframe.copy()
+        if y_scaling_factor != 1:
+            for col in y_cols:
+                df[col] = df[col] * y_scaling_factor
+        
+        fig = px.scatter(df,
                          x=x_col,
                          y=y_cols,
                          title=f'<b>{title}</b><br><sup>{subtitle}</sup>',
                          color_discrete_map=color_map,
                          )
         
+        # Set diameter
         fig.update_traces(marker=dict(size=dot_diameter))
         
         fig.update_layout(
@@ -149,6 +156,7 @@ class ChartUtils:
             yaxis=dict(
                 gridcolor="rgba(200, 200, 200, 0.5)",
                 linecolor="#000000",
+                rangemode='tozero',           # <— force start at 0
                 title_font=dict(size=24, family="Arial, sans-serif"),
                 title_text=y_label,
             ),
