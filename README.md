@@ -19,7 +19,7 @@ pip install mcdowell-dataset-analysis
 ```
 
 ### Local Installation (Optional)
-For developers who want to modify the source code:
+For modifying the code locally, without having to deal with PyPI every time you make a change:
 1. Clone the repository:
    ```bash
    git clone https://github.com/CKalitin/mcdowell-dataset-analysis.git

@@ -5,7 +5,7 @@ import plotly.express as px
 import plotly.io as pio
 
 # Initialize dataset
-dataset = mda.McdowellDataset("./datasets/")
+dataset = mda.McdowellDataset("./datasets")
 
 # Filter for Falcon 9 orbital and deep space launches
 mda.Filters.filter_by_launch_category(dataset.launch, ['O', 'D'])  # Filter for orbital and deep space launches

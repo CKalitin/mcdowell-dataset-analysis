@@ -6,7 +6,7 @@ class Satcat:
     This contains all functions required for using McDowell's satellite catalog dataset.
     """
 
-    def __init__(self, translation=None, dataset_directory="./datasets/"):
+    def __init__(self, translation=None, dataset_directory="./datasets"):
         """
         Load the raw satcat dataset into a pandas DataFrame.
         
@@ -14,8 +14,8 @@ class Satcat:
         """
         
         self.dataset_directory = dataset_directory
-        self.satcat_path = f"{dataset_directory}satcat.tsv"
-        self.psatcat_path = f"{dataset_directory}psatcat.tsv"
+        self.satcat_path = f"{dataset_directory}/satcat.tsv"
+        self.psatcat_path = f"{dataset_directory}/psatcat.tsv"
         self.translation = translation or translations.Translation()
         
         self.df = pd.read_csv(self.satcat_path, sep="\t", encoding="utf-8", low_memory=False) # load satcat tsv into dataframe
