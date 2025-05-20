@@ -1,3 +1,5 @@
+# Old Charts
+
 Types:
 Orbit
 General Type (Starlink, Commercial, Chinese Commecerial, Militray, Government, Eastern)
@@ -67,3 +69,13 @@ Small Sat Charts:
 Western launches by orbit by mass
 successful orbital launches by type (Militray, Gov, Comm)
 Pie chart of successtful western launches (High energy, capsule, smatt lat, commercial, constalletion)
+
+# New Charts
+USA Satellites / Starshield Satellites
+- Launches per year
+- apogee vs. inclination
+- Inclination vs. Date
+- Apogee vs. Date
+- Mass vs. Date
+
+It'll look really funny for all USA sats to be one off old air force ones, then a barage of Starshield.
