@@ -22,6 +22,8 @@ class McdowellDataset:
         self.launch.process_satcat_dependent_columns(self.satcat)
         self.satcat.process_launch_dependent_columns(self.launch)
         
+        self.date_updated = self.launch.date_updated # Take date updated from the launch dataset arbitrarily
+        
         pd.set_option('display.max_columns', None)
         pd.set_option('display.max_rows', None)
     

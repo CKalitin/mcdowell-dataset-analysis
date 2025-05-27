@@ -44,7 +44,7 @@ mda.ChartUtils.plot_scatter(
     x_col='Launch_Date',
     y_cols=pivoted_df.columns[1:],        # skip the date column
     title='Starlink Launches: Payload Mass vs. Launch Date by Pad',
-    subtitle='Christopher Kalitin 2025 – Data Cutoff: May 16 2025',
+    subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
     x_label='Launch Date',
     y_label='Payload Mass (t)',
     y_scaling_factor=1e-3,  # Convert kg to metric tons

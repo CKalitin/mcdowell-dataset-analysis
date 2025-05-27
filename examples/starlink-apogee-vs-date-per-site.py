@@ -33,7 +33,7 @@ mda.ChartUtils.plot_scatter(
     x_col='Launch_Date',
     y_cols=pivoted_df.columns[1:],
     title='Starlink Launches: Apogee vs. Launch Date by Launch Pad',
-    subtitle='Christopher Kalitin 2025 - Data Cutoff: May 16 2025',
+    subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
     x_label='Launch Date',
     y_label='Apogee (km)',
     dot_diameter=10,

@@ -49,8 +49,9 @@ print("CSV file 'total_mass_by_orbit_and_mass_range.csv' has been created.")
 mda.ChartUtils.plot_histogram(
     output_df,
     title='Falcon 9 Launches: Total Payload Mass by Orbit and Mass Range',
-    xlabel='Payload Mass Range (Tons)',
-    ylabel='Total Payload Mass (kg)',
+    subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
+    x_label='Payload Mass Range (Tons)',
+    y_label='Total Payload Mass (kg)',
     output_path='examples/outputs/total_mass_by_orbit_and_mass_range.png',
-    stacked=True  # Enable stacked bars
+    color_map=mda.ChartUtils.orbit_color_map
 )

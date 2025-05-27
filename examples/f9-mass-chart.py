@@ -36,7 +36,7 @@ print("CSV file 'f9_mass_by_orbit.csv' has been created.")
 mda.ChartUtils.plot_histogram(
     output_df,
     title='Falcon 9 Launches vs. Payload Mass by Orbit',
-    subtitle='Christopher Kalitin 2025 - Data Cutoff: May 16 2025',
+    subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
     x_label='Payload Mass Range (tonnes)',
     y_label='Number of Launches',
     output_path='examples/outputs/f9_mass_by_orbit.png',

@@ -1,5 +1,5 @@
 #Code	UCode	StateCode	Type	Class	TStart	TStop	ShortName	Name	Location	Longitude	Latitude	Error	Parent	ShortEName	EName	UName
-# Updated 2025 May 15 0336:04
+# Updated 2025 May 24 2041:47
 EARTH	EARTH	EARTH	AP	C	-	-	Earth	Earth	Earth	-	-	0.0200 	-	Earth (Terra)	Earth	Earth
 LUNA	LUNA	LUNA	AP	C	-	-	Luna	Luna	Luna	-	-	0.0200 	-	Moon	Moon	Luna
 AAT	AAT	AAT	CYP	C	1841	-	Aus. Antarctic	Australian Antarctic Territory	Davis Staton, Princess Elizabeth Land	     77.9700 	  -68.5800 	0.0200 	AU	AAT	Australian Antarctic Territory	Australian Antarctic Territory
@@ -1040,6 +1040,7 @@ CTEL	CTEL	CN	-	C	-	-	China Telecom	Zhongguo dianxin jituan gongsi	Beijing	    11
 CTYK	CTYK	CN	O/PL	B	2016?	-	Changsha Tianyi	Changsha Tianyi Kongjian Keji yanjiuyuan youxiang gongsi (SpaceTy)	Changsha, Hunan	    112.9400 	   28.2300 	0.0200 	-	SpaceTy	Changsha Research Inst. Space Instrument Tech. Co. Ltd.	长沙天仪空间科技研究院有限公司
 CUBESP	CUBESP	ZA	O/PL	B	2015?	-	CubeSpace	CubeSpace	Stellenbosch	     18.8600 	  -33.9300 	0.0200 	-	-	-	CubeSpace
 CUBIC	CUBIC	US	PL	B	1951	-	Cubic	Cubic Corp.	San Diego, California	   -117.1600 	   32.7200 	0.0200 	-	-	-	Cubic Corp.
+CUGW	CUGW	CN	O	A	1952	-	Zhongguo Dizhida	Zhongguo Dizhi Daxue (Wuhan)	Wuhan	    114.4000 	   30.5200 	0.0200 	-	-	China University of Geosciences (Wuhan)	中国地质大学(武汉)
 CULH	CULH	UK	PL/S	C	1963?	-	Culham	Culham Laboratory	Abingdon, Oxfordshire	     -1.2300 	   51.6600 	0.0200 	-	-	-	Culham Laboratory
 CUMT	CUMT	CN	O	A	1909	-	CUMT	Zhongguo kuangye daxue guojia zhongdian shiyan shi	Xuzhou, Jiangsu	    116.3500 	   40.0000 	0.0200 	-	-	State Key Lab, China U. of Mining and Technology	中国矿业大学国家重点实验室
 CUNYME	CUNYME	US	O/PL	A	1970	-	CUNY	Medgar Evers College, City University of New York	New York:Brooklyn, New York	    -73.9600 	   40.6700 	0.0200 	-	-	-	Medgar Evers College, City University of New York
@@ -1487,6 +1488,7 @@ GUKOSR	GUKOS	SU	O/LA	D	1970 Mar	1981	GUKOS RVSN	Glavnoye Upravleniye Kosmicheskh
 GUMUSH	GUMUSH	TR	PL	B	2012	-	GUMUSH	GUMUSH AeroSpace	Istanbul	     29.0300 	   41.1100 	0.0200 	-	-	-	GUMUSH Aerospace
 GUOG	GUOG	CN	O/PL	B	2018?	-	Guodian Gaokeji	Beijing Guodian Gaokeji YG	Beijing	    116.3800 	   39.9200 	0.0200 	-	-	Guodian HiTech Technology Co Ltd.	北京国电高科科技有限公司
 GUOX	GUOX	CN	O/PL	B	2018	-	Guoxing	Chengdu Guoxing Yuhang keji YG	Chengdu	    104.0700 	   30.6600 	0.0200 	-	-	ADA Space (Guoxing Aerospace Tech Co.)	成都国星宇航科技有限公司
+GUOZH	GUOZH	CN	O/PL	B	2020?	-	Guoyu Zhilian	Shanghai Guoyu Zhilian Hangtian Keji YG	Shanghai	    121.4700 	   31.2300 	0.0200 	-	-	Guoyu Zhilian Aerospace Tech Co.	上海国宇智链航天科技有限公司
 GURVO	GURVO	SU	O/LA	D	1959 Dec	1970	GURVO	Glavnoye Upravleniye Raketnogo Vooruzheniya	Moskva?	     37.6200 	   55.7500 	0.0200 	RVSN	-	Main Rocket Armaments Directorate	Главное управление ракетного вооружения
 GWEST	GWEST	US	PL	B	2015?	-	Global Western	Global Western	Denver, Colorado	   -104.8800 	   39.7600 	0.0200 	-	-	-	Global Western
 GWHYZ	GWHYZ	CN	O	C	-	-	GWHYZ	Guojia weixing haiyang yingyong zhongxin	Mudanjiang, Heliongang	    129.6300 	   44.5500 	0.0200 	GHJ	-	National Satellite Oceanic Applications Center	国家卫星海洋应用中心
@@ -1604,6 +1606,7 @@ HUNTE	HUNTE	UK	-	B	1957	2001 Oct	Hunting Eng.	Hunting Engineering	Ampthill, Bedf
 HUOPI	HUOPI	CN	O	B	2020?	-	Huoyan Pi	Huojian pi (Huzhou) hangtian keji YG	Beijing	    116.2600 	   40.0700 	0.0200 	-	Rocket Pi	Rocket Pi Space Technology Ltd	火箭派（湖州）航天科技有限公司
 HUOYAN	HUOYAN	CN	O	B	2019	-	Huoyan	Huoyan weizhi shuzhi keji fuwu YG	Shanghai	    121.4700 	   31.2300 	0.0200 	-	-	Huoyan Position Digital Intelligence Tech Service Co Ltd.	火眼位置数智科技服务有限公司
 HUPO	GDPO	US	LV	B	1992 May	1994	Hughes-Pomona	Hughes Missile Systems Co. Pomona	Pomona, California	   -117.7600 	   34.0600 	0.0200 	-	-	-	Hughes Missile Systems Co. Pomona
+HUSAT	HUSAT	CN	O	B	2024?	-	Hunan Saidlet	Hunan saideleite weixing zhineng zhizhao gongchang	Zhuzhou, Hunan	    113.1300 	   27.8300 	0.2000 	-	-	Hunan Satellite Intelligent Manufacturing Factory	湖南赛德雷特卫星智能制造工厂
 HVP	HVP	DR	E/LS	D	1939	1945	Peenemunde	HV Peenemunde	Peenemunde	     13.7900 	   54.1400 	0.0200 	WEHR	-	-	Heeresversuchsanstalt Peenemünde
 HXK	HXK	CN	O	B	2020?	-	Xinjiang H.Keji	Hangtian (xinjiang) keji yanjiuyuan YG	Urumqi?	     87.6100 	   43.8200 	0.0200 	-	-	Aerospace (Xinjiang) Sci Tech Research Inst. Co. Ltd.	航天（新疆）科技研究院有限公司
 HXKJ	HXKJ	CN	O	B	2018	-	Hainan Xiandai	Hainan xiandai keji jituan	Haikou:Daokecun	    110.3300 	   20.0100 	0.0200 	-	Hainan MTG	Hainan Modern Technology Group	海南现代科技集团
@@ -2325,9 +2328,10 @@ NBS	NBS	US	O	C	1901	1988	NBS	National Bureau of Standards	Gaithersburg, Maryland
 NBSC	NBSC	US	S	C	1954	1988	NBS	National Bureau of Standards, Central Radio Propagation Lab	Boulder, Colorado	   -105.2700 	   40.0100 	0.0200 	NBS	-	-	National Bureau of Standards, Central Radio Propagation Lab
 NC3A	NICS	I-NATO	O	D	1996 Jul  1	-	NC3A	NATO C3 Agency (NC3A)	Brussel:Haren	      4.4200 	   50.8900 	0.0200 	NATO	-	-	NATO C3 Agency (NC3A)
 NCAR	NCAR	US	PL/S	C	1960	-	NCAR	National Center for Atmospheric Research	Boulder, Colorado	   -105.2700 	   40.0100 	0.0200 	NSF	-	-	National Center for Atmospheric Research
-NCSIST	NCSIST	TW	O/LV	D	1969 Jun	-	NCSIST	Guojia Zhongshan Kexue Yanjiuyuan	Taoyuan City	    121.3100 	   24.9900 	0.0200 	-	-	National Chung-Shan Institute of Science and Technology	國家中山科學研究院
+NCHU	NCHU	CN	O	A	1952	-	NCHU	Nanchang Hangkong Daxue	Nanchang, Jiangxi	    115.8600 	   28.6800 	0.0200 	-	-	Nanchang Hangkong (Aeronautics) Univ.	南昌航空大学
 NCKU	NCKU	TW	O/PL	A	1931	-	NCKU	Guoli Chenggong Daxue (Chengda)	Tainan City	    120.2200 	   23.0000 	0.0200 	-	-	National Cheng Kung University	國立成功大學
 NCSC	NCSC	EG	PL	C	2023	-	New Cairo	New Cairo Space Control Center	New Cairo	     31.5000 	   30.0000 	0.0500 	EGYSA	-	-	New Cairo Space Control Centera
+NCSIST	NCSIST	TW	O/LV	D	1969 Jun	-	NCSIST	Guojia Zhongshan Kexue Yanjiuyuan	Taoyuan City	    121.3100 	   24.9900 	0.0200 	-	-	National Chung-Shan Institute of Science and Technology	國家中山科學研究院
 NCST	NCST	US	-	D	1980?	-	NCST	Naval Center for Space Technology	Washington, DC	    -77.0200 	   38.9000 	0.0200 	NRL	-	-	Naval Center for Space Technology
 NCU	NCU	TW	S	A	1968	-	NCU	National Central University - Shuanglianpo	Jhongli:Shuanglianpo	    121.1900 	   24.9700 	0.0200 	-	-	-	國立中央大學
 NDAWN	NDAWN	MU	O	B	2009	-	New Dawn	New Dawn Satellite Co. (Intelsat/Convergence Partners)	Port Louis, Maurice	     57.5000 	  -20.1600 	0.0200 	INTELS	New Dawn	-	New Dawn Satellite Co. (Intelsat/Convergence Partners)
@@ -3258,6 +3262,7 @@ SUPSAT	SUPSAT	LK	-	B	2012	-	SupremeSat	SupremeSAT (Pvt) Ltd.	Colombo?	    -79.84
 SUPSI	SUPSI	CH	O/PL	A	1997	-	SUPSI DTI	Scuola Universitaria Professionale della Svizzera, Dipart. Tecn. Innovative	Manno, Repubblica e Cantone Ticino	      8.8200 	   46.3200 	0.0200 	-	-	-	Scuola Universitaria Professionale della Svizzera, Dipart. Tecn. Innovative
 SURREY	SURREY	UK	O/PL	A	1985	-	Surrey Space Ctr	Surrey Space Centre, University of Surrey	Guildford, Surrey	     -0.5900 	   51.2400 	0.0200 	-	-	-	Surrey Space Centre, University of Surrey
 SURYA	SURYA	IN	O/PL	A	2013	-	Surya U.	Surya University	Jakarta:Tangerang	    106.6200 	   -6.2600 	0.0200 	-	-	-	Surya University
+SUST	SUST	CN	O	A	2010	-	SUSTech	Nanfang keji daxue	Shenzhen, Guangdong	    113.9900 	   22.6000 	0.0200 	-	-	Southern U. of Science and Technology	南方科技大学
 SUT	SUT	IR	PL	A	1966	-	Sharif UT	Daneshgah-e San'ati-ye Sharif	Tehran	     51.3900 	   35.6900 	0.0200 	-	SUT	Sharif University of Technology	دانشگاه صنعتی شریف
 SVC	SVC	US	LA/LV/PL	B	1969	-	SVC	Space Vector Corp	LA:Chatsworth/Canoga Park, California	   -118.6000 	   34.2600 	0.0200 	-	-	-	Space Vector Corp
 SVEC	SVEC	US	-	B	1985	2002?	SVEC	Space Vacuum Epitaxy Center	Houston, Texas	    -95.3800 	   29.7600 	0.0200 	HOUS	-	-	Space Vacuum Epitaxy Center
@@ -3278,6 +3283,7 @@ SYRU	SYRU	US	PL	A	1870	-	Syracuse U.	Syracuse University	Syracuse, New York	    
 SZI	SZI	IN	O/LV	B	2018	-	Space Zone India	Space Zone India	Chennai	     80.2700 	   13.0800 	0.0200 	-	-	-	Space Zone India
 SZRTC	SZRTC	CN	E	B	2012	-	ZTHJ	Shaanxi Zhongtian huojian jishu gufen youxian gongsi	Xi'an, Shaanxi	    108.9500 	   34.2700 	0.0200 	ARMT	-	Shaanxi Zhongtian Rocket Technology Ltd	陕西中天火箭技术股份有限公司
 TAC	TAC	US	LA	D	1946	1992	TAC	US Air Force Tactical Air Command	Langley AFB, Virginia	    -76.3600 	   37.0800 	0.0200 	USAF	-	-	US Air Force Tactical Air Command
+TADA	TADA	CN	O	A	1958	-	Talimu Daxue	Talimu Daxue	Alar, Xinjiang	     81.2900 	   40.5400 	0.0200 	-	Tarim	Tarim University	塔里木大学
 TAIFUN	IEM	SU	LV/E	C	1980?	-	NPO Taifun	NPO Taifun (Insitut Eksperimental'niy Meteolorologii)	Obninsk, Kaluga Oblast	     36.6200 	   55.0900 	0.0200 	-	-	NPO Typhoon	НПО «Тайфун» (Институт экспериментальной метеорологии)
 TAMA	TAMA	J	O/PL	A	1950	-	Tama	Tama bijutsu daigaku	Tokyo:Hachioji	    139.3200 	   35.6700 	0.0200 	-	-	Tama Art University, Hachioji campus	多摩美術大学
 TAMU	TAMU	US	O/PL	A	1876	-	Texas A&M	Texas A&M University	College Station, Texas	    -96.3100 	   30.6000 	0.0200 	-	-	-	Texas A&M University
@@ -3760,6 +3766,7 @@ WUTC	WUTC	US	O	B	1971	-	WUTC	Western Union Telegraph Corp.	Upper Saddle River, N
 WVU	WVU	US	O/PL	A	1867	-	WVU	West Virginia University	Morgantown, West Virginia	    -79.9500 	   39.6400 	0.0200 	-	-	-	West Virginia University
 WXB	WXB	US	O/LA/PL	C	1958	1965	WXB	US Weather Bureau	Suitland, Maryland	    -76.9200 	   38.8500 	0.0200 	DOC	-	-	US Weather Bureau
 WXBM	NESC	US	O/LA/PL	C	1958	1965	WXB	US Weather Bureau, Meteorological Satellite Lab	Suitland, Maryland	    -76.9200 	   38.8500 	0.0200 	WXB	-	-	US Weather Bureau, Meteorological Satellite Lab
+WYKK	WYKK	CN	O/PL	B	2020?	-	Weilai Yuhang KK	Beijing Weilai Yuhang Kongjian Keji yanjiuyuan YG	Beijing	    116.3800 	   39.9200 	0.0200 	-	-	Beijing Future Aerospace Sci Tech Research Inst Co Ltd	北京未来宇航空间科技研究院有限公司
 WYV	WYV	CA	O	B	2018	-	WYV	Wyvern Inc.	Edmonton, Alberta	   -113.4900 	   53.5300 	0.0200 	-	-	-	Wyvern, Inc.
 X20	X20	US	O	D	1962	1964	X-20 Pilot Group	X-20 Pilot Group	Edwards AFB, California	   -117.8800 	   34.9100 	0.0200 	AFASD	-	-	X-20 Pilot Group
 XCK	XCK	CN	O/PL	B	-	-	Watermelon Maker	Xigua Chuangke	Beijing?	    116.3800 	   39.9200 	0.0200 	-	-	Watermelon Maker	西瓜创客
@@ -3841,6 +3848,7 @@ ZHWK	ZHWK	CN	O	B	-	-	Zhongke Weixing	Zhongke Weixing Keji Jituan YG	Jinan, Shand
 ZHYE	ZHYE	CN	O/PL	B	2020?	-	Zhangye Xingzuo	Zhangye Xingzuo Kongjian Keji YG	Zhangye, Gansu	    100.4500 	   39.9300 	0.0200 	-	-	Zhangye Constellation Space Tech. Co. Ltd.	张掖星座空间科技有限公司
 ZIKH	KHRU	SU	O/LV/PL	B	1960 Oct	1994	ZIKh	ZIKh (Zavod im. M.V. Khrunichev)	Moskva:Fili	     37.5000 	   55.7500 	0.0200 	KBSAL	-	-	Машиностроительный завод им. М. В. Хруничева (ЗИХ)
 ZIMN	ZIMN	US	LV	B	1959	1963	Zimney	Zimney Corp.	Monrovia, California	   -118.0000 	   34.1500 	0.0200 	-	-	-	Zimney Corp.
+ZJLAB	ZJLAB	CN	O	B	2017 Sep	-	Zhejiang Lab	Zhejiang Shiyan Shi	Hangzhou, Zhejiang	    120.1200 	   30.2600 	0.0200 	-	-	Zhejiang Lab	之江实验室
 ZJUNI	ZJUNI	CN	O	B	2020	-	ZJUNI-SAT	Zhongxing zhilian	Hangzhou, Zhejiang	    120.1200 	   30.2600 	0.0200 	-	-	ZJUNI-SAT	众星志连
 ZKRG	ZKRG	CN	PL	B	-	-	Zhongke Ruige	Zhongke Ruige (Yantai) Jishu Fuwu YZG	Yantai	    121.4500 	   37.4600 	0.0200 	-	-	Zhongke Ruige (Yantai) Technology Service Co., Ltd	中科睿格（烟台）技术服务有限责任公司
 ZKXR	ZKXR	CN	O/PL	B	2018 May	-	Zhongke Xingrui	Zhongke Xingrui keji (Beijing) YG	Beijing:Haidian	    116.3000 	   39.9600 	0.0200 	-	-	Zhongke Xingrui (Starwiz)	中科星睿科技（北京）有限公司

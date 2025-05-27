@@ -17,6 +17,7 @@ class Satcat:
         self.satcat_path = f"{dataset_directory}/satcat.tsv"
         self.psatcat_path = f"{dataset_directory}/psatcat.tsv"
         self.translation = translation or translations.Translation()
+        self.date_updated = None
         
         self.df = pd.read_csv(self.satcat_path, sep="\t", encoding="utf-8", low_memory=False) # load satcat tsv into dataframe
         self.psatcat_df = pd.read_csv(self.psatcat_path, sep="\t", encoding="utf-8", low_memory=False) # load psatcat tsv into dataframe
@@ -36,7 +37,9 @@ class Satcat:
         Create new columns from existing columns in satcat dataframe to make it more pandas friendly.
         Lots of string manipulation to get the dates into a format that pandas can understand.
         """
-
+        
+        self.date_updated = " ".join(self.df.iloc[0,0].split(" ")[2:5])
+        
         # Remove second row of tsv, signifies date of last update
         self.df = self.df.drop(index=0).reset_index(drop=True)
 

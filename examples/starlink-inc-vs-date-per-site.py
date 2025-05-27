@@ -8,6 +8,8 @@ mda.Filters.filter_by_mission(dataset.launch, 'Starlink', case=False)
 filtered_df = dataset.launch.df
 print(f"Number of Starlink launches: {len(filtered_df)}")
 
+print(filtered_df.tail(25))
+
 # Select relevant columns and drop missing Inclination
 filtered_df = (
     filtered_df[['Launch_Date', 'Inc', 'Launch_Pad']]
@@ -42,7 +44,7 @@ mda.ChartUtils.plot_scatter(
     x_col='Launch_Date',
     y_cols=pivoted_df.columns[1:],        # skip the date column
     title='Starlink Launches: Inclination vs. Launch Date by Launch Pad',
-    subtitle='Christopher Kalitin 2025 – Data Cutoff: May 16 2025',
+    subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
     x_label='Launch Date',
     y_label='Inclination (degrees)',
     dot_diameter=10,

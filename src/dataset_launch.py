@@ -15,7 +15,8 @@ class Launch:
     
         self.dataset_directory = dataset_directory
         self.file_path = f"{dataset_directory}/launch.tsv"
-        self.translation = translation or translations.Translation() # beautiful pythonic syntax!
+        self.translation = translation or translations.Translation() # beautiful Pythonic syntax!
+        self.date_updated = None
         
         self.df = pd.read_csv(self.file_path, sep="\t", encoding="utf-8") # load tsv into dataframe
         
@@ -32,6 +33,8 @@ class Launch:
         Create new columns from existing columns in satcat dataframe to make it more pandas friendly.
         Lots of string manipulation to get the dates into a format that pandas can understand.
         """
+        
+        self.date_updated = " ".join(self.df.iloc[0,0].split(" ")[2:5])
         
         # Remove second row of tsv, signifies date of last update
         self.df = self.df.drop(index=0).reset_index(drop=True)
