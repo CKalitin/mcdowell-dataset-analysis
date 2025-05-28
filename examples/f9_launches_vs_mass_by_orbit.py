@@ -2,6 +2,8 @@ import mcdowell_dataset_analysis as mda
 import pandas as pd
 import copy
 
+output_name = "f9_launches_vs_mass_by_orbit"
+
 # Initialize dataset
 dataset = mda.McdowellDataset("./datasets")
 
@@ -30,8 +32,8 @@ output_df.columns = orbit_counts.keys()
 print(output_df)
 
 # Save to CSV
-output_df.to_csv('examples/outputs/f9_mass_by_orbit.csv', index=True)
-print("CSV file 'f9_mass_by_orbit.csv' has been created.")
+output_df.to_csv(f'examples/outputs/{output_name}.csv', index=True)
+print(f"CSV file '{output_name}.csv' has been created.")
 
 mda.ChartUtils.plot_histogram(
     output_df,
@@ -39,6 +41,6 @@ mda.ChartUtils.plot_histogram(
     subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
     x_label='Payload Mass Range (tonnes)',
     y_label='Number of Launches',
-    output_path='examples/outputs/f9_mass_by_orbit.png',
+    output_path=f'examples/outputs/{output_name}.png',
     color_map=mda.ChartUtils.orbit_color_map
 )

@@ -1,5 +1,7 @@
 import mcdowell_dataset_analysis as mda
 
+dataset_name = "starlink_inclination_vs_date_per_site"
+
 # Initialize dataset
 dataset = mda.McdowellDataset()
 
@@ -33,10 +35,10 @@ pivoted_df = mda.ChartUtils.pivot_dataframe(
 
 # Save to CSV
 pivoted_df.to_csv(
-    'examples/outputs/starlink_inclination_vs_date.csv',
+    f'examples/outputs/{dataset_name}.csv',
     index=False
 )
-print("CSV file 'starlink_inclination_vs_date.csv' has been created.")
+print(f"CSV file '{dataset_name}.csv' has been created.")
 
 # Create scatter plot
 mda.ChartUtils.plot_scatter(
@@ -48,7 +50,7 @@ mda.ChartUtils.plot_scatter(
     x_label='Launch Date',
     y_label='Inclination (degrees)',
     dot_diameter=10,
-    output_path='examples/outputs/starlink_inclination_vs_date.png',
+    output_path=f'examples/outputs/{dataset_name}.png',
     color_map={
         'LC40': '#fbbc04',
         'LC39A': '#cc0000',

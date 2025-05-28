@@ -2,6 +2,8 @@ import mcdowell_dataset_analysis as mda
 import pandas as pd
 import copy
 
+output_name = "f9_total_mass_vs_mass_by_orbit"
+
 # Initialize dataset
 dataset = mda.McdowellDataset()
 
@@ -31,27 +33,27 @@ for orbit in orbits:
     )
     total_mass = orbit_df.df.groupby('Mass_Range')['Payload_Mass'].sum()
     total_mass = total_mass.reindex(mass_labels, fill_value=0)
-    orbit_masses[orbit] = total_mass
+    orbit_masses[orbit] = total_mass/1000
 
 # Create the final DataFrame
 output_df = pd.DataFrame(orbit_masses)
 output_df.index.name = 'Payload_Mass_Range'
 
 # Print the final DataFrame
-print("\nFinal DataFrame (Total Payload Mass in kg):")
+print("\nFinal DataFrame (Total Payload Mass in t):")
 print(output_df)
 
 # Save to CSV
-output_df.to_csv('examples/outputs/total_mass_by_orbit_and_mass_range.csv', index=True)
-print("CSV file 'total_mass_by_orbit_and_mass_range.csv' has been created.")
+output_df.to_csv(f'examples/outputs/{output_name}.csv', index=True)
+print(f"CSV file '{output_name}.csv' has been created.")
 
 # Plot stacked bar chart
 mda.ChartUtils.plot_histogram(
     output_df,
-    title='Falcon 9 Launches: Total Payload Mass by Orbit and Mass Range',
+    title='Falcon 9 Net Payload Mass vs Mass Range by Orbit',
     subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
-    x_label='Payload Mass Range (Tons)',
-    y_label='Total Payload Mass (kg)',
-    output_path='examples/outputs/total_mass_by_orbit_and_mass_range.png',
+    x_label='Payload Mass Range (tonnes)',
+    y_label='Total Payload Mass (tonnes)',
+    output_path=f'examples/outputs/{output_name}.png',
     color_map=mda.ChartUtils.orbit_color_map
 )

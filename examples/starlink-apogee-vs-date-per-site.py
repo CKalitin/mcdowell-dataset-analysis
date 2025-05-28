@@ -1,5 +1,7 @@
 import mcdowell_dataset_analysis as mda
 
+dateset_name = "starlink_apogee_vs_date_per_site"
+
 # Initialize dataset
 dataset = mda.McdowellDataset()
 
@@ -24,8 +26,8 @@ print(filtered_df['Launch_Pad'].unique())
 pivoted_df = mda.ChartUtils.pivot_dataframe(filtered_df, 'Launch_Date', 'Launch_Pad', 'Apogee')
 
 # Save to CSV
-pivoted_df.to_csv('examples/outputs/starlink_apogee_vs_date.csv', index=False)
-print("CSV file 'starlink_apogee_vs_date.csv' has been created.")
+pivoted_df.to_csv(f'examples/outputs/{dateset_name}.csv', index=False)
+print(f"CSV file '{dateset_name}.csv' has been created.")
 
 # Create scatter plot
 mda.ChartUtils.plot_scatter(
@@ -37,7 +39,7 @@ mda.ChartUtils.plot_scatter(
     x_label='Launch Date',
     y_label='Apogee (km)',
     dot_diameter=10,
-    output_path='examples/outputs/starlink_apogee_vs_date.png',
+    output_path=f'examples/outputs/{dateset_name}.png',
     color_map={
         'LC40': '#fbbc04',
         'LC39A': '#cc0000',
