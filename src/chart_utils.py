@@ -58,7 +58,8 @@ class ChartUtils:
         binned = pd.cut(df[value_col], bins=bins, labels=labels, include_lowest=True).value_counts()
         return binned.reindex(labels)
  
-    def plot_histogram(dataframe, title, subtitle, x_label, y_label, output_path, color_map, barmode='stack'):
+    # Histograms are designed for continuous data, while bar charts are for discrete data.
+    def plot_histogram(dataframe, title, subtitle, x_label, y_label, output_path, color_map, barmode='stack', bargap=0):
         fig = px.histogram(dataframe,
                     x=dataframe.index,
                     y=dataframe.columns,
@@ -101,8 +102,72 @@ class ChartUtils:
             ),
             # Remove hover effects and other embellishments
             hovermode="x",
+            bargap=bargap,
         )
 
+        pio.write_image(fig, output_path, format='png', width=1280, height=720)
+        
+        print(f"Plot saved as '{output_path}'.")
+    
+    def plot_bar(dataframe, title, subtitle, x_label, y_label, output_path, color_map, barmode='stack', bargap=0):
+        """
+        Create a bar chart using Plotly Express.
+        Args:
+            dataframe (Pandas dataframe): Dataframe containing the data to be plotted
+            title (string): Title of the chart
+            subtitle (string): Subtitle of the chart, best to include the date of the data cut-off "Date Cutoff: YYYY-MM-DD"
+            x_label (string): Label for the x-axis
+            y_label (string): Label for the y-axis
+            output_path (string): Full path including filename to save the plot
+            color_map (dictionary): Column name to color mapping, eg. {'LC40': '#ff0000', 'LC39A': '#00ff00'}
+            barmode (string): 'stack' or 'group'
+            bargap (float): Gap between bars, 0-1
+        """
+        
+        fig = px.bar(dataframe,
+                     x=dataframe.index,
+                     y=dataframe.columns,
+                     title=f'<b>{title}</b><br><sup>{subtitle}</sup>',
+                     labels={'x': f'{x_label}', 'y': f'{y_label}'},
+                     barmode=barmode,
+                     color_discrete_map=color_map,
+                     )
+        
+        fig.update_layout(
+            # Font settings
+            font=dict(family='Arial, sans-serif', size=20, color="#000000"),
+            title=dict(font=dict(size=40, family='Arial, sans-serif', color="#000000"), x=0.025, xanchor="left"),
+            # Background and borders
+            plot_bgcolor="white",
+            paper_bgcolor="white",
+            # Gridlines
+            xaxis=dict(
+                gridcolor="rgba(200, 200, 200, 0.5)",
+                linecolor="#000000",
+                tickangle=45,
+                title_font=dict(size=24, family="Arial, sans-serif"),
+                title_text=x_label,
+            ),
+            yaxis=dict(
+                gridcolor="rgba(200, 200, 200, 0.5)",
+                linecolor="#000000",
+                rangemode='tozero',           # <— force start at 0
+                title_font=dict(size=24, family="Arial, sans-serif"),
+                title_text=y_label,
+            ),
+            # Legend
+            showlegend=True,
+            legend=dict(
+                font=dict(size=24, family="Arial, sans-serif"),
+                bordercolor="white",
+                borderwidth=1,
+                bgcolor="white",
+                title=dict(text=""),  # Add this line to remove title: "variable"
+            ),
+            # Remove hover effects and other embellishments
+            hovermode="x",
+            bargap=bargap,
+        )
         pio.write_image(fig, output_path, format='png', width=1280, height=720)
         
         print(f"Plot saved as '{output_path}'.")

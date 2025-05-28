@@ -2,7 +2,7 @@
 
 Types:
 Orbit
-General Type (Starlink, Commercial, Chinese Commecerial, Militray, Government, Eastern)
+General Type (Starlink, Commercial, Chinese Commecerial, Military, Government, Eastern)
 Western Type (High-Energy, Capsule, Small Sat Rideshare, Small Sat, Commercial LEO / SSO / MEO, Commercial GEO / GTO, Constellation GEO/MEO, LEO Constellation, Starlink)
 Small Sat Launch Type (Ridesharable, Kick Stagable, Unique Plane SLV, Government SLV, Gov. / Militray Payload)
 Small Sat Payload Type (Earth imaging, Earth Observation, Synthetic Aperture Radar, Tech Demo, Militray, Other)
@@ -11,7 +11,7 @@ Payload Type (Other, Tech Demo, Militray, Sicence, Communications, Observation)
 Launch Orbit Charts:
 - Successful Orbital Launches per Year by General Type
 - Successful Western Orbital Launches per Year by Western Type
-- Successful Orbital Lcunhes per Year by Orbit
+- Successful Orbital Launches per Year by Orbit
 - Successful Western Gov / Military Orbital Launches per Year by Orbit
 
 Launch Mass Charts:
