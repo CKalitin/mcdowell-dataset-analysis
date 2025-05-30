@@ -2,6 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import plotly.express as px
 import plotly.io as pio
+import copy
 
 class ChartUtils:
     """
@@ -45,9 +46,9 @@ class ChartUtils:
         pivoted = pivoted.reset_index().sort_values(by=index_col)
         return pivoted
 
-    def bin_dataframe(df, value_col, bins, labels):
+    def count_values_into_bins(df, value_col, bins, labels, count_values=None, specific_column=None):
         """
-        Sort groups into discrete bins (eg. intervals of payload mass) and count how many data points fall into each bin.
+        Sort groups (then, counts total) into discrete bins (eg. intervals of payload mass) and count how many data points fall into each bin.
         
         Eg. mass bins and labels:
         bins = [0,1000,2000,3000]
@@ -55,9 +56,33 @@ class ChartUtils:
         
         Notice that labels are between the bins. The bins variable specifies the edges of the bins.
         """
-        binned = pd.cut(df[value_col], bins=bins, labels=labels, include_lowest=True).value_counts()
-        return binned.reindex(labels)
+        if specific_column:
+            df[specific_column] = pd.cut(df[value_col], bins=bins, labels=labels, include_lowest=True)
+            binned = df
+        else:
+            binned = pd.cut(df[value_col], bins=bins, labels=labels, include_lowest=True)
+        if count_values:
+            binned = binned.value_counts().reindex(labels)
+        return binned
  
+    def bin_dataframe_into_dictionary_by_filter_function(dataset, filter_function, filter_function_parameters, value_col, bins, bin_labels, keys=None, count_values=True, specific_column=None):
+        if keys is None:
+            keys = filter_function_parameters
+        output_dict = {}
+        for filter_function_parameter, key in zip(filter_function_parameters, keys):
+            new_dataset = copy.copy(dataset)  # Create a copy of the dataframe to avoid modifying the original, bad solution tbh
+            filter_function(new_dataset, filter_function_parameter)  # Apply the filter function
+            output_dict[key] = ChartUtils.count_values_into_bins(new_dataset.df, value_col, bins, bin_labels, count_values, specific_column)
+        return output_dict
+ 
+    # Combines individual dataframes as columns into a single dataframe, with keys as column names.
+    def combine_dictionary_of_dataframes(dataframes):
+        # .values gives us a list-like object of the counts for each year
+        # Concat axis=1 combines each individual dataframe into columns of a single dataframe
+        output_df = pd.concat(dataframes.values(), axis=1)
+        output_df.columns = dataframes.keys() # Name columns by the orbits
+        return output_df
+
     # Histograms are designed for continuous data, while bar charts are for discrete data.
     def plot_histogram(dataframe, title, subtitle, x_label, y_label, output_path, color_map, barmode='stack', bargap=0):
         fig = px.histogram(dataframe,

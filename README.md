@@ -5,6 +5,10 @@ TODO:
 2. Use auxcat / parents of satellites to get their initial orbits
 3. Documentation of everything and what to use for the AIs
 
+Refactoring:
+1. Split into categories easily (need a function as parameter, eg do you want to sort by orbit or mass or what?)
+2. 
+
 ## Block Diagram
 
 ![Code Block Diagram](https://github.com/CKalitin/mcdowell-dataset-analysis/blob/main/docs/block-diagram.png)  
