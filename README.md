@@ -1,13 +1,9 @@
 ## TODO
 
-TODO:
-1. Plotly
-2. Use auxcat / parents of satellites to get their initial orbits
-3. Documentation of everything and what to use for the AIs
+1. Use auxcat / parents of satellites to get their initial orbits
+   - See: https://x.com/planet4589/status/1913770672565764139
+2. Documentation of how everything works and how to use for the AIs
 
-Refactoring:
-1. Split into categories easily (need a function as parameter, eg do you want to sort by orbit or mass or what?)
-2. 
 
 ## Block Diagram
 
