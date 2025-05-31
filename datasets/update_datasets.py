@@ -30,3 +30,11 @@ for url in urls:
         print(f"Error downloading {url}: {e}")
     except OSError as e:
         print(f"Error saving {file_name}: {e}")
+        
+# Print launch dataset date updated
+launch_file_path = os.path.join(save_directory, "launch.tsv")
+if os.path.exists(launch_file_path):
+    with open(launch_file_path, 'r') as file:
+        file.readline() # Skip first line
+        date = " ".join(file.readline().strip().split(" ")[2:6])
+        print(f"Launch dataset cutoff: {date}")

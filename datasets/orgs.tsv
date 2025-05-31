@@ -1,7 +1,8 @@
 #Code	UCode	StateCode	Type	Class	TStart	TStop	ShortName	Name	Location	Longitude	Latitude	Error	Parent	ShortEName	EName	UName
-# Updated 2025 May 24 2041:47
+# Updated 2025 May 30 1458:31
 EARTH	EARTH	EARTH	AP	C	-	-	Earth	Earth	Earth	-	-	0.0200 	-	Earth (Terra)	Earth	Earth
 LUNA	LUNA	LUNA	AP	C	-	-	Luna	Luna	Luna	-	-	0.0200 	-	Moon	Moon	Luna
+SSYS	SSYS	SSYS	AP	C	-	-	Solar System	Solar System natural celestial objects	Sol	-	-	0.0200 	-	Solar System	Solar System natural celestial objects	Solar System
 AAT	AAT	AAT	CYP	C	1841	-	Aus. Antarctic	Australian Antarctic Territory	Davis Staton, Princess Elizabeth Land	     77.9700 	  -68.5800 	0.0200 	AU	AAT	Australian Antarctic Territory	Australian Antarctic Territory
 ADG	ADG	RU	CYP	C	1991 Jan	-	Adygea	Respublika Adygeya	Maykop	     40.0800 	   44.6000 	0.0200 	RU	Adygea	Adygea, Republic of	Республика Адыгея
 AF	AF	AF	CY	C	2004	-	Afghanistan	Da Afganistan Islami Jomhoriyat	Kabul	     69.1700 	   34.5300 	0.0200 	-	Afganistan	Afghanistan, Islamic Republic of	د افغانستان اسلامي جمهوریت

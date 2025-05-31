@@ -16,9 +16,6 @@ orbits = ['LEO', 'SSO', 'MEO', 'GTO', 'GEO', 'HEO', 'BEO']
 bins = list(range(0, 19000, 1000))
 mass_labels = [f"{int(bins[i]/1000)}-{int(bins[i+1]/1000)}t" for i in range(len(bins)-1)]
 
-print(bins)
-print(mass_labels)
-
 # Create a dictionary with key orbits and values are dataframes for each orbit showing the number of launches per payload mass range
 orbit_dataframes = mda.ChartUtils.bin_dataset_into_dictionary_by_filter_function(
     dataset=dataset.launch,
