@@ -2,6 +2,7 @@ import requests
 import os
 
 urls = [
+    "https://planet4589.org/space/gcat/tsv/cat/auxcat.tsv",
     "https://planet4589.org/space/gcat/tsv/launch/launch.tsv",
     "https://planet4589.org/space/gcat/tsv/tables/lv.tsv",
     "https://planet4589.org/space/gcat/tsv/tables/orgs.tsv",

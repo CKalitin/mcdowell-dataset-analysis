@@ -4,7 +4,6 @@
    - See: https://x.com/planet4589/status/1913770672565764139
 2. Documentation of how everything works and how to use for the AIs
 
-
 ## Block Diagram
 
 ![Code Block Diagram](https://github.com/CKalitin/mcdowell-dataset-analysis/blob/main/docs/block-diagram.png)  

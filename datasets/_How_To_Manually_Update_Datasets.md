@@ -7,6 +7,9 @@ Go to the source website above and download the files specified below, then copy
 
 Note that you shouldn't have to leave the website linked above, the download hyperlinks are all on that site, no need to navigate anywhere else.
 
+auxcat.tsv:
+Object Catalogs > Main Catalogs > auxcat (TSV)
+
 launch.tsv:  
 Launch Lists > Full List (TSV)
 
