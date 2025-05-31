@@ -16,7 +16,7 @@ def main(start_year=2000):
     orbits = ['LEO', 'SSO', 'MEO', 'GTO', 'GEO', 'HEO', 'BEO']
 
     # Create a dictionary with key orbits and values are dataframes for each orbit showing the number of launches per year
-    orbit_dataframes = mda.ChartUtils.bin_dataframe_into_dictionary_by_filter_function(
+    orbit_dataframes = mda.ChartUtils.bin_dataset_into_dictionary_by_filter_function(
         dataset=dataset.launch,
         filter_function=mda.Filters.filter_by_orbit,
         filter_function_parameters=orbits,
@@ -30,7 +30,7 @@ def main(start_year=2000):
 
     print(output_df)
 
-    output_df.to_csv(f'examples/outputs/{dateset_name}.csv', index=True)
+    output_df.to_csv(f'examples/outputs/csv/{dateset_name}.csv', index=True)
     print(f"CSV file '{dateset_name}.csv' has been created.")
 
     mda.ChartUtils.plot_bar(
@@ -39,7 +39,7 @@ def main(start_year=2000):
         subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
         x_label='Year',
         y_label='Number of Launches',
-        output_path=f'examples/outputs/{dateset_name}.png',
+        output_path=f'examples/outputs/chart/{dateset_name}.png',
         color_map=mda.ChartUtils.orbit_color_map,
         bargap=0.1,
     )

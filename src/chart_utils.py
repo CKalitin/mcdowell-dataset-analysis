@@ -107,7 +107,7 @@ class ChartUtils:
             keys = filter_function_parameters
         output_dict = {}
         for filter_function_parameter, key in zip(filter_function_parameters, keys):
-            new_dataset = copy.copy(dataset)  # Create a copy of the dataframe to avoid modifying the original, bad solution tbh
+            new_dataset = copy.deepcopy(dataset)  # Create a copy of the dataframe to avoid modifying the original, bad solution tbh. Deep copy is required bc dataset is part of another class (i think this is why).
             filter_function(new_dataset, filter_function_parameter)  # Apply the filter function
             output_dict[key] = ChartUtils.count_values_into_bins(new_dataset.df, value_col, bins, bin_labels, count_values, bin_column)
         return output_dict

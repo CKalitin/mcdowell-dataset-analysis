@@ -35,7 +35,7 @@ pivoted_df = mda.ChartUtils.pivot_dataframe(
 
 # Save to CSV
 pivoted_df.to_csv(
-    f'examples/outputs/{dataset_name}.csv',
+    f'examples/outputs/csv/{dataset_name}.csv',
     index=False
 )
 print(f"CSV file '{dataset_name}.csv' has been created.")
@@ -50,7 +50,7 @@ mda.ChartUtils.plot_scatter(
     x_label='Launch Date',
     y_label='Inclination (degrees)',
     dot_diameter=10,
-    output_path=f'examples/outputs/{dataset_name}.png',
+    output_path=f'examples/outputs/chart/{dataset_name}.png',
     color_map={
         'LC40': '#fbbc04',
         'LC39A': '#cc0000',

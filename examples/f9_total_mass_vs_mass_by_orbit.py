@@ -26,11 +26,9 @@ orbit_dataframes = mda.ChartUtils.bin_dataset_into_dictionary_by_filter_function
     bin_column = 'Mass_Range'
 )
 
-print(orbit_dataframes['LEO'])
-
 orbit_masses = {}
 for orbit_dataframe_key in orbit_dataframes.keys():
-    total_mass = orbit_dataframes[orbit_dataframe_key].groupby('Mass_Range')['Payload_Mass'].sum() # Sum mass in payload range for this orbit
+    total_mass = orbit_dataframes[orbit_dataframe_key].groupby('Mass_Range', observed=False)['Payload_Mass'].sum() # Sum mass in payload range for this orbit
     total_mass = total_mass.reindex(mass_labels, fill_value=0)
     orbit_masses[orbit_dataframe_key] = total_mass/1000
 
@@ -39,7 +37,7 @@ output_df = mda.ChartUtils.combine_dictionary_of_dataframes(orbit_masses)
 print(output_df)
 
 # Save to CSV
-output_df.to_csv(f'examples/outputs/{output_name}.csv', index=True)
+output_df.to_csv(f'examples/outputs/csv/{output_name}.csv', index=True)
 print(f"CSV file '{output_name}.csv' has been created.")
 
 # Plot stacked bar chart
@@ -49,7 +47,7 @@ mda.ChartUtils.plot_bar(
     subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
     x_label='Payload Mass Range (tonnes)',
     y_label='Total Payload Mass (tonnes)',
-    output_path=f'examples/outputs/{output_name}.png',
+    output_path=f'examples/outputs/chart/{output_name}.png',
     color_map=mda.ChartUtils.orbit_color_map,
     bargap=0.1
 )

@@ -26,7 +26,7 @@ print(filtered_df['Launch_Pad'].unique())
 pivoted_df = mda.ChartUtils.pivot_dataframe(filtered_df, 'Launch_Date', 'Launch_Pad', 'Apogee')
 
 # Save to CSV
-pivoted_df.to_csv(f'examples/outputs/{dateset_name}.csv', index=False)
+pivoted_df.to_csv(f'examples/outputs/csv/{dateset_name}.csv', index=False)
 print(f"CSV file '{dateset_name}.csv' has been created.")
 
 # Create scatter plot
@@ -39,7 +39,7 @@ mda.ChartUtils.plot_scatter(
     x_label='Launch Date',
     y_label='Apogee (km)',
     dot_diameter=10,
-    output_path=f'examples/outputs/{dateset_name}.png',
+    output_path=f'examples/outputs/chart/{dateset_name}.png',
     color_map={
         'LC40': '#fbbc04',
         'LC39A': '#cc0000',
