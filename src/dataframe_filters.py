@@ -100,7 +100,7 @@ class Filters:
         
         dataset_class.df = dataset_class.df[condition]
 
-    def filter_by_launch_vehicle_raw(dataset_class, launch_vehicles, negate=False):
+    def filter_by_launch_vehicle_raw_name(dataset_class, launch_vehicles, negate=False):
         """
         Remove all launches that are not in the given launch vehicles.
         Args:

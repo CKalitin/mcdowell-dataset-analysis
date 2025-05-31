@@ -106,8 +106,6 @@ class Launch:
         # Create new columns in launch_df for canonical orbit data
         for col in ['Orbit_Canonical_Date', 'Perigee', 'Apogee', 'Inc', 'OpOrbit']:
             self.df[col] = self.df['Launch_Tag'].map(first_payload[col])
-        
-        print(self.df.tail(10))
             
     def process_auxcat_dependent_columns(self):
         """
@@ -146,21 +144,7 @@ class Launch:
         
         second_stage_auxcat["Simple_Orbit"] = second_stage_auxcat["OpOrbit"].replace(self.translation.opOrbit_to_simple_orbit) # Translate to simple orbit
         
-        print(self.df.tail(10))
-        
         # Update existing columns in self.df with values from second_stage_auxcat, overwriting all matching entries
         for col in ['Orbit_Canonical_Date', 'Apogee', 'Perigee', 'Inc', 'OpOrbit', 'Simple_Orbit']:
             mapping = second_stage_auxcat.set_index('Launch_Tag')[col] # Create a mapping from Launch_Tag to the column value
             self.df.loc[self.df['Launch_Tag'].isin(mapping.index), col] = self.df['Launch_Tag'].map(mapping) # Update self.df[col] where Launch_Tag exists in mapping
-            
-        print(self.df.tail(10))
-        
-        
-# unlimited pandas print size
-pd.set_option('display.max_rows', None)
-pd.set_option('display.max_columns', None)
-       
-satcat = dataset_satcat.Satcat()
-launch = Launch()
-launch.process_satcat_dependent_columns(satcat)
-launch.process_auxcat_dependent_columns()

@@ -8,7 +8,7 @@ output_name = "f9_total_mass_vs_mass_by_orbit"
 dataset = mda.McdowellDataset()
 
 mda.Filters.filter_by_launch_category(dataset.launch, ['O', 'D'])  # Filter for orbital and deep space launches
-mda.Filters.filter_by_launch_vehicle_family(dataset.launch, 'Falcon9')  # Filter for Falcon 9 launches
+mda.Filters.filter_by_launch_vehicle_raw_name(dataset.launch, 'Falcon 9')  # Filter for Falcon 9 launches
 
 # Define orbit types in desired order
 orbits = ['LEO', 'SSO', 'MEO', 'GTO', 'GEO', 'HEO', 'BEO']

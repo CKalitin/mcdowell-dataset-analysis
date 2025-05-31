@@ -1,8 +1,10 @@
 ## TODO
 
-1. Use auxcat / parents of satellites to get their initial orbits
-   - See: https://x.com/planet4589/status/1913770672565764139
-2. Documentation of how everything works and how to use for the AIs
+1. Add launch vehicle name translation so it's easier to work with (eg. "Falcon 9", "Falcon Heavy", not "Falcon9")
+2. Add functions to get launch types (in chart utils, not everywhere? Eh do it everywhere)
+3. Pie charts
+4. Add all legacy charts
+5. Documentation of how everything works and how to use for the AIs
 
 ## Block Diagram
 
@@ -24,10 +26,12 @@ For modifying the code locally, without having to deal with PyPI every time you 
    git clone https://github.com/CKalitin/mcdowell-dataset-analysis.git
    cd mcdowell-dataset-analysis
    ```
-2. Install in editable mode:
+2. Install in editable mode (remember the dot at the end!!):
    ```bash
    pip install -e .
    ```
+   If using Github desktop, run only this command in the base directory of this repo in the VS Code terminal.
+
 
 ### Dependencies
 The package requires:
@@ -39,7 +43,7 @@ These are automatically installed when you use `pip`.
 
 ## Updating Datasets
 
-The datasets currently have data up until May 16 2025.
+The datasets currently have data up until May 30 2025.
 
 To update the datasets, you can use the `update_datasets.py` script. This script fetches the latest data from Jonathan McDowell's website and updates the local TSV files.
 
