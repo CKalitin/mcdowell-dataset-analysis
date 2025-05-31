@@ -46,33 +46,70 @@ class ChartUtils:
         pivoted = pivoted.reset_index().sort_values(by=index_col)
         return pivoted
 
-    def count_values_into_bins(df, value_col, bins, labels, count_values=None, specific_column=None):
+    def count_values_into_bins(dataframe, value_col, bins, labels, count_values=False, bin_column=None):
         """
-        Sort groups (then, counts total) into discrete bins (eg. intervals of payload mass) and count how many data points fall into each bin.
+        Sort groups (then, count totals if count_values) into discrete bins (eg. intervals of payload mass) and count how many data points fall into each bin.
         
-        Eg. mass bins and labels:
-        bins = [0,1000,2000,3000]
-        mass_labels = ['0-1T','1-2T','2-3T']
+        Args:
+            dataframe (Pandas dataframe): Dataframe containing the data to be binned
+            value_col (str): Column to be used for binning, eg. 'Payload_Mass'.
+            bins (list int): List of bin edges, eg. [0, 1000, 2000, 3000] for payload mass bins.
+            labels (list str): List of bin labels, eg. ['0-1T', '1-2T', '2-3T'] for payload mass bins.
+            count_values (bool, optional): If True, counts the number of values in each bin and returns this instead of the bin itself. Defaults to False.
+            bin_column (str, optional): If provided, adds a new column to the dataframe for the bin of each row. Defaults to None.
+            
+        Note what bin_column does. If you don't provide a value, it will returns something like this:
+        70696      2-3t
+        70795      3-4t
+        71078      4-5t
+        71159      5-6t
+        71260      6-7t
+        71406      0-1t
+        Notice each row only has one value, the bin it belongs to.
+        
+        If you provide a bin_column, then each row will retain all of its original data, but will have a new column with the bin it belongs to.
         
         Notice that labels are between the bins. The bins variable specifies the edges of the bins.
         """
-        if specific_column:
-            df[specific_column] = pd.cut(df[value_col], bins=bins, labels=labels, include_lowest=True)
-            binned = df
+        
+        if bin_column:
+            dataframe[bin_column] = pd.cut(dataframe[value_col], bins=bins, labels=labels, include_lowest=True)
+            binned = dataframe
         else:
-            binned = pd.cut(df[value_col], bins=bins, labels=labels, include_lowest=True)
+            binned = pd.cut(dataframe[value_col], bins=bins, labels=labels, include_lowest=True)
         if count_values:
             binned = binned.value_counts().reindex(labels)
         return binned
  
-    def bin_dataframe_into_dictionary_by_filter_function(dataset, filter_function, filter_function_parameters, value_col, bins, bin_labels, keys=None, count_values=True, specific_column=None):
+    def bin_dataset_into_dictionary_by_filter_function(dataset, filter_function, filter_function_parameters, value_col, bins, bin_labels, keys=None, count_values=True, bin_column=None):
+        """Filters a dataset by a given filter function and returns a dataframe for each filter function parameter.
+        
+        Eg. You can filter by orbit and get a dictionary of dataframes, one for each orbit.
+        
+        If it doesn't make sense, read Pandas documentation.
+        
+        Args:
+            dataset (launch or satcat): Launch or Satcat dataset (notice this isn't the McDowellDataset, so use dataset.launch or dataset.satcat)
+            filter_function (mda.Filters...): Filter function to be applied
+            filter_function_parameters (list): List of paramters, eg. ['LEO', 'SSO, ... , 'BEO'] for orbits or ['Falcon9', 'Electron'] for launch vehicles.
+            value_col (str): Column to be used for binning, eg. 'Payload_Mass'.
+            bins (list int): List of bin edges, eg. [0, 1000, 2000, 3000] for payload mass bins.
+            bin_labels (list str): List of bin labels, eg. ['0-1T', '1-2T', '2-3T'] for payload mass bins.
+            keys (list str, optional): Use if keys should be different from filter_function_parameters. Eg. for orbits if you want 'Low Earth Orbit' instead of 'LEO'. Must be in same order as filter_function_parameters. Defaults to None.
+            count_values (bool, optional): If True, counts the number of values in each bin and returns this instead of the bin itself. Defaults to True.
+            bin_column (str, optional): See count_values_into_bins(). If provided, adds a new column to the dataframe for the bin of each row. Defaults to None.
+
+        Returns:
+            dictionary(key, binned dataframe): A dictionary where each key is a filter function parameter and the value is a dataframe with binned values.
+        """
+
         if keys is None:
             keys = filter_function_parameters
         output_dict = {}
         for filter_function_parameter, key in zip(filter_function_parameters, keys):
             new_dataset = copy.copy(dataset)  # Create a copy of the dataframe to avoid modifying the original, bad solution tbh
             filter_function(new_dataset, filter_function_parameter)  # Apply the filter function
-            output_dict[key] = ChartUtils.count_values_into_bins(new_dataset.df, value_col, bins, bin_labels, count_values, specific_column)
+            output_dict[key] = ChartUtils.count_values_into_bins(new_dataset.df, value_col, bins, bin_labels, count_values, bin_column)
         return output_dict
  
     # Combines individual dataframes as columns into a single dataframe, with keys as column names.

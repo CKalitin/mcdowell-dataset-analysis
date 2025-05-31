@@ -15,7 +15,7 @@ orbits = ['LEO', 'SSO', 'MEO', 'GTO', 'GEO', 'HEO', 'BEO']
 bins = list(range(0, 19000, 1000))
 mass_labels = [f"{int(bins[i]/1000)}-{int(bins[i+1]/1000)}t" for i in range(len(bins)-1)]
 
-orbit_dataframes = mda.ChartUtils.bin_dataframe_into_dictionary_by_filter_function(
+orbit_dataframes = mda.ChartUtils.bin_dataset_into_dictionary_by_filter_function(
     dataset=dataset.launch,
     filter_function=mda.Filters.filter_by_orbit,
     filter_function_parameters=orbits,
@@ -23,8 +23,10 @@ orbit_dataframes = mda.ChartUtils.bin_dataframe_into_dictionary_by_filter_functi
     bins=bins,
     bin_labels=mass_labels,
     count_values=False,
-    specific_column = 'Mass_Range'
+    bin_column = 'Mass_Range'
 )
+
+print(orbit_dataframes['LEO'])
 
 orbit_masses = {}
 for orbit_dataframe_key in orbit_dataframes.keys():

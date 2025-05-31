@@ -20,7 +20,7 @@ print(bins)
 print(mass_labels)
 
 # Create a dictionary with key orbits and values are dataframes for each orbit showing the number of launches per payload mass range
-orbit_dataframes = mda.ChartUtils.bin_dataframe_into_dictionary_by_filter_function(
+orbit_dataframes = mda.ChartUtils.bin_dataset_into_dictionary_by_filter_function(
     dataset=dataset.launch,
     filter_function=mda.Filters.filter_by_orbit,
     filter_function_parameters=orbits,
