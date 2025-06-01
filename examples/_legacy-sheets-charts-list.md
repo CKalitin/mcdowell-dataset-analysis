@@ -78,4 +78,4 @@ USA Satellites / Starshield Satellites
 - Apogee vs. Date
 - Mass vs. Date
 
-It'll look really funny for all USA sats to be one off old air force ones, then a barage of Starshield.
+It'll look really funny for all USA sats to be one-off old air force ones, then a barage of Starshield.

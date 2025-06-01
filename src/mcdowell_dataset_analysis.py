@@ -20,6 +20,8 @@ class McdowellDataset:
         self.satcat = Satcat(self.translation, dataset_directory=dataset_directory)
         
         self.launch.process_satcat_dependent_columns(self.satcat)
+        self.launch.add_custom_launch_types()
+        
         self.satcat.process_launch_dependent_columns(self.launch)
         
         self.date_updated = self.launch.date_updated # Take date updated from the launch dataset arbitrarily

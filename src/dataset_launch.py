@@ -1,6 +1,6 @@
 import pandas as pd
 import translations
-import dataset_satcat
+import custom_launch_types
 
 class Launch:
     """
@@ -103,9 +103,16 @@ class Launch:
               .set_index('Launch_Tag')
         )
         
+        # Note that here we make the first payload on the launch the simple payload category.
+        first_payload.rename(columns={'Simple_Payload_Category': 'First_Simple_Payload_Category'}, inplace=True)
+        
         # Create new columns in launch_df for canonical orbit data
-        for col in ['Orbit_Canonical_Date', 'Perigee', 'Apogee', 'Inc', 'OpOrbit']:
+        for col in ['Orbit_Canonical_Date', 'Perigee', 'Apogee', 'Inc', 'OpOrbit', 'First_Simple_Payload_Category']:
             self.df[col] = self.df['Launch_Tag'].map(first_payload[col])
+        
+        # make pandas show it all
+        pd.set_option('display.max_columns', None)
+        pd.set_option('display.max_rows', None)
             
     def process_auxcat_dependent_columns(self):
         """
@@ -148,3 +155,6 @@ class Launch:
         for col in ['Orbit_Canonical_Date', 'Apogee', 'Perigee', 'Inc', 'OpOrbit', 'Simple_Orbit']:
             mapping = second_stage_auxcat.set_index('Launch_Tag')[col] # Create a mapping from Launch_Tag to the column value
             self.df.loc[self.df['Launch_Tag'].isin(mapping.index), col] = self.df['Launch_Tag'].map(mapping) # Update self.df[col] where Launch_Tag exists in mapping
+            
+    def add_custom_launch_types(self):
+        self.df = custom_launch_types.add_general_launch_type(self.df)

@@ -1,0 +1,56 @@
+"""
+Types:
+Orbit
+General Launch Type (Starlink, Commercial, Chinese Commecerial, Military, Government, Eastern)
+Western Launch Type (High-Energy, Capsule, Small Sat Rideshare, Small Sat, Commercial LEO / SSO / MEO, Commercial GEO / GTO, Constellation GEO/MEO, LEO Constellation, Starlink)
+Small Sat Launch Type (Ridesharable, Kick Stagable, Unique Plane SLV, Government SLV, Gov. / Military Payload)
+Small Sat Payload Type (Earth imaging, Earth Observation, Synthetic Aperture Radar, Tech Demo, Military, Other)
+Payload Type (Other, Tech Demo, Military, Sicence, Communications, Observation)
+"""
+
+def add_general_launch_type(launch_dataframe):
+    """
+    Launch group descriptions:
+    https://planet4589.org/space/gcat/web/intro/service.html
+    
+    Note that this is launch payload type. So a government payload on a commercial rocket is government.
+    
+    Starlink: mission column contains 'Starlink'
+    Commercial: group starts with 'C' and state is not 'CN' or 'RU'
+    Chinese Commercial: group starts with 'C' and state is 'CN' or 'RU'
+    Military: First_Simple_Payload_Category is 'Military'
+    Eastern Military: Same as military but state is 'CN' or 'RU'
+    Government: group starts with 'G' and state is not 'CN' or 'RU'
+    Eastern Government: group starts with 'E' and state is not 'CN' or 'RU'
+    """
+    
+    launch_dataframe['General_Launch_Type'] = 'Other'
+    
+    # Starlink
+    launch_dataframe.loc[launch_dataframe['Mission'].str.contains('Starlink', case=False, na=False), 'General_Launch_Type'] = 'Starlink'
+    
+    # Commercial
+    commercial_mask = (launch_dataframe['Group'].str.startswith('C')) & (~launch_dataframe['State'].isin(['CN']))
+    launch_dataframe.loc[commercial_mask, 'General_Launch_Type'] = 'Commercial'
+    
+    # Chinese Commercial
+    chinese_commercial_mask = (launch_dataframe['Group'].str.startswith('C')) & (launch_dataframe['State'].isin(['CN']))
+    launch_dataframe.loc[chinese_commercial_mask, 'General_Launch_Type'] = 'Chinese Commercial'
+    
+    # Military
+    military_mask = launch_dataframe['First_Simple_Payload_Category'] == 'Military'
+    launch_dataframe.loc[military_mask, 'General_Launch_Type'] = 'Military'
+    
+    # Eastern Military
+    eastern_military_mask = military_mask & launch_dataframe['State'].isin(['CN', 'RU'])
+    launch_dataframe.loc[eastern_military_mask, 'General_Launch_Type'] = 'Eastern Military'
+    
+    # Government
+    government_mask = (launch_dataframe['Group'].str.startswith('G')) & (~launch_dataframe['State'].isin(['CN', 'RU']))
+    launch_dataframe.loc[government_mask, 'General_Launch_Type'] = 'Government'
+    
+    # Eastern Government
+    eastern_government_mask = (launch_dataframe['Group'].str.startswith('E')) & (~launch_dataframe['State'].isin(['CN', 'RU']))
+    launch_dataframe.loc[eastern_government_mask, 'General_Launch_Type'] = 'Eastern Government'
+    
+    return launch_dataframe

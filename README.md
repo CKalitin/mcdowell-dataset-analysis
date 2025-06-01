@@ -1,5 +1,12 @@
 ## TODO
 
+First, remember the previous commit:
+"
+Attempt at general launch type
+
+todo is to look for edge cases and fix them
+"
+
 1. Add launch vehicle name translation so it's easier to work with (eg. "Falcon 9", "Falcon Heavy", not "Falcon9")
 2. Add functions to get launch types (in chart utils, not everywhere? Eh do it everywhere)
 3. Pie charts

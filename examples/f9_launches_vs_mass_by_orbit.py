@@ -45,3 +45,7 @@ mda.ChartUtils.plot_bar(
     color_map=mda.ChartUtils.orbit_color_map,
     bargap=0.1,
 )
+
+# print launch df tail
+print("Launch DataFrame (tail):")
+print(dataset.launch.df.tail(500))
