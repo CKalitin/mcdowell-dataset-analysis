@@ -1,6 +1,6 @@
 import mcdowell_dataset_analysis as mda
 
-def main(start_year=2000):
+def main(start_year):
     dateset_name = f"orbital_launches_vs_year_by_orbit_{start_year}"
 
     # Initialize dataset

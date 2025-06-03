@@ -8,6 +8,7 @@ todo is to look for edge cases and fix them
 "
 
 1. Add launch vehicle name translation so it's easier to work with (eg. "Falcon 9", "Falcon Heavy", not "Falcon9")
+1. Add standard chart generation functions (eg. Ariane 5 launches per month in date range)
 2. Add functions to get launch types (in chart utils, not everywhere? Eh do it everywhere)
 3. Pie charts
 4. Add all legacy charts

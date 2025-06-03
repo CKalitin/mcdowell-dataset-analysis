@@ -171,7 +171,7 @@ class ChartUtils:
         
         print(f"Plot saved as '{output_path}'.")
     
-    def plot_bar(dataframe, title, subtitle, x_label, y_label, output_path, color_map, barmode='stack', bargap=0):
+    def plot_bar(dataframe, title, subtitle, x_label, y_label, output_path, color_map, barmode='stack', bargap=0, x_tick0=0, x_tick_step_size=1):
         """
         Create a bar chart using Plotly Express.
         Args:
@@ -184,6 +184,8 @@ class ChartUtils:
             color_map (dictionary): Column name to color mapping, eg. {'LC40': '#ff0000', 'LC39A': '#00ff00'}
             barmode (string): 'stack' or 'group'
             bargap (float): Gap between bars, 0-1
+            x_tick0 (int): First tick on the x axis (x_label). 0 = first index.
+            x_tick_step_size (int): tick step size
         """
         
         fig = px.bar(dataframe,
@@ -209,6 +211,8 @@ class ChartUtils:
                 tickangle=45,
                 title_font=dict(size=24, family="Arial, sans-serif"),
                 title_text=x_label,
+                tick0=x_tick0,
+                dtick=x_tick_step_size # step size
             ),
             yaxis=dict(
                 gridcolor="rgba(200, 200, 200, 0.5)",

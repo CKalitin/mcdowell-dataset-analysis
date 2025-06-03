@@ -1,6 +1,4 @@
 import mcdowell_dataset_analysis as mda
-import pandas as pd
-import copy
 
 output_name = "f9_launches_vs_mass_by_orbit"
 

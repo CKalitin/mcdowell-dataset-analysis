@@ -79,3 +79,8 @@ USA Satellites / Starshield Satellites
 - Mass vs. Date
 
 It'll look really funny for all USA sats to be one-off old air force ones, then a barage of Starshield.
+
+Falcon 9 Monthly Launch Cadence & F9 Type breakdown - 17 in a Month!!
+
+Flight rate of other historic launch vehicles:
+https://substack.com/home/post/p-164367791
