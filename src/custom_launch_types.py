@@ -8,7 +8,7 @@ Small Sat Payload Type (Earth imaging, Earth Observation, Synthetic Aperture Rad
 Payload Type (Other, Tech Demo, Military, Sicence, Communications, Observation)
 """
 
-def add_general_launch_type(launch_dataframe):
+def add_general_launch_payload_type(launch_dataframe):
     """
     Launch group descriptions:
     https://planet4589.org/space/gcat/web/intro/service.html
@@ -20,37 +20,46 @@ def add_general_launch_type(launch_dataframe):
     Chinese Commercial: group starts with 'C' and state is 'CN' or 'RU'
     Military: First_Simple_Payload_Category is 'Military'
     Eastern Military: Same as military but state is 'CN' or 'RU'
-    Government: group starts with 'G' and state is not 'CN' or 'RU'
-    Eastern Government: group starts with 'E' and state is not 'CN' or 'RU'
+    Government: group starts with 'G' or contains 'CX' or 'OG'
+    Eastern Government: group starts with 'G' or contains 'CX' or 'OG' and state is 'CN' or 'RU'
     """
     
-    launch_dataframe['General_Launch_Type'] = 'Other'
+    launch_dataframe['General_Launch_Payload_Type'] = 'Other'
     
     # Starlink
-    launch_dataframe.loc[launch_dataframe['Mission'].str.contains('Starlink', case=False, na=False), 'General_Launch_Type'] = 'Starlink'
+    launch_dataframe.loc[launch_dataframe['Mission'].str.contains('Starlink', case=False, na=False), 'General_Launch_Payload_Type'] = 'Starlink'
     
     # Commercial
     commercial_mask = (launch_dataframe['Group'].str.startswith('C')) & (~launch_dataframe['State'].isin(['CN']))
-    launch_dataframe.loc[commercial_mask, 'General_Launch_Type'] = 'Commercial'
+    launch_dataframe.loc[commercial_mask, 'General_Launch_Payload_Type'] = 'Commercial'
     
     # Chinese Commercial
-    chinese_commercial_mask = (launch_dataframe['Group'].str.startswith('C')) & (launch_dataframe['State'].isin(['CN']))
-    launch_dataframe.loc[chinese_commercial_mask, 'General_Launch_Type'] = 'Chinese Commercial'
+    chinese_commercial_mask = (launch_dataframe['Group'].str.startswith('C')) & (~launch_dataframe['Group'].str.contains('CX')) & (launch_dataframe['State'].isin(['CN']))
+    launch_dataframe.loc[chinese_commercial_mask, 'General_Launch_Payload_Type'] = 'Chinese Commercial'
+    
+    # Government
+    # If starts with 'G' or contains 'CX' or 'OG'
+    government_mask = (
+        launch_dataframe['Group'].str.startswith('G') |
+        launch_dataframe['Group'].str.contains('CX', case=False, na=False) |
+        launch_dataframe['Group'].str.contains('OG', case=False, na=False)
+    )
+    launch_dataframe.loc[government_mask, 'General_Launch_Payload_Type'] = 'Government'
+    
+    # Eastern Government
+    # If is government type and state is China or Russia
+    eastern_government_mask = (
+        (launch_dataframe['General_Launch_Payload_Type'] == 'Government') &
+        launch_dataframe['State'].isin(['CN', 'RU'])
+    )
+    launch_dataframe.loc[eastern_government_mask, 'General_Launch_Payload_Type'] = 'Eastern Government'
     
     # Military
     military_mask = launch_dataframe['First_Simple_Payload_Category'] == 'Military'
-    launch_dataframe.loc[military_mask, 'General_Launch_Type'] = 'Military'
+    launch_dataframe.loc[military_mask, 'General_Launch_Payload_Type'] = 'Military'
     
     # Eastern Military
     eastern_military_mask = military_mask & launch_dataframe['State'].isin(['CN', 'RU'])
-    launch_dataframe.loc[eastern_military_mask, 'General_Launch_Type'] = 'Eastern Military'
-    
-    # Government
-    government_mask = (launch_dataframe['Group'].str.startswith('G')) & (~launch_dataframe['State'].isin(['CN', 'RU']))
-    launch_dataframe.loc[government_mask, 'General_Launch_Type'] = 'Government'
-    
-    # Eastern Government
-    eastern_government_mask = (launch_dataframe['Group'].str.startswith('E')) & (~launch_dataframe['State'].isin(['CN', 'RU']))
-    launch_dataframe.loc[eastern_government_mask, 'General_Launch_Type'] = 'Eastern Government'
+    launch_dataframe.loc[eastern_military_mask, 'General_Launch_Payload_Type'] = 'Eastern Military'
     
     return launch_dataframe

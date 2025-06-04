@@ -44,6 +44,4 @@ mda.ChartUtils.plot_bar(
     bargap=0.1,
 )
 
-# print launch df tail
-print("Launch DataFrame (tail):")
-print(dataset.launch.df.tail(500))
+print(dataset.launch.df.head(40))

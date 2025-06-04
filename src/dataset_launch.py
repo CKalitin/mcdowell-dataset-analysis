@@ -157,4 +157,4 @@ class Launch:
             self.df.loc[self.df['Launch_Tag'].isin(mapping.index), col] = self.df['Launch_Tag'].map(mapping) # Update self.df[col] where Launch_Tag exists in mapping
             
     def add_custom_launch_types(self):
-        self.df = custom_launch_types.add_general_launch_type(self.df)
+        self.df = custom_launch_types.add_general_launch_payload_type(self.df)

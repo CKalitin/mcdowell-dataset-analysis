@@ -7,9 +7,12 @@ Attempt at general launch type
 todo is to look for edge cases and fix them
 "
 
+1. Output dataframe as csv for easier debugging
 1. Add launch vehicle name translation so it's easier to work with (eg. "Falcon 9", "Falcon Heavy", not "Falcon9")
 1. Add standard chart generation functions (eg. Ariane 5 launches per month in date range)
 2. Add functions to get launch types (in chart utils, not everywhere? Eh do it everywhere)
+2. Better military payload detection (eg. NROL)
+2. Better military general launch payload type detection (eg. NROL, etc.) will need to get a full list of military payload designations
 3. Pie charts
 4. Add all legacy charts
 5. Documentation of how everything works and how to use for the AIs
