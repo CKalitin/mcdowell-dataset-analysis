@@ -64,6 +64,4 @@ def add_general_launch_payload_type(launch_dataframe):
     # Starlink
     launch_dataframe.loc[launch_dataframe['Mission'].str.contains('Starlink', case=False, na=False), 'General_Launch_Payload_Type'] = 'Starlink'
     
-    print(launch_dataframe.tail(100))
-    
     return launch_dataframe
