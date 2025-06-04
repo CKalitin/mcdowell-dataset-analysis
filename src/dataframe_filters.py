@@ -10,6 +10,24 @@ class Filters:
     def __init__(self):
         pass
 
+    def filter_column_by_contains(dataset_class, contains_pattern, column, case=False, negate=False):
+        """
+        Filter a DataFrame by a column containing a specific pattern.
+        This is more general if no other filter suits your needs.
+        Args:
+            dataset_class: The dataset class to filter.
+            column: The column to filter by.
+            contains_pattern: The pattern to filter by.
+            case: Whether the filter should be case-sensitive. Defaults to False.
+            negate: If True, negate the condition (i.e., keep rows that do not contain the pattern). Defaults to False.
+        """
+        
+        condition = dataset_class.df[column].str.contains(contains_pattern, case=case, na=False)
+        if negate:
+            condition = ~condition
+            
+        dataset_class.df = dataset_class.df[condition]
+
     def filter_by_mission(dataset_class, pattern, column="Mission", case=False, negate=False):
         """
         Filter by regex pattern in a specified column (e.g., 'Starlink' in Mission).

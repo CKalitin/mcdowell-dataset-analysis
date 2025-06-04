@@ -19,6 +19,16 @@ class ChartUtils:
         'BEO': '#3c4043'
     }
     
+    general_launch_payload_type_color_map = {
+        'Starlink': "#005eff",
+        'Commercial': "#fbbc04",
+        'Chinese Commercial': '#ffd966',
+        'Government': "#008F11",
+        'Eastern Government': "#2b700d",
+        'Military': "#ff0000",
+        'Eastern Military': '#cc0000'
+    }
+    
     def pivot_dataframe(df, index_col, column_col, value_col):
         """
         Index_col is used as the row index of the pivoted dataframe.
@@ -81,7 +91,7 @@ class ChartUtils:
             binned = binned.value_counts().reindex(labels)
         return binned
  
-    def bin_dataset_into_dictionary_by_filter_function(dataset, filter_function, filter_function_parameters, value_col, bins, bin_labels, keys=None, count_values=True, bin_column=None):
+    def bin_dataset_into_dictionary_by_filter_function(dataset, filter_function, filter_function_parameters_list, value_col, bins, bin_labels, keys=None, count_values=True, bin_column=None, filter_function_additional_parameter=None):
         """Filters a dataset by a given filter function and returns a dataframe for each filter function parameter.
         
         Eg. You can filter by orbit and get a dictionary of dataframes, one for each orbit.
@@ -91,7 +101,7 @@ class ChartUtils:
         Args:
             dataset (launch or satcat): Launch or Satcat dataset (notice this isn't the McDowellDataset, so use dataset.launch or dataset.satcat)
             filter_function (mda.Filters...): Filter function to be applied
-            filter_function_parameters (list): List of paramters, eg. ['LEO', 'SSO, ... , 'BEO'] for orbits or ['Falcon9', 'Electron'] for launch vehicles.
+            filter_function_parameters_list (list): List of paramters, eg. ['LEO', 'SSO, ... , 'BEO'] for orbits or ['Falcon9', 'Electron'] for launch vehicles.
             value_col (str): Column to be used for binning, eg. 'Payload_Mass'.
             bins (list int): List of bin edges, eg. [0, 1000, 2000, 3000] for payload mass bins.
             bin_labels (list str): List of bin labels, eg. ['0-1T', '1-2T', '2-3T'] for payload mass bins.
@@ -104,11 +114,14 @@ class ChartUtils:
         """
 
         if keys is None:
-            keys = filter_function_parameters
+            keys = filter_function_parameters_list
         output_dict = {}
-        for filter_function_parameter, key in zip(filter_function_parameters, keys):
+        for filter_function_parameter, key in zip(filter_function_parameters_list, keys):
             new_dataset = copy.deepcopy(dataset)  # Create a copy of the dataframe to avoid modifying the original, bad solution tbh. Deep copy is required bc dataset is part of another class (i think this is why).
-            filter_function(new_dataset, filter_function_parameter)  # Apply the filter function
+            if filter_function_additional_parameter is not None: # This is getting ugly
+                filter_function(new_dataset, filter_function_parameter, filter_function_additional_parameter)
+            else:
+                filter_function(new_dataset, filter_function_parameter)  # Apply the filter function
             output_dict[key] = ChartUtils.count_values_into_bins(new_dataset.df, value_col, bins, bin_labels, count_values, bin_column)
         return output_dict
  

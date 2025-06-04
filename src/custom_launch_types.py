@@ -26,9 +26,6 @@ def add_general_launch_payload_type(launch_dataframe):
     
     launch_dataframe['General_Launch_Payload_Type'] = 'Other'
     
-    # Starlink
-    launch_dataframe.loc[launch_dataframe['Mission'].str.contains('Starlink', case=False, na=False), 'General_Launch_Payload_Type'] = 'Starlink'
-    
     # Commercial
     commercial_mask = (launch_dataframe['Group'].str.startswith('C')) & (~launch_dataframe['State'].isin(['CN']))
     launch_dataframe.loc[commercial_mask, 'General_Launch_Payload_Type'] = 'Commercial'
@@ -61,5 +58,8 @@ def add_general_launch_payload_type(launch_dataframe):
     # Eastern Military
     eastern_military_mask = military_mask & launch_dataframe['State'].isin(['CN', 'RU'])
     launch_dataframe.loc[eastern_military_mask, 'General_Launch_Payload_Type'] = 'Eastern Military'
+    
+    # Starlink
+    launch_dataframe.loc[launch_dataframe['Mission'].str.contains('Starlink', case=False, na=False), 'General_Launch_Payload_Type'] = 'Starlink'
     
     return launch_dataframe

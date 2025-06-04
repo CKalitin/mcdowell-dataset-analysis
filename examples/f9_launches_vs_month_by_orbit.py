@@ -26,7 +26,7 @@ def main(start_year, end_year):
     orbit_dataframes = mda.ChartUtils.bin_dataset_into_dictionary_by_filter_function(
         dataset=dataset.launch,
         filter_function=mda.Filters.filter_by_orbit,
-        filter_function_parameters=orbits,
+        filter_function_parameters_list=orbits,
         value_col='Launch_Month',
         bins=list(range(start_year*12, (end_year+1)*12+1)), # +1 year bc its exclusive, again +1 to align bins to months for some reason ugh pandas wtf investigate this future Chris
         bin_labels=bin_labels,
