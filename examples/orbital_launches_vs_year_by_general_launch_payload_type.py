@@ -18,7 +18,7 @@ def main(start_year):
     # Create a dictionary with key orbits and values are dataframes for each orbit showing the number of launches per year
     orbit_dataframes = mda.ChartUtils.bin_dataset_into_dictionary_by_filter_function(
         dataset=dataset.launch,
-        filter_function=mda.Filters.filter_column_by_contains,
+        filter_function=mda.Filters.filter_column_by_exact,
         filter_function_parameters_list=general_launch_payload_types,
         value_col='Launch_Year',
         bins=list(range(start_year-1, 2026)), # -1 because it's weird

@@ -1,5 +1,5 @@
 #Code	UCode	StateCode	Type	Class	TStart	TStop	ShortName	Name	Location	Longitude	Latitude	Error	Parent	ShortEName	EName	UName
-# Updated 2025 May 30 1458:31
+# Updated 2025 Jun  3 0133:37
 EARTH	EARTH	EARTH	AP	C	-	-	Earth	Earth	Earth	-	-	0.0200 	-	Earth (Terra)	Earth	Earth
 LUNA	LUNA	LUNA	AP	C	-	-	Luna	Luna	Luna	-	-	0.0200 	-	Moon	Moon	Luna
 SSYS	SSYS	SSYS	AP	C	-	-	Solar System	Solar System natural celestial objects	Sol	-	-	0.0200 	-	Solar System	Solar System natural celestial objects	Solar System
@@ -1826,6 +1826,8 @@ JUNO	JUNO	UK	O	B	1988	1992	Project Juno	Project Juno	London	     -0.0900 	   51.
 JUNT	JUNT	CN	PL	B	-	-	Juntian Hangyu	Beijing Juntian Hangyu Jishu YG	Beijing	    116.3800 	   39.9200 	0.0200 	-	-	Beijing Joint Aerospace Tech Co. Ltd.	北京钧天航宇技术有限公司
 JUST	JUST	JO	O/PL	A	1986	-	JUST	Jami'at Al-Ulum wa Al-Tiknolojia Al-Urdunia	Al Ramtha, Irbid	     35.9900 	   32.4800 	0.0200 	-	-	Jordan University of Science and Technology	جامعة العلوم والتكنولوجيا الأردنية
 JUSTEK	JUSTEK	KR	O/PL	B	1999 Nov	-	JUSTEK	Jyeoseuteg (ju)	Pyeongtaek	    127.0800 	   37.1000 	0.0200 	-	-	JUSTEK Inc.	㈜져스텍
+JYK	JYK	CN	LV	B	2019	-	Jianyuan	Beijing Jianyuan Keji YKG	Beijing	    116.3800 	   39.9200 	0.0200 	-	SEpoch	Beijing Jianyuan Tech Co Ltd. (Space Epoch)	北京箭元科技有限责任公司
+JZYJ	JZYJ	CN	E	B	2017	-	JZYJ	Jiuzhou Yunjian (Beijing) Kongjian Keji YG	Beijing	    116.3800 	   39.9200 	0.0200 	-	-	Jiuzhou Yunjian Space Tech Co Ltd.	九州云箭（北京）空间科技有限公司
 KACBS	KACBS	SG	O	B	-	-	Kacific	Kacific Broadband Satellies Ltd	Singapore	    103.8000 	    1.3000 	0.0200 	-	-	-	Kacific Broadband Satellites Ltd
 KACST	KACST	SA	O/PL	C	1985	-	KACST	King Abdul Aziz City for Science and Technology	Riyadh	     46.7200 	   24.6300 	0.0200 	-	-	-	King Abdul Aziz City for Science and Technology
 KAFA	KAFA	KR	O/PL	D	1949	-	KAFA	Gonggun Sagwan Hakgyo	Cheongju, Chungbuk	    127.4800 	   36.6300 	0.0200 	-	-	Korean Air Force Academy	공군사관학교

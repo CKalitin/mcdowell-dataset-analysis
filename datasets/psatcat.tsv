@@ -1,5 +1,5 @@
 #JCAT	Piece	Name	LDate	TLast	TOp	TDate	TF	Program	Plane	Att	Mvr	Class	Category	Result	Control	Discipline	UNState	UNReg	UNPeriod	UNPerigee	UNApogee	UNInc	DispEpoch	DispPeri	DispApo	DispInc	Comment
-# Updated 2025 May 30 1459:29
+# Updated 2025 Jun  3 0134:33
 S00002	1957 ALP 2	First Sputnik	1957 Oct  4 	1957 Oct 27	1957 Oct 27	1957 Oct 27	-	Sputnik	-	-	-	C	TECH	S	-	ENV*	SU	A/AC.105/INF.002	-	     227	     947	 65.1 	-	       0	       0	  0.00 	First Earth satellite
 S00003	1957 BET 1	Second Sputnik	1957 Nov  3 	1957 Nov  9	1957 Nov  9	1957 Nov  9	-	Sputnik	-	-	-	C	BIO	S	-	BIO	SU	A/AC.105/INF.002	-	     225	    1671	 65.3 	-	       0	       0	  0.00 	First animal payload
 S00004	1958 ALP	Explorer 1	1958 Feb  1 	1958 Apr  1	1958 Apr  1	1958 Apr  1	-	Explorer ABMA	-	-	-	C	SCI	S	JPL	P*	US	A/AC.105/INF.001	-	-	-	-	-	       0	       0	  0.00 	Discovered trapped radiation
@@ -9614,7 +9614,7 @@ S44948	2020-001AL	Starlink-1118	2020 Jan  7 	2020 Mar 31	2020 Apr  2	2020 Apr  2
 S44949	2020-001AM	Starlink-1122	2020 Jan  7 	2023 Mar  1	*	*	-	Starlink 1.0	1 1	-	M	B	COM	S	-	-	US	ST/SG/SER.E/942	   91.5 	     349	     351	 53.0 	2024 Oct 13 	     546	     548	 53.05 	-
 S44950	2020-001AN	Starlink-1125	2020 Jan  7 	2020 Mar 11	2020 Mar 11	2020 Mar 11	-	Starlink 1.0	1 1	-	M	B	COM	S	-	-	US	ST/SG/SER.E/942	   91.5 	     349	     351	 53.0 	2020 Mar 13 	     435	     437	 53.00 	-
 S44951	2020-001AP	Starlink-1126	2020 Jan  7 	2020 Jun  1	2020 Jun  1	2020 Jun  1	-	Starlink 1.0	1 1	-	M	B	COM	S	-	-	US	ST/SG/SER.E/942	   91.5 	     349	     351	 53.0 	2020 Jun  3 	     548	     551	 53.00 	-
-S44952	2020-001AQ	Starlink-1117	2020 Jan  7 	2023 Mar  1	*	*	-	Starlink 1.0	1 1	-	M	B	COM	S	-	-	US	ST/SG/SER.E/942	   91.5 	     349	     351	 53.0 	2024 Oct 13 	     546	     548	 53.05 	-
+S44952	2020-001AQ	Starlink-1117	2020 Jan  7 	2023 Mar  1	2025 Jan 24	2025 Feb 27?	-	Starlink 1.0	1 1	-	M	B	COM	S	-	-	US	ST/SG/SER.E/942	   91.5 	     349	     351	 53.0 	2024 Oct 13 	     546	     548	 53.05 	-
 S44953	2020-001AR	Starlink-1124	2020 Jan  7 	2023 Dec 22	2023 Dec 22	2023 Dec 22?	-	Starlink 1.0	1 1	-	M	B	COM	S	-	-	US	ST/SG/SER.E/942	   91.5 	     349	     351	 53.0 	2023 Dec 25 	     275	     285	 53.04 	-
 S44954	2020-001AS	Starlink-1066	2020 Jan  7 	2023 Mar  1	*	*	-	Starlink 1.0	1 1	-	M	B	COM	S	-	-	US	ST/SG/SER.E/942	   91.5 	     349	     351	 53.0 	2024 Oct 13 	     546	     547	 53.05 	-
 S44955	2020-001AT	Starlink-1069	2020 Jan  7 	2023 Dec 11	2023 Dec 11	2023 Dec 11	-	Starlink 1.0	1 1	-	M	B	COM	S	-	-	US	ST/SG/SER.E/942	   91.5 	     349	     351	 53.0 	2023 Dec 13 	     261	     267	 53.04 	-
@@ -10241,7 +10241,7 @@ S46112	2020-056A	BSAT-4b	2020 Aug 15 	2023 Mar  2	*	*	-	BSAT	-	-	M	B	COM	S	-	-	J
 S46113	2020-056B	MEV-2	2020 Aug 15 	2023 Mar  2	*	*	-	MEV	-	-	M	B	TECH	S	-	-	US	ST/SG/SER.E/954	  738.6 	    6107	   37447	 53.0 	2024 Oct 12 	   35782	   35791	  0.02 	Servicing, docked with IS 10-02
 S46114	2020-056C	Galaxy 30	2020 Aug 15 	2023 Mar  2	*	*	-	Galaxy	-	-	M	B	COM	S	-	-	US	ST/SG/SER.E/954	 1436.1 	   35784	   35789	  0.0 	2024 Oct  9 	   35776	   35796	  0.02 	-
 S46117	2020-057A	Starlink-1585	2020 Aug 18 	2023 Mar  1	*	*	-	Starlink 1.0V1	1 1	-	M	B	COM	S	-	-	US	ST/SG/SER.E/954	   91.7 	     361	     367	 53.0 	2024 Oct 13 	     546	     548	 53.05 	-
-S46118	2020-057B	Starlink-1588	2020 Aug 18 	2023 Mar  1	*	*	-	Starlink 1.0V1	1 1	-	M	B	COM	S	-	-	US	ST/SG/SER.E/954	   91.7 	     361	     367	 53.0 	2024 Oct 13 	     546	     548	 53.05 	-
+S46118	2020-057B	Starlink-1588	2020 Aug 18 	2023 Mar  1	2025 Mar  3	2025 Apr  5	-	Starlink 1.0V1	1 1	-	M	B	COM	S	-	-	US	ST/SG/SER.E/954	   91.7 	     361	     367	 53.0 	2024 Oct 13 	     546	     548	 53.05 	-
 S46119	2020-057C	Starlink-1593	2020 Aug 18 	2023 Mar  1	*	*	-	Starlink 1.0V1	1 1	-	M	B	COM	S	-	-	US	ST/SG/SER.E/954	   91.7 	     361	     367	 53.0 	2024 Oct 13 	     546	     548	 53.05 	-
 S46120	2020-057D	Starlink-1601	2020 Aug 18 	2023 Mar  1	*	*	-	Starlink 1.0V1	1 1	-	M	B	COM	S	-	-	US	ST/SG/SER.E/954	   91.7 	     361	     367	 53.0 	2024 Oct 13 	     546	     548	 53.05 	-
 S46121	2020-057E	Starlink-1602	2020 Aug 18 	2023 Mar  1	2024 Nov  6	2024 Dec  6?	-	Starlink 1.0V1	1 1	-	M	B	COM	S	-	-	US	ST/SG/SER.E/954	   91.7 	     361	     367	 51.6 	2024 Oct 13 	     546	     548	 53.05 	-
@@ -11072,7 +11072,7 @@ S47560	2021-009N	Starlink-1959	2021 Feb  4 	2023 Mar  1	*	*	-	Starlink 1.0V2	1 1
 S47561	2021-009P	Starlink-1960	2021 Feb  4 	2023 Mar  1	2025 Feb 10	2025 Mar 15?	-	Starlink 1.0V2	1 1	P	M	B	COM	S	-	-	US	ST/SG/SER.E/983	   92.1 	     379	     380	 53.1 	2024 Oct 13 	     546	     548	 53.05 	-
 S47562	2021-009Q	Starlink-1961	2021 Feb  4 	2023 Mar  1	2024 Nov  5	2024 Nov 27?	-	Starlink 1.0V2	1 1	P	M	B	COM	S	-	-	US	ST/SG/SER.E/983	   92.1 	     379	     380	 53.1 	2024 Oct 13 	     546	     548	 53.05 	-
 S47563	2021-009R	Starlink-1962	2021 Feb  4 	2023 Mar  1	*	*	-	Starlink 1.0V2	1 1	P	M	B	COM	S	-	-	US	ST/SG/SER.E/983	   92.1 	     379	     381	 53.1 	2024 Oct 13 	     546	     548	 53.05 	-
-S47564	2021-009S	Starlink-1963	2021 Feb  4 	2023 Mar  1	*	*	-	Starlink 1.0V2	1 1	P	M	B	COM	S	-	-	US	ST/SG/SER.E/983	   92.1 	     379	     381	 53.1 	2024 Oct 13 	     546	     548	 53.05 	-
+S47564	2021-009S	Starlink-1963	2021 Feb  4 	2023 Mar  1	2025 Feb 10	2025 Mar 10?	-	Starlink 1.0V2	1 1	P	M	B	COM	S	-	-	US	ST/SG/SER.E/983	   92.1 	     379	     381	 53.1 	2024 Oct 13 	     546	     548	 53.05 	-
 S47565	2021-009T	Starlink-1964	2021 Feb  4 	2023 Mar  1	*	*	-	Starlink 1.0V2	1 1	P	M	B	COM	S	-	-	US	ST/SG/SER.E/983	   92.1 	     379	     381	 53.1 	2024 Oct 13 	     546	     548	 53.05 	-
 S47566	2021-009U	Starlink-1965	2021 Feb  4 	2023 Mar  1	*	*	-	Starlink 1.0V2	1 1	P	M	B	COM	S	-	-	US	ST/SG/SER.E/983	   92.1 	     379	     380	 53.1 	2024 Oct 13 	     546	     548	 53.05 	-
 S47567	2021-009V	Starlink-1966	2021 Feb  4 	2023 Mar  1	*	*	-	Starlink 1.0V2	1 1	P	M	B	COM	S	-	-	US	ST/SG/SER.E/983	   92.4 	     393	     394	 53.1 	2024 Oct 13 	     546	     548	 53.05 	-
@@ -11473,7 +11473,7 @@ S47999	2021-024Y	Starlink-2218	2021 Mar 24 	2024 Mar  6	2024 Mar  6	2024 Jul 14?
 S48000	2021-024Z	Starlink-2270	2021 Mar 24 	2023 Mar  1	*	*	-	Starlink 1.0V2	1 1	P	M	B	COM	S	-	-	US	ST/SG/SER.E/995	   91.5 	     349	     351	 53.1 	2024 Oct 13 	     546	     548	 53.05 	-
 S48001	2021-024AA	Starlink-2262	2021 Mar 24 	2021 Nov 23	2021 Nov 23	2021 Nov 23?	-	Starlink 1.0V2	1 1	P	M	B	COM	S	-	-	US	ST/SG/SER.E/995	   91.5 	     349	     350	 53.1 	2021 Nov 25 	     268	     278	 53.04 	-
 S48002	2021-024AB	Starlink-2265	2021 Mar 24 	2023 Mar  1	2024 Oct 25	2024 Oct 25?	-	Starlink 1.0V2	1 1	P	M	B	COM	S	-	-	US	ST/SG/SER.E/995	   91.5 	     349	     351	 53.1 	2024 Oct 13 	     546	     548	 53.05 	-
-S48003	2021-024AC	Starlink-2263	2021 Mar 24 	2023 Mar  1	*	*	-	Starlink 1.0V2	1 1	P	M	B	COM	S	-	-	US	ST/SG/SER.E/995	   91.5 	     349	     351	 53.1 	2024 Oct 13 	     546	     548	 53.05 	-
+S48003	2021-024AC	Starlink-2263	2021 Mar 24 	2023 Mar  1	2025 Mar 23	2025 Apr 24?	-	Starlink 1.0V2	1 1	P	M	B	COM	S	-	-	US	ST/SG/SER.E/995	   91.5 	     349	     351	 53.1 	2024 Oct 13 	     546	     548	 53.05 	-
 S48004	2021-024AD	Starlink-2261	2021 Mar 24 	2022 Jan 13	2022 Jan 13	2022 Jan 13	-	Starlink 1.0V2	1 1	P	M	B	COM	S	-	-	US	ST/SG/SER.E/995	   91.5 	     349	     351	 53.1 	2022 Jan 15 	     226	     237	 53.03 	-
 S48005	2021-024AE	Starlink-2254	2021 Mar 24 	2024 Feb 20	2024 Feb 20	2024 Jul  6?	-	Starlink 1.0V2	1 1	P	M	B	COM	S	-	-	US	ST/SG/SER.E/995	   91.5 	     349	     351	 53.1 	2024 Jul  8 	     355	     357	 53.05 	-
 S48006	2021-024AF	Starlink-2277	2021 Mar 24 	2021 Nov 23	2021 Nov 23	2021 Nov 23?	-	Starlink 1.0V2	1 1	P	M	B	COM	S	-	-	US	ST/SG/SER.E/995	   91.5 	     349	     351	 53.1 	2021 Nov 25 	     266	     276	 53.04 	-
@@ -13537,7 +13537,7 @@ S52554	2022-051X	Starlink-3770	2022 May 13 	2023 Mar  1	*	*	-	Starlink 1.5 G4	4 
 S52555	2022-051Y	Starlink-3949	2022 May 13 	2024 Mar 22	2024 Mar 22	2024 Mar 22	-	Starlink 1.5 G4	4 1	P	M	B	COM	S	-	-	US	ST/SG/SER.E/1074	   93.1 	     428	     426	 53.2 	2024 Mar 24 	     537	     540	 53.22 	-
 S52556	2022-051Z	Starlink-3763	2022 May 13 	2023 Mar  1	*	*	-	Starlink 1.5 G4	4 1	P	M	B	COM	S	-	-	US	ST/SG/SER.E/1074	   94.4 	     490	     492	 53.2 	2024 Oct 13 	     510	     517	 53.21 	-
 S52557	2022-051AA	Starlink-3943	2022 May 13 	2023 Mar  1	*	*	-	Starlink 1.5 G4	4 1	P	M	B	COM	S	-	-	US	ST/SG/SER.E/1074	   93.1 	     424	     426	 53.2 	2024 Oct 13 	     538	     540	 53.21 	-
-S52558	2022-051AB	Starlink-3954	2022 May 13 	2023 Mar  1	*	*	-	Starlink 1.5 G4	4 1	P	M	B	COM	S	-	-	US	ST/SG/SER.E/1074	   91.5 	     348	     351	 53.2 	2024 Oct 13 	     538	     540	 53.22 	-
+S52558	2022-051AB	Starlink-3954	2022 May 13 	2023 Mar  1	2025 Apr  7	2025 May 17	-	Starlink 1.5 G4	4 1	P	M	B	COM	S	-	-	US	ST/SG/SER.E/1074	   91.5 	     348	     351	 53.2 	2024 Oct 13 	     538	     540	 53.22 	-
 S52559	2022-051AC	Starlink-3953	2022 May 13 	2023 Mar  1	*	*	-	Starlink 1.5 G4	4 1	P	M	B	COM	S	-	-	US	ST/SG/SER.E/1074	   91.5 	     348	     351	 53.2 	2024 Oct 13 	     539	     540	 53.21 	-
 S52560	2022-051AD	Starlink-3956	2022 May 13 	2023 Mar  1	*	*	-	Starlink 1.5 G4	4 1	P	M	B	COM	S	-	-	US	ST/SG/SER.E/1074	   91.5 	     348	     351	 53.2 	2024 Oct 13 	     538	     540	 53.22 	-
 S52561	2022-051AE	Starlink-3955	2022 May 13 	2023 Mar  1	*	*	-	Starlink 1.5 G4	4 1	P	M	B	COM	S	-	-	US	ST/SG/SER.E/1074	   94.4 	     489	     491	 53.2 	2024 Oct 13 	     538	     540	 53.22 	-
@@ -13816,7 +13816,7 @@ S52916	2022-070C	Lunar Photon	2022 Jun 28 	2022 Jul 25	2022 Jul 27	2022 Jul 27	-
 S52917	2022-015D	NACHOS-1	2022 Feb 19 	2022 Nov	2023 Jan?	2023 Jan?	-	LANL Sci	-	-	-	D	EOSCI	S	-	-	US	ST/SG/SER.E/1079	   92.5 	     394	     403	 51.6 	2022 Jul  1 	     398	     409	 51.65 	-
 S52933	2022-071A	SES-22	2022 Jun 29 	2023 Mar  7	*	*	-	SES	-	P	M	B	COM	S	-	-	[L]	-	-	-	-	-	2024 Oct 12 	   35776	   35798	  0.02 	-
 S52935	2022-072A	DS-EO	2022 Jun 30 	2022 Jul	*	*	-	DSTA Img	-	P	M	D	IMG	S	-	-	[SG]	-	-	-	-	-	2024 Oct 12 	     545	     551	  9.99 	-
-S52937	2022-072C	NeuSAR	2022 Jun 30 	2022 Dec	*	*	-	DSTA SAR	-	P	-	D	IMG-R	S	-	-	[SG]	-	-	-	-	-	2022 Jul  2 	     559	     572	  9.99 	-
+S52937	2022-072C	NeuSAR	2022 Jun 30 	2022 Dec	2025 May	2025 May?	-	DSTA SAR	-	P	-	D	IMG-R	S	-	-	[SG]	-	-	-	-	-	2022 Jul  2 	     559	     572	  9.99 	-
 S52938	2022-072D	SCOOB-I	2022 Jun 30 	2022 Jun 30	2022 Jun 30	2022 Jun 30	-	NTU	-	-	-	A	AST	F	-	-	[SG]	-	-	-	-	-	2022 Jul 11 	     530	     563	  9.90 	-
 S52939	2022-072E	PSLV-C53 R/B	2022 Jun 30 	2022 Jul	*	*	-	ISRO Aux	-	-	-	C	TECH	S	-	-	IN	ST/SG/SER.E/1085	   95.7 	     529	     580	 10.0 	-	       0	       0	  0.00 	-
 S52940	2022-073A	USA 332	2022 Jul  1 	2023 Mar  7	*	*	-	WFOV	-	P	M	D	EW	S	-	-	US	ST/SG/SER.E/1079	 1461.9 	   36238	   36343	  0.1 	2024 Oct 12 	   35778	   35795	  2.12 	-
@@ -14022,7 +14022,7 @@ S53213	2022-084AA	Starlink-4414	2022 Jul 22 	2023 Mar  1	*	*	-	Starlink 1.5 G3	3
 S53214	2022-084AB	Starlink-4353	2022 Jul 22 	2023 Mar  1	*	*	-	Starlink 1.5 G3	3 1	P	M	B	COM	S	-	-	US	ST/SG/SER.E/1079	   92.9 	     414	     416	 97.7 	2024 Oct 13 	     562	     563	 97.66 	-
 S53215	2022-084AC	Starlink-4335	2022 Jul 22 	2023 Mar  1	*	*	-	Starlink 1.5 G3	3 1	P	M	B	COM	S	-	-	US	ST/SG/SER.E/1079	   92.8 	     412	     415	 97.7 	2024 Oct 13 	     562	     563	 97.66 	-
 S53216	2022-084AD	Starlink-4376	2022 Jul 22 	2023 Mar  1	*	*	-	Starlink 1.5 G3	3 1	P	M	B	COM	S	-	-	US	ST/SG/SER.E/1079	   92.9 	     413	     416	 97.7 	2024 Oct 13 	     562	     563	 97.66 	-
-S53217	2022-084AE	Starlink-4379	2022 Jul 22 	2023 Mar  1	*	*	-	Starlink 1.5 G3	3 1	P	M	B	COM	S	-	-	US	ST/SG/SER.E/1079	   92.8 	     412	     415	 97.7 	2024 Oct 13 	     561	     564	 97.65 	-
+S53217	2022-084AE	Starlink-4379	2022 Jul 22 	2023 Mar  1	2025 Mar 22	2025 May 16?	-	Starlink 1.5 G3	3 1	P	M	B	COM	S	-	-	US	ST/SG/SER.E/1079	   92.8 	     412	     415	 97.7 	2024 Oct 13 	     561	     564	 97.65 	-
 S53218	2022-084AF	Starlink-4384	2022 Jul 22 	2023 Mar  1	*	*	-	Starlink 1.5 G3	3 1	P	M	B	COM	S	-	-	US	ST/SG/SER.E/1079	   92.9 	     413	     415	 97.7 	2024 Oct 13 	     561	     564	 97.66 	-
 S53219	2022-084AG	Starlink-4373	2022 Jul 22 	2023 Mar  1	*	*	-	Starlink 1.5 G3	3 1	P	M	B	COM	S	-	-	US	ST/SG/SER.E/1079	   92.8 	     412	     415	 97.7 	2024 Oct 13 	     561	     564	 97.66 	-
 S53220	2022-084AH	Starlink-4363	2022 Jul 22 	2023 Mar  1	*	*	-	Starlink 1.5 G3	3 1	P	M	B	COM	S	-	-	US	ST/SG/SER.E/1079	   92.8 	     412	     415	 97.7 	2024 Oct 13 	     562	     563	 97.66 	-
@@ -15774,7 +15774,7 @@ S55949	2023-037AM	Starlink-5899	2023 Mar 17 	2023 Mar 17	*	*	-	Starlink 1.5 G2	2
 S55950	2023-037AN	Starlink-5911	2023 Mar 17 	2023 Mar 17	*	*	-	Starlink 1.5 G2	2 1	P	M	B	COM	S	-	-	US	ST/SG/SER.E/1117	   91.7 	     357	     362	 70.0 	2024 Oct 13 	     569	     574	 70.00 	-
 S55951	2023-037AP	Starlink-5908	2023 Mar 17 	2023 Mar 17	*	*	-	Starlink 1.5 G2	2 1	P	M	B	COM	S	-	-	US	ST/SG/SER.E/1117	   91.7 	     357	     361	 70.0 	2024 Oct 13 	     569	     574	 70.00 	-
 S55952	2023-037AQ	Starlink-5893	2023 Mar 17 	2023 Mar 17	*	*	-	Starlink 1.5 G2	2 1	P	M	B	COM	S	-	-	US	ST/SG/SER.E/1117	   91.7 	     357	     361	 70.0 	2024 Oct 13 	     569	     574	 70.00 	-
-S55953	2023-037AR	Starlink-5889	2023 Mar 17 	2023 Mar 17	*	*	-	Starlink 1.5 G2	2 1	P	M	B	COM	S	-	-	US	ST/SG/SER.E/1117	   91.7 	     357	     362	 70.0 	2024 Oct 13 	     569	     574	 70.00 	-
+S55953	2023-037AR	Starlink-5889	2023 Mar 17 	2023 Mar 17	2025 Mar 11	2025 May 16?	-	Starlink 1.5 G2	2 1	P	M	B	COM	S	-	-	US	ST/SG/SER.E/1117	   91.7 	     357	     362	 70.0 	2024 Oct 13 	     569	     574	 70.00 	-
 S55954	2023-037AS	Starlink-5892	2023 Mar 17 	2023 Mar 17	*	*	-	Starlink 1.5 G2	2 1	P	M	B	COM	S	-	-	US	ST/SG/SER.E/1117	   91.7 	     357	     362	 70.0 	2024 Oct 13 	     569	     574	 70.00 	-
 S55955	2023-037AT	Starlink-5878	2023 Mar 17 	2023 Mar 17	*	*	-	Starlink 1.5 G2	2 1	P	M	B	COM	S	-	-	US	ST/SG/SER.E/1117	   91.7 	     357	     362	 70.0 	2024 Oct 13 	     570	     574	 70.00 	-
 S55956	2023-037AU	Starlink-5883	2023 Mar 17 	2023 Mar 17	*	*	-	Starlink 1.5 G2	2 1	P	M	B	COM	S	-	-	US	ST/SG/SER.E/1117	   91.7 	     357	     361	 70.0 	2024 Oct 13 	     569	     574	 70.00 	-
@@ -17131,7 +17131,7 @@ S57736	2023-131E	Starlink-30352	2023 Sep  1 	2023 Sep  1	*	*	-	Starlink 2M S2	6 
 S57737	2023-131F	Starlink-30344	2023 Sep  1 	2023 Sep  1	*	*	-	Starlink 2M S2	6 1	P	M	B	COM	S	-	-	US	ST/SG/SER.E/1162	   95.0 	     518	     520	 43.0 	2024 Oct 13 	     558	     560	 43.00 	-
 S57738	2023-131G	Starlink-30351	2023 Sep  1 	2023 Sep  1	*	*	-	Starlink 2M S2	6 1	P	M	B	COM	S	-	-	US	ST/SG/SER.E/1162	   95.0 	     517	     519	 43.0 	2024 Oct 13 	     558	     560	 43.00 	-
 S57739	2023-131H	Starlink-30242	2023 Sep  1 	2023 Sep  1	*	*	-	Starlink 2M S2	6 1	P	M	B	COM	S	-	-	US	ST/SG/SER.E/1162	   92.8 	     410	     412	 43.0 	2024 Oct 13 	     558	     560	 43.00 	-
-S57740	2023-131J	Starlink-30331	2023 Sep  1 	2023 Sep  1	*	*	-	Starlink 2M S2	6 2	P	M	B	COM	S	-	-	US	ST/SG/SER.E/1162	   95.0 	     517	     519	 43.0 	2024 Oct 13 	     558	     560	 43.00 	-
+S57740	2023-131J	Starlink-30331	2023 Sep  1 	2023 Sep  1	*	*	-	Starlink 2M S2	6 5	P	M	B	COM	S	-	-	US	ST/SG/SER.E/1162	   95.0 	     517	     519	 43.0 	2024 Oct 13 	     558	     560	 43.00 	-
 S57741	2023-131K	Starlink-30364	2023 Sep  1 	2023 Sep  1	*	*	-	Starlink 2M S2	6 1	P	M	B	COM	S	-	-	US	ST/SG/SER.E/1162	   95.0 	     517	     519	 43.0 	2024 Oct 13 	     557	     560	 43.00 	-
 S57742	2023-131L	Starlink-30308	2023 Sep  1 	2023 Sep  1	*	*	-	Starlink 2M S2	6 1	P	M	B	COM	S	-	-	US	ST/SG/SER.E/1162	   95.7 	     552	     554	 43.0 	2024 Oct 13 	     557	     560	 43.00 	-
 S57743	2023-131M	Starlink-30361	2023 Sep  1 	2023 Sep  1	*	*	-	Starlink 2M S2	6 1	P	M	B	COM	S	-	-	US	ST/SG/SER.E/1162	   95.0 	     517	     519	 43.0 	2024 Oct 13 	     557	     560	 43.00 	-
@@ -17628,7 +17628,7 @@ S58274	2023-174U	Flock 4Q 36	2023 Nov 11 	2023 Nov 11	*	*	-	Flock-4	2	-	-	B	IMG	
 S58275	2023-174V	Flock 4Q 12	2023 Nov 11 	2023 Nov 11	*	*	-	Flock-4	2	-	-	B	IMG	S	-	-	US	ST/SG/SER.E/1186	   95.1 	     515	     531	 97.5 	2023 Nov 28 	     517	     530	 97.48 	-
 S58276	2023-174W	GENMAT-1	2023 Nov 11 	2023 Nov 11	*	*	-	GenMat	-	-	-	B	IMG	S	-	-	US	ST/SG/SER.E/1186	   95.1 	     516	     531	 97.5 	2023 Nov 28 	     517	     530	 97.48 	-
 S58277	2023-174X	TIGER-5	2023 Nov 11 	2023 Nov 11	*	*	-	OQT	-	-	-	B	COM	S	-	-	[L]	-	-	-	-	-	2023 Nov 28 	     517	     529	 97.48 	-
-S58278	2023-174Y	Flock 4Q 19	2023 Nov 11 	2023 Nov 11	*	*	-	Flock-4	2	-	-	B	IMG	S	-	-	US	ST/SG/SER.E/1188	   95.1 	     514	     529	 97.5 	2023 Nov 28 	     517	     530	 97.48 	-
+S58278	2023-174Y	Flock 4Q 19	2023 Nov 11 	2025 Apr  8	2025 Apr  8	2025 Apr  8	-	Flock-4	2	-	-	B	IMG	S	-	-	US	ST/SG/SER.E/1188	   95.1 	     514	     529	 97.5 	2023 Nov 28 	     517	     530	 97.48 	-
 S58279	2023-174Z	Flock 4Q 8	2023 Nov 11 	2025 Jan  2	2025 Jan  2	2025 Jan  2	-	Flock-4	2	-	-	B	IMG	S	-	-	US	ST/SG/SER.E/1186	   95.1 	     514	     532	 97.5 	2023 Nov 28 	     516	     531	 97.49 	-
 S58280	2023-174AA	Flock 4Q 28	2023 Nov 11 	2023 Nov 11	*	*	-	Flock-4	2	-	-	B	IMG	S	-	-	US	ST/SG/SER.E/1186	   95.1 	     515	     531	 97.5 	2023 Nov 28 	     516	     530	 97.48 	-
 S58281	2023-174AB	Aether 1	2023 Nov 11 	2023 Nov 11	*	*	-	Kepler	-	-	-	B	COM	S	-	-	[CA]	-	-	-	-	-	2023 Nov 28 	     516	     529	 97.48 	-
@@ -17992,7 +17992,7 @@ S58681	2023-211Q	Starlink-31147	2023 Dec 29 	2023 Dec 29	*	*	-	Starlink 2M S2	6 
 S58682	2023-211R	Starlink-31144	2023 Dec 29 	2023 Dec 29	*	*	-	Starlink 2M S2	6 2	P	M	B	COM	S	-	-	US	ST/SG/SER.E/1188	   92.7 	     408	     410	 43.0 	2024 Oct 13 	     487	     488	 43.00 	-
 S58683	2023-211S	Starlink-31095	2023 Dec 29 	2023 Dec 29	*	*	-	Starlink 2M S2	6 2	P	M	B	COM	S	-	-	US	ST/SG/SER.E/1188	   92.7 	     408	     410	 43.0 	2024 Oct 13 	     487	     489	 43.00 	-
 S58684	2023-211T	Starlink-31107	2023 Dec 29 	2023 Dec 29	*	*	-	Starlink 2M S2	6 2	P	M	B	COM	S	-	-	US	ST/SG/SER.E/1188	   92.7 	     408	     410	 43.0 	2024 Oct 13 	     486	     488	 43.00 	-
-S58685	2023-211U	Starlink-31121	2023 Dec 29 	2023 Dec 29	*	*	-	Starlink 2M S2	6 2	P	M	B	COM	S	-	-	US	ST/SG/SER.E/1188	   92.7 	     408	     410	 43.0 	2024 Oct 13 	     486	     488	 43.00 	-
+S58685	2023-211U	Starlink-31121	2023 Dec 29 	2023 Dec 29	*	*	-	Starlink 2M S2	6 5	P	M	B	COM	S	-	-	US	ST/SG/SER.E/1188	   92.7 	     408	     410	 43.0 	2024 Oct 13 	     486	     488	 43.00 	-
 S58686	2023-211V	Starlink-31137	2023 Dec 29 	2023 Dec 29	*	*	-	Starlink 2M S2	6 2	P	M	B	COM	S	-	-	US	ST/SG/SER.E/1188	   92.7 	     408	     410	 43.0 	2024 Oct 13 	     486	     489	 43.00 	-
 S58687	2023-211W	Starlink-31109	2023 Dec 29 	2024 Mar 22	2024 Mar 22	2024 Mar 22	-	Starlink 2M S2	6 1	P	M	B	COM	S	-	-	US	ST/SG/SER.E/1188	   92.2 	     382	     386	 43.0 	2024 Mar 24 	     353	     354	 43.00 	-
 S58688	2023-211X	Starlink-31139	2023 Dec 29 	2023 Dec 29	*	*	-	Starlink 2M S2	6 5	P	M	B	COM	S	-	-	US	ST/SG/SER.E/1188	   92.7 	     408	     410	 43.0 	2024 Oct 13 	     486	     488	 43.00 	-
@@ -18628,7 +18628,7 @@ S59371	2024-061A	Resurs-P No. 4	2024 Mar 31 	2024 Mar 31	*	*	-	ResursP	-	-	M	C	I
 S59374	2024-062A	Starlink-31641	2024 Apr  2 	2024 Apr  2	*	*	-	Starlink 2M S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	2024 Oct 13 	     451	     452	 53.16 	-
 S59375	2024-062B	Starlink-31430	2024 Apr  2 	2024 Apr  2	*	*	-	Starlink 2M S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	2024 Oct 13 	     474	     476	 53.16 	-
 S59376	2024-062C	Starlink-31695	2024 Apr  2 	2024 Apr  2	*	*	-	Starlink 2M S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	2024 Oct 13 	     446	     447	 53.16 	-
-S59377	2024-062D	Starlink-31716	2024 Apr  2 	2024 Apr  2	*	*	-	Starlink 2M S1	7 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	2024 Oct 13 	     408	     417	 53.15 	-
+S59377	2024-062D	Starlink-31716	2024 Apr  2 	2024 Apr  2	*	*	-	Starlink 2M S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	2024 Oct 13 	     408	     417	 53.15 	-
 S59378	2024-062E	Starlink-31710	2024 Apr  2 	2024 Apr  2	*	*	-	Starlink 2M S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	2024 Oct 13 	     446	     447	 53.16 	-
 S59379	2024-062F	Starlink-31698	2024 Apr  2 	2024 Apr  2	*	*	-	Starlink 2M S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	2024 Oct 13 	     446	     448	 53.16 	-
 S59380	2024-062G	Starlink-31680	2024 Apr  2 	2024 Apr  2	*	*	-	Starlink 2M S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	2024 Oct 13 	     474	     475	 53.16 	-
@@ -19112,7 +19112,7 @@ S59873	2024-098R	Starlink 31940	2024 May 24 	2024 May 24	*	*	-	Starlink 2M S2	6 
 S59874	2024-098S	Starlink 31933	2024 May 24 	2024 May 24	*	*	-	Starlink 2M S2	6 5	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	2024 Oct 13 	     443	     445	 43.00 	-
 S59875	2024-098T	Starlink 31936	2024 May 24 	2024 May 24	*	*	-	Starlink 2M S2	6 5	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	2024 Oct 13 	     442	     444	 43.00 	-
 S59876	2024-098U	Starlink 31935	2024 May 24 	2024 May 24	*	*	-	Starlink 2M S2	6 5	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	2024 Oct 13 	     443	     444	 43.00 	-
-S59877	2024-098V	Starlink 31934	2024 May 24 	2024 May 24	*	*	-	Starlink 2M S2	6 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	2024 Oct 13 	     443	     445	 43.00 	-
+S59877	2024-098V	Starlink 31934	2024 May 24 	2024 May 24	*	*	-	Starlink 2M S2	6 5	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	2024 Oct 13 	     443	     445	 43.00 	-
 S59878	2024-098W	Starlink 31943	2024 May 24 	2024 May 24	*	*	-	Starlink 2M S2	6 5	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	2024 Oct 13 	     443	     445	 43.00 	-
 S59879	2024-098X	Starlink 31926	2024 May 24 	2024 May 24	*	*	-	Starlink 2M S2	6 5	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	2024 Oct 13 	     443	     444	 43.00 	-
 S59880	2024-098Y	Starlink 31919	2024 May 24 	2024 May 24	*	*	-	Starlink 2M S2	6 5	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	2024 Oct 13 	     443	     444	 43.00 	-
@@ -20070,7 +20070,7 @@ S61589	2024-187R	Starlink-32416	2024 Oct 18 	2024 Oct 18	*	*	-	Starlink 2M S1	7 
 S61590	2024-187S	Starlink-32413	2024 Oct 18 	2024 Oct 18	*	*	-	Starlink 2M S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	2024 Oct 19 	     285	     294	 53.16 	-
 S61591	2024-187T	Starlink-32409	2024 Oct 18 	2024 Oct 18	*	*	-	Starlink 2M S1	7 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	2024 Oct 19 	     285	     294	 53.16 	-
 S61592	2024-187U	Starlink-32422	2024 Oct 18 	2024 Oct 18	*	*	-	Starlink 2M S1	7 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	2024 Oct 19 	     285	     294	 53.16 	-
-S61593	2024-187V	Starlink-32397	2024 Oct 18 	2024 Oct 18	*	*	-	Starlink 2M S1	7 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	2024 Oct 19 	     285	     294	 53.16 	-
+S61593	2024-187V	Starlink-32397	2024 Oct 18 	2024 Oct 18	*	*	-	Starlink 2M S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	2024 Oct 19 	     285	     294	 53.16 	-
 S61594	2024-188A	OWLID 00636	2024 Oct 20 	2024 Oct 20	*	*	-	OneWeb	1 2	P	M	B	COM	S	-	-	[UK]	-	-	-	-	-	2024 Oct 20 	     591	     595	 86.51 	-
 S61595	2024-188B	OWLID 00637	2024 Oct 20 	2024 Oct 20	*	*	-	OneWeb	1 6	P	M	B	COM	S	-	-	[UK]	-	-	-	-	-	2024 Oct 20 	     591	     595	 86.51 	-
 S61596	2024-188C	OWLID 00638	2024 Oct 20 	2024 Oct 20	*	*	-	OneWeb	1 6	P	M	B	COM	S	-	-	[UK]	-	-	-	-	-	2024 Oct 20 	     591	     595	 86.51 	-
@@ -21083,7 +21083,7 @@ S62733	2025-013E	Jitianxing A-05 xing	2025 Jan 20 	2025 Jan 20	*	*	-	Jitian	-	-	
 S62735	2025-014A	Starlink-32806	2025 Jan 21 	2025 Jan 21	*	*	-	Starlink 2M S2	6 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S62736	2025-014B	Starlink-32329	2025 Jan 21 	2025 Jan 21	*	*	-	Starlink 2M S2	6 5	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S62737	2025-014C	Starlink-32774	2025 Jan 21 	2025 Jan 21	*	*	-	Starlink 2M S2	6 5	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
-S62738	2025-014D	Starlink-32802	2025 Jan 21 	2025 Jan 21	*	*	-	Starlink 2M S2	6 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
+S62738	2025-014D	Starlink-32802	2025 Jan 21 	2025 Jan 21	*	*	-	Starlink 2M S2	6 5	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S62739	2025-014E	Starlink-32796	2025 Jan 21 	2025 Jan 21	*	*	-	Starlink 2M S2	6 5	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S62740	2025-014F	Starlink-32805	2025 Jan 21 	2025 Jan 21	*	*	-	Starlink 2M S2	6 5	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S62741	2025-014G	Starlink-32770	2025 Jan 21 	2025 Jan 21	*	*	-	Starlink 2M S2	6 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
@@ -21151,16 +21151,16 @@ S62802	2025-016T	Qianfan Jigui 04-18	2025 Jan 23 	2025 Jan 23	*	*	-	Qianfan	1	P	
 S62804	2025-017A	Tongxin Jishu Shiyan 14	2025 Jan 23 	2025 Jan 23	*	*	-	TJS11	-	P	M	D	SIG	S	-	-	[CN]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S62806	2025-018A	Starlink 32883	2025 Jan 24 	2025 Jan 24	*	*	-	Starlink 2M S2	7 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S62807	2025-018B	Starlink 32886	2025 Jan 24 	2025 Jan 24	*	*	-	Starlink 2M S2	7 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
-S62808	2025-018C	Starlink 32848	2025 Jan 24 	2025 Jan 24	*	*	-	Starlink 2M S2	7 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
+S62808	2025-018C	Starlink 32848	2025 Jan 24 	2025 Jan 24	*	*	-	Starlink 2M S2	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S62809	2025-018D	Starlink 32787	2025 Jan 24 	2025 Jan 24	*	*	-	Starlink 2M S2	7 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S62810	2025-018E	Starlink 32851	2025 Jan 24 	2025 Jan 24	*	*	-	Starlink 2M S2	7 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S62811	2025-018F	Starlink 32847	2025 Jan 24 	2025 Jan 24	*	*	-	Starlink 2M S2	7 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S62812	2025-018G	Starlink 32837	2025 Jan 24 	2025 Jan 24	*	*	-	Starlink 2M S2	7 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S62813	2025-018H	Starlink 32855	2025 Jan 24 	2025 Jan 24	*	*	-	Starlink 2M S2	7 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
-S62814	2025-018J	Starlink 32843	2025 Jan 24 	2025 Jan 24	*	*	-	Starlink 2M S2	7 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
+S62814	2025-018J	Starlink 32843	2025 Jan 24 	2025 Jan 24	*	*	-	Starlink 2M S2	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S62815	2025-018K	Starlink 32845	2025 Jan 24 	2025 Jan 24	*	*	-	Starlink 2M S2	7 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S62816	2025-018L	Starlink 32854	2025 Jan 24 	2025 Jan 24	*	*	-	Starlink 2M S2	7 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
-S62817	2025-018M	Starlink 32824	2025 Jan 24 	2025 Jan 24	*	*	-	Starlink 2M S2	7 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
+S62817	2025-018M	Starlink 32824	2025 Jan 24 	2025 Jan 24	*	*	-	Starlink 2M S2	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S62818	2025-018N	Starlink 32853	2025 Jan 24 	2025 Jan 24	*	*	-	Starlink 2M S2	7 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S62819	2025-018P	Starlink 32856	2025 Jan 24 	2025 Jan 24	*	*	-	Starlink 2M S2	7 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S62820	2025-018Q	Starlink 32844	2025 Jan 24 	2025 Jan 24	*	*	-	Starlink 2M S2	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
@@ -21170,7 +21170,7 @@ S62823	2025-018T	Starlink 32823	2025 Jan 24 	2025 Jan 24	*	*	-	Starlink 2M S2	7 
 S62824	2025-018U	Starlink 32852	2025 Jan 24 	2025 Jan 24	*	*	-	Starlink 2M S2	7 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S62825	2025-018V	Starlink 32825	2025 Jan 24 	2025 Jan 24	*	*	-	Starlink 2M S2	7 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S62826	2025-018W	Starlink 32704	2025 Jan 24 	2025 Jan 24	*	*	-	Starlink 2M S2	7 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
-S62827	2025-018X	Starlink 32838	2025 Jan 24 	2025 Jan 24	*	*	-	Starlink 2M S2	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
+S62827	2025-018X	Starlink 32838	2025 Jan 24 	2025 Jan 24	*	*	-	Starlink 2M S2	7 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S62828	2025-018Y	Starlink 32727	2025 Jan 24 	2025 Jan 24	*	*	-	Starlink 2M S2	7 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S62829	2025-019A	Starlink 11548	2025 Jan 27 	2025 Jan 27	*	*	-	Starlink 2M D2	9 2	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S62830	2025-019B	Starlink 11480	2025 Jan 27 	2025 Jan 27	*	*	-	Starlink 2M D2	9 2	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
@@ -21425,7 +21425,7 @@ S63104	2025-039A	Starlink 11629	2025 Feb 27 	2025 Feb 27	*	*	-	Starlink 2M D2	9 
 S63105	2025-039B	Starlink 11624	2025 Feb 27 	2025 Feb 27	*	*	-	Starlink 2M D2	9 2	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S63106	2025-039C	Starlink 11584	2025 Feb 27 	2025 Feb 27	*	*	-	Starlink 2M D2	9 2	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S63107	2025-039D	Starlink 11627	2025 Feb 27 	2025 Feb 27	*	*	-	Starlink 2M D2	9 2	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
-S63108	2025-039E	Starlink 11632	2025 Feb 27 	2025 Feb 27	*	*	-	Starlink 2M D2	9 2	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
+S63108	2025-039E	Starlink 11632	2025 Feb 27 	2025 Feb 27	*	*	-	Starlink 2M D2	9 1	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S63109	2025-039F	Starlink 11625	2025 Feb 27 	2025 Feb 27	*	*	-	Starlink 2M D2	9 1	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S63110	2025-039G	Starlink 11601	2025 Feb 27 	2025 Feb 27	*	*	-	Starlink 2M D2	9 2	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S63111	2025-039H	Starlink 11630	2025 Feb 27 	2025 Feb 27	*	*	-	Starlink 2M D2	9 2	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
@@ -21493,7 +21493,7 @@ S63179	2025-047B	PUNCH 1	2025 Mar 12 	2025 Mar 12	*	*	-	SMEX	-	-	-	C	AST	S	-	SOL
 S63180	2025-047C	PUNCH 2	2025 Mar 12 	2025 Mar 12	*	*	-	SMEX	-	-	-	C	AST	S	-	SOL	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S63181	2025-047D	PUNCH 3	2025 Mar 12 	2025 Mar 12	*	*	-	SMEX	-	-	-	C	AST	S	-	SOL	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S63182	2025-047E	PUNCH 4	2025 Mar 12 	2025 Mar 12	*	*	-	SMEX	-	-	-	C	AST	S	-	SOL	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
-S63183	2025-048A	Starlink 11602	2025 Mar 13 	2025 Mar 13	*	*	-	Starlink 2M D2	9 2	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
+S63183	2025-048A	Starlink 11602	2025 Mar 13 	2025 Mar 13	*	*	-	Starlink 2M D2	9 1	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S63184	2025-048B	Starlink 11617	2025 Mar 13 	2025 Mar 13	*	*	-	Starlink 2M D2	9 2	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S63185	2025-048C	Starlink 11618	2025 Mar 13 	2025 Mar 13	*	*	-	Starlink 2M D2	9 2	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S63186	2025-048D	Starlink 11646	2025 Mar 13 	2025 Mar 13	*	*	-	Starlink 2M D2	9 2	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
@@ -21509,7 +21509,7 @@ S63195	2025-048N	Starlink 11631	2025 Mar 13 	2025 Mar 13	*	*	-	Starlink 2M D2	9 
 S63196	2025-048P	Starlink 32946	2025 Mar 13 	2025 Mar 13	*	*	-	Starlink 2M S2	6 5	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S63197	2025-048Q	Starlink 32960	2025 Mar 13 	2025 Mar 13	*	*	-	Starlink 2M S2	6 5	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S63198	2025-048R	Starlink 32904	2025 Mar 13 	2025 Mar 13	*	*	-	Starlink 2M S2	6 5	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
-S63199	2025-048S	Starlink 32931	2025 Mar 13 	2025 Mar 13	*	*	-	Starlink 2M S2	6 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
+S63199	2025-048S	Starlink 32931	2025 Mar 13 	2025 Mar 13	*	*	-	Starlink 2M S2	6 5	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S63200	2025-048T	Starlink 32934	2025 Mar 13 	2025 Mar 13	*	*	-	Starlink 2M S2	6 5	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S63201	2025-048U	Starlink 32938	2025 Mar 13 	2025 Mar 13	*	*	-	Starlink 2M S2	6 5	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S63202	2025-048V	Starlink 32935	2025 Mar 13 	2025 Mar 13	*	*	-	Starlink 2M S2	6 5	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
@@ -21852,7 +21852,7 @@ S63558	2025-075L	Starlink 11657	2025 Apr 13 	2025 Apr 13	*	*	-	Starlink 2M D2	9 
 S63559	2025-075M	Starlink 11606	2025 Apr 13 	2025 Apr 13	*	*	-	Starlink 2M D2	9 2	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S63560	2025-075N	Starlink 11592	2025 Apr 13 	2025 Apr 13	*	*	-	Starlink 2M D2	9 2	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S63561	2025-075P	Starlink 32953	2025 Apr 13 	2025 Apr 13	*	*	-	Starlink 2M S2	6 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
-S63562	2025-075Q	Starlink 32951	2025 Apr 13 	2025 Apr 13	*	*	-	Starlink 2M S2	6 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
+S63562	2025-075Q	Starlink 32951	2025 Apr 13 	2025 Apr 13	*	*	-	Starlink 2M S2	6 5	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S63563	2025-075R	Starlink 32958	2025 Apr 13 	2025 Apr 13	*	*	-	Starlink 2M S2	6 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S63564	2025-075S	Starlink 32928	2025 Apr 13 	2025 Apr 13	*	*	-	Starlink 2M S2	6 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S63565	2025-075T	Starlink 32687	2025 Apr 13 	2025 Apr 13	*	*	-	Starlink 2M S2	6 5	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
@@ -21864,13 +21864,13 @@ S63570	2025-076B	Starlink 32956	2025 Apr 14 	2025 Apr 14	*	*	-	Starlink 2M S2	6 
 S63571	2025-076C	Starlink 33722	2025 Apr 14 	2025 Apr 14	*	*	-	Starlink 2MO S2	6 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S63572	2025-076D	Starlink 33739	2025 Apr 14 	2025 Apr 14	*	*	-	Starlink 2MO S2	6 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S63573	2025-076E	Starlink 33683	2025 Apr 14 	2025 Apr 14	*	*	-	Starlink 2MO S2	6 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
-S63574	2025-076F	Starlink 33724	2025 Apr 14 	2025 Apr 14	*	*	-	Starlink 2MO S2	6 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
+S63574	2025-076F	Starlink 33724	2025 Apr 14 	2025 May 24	2025 May 24	2025 May 24?	-	Starlink 2MO S2	6 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S63575	2025-076G	Starlink 33732	2025 Apr 14 	2025 Apr 14	*	*	-	Starlink 2MO S2	6 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S63576	2025-076H	Starlink 33800	2025 Apr 14 	2025 Apr 14	*	*	-	Starlink 2MO S2	6 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S63577	2025-076J	Starlink 33632	2025 Apr 14 	2025 Apr 14	*	*	-	Starlink 2MO S2	6 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S63578	2025-076K	Starlink 33719	2025 Apr 14 	2025 Apr 14	*	*	-	Starlink 2MO S2	6 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
-S63579	2025-076L	Starlink 33755	2025 Apr 14 	2025 Apr 14	*	*	-	Starlink 2MO S2	6 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
-S63580	2025-076M	Starlink 33752	2025 Apr 14 	2025 Apr 14	*	*	-	Starlink 2MO S2	6 5	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
+S63579	2025-076L	Starlink 33755	2025 Apr 14 	2025 Apr 14	*	*	-	Starlink 2MO S2	6 5	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
+S63580	2025-076M	Starlink 33752	2025 Apr 14 	2025 Apr 14	*	*	-	Starlink 2MO S2	6 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S63581	2025-076N	Starlink 33714	2025 Apr 14 	2025 Apr 14	*	*	-	Starlink 2MO S2	6 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S63582	2025-076P	Starlink 33814	2025 Apr 14 	2025 Apr 14	*	*	-	Starlink 2MO S2	6 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S63583	2025-076Q	Starlink 33817	2025 Apr 14 	2025 Apr 14	*	*	-	Starlink 2MO S2	6 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
@@ -21993,16 +21993,16 @@ S63704	2025-087H	Starlink 33937	2025 Apr 28 	2025 Apr 28	*	*	-	Starlink 2MO S1	7
 S63705	2025-087J	Starlink 33848	2025 Apr 28 	2025 Apr 28	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S63706	2025-087K	Starlink 33995	2025 Apr 28 	2025 Apr 28	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S63707	2025-087L	Starlink 33982	2025 Apr 28 	2025 Apr 28	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
-S63708	2025-087M	Starlink 33915	2025 Apr 28 	2025 Apr 28	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
-S63709	2025-087N	Starlink 33862	2025 Apr 28 	2025 Apr 28	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
+S63708	2025-087M	Starlink 33915	2025 Apr 28 	2025 Apr 28	*	*	-	Starlink 2MO S1	7 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
+S63709	2025-087N	Starlink 33862	2025 Apr 28 	2025 Apr 28	*	*	-	Starlink 2MO S1	7 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S63710	2025-087P	Starlink 33920	2025 Apr 28 	2025 Apr 28	*	*	-	Starlink 2MO S1	7 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S63711	2025-087Q	Starlink 33580	2025 Apr 28 	2025 Apr 28	*	*	-	Starlink 2MO S1	7 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
-S63712	2025-087R	Starlink 33783	2025 Apr 28 	2025 Apr 28	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
+S63712	2025-087R	Starlink 33783	2025 Apr 28 	2025 Apr 28	*	*	-	Starlink 2MO S1	7 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S63713	2025-087S	Starlink 33773	2025 Apr 28 	2025 Apr 28	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S63714	2025-087T	Starlink 33745	2025 Apr 28 	2025 Apr 28	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S63715	2025-087U	Starlink 33728	2025 Apr 28 	2025 Apr 28	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S63716	2025-087V	Starlink 33749	2025 Apr 28 	2025 Apr 28	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
-S63717	2025-087W	Starlink 33725	2025 Apr 28 	2025 Apr 28	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
+S63717	2025-087W	Starlink 33725	2025 Apr 28 	2025 Apr 28	*	*	-	Starlink 2MO S1	7 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S63718	2025-087X	Starlink 33641	2025 Apr 28 	2025 Apr 28	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S63719	2025-087Y	Starlink 33727	2025 Apr 28 	2025 Apr 28	*	*	-	Starlink 2MO S1	7 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S63720	2025-087Z	Starlink 33757	2025 Apr 28 	2025 Apr 28	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
@@ -22054,7 +22054,7 @@ S63765	2025-089Q	Starlink 33941	2025 Apr 29 	2025 Apr 29	*	*	-	Starlink 2M S2	6 
 S63766	2025-089R	Starlink 33824	2025 Apr 29 	2025 Apr 29	*	*	-	Starlink 2M S2	6 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S63767	2025-089S	Starlink 33808	2025 Apr 29 	2025 Apr 29	*	*	-	Starlink 2M S2	6 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S63768	2025-089T	Starlink 33844	2025 Apr 29 	2025 Apr 29	*	*	-	Starlink 2M S2	6 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
-S63769	2025-089U	Starlink 33907	2025 Apr 29 	2025 Apr 29	*	*	-	Starlink 2M S2	6 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
+S63769	2025-089U	Starlink 33907	2025 Apr 29 	2025 Apr 29	*	*	-	Starlink 2M S2	6 4	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S63770	2025-089V	Starlink 33884	2025 Apr 29 	2025 Apr 29	*	*	-	Starlink 2M S2	6 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S63771	2025-089W	Starlink 33841	2025 Apr 29 	2025 Apr 29	*	*	-	Starlink 2M S2	6 3	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S63772	2025-090A	Biomass	2025 Apr 29 	2025 Apr 29	*	*	-	ESA Earth	-	-	M	C	EOSCI	S	-	-	[I-ESA]	-	-	-	-	-	-	       0	       0	  0.00 	-
@@ -22455,7 +22455,7 @@ S64177	2025-113H	Starlink 34164	2025 May 28 	2025 May 28	*	*	-	Starlink 2MO S1	7
 S64178	2025-113J	Starlink 34227	2025 May 28 	2025 May 28	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S64179	2025-113K	Starlink 34194	2025 May 28 	2025 May 28	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S64180	2025-113L	Starlink 34000	2025 May 28 	2025 May 28	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
-S64181	2025-113L	Starlink 33917	2025 May 28 	2025 May 28	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
+S64181	2025-113M	Starlink 33917	2025 May 28 	2025 May 28	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S64182	2025-113N	Starlink 34131	2025 May 28 	2025 May 28	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S64183	2025-113P	Starlink 34188	2025 May 28 	2025 May 28	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S64184	2025-113Q	Starlink 34197	2025 May 28 	2025 May 28	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
@@ -22473,3 +22473,32 @@ S64195	2025-113AB	Starlink 33857	2025 May 28 	2025 May 28	*	*	-	Starlink 2MO S1	
 S64196	2025-113AC	Starlink 34173	2025 May 28 	2025 May 28	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S64197	2025-114A	Tianwen-2	2025 May 28 	2025 May 28	*	*	-	Tianwen	-	-	M	C	PLAN	S	-	-	[CN]	-	-	-	-	-	-	       0	       0	  0.00 	-
 S64199	2025-115A	Shi Jian 26	2025 May 29 	2025 May 29	*	*	-	SJ26	-	-	M	D	IMG	S	-	-	[CN]	-	-	-	-	-	-	       0	       0	  0.00 	-
+S64202	2025-116A	GPS III SV08	2025 May 30 	2025 May 30	*	*	-	GPS III	-	P	M	D	NAV	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
+S64203	2025-117A	Starlink 33966	2025 May 31 	2025 May 31	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
+S64204	2025-117B	Starlink 34331	2025 May 31 	2025 May 31	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
+S64205	2025-117C	Starlink 34251	2025 May 31 	2025 May 31	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
+S64206	2025-117D	Starlink 34311	2025 May 31 	2025 May 31	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
+S64207	2025-117E	Starlink 34324	2025 May 31 	2025 May 31	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
+S64208	2025-117F	Starlink 34327	2025 May 31 	2025 May 31	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
+S64209	2025-117G	Starlink 33944	2025 May 31 	2025 May 31	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
+S64210	2025-117H	Starlink 34310	2025 May 31 	2025 May 31	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
+S64211	2025-117J	Starlink 34258	2025 May 31 	2025 May 31	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
+S64212	2025-117K	Starlink 34284	2025 May 31 	2025 May 31	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
+S64213	2025-117L	Starlink 34332	2025 May 31 	2025 May 31	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
+S64214	2025-117M	Starlink 34283	2025 May 31 	2025 May 31	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
+S64215	2025-117N	Starlink 34349	2025 May 31 	2025 May 31	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
+S64216	2025-117P	Starlink 34296	2025 May 31 	2025 May 31	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
+S64217	2025-117Q	Starlink 34320	2025 May 31 	2025 May 31	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
+S64218	2025-117R	Starlink 34300	2025 May 31 	2025 May 31	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
+S64219	2025-117S	Starlink 34323	2025 May 31 	2025 May 31	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
+S64220	2025-117T	Starlink 34328	2025 May 31 	2025 May 31	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
+S64221	2025-117U	Starlink 34326	2025 May 31 	2025 May 31	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
+S64222	2025-117V	Starlink 34318	2025 May 31 	2025 May 31	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
+S64223	2025-117W	Starlink 34337	2025 May 31 	2025 May 31	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
+S64224	2025-117X	Starlink 34304	2025 May 31 	2025 May 31	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
+S64225	2025-117Y	Starlink 34289	2025 May 31 	2025 May 31	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
+S64226	2025-117Z	Starlink 34347	2025 May 31 	2025 May 31	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
+S64227	2025-117AA	Starlink 34330	2025 May 31 	2025 May 31	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
+S64228	2025-117AB	Starlink 34167	2025 May 31 	2025 May 31	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
+S64229	2025-117AC	Starlink 34241	2025 May 31 	2025 May 31	*	*	-	Starlink 2MO S1	7 6	P	M	B	COM	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-
+S64230	2025-118A	Global-32	2025 Jun  2 	2025 Jun  3	*	*	-	BlackSky	-	P	-	B	IMG	S	-	-	[US]	-	-	-	-	-	-	       0	       0	  0.00 	-

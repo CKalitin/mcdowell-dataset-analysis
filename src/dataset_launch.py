@@ -103,11 +103,11 @@ class Launch:
               .set_index('Launch_Tag')
         )
         
-        # Note that here we make the first payload on the launch the simple payload category.
-        first_payload.rename(columns={'Simple_Payload_Category': 'First_Simple_Payload_Category'}, inplace=True)
+        # Note that here we make the first payload listed on the launch the simple payload category.
+        first_payload.rename(columns={'Simple_Payload_Category': 'First_Simple_Payload_Category', 'Payload_Class': 'First_Payload_Class'}, inplace=True)
         
         # Create new columns in launch_df for canonical orbit data
-        for col in ['Orbit_Canonical_Date', 'Perigee', 'Apogee', 'Inc', 'OpOrbit', 'First_Simple_Payload_Category']:
+        for col in ['Orbit_Canonical_Date', 'Perigee', 'Apogee', 'Inc', 'OpOrbit', 'First_Simple_Payload_Category', 'First_Payload_Class']:
             self.df[col] = self.df['Launch_Tag'].map(first_payload[col])
         
         # make pandas show it all

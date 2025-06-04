@@ -24,10 +24,11 @@ def add_general_launch_payload_type(launch_dataframe):
     Eastern Government: group starts with 'G' or contains 'CX' or 'OG' and state is 'CN' or 'RU'
     """
     
-    launch_dataframe['General_Launch_Payload_Type'] = 'Other'
+    # Make 'Unknown' the default value for General_Launch_Payload_Type
+    launch_dataframe['General_Launch_Payload_Type'] = 'Unknown'
     
     # Commercial
-    commercial_mask = (launch_dataframe['Group'].str.startswith('C')) & (~launch_dataframe['State'].isin(['CN']))
+    commercial_mask = (launch_dataframe['Group'].str.startswith('C'))
     launch_dataframe.loc[commercial_mask, 'General_Launch_Payload_Type'] = 'Commercial'
     
     # Chinese Commercial
@@ -46,20 +47,23 @@ def add_general_launch_payload_type(launch_dataframe):
     # Eastern Government
     # If is government type and state is China or Russia
     eastern_government_mask = (
-        (launch_dataframe['General_Launch_Payload_Type'] == 'Government') &
-        launch_dataframe['State'].isin(['CN', 'RU'])
+        government_mask &
+        launch_dataframe['State'].isin(['CN', 'RU', 'SU'])
     )
     launch_dataframe.loc[eastern_government_mask, 'General_Launch_Payload_Type'] = 'Eastern Government'
     
     # Military
-    military_mask = launch_dataframe['First_Simple_Payload_Category'] == 'Military'
+    # See https://planet4589.org/space/gcat/web/cat/pcols.html
+    military_mask = launch_dataframe['First_Payload_Class'] == 'D'
     launch_dataframe.loc[military_mask, 'General_Launch_Payload_Type'] = 'Military'
     
     # Eastern Military
-    eastern_military_mask = military_mask & launch_dataframe['State'].isin(['CN', 'RU'])
+    eastern_military_mask = military_mask & launch_dataframe['State'].isin(['CN', 'RU', 'SU'])
     launch_dataframe.loc[eastern_military_mask, 'General_Launch_Payload_Type'] = 'Eastern Military'
     
     # Starlink
     launch_dataframe.loc[launch_dataframe['Mission'].str.contains('Starlink', case=False, na=False), 'General_Launch_Payload_Type'] = 'Starlink'
+    
+    print(launch_dataframe.tail(100))
     
     return launch_dataframe

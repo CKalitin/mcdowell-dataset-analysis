@@ -1,5 +1,5 @@
 #LV_Name	LV_Family	LV_Manufacturer	LV_Variant	LV_Alias	LV_Min_Stage	LV_Max_Stage	Length	LFlag	Diameter	DFlag	Launch_Mass	MFlag	LEO_Capacity	GTO_Capacity	TO_Thrust	Class	Apogee	Range
-# Updated 2025 May 30 1458:31
+# Updated 2025 Jun  3 0133:37
 ?	Unknown             	-	-	-	  1	1	  0.0 	 	 0.00 	 	     0.0 	 	       0 	       0 	       0 	R	     0 	-
 Unknown	Unknown             	-	-	-	  1	1	  0.0 	 	 0.00 	 	     0.0 	 	       0 	       0 	       0 	R	     0 	-
 N-1 11A52	N-1                 	OKB1	-	-	  1	3	105.3 	 	14.00 	 	  2788.0 	 	   70000 	       0 	   45300 	O	   200 	-
@@ -7,9 +7,9 @@ Saturn V	SaturnV             	MSFC	-	-	  1	4	110.6 	 	10.06 	 	  2913.0 	 	  118
 Saturn V	SaturnV             	MSFC	2	-	  1	3	104.8 	 	10.06 	 	  2822.0 	 	   75000 	       0 	   34030 	O	   500 	-
 Starship V1.0 Ship	Starship            	SPX	-	-	  1	1	 50.0 	 	 9.00 	 	  1470.0 	 	       0 	       0 	   12000 	R	    20 	-
 Starship V1.0	Starship            	SPX	-	-	  1	2	121.3 	 	 9.00 	 	  5020.0 	 	  100000 	       0 	   72500 	O	   200 	-
-Starship V2	Starship            	SPX	R2	-	  1	2	124.4 	 	 9.00 	 	  5200.0 	?	  100000 	       0 	   80800 	O	   200 	-
+Starship V2	Starship            	SPX	R2	-	  1	2	121.4 	 	 9.00 	 	  5200.0 	?	  100000 	       0 	   80800 	O	   200 	-
 Starship V2	Starship            	SPX	-	-	  1	2	124.4 	 	 9.00 	 	  5200.0 	?	  100000 	       0 	   80800 	O	   200 	-
-Starship V3	Starship            	SPX	-	-	  1	2	150.0 	 	 9.00 	 	  7000.0 	?	  200000 	       0 	  103000 	O	   200 	-
+Starship V3	Starship            	SPX	-	-	  1	2	142.0 	 	 9.00 	 	  7000.0 	?	  200000 	       0 	  103000 	O	   200 	-
 Space Shuttle	SRB                 	RWI	-	-	  1	3	 38.1 	 	 8.40 	 	  2040.0 	 	   24400 	       0 	   28200 	O	   600 	-
 SLS Block 1	SRB                 	BOMIS	-	-	  1	3	 98.1 	 	 8.40 	 	  2608.0 	 	       0 	       0 	   39000 	O	400000 	-
 Energiya	Energiya            	NPOE	-	-	  0	1	 58.7 	 	 7.75 	 	  2524.0 	 	   88000 	       0 	   35139 	O	   250 	-

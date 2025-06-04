@@ -26,7 +26,8 @@ class ChartUtils:
         'Government': "#008F11",
         'Eastern Government': "#2b700d",
         'Military': "#ff0000",
-        'Eastern Military': '#cc0000'
+        'Eastern Military': '#cc0000',
+        'Unknown': "#202020",
     }
     
     def pivot_dataframe(df, index_col, column_col, value_col):

@@ -28,6 +28,25 @@ class Filters:
             
         dataset_class.df = dataset_class.df[condition]
 
+    def filter_column_by_exact(dataset_class, exact_pattern, column, case=False, negate=False):
+        """
+        Filter a DataFrame by a column containing an exact pattern.
+        This is more general if no other filter suits your needs.
+        Args:
+            dataset_class: The dataset class to filter.
+            column: The column to filter by.
+            contains_pattern: The exact pattern to filter by.
+            case: Whether the filter should be case-sensitive. Defaults to False.
+            negate: If True, negate the condition (i.e., keep rows that do not contain the pattern). Defaults to False.
+        """
+        
+        # Use regex for exact match
+        condition = dataset_class.df[column].str.contains(f"^{exact_pattern}$", case=case, na=False, regex=True)
+        if negate:
+            condition = ~condition
+            
+        dataset_class.df = dataset_class.df[condition]
+
     def filter_by_mission(dataset_class, pattern, column="Mission", case=False, negate=False):
         """
         Filter by regex pattern in a specified column (e.g., 'Starlink' in Mission).
