@@ -76,10 +76,10 @@ class Translation:
         "GEOD": "Science",
         "MGRAV": "Science",
         "SCI": "Science",
-        "EW": "Military",
-        "SIG": "Military",
-        "TARG": "Military",
-        "WEAPON": "Military",
+        "EW": "Military", # Early warning: Obs?
+        "SIG": "Military", # Signals intelligence: Obs?
+        "TARG": "Military", # Target for missile defense tests: Other?
+        "WEAPON": "Military", # Antisat: Other?
         "TECH": "Tech Demo",
         "CAL": "Other",
         "EDU": "Other",
@@ -95,6 +95,7 @@ class Translation:
     # Note: I distinguish between H and M, use family otherwise
     # Note: LVM3 is GSLV here
     # Note: All Roman numerals are converted to Arabic numerals, eg. not Saturn V or Minotaur IV, but 5 and 4
+    # Note: Soyuz includes Kourou Soyuz, just fun point
     orbital_lv_name_to_lv_simplified = {
         "Saturn V": "Saturn 5",
         "Starship V1.0": "Starship",
