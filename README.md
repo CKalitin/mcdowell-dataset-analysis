@@ -10,6 +10,7 @@ todo is to look for edge cases and fix them
 1. Fix text overflow on Electron general launch payload type mass distribution chart
    - Also, it lists CAPSTONE as a commercial payload (Great example of high leverage, write this down somewhere, who else would notice this instantly?)
    - Also Soyuz title overflow
+1. Automatically detect first and last launches in timeframe for no require manual parameter
 1. Net payload mass launches vs time
 2. Add functions to get launch types (in chart utils, not everywhere? Eh do it everywhere)
 2. Better military general launch payload type detection (eg. NROL, etc.) will need to get a full list of military payload designations
