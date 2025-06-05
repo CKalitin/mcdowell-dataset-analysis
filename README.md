@@ -7,8 +7,7 @@ Attempt at general launch type
 todo is to look for edge cases and fix them
 "
 
-1. Add launch vehicle name translation so it's easier to work with (eg. "Falcon 9", "Falcon Heavy", not "Falcon9")
-   - TODO: implement new column in launch dataframe
+1. Fix text overflow on Electron general launch payload type mass distribution chart
 2. Add functions to get launch types (in chart utils, not everywhere? Eh do it everywhere)
 2. Better military general launch payload type detection (eg. NROL, etc.) will need to get a full list of military payload designations
    - Really, a better category (eg. military observation is both, which one do you put? Make a separate category! User (comm, gov, mil) and rename current military to weapon or something)
