@@ -95,7 +95,7 @@ class Translation:
     # Note: I distinguish between H and M, use family otherwise
     # Note: LVM3 is GSLV here
     # Note: All Roman numerals are converted to Arabic numerals, eg. not Saturn V or Minotaur IV, but 5 and 4
-    orbital_lv_name_to_simplified_name = {
+    orbital_lv_name_to_lv_simplified = {
         "Saturn V": "Saturn 5",
         "Starship V1.0": "Starship",
         "Starship V2": "Starship",

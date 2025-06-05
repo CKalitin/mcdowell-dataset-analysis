@@ -67,6 +67,7 @@ class Launch:
         self.df["Simple_Orbit"] = self.df["Simple_Orbit"].replace(self.translation.launch_category_to_simple_orbit) # Translate to simple orbit
 
         self.df["Launch_Vehicle_Family"] = self.df["LV_Type"].map(self.translation.lv_type_to_lv_family) # Translate LV_Type to LV_Family using the translation dictionary
+        self.df["Launch_Vehicle_Simplified"] = self.df["LV_Type"].map(self.translation.orbital_lv_name_to_lv_simplified) # Translate LV_Type to LV_Simplified using the translation dictionary
         
         self.df["State"] = self.df["Launch_Site"].map(self.translation.launch_site_to_state_code) # Translate Launch_Site to State using the translation dictionary
         self.df["Country"] = self.df["State"].map(self.translation.state_code_to_state_name)

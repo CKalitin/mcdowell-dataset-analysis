@@ -137,7 +137,24 @@ class Filters:
         
         dataset_class.df = dataset_class.df[condition]
 
-    def filter_by_launch_vehicle_raw_name(dataset_class, launch_vehicles, negate=False):
+    def filter_by_launch_vehicle_name_simplified(dataset_class, launch_vehicles, negate=False):
+        """
+        Remove all launches that are not in the given launch vehicles.
+        Args:
+            launch_vehicles: List of launch vehicles to filter by. eg. ["Falcon 9", "Starship", "Soyuz]
+            negate: If True, remove all launches that are in the given launch vehicles. Defaults to False.
+        """
+        
+        if (type(launch_vehicles) == str):
+            launch_vehicles = [launch_vehicles]
+        
+        condition = dataset_class.df["Launch_Vehicle_Simplified"].isin(launch_vehicles)
+        if negate:
+            condition = ~condition
+        
+        dataset_class.df = dataset_class.df[condition]
+
+    def filter_by_launch_vehicle_name_raw(dataset_class, launch_vehicles, negate=False):
         """
         Remove all launches that are not in the given launch vehicles.
         Args:
