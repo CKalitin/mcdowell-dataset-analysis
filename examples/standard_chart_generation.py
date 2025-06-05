@@ -1,14 +1,14 @@
 import mcdowell_dataset_analysis as mda
 
-def launches_vs_mass_by_orbit(launch_vehicle_simplified_name, mass_step_size_kg, chart_title_prefix, output_prefix, launch_vehicle_family=None, mass_suffix='t', mass_divisor=1000):
+def launches_vs_mass_by_orbit(mass_step_size_kg, chart_title_prefix, output_prefix, launch_vehicle_simplified_name=None, launch_vehicle_family=None, mass_suffix='t', mass_divisor=1000):
     """Generate a chart showing the number of launches by payload mass range by orbit.
     Eg. How many launches were 2-3 tonnes and LEO, how many 6-7 tonnes and GTO, etc.
 
     Args:
-        launch_vehicle_simplified_name (str): Launch vehicle to filter by
         mass_step_size_kg (int): Step size in kg for the mass bins (eg. 1000 gives bins of 0-1000 kg, 1000-2000 kg, etc.)
         chart_title_prefix (str): Prefix for the chart title (should be the prettified name of the launch vehicle) (eg. 'Falcon 9') 
         output_prefix (str): Simplified name of LV for output files (eg. 'f9' for Falcon 9 gives "f9_launches_vs_mass_by_orbit")
+        launch_vehicle_simplified_name (str, optional): Launch vehicle to filter by
         launch_vehicle_family (str, optional): Family of launch vehicle to filter by. If not none, then filtering will be done by family instead of the launch_vehicle field.
         mass_suffix (str, optional): Suffix for the mass labels (default is 't' for tonnes, use 'kg' if you want). Defaults to 't'.
         mass_divisor (int, optional): Divisor for the mass values in the chart (default is 1000 to convert kg to tonnes). Defaults to 1000.
@@ -61,15 +61,15 @@ def launches_vs_mass_by_orbit(launch_vehicle_simplified_name, mass_step_size_kg,
         bargap=0.1,
     )
 
-def total_mass_vs_mass_by_orbit(launch_vehicle_simplified_name, mass_step_size_kg, chart_title_prefix, output_prefix, launch_vehicle_family=None, mass_suffix='t', mass_divisor=1000):
+def total_mass_vs_mass_by_orbit(mass_step_size_kg, chart_title_prefix, output_prefix, launch_vehicle_simplified_name=None, launch_vehicle_family=None, mass_suffix='t', mass_divisor=1000):
     """Generate a chart showing the distribution of total launched mass versus payload mass range by orbit.
     Eg. How many launches were 2-3 tonnes and LEO, how many 6-7 tonnes and GTO, etc.
 
     Args:
-        launch_vehicle_simplified_name (str): Launch vehicle to filter by
         mass_step_size_kg (int): Step size in kg for the mass bins (eg. 1000 gives bins of 0-1000 kg, 1000-2000 kg, etc.)
         chart_title_prefix (str): Prefix for the chart title (should be the prettified name of the launch vehicle) (eg. 'Falcon 9') 
         output_prefix (str): Simplified name of LV for output files (eg. 'f9' for Falcon 9 gives "f9_total_mass_vs_mass_by_orbit")
+        launch_vehicle_simplified_name (str, optional): Launch vehicle to filter by
         launch_vehicle_family (str, optional): Family of launch vehicle to filter by. If not none, then filtering will be done by family instead of the launch_vehicle field.
         mass_suffix (str, optional): Suffix for the mass labels (default is 't' for tonnes, use 'kg' if you want). Defaults to 't'.
         mass_divisor (int, optional): Divisor for the mass values in the chart (default is 1000 to convert kg to tonnes). Defaults to 1000.
@@ -128,15 +128,15 @@ def total_mass_vs_mass_by_orbit(launch_vehicle_simplified_name, mass_step_size_k
         bargap=0.1
     )
 
-def launches_vs_mass_by_general_launch_payload_type(launch_vehicle_simplified_name, mass_step_size_kg, chart_title_prefix, output_prefix, launch_vehicle_family=None, mass_suffix='t', mass_divisor=1000):
+def launches_vs_mass_by_general_launch_payload_type(mass_step_size_kg, chart_title_prefix, output_prefix, launch_vehicle_simplified_name=None, launch_vehicle_family=None, mass_suffix='t', mass_divisor=1000):
     """Generate a chart showing the number of launches by payload mass range by general launch payload type.
     Eg. How many launches were 2-3 tonnes and Starlink, how many 6-7 tonnes and Commercial, etc.
 
     Args:
-        launch_vehicle_simplified_name (str): Launch vehicle to filter by
         mass_step_size_kg (int): Step size in kg for the mass bins (eg. 1000 gives bins of 0-1000 kg, 1000-2000 kg, etc.)
         chart_title_prefix (str): Prefix for the chart title (should be the prettified name of the launch vehicle) (eg. 'Falcon 9') 
         output_prefix (str): Simplified name of LV for output files (eg. 'f9' for Falcon 9 gives "f9_launches_vs_mass_by_general_launch_payload_type")
+        launch_vehicle_simplified_name (str, optional): Launch vehicle to filter by
         launch_vehicle_family (str, optional): Family of launch vehicle to filter by. If not none, then filtering will be done by family instead of the launch_vehicle field.
         mass_suffix (str, optional): Suffix for the mass labels (default is 't' for tonnes, use 'kg' if you want). Defaults to 't'.
         mass_divisor (int, optional): Divisor for the mass values in the chart (default is 1000 to convert kg to tonnes). Defaults to 1000.
@@ -190,15 +190,15 @@ def launches_vs_mass_by_general_launch_payload_type(launch_vehicle_simplified_na
         bargap=0.1,
     )
 
-def total_mass_vs_mass_by_general_launch_payload_type(launch_vehicle_simplified_name, mass_step_size_kg, chart_title_prefix, output_prefix, launch_vehicle_family=None, mass_suffix='t', mass_divisor=1000):
+def total_mass_vs_mass_by_general_launch_payload_type(mass_step_size_kg, chart_title_prefix, output_prefix, launch_vehicle_simplified_name=None, launch_vehicle_family=None, mass_suffix='t', mass_divisor=1000):
     """Generate a chart showing the distribution of total launched mass versus payload mass range by general launch payload type.
     Eg. How much total mass was launched in 2-3 tonnes range for Starlink, how much for Commercial, etc.
 
     Args:
-        launch_vehicle_simplified_name (str): Launch vehicle to filter by
         mass_step_size_kg (int): Step size in kg for the mass bins (eg. 1000 gives bins of 0-1000 kg, 1000-2000 kg, etc.)
         chart_title_prefix (str): Prefix for the chart title (should be the prettified name of the launch vehicle) (eg. 'Falcon 9') 
         output_prefix (str): Simplified name of LV for output files (eg. 'f9' for Falcon 9 gives "f9_total_mass_vs_mass_by_general_launch_payload_type")
+        launch_vehicle_simplified_name (str, optional): Launch vehicle to filter by
         launch_vehicle_family (str, optional): Family of launch vehicle to filter by. If not none, then filtering will be done by family instead of the launch_vehicle field.
         mass_suffix (str, optional): Suffix for the mass labels (default is 't' for tonnes, use 'kg' if you want). Defaults to 't'.
         mass_divisor (int, optional): Divisor for the mass values in the chart (default is 1000 to convert kg to tonnes). Defaults to 1000.
@@ -260,15 +260,15 @@ def total_mass_vs_mass_by_general_launch_payload_type(launch_vehicle_simplified_
         bargap=0.1
     )
 
-def launches_vs_month_by_orbit(launch_vehicle_simplified_name, start_year, end_year, chart_title_prefix, output_prefix, launch_vehicle_family=None, all_vehicles=False, x_tick_step_size=12):
+def launches_vs_month_by_orbit(start_year, end_year, chart_title_prefix, output_prefix, launch_vehicle_simplified_name=None, launch_vehicle_family=None, all_vehicles=False, x_tick_step_size=12):
     """Generate a chart showing the number of launches by month by orbit.
 
     Args:
-        launch_vehicle_simplified_name (str): Launch vehicle to filter by
         start_year (int): Start year for the data
         end_year (int): End year for the data (inclusive)
         chart_title_prefix (str): Prefix for the chart title (should be the prettified name of the launch vehicle) (eg. 'Falcon 9') 
         output_prefix (str): Simplified name of LV for output files (eg. 'f9' for Falcon 9 gives "f9_launches_vs_month_by_orbit")
+        launch_vehicle_simplified_name (str, optional): Launch vehicle to filter by
         launch_vehicle_family (str, optional): Family of launch vehicle to filter by. If not none, then filtering will be done by family instead of the launch_vehicle field.
         all_vehicles (bool, optional): If True, will not filter by launch vehicle. Defaults to False.
         x_tick_step_size (int, optional): Step size for x-axis ticks in months. Defaults to 12 (one year).
@@ -328,15 +328,15 @@ def launches_vs_month_by_orbit(launch_vehicle_simplified_name, start_year, end_y
         x_tick_step_size=x_tick_step_size
     )
     
-def launches_vs_month_by_general_launch_payload_type(launch_vehicle_simplified_name, start_year, end_year, chart_title_prefix, output_prefix, launch_vehicle_family=None, all_vehicles=False, x_tick_step_size=12):
+def launches_vs_month_by_general_launch_payload_type(start_year, end_year, chart_title_prefix, output_prefix, launch_vehicle_simplified_name=None, launch_vehicle_family=None, all_vehicles=False, x_tick_step_size=12):
     """Generate a chart showing the number of launches by month by general launch payload type.
 
     Args:
-        launch_vehicle_simplified_name (str): Launch vehicle to filter by
         start_year (int): Start year for the data
         end_year (int): End year for the data (inclusive)
         chart_title_prefix (str): Prefix for the chart title (should be the prettified name of the launch vehicle) (eg. 'Falcon 9') 
         output_prefix (str): Simplified name of LV for output files (eg. 'f9' for Falcon 9 gives "f9_launches_vs_month_by_general_launch_payload_type")
+        launch_vehicle_simplified_name (str, optional): Launch vehicle to filter by
         launch_vehicle_family (str, optional): Family of launch vehicle to filter by. If not none, then filtering will be done by family instead of the launch_vehicle field.
         all_vehicles (bool, optional): If True, will not filter by launch vehicle. Defaults to False.
         x_tick_step_size (int, optional): Step size for x-axis ticks in months. Defaults to 12 (one year).
@@ -397,15 +397,15 @@ def launches_vs_month_by_general_launch_payload_type(launch_vehicle_simplified_n
         x_tick_step_size=x_tick_step_size
     )
     
-def launches_vs_year_by_orbit(launch_vehicle_simplified_name, start_year, end_year, chart_title_prefix, output_prefix, launch_vehicle_family=None, all_vehicles=False, x_tick_step_size=1):
+def launches_vs_year_by_orbit(start_year, end_year, chart_title_prefix, output_prefix, launch_vehicle_simplified_name=None, launch_vehicle_family=None, all_vehicles=False, x_tick_step_size=1):
     """Generate a chart showing the number of launches by year by orbit.
 
     Args:
-        launch_vehicle_simplified_name (str): Launch vehicle to filter by
         start_year (int): Start year for the data
         end_year (int): End year for the data (inclusive)
         chart_title_prefix (str): Prefix for the chart title (should be the prettified name of the launch vehicle) (eg. 'Falcon 9') 
         output_prefix (str): Simplified name of LV for output files (eg. 'f9' for Falcon 9 gives "f9_launches_vs_year_by_orbit")
+        launch_vehicle_simplified_name (str, optional): Launch vehicle to filter by
         launch_vehicle_family (str, optional): Family of launch vehicle to filter by. If not none, then filtering will be done by family instead of the launch_vehicle field.
         all_vehicles (bool, optional): If True, will not filter by launch vehicle. Defaults to False.
         x_tick_step_size (int, optional): Step size for x-axis ticks in years. Defaults to 1 (one year).
@@ -459,15 +459,15 @@ def launches_vs_year_by_orbit(launch_vehicle_simplified_name, start_year, end_ye
         x_tick_step_size=x_tick_step_size
     )
 
-def launches_vs_year_by_general_launch_payload_type(launch_vehicle_simplified_name, start_year, end_year, chart_title_prefix, output_prefix, launch_vehicle_family=None, all_vehicles=False, x_tick_step_size=1):
+def launches_vs_year_by_general_launch_payload_type(start_year, end_year, chart_title_prefix, output_prefix, launch_vehicle_simplified_name=None, launch_vehicle_family=None, all_vehicles=False, x_tick_step_size=1):
     """Generate a chart showing the number of launches by year by general launch payload type.
 
     Args:
-        launch_vehicle_simplified_name (str): Launch vehicle to filter by
         start_year (int): Start year for the data
         end_year (int): End year for the data (inclusive)
         chart_title_prefix (str): Prefix for the chart title (should be the prettified name of the launch vehicle) (eg. 'Falcon 9') 
         output_prefix (str): Simplified name of LV for output files (eg. 'f9' for Falcon 9 gives "f9_launches_vs_year_by_general_launch_payload_type")
+        launch_vehicle_simplified_name (str, optional): Launch vehicle to filter by
         launch_vehicle_family (str, optional): Family of launch vehicle to filter by. If not none, then filtering will be done by family instead of the launch_vehicle field.
         all_vehicles (bool, optional): If True, will not filter by launch vehicle. Defaults to False.
         x_tick_step_size (int, optional): Step size for x-axis ticks in years. Defaults to 1 (one year).

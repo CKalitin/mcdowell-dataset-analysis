@@ -47,6 +47,7 @@ scg.launches_vs_year_by_orbit(
     chart_title_prefix='Global',
     output_prefix="global",
     all_vehicles=True,
+    x_tick_step_size=5,
 )
 
 scg.launches_vs_year_by_orbit(
@@ -56,6 +57,7 @@ scg.launches_vs_year_by_orbit(
     chart_title_prefix='Global',
     output_prefix="global",
     all_vehicles=True,
+    x_tick_step_size=5,
 )
 
 scg.launches_vs_year_by_general_launch_payload_type(
@@ -65,6 +67,7 @@ scg.launches_vs_year_by_general_launch_payload_type(
     chart_title_prefix='Global',
     output_prefix="global",
     all_vehicles=True,
+    x_tick_step_size=5,
 )
 
 scg.launches_vs_year_by_general_launch_payload_type(
@@ -74,4 +77,5 @@ scg.launches_vs_year_by_general_launch_payload_type(
     chart_title_prefix='Global',
     output_prefix="global",
     all_vehicles=True,
+    x_tick_step_size=5,
 )
