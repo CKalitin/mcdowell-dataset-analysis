@@ -260,27 +260,24 @@ def total_mass_vs_mass_by_general_launch_payload_type(mass_step_size_kg, chart_t
         bargap=0.1
     )
 
-def launches_vs_month_by_orbit(start_year, end_year, chart_title_prefix, output_prefix, launch_vehicle_simplified_name=None, launch_vehicle_family=None, all_vehicles=False, x_tick_step_size=12):
+def launches_vs_month_by_orbit(chart_title_prefix, output_prefix, launch_vehicle_simplified_name=None, launch_vehicle_family=None, all_vehicles=False, x_tick_step_size=12, start_year=None, end_year=None):
     """Generate a chart showing the number of launches by month by orbit.
 
     Args:
-        start_year (int): Start year for the data
-        end_year (int): End year for the data (inclusive)
         chart_title_prefix (str): Prefix for the chart title (should be the prettified name of the launch vehicle) (eg. 'Falcon 9') 
         output_prefix (str): Simplified name of LV for output files (eg. 'f9' for Falcon 9 gives "f9_launches_vs_month_by_orbit")
         launch_vehicle_simplified_name (str, optional): Launch vehicle to filter by
         launch_vehicle_family (str, optional): Family of launch vehicle to filter by. If not none, then filtering will be done by family instead of the launch_vehicle field.
         all_vehicles (bool, optional): If True, will not filter by launch vehicle. Defaults to False.
         x_tick_step_size (int, optional): Step size for x-axis ticks in months. Defaults to 12 (one year).
+        start_year (int, optional): Start year for the data. By default it is the first year of the specified vehicle in the dataset.
+        end_year (int, optional): End year for the data (inclusive). By default, the final year of the specified vehicle is used.
     """
     
-    output_name = f"{output_prefix}_launches_vs_month_by_orbit_{start_year}_{end_year}"
-
     # Initialize dataset
     dataset = mda.McdowellDataset("./datasets")
 
     # Filter the base dataset
-    mda.Filters.filter_by_launch_date(dataset.launch, start_date=f'{start_year}-01-01', end_date=f'{end_year}-12-31')
     mda.Filters.filter_by_launch_category(dataset.launch, ['O', 'D'])
     if not all_vehicles:
         if launch_vehicle_family is not None:
@@ -288,6 +285,16 @@ def launches_vs_month_by_orbit(start_year, end_year, chart_title_prefix, output_
         else:
             mda.Filters.filter_by_launch_vehicle_name_simplified(dataset.launch, launch_vehicle_simplified_name)
 
+    if start_year == None:
+        start_year = dataset.launch.df['Launch_Date'].dt.year.min()
+    if end_year == None:
+        end_year = dataset.launch.df['Launch_Date'].dt.year.max()
+
+    output_name = f"{output_prefix}_launches_vs_month_by_orbit_{start_year}_{end_year}"
+
+    # After getting the start and end years, filter the dataset by launch date
+    mda.Filters.filter_by_launch_date(dataset.launch, start_date=f'{start_year}-01-01', end_date=f'{end_year}-12-31')
+    
     # Encode launch month as year*12 + months to get total months since Jesus instead of years since Jesus
     dataset.launch.df['Launch_Month'] = dataset.launch.df['Launch_Date'].dt.year*12 + dataset.launch.df['Launch_Date'].dt.month
     
@@ -328,27 +335,24 @@ def launches_vs_month_by_orbit(start_year, end_year, chart_title_prefix, output_
         x_tick_step_size=x_tick_step_size
     )
     
-def launches_vs_month_by_general_launch_payload_type(start_year, end_year, chart_title_prefix, output_prefix, launch_vehicle_simplified_name=None, launch_vehicle_family=None, all_vehicles=False, x_tick_step_size=12):
+def launches_vs_month_by_general_launch_payload_type(chart_title_prefix, output_prefix, launch_vehicle_simplified_name=None, launch_vehicle_family=None, all_vehicles=False, x_tick_step_size=12, start_year=None, end_year=None):
     """Generate a chart showing the number of launches by month by general launch payload type.
 
     Args:
-        start_year (int): Start year for the data
-        end_year (int): End year for the data (inclusive)
         chart_title_prefix (str): Prefix for the chart title (should be the prettified name of the launch vehicle) (eg. 'Falcon 9') 
         output_prefix (str): Simplified name of LV for output files (eg. 'f9' for Falcon 9 gives "f9_launches_vs_month_by_general_launch_payload_type")
         launch_vehicle_simplified_name (str, optional): Launch vehicle to filter by
         launch_vehicle_family (str, optional): Family of launch vehicle to filter by. If not none, then filtering will be done by family instead of the launch_vehicle field.
         all_vehicles (bool, optional): If True, will not filter by launch vehicle. Defaults to False.
         x_tick_step_size (int, optional): Step size for x-axis ticks in months. Defaults to 12 (one year).
+        start_year (int, optional): Start year for the data. By default it is the first year of the specified vehicle in the dataset.
+        end_year (int, optional): End year for the data (inclusive). By default, the final year of the specified vehicle is used.
     """
     
-    output_name = f"{output_prefix}_launches_vs_month_by_general_launch_payload_type_{start_year}_{end_year}"
-
     # Initialize dataset
     dataset = mda.McdowellDataset("./datasets")
 
     # Filter the base dataset
-    mda.Filters.filter_by_launch_date(dataset.launch, start_date=f'{start_year}-01-01', end_date=f'{end_year}-12-31')
     mda.Filters.filter_by_launch_category(dataset.launch, ['O', 'D'])
     if not all_vehicles:
         if launch_vehicle_family is not None:
@@ -356,6 +360,16 @@ def launches_vs_month_by_general_launch_payload_type(start_year, end_year, chart
         else:
             mda.Filters.filter_by_launch_vehicle_name_simplified(dataset.launch, launch_vehicle_simplified_name)
 
+    if start_year == None:
+        start_year = dataset.launch.df['Launch_Date'].dt.year.min()
+    if end_year == None:
+        end_year = dataset.launch.df['Launch_Date'].dt.year.max()
+
+    output_name = f"{output_prefix}_launches_vs_month_by_general_launch_payload_type_{start_year}_{end_year}"
+
+    # After getting the start and end years, filter the dataset by launch date
+    mda.Filters.filter_by_launch_date(dataset.launch, start_date=f'{start_year}-01-01', end_date=f'{end_year}-12-31')
+    
     # Encode launch month as year*12 + months to get total months since Jesus instead of years since Jesus
     dataset.launch.df['Launch_Month'] = dataset.launch.df['Launch_Date'].dt.year*12 + dataset.launch.df['Launch_Date'].dt.month
     
@@ -397,27 +411,24 @@ def launches_vs_month_by_general_launch_payload_type(start_year, end_year, chart
         x_tick_step_size=x_tick_step_size
     )
     
-def launches_vs_year_by_orbit(start_year, end_year, chart_title_prefix, output_prefix, launch_vehicle_simplified_name=None, launch_vehicle_family=None, all_vehicles=False, x_tick_step_size=1):
+def launches_vs_year_by_orbit(chart_title_prefix, output_prefix, launch_vehicle_simplified_name=None, launch_vehicle_family=None, all_vehicles=False, x_tick_step_size=1, start_year=None, end_year=None, ):
     """Generate a chart showing the number of launches by year by orbit.
 
     Args:
-        start_year (int): Start year for the data
-        end_year (int): End year for the data (inclusive)
         chart_title_prefix (str): Prefix for the chart title (should be the prettified name of the launch vehicle) (eg. 'Falcon 9') 
         output_prefix (str): Simplified name of LV for output files (eg. 'f9' for Falcon 9 gives "f9_launches_vs_year_by_orbit")
         launch_vehicle_simplified_name (str, optional): Launch vehicle to filter by
         launch_vehicle_family (str, optional): Family of launch vehicle to filter by. If not none, then filtering will be done by family instead of the launch_vehicle field.
         all_vehicles (bool, optional): If True, will not filter by launch vehicle. Defaults to False.
         x_tick_step_size (int, optional): Step size for x-axis ticks in years. Defaults to 1 (one year).
+        start_year (int, optional): Start year for the data. By default it is the first year of the specified vehicle in the dataset.
+        end_year (int, optional): End year for the data (inclusive). By default, the final year of the specified vehicle is used.
     """
     
-    output_name = f"{output_prefix}_launches_vs_year_by_orbit_{start_year}_{end_year}"
-
     # Initialize dataset
     dataset = mda.McdowellDataset("./datasets")
 
     # Filter the base dataset
-    mda.Filters.filter_by_launch_date(dataset.launch, start_date=f'{start_year}-01-01', end_date=f'{end_year}-12-31')
     mda.Filters.filter_by_launch_category(dataset.launch, ['O', 'D'])
     if not all_vehicles:
         if launch_vehicle_family is not None:
@@ -425,6 +436,16 @@ def launches_vs_year_by_orbit(start_year, end_year, chart_title_prefix, output_p
         else:
             mda.Filters.filter_by_launch_vehicle_name_simplified(dataset.launch, launch_vehicle_simplified_name)
 
+    if start_year == None:
+        start_year = dataset.launch.df['Launch_Date'].dt.year.min()
+    if end_year == None:
+        end_year = dataset.launch.df['Launch_Date'].dt.year.max()
+
+    output_name = f"{output_prefix}_launches_vs_year_by_orbit_{start_year}_{end_year}"
+
+    # After getting the start and end years, filter the dataset by launch date
+    mda.Filters.filter_by_launch_date(dataset.launch, start_date=f'{start_year}-01-01', end_date=f'{end_year}-12-31')
+    
     # Encode launch month as year*12 + months to get total months since Jesus instead of years since Jesus
     dataset.launch.df['Launch_Year'] = dataset.launch.df['Launch_Date'].dt.year
     
@@ -459,27 +480,24 @@ def launches_vs_year_by_orbit(start_year, end_year, chart_title_prefix, output_p
         x_tick_step_size=x_tick_step_size
     )
 
-def launches_vs_year_by_general_launch_payload_type(start_year, end_year, chart_title_prefix, output_prefix, launch_vehicle_simplified_name=None, launch_vehicle_family=None, all_vehicles=False, x_tick_step_size=1):
+def launches_vs_year_by_general_launch_payload_type(chart_title_prefix, output_prefix, launch_vehicle_simplified_name=None, launch_vehicle_family=None, all_vehicles=False, x_tick_step_size=1, start_year=None, end_year=None):
     """Generate a chart showing the number of launches by year by general launch payload type.
 
     Args:
-        start_year (int): Start year for the data
-        end_year (int): End year for the data (inclusive)
         chart_title_prefix (str): Prefix for the chart title (should be the prettified name of the launch vehicle) (eg. 'Falcon 9') 
         output_prefix (str): Simplified name of LV for output files (eg. 'f9' for Falcon 9 gives "f9_launches_vs_year_by_general_launch_payload_type")
         launch_vehicle_simplified_name (str, optional): Launch vehicle to filter by
         launch_vehicle_family (str, optional): Family of launch vehicle to filter by. If not none, then filtering will be done by family instead of the launch_vehicle field.
         all_vehicles (bool, optional): If True, will not filter by launch vehicle. Defaults to False.
         x_tick_step_size (int, optional): Step size for x-axis ticks in years. Defaults to 1 (one year).
+        start_year (int, optional): Start year for the data. By default it is the first year of the specified vehicle in the dataset.
+        end_year (int, optional): End year for the data (inclusive). By default, the final year of the specified vehicle is used.
     """
     
-    output_name = f"{output_prefix}_launches_vs_year_by_general_launch_payload_type_{start_year}_{end_year}"
-
     # Initialize dataset
     dataset = mda.McdowellDataset("./datasets")
 
     # Filter the base dataset
-    mda.Filters.filter_by_launch_date(dataset.launch, start_date=f'{start_year}-01-01', end_date=f'{end_year}-12-31')
     mda.Filters.filter_by_launch_category(dataset.launch, ['O', 'D'])
     if not all_vehicles:
         if launch_vehicle_family is not None:
@@ -487,6 +505,16 @@ def launches_vs_year_by_general_launch_payload_type(start_year, end_year, chart_
         else:
             mda.Filters.filter_by_launch_vehicle_name_simplified(dataset.launch, launch_vehicle_simplified_name)
 
+    if start_year == None:
+        start_year = dataset.launch.df['Launch_Date'].dt.year.min()
+    if end_year == None:
+        end_year = dataset.launch.df['Launch_Date'].dt.year.max()
+
+    output_name = f"{output_prefix}_launches_vs_year_by_general_launch_payload_type_{start_year}_{end_year}"
+
+    # After getting the start and end years, filter the dataset by launch date
+    mda.Filters.filter_by_launch_date(dataset.launch, start_date=f'{start_year}-01-01', end_date=f'{end_year}-12-31')
+    
     # Encode launch month as year*12 + months to get total months since Jesus instead of years since Jesus
     dataset.launch.df['Launch_Year'] = dataset.launch.df['Launch_Date'].dt.year
     
