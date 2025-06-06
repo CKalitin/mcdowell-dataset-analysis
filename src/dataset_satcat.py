@@ -38,7 +38,7 @@ class Satcat:
         Lots of string manipulation to get the dates into a format that pandas can understand.
         """
         
-        self.date_updated = " ".join(self.df.iloc[0,0].split(" ")[2:5])
+        self.date_updated = " ".join(self.df.iloc[0, 0].strip().replace("  ", " ").split(" ")[2:5])
         
         # Remove second row of tsv, signifies date of last update
         self.df = self.df.drop(index=0).reset_index(drop=True)
