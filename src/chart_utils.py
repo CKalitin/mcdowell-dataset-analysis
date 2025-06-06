@@ -19,6 +19,12 @@ class ChartUtils:
         'BEO': '#3c4043'
     }
     
+    f9_site_color_map={
+        'LC40': '#fbbc04',
+        'LC39A': '#cc0000',
+        'SLC4E': '#3c78d8',
+    }
+    
     general_launch_payload_type_color_map = {
         'Starlink': "#005eff",
         'Commercial': "#fbbc04",
