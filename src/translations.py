@@ -76,11 +76,11 @@ class Translation:
         "GEOD": "Science",
         "MGRAV": "Science",
         "SCI": "Science",
-        "EW": "Military", # Early warning: Obs?
-        "SIG": "Military", # Signals intelligence: Obs?
-        "TARG": "Military", # Target for missile defense tests: Other?
-        "WEAPON": "Military", # Antisat: Other?
-        "TECH": "Tech Demo",
+        "TECH": "Tech Demo", # I want this above other category, technically out of order
+        "EW": "Observation", # Early warning: Obs?
+        "SIG": "Observation", # Signals intelligence: Obs?
+        "TARG": "Other", # Target for missile defense tests: Other?
+        "WEAPON": "Other", # Antisat: Other?
         "CAL": "Other",
         "EDU": "Other",
         "INF": "Other",

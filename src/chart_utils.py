@@ -39,9 +39,8 @@ class ChartUtils:
     simple_payload_category_color_map = {
         'Observation': "#1155cc",
         'Communications': "#fbbc04",
-        'Science': "#6aa84f",
-        'Military': "#ff0000",
-        'Tech Demo': "#a83b71",
+        'Science': "#3ba735",
+        'Tech Demo': "#ee1111",
         'Other': "#434343",
     }
     
