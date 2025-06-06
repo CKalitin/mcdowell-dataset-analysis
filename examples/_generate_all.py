@@ -1,8 +1,14 @@
-import f9_launches_vs_mass_by_orbit
-import f9_total_mass_vs_mass_by_orbit
-import orbital_launches_vs_year_by_orbit
+import ariane_charts
+import atlas_charts
+import electron_charts
+import f9_charts
+import fh_charts
+import global_launches_charts
+import simple_payload_categories_vs_time
+import soyuz_charts
 import starlink_apogee_vs_date_per_site
 import starlink_inc_vs_date_per_site
 import starlink_mass_vs_date_per_site
+import titan_charts
 
 # Python, man

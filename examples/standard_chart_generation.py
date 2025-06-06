@@ -181,7 +181,7 @@ def launches_vs_mass_by_general_launch_payload_type(mass_step_size_kg, chart_tit
 
     mda.ChartUtils.plot_bar(
         output_df,
-        title=f'{chart_title_prefix} Launches vs. Payload Mass by General Launch Payload Type',
+        title=f'{chart_title_prefix} Launches vs. Payload Mass by Payload Type',
         subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
         x_label=f'Payload Mass Range ({mass_suffix})',
         y_label='Number of Launches',
@@ -251,7 +251,7 @@ def total_mass_vs_mass_by_general_launch_payload_type(mass_step_size_kg, chart_t
     # Plot stacked bar chart
     mda.ChartUtils.plot_bar(
         output_df,
-        title=f'{chart_title_prefix} Net Payload Mass vs Mass Range by General Launch Payload Type',
+        title=f'{chart_title_prefix} Net Payload Mass vs Mass Range by Payload Type',
         subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
         x_label=f'Payload Mass Range ({mass_suffix})',
         y_label=f'Total Payload Mass ({mass_suffix})',
@@ -400,7 +400,7 @@ def launches_vs_month_by_general_launch_payload_type(chart_title_prefix, output_
     
     mda.ChartUtils.plot_bar(
         output_df,
-        title=f'{chart_title_prefix} Launches vs. Month by General Launch Payload Type',
+        title=f'{chart_title_prefix} Launches vs. Month by Payload Type',
         subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
         x_label='Date',
         y_label='Number of Launches',
@@ -540,7 +540,7 @@ def launches_vs_year_by_general_launch_payload_type(chart_title_prefix, output_p
     
     mda.ChartUtils.plot_bar(
         output_df,
-        title=f'{chart_title_prefix} Launches vs. Year by General Launch Payload Type',
+        title=f'{chart_title_prefix} Launches vs. Year by  Payload Type',
         subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
         x_label='Year',
         y_label='Number of Launches',
