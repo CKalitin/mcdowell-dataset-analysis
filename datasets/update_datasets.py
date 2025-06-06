@@ -37,5 +37,5 @@ launch_file_path = os.path.join(save_directory, "launch.tsv")
 if os.path.exists(launch_file_path):
     with open(launch_file_path, 'r') as file:
         file.readline() # Skip first line
-        date = " ".join(file.readline().strip().split(" ")[2:6])
+        date = " ".join(file.readline().strip().replace("  ", " ").split(" ")[2:5])
         print(f"Launch dataset cutoff: {date}")

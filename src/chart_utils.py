@@ -36,6 +36,15 @@ class ChartUtils:
         'Unknown': "#202020",
     }
     
+    simple_payload_category_color_map = {
+        'Observation': "#1155cc",
+        'Communications': "#fbbc04",
+        'Science': "#6aa84f",
+        'Military': "#ff0000",
+        'Tech Demo': "#a83b71",
+        'Other': "#434343",
+    }
+    
     def pivot_dataframe(df, index_col, column_col, value_col):
         """
         Index_col is used as the row index of the pivoted dataframe.

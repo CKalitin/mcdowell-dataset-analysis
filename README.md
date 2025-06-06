@@ -1,5 +1,8 @@
 ## TODO
 
+- Make color map optional
+- Fix space in date issue!!! Replace double space with single space
+
 1. Fix text overflow on Electron general launch payload type mass distribution chart
    - Also, it lists CAPSTONE as a commercial payload (Great example of high leverage, write this down somewhere, who else would notice this instantly?)
    - Also Soyuz title overflow

@@ -51,6 +51,7 @@ Starlink Charts:
 - Launches Apogee vs. Date
 - Launches Inclination vs. Date
 - Launches Mass vs. Date
+- Also break down by Starlink version
 
 Payloads Charts:
 - Pie Chart: Payloads Successfully Launched by Payload Type
