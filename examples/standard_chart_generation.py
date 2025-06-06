@@ -540,7 +540,7 @@ def launches_vs_year_by_general_launch_payload_type(chart_title_prefix, output_p
     
     mda.ChartUtils.plot_bar(
         output_df,
-        title=f'{chart_title_prefix} Launches vs. Year by  Payload Type',
+        title=f'{chart_title_prefix} Launches vs. Year by Payload Type',
         subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
         x_label='Year',
         y_label='Number of Launches',

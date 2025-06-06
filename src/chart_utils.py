@@ -67,7 +67,7 @@ class ChartUtils:
         See Pandas documentation for more details:
         https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.pivot.html
         """
-        pivoted = df.pivot(index=index_col, columns=column_col, values=value_col)
+        pivoted = df.pivot_table(index=index_col, columns=column_col, values=value_col) # pivot_table supports duplicate indexes, unlike pd.pivot
         pivoted = pivoted.reset_index().sort_values(by=index_col)
         return pivoted
 
@@ -149,7 +149,7 @@ class ChartUtils:
         return output_df
 
     # Histograms are designed for continuous data, while bar charts are for discrete data.
-    def plot_histogram(dataframe, title, subtitle, x_label, y_label, output_path, color_map, barmode='stack', bargap=0):
+    def plot_histogram(dataframe, title, subtitle, x_label, y_label, output_path, color_map=None, barmode='stack', bargap=0):
         fig = px.histogram(dataframe,
                     x=dataframe.index,
                     y=dataframe.columns,
@@ -199,7 +199,7 @@ class ChartUtils:
         
         print(f"Plot saved as '{output_path}'.")
     
-    def plot_bar(dataframe, title, subtitle, x_label, y_label, output_path, color_map, barmode='stack', bargap=0, x_tick0=0, x_tick_step_size=1):
+    def plot_bar(dataframe, title, subtitle, x_label, y_label, output_path, color_map=None, barmode='stack', bargap=0, x_tick0=0, x_tick_step_size=1):
         """
         Create a bar chart using Plotly Express.
         Args:
@@ -266,7 +266,7 @@ class ChartUtils:
         
         print(f"Plot saved as '{output_path}'.")
     
-    def plot_scatter(dataframe, x_col, y_cols, title, subtitle, x_label, y_label, dot_diameter, output_path, color_map, y_scaling_factor=1):
+    def plot_scatter(dataframe, x_col, y_cols, title, subtitle, x_label, y_label, dot_diameter, output_path, color_map=None, y_scaling_factor=1):
         """
         Create a scatter plot using Plotly Express.
         Args:

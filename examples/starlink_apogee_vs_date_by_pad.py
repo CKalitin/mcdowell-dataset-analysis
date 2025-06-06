@@ -1,6 +1,6 @@
 import mcdowell_dataset_analysis as mda
 
-dateset_name = "starlink_apogee_vs_date_per_site"
+dateset_name = "starlink_apogee_vs_date_by_pad"
 
 # Initialize dataset
 dataset = mda.McdowellDataset()
@@ -33,8 +33,8 @@ print(f"CSV file '{dateset_name}.csv' has been created.")
 mda.ChartUtils.plot_scatter(
     pivoted_df,
     x_col='Launch_Date',
-    y_cols=pivoted_df.columns[1:],
-    title='Starlink Launches: Apogee vs. Launch Date by Launch Pad',
+    y_cols=pivoted_df.columns[1:], # Skip date line? pls fix
+    title='Starlink Launches: Apogee vs. Launch Date by Pad',
     subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
     x_label='Launch Date',
     y_label='Apogee (km)',
