@@ -6,10 +6,10 @@ dataset = mda.McdowellDataset("./datasets")
 
 output_name = f"global_payloads_vs_year_by_simple_payload_category"
 
-bin_labels = mda.Translation.payload_category_to_simple_payload_category.values()
+simple_payload_categories = mda.Translation.payload_category_to_simple_payload_category.values()
 
 # Only include payloads with a simple payload category, which probably means orbital payloads
-mda.Filters.filter_by_simple_payload_category(dataset.satcat, bin_labels)
+mda.Filters.filter_by_simple_payload_category(dataset.satcat, simple_payload_categories)
 """
 dataframes = mda.ChartUtils.bin_dataset_into_dictionary_by_filter_function(
     dataset.satcat,
@@ -23,11 +23,13 @@ dataframes = mda.ChartUtils.bin_dataset_into_dictionary_by_filter_function(
 dataset.satcat.df['Launch_Year'] = dataset.satcat.df['Launch_Date'].dt.year
 
 dataframes = {}
-for simple_payload_category in bin_labels:
-    new_dataset = copy.deepcopy(dataset.satcat)
-    mda.Filters.filter_by_simple_payload_category(new_dataset, simple_payload_category)
-    counts = new_dataset.df.groupby('Launch_Year').size()
-    dataframes[simple_payload_category] = counts.rename(simple_payload_category)
+dataframes = mda.ChartUtils.group_dataset_into_dictionary_by_filter_function(
+    dataset.satcat,
+    filter_function=mda.Filters.filter_by_simple_payload_category,
+    groups=simple_payload_categories,
+    groupby_col="Launch_Year",
+    count_values=True,
+)
 
 output_df = mda.ChartUtils.combine_dictionary_of_dataframes(dataframes)
 

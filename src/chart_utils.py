@@ -140,6 +140,46 @@ class ChartUtils:
             output_dict[key] = ChartUtils.count_values_into_bins(new_dataset.df, value_col, bins, bin_labels, count_values, bin_column)
         return output_dict
  
+    def group_dataset_into_dictionary_by_filter_function(dataset, filter_function, groups, groupby_col, keys=None, count_values=False, filter_function_additional_parameter=None):
+        """Groups a dataset by a given filter function and returns a dataframe for each group.
+        
+        This is used instead of binning when you want to group by a column, eg. 'Launch_Year' or 'Launch_Vehicle_Simplified_Name'.
+        
+        Example use:
+        If using count_values, you coul filter by simple_payload_category and group by launch year to get the number of payloads launched each year for each simple payload category.
+        
+        Bins are for continuous data (eg. payload mass), while groups are for discrete data (eg. launch year, launch vehicle).
+        
+        Note that groups and groupby_col are not the same thing. Groups are the values you want to filter by, while groupby_col is the column you want to group by. Eg. Orbits and Launch_Year.
+        
+        Args:
+            dataset (launch or satcat): Launch or Satcat dataset (notice this isn't the McDowellDataset, so use dataset.launch or dataset.satcat)
+            filter_function (mda.Filters...): Filter function to be applied
+            groups (list): List of groups, eg. ['LEO', 'SSO, ... , 'BEO'] for orbits or ['Falcon9', 'Electron'] for launch vehicles.
+            groupby_col (str): Column to group by, eg. 'Launch_Year'.
+            keys (list str, optional): Use if keys should be different from groups. Defaults to None.
+            count_values (bool, optional): If True, counts the number of values in each group and returns this instead of the group itself. Defaults to None.
+            filter_function_additional_parameter (any, optional): Additional parameter for the filter function. Defaults to None.
+        
+        Returns:
+            dictionary(key, grouped dataframe): A dictionary where each key is a group and the value is a dataframe with grouped values.
+        """
+        if keys is None:
+            keys = groups
+        output_dict = {}
+        for group in groups:
+            new_dataset = copy.deepcopy(dataset)
+            if filter_function_additional_parameter is not None: # This is getting ugly
+                filter_function(new_dataset, group, filter_function_additional_parameter)
+            else:
+                filter_function(new_dataset, group)  # Apply the filter function
+            if count_values:
+                counts = new_dataset.df.groupby(groupby_col).size()
+            else:
+                counts = new_dataset.df.groupby(groupby_col)
+            output_dict[group] = counts.rename(group)
+        return output_dict
+ 
     # Combines individual dataframes as columns into a single dataframe, with keys as column names.
     def combine_dictionary_of_dataframes(dataframes):
         # .values gives us a list-like object of the counts for each year

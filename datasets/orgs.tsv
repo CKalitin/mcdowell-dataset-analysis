@@ -1,5 +1,5 @@
 #Code	UCode	StateCode	Type	Class	TStart	TStop	ShortName	Name	Location	Longitude	Latitude	Error	Parent	ShortEName	EName	UName
-# Updated 2025 Jun  5 0107:34
+# Updated 2025 Jun  8 2122:43
 EARTH	EARTH	EARTH	AP	C	-	-	Earth	Earth	Earth	-	-	0.0200 	-	Earth (Terra)	Earth	Earth
 LUNA	LUNA	LUNA	AP	C	-	-	Luna	Luna	Luna	-	-	0.0200 	-	Moon	Moon	Luna
 SSYS	SSYS	SSYS	AP	C	-	-	Solar System	Solar System natural celestial objects	Sol	-	-	0.0200 	-	Solar System	Solar System natural celestial objects	Solar System
@@ -2191,6 +2191,7 @@ MITSUI	MITSUI	J	O/PL	B	1982 Apr	-	Mitsui Bussan	Mitsuibussan earosupesu kabushik
 MITT	MITT	SU	LV/PL/E	B	1946	-	MITT	Moskovskiy institut Teplotekhniki	Mosvka (NE)	     37.6000 	   55.8600 	0.0200 	-	-	Moscow Inst of Thermal Technology	Московский институт теплотехники
 MKA	MKA	RU	PL	B	-	-	NTTs MKA	NTTs Malie Kosmicheskie Apparaty	Zheleznogorsk	     93.5300 	   56.2500 	0.0200 	-	-	NTTs Small Satellites	НТЦ Малые космические аппараты
 MKS	MKS	RU	PL	B	-	-	MKS	Malie Kosmicheske Sistemi	Mosvka	     37.6200 	   55.7500 	0.0200 	-	-	TinySat	Малые космические системы
+MLS	MLS	CA	LA	B	2016	-	MLS	Maritime Launch Services	Canso, Nova Scotia	    -60.9800 	   45.3000 	0.0200 	-	-	-	Maritime Launch Services
 MM	MM	US	LV/PL	B	1961	1995	Martin Marietta	Martin Marietta	Denver, Colorado	   -104.8800 	   39.7600 	0.0200 	-	-	-	Martin Marietta
 MMA	MMA	US	LA/PL	B	1961	1995 Mar 15	MMA	Martin Marietta Astronautics	Denver, Colorado	   -104.8800 	   39.7600 	0.0200 	MMD	-	-	Martin Marietta Astronautics
 MMAS	RCA	US	PL	B	1993	1995 Mar 15	MM/East Windsor	Martin Marietta Astro Space/East Windsor	East Windsor, New Jersey	    -74.5300 	   40.2600 	0.0200 	MM	-	-	Martin Marietta Astro Space/East Windsor

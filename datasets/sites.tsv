@@ -1,5 +1,5 @@
 #Site	Code	UCode	Type	StateCode	TStart	TStop	ShortName	Name	Location	Longitude	Latitude	Error	Parent	ShortEName	EName	Group	UName
-# Updated 2025 Jun  5 0107:34
+# Updated 2025 Jun  8 2122:43
 OCEAN	-	OCEAN	LS	EARTH	-	-	Ocean	Ocean launch sites	-	-	-	0.0000 	-	Ocean	-	-	Ocean launch sites
 A51	-	A51	LS	US	1968	1972	Area 51	Groom Lake Air Force Base, Area 51, Nevada	Groom Lake, Nevada	   -115.8000 	   37.2300 	0.1000 	NRO	-	-	-	Groom Lake Air Force Base, Area 51, Nevada
 AAAF	-	HADC	LS	US	1941 Apr 13	1949 Dec  2	AAAF	Alamagordo Army Air Field	-	   -106.1030 	   32.8496 	0.0001 	USAF	-	-	WS	Alamagordo Army Air Field
@@ -50,6 +50,7 @@ BOWEN	-	BOWEN	LS	AU	2025	-	Bowen	Bowen Orbital Spaceport, Queensland	Abbot Point
 BRET	-	BRET	LS	F	1983	*	BRET  -	Zone de lancement SNLE, Golfe de Gascogne, Bretagne	-	     -4.5000 	   47.5000 	0.7000 	DGA	-	-	-	Zone de lancement SNLE, Golfe de Gascogne, Bretagne
 BRETA	-	BRETA	LS	F	2009	*	BRETA	Zone de lancement SNLE, Baie d'Audierne	Baie D'Audierne, Bretagne	     -4.0500 	   47.6300 	0.0500 	DGA	-	-	-	Zone de lancement SNLE, Baie d'Audierne
 BROCK	-	BROCK	LS	US	2004	*	BROCK -	Black Rock Desert, Nevada	-	   -119.1400 	   40.8300 	0.0500 	USDI	-	-	-	Black Rock Desert, Nevada
+CANSO	-	CANSO	LS	CA	2025	-	Canso	Maritime Launch Services Spaceport, Canso, Nova Scotia	-	    -60.9829 	   45.3036 	0.0001 	MLS	-	-	-	Canso, Nova Scotia
 CARD	-	CARD	LS	F	1952 Jan	1952 Jan	CARD  -	Le Cardonnet, Montpelier, France	-	      3.6400 	   43.5800 	0.0500 	DGA	-	-	-	Le Cardonnet, Montpelier, France
 CARN	-	CARN	LS	AU	1964 Jul 16	1964 Oct	CARN  -	Carnarvon, Western Australia	-	    113.4000 	  -24.5000 	0.0200 	WRE	-	-	-	Carnarvon, Western Australia
 CARN2	-	CARN2	LS	AU	1965 May	1965 May 11	CARN2 -	Carnarvon north site, Western Australia	-	    113.2500 	  -24.1000 	0.2000 	WRE	-	-	-	Carnarvon north site, Western Australia
