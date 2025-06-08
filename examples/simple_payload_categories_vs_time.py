@@ -4,7 +4,7 @@ import pandas as pd
 
 dataset = mda.McdowellDataset("./datasets")
 
-output_name = f"payloads_launched_vs_time_by_simple_payload_category"
+output_name = f"global_payloads_vs_year_by_simple_payload_category"
 
 bin_labels = mda.Translation.payload_category_to_simple_payload_category.values()
 
@@ -36,7 +36,7 @@ print(f"CSV file '{output_name}.csv' has been created.")
 
 mda.ChartUtils.plot_bar(
     output_df,
-    title="Payloads Launched vs Time by Simple Payload Category",
+    title="Global Payloads vs Year by Simple Payload Category",
     subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
     x_label="Year",
     y_label="Number of Payloads",
