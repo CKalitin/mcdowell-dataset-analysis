@@ -1,3 +1,6 @@
+See the website for this project here:
+https://ckalitin.github.io/space/2025/06/08/space-industry-charts.html
+
 ## TODO
 
  - It lists CAPSTONE as a commercial payload (Great example of high leverage, write this down somewhere, who else would notice this instantly?)
