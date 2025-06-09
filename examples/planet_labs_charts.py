@@ -4,7 +4,7 @@ import csv
 
 chart_title_prefix = "Planet Labs"
 output_prefix = "planet_labs"
-owners_list = ["PLABS", "PLAN", "COSMOG"]
+owners_list = ["PLABS", "PLABST", "PLAN", "COSMOG"]
 
 # ["PLABS", "PLAN", "COSMOG"] is all Planet Labs owners in the dataset, see https://x.com/planet4589/status/1931869110608265350
 
@@ -13,12 +13,20 @@ program_simplification_dict = {
     "Flock 2": ["Flock-2/I", "Flock-2/S"],
     "Flock 3": ["Flock-3"],
     "Flock 4": ["Flock-4"],
-    "PlanetIQ": ["Planetiq"],
 }
 
-program_order = ['Flock Dove', 'Flock 1', 'Flock 2', 'Flock 3', 'Skysat', 'Flock 4', 'PlanetIQ', 'Pelican', 'Tanager']
+program_order = ['Flock Dove', 'Flock 1', 'Flock 2', 'Flock 3', 'Skysat', 'Flock 4', 'Pelican', 'Tanager']
 
-"""scg.owner_payloads_vs_year_by_program(
+planet_labs_country_color_map = {
+    "Russia": "#A10B0B",  # Brighter red from Russian flag, vivid yet distinct
+    "United States": "#0B4C97",  # Lighter navy blue, flag-inspired, high contrast
+    "Japan": "#E02F2C",  # Bright red for the sun, distinct from Russia’s red
+    "India": "#FFA024",  # Saffron, unchanged, vibrant and readable
+    "New Zealand": "#09910F",  # Emerald green, brighter for landscapes, chart-friendly
+    "French Guiana": "#2891E7"  # Medium blue, French flag-inspired, distinct from U.S.
+}
+
+scg.owner_payloads_vs_year_by_program(
     chart_title_prefix=chart_title_prefix,
     output_prefix=output_prefix,
     owners_list=owners_list,
@@ -40,16 +48,6 @@ scg.owner_payloads_vs_year_by_launch_vehicle(
     owners_list=owners_list,
     color_map=mda.ChartUtils.color_sequence_2_10,
 )
-"""
-
-planet_labs_country_color_map = {
-    "Russia": "#A10B0B",  # Brighter red from Russian flag, vivid yet distinct
-    "United States": "#0B4C97",  # Lighter navy blue, flag-inspired, high contrast
-    "Japan": "#E02F2C",  # Bright red for the sun, distinct from Russia’s red
-    "India": "#FFA024",  # Saffron, unchanged, vibrant and readable
-    "New Zealand": "#09910F",  # Emerald green, brighter for landscapes, chart-friendly
-    "French Guiana": "#2891E7"  # Medium blue, French flag-inspired, distinct from U.S.
-}
 
 scg.owner_payloads_vs_year_by_country(
     chart_title_prefix=chart_title_prefix,
@@ -59,11 +57,10 @@ scg.owner_payloads_vs_year_by_country(
 )
 
 # More charts
-# payloads vs year by program
-# payloads vs year by orbit
 # apogee vs inclination by program
 # apogee vs date by program
 # inclination vs date by program
-# mass vs date by program
 
 # More work required to find launches Planet Labs was on
+
+# Could be fun to get TLEs vs. time and plot it all out, but would have to be for a good different project

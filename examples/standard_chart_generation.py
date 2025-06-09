@@ -565,7 +565,7 @@ def owner_payloads_vs_year_by_program(chart_title_prefix, output_prefix, owners_
     dataset = mda.McdowellDataset("./datasets")
 
     # Filter the base dataset for set owners
-    mda.Filters.filter_column_by_contains(dataset.satcat, owners_list, "Owner")
+    mda.Filters.filter_column_by_exact(dataset.satcat, owners_list, "Owner")
 
     output_name = f"{output_prefix}_payloads_vs_year_by_program"
 
@@ -599,7 +599,7 @@ def owner_payloads_vs_year_by_program(chart_title_prefix, output_prefix, owners_
     # Reorder columns if program_order is specified
     if program_order is not None:
         output_df = output_df[program_order]
-
+        
     output_df.to_csv(f'examples/outputs/csv/{output_name}.csv', index=True)
     print(f"CSV file '{output_name}.csv' has been created.")
 
@@ -629,7 +629,7 @@ def owner_payloads_vs_year_by_orbit(chart_title_prefix, output_prefix, owners_li
     dataset = mda.McdowellDataset("./datasets")
 
     # Filter the base dataset for set owners
-    mda.Filters.filter_column_by_contains(dataset.satcat, owners_list, "Owner")
+    mda.Filters.filter_column_by_exact(dataset.satcat, owners_list, "Owner")
 
     output_name = f"{output_prefix}_payloads_vs_year_by_orbit"
 
@@ -677,7 +677,7 @@ def owner_payloads_vs_year_by_launch_vehicle(chart_title_prefix, output_prefix, 
     dataset = mda.McdowellDataset("./datasets")
 
     # Filter the base dataset for set owners
-    mda.Filters.filter_column_by_contains(dataset.satcat, owners_list, "Owner")
+    mda.Filters.filter_column_by_exact(dataset.satcat, owners_list, "Owner")
 
     output_name = f"{output_prefix}_payloads_vs_year_by_launch_vehicle"
 
@@ -726,7 +726,7 @@ def owner_payloads_vs_year_by_country(chart_title_prefix, output_prefix, owners_
     dataset = mda.McdowellDataset("./datasets")
 
     # Filter the base dataset for set owners
-    mda.Filters.filter_column_by_contains(dataset.satcat, owners_list, "Owner")
+    mda.Filters.filter_column_by_exact(dataset.satcat, owners_list, "Owner")
 
     output_name = f"{output_prefix}_payloads_vs_year_by_country"
 

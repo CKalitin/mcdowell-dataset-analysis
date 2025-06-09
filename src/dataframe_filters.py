@@ -27,8 +27,8 @@ class Filters:
         
         condition = False
         for pattern in contains_pattern:
-            # add or condition for each pattern
             condition = condition | dataset_class.df[column].str.contains(pattern, case=case, na=False)
+            
         if negate:
             condition = ~condition
             
@@ -46,8 +46,14 @@ class Filters:
             negate: If True, negate the condition (i.e., keep rows that do not contain the pattern). Defaults to False.
         """
         
+        if (type(exact_pattern) == str):
+            exact_pattern = [exact_pattern]
+        
         # Use regex for exact match
-        condition = dataset_class.df[column].str.contains(f"^{exact_pattern}$", case=case, na=False, regex=True)
+        condition = False
+        for pattern in exact_pattern:
+            condition = condition | dataset_class.df[column].str.contains(f"^{pattern}$", case=case, na=False, regex=True)
+            
         if negate:
             condition = ~condition
             
