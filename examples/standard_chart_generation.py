@@ -676,9 +676,9 @@ def owner_payloads_vs_year_by_category(chart_title_prefix, output_prefix, owners
         color_map=color_map,
     )
 
-def launch_value_vs_year_by_filter_scatter(chart_title_prefix, output_prefix, value_column, series_column, filter_function, filter_function_parameter, x_axis_title_suffix="", color_map=None, x_tick_step_size=1, start_year=None, end_year=None):
+def launch_value_vs_date_by_filter_scatter(chart_title_prefix, output_prefix, value_column, series_column, filter_function, filter_function_parameter, filter_function_additional_parameter=None, x_axis_title_suffix="", value_title=None, series_title=None, color_map=None, x_tick_step_size=1, start_year=None, end_year=None, y_scaling_factor=1):
     """
-    Plot launches per year with a specified value column (e.g., Apogee, Mass, etc.) and series column (e.g., Launch Pad, Launch Vehicle, etc.) by filtering the dataset with a filter function.
+    Plot launches per date with a specified value column (e.g., Apogee, Mass, etc.) and series column (e.g., Launch Pad, Launch Vehicle, etc.) by filtering the dataset with a filter function.
 
     The value_column is plotted on the y-axis, and the series_column is used to split the data into different series.
 
@@ -699,16 +699,18 @@ def launch_value_vs_year_by_filter_scatter(chart_title_prefix, output_prefix, va
     """
     
     dataset = mda.McdowellDataset()
-    filter_function(dataset.launch, filter_function_parameter)
     
-    mda.Filters.filter_by_mission(dataset.launch, 'Starlink', case=False)  # Filter for Starlink missions
+    if filter_function_additional_parameter is not None:
+        filter_function(dataset.launch, filter_function_parameter, filter_function_additional_parameter)
+    else:
+        filter_function(dataset.launch, filter_function_parameter)
     
     if start_year == None:
         start_year = dataset.launch.df['Launch_Date'].dt.year.min()
     if end_year == None:
         end_year = dataset.launch.df['Launch_Date'].dt.year.max()
     
-    output_name = f"{output_prefix}_launches_{value_column.lower()}_vs_year_by_{series_column.lower()}_{start_year}_{end_year}"
+    output_name = f"{output_prefix}_launches_{value_column.lower()}_vs_date_by_{series_column.lower()}_{start_year}_{end_year}"
     
     mda.Filters.filter_by_launch_date(dataset.launch, start_date=f'{start_year}-01-01', end_date=f'{end_year}-12-31') # After getting the start and end years, filter the dataset by launch date
     filtered_df = dataset.launch.df
@@ -721,15 +723,21 @@ def launch_value_vs_year_by_filter_scatter(chart_title_prefix, output_prefix, va
     pivoted_df.to_csv(f'examples/outputs/csv/{output_name}.csv', index=False)
     print(f"CSV file '{output_name}.csv' has been created.")
 
+    if value_title is None:
+        value_title = value_column.replace("_", " ").title()
+    if series_title is None:
+        series_title = series_column.replace("_", " ").title()
+        
     mda.ChartUtils.plot_scatter(
         pivoted_df,
         x_col='Launch_Date',
         y_cols=pivoted_df.columns[1:], # Skip date line? pls fix
-        title=f'{chart_title_prefix} Launches {value_column.replace("_", " ")} vs. Date by {series_column.replace("_", " ")}',
+        title=f'{chart_title_prefix} Launches {value_title} vs. Date by {series_title}',
         subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
         x_label='Launch Date',
-        y_label=f'{value_column.replace("_", " ")} {x_axis_title_suffix}',
+        y_label=f'{value_title} {x_axis_title_suffix}',
         dot_diameter=10,
         output_path=f'examples/outputs/chart/{output_name}.png',
-        color_map=color_map
+        color_map=color_map,
+        y_scaling_factor=y_scaling_factor
     )
