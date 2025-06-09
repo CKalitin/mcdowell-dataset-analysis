@@ -26,6 +26,9 @@ def launches_vs_mass_by_orbit(mass_step_size_kg, chart_title_prefix, output_pref
     else:
         mda.Filters.filter_by_launch_vehicle_name_simplified(dataset.launch, launch_vehicle_simplified_name)
 
+    dataset.launch.df.to_csv(f'examples/outputs/raw_dataframes/raw_dataframe_{output_name}.csv', index=False) # Save the filtered dataframe to CSV
+    print(f"Dataframe 'raw_dataframe_{output_name}.csv' has been created.")
+    
     max_mass = int(dataset.launch.df['Payload_Mass'].max())
 
     # Define orbit types and bins
@@ -86,6 +89,9 @@ def total_mass_vs_mass_by_orbit(mass_step_size_kg, chart_title_prefix, output_pr
     else:
         mda.Filters.filter_by_launch_vehicle_name_simplified(dataset.launch, launch_vehicle_simplified_name)
 
+    dataset.launch.df.to_csv(f'examples/outputs/raw_dataframes/raw_dataframe_{output_name}.csv', index=False) # Save the filtered dataframe to CSV
+    print(f"Dataframe 'raw_dataframe_{output_name}.csv' has been created.")
+    
     max_mass = int(dataset.launch.df['Payload_Mass'].max())
 
     # Define orbit types in desired order
@@ -154,6 +160,9 @@ def launches_vs_mass_by_general_launch_payload_type(mass_step_size_kg, chart_tit
     else:
         mda.Filters.filter_by_launch_vehicle_name_simplified(dataset.launch, launch_vehicle_simplified_name)
 
+    dataset.launch.df.to_csv(f'examples/outputs/raw_dataframes/raw_dataframe_{output_name}.csv', index=False) # Save the filtered dataframe to CSV
+    print(f"Dataframe 'raw_dataframe_{output_name}.csv' has been created.")
+    
     max_mass = int(dataset.launch.df['Payload_Mass'].max())
 
     # Define payload types and bins
@@ -216,6 +225,9 @@ def total_mass_vs_mass_by_general_launch_payload_type(mass_step_size_kg, chart_t
     else:
         mda.Filters.filter_by_launch_vehicle_name_simplified(dataset.launch, launch_vehicle_simplified_name)
 
+    dataset.launch.df.to_csv(f'examples/outputs/raw_dataframes/raw_dataframe_{output_name}.csv', index=False) # Save the filtered dataframe to CSV
+    print(f"Dataframe 'raw_dataframe_{output_name}.csv' has been created.")
+    
     max_mass = int(dataset.launch.df['Payload_Mass'].max())
 
     # Define payload types and bins
@@ -298,6 +310,9 @@ def launches_vs_month_by_orbit(chart_title_prefix, output_prefix, launch_vehicle
     # Encode launch month as year*12 + months to get total months since Jesus instead of years since Jesus
     dataset.launch.df['Launch_Month'] = dataset.launch.df['Launch_Date'].dt.year*12 + dataset.launch.df['Launch_Date'].dt.month
     
+    dataset.launch.df.to_csv(f'examples/outputs/raw_dataframes/raw_dataframe_{output_name}.csv', index=False) # Save the filtered dataframe to CSV
+    print(f"Dataframe 'raw_dataframe_{output_name}.csv' has been created.")
+    
     orbits = ['LEO', 'SSO', 'MEO', 'GTO', 'GEO', 'HEO', 'BEO']
     months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
@@ -372,6 +387,9 @@ def launches_vs_month_by_general_launch_payload_type(chart_title_prefix, output_
     
     # Encode launch month as year*12 + months to get total months since Jesus instead of years since Jesus
     dataset.launch.df['Launch_Month'] = dataset.launch.df['Launch_Date'].dt.year*12 + dataset.launch.df['Launch_Date'].dt.month
+    
+    dataset.launch.df.to_csv(f'examples/outputs/raw_dataframes/raw_dataframe_{output_name}.csv', index=False) # Save the filtered dataframe to CSV
+    print(f"Dataframe 'raw_dataframe_{output_name}.csv' has been created.")
     
     general_launch_payload_Types = ['Starlink', 'Commercial', 'Chinese Commercial', 'Government', 'Eastern Government', 'Military', 'Eastern Military']
     months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
@@ -449,6 +467,9 @@ def launches_vs_year_by_orbit(chart_title_prefix, output_prefix, launch_vehicle_
     # Encode launch month as year*12 + months to get total months since Jesus instead of years since Jesus
     dataset.launch.df['Launch_Year'] = dataset.launch.df['Launch_Date'].dt.year
     
+    dataset.launch.df.to_csv(f'examples/outputs/raw_dataframes/raw_dataframe_{output_name}.csv', index=False) # Save the filtered dataframe to CSV
+    print(f"Dataframe 'raw_dataframe_{output_name}.csv' has been created.")
+    
     orbits = ['LEO', 'SSO', 'MEO', 'GTO', 'GEO', 'HEO', 'BEO']
 
     # Create a dictionary with key orbits and values are dataframes for each orbit showing the number of launches per year
@@ -518,6 +539,9 @@ def launches_vs_year_by_general_launch_payload_type(chart_title_prefix, output_p
     # Encode launch month as year*12 + months to get total months since Jesus instead of years since Jesus
     dataset.launch.df['Launch_Year'] = dataset.launch.df['Launch_Date'].dt.year
     
+    dataset.launch.df.to_csv(f'examples/outputs/raw_dataframes/raw_dataframe_{output_name}.csv', index=False) # Save the filtered dataframe to CSV
+    print(f"Dataframe 'raw_dataframe_{output_name}.csv' has been created.")
+    
     general_launch_payload_Types = ['Starlink', 'Commercial', 'Chinese Commercial', 'Government', 'Eastern Government', 'Military', 'Eastern Military']
 
     # Create a dictionary with key orbits and values are dataframes for each orbit showing the number of launches per year
@@ -573,6 +597,9 @@ def owner_payloads_vs_year_by_program(chart_title_prefix, output_prefix, owners_
 
     dataset.satcat.df['Launch_Year'] = dataset.satcat.df['Launch_Date'].dt.year
 
+    dataset.satcat.df.to_csv(f'examples/outputs/raw_dataframes/raw_dataframe_{output_name}.csv', index=False) # Save the filtered dataframe to CSV
+    print(f"Dataframe 'raw_dataframe_{output_name}.csv' has been created.")
+    
     # Create a dictionary with key programs and values are dataframes for each program showing the number of payloads per year
     dataframes = mda.ChartUtils.group_dataset_into_dictionary_by_filter_function(
         dataset.satcat,
@@ -649,6 +676,9 @@ def owner_payloads_vs_year_by_category(chart_title_prefix, output_prefix, owners
 
     dataset.satcat.df['Launch_Year'] = dataset.satcat.df['Launch_Date'].dt.year
 
+    dataset.satcat.df.to_csv(f'examples/outputs/raw_dataframes/raw_dataframe_{output_name}.csv', index=False) # Save the filtered dataframe to CSV
+    print(f"Dataframe 'raw_dataframe_{output_name}.csv' has been created.")
+    
     # Create a dictionary with key countries and values are dataframes for each country showing the number of payloads per year
     dataframes = mda.ChartUtils.group_dataset_into_dictionary_by_filter_function(
         dataset.satcat,
@@ -676,7 +706,7 @@ def owner_payloads_vs_year_by_category(chart_title_prefix, output_prefix, owners
         color_map=color_map,
     )
 
-def launch_value_vs_date_by_filter_scatter(chart_title_prefix, output_prefix, value_column, series_column, filter_function, filter_function_parameter, filter_function_additional_parameter=None, x_axis_title_suffix="", value_title=None, series_title=None, color_map=None, x_tick_step_size=1, start_year=None, end_year=None, y_scaling_factor=1):
+def launch_value_vs_date_by_filter_scatter(chart_title_prefix, output_prefix, value_column, series_column, filter_function, filter_function_parameter, filter_function_additional_parameter=None, x_axis_title_suffix="", value_title=None, series_title=None, color_map=None, x_tick_step_size=None, start_year=None, end_year=None, y_scaling_factor=1):
     """
     Plot launches per date with a specified value column (e.g., Apogee, Mass, etc.) and series column (e.g., Launch Pad, Launch Vehicle, etc.) by filtering the dataset with a filter function.
 
@@ -715,6 +745,9 @@ def launch_value_vs_date_by_filter_scatter(chart_title_prefix, output_prefix, va
     mda.Filters.filter_by_launch_date(dataset.launch, start_date=f'{start_year}-01-01', end_date=f'{end_year}-12-31') # After getting the start and end years, filter the dataset by launch date
     filtered_df = dataset.launch.df
 
+    filtered_df.to_csv(f'examples/outputs/raw_dataframes/raw_dataframe_{output_name}.csv', index=False) # Save the filtered dataframe to CSV
+    print(f"Dataframe 'raw_dataframe_{output_name}.csv' has been created.")
+    
     filtered_df = filtered_df[['Launch_Date', value_column, series_column]].dropna(subset=[value_column])
     filtered_df = filtered_df[filtered_df[value_column] != 0] # Remove 0 values
 
@@ -739,5 +772,66 @@ def launch_value_vs_date_by_filter_scatter(chart_title_prefix, output_prefix, va
         dot_diameter=10,
         output_path=f'examples/outputs/chart/{output_name}.png',
         color_map=color_map,
-        y_scaling_factor=y_scaling_factor
+        y_scaling_factor=y_scaling_factor,
+        x_tick_step_size=x_tick_step_size,
+    )
+    
+def launch_apogee_vs_inclination_by_filter_scatter(chart_title_prefix, output_prefix, series_column, filter_function, filter_function_parameter, filter_function_additional_parameter=None, series_title=None, color_map=None, start_year=None, end_year=None):
+    """
+    Plot launches per date with Apogee vs Inclination by filtering the dataset with a filter function.
+
+    Args:
+        chart_title_prefix (str): Prefix for the chart title (e.g., 'Falcon 9').
+        output_prefix (str): Prefix for output file names.
+        filter_function (callable): Function to filter the dataset. Should accept the dataset as its first argument.
+        filter_function_parameters (Any): Parameters to pass to the filter_function.
+        x_axis_title_suffix (str, optional): Suffix for the x-axis title. Defaults to "".
+        y_scaling_factor (int, optional): Scaling factor for the y-axis values. Defaults to 1.
+        start_year (int, optional): Start year for the data. Defaults to None (uses earliest year in dataset).
+        end_year (int, optional): End year for the data. Defaults to None (uses latest year in dataset).
+    """
+    
+    # Initialize dataset
+    dataset = mda.McdowellDataset()
+
+    if filter_function_additional_parameter is not None:
+        filter_function(dataset.launch, filter_function_parameter, filter_function_additional_parameter)
+    else:
+        filter_function(dataset.launch, filter_function_parameter)
+    
+    if start_year == None:
+        start_year = dataset.launch.df['Launch_Date'].dt.year.min()
+    if end_year == None:
+        end_year = dataset.launch.df['Launch_Date'].dt.year.max()
+    
+    output_name = f"{output_prefix}_launches_apogee_vs_inc_by_{series_column.lower()}_{start_year}_{end_year}"
+    
+    mda.Filters.filter_by_launch_date(dataset.launch, start_date=f'{start_year}-01-01', end_date=f'{end_year}-12-31') # After getting the start and end years, filter the dataset by launch date
+    filtered_df = dataset.launch.df
+    
+    filtered_df = filtered_df[filtered_df['Apogee'] != 0] # Remove 0 values
+    filtered_df = filtered_df[filtered_df['Inc'] != 0] # Remove 0 values
+    
+    filtered_df.to_csv(f'examples/outputs/raw_dataframes/raw_dataframe_{output_name}.csv', index=False) # Save the filtered dataframe to CSV
+    print(f"Dataframe 'raw_dataframe_{output_name}.csv' has been created.")
+    
+    pivoted_df = mda.ChartUtils.pivot_dataframe(filtered_df, index_col='Inc', column_col='Launch_Pad', value_col='Apogee') # Pivot for plotting
+
+    pivoted_df.to_csv(f'examples/outputs/csv/{output_name}.csv')
+    print(f"CSV file '{output_name}.csv' has been created.")
+
+    if series_title is None:
+        series_title = series_column.replace("_", " ").title()
+    
+    mda.ChartUtils.plot_scatter(
+        pivoted_df,
+        x_col='Inc',
+        y_cols=pivoted_df.columns,
+        title=f'{chart_title_prefix} Launches Apogee vs Inclination by {series_title}',
+        subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
+        x_label='Inclination (degrees)',
+        y_label='Apogee (km)',
+        dot_diameter=10,
+        output_path=f'examples/outputs/chart/{output_name}.png',
+        color_map=color_map,
     )
