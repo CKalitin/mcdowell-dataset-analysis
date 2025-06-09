@@ -613,124 +613,39 @@ def owner_payloads_vs_year_by_program(chart_title_prefix, output_prefix, owners_
         bargap=0.0,
         color_map=color_map,
     )
-    
-def owner_payloads_vs_year_by_orbit(chart_title_prefix, output_prefix, owners_list, color_map=None):
-    """Generate a chart showing the number of payloads by year by orbit for specified owners.
 
-    Args:
-        chart_title_prefix (str): Prefix for the chart title (should be the prettified name of the owner) (eg. 'SpaceX') 
-        output_prefix (str): Simplified name of owner for output files (eg. 'spacex' for SpaceX gives "spacex_owner_payloads_vs_year_by_orbit")
-        owners_list (list): List of owners to filter by
-        color_map (dict, optional): Color map for the orbits. Dict or List. Defaults to None.
-        orbit_order (list, optional): Order of orbits to display in the chart. Defaults to None.
-    """
-    
-    # Initialize dataset
-    dataset = mda.McdowellDataset("./datasets")
+def owner_payloads_vs_year_by_category(chart_title_prefix, output_prefix, owners_list, category, color_map=None):
+    """Generate a chart showing the number of payloads by year by a specified category (eg. country, launch vehicle, etc.) for specified owners.
 
-    # Filter the base dataset for set owners
-    mda.Filters.filter_column_by_exact(dataset.satcat, owners_list, "Owner")
-
-    output_name = f"{output_prefix}_payloads_vs_year_by_orbit"
-
-    orbits = mda.ChartUtils.orbit_color_map.keys()
-
-    dataset.satcat.df['Launch_Year'] = dataset.satcat.df['Launch_Date'].dt.year
-
-    # Create a dictionary with key orbits and values are dataframes for each orbit showing the number of payloads per year
-    dataframes = mda.ChartUtils.group_dataset_into_dictionary_by_filter_function(
-        dataset.satcat,
-        filter_function=mda.Filters.filter_by_orbit,
-        groups=orbits,
-        groupby_col="Launch_Year",
-        count_values=True,
-    )
-    
-    # Combine dictionary of dataframes into a single dataframe (by column)
-    output_df = mda.ChartUtils.combine_dictionary_of_dataframes(dataframes)
-
-    output_df.to_csv(f'examples/outputs/csv/{output_name}.csv', index=True)
-    print(f"CSV file '{output_name}.csv' has been created.")
-
-    mda.ChartUtils.plot_bar(
-        output_df,
-        title=f"{chart_title_prefix} Payloads vs Year by Orbit",
-        subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
-        x_label="Year",
-        y_label="Number of Payloads",
-        output_path=f'examples/outputs/chart/{output_name}.png',
-        bargap=0.0,
-        color_map=color_map,
-    )
-
-def owner_payloads_vs_year_by_launch_vehicle(chart_title_prefix, output_prefix, owners_list, color_map=None):
-    """Generate a chart showing the number of payloads by year by launch vehicle for specified owners.
-
-    Args:
-        chart_title_prefix (str): Prefix for the chart title (should be the prettified name of the owner) (eg. 'SpaceX') 
-        output_prefix (str): Simplified name of owner for output files (eg. 'spacex' for SpaceX gives "spacex_owner_payloads_vs_year_by_launch_vehicle")
-        owners_list (list): List of owners to filter by
-        color_map (dict, optional): Color map for the launch vehicles. Dict or List. Defaults to None.
-    """
-    
-    # Initialize dataset
-    dataset = mda.McdowellDataset("./datasets")
-
-    # Filter the base dataset for set owners
-    mda.Filters.filter_column_by_exact(dataset.satcat, owners_list, "Owner")
-
-    output_name = f"{output_prefix}_payloads_vs_year_by_launch_vehicle"
-
-    launch_vehicles = dataset.satcat.df['Launch_Vehicle_Simplified'].dropna().unique()
-
-    dataset.satcat.df['Launch_Year'] = dataset.satcat.df['Launch_Date'].dt.year
-
-    # Create a dictionary with key launch vehicles and values are dataframes for each launch vehicle showing the number of payloads per year
-    dataframes = mda.ChartUtils.group_dataset_into_dictionary_by_filter_function(
-        dataset.satcat,
-        filter_function=mda.Filters.filter_column_by_exact,
-        groups=launch_vehicles,
-        groupby_col="Launch_Year",
-        count_values=True,
-        filter_function_additional_parameter="Launch_Vehicle_Simplified"
-    )
-    
-    # Combine dictionary of dataframes into a single dataframe (by column)
-    output_df = mda.ChartUtils.combine_dictionary_of_dataframes(dataframes)
-
-    output_df.to_csv(f'examples/outputs/csv/{output_name}.csv', index=True)
-    print(f"CSV file '{output_name}.csv' has been created.")
-
-    mda.ChartUtils.plot_bar(
-        output_df,
-        title=f"{chart_title_prefix} Payloads vs Year by Launch Vehicle",
-        subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
-        x_label="Year",
-        y_label="Number of Payloads",
-        output_path=f'examples/outputs/chart/{output_name}.png',
-        bargap=0.0,
-        color_map=color_map,
-    )
-    
-def owner_payloads_vs_year_by_country(chart_title_prefix, output_prefix, owners_list, color_map=None):
-    """Generate a chart showing the number of payloads by year by country for specified owners.
+    Categories:
+        - "Launch Country"
+        - "Launch Vehicle"
+        - "Orbit"
 
     Args:
         chart_title_prefix (str): Prefix for the chart title (should be the prettified name of the owner) (eg. 'SpaceX') 
         output_prefix (str): Simplified name of owner for output files (eg. 'spacex' for SpaceX gives "spacex_owner_payloads_vs_year_by_country")
         owners_list (list): List of owners to filter by
+        category (str): Category to filter by. Eg. "Launch Country", "Launch Vehicle", or "Orbit".
         color_map (dict, optional): Color map for the countries. Dict or List. Defaults to None.
     """
     
-    # Initialize dataset
+    category_to_column = {
+        "Launch Country": "Launch_Country",
+        "Launch Vehicle": "Launch_Vehicle_Simplified",
+        "Orbit": "Simple_Orbit",
+    }
+    
+    category_filter_column = category_to_column[category]
+    
     dataset = mda.McdowellDataset("./datasets")
 
     # Filter the base dataset for set owners
     mda.Filters.filter_column_by_exact(dataset.satcat, owners_list, "Owner")
 
-    output_name = f"{output_prefix}_payloads_vs_year_by_country"
+    output_name = f"{output_prefix}_payloads_vs_year_by_{str.lower(category).strip().replace(" ", "_")}"
 
-    countries = dataset.satcat.df['Launch_Country'].dropna().unique()
+    countries = dataset.satcat.df[category_filter_column].dropna().unique()
 
     dataset.satcat.df['Launch_Year'] = dataset.satcat.df['Launch_Date'].dt.year
 
@@ -741,7 +656,7 @@ def owner_payloads_vs_year_by_country(chart_title_prefix, output_prefix, owners_
         groups=countries,
         groupby_col="Launch_Year",
         count_values=True,
-        filter_function_additional_parameter="Launch_Country"
+        filter_function_additional_parameter=category_filter_column
     )
     
     # Combine dictionary of dataframes into a single dataframe (by column)
@@ -752,7 +667,7 @@ def owner_payloads_vs_year_by_country(chart_title_prefix, output_prefix, owners_
 
     mda.ChartUtils.plot_bar(
         output_df,
-        title=f"{chart_title_prefix} Payloads vs Year by Launch Country",
+        title=f"{chart_title_prefix} Payloads vs Year by {category}",
         subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
         x_label="Year",
         y_label="Number of Payloads",
@@ -760,4 +675,6 @@ def owner_payloads_vs_year_by_country(chart_title_prefix, output_prefix, owners_
         bargap=0.0,
         color_map=color_map,
     )
-    
+
+def payload_column_vs_year_by_filter():
+    pass

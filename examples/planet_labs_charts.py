@@ -4,9 +4,7 @@ import csv
 
 chart_title_prefix = "Planet Labs"
 output_prefix = "planet_labs"
-owners_list = ["PLABS", "PLABST", "PLAN", "COSMOG"]
-
-# ["PLABS", "PLAN", "COSMOG"] is all Planet Labs owners in the dataset, see https://x.com/planet4589/status/1931869110608265350
+owners_list = ["PLABS", "PLABST", "PLAN", "COSMOG"] # This is all Planet Labs owners in the dataset, see https://x.com/planet4589/status/1931869110608265350
 
 program_simplification_dict = {
     "Flock 1": ["Flock-1/I", "Flock-1/S"],
@@ -26,6 +24,30 @@ planet_labs_country_color_map = {
     "French Guiana": "#2891E7"  # Medium blue, French flag-inspired, distinct from U.S.
 }
 
+scg.owner_payloads_vs_year_by_category(
+    chart_title_prefix=chart_title_prefix,
+    output_prefix=output_prefix,
+    owners_list=owners_list,
+    category="Launch Country",
+    color_map=planet_labs_country_color_map,
+)
+
+scg.owner_payloads_vs_year_by_category(
+    chart_title_prefix=chart_title_prefix,
+    output_prefix=output_prefix,
+    owners_list=owners_list,
+    category="Launch Vehicle",
+    color_map=mda.ChartUtils.color_sequence_2_10,
+)
+
+scg.owner_payloads_vs_year_by_category(
+    chart_title_prefix=chart_title_prefix,
+    output_prefix=output_prefix,
+    owners_list=owners_list,
+    category="Orbit",
+    color_map=mda.ChartUtils.orbit_color_map,
+)
+
 scg.owner_payloads_vs_year_by_program(
     chart_title_prefix=chart_title_prefix,
     output_prefix=output_prefix,
@@ -33,27 +55,6 @@ scg.owner_payloads_vs_year_by_program(
     color_map=mda.ChartUtils.color_sequence_2_10,
     programing_simplification_dict=program_simplification_dict,
     program_order=program_order,
-)
-
-scg.owner_payloads_vs_year_by_orbit(
-    chart_title_prefix=chart_title_prefix,
-    output_prefix=output_prefix,
-    owners_list=owners_list,
-    color_map=mda.ChartUtils.orbit_color_map,
-)
-
-scg.owner_payloads_vs_year_by_launch_vehicle(
-    chart_title_prefix=chart_title_prefix,
-    output_prefix=output_prefix,
-    owners_list=owners_list,
-    color_map=mda.ChartUtils.color_sequence_2_10,
-)
-
-scg.owner_payloads_vs_year_by_country(
-    chart_title_prefix=chart_title_prefix,
-    output_prefix=output_prefix,
-    owners_list=owners_list,
-    color_map=planet_labs_country_color_map,
 )
 
 # More charts

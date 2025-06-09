@@ -5,11 +5,15 @@ https://ckalitin.github.io/space/2025/06/08/space-industry-charts.html
 
  - It lists CAPSTONE as a commercial payload (Great example of high leverage, write this down somewhere, who else would notice this instantly?)
 
-1. Line charts with several different filters for each line, idk how to do this. Binning? Probably yes. Certainly
-2. Pie Charts
-3. Add functions to get launch types (in chart utils, not everywhere? Eh do it everywhere)
-4. Add all legacy charts
-5. Documentation of how everything works and how to use for the AIs
+1. Standardize Starlink Payload Chart Generation
+2. Line charts (eg. launches per country or pad)
+3. Pie charts
+4. Launch Types
+   - Small sat payload type
+   - Small sat operator type
+   - General operator type?
+   - F9 payload type
+5. F9 Booster Launches Line Chart
 
 ## Block Diagram
 
