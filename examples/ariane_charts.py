@@ -68,7 +68,7 @@ scg.launches_vs_year_by_general_launch_payload_type(
 )
 
 scg.launches_vs_year_by_orbit(
-    launch_vehicle_family=launch_vehicle_family,
+    launch_vehicle_simplified_name=launch_vehicle_simplified_name,
     start_year=1979,
     end_year=2025,
     chart_title_prefix=chart_title_prefix,

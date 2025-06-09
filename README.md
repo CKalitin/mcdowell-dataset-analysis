@@ -3,10 +3,8 @@ https://ckalitin.github.io/space/2025/06/08/space-industry-charts.html
 
 ## TODO
 
- - It lists CAPSTONE as a commercial payload (Great example of high leverage, write this down somewhere, who else would notice this instantly?)
+- It lists CAPSTONE as a commercial payload (Great example of high leverage, write this down somewhere, who else would notice this instantly?)
 
-1. Standardize Starlink Payload Chart Generation
-   - Also output the raw dataframe for debugging to a CSV
 2. Line charts (eg. launches per country or pad)
 3. Pie charts
 4. Launch Types
