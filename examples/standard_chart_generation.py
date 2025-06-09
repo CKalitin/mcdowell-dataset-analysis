@@ -573,6 +573,76 @@ def launches_vs_year_by_general_launch_payload_type(chart_title_prefix, output_p
         bargap=0.1,
         x_tick_step_size=x_tick_step_size,
     )
+    
+def launches_vs_year_by_filter(chart_title_prefix, output_prefix, chart_title_suffix, output_suffix, filter_function, filter_function_parameters_list, filter_function_additional_parameter=None, launch_vehicle_simplified_name=None, launch_vehicle_family=None, all_vehicles=False, x_tick_step_size=1, color_map=None, start_year=None, end_year=None):
+    """Generate a chart showing the number of launches by year by a specified filter function.
+
+    Args:
+        chart_title_prefix (str): Prefix for the chart title (should be the prettified name of the launch vehicle) (eg. 'Falcon 9') 
+        output_prefix (str): Simplified name of LV for output files (eg. 'f9' for Falcon 9 gives "f9_launches_vs_year_by_filter")
+        filter_function (function): Function to filter the dataset by. Should take a dataset and a list of parameters.
+        filter_function_parameters_list (list): List of parameters to pass to the filter function.
+        launch_vehicle_simplified_name (str, optional): Launch vehicle to filter by
+        launch_vehicle_family (str, optional): Family of launch vehicle to filter by. If not none, then filtering will be done by family instead of the launch_vehicle field.
+        all_vehicles (bool, optional): If True, will not filter by launch vehicle. Defaults to False.
+        x_tick_step_size (int, optional): Step size for x-axis ticks in years. Defaults to 1 (one year).
+        start_year (int, optional): Start year for the data. By default it is the first year of the specified vehicle in the dataset.
+        end_year (int, optional): End year for the data (inclusive). By default, the final year of the specified vehicle is used.
+    """
+    
+    # Initialize dataset
+    dataset = mda.McdowellDataset("./datasets")
+
+    # Filter the base dataset
+    mda.Filters.filter_by_launch_category(dataset.launch, ['O', 'D'])
+    if all_vehicles == False:
+        if launch_vehicle_family is not None:
+            mda.Filters.filter_by_launch_vehicle_family(dataset.launch, launch_vehicle_family)
+        else:
+            mda.Filters.filter_by_launch_vehicle_name_simplified(dataset.launch, launch_vehicle_simplified_name)
+
+    if start_year is None:
+        start_year = dataset.launch.df['Launch_Date'].dt.year.min()
+    if end_year is None:
+        end_year = dataset.launch.df['Launch_Date'].dt.year.max()
+
+    output_name = f"{output_prefix}_launches_vs_year_by_{output_suffix}_{start_year}_{end_year}"
+
+    # After getting the start and end years, filter the dataset by launch date
+    mda.Filters.filter_by_launch_date(dataset.launch, start_date=f'{start_year}-01-01', end_date=f'{end_year}-12-31')
+
+    dataset.launch.df['Launch_Year'] = dataset.launch.df['Launch_Date'].dt.year
+
+    dataset.launch.df.to_csv(f'examples/outputs/raw_dataframes/raw_dataframe_{output_name}.csv', index=False)
+    print(f"Dataframe 'raw_dataframe_{output_name}.csv' has been created.")
+
+    dataframes = mda.ChartUtils.bin_dataset_into_dictionary_by_filter_function(
+        dataset=dataset.launch,
+        filter_function=filter_function,
+        filter_function_parameters_list=filter_function_parameters_list,
+        value_col='Launch_Year',
+        bins=list(range(start_year-1, end_year+1)),
+        bin_labels=list(range(start_year, end_year+1)),
+        count_values=True,
+        filter_function_additional_parameter=filter_function_additional_parameter
+    )
+
+    output_df = mda.ChartUtils.combine_dictionary_of_dataframes(dataframes)
+
+    output_df.to_csv(f'examples/outputs/csv/{output_name}.csv', index=True)
+    print(f"CSV file '{output_name}.csv' has been created.")
+
+    mda.ChartUtils.plot_bar(
+        output_df,
+        title=f'{chart_title_prefix} Launches vs. Year by {chart_title_suffix}',
+        subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
+        x_label='Year',
+        y_label='Number of Launches',
+        output_path=f'examples/outputs/chart/{output_name}.png',
+        bargap=0.1,
+        color_map=color_map,
+        x_tick_step_size=x_tick_step_size,
+    )
 
 def owner_payloads_vs_year_by_program(chart_title_prefix, output_prefix, owners_list, color_map=None, programing_simplification_dict=None, program_order=None):
     """Generate a chart showing the number of payloads by year by program for specified owners.
