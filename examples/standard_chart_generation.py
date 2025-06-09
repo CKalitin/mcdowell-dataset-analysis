@@ -1,25 +1,27 @@
 import mcdowell_dataset_analysis as mda
 
-def launches_vs_mass_by_orbit(mass_step_size_kg, chart_title_prefix, output_prefix, launch_vehicle_simplified_name=None, launch_vehicle_family=None, mass_suffix='t', mass_divisor=1000):
-    """Generate a chart showing the number of launches by payload mass range by orbit.
+def launches_vs_mass_by_filter(chart_title_prefix, output_prefix, chart_title_suffix, output_suffix, filter_function, filter_function_parameters_list, filter_function_additional_parameter=None, mass_step_size_kg=1000, launch_vehicle_simplified_name=None, launch_vehicle_family=None, color_map=None, mass_suffix='t', mass_divisor=100):
+    """Generate a chart showing the number of launches by payload mass range by a given filter function (eg. launch vehicle, launch category, etc.).
     Eg. How many launches were 2-3 tonnes and LEO, how many 6-7 tonnes and GTO, etc.
 
     Args:
-        mass_step_size_kg (int): Step size in kg for the mass bins (eg. 1000 gives bins of 0-1000 kg, 1000-2000 kg, etc.)
         chart_title_prefix (str): Prefix for the chart title (should be the prettified name of the launch vehicle) (eg. 'Falcon 9') 
         output_prefix (str): Simplified name of LV for output files (eg. 'f9' for Falcon 9 gives "f9_launches_vs_mass_by_orbit")
+        filter_function (function): Function to filter the dataset by (eg. mda.Filters.filter_by_launch_vehicle_name_simplified)
+        filter_function_parameters_list (list): List of parameters to pass to the filter function
+        filter_function_additional_parameter (str): Additional parameter to pass to the filter function if needed
+        mass_step_size_kg (int): Step size in kg for the mass bins (eg. 1000 gives bins of 0-1000 kg, 1000-2000 kg, etc.)
         launch_vehicle_simplified_name (str, optional): Launch vehicle to filter by
         launch_vehicle_family (str, optional): Family of launch vehicle to filter by. If not none, then filtering will be done by family instead of the launch_vehicle field.
         mass_suffix (str, optional): Suffix for the mass labels (default is 't' for tonnes, use 'kg' if you want). Defaults to 't'.
         mass_divisor (int, optional): Divisor for the mass values in the chart (default is 1000 to convert kg to tonnes). Defaults to 1000.
     """
     
-    output_name = f"{output_prefix}_launches_vs_mass_by_orbit"
+    output_name = f"{output_prefix}_launches_vs_mass_by_{output_suffix}"
 
     # Initialize dataset
     dataset = mda.McdowellDataset("./datasets")
 
-    # Filter for Falcon 9 orbital and deep space launches
     mda.Filters.filter_by_launch_category(dataset.launch, ['O', 'D'])  # Filter for orbital and deep space launches
     if launch_vehicle_family is not None:
         mda.Filters.filter_by_launch_vehicle_family(dataset.launch, launch_vehicle_family)
@@ -31,23 +33,23 @@ def launches_vs_mass_by_orbit(mass_step_size_kg, chart_title_prefix, output_pref
     
     max_mass = int(dataset.launch.df['Payload_Mass'].max())
 
-    # Define orbit types and bins
-    orbits = ['LEO', 'SSO', 'MEO', 'GTO', 'GEO', 'HEO', 'BEO']
+    # Define mass bins and labels
     bins = list(range(0, max_mass+mass_step_size_kg, mass_step_size_kg)) # +mass_step_size_kg bc. range is exclusive
     mass_labels = [f"{int(bins[i]/mass_divisor)}-{int(bins[i+1]/mass_divisor)}{mass_suffix}" for i in range(len(bins)-1)]
 
     # Create a dictionary with key orbits and values are dataframes for each orbit showing the number of launches per payload mass range
-    orbit_dataframes = mda.ChartUtils.bin_dataset_into_dictionary_by_filter_function(
+    dataframes = mda.ChartUtils.bin_dataset_into_dictionary_by_filter_function(
         dataset=dataset.launch,
-        filter_function=mda.Filters.filter_by_orbit,
-        filter_function_parameters_list=orbits,
+        filter_function=filter_function,
+        filter_function_parameters_list=filter_function_parameters_list,
         value_col='Payload_Mass',
         bins=bins,
-        bin_labels=mass_labels
+        bin_labels=mass_labels,
+        filter_function_additional_parameter=filter_function_additional_parameter,
     )
 
     # Create dictionary with columns that are the orbits and values are the mass ranges
-    output_df = mda.ChartUtils.combine_dictionary_of_dataframes(orbit_dataframes)
+    output_df = mda.ChartUtils.combine_dictionary_of_dataframes(dataframes)
 
     # Save to CSV
     output_df.to_csv(f'examples/outputs/csv/{output_name}.csv', index=True)
@@ -55,33 +57,41 @@ def launches_vs_mass_by_orbit(mass_step_size_kg, chart_title_prefix, output_pref
 
     mda.ChartUtils.plot_bar(
         output_df,
-        title=f'{chart_title_prefix} Launches vs. Payload Mass by Orbit',
+        title=f'{chart_title_prefix} Launches vs. Payload Mass by {chart_title_suffix}',
         subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
         x_label=f'Payload Mass Range ({mass_suffix})',
         y_label='Number of Launches',
         output_path=f'examples/outputs/chart/{output_name}.png',
-        color_map=mda.ChartUtils.orbit_color_map,
+        color_map=color_map,
         bargap=0.1,
     )
-
-def total_mass_vs_mass_by_orbit(mass_step_size_kg, chart_title_prefix, output_prefix, launch_vehicle_simplified_name=None, launch_vehicle_family=None, mass_suffix='t', mass_divisor=1000):
-    """Generate a chart showing the distribution of total launched mass versus payload mass range by orbit.
-    Eg. How many launches were 2-3 tonnes and LEO, how many 6-7 tonnes and GTO, etc.
-
-    Args:
-        mass_step_size_kg (int): Step size in kg for the mass bins (eg. 1000 gives bins of 0-1000 kg, 1000-2000 kg, etc.)
-        chart_title_prefix (str): Prefix for the chart title (should be the prettified name of the launch vehicle) (eg. 'Falcon 9') 
-        output_prefix (str): Simplified name of LV for output files (eg. 'f9' for Falcon 9 gives "f9_total_mass_vs_mass_by_orbit")
-        launch_vehicle_simplified_name (str, optional): Launch vehicle to filter by
-        launch_vehicle_family (str, optional): Family of launch vehicle to filter by. If not none, then filtering will be done by family instead of the launch_vehicle field.
-        mass_suffix (str, optional): Suffix for the mass labels (default is 't' for tonnes, use 'kg' if you want). Defaults to 't'.
-        mass_divisor (int, optional): Divisor for the mass values in the chart (default is 1000 to convert kg to tonnes). Defaults to 1000.
-    """
     
-    output_name = f"{output_prefix}_total_mass_vs_mass_by_orbit"
+def launches_vs_mass_by_orbit(mass_step_size_kg, chart_title_prefix, output_prefix, launch_vehicle_simplified_name=None, launch_vehicle_family=None, mass_suffix='t', mass_divisor=1000):
+    # Wrapper for back compatibility bc I don't want to ctrl f and replace them all
+    launches_vs_mass_by_filter(
+        chart_title_prefix=chart_title_prefix,
+        output_prefix=output_prefix,
+        chart_title_suffix='Orbit',
+        output_suffix='orbit',
+        filter_function=mda.Filters.filter_by_orbit,
+        filter_function_parameters_list=['LEO', 'SSO', 'MEO', 'GTO', 'GEO', 'HEO', 'BEO'],
+        filter_function_additional_parameter=None,
+        mass_step_size_kg=mass_step_size_kg,
+        launch_vehicle_simplified_name=launch_vehicle_simplified_name,
+        launch_vehicle_family=launch_vehicle_family,
+        color_map=mda.ChartUtils.orbit_color_map,
+        mass_suffix=mass_suffix,
+        mass_divisor=mass_divisor
+    )
+
+def total_mass_vs_mass_by_filter(chart_title_prefix, output_prefix, chart_title_suffix, output_suffix, filter_function, filter_function_parameters_list, filter_function_additional_parameter=None, mass_step_size_kg=1000, launch_vehicle_simplified_name=None, launch_vehicle_family=None, color_map=None, mass_suffix='t', mass_divisor=1000):
+    """
+    Generate a chart showing the distribution of total launched mass versus payload mass range by a given filter function (e.g., launch vehicle, launch category, etc.).
+    """
+    output_name = f"{output_prefix}_total_mass_vs_mass_by_{output_suffix}"
 
     # Initialize dataset
-    dataset = mda.McdowellDataset()
+    dataset = mda.McdowellDataset("./datasets")
 
     mda.Filters.filter_by_launch_category(dataset.launch, ['O', 'D'])  # Filter for orbital and deep space launches
     if launch_vehicle_family is not None:
@@ -89,49 +99,64 @@ def total_mass_vs_mass_by_orbit(mass_step_size_kg, chart_title_prefix, output_pr
     else:
         mda.Filters.filter_by_launch_vehicle_name_simplified(dataset.launch, launch_vehicle_simplified_name)
 
-    dataset.launch.df.to_csv(f'examples/outputs/raw_dataframes/raw_dataframe_{output_name}.csv', index=False) # Save the filtered dataframe to CSV
+    dataset.launch.df.to_csv(f'examples/outputs/raw_dataframes/raw_dataframe_{output_name}.csv', index=False)
     print(f"Dataframe 'raw_dataframe_{output_name}.csv' has been created.")
-    
+
     max_mass = int(dataset.launch.df['Payload_Mass'].max())
 
-    # Define orbit types in desired order
-    orbits = ['LEO', 'SSO', 'MEO', 'GTO', 'GEO', 'HEO', 'BEO']
-    bins = list(range(0, max_mass+mass_step_size_kg, mass_step_size_kg)) # +mass_step_size_kg bc. range is exclusive
+    bins = list(range(0, max_mass + mass_step_size_kg, mass_step_size_kg))
     mass_labels = [f"{int(bins[i]/mass_divisor)}-{int(bins[i+1]/mass_divisor)}{mass_suffix}" for i in range(len(bins)-1)]
 
-    orbit_dataframes = mda.ChartUtils.bin_dataset_into_dictionary_by_filter_function(
+    dataframes = mda.ChartUtils.bin_dataset_into_dictionary_by_filter_function(
         dataset=dataset.launch,
-        filter_function=mda.Filters.filter_by_orbit,
-        filter_function_parameters_list=orbits,
+        filter_function=filter_function,
+        filter_function_parameters_list=filter_function_parameters_list,
         value_col='Payload_Mass',
         bins=bins,
         bin_labels=mass_labels,
         count_values=False,
-        bin_column = 'Mass_Range'
+        bin_column='Mass_Range',
+        filter_function_additional_parameter=filter_function_additional_parameter
     )
 
-    orbit_masses = {}
-    for orbit_dataframe_key in orbit_dataframes.keys():
-        total_mass = orbit_dataframes[orbit_dataframe_key].groupby('Mass_Range', observed=False)['Payload_Mass'].sum() # Sum mass in payload range for this orbit
+    total_masses = {}
+    for key in dataframes.keys():
+        total_mass = dataframes[key].groupby('Mass_Range', observed=False)['Payload_Mass'].sum()
         total_mass = total_mass.reindex(mass_labels, fill_value=0)
-        orbit_masses[orbit_dataframe_key] = total_mass/mass_divisor
+        total_masses[key] = total_mass / mass_divisor
 
-    output_df = mda.ChartUtils.combine_dictionary_of_dataframes(orbit_masses)
+    output_df = mda.ChartUtils.combine_dictionary_of_dataframes(total_masses)
 
-    # Save to CSV
     output_df.to_csv(f'examples/outputs/csv/{output_name}.csv', index=True)
     print(f"CSV file '{output_name}.csv' has been created.")
 
-    # Plot stacked bar chart
     mda.ChartUtils.plot_bar(
         output_df,
-        title=f'{chart_title_prefix} Net Payload Mass vs Mass Range by Orbit',
+        title=f'{chart_title_prefix} Net Payload Mass vs Mass Range by {chart_title_suffix}',
         subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
         x_label=f'Payload Mass Range ({mass_suffix})',
         y_label=f'Total Payload Mass ({mass_suffix})',
         output_path=f'examples/outputs/chart/{output_name}.png',
-        color_map=mda.ChartUtils.orbit_color_map,
+        color_map=color_map,
         bargap=0.1
+    )
+    
+def total_mass_vs_mass_by_orbit(mass_step_size_kg, chart_title_prefix, output_prefix, launch_vehicle_simplified_name=None, launch_vehicle_family=None, mass_suffix='t', mass_divisor=1000):
+    # Wrapper
+    total_mass_vs_mass_by_filter(
+        chart_title_prefix=chart_title_prefix,
+        output_prefix=output_prefix,
+        chart_title_suffix='Orbit',
+        output_suffix='orbit',
+        filter_function=mda.Filters.filter_by_orbit,
+        filter_function_parameters_list=['LEO', 'SSO', 'MEO', 'GTO', 'GEO', 'HEO', 'BEO'],
+        filter_function_additional_parameter=None,
+        mass_step_size_kg=mass_step_size_kg,
+        launch_vehicle_simplified_name=launch_vehicle_simplified_name,
+        launch_vehicle_family=launch_vehicle_family,
+        color_map=mda.ChartUtils.orbit_color_map,
+        mass_suffix=mass_suffix,
+        mass_divisor=mass_divisor
     )
 
 def launches_vs_mass_by_general_launch_payload_type(mass_step_size_kg, chart_title_prefix, output_prefix, launch_vehicle_simplified_name=None, launch_vehicle_family=None, mass_suffix='t', mass_divisor=1000):
