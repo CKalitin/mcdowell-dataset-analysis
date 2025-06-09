@@ -7,10 +7,7 @@ import global_launches_charts
 import planet_labs_charts
 import simple_payload_categories_vs_time
 import soyuz_charts
-import starlink_apogee_vs_date_by_pad
-import starlink_apogee_vs_inc_by_pad
-import starlink_inc_vs_date_by_pad
-import starlink_mass_vs_date_per_site
+import starlink_charts
 import titan_charts
 
 # Python, man
