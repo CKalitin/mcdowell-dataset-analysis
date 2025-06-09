@@ -233,7 +233,7 @@ class Translation:
         "Chang Zheng 4B": "Long March 4",
         "Chang Zheng 4C": "Long March 4",
         "Tianlong-2": "Tianlong",
-        "Titan II GLV": "Titan 2",
+        "Titan II GLV": "Titan 2", # Note that Titan 1 never went to orbit so isn't here
         "Titan II SLV": "Titan 2",
         "Titan IIIA": "Titan 3",
         "Titan IIIB": "Titan 3",
