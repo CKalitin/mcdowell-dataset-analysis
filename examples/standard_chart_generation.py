@@ -848,6 +848,13 @@ def launch_value_vs_date_by_filter_scatter(chart_title_prefix, output_prefix, va
 
     pivoted_df = mda.ChartUtils.pivot_dataframe(filtered_df, 'Launch_Date', series_column, value_column) # Pivot for plotting
 
+    # Reorder in the order of the color map
+    if color_map is not None:
+        cols = list(color_map.keys())
+        cols = [col for col in cols if col in pivoted_df.columns] # Remove keys that are not in the pivoted_df columns
+        cols.insert(0, "Launch_Date")  # Ensure Launch_Date is always included as the first column
+        pivoted_df = pivoted_df.reindex(columns=cols)
+        
     pivoted_df.to_csv(f'examples/outputs/csv/{output_name}.csv', index=False)
     print(f"CSV file '{output_name}.csv' has been created.")
 
@@ -910,7 +917,14 @@ def launch_apogee_vs_inclination_by_filter_scatter(chart_title_prefix, output_pr
     filtered_df.to_csv(f'examples/outputs/raw_dataframes/raw_dataframe_{output_name}.csv', index=False) # Save the filtered dataframe to CSV
     print(f"Dataframe 'raw_dataframe_{output_name}.csv' has been created.")
     
-    pivoted_df = mda.ChartUtils.pivot_dataframe(filtered_df, index_col='Inc', column_col='Launch_Pad', value_col='Apogee') # Pivot for plotting
+    pivoted_df = mda.ChartUtils.pivot_dataframe(filtered_df, index_col='Inc', column_col=series_column, value_col='Apogee') # Pivot for plotting
+
+    # Reorder in the order of the color map
+    if color_map is not None:
+        cols = list(color_map.keys())
+        cols = [col for col in cols if col in pivoted_df.columns] # Remove keys that are not in the pivoted_df columns
+        cols.insert(0, 'Inc')  # Ensure 'Inc' is always included as the first column
+        pivoted_df = pivoted_df.reindex(columns=cols)
 
     pivoted_df.to_csv(f'examples/outputs/csv/{output_name}.csv')
     print(f"CSV file '{output_name}.csv' has been created.")

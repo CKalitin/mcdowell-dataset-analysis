@@ -5,6 +5,7 @@ https://ckalitin.github.io/space/2025/06/08/space-industry-charts.html
 
 - It lists CAPSTONE as a commercial payload (Great example of high leverage, write this down somewhere, who else would notice this instantly?)
 
+1. Standardize launch vehicle charts into one script (two for single vehicle and vehicle family)
 2. Line charts (eg. launches per country or pad)
 3. Pie charts
 4. Launch Types
