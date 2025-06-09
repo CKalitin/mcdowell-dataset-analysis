@@ -2,7 +2,7 @@ import standard_chart_generation as scg
 import mcdowell_dataset_analysis as mda
 
 launch_vehicle_simplified_name = ['Titan 2', 'Titan 3', 'Titan 4']
-chart_title_prefix = 'Titan'
+chart_title_prefix = 'Titan Orbital'
 output_prefix = 'titan'
 
 scg.launches_vs_mass_by_orbit(

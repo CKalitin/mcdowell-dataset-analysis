@@ -2,7 +2,7 @@ import standard_chart_generation as scg
 import mcdowell_dataset_analysis as mda
 
 launch_vehicle_simplified_name = ['Delta 1', 'Delta 2', 'Delta 3', 'Delta 4M', 'Delta 4H']
-chart_title_prefix = 'Delta'
+chart_title_prefix = 'Delta Orbital'
 output_prefix = 'delta'
 
 scg.launches_vs_mass_by_orbit(

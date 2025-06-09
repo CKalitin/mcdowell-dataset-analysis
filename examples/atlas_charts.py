@@ -2,7 +2,7 @@ import standard_chart_generation as scg
 import mcdowell_dataset_analysis as mda
 
 launch_vehicle_simplified_name = ['Atlas 1', 'Atlas 2', 'Atlas 3', 'Atlas 5']
-chart_title_prefix = 'Atlas'
+chart_title_prefix = 'Atlas Orbital'
 output_prefix = 'atlas'
 
 scg.launches_vs_mass_by_orbit(

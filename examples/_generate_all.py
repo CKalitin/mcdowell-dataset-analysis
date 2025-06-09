@@ -1,5 +1,6 @@
 import ariane_charts
 import atlas_charts
+import delta_charts
 import electron_charts
 import f9_charts
 import fh_charts
