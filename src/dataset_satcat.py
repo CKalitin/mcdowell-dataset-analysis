@@ -83,7 +83,7 @@ class Satcat:
         self.df["Simple_Orbit"] = self.df["OpOrbit"].str.strip()
         self.df["Simple_Orbit"] = self.df["Simple_Orbit"].replace(self.translation.opOrbit_to_simple_orbit)
         
-        self.df["Country"] = self.df["State"].map(self.translation.state_code_to_state_name)
+        self.df["Country"] = self.df["State"].map(self.translation.state_code_to_state_name).map(self.translation.state_name_to_americanized_state_names)
     
     def process_psatcat_dependent_columns(self, psatcat):
         """
@@ -170,6 +170,8 @@ class Satcat:
         # For every satellite, get the corresponding launch vehicle from the launch_df by using the Launch_Tag column to merge the two dataframes
         launch_df = launch.df.copy()
         
+        launch_df.rename(columns={"State": "Launch_State", "Country": "Launch_Country"}, inplace=True)
+        
         # Merge satcat_df with launch_df to get LV_Type, using left join to keep all satellites
         self.df = self.df.merge(
             launch_df[["Launch_Tag", "LV_Type"]],
@@ -222,9 +224,26 @@ class Satcat:
             how="left"
         )
         
+        self.df = self.df.merge(
+            launch_df[["Launch_Tag", "Launch_State"]],
+            on="Launch_Tag",
+            how="left"
+        )
+        
+        self.df = self.df.merge(
+            launch_df[["Launch_Tag", "Launch_Country"]],
+            on="Launch_Tag",
+            how="left"
+        )
+        
         # Fill NaN with empty string for unmatched launches
         self.df["LV_Type"] = self.df["LV_Type"].fillna("")
         self.df["Agency"] = self.df["Agency"].fillna("")
         self.df["Launch_Site"] = self.df["Launch_Site"].fillna("")
         self.df["Launch_Pad"] = self.df["Launch_Pad"].fillna("")
         self.df["Launch_Vehicle_Family"] = self.df["Launch_Vehicle_Family"].fillna("")
+        self.df["Launch_Vehicle_Simplified"] = self.df["Launch_Vehicle_Simplified"].fillna("")
+        self.df["Launch_Site_Parent"] = self.df["Launch_Site_Parent"].fillna("")
+        self.df["Launch_Site_Name"] = self.df["Launch_Site_Name"].fillna("")
+        self.df["Launch_State"] = self.df["Launch_State"].fillna("")
+        self.df["Launch_Country"] = self.df["Launch_Country"].fillna("")

@@ -711,3 +711,53 @@ def owner_payloads_vs_year_by_launch_vehicle(chart_title_prefix, output_prefix, 
         bargap=0.0,
         color_map=color_map,
     )
+    
+def owner_payloads_vs_year_by_country(chart_title_prefix, output_prefix, owners_list, color_map=None):
+    """Generate a chart showing the number of payloads by year by country for specified owners.
+
+    Args:
+        chart_title_prefix (str): Prefix for the chart title (should be the prettified name of the owner) (eg. 'SpaceX') 
+        output_prefix (str): Simplified name of owner for output files (eg. 'spacex' for SpaceX gives "spacex_owner_payloads_vs_year_by_country")
+        owners_list (list): List of owners to filter by
+        color_map (dict, optional): Color map for the countries. Dict or List. Defaults to None.
+    """
+    
+    # Initialize dataset
+    dataset = mda.McdowellDataset("./datasets")
+
+    # Filter the base dataset for set owners
+    mda.Filters.filter_column_by_contains(dataset.satcat, owners_list, "Owner")
+
+    output_name = f"{output_prefix}_payloads_vs_year_by_country"
+
+    countries = dataset.satcat.df['Launch_Country'].dropna().unique()
+
+    dataset.satcat.df['Launch_Year'] = dataset.satcat.df['Launch_Date'].dt.year
+
+    # Create a dictionary with key countries and values are dataframes for each country showing the number of payloads per year
+    dataframes = mda.ChartUtils.group_dataset_into_dictionary_by_filter_function(
+        dataset.satcat,
+        filter_function=mda.Filters.filter_column_by_exact,
+        groups=countries,
+        groupby_col="Launch_Year",
+        count_values=True,
+        filter_function_additional_parameter="Launch_Country"
+    )
+    
+    # Combine dictionary of dataframes into a single dataframe (by column)
+    output_df = mda.ChartUtils.combine_dictionary_of_dataframes(dataframes)
+
+    output_df.to_csv(f'examples/outputs/csv/{output_name}.csv', index=True)
+    print(f"CSV file '{output_name}.csv' has been created.")
+
+    mda.ChartUtils.plot_bar(
+        output_df,
+        title=f"{chart_title_prefix} Payloads vs Year by Launch Country",
+        subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
+        x_label="Year",
+        y_label="Number of Payloads",
+        output_path=f'examples/outputs/chart/{output_name}.png',
+        bargap=0.0,
+        color_map=color_map,
+    )
+    

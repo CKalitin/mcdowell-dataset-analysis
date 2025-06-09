@@ -72,6 +72,17 @@ class ChartUtils:
         "#00101b",
     ]
     
+    color_sequence_2_8 = [
+        "#970c10",
+        "#ff8000",
+        "#ecad00",
+        "#ecdeb5",
+        "#93d1bc",
+        "#069495",
+        "#413b93", 
+        "#00101b",
+    ]
+    
     color_sequence_3_12 = [
         "#ff2702",
         "#fc6313",

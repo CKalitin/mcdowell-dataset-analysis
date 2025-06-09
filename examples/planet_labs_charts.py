@@ -1,5 +1,6 @@
 import standard_chart_generation as scg
 import mcdowell_dataset_analysis as mda
+import csv
 
 chart_title_prefix = "Planet Labs"
 output_prefix = "planet_labs"
@@ -17,7 +18,7 @@ program_simplification_dict = {
 
 program_order = ['Flock Dove', 'Flock 1', 'Flock 2', 'Flock 3', 'Skysat', 'Flock 4', 'PlanetIQ', 'Pelican', 'Tanager']
 
-scg.owner_payloads_vs_year_by_program(
+"""scg.owner_payloads_vs_year_by_program(
     chart_title_prefix=chart_title_prefix,
     output_prefix=output_prefix,
     owners_list=owners_list,
@@ -38,6 +39,23 @@ scg.owner_payloads_vs_year_by_launch_vehicle(
     output_prefix=output_prefix,
     owners_list=owners_list,
     color_map=mda.ChartUtils.color_sequence_2_10,
+)
+"""
+
+planet_labs_country_color_map = {
+    "Russia": "#A10B0B",  # Brighter red from Russian flag, vivid yet distinct
+    "United States": "#0B4C97",  # Lighter navy blue, flag-inspired, high contrast
+    "Japan": "#E02F2C",  # Bright red for the sun, distinct from Russia’s red
+    "India": "#FFA024",  # Saffron, unchanged, vibrant and readable
+    "New Zealand": "#09910F",  # Emerald green, brighter for landscapes, chart-friendly
+    "French Guiana": "#2891E7"  # Medium blue, French flag-inspired, distinct from U.S.
+}
+
+scg.owner_payloads_vs_year_by_country(
+    chart_title_prefix=chart_title_prefix,
+    output_prefix=output_prefix,
+    owners_list=owners_list,
+    color_map=planet_labs_country_color_map,
 )
 
 # More charts

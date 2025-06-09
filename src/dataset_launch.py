@@ -70,7 +70,7 @@ class Launch:
         self.df["Launch_Vehicle_Simplified"] = self.df["LV_Type"].map(self.translation.orbital_lv_name_to_lv_simplified) # Translate LV_Type to LV_Simplified using the translation dictionary
         
         self.df["State"] = self.df["Launch_Site"].map(self.translation.launch_site_to_state_code) # Translate Launch_Site to State using the translation dictionary
-        self.df["Country"] = self.df["State"].map(self.translation.state_code_to_state_name)
+        self.df["Country"] = self.df["State"].map(self.translation.state_code_to_state_name).map(self.translation.state_name_to_americanized_state_names)
         
         self.df["Launch_Site_Parent"] = self.df["Launch_Site"].map(self.translation.launch_site_to_launch_site_parent)
         self.df["Launch_Site_Name"] = self.df["Launch_Site_Parent"].map(self.translation.launch_site_to_launch_site_name) # Translate Launch_Site to Launch_Site_Name using the translation dictionary
