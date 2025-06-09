@@ -5,7 +5,7 @@ launch_vehicle_simplified_name = "Electron"
 chart_title_prefix = 'Electron'
 output_prefix = 'electron'
 
-"""scg.launches_vs_mass_by_orbit(
+scg.launches_vs_mass_by_orbit(
     launch_vehicle_simplified_name=launch_vehicle_simplified_name,
     mass_step_size_kg=10,
     chart_title_prefix=chart_title_prefix,
@@ -28,7 +28,6 @@ scg.launches_vs_mass_by_general_launch_payload_type(
     mass_step_size_kg=10,
     chart_title_prefix=chart_title_prefix,
     output_prefix=output_prefix,
-    output_prefix='electron',
     mass_suffix='kg',
     mass_divisor=1,
 )
@@ -64,7 +63,7 @@ scg.launches_vs_year_by_orbit(
     launch_vehicle_simplified_name=launch_vehicle_simplified_name,
     chart_title_prefix=chart_title_prefix,
     output_prefix=output_prefix,
-)"""
+)
 
 scg.launch_apogee_vs_inclination_by_filter_scatter(
     chart_title_prefix=chart_title_prefix,
