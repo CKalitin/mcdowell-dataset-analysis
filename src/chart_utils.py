@@ -407,7 +407,7 @@ class ChartUtils:
         
         print(f"Plot saved as '{output_path}'.")
     
-    def plot_scatter(dataframe, x_col, y_cols, title, subtitle, x_label, y_label, dot_diameter, output_path, color_map=None, y_scaling_factor=1):
+    def plot_scatter(dataframe, x_col, y_cols, title, subtitle, x_label, y_label, dot_diameter, output_path, color_map=None, y_scaling_factor=1, x_tick0=None, x_tick_step_size=None):
         """
         Create a scatter plot using Plotly Express.
         Args:
@@ -452,6 +452,8 @@ class ChartUtils:
                 tickangle=45,
                 title_font=dict(size=24, family="Arial, sans-serif"),
                 title_text=x_label,
+                tick0=x_tick0,
+                dtick=x_tick_step_size,
             ),
             yaxis=dict(
                 gridcolor="rgba(200, 200, 200, 0.5)",

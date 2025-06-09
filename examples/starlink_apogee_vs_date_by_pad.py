@@ -1,5 +1,18 @@
 import mcdowell_dataset_analysis as mda
+import standard_chart_generation as scg
 
+scg.launch_value_vs_year_by_filter_scatter(
+    chart_title_prefix='Starlink',
+    output_prefix='starlink',
+    value_column='Apogee',
+    series_column='Launch_Pad',
+    filter_function=mda.Filters.filter_by_mission,
+    filter_function_parameter='Starlink', # Filter for Starlink missions
+    x_axis_title_suffix="(km)",
+    color_map=mda.ChartUtils.f9_site_color_map,
+    x_tick_step_size=1
+)
+"""
 dateset_name = "starlink_apogee_vs_date_by_pad"
 
 # Initialize dataset
@@ -45,4 +58,4 @@ mda.ChartUtils.plot_scatter(
         'LC39A': '#cc0000',
         'SLC4E': '#3c78d8',
     },
-)
+)"""

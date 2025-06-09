@@ -676,5 +676,60 @@ def owner_payloads_vs_year_by_category(chart_title_prefix, output_prefix, owners
         color_map=color_map,
     )
 
-def payload_column_vs_year_by_filter():
-    pass
+def launch_value_vs_year_by_filter_scatter(chart_title_prefix, output_prefix, value_column, series_column, filter_function, filter_function_parameter, x_axis_title_suffix="", color_map=None, x_tick_step_size=1, start_year=None, end_year=None):
+    """
+    Plot launches per year with a specified value column (e.g., Apogee, Mass, etc.) and series column (e.g., Launch Pad, Launch Vehicle, etc.) by filtering the dataset with a filter function.
+
+    The value_column is plotted on the y-axis, and the series_column is used to split the data into different series.
+
+    Args:
+        chart_title_prefix (str): Prefix for the chart title (e.g., 'Falcon 9').
+        output_prefix (str): Prefix for output file names.
+        value_column (str): Name of the column to use for the y-axis values (e.g., 'Apogee').
+        series_column (str): Name of the column to use for grouping series (e.g., 'Launch_Pad').
+        filter_function (callable): Function to filter the dataset. Should accept the dataset as its first argument.
+        filter_function_parameters (Any): Parameters to pass to the filter_function.
+        color_map (dict, optional): Dictionary mapping series names to colors. Defaults to None.
+        x_tick_step_size (int, optional): Step size for x-axis ticks. Defaults to 1.
+        start_year (int, optional): Start year for the data. Defaults to None (uses earliest year in dataset).
+        end_year (int, optional): End year for the data. Defaults to None (uses latest year in dataset).
+    
+    Interesting note:
+    Because we're using raw dates and not a launch date field or something, we can't set x tick step size and get anything that makes sense. It's not a continuous dx in the dataset since some launches are hours apart and some are months.
+    """
+    
+    dataset = mda.McdowellDataset()
+    filter_function(dataset.launch, filter_function_parameter)
+    
+    mda.Filters.filter_by_mission(dataset.launch, 'Starlink', case=False)  # Filter for Starlink missions
+    
+    if start_year == None:
+        start_year = dataset.launch.df['Launch_Date'].dt.year.min()
+    if end_year == None:
+        end_year = dataset.launch.df['Launch_Date'].dt.year.max()
+    
+    output_name = f"{output_prefix}_launches_{value_column.lower()}_vs_year_by_{series_column.lower()}_{start_year}_{end_year}"
+    
+    mda.Filters.filter_by_launch_date(dataset.launch, start_date=f'{start_year}-01-01', end_date=f'{end_year}-12-31') # After getting the start and end years, filter the dataset by launch date
+    filtered_df = dataset.launch.df
+
+    filtered_df = filtered_df[['Launch_Date', value_column, series_column]].dropna(subset=[value_column])
+    filtered_df = filtered_df[filtered_df[value_column] != 0] # Remove 0 values
+
+    pivoted_df = mda.ChartUtils.pivot_dataframe(filtered_df, 'Launch_Date', series_column, value_column) # Pivot for plotting
+
+    pivoted_df.to_csv(f'examples/outputs/csv/{output_name}.csv', index=False)
+    print(f"CSV file '{output_name}.csv' has been created.")
+
+    mda.ChartUtils.plot_scatter(
+        pivoted_df,
+        x_col='Launch_Date',
+        y_cols=pivoted_df.columns[1:], # Skip date line? pls fix
+        title=f'{chart_title_prefix} Launches {value_column.replace("_", " ")} vs. Date by {series_column.replace("_", " ")}',
+        subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
+        x_label='Launch Date',
+        y_label=f'{value_column.replace("_", " ")} {x_axis_title_suffix}',
+        dot_diameter=10,
+        output_path=f'examples/outputs/chart/{output_name}.png',
+        color_map=color_map
+    )
