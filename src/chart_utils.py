@@ -60,10 +60,10 @@ class ChartUtils:
     
     color_sequence_2_8 = [
         "#970c10",
-        "#df1f0a",
-        "#df7b18",
+        "#eb1700",
+        "#ff8000",
         "#ecad00",
-        "#e9d8a8",
+        "#ecdeb5",
         "#93d1bc",
         "#069495",
         "#005f72",

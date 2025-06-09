@@ -681,10 +681,7 @@ def owner_payloads_vs_year_by_launch_vehicle(chart_title_prefix, output_prefix, 
 
     output_name = f"{output_prefix}_payloads_vs_year_by_launch_vehicle"
 
-    print(dataset.satcat.df.columns)
-    print(dataset.launch.df.columns)
-
-    launch_vehicles = dataset.satcat.df['LV_Type'].dropna().unique()
+    launch_vehicles = dataset.satcat.df['Launch_Vehicle_Simplified'].dropna().unique()
 
     dataset.satcat.df['Launch_Year'] = dataset.satcat.df['Launch_Date'].dt.year
 
@@ -695,7 +692,7 @@ def owner_payloads_vs_year_by_launch_vehicle(chart_title_prefix, output_prefix, 
         groups=launch_vehicles,
         groupby_col="Launch_Year",
         count_values=True,
-        filter_function_additional_parameter="LV_Type"
+        filter_function_additional_parameter="Launch_Vehicle_Simplified"
     )
     
     # Combine dictionary of dataframes into a single dataframe (by column)

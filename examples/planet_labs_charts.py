@@ -17,7 +17,7 @@ program_simplification_dict = {
 
 program_order = ['Flock Dove', 'Flock 1', 'Flock 2', 'Flock 3', 'Skysat', 'Flock 4', 'PlanetIQ', 'Pelican', 'Tanager']
 
-"""scg.owner_payloads_vs_year_by_program(
+scg.owner_payloads_vs_year_by_program(
     chart_title_prefix=chart_title_prefix,
     output_prefix=output_prefix,
     owners_list=owners_list,
@@ -31,7 +31,7 @@ scg.owner_payloads_vs_year_by_orbit(
     output_prefix=output_prefix,
     owners_list=owners_list,
     color_map=mda.ChartUtils.orbit_color_map,
-)"""
+)
 
 scg.owner_payloads_vs_year_by_launch_vehicle(
     chart_title_prefix=chart_title_prefix,

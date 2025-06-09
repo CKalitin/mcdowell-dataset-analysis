@@ -205,6 +205,12 @@ class Satcat:
         )
         
         self.df = self.df.merge(
+            launch_df[["Launch_Tag", "Launch_Vehicle_Simplified"]],
+            on="Launch_Tag",
+            how="left"
+        )
+        
+        self.df = self.df.merge(
             launch_df[["Launch_Tag", "Launch_Site_Parent"]],
             on="Launch_Tag",
             how="left"
