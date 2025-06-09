@@ -21,7 +21,7 @@ scg.owner_payloads_vs_year_by_program(
     chart_title_prefix=chart_title_prefix,
     output_prefix=output_prefix,
     owners_list=owners_list,
-    color_map=mda.ChartUtils.color_sequence_2_8,
+    color_map=mda.ChartUtils.color_sequence_2_10,
     programing_simplification_dict=program_simplification_dict,
     program_order=program_order,
 )
@@ -37,7 +37,7 @@ scg.owner_payloads_vs_year_by_launch_vehicle(
     chart_title_prefix=chart_title_prefix,
     output_prefix=output_prefix,
     owners_list=owners_list,
-    color_map=mda.ChartUtils.color_sequence_2_8,
+    color_map=mda.ChartUtils.color_sequence_2_10,
 )
 
 # More charts
