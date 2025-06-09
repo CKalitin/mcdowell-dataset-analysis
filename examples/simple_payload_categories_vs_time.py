@@ -1,6 +1,4 @@
 import mcdowell_dataset_analysis as mda
-import copy
-import pandas as pd
 
 dataset = mda.McdowellDataset("./datasets")
 
@@ -10,19 +8,9 @@ simple_payload_categories = mda.Translation.payload_category_to_simple_payload_c
 
 # Only include payloads with a simple payload category, which probably means orbital payloads
 mda.Filters.filter_by_simple_payload_category(dataset.satcat, simple_payload_categories)
-"""
-dataframes = mda.ChartUtils.bin_dataset_into_dictionary_by_filter_function(
-    dataset.satcat,
-    filter_function=mda.Filters.filter_by_simple_payload_category,
-    filter_function_parameters_list=bin_labels,
-    value_col="Simple_Payload_Category",
-    bins=bin_labels,
-    bin_labels=bin_labels,
-)"""
 
 dataset.satcat.df['Launch_Year'] = dataset.satcat.df['Launch_Date'].dt.year
 
-dataframes = {}
 dataframes = mda.ChartUtils.group_dataset_into_dictionary_by_filter_function(
     dataset.satcat,
     filter_function=mda.Filters.filter_by_simple_payload_category,

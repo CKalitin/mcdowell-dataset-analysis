@@ -44,6 +44,32 @@ class ChartUtils:
         'Other': "#434343",
     }
     
+    # Naming scheme: color_sequence_{number}_{length}
+    color_sequence_1_10 = [
+        "#9e0142",
+        "#d53e4f",
+        "#f46d43",
+        "#fdae61",
+        "#fee08c",
+        "#e6f598",
+        "#abdda4",
+        "#66c2a5",
+        "#66c2a5",
+        "#5e4fa2",
+    ]
+    
+    color_sequence_2_8 = [
+        "#970c10",
+        "#df1f0a",
+        "#df7b18",
+        "#ecad00",
+        "#e9d8a8",
+        "#93d1bc",
+        "#069495",
+        "#005f72",
+        "#00101b",
+    ]
+    
     def pivot_dataframe(df, index_col, column_col, value_col):
         """
         Index_col is used as the row index of the pivoted dataframe.
@@ -186,6 +212,7 @@ class ChartUtils:
         # Concat axis=1 combines each individual dataframe into columns of a single dataframe
         output_df = pd.concat(dataframes.values(), axis=1)
         output_df.columns = dataframes.keys() # Name columns by the orbits
+        output_df.fillna(0, inplace=True)
         return output_df
 
     # Histograms are designed for continuous data, while bar charts are for discrete data.
@@ -249,7 +276,7 @@ class ChartUtils:
             x_label (string): Label for the x-axis
             y_label (string): Label for the y-axis
             output_path (string): Full path including filename to save the plot
-            color_map (dictionary): Column name to color mapping, eg. {'LC40': '#ff0000', 'LC39A': '#00ff00'}
+            color_map (dictionary): Column name to color mapping, eg. {'LC40': '#ff0000', 'LC39A': '#00ff00'}. Or, color sequence list ['#ff0000', '#00ff00', '#0000ff'].s
             barmode (string): 'stack' or 'group'
             bargap (float): Gap between bars, 0-1
             x_tick0 (int): First tick on the x axis (x_label). 0 = first index.
@@ -262,7 +289,9 @@ class ChartUtils:
                      title=f'<b>{title}</b><br><sup>{subtitle}</sup>',
                      labels={'x': f'{x_label}', 'y': f'{y_label}'},
                      barmode=barmode,
-                     color_discrete_map=color_map,
+                     color_discrete_map=color_map if type(color_map) == dict else None, # Cursed Python but it's beautiful in its own way
+                     color_discrete_sequence=color_map if type(color_map) == list else None, # We either want a color map dict or color sequence list
+                     # wait this is actually retarded just make two variables, oh well it looks cool I like Python (HOW TF DO YOU ADD A PYOBJECT IN CPYTHON?!?)
                      )
         
         fig.update_layout(

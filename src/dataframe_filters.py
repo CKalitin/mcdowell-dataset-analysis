@@ -22,7 +22,13 @@ class Filters:
             negate: If True, negate the condition (i.e., keep rows that do not contain the pattern). Defaults to False.
         """
         
-        condition = dataset_class.df[column].str.contains(contains_pattern, case=case, na=False)
+        if (type(contains_pattern) == str):
+            contains_pattern = [contains_pattern]
+        
+        condition = False
+        for pattern in contains_pattern:
+            # add or condition for each pattern
+            condition = condition | dataset_class.df[column].str.contains(pattern, case=case, na=False)
         if negate:
             condition = ~condition
             
