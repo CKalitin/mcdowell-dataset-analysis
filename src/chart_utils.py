@@ -1,8 +1,8 @@
 import pandas as pd
-import matplotlib.pyplot as plt
 import plotly.express as px
 import plotly.io as pio
 import copy
+import os
 
 class ChartUtils:
     """
@@ -343,6 +343,7 @@ class ChartUtils:
             bargap=bargap,
         )
 
+        os.makedirs(os.path.dirname(output_path), exist_ok=True)
         pio.write_image(fig, output_path, format='png', width=1280, height=720)
         
         print(f"Plot saved as '{output_path}'.")
@@ -412,6 +413,8 @@ class ChartUtils:
             hovermode="x",
             bargap=bargap,
         )
+        
+        os.makedirs(os.path.dirname(output_path), exist_ok=True)
         pio.write_image(fig, output_path, format='png', width=1280, height=720)
         
         print(f"Plot saved as '{output_path}'.")
@@ -483,6 +486,8 @@ class ChartUtils:
             # Remove hover effects and other embellishments
             hovermode="x",
         )
+        
+        os.makedirs(os.path.dirname(output_path), exist_ok=True)
         pio.write_image(fig, output_path, format='png', width=1280, height=720)
         
         print(f"Plot saved as '{output_path}'.")

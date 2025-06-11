@@ -1,4 +1,5 @@
 import mcdowell_dataset_analysis as mda
+import os
 
 def launches_vs_mass_by_filter(chart_title_prefix, output_prefix, chart_title_suffix, output_suffix, filter_function, filter_function_parameters_list, filter_function_additional_parameter=None, mass_step_size_kg=1000, launch_vehicle_simplified_name=None, launch_vehicle_family=None, color_map=None, mass_suffix='t', mass_divisor=100):
     """Generate a chart showing the number of launches by payload mass range by a given filter function (eg. launch vehicle, launch category, etc.).
@@ -28,7 +29,8 @@ def launches_vs_mass_by_filter(chart_title_prefix, output_prefix, chart_title_su
     else:
         mda.Filters.filter_by_launch_vehicle_name_simplified(dataset.launch, launch_vehicle_simplified_name)
 
-    dataset.launch.df.to_csv(f'examples/outputs/raw_dataframes/raw_dataframe_{output_name}.csv', index=False) # Save the filtered dataframe to CSV
+    os.makedirs(f'examples/outputs/raw_dataframes/{output_prefix}', exist_ok=True)
+    dataset.launch.df.to_csv(f'examples/outputs/raw_dataframes/{output_prefix}/raw_dataframe_{output_name}.csv', index=False) # Save the filtered dataframe to CSV
     print(f"Dataframe 'raw_dataframe_{output_name}.csv' has been created.")
     
     max_mass = int(dataset.launch.df['Payload_Mass'].max())
@@ -52,7 +54,8 @@ def launches_vs_mass_by_filter(chart_title_prefix, output_prefix, chart_title_su
     output_df = mda.ChartUtils.combine_dictionary_of_dataframes(dataframes)
 
     # Save to CSV
-    output_df.to_csv(f'examples/outputs/csv/{output_name}.csv', index=True)
+    os.makedirs(f'examples/outputs/csv/{output_prefix}', exist_ok=True)
+    output_df.to_csv(f'examples/outputs/csv/{output_prefix}/{output_name}.csv', index=True)
     print(f"CSV file '{output_name}.csv' has been created.")
 
     mda.ChartUtils.plot_bar(
@@ -61,7 +64,7 @@ def launches_vs_mass_by_filter(chart_title_prefix, output_prefix, chart_title_su
         subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
         x_label=f'Payload Mass Range ({mass_suffix})',
         y_label='Number of Launches',
-        output_path=f'examples/outputs/chart/{output_name}.png',
+        output_path=f'examples/outputs/chart/{output_prefix}/{output_name}.png',
         color_map=color_map,
         bargap=0.1,
     )
@@ -99,7 +102,8 @@ def total_mass_vs_mass_by_filter(chart_title_prefix, output_prefix, chart_title_
     else:
         mda.Filters.filter_by_launch_vehicle_name_simplified(dataset.launch, launch_vehicle_simplified_name)
 
-    dataset.launch.df.to_csv(f'examples/outputs/raw_dataframes/raw_dataframe_{output_name}.csv', index=False)
+    os.makedirs(f'examples/outputs/raw_dataframes/{output_prefix}', exist_ok=True)
+    dataset.launch.df.to_csv(f'examples/outputs/raw_dataframes/{output_prefix}/raw_dataframe_{output_name}.csv', index=False)
     print(f"Dataframe 'raw_dataframe_{output_name}.csv' has been created.")
 
     max_mass = int(dataset.launch.df['Payload_Mass'].max())
@@ -127,7 +131,8 @@ def total_mass_vs_mass_by_filter(chart_title_prefix, output_prefix, chart_title_
 
     output_df = mda.ChartUtils.combine_dictionary_of_dataframes(total_masses)
 
-    output_df.to_csv(f'examples/outputs/csv/{output_name}.csv', index=True)
+    os.makedirs(f'examples/outputs/csv/{output_prefix}/', exist_ok=True)
+    output_df.to_csv(f'examples/outputs/csv/{output_prefix}/{output_name}.csv', index=True)
     print(f"CSV file '{output_name}.csv' has been created.")
 
     mda.ChartUtils.plot_bar(
@@ -136,7 +141,7 @@ def total_mass_vs_mass_by_filter(chart_title_prefix, output_prefix, chart_title_
         subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
         x_label=f'Payload Mass Range ({mass_suffix})',
         y_label=f'Total Payload Mass ({mass_suffix})',
-        output_path=f'examples/outputs/chart/{output_name}.png',
+        output_path=f'examples/outputs/chart/{output_prefix}/{output_name}.png',
         color_map=color_map,
         bargap=0.1
     )
@@ -185,7 +190,8 @@ def launches_vs_mass_by_general_launch_payload_type(mass_step_size_kg, chart_tit
     else:
         mda.Filters.filter_by_launch_vehicle_name_simplified(dataset.launch, launch_vehicle_simplified_name)
 
-    dataset.launch.df.to_csv(f'examples/outputs/raw_dataframes/raw_dataframe_{output_name}.csv', index=False) # Save the filtered dataframe to CSV
+    os.makedirs(f'examples/outputs/raw_dataframes/{output_prefix}', exist_ok=True)
+    dataset.launch.df.to_csv(f'examples/outputs/raw_dataframes/{output_prefix}/raw_dataframe_{output_name}.csv', index=False) # Save the filtered dataframe to CSV
     print(f"Dataframe 'raw_dataframe_{output_name}.csv' has been created.")
     
     max_mass = int(dataset.launch.df['Payload_Mass'].max())
@@ -209,8 +215,8 @@ def launches_vs_mass_by_general_launch_payload_type(mass_step_size_kg, chart_tit
     # Create dictionary with columns that are the payload types and values are the mass ranges
     output_df = mda.ChartUtils.combine_dictionary_of_dataframes(payload_type_dataframes)
 
-    # Save to CSV
-    output_df.to_csv(f'examples/outputs/csv/{output_name}.csv', index=True)
+    os.makedirs(f'examples/outputs/csv/{output_prefix}/', exist_ok=True)
+    output_df.to_csv(f'examples/outputs/csv/{output_prefix}/{output_name}.csv', index=True)
     print(f"CSV file '{output_name}.csv' has been created.")
 
     mda.ChartUtils.plot_bar(
@@ -219,7 +225,7 @@ def launches_vs_mass_by_general_launch_payload_type(mass_step_size_kg, chart_tit
         subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
         x_label=f'Payload Mass Range ({mass_suffix})',
         y_label='Number of Launches',
-        output_path=f'examples/outputs/chart/{output_name}.png',
+        output_path=f'examples/outputs/chart/{output_prefix}/{output_name}.png',
         color_map=mda.ChartUtils.general_launch_payload_type_color_map,
         bargap=0.1,
     )
@@ -250,7 +256,8 @@ def total_mass_vs_mass_by_general_launch_payload_type(mass_step_size_kg, chart_t
     else:
         mda.Filters.filter_by_launch_vehicle_name_simplified(dataset.launch, launch_vehicle_simplified_name)
 
-    dataset.launch.df.to_csv(f'examples/outputs/raw_dataframes/raw_dataframe_{output_name}.csv', index=False) # Save the filtered dataframe to CSV
+    os.makedirs(f'examples/outputs/raw_dataframes/{output_prefix}', exist_ok=True)
+    dataset.launch.df.to_csv(f'examples/outputs/raw_dataframes/{output_prefix}/raw_dataframe_{output_name}.csv', index=False) # Save the filtered dataframe to CSV
     print(f"Dataframe 'raw_dataframe_{output_name}.csv' has been created.")
     
     max_mass = int(dataset.launch.df['Payload_Mass'].max())
@@ -281,8 +288,8 @@ def total_mass_vs_mass_by_general_launch_payload_type(mass_step_size_kg, chart_t
 
     output_df = mda.ChartUtils.combine_dictionary_of_dataframes(payload_type_masses)
 
-    # Save to CSV
-    output_df.to_csv(f'examples/outputs/csv/{output_name}.csv', index=True)
+    os.makedirs(f'examples/outputs/csv/{output_prefix}/', exist_ok=True)
+    output_df.to_csv(f'examples/outputs/csv/{output_prefix}/{output_name}.csv', index=True)
     print(f"CSV file '{output_name}.csv' has been created.")
 
     # Plot stacked bar chart
@@ -292,7 +299,7 @@ def total_mass_vs_mass_by_general_launch_payload_type(mass_step_size_kg, chart_t
         subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
         x_label=f'Payload Mass Range ({mass_suffix})',
         y_label=f'Total Payload Mass ({mass_suffix})',
-        output_path=f'examples/outputs/chart/{output_name}.png',
+        output_path=f'examples/outputs/chart/{output_prefix}/{output_name}.png',
         color_map=mda.ChartUtils.general_launch_payload_type_color_map,
         bargap=0.1
     )
@@ -335,7 +342,8 @@ def launches_vs_month_by_orbit(chart_title_prefix, output_prefix, launch_vehicle
     # Encode launch month as year*12 + months to get total months since Jesus instead of years since Jesus
     dataset.launch.df['Launch_Month'] = dataset.launch.df['Launch_Date'].dt.year*12 + dataset.launch.df['Launch_Date'].dt.month
     
-    dataset.launch.df.to_csv(f'examples/outputs/raw_dataframes/raw_dataframe_{output_name}.csv', index=False) # Save the filtered dataframe to CSV
+    os.makedirs(f'examples/outputs/raw_dataframes/{output_prefix}', exist_ok=True)
+    dataset.launch.df.to_csv(f'examples/outputs/raw_dataframes/{output_prefix}/raw_dataframe_{output_name}.csv', index=False) # Save the filtered dataframe to CSV
     print(f"Dataframe 'raw_dataframe_{output_name}.csv' has been created.")
     
     orbits = ['LEO', 'SSO', 'MEO', 'GTO', 'GEO', 'HEO', 'BEO']
@@ -358,8 +366,9 @@ def launches_vs_month_by_orbit(chart_title_prefix, output_prefix, launch_vehicle
 
     # Combine dictionary of dataframes into a single dataframe (by column)
     output_df = mda.ChartUtils.combine_dictionary_of_dataframes(orbit_dataframes)
-
-    output_df.to_csv(f'examples/outputs/csv/{output_name}.csv', index=True)
+    
+    os.makedirs(f'examples/outputs/csv/{output_prefix}/', exist_ok=True)
+    output_df.to_csv(f'examples/outputs/csv/{output_prefix}/{output_name}.csv', index=True)
     print(f"CSV file '{output_name}.csv' has been created.")
 
     mda.ChartUtils.plot_bar(
@@ -368,7 +377,7 @@ def launches_vs_month_by_orbit(chart_title_prefix, output_prefix, launch_vehicle
         subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
         x_label='Date',
         y_label='Number of Launches',
-        output_path=f'examples/outputs/chart/{output_name}.png',
+        output_path=f'examples/outputs/chart/{output_prefix}/{output_name}.png',
         color_map=mda.ChartUtils.orbit_color_map,
         bargap=0.0,
         x_tick0=0,
@@ -413,7 +422,8 @@ def launches_vs_month_by_general_launch_payload_type(chart_title_prefix, output_
     # Encode launch month as year*12 + months to get total months since Jesus instead of years since Jesus
     dataset.launch.df['Launch_Month'] = dataset.launch.df['Launch_Date'].dt.year*12 + dataset.launch.df['Launch_Date'].dt.month
     
-    dataset.launch.df.to_csv(f'examples/outputs/raw_dataframes/raw_dataframe_{output_name}.csv', index=False) # Save the filtered dataframe to CSV
+    os.makedirs(f'examples/outputs/raw_dataframes/{output_prefix}', exist_ok=True)
+    dataset.launch.df.to_csv(f'examples/outputs/raw_dataframes/{output_prefix}/raw_dataframe_{output_name}.csv', index=False) # Save the filtered dataframe to CSV
     print(f"Dataframe 'raw_dataframe_{output_name}.csv' has been created.")
     
     general_launch_payload_Types = ['Starlink', 'Commercial', 'Chinese Commercial', 'Government', 'Eastern Government', 'Military', 'Eastern Military']
@@ -438,7 +448,8 @@ def launches_vs_month_by_general_launch_payload_type(chart_title_prefix, output_
     # Combine dictionary of dataframes into a single dataframe (by column)
     output_df = mda.ChartUtils.combine_dictionary_of_dataframes(orbit_dataframes)
     
-    output_df.to_csv(f'examples/outputs/csv/{output_name}.csv', index=True)
+    os.makedirs(f'examples/outputs/csv/{output_prefix}/', exist_ok=True)
+    output_df.to_csv(f'examples/outputs/csv/{output_prefix}/{output_name}.csv', index=True)
     print(f"CSV file '{output_name}.csv' has been created.")
     
     mda.ChartUtils.plot_bar(
@@ -447,7 +458,7 @@ def launches_vs_month_by_general_launch_payload_type(chart_title_prefix, output_
         subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
         x_label='Date',
         y_label='Number of Launches',
-        output_path=f'examples/outputs/chart/{output_name}.png',
+        output_path=f'examples/outputs/chart/{output_prefix}/{output_name}.png',
         color_map=mda.ChartUtils.general_launch_payload_type_color_map,
         bargap=0.0,
         x_tick0=0,
@@ -492,7 +503,8 @@ def launches_vs_year_by_orbit(chart_title_prefix, output_prefix, launch_vehicle_
     # Encode launch month as year*12 + months to get total months since Jesus instead of years since Jesus
     dataset.launch.df['Launch_Year'] = dataset.launch.df['Launch_Date'].dt.year
     
-    dataset.launch.df.to_csv(f'examples/outputs/raw_dataframes/raw_dataframe_{output_name}.csv', index=False) # Save the filtered dataframe to CSV
+    os.makedirs(f'examples/outputs/raw_dataframes/{output_prefix}', exist_ok=True)
+    dataset.launch.df.to_csv(f'examples/outputs/raw_dataframes/{output_prefix}/raw_dataframe_{output_name}.csv', index=False) # Save the filtered dataframe to CSV
     print(f"Dataframe 'raw_dataframe_{output_name}.csv' has been created.")
     
     orbits = ['LEO', 'SSO', 'MEO', 'GTO', 'GEO', 'HEO', 'BEO']
@@ -511,7 +523,8 @@ def launches_vs_year_by_orbit(chart_title_prefix, output_prefix, launch_vehicle_
     # Combine dictionary of dataframes into a single dataframe (by column)
     output_df = mda.ChartUtils.combine_dictionary_of_dataframes(orbit_dataframes)
     
-    output_df.to_csv(f'examples/outputs/csv/{output_name}.csv', index=True)
+    os.makedirs(f'examples/outputs/csv/{output_prefix}/', exist_ok=True)
+    output_df.to_csv(f'examples/outputs/csv/{output_prefix}/{output_name}.csv', index=True)
     print(f"CSV file '{output_name}.csv' has been created.")
     
     mda.ChartUtils.plot_bar(
@@ -520,7 +533,7 @@ def launches_vs_year_by_orbit(chart_title_prefix, output_prefix, launch_vehicle_
         subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
         x_label='Year',
         y_label='Number of Launches',
-        output_path=f'examples/outputs/chart/{output_name}.png',
+        output_path=f'examples/outputs/chart/{output_prefix}/{output_name}.png',
         color_map=mda.ChartUtils.orbit_color_map,
         bargap=0.1,
         x_tick_step_size=x_tick_step_size
@@ -564,7 +577,8 @@ def launches_vs_year_by_general_launch_payload_type(chart_title_prefix, output_p
     # Encode launch month as year*12 + months to get total months since Jesus instead of years since Jesus
     dataset.launch.df['Launch_Year'] = dataset.launch.df['Launch_Date'].dt.year
     
-    dataset.launch.df.to_csv(f'examples/outputs/raw_dataframes/raw_dataframe_{output_name}.csv', index=False) # Save the filtered dataframe to CSV
+    os.makedirs(f'examples/outputs/raw_dataframes/{output_prefix}', exist_ok=True)
+    dataset.launch.df.to_csv(f'examples/outputs/raw_dataframes/{output_prefix}/raw_dataframe_{output_name}.csv', index=False) # Save the filtered dataframe to CSV
     print(f"Dataframe 'raw_dataframe_{output_name}.csv' has been created.")
     
     general_launch_payload_Types = ['Starlink', 'Commercial', 'Chinese Commercial', 'Government', 'Eastern Government', 'Military', 'Eastern Military']
@@ -584,7 +598,8 @@ def launches_vs_year_by_general_launch_payload_type(chart_title_prefix, output_p
     # Combine dictionary of dataframes into a single dataframe (by column)
     output_df = mda.ChartUtils.combine_dictionary_of_dataframes(orbit_dataframes)
     
-    output_df.to_csv(f'examples/outputs/csv/{output_name}.csv', index=True)
+    os.makedirs(f'examples/outputs/csv/{output_prefix}/', exist_ok=True)
+    output_df.to_csv(f'examples/outputs/csv/{output_prefix}/{output_name}.csv', index=True)
     print(f"CSV file '{output_name}.csv' has been created.")
     
     mda.ChartUtils.plot_bar(
@@ -593,7 +608,7 @@ def launches_vs_year_by_general_launch_payload_type(chart_title_prefix, output_p
         subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
         x_label='Year',
         y_label='Number of Launches',
-        output_path=f'examples/outputs/chart/{output_name}.png',
+        output_path=f'examples/outputs/chart/{output_prefix}/{output_name}.png',
         color_map=mda.ChartUtils.general_launch_payload_type_color_map,
         bargap=0.1,
         x_tick_step_size=x_tick_step_size,
@@ -638,7 +653,8 @@ def launches_vs_year_by_filter(chart_title_prefix, output_prefix, chart_title_su
 
     dataset.launch.df['Launch_Year'] = dataset.launch.df['Launch_Date'].dt.year
 
-    dataset.launch.df.to_csv(f'examples/outputs/raw_dataframes/raw_dataframe_{output_name}.csv', index=False)
+    os.makedirs(f'examples/outputs/raw_dataframes/{output_prefix}', exist_ok=True)
+    dataset.launch.df.to_csv(f'examples/outputs/raw_dataframes/{output_prefix}/raw_dataframe_{output_name}.csv', index=False)
     print(f"Dataframe 'raw_dataframe_{output_name}.csv' has been created.")
 
     dataframes = mda.ChartUtils.bin_dataset_into_dictionary_by_filter_function(
@@ -654,7 +670,8 @@ def launches_vs_year_by_filter(chart_title_prefix, output_prefix, chart_title_su
 
     output_df = mda.ChartUtils.combine_dictionary_of_dataframes(dataframes)
 
-    output_df.to_csv(f'examples/outputs/csv/{output_name}.csv', index=True)
+    os.makedirs(f'examples/outputs/csv/{output_prefix}/', exist_ok=True)
+    output_df.to_csv(f'examples/outputs/csv/{output_prefix}/{output_name}.csv', index=True)
     print(f"CSV file '{output_name}.csv' has been created.")
 
     mda.ChartUtils.plot_bar(
@@ -663,7 +680,7 @@ def launches_vs_year_by_filter(chart_title_prefix, output_prefix, chart_title_su
         subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
         x_label='Year',
         y_label='Number of Launches',
-        output_path=f'examples/outputs/chart/{output_name}.png',
+        output_path=f'examples/outputs/chart/{output_prefix}/{output_name}.png',
         bargap=0.1,
         color_map=color_map,
         x_tick_step_size=x_tick_step_size,
@@ -692,7 +709,8 @@ def owner_payloads_vs_year_by_program(chart_title_prefix, output_prefix, owners_
 
     dataset.satcat.df['Launch_Year'] = dataset.satcat.df['Launch_Date'].dt.year
 
-    dataset.satcat.df.to_csv(f'examples/outputs/raw_dataframes/raw_dataframe_{output_name}.csv', index=False) # Save the filtered dataframe to CSV
+    os.makedirs(f'examples/outputs/raw_dataframes/{output_prefix}', exist_ok=True)
+    dataset.satcat.df.to_csv(f'examples/outputs/raw_dataframes/{output_prefix}/raw_dataframe_{output_name}.csv', index=False) # Save the filtered dataframe to CSV
     print(f"Dataframe 'raw_dataframe_{output_name}.csv' has been created.")
     
     # Create a dictionary with key programs and values are dataframes for each program showing the number of payloads per year
@@ -722,7 +740,8 @@ def owner_payloads_vs_year_by_program(chart_title_prefix, output_prefix, owners_
     if program_order is not None:
         output_df = output_df[program_order]
         
-    output_df.to_csv(f'examples/outputs/csv/{output_name}.csv', index=True)
+    os.makedirs(f'examples/outputs/csv/{output_prefix}/', exist_ok=True)
+    output_df.to_csv(f'examples/outputs/csv/{output_prefix}/{output_name}.csv', index=True)
     print(f"CSV file '{output_name}.csv' has been created.")
 
     mda.ChartUtils.plot_bar(
@@ -731,7 +750,7 @@ def owner_payloads_vs_year_by_program(chart_title_prefix, output_prefix, owners_
         subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
         x_label="Year",
         y_label="Number of Payloads",
-        output_path=f'examples/outputs/chart/{output_name}.png',
+        output_path=f'examples/outputs/chart/{output_prefix}/{output_name}.png',
         bargap=0.0,
         color_map=color_map,
     )
@@ -771,7 +790,8 @@ def owner_payloads_vs_year_by_category(chart_title_prefix, output_prefix, owners
 
     dataset.satcat.df['Launch_Year'] = dataset.satcat.df['Launch_Date'].dt.year
 
-    dataset.satcat.df.to_csv(f'examples/outputs/raw_dataframes/raw_dataframe_{output_name}.csv', index=False) # Save the filtered dataframe to CSV
+    os.makedirs(f'examples/outputs/raw_dataframes/{output_prefix}', exist_ok=True)
+    dataset.satcat.df.to_csv(f'examples/outputs/raw_dataframes/{output_prefix}/raw_dataframe_{output_name}.csv', index=False) # Save the filtered dataframe to CSV
     print(f"Dataframe 'raw_dataframe_{output_name}.csv' has been created.")
     
     # Create a dictionary with key countries and values are dataframes for each country showing the number of payloads per year
@@ -787,7 +807,8 @@ def owner_payloads_vs_year_by_category(chart_title_prefix, output_prefix, owners
     # Combine dictionary of dataframes into a single dataframe (by column)
     output_df = mda.ChartUtils.combine_dictionary_of_dataframes(dataframes)
 
-    output_df.to_csv(f'examples/outputs/csv/{output_name}.csv', index=True)
+    os.makedirs(f'examples/outputs/csv/{output_prefix}/', exist_ok=True)
+    output_df.to_csv(f'examples/outputs/csv/{output_prefix}/{output_name}.csv', index=True)
     print(f"CSV file '{output_name}.csv' has been created.")
 
     mda.ChartUtils.plot_bar(
@@ -796,7 +817,7 @@ def owner_payloads_vs_year_by_category(chart_title_prefix, output_prefix, owners
         subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
         x_label="Year",
         y_label="Number of Payloads",
-        output_path=f'examples/outputs/chart/{output_name}.png',
+        output_path=f'examples/outputs/chart/{output_prefix}/{output_name}.png',
         bargap=0.0,
         color_map=color_map,
     )
@@ -840,7 +861,8 @@ def launch_value_vs_date_by_filter_scatter(chart_title_prefix, output_prefix, va
     mda.Filters.filter_by_launch_date(dataset.launch, start_date=f'{start_year}-01-01', end_date=f'{end_year}-12-31') # After getting the start and end years, filter the dataset by launch date
     filtered_df = dataset.launch.df
 
-    filtered_df.to_csv(f'examples/outputs/raw_dataframes/raw_dataframe_{output_name}.csv', index=False) # Save the filtered dataframe to CSV
+    os.makedirs(f'examples/outputs/raw_dataframes/{output_prefix}', exist_ok=True)
+    filtered_df.to_csv(f'examples/outputs/raw_dataframes/{output_prefix}/raw_dataframe_{output_name}.csv', index=False) # Save the filtered dataframe to CSV
     print(f"Dataframe 'raw_dataframe_{output_name}.csv' has been created.")
     
     filtered_df = filtered_df[['Launch_Date', value_column, series_column]].dropna(subset=[value_column])
@@ -854,8 +876,9 @@ def launch_value_vs_date_by_filter_scatter(chart_title_prefix, output_prefix, va
         cols = [col for col in cols if col in pivoted_df.columns] # Remove keys that are not in the pivoted_df columns
         cols.insert(0, "Launch_Date")  # Ensure Launch_Date is always included as the first column
         pivoted_df = pivoted_df.reindex(columns=cols)
-        
-    pivoted_df.to_csv(f'examples/outputs/csv/{output_name}.csv', index=False)
+    
+    os.makedirs(f'examples/outputs/csv/{output_prefix}/', exist_ok=True)
+    pivoted_df.to_csv(f'examples/outputs/csv/{output_prefix}/{output_name}.csv', index=False)
     print(f"CSV file '{output_name}.csv' has been created.")
 
     if value_title is None:
@@ -872,7 +895,7 @@ def launch_value_vs_date_by_filter_scatter(chart_title_prefix, output_prefix, va
         x_label='Launch Date',
         y_label=f'{value_title} {x_axis_title_suffix}',
         dot_diameter=10,
-        output_path=f'examples/outputs/chart/{output_name}.png',
+        output_path=f'examples/outputs/chart/{output_prefix}/{output_name}.png',
         color_map=color_map,
         y_scaling_factor=y_scaling_factor,
         x_tick_step_size=x_tick_step_size,
@@ -914,7 +937,8 @@ def launch_apogee_vs_inclination_by_filter_scatter(chart_title_prefix, output_pr
     filtered_df = filtered_df[filtered_df['Apogee'] != 0] # Remove 0 values
     filtered_df = filtered_df[filtered_df['Inc'] != 0] # Remove 0 values
     
-    filtered_df.to_csv(f'examples/outputs/raw_dataframes/raw_dataframe_{output_name}.csv', index=False) # Save the filtered dataframe to CSV
+    os.makedirs(f'examples/outputs/raw_dataframes/{output_prefix}', exist_ok=True)
+    filtered_df.to_csv(f'examples/outputs/raw_dataframes/{output_prefix}/raw_dataframe_{output_name}.csv', index=False) # Save the filtered dataframe to CSV
     print(f"Dataframe 'raw_dataframe_{output_name}.csv' has been created.")
     
     pivoted_df = mda.ChartUtils.pivot_dataframe(filtered_df, index_col='Inc', column_col=series_column, value_col='Apogee') # Pivot for plotting
@@ -926,7 +950,8 @@ def launch_apogee_vs_inclination_by_filter_scatter(chart_title_prefix, output_pr
         cols.insert(0, 'Inc')  # Ensure 'Inc' is always included as the first column
         pivoted_df = pivoted_df.reindex(columns=cols)
 
-    pivoted_df.to_csv(f'examples/outputs/csv/{output_name}.csv')
+    os.makedirs(f'examples/outputs/csv/{output_prefix}/', exist_ok=True)
+    pivoted_df.to_csv(f'examples/outputs/csv/{output_prefix}/{output_name}.csv')
     print(f"CSV file '{output_name}.csv' has been created.")
 
     if series_title is None:
@@ -941,6 +966,6 @@ def launch_apogee_vs_inclination_by_filter_scatter(chart_title_prefix, output_pr
         x_label='Inclination (degrees)',
         y_label='Apogee (km)',
         dot_diameter=10,
-        output_path=f'examples/outputs/chart/{output_name}.png',
+        output_path=f'examples/outputs/chart/{output_prefix}/{output_name}.png',
         color_map=color_map,
     )
