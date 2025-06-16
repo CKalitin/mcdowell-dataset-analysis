@@ -397,7 +397,7 @@ class Filters:
         if end_date is not None:
             dataset_class.df = dataset_class.df[dataset_class.df["Orbit_Canonical_Date"] <= end_date]
     
-    def filter_by_mass(dataset_class, min_mass=None, max_max=None):
+    def filter_by_mass(dataset_class, min_mass=None, max_mass=None):
         """
         Remove all launches or satellties that are not in the given mass range (inclusive range).
         Args:
@@ -413,8 +413,8 @@ class Filters:
         if min_mass is not None:
             dataset_class.df = dataset_class.df[dataset_class.df[mass_col] >= min_mass]
         
-        if max_max is not None:
-            dataset_class.df = dataset_class.df[dataset_class.df[mass_col] <= max_max]
+        if max_mass is not None:
+            dataset_class.df = dataset_class.df[dataset_class.df[mass_col] <= max_mass]
             
     def filter_by_orbit_raw(dataset_class, orbits, negate=False):
         """

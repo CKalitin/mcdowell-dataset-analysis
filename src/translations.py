@@ -64,6 +64,8 @@ class Translation:
         "XO": "BEO"      # Extraterrestrial launch
     }
     
+    # See https://planet4589.org/space/gcat/web/cat/pcols.html
+    # Todo update
     payload_category_to_simple_payload_category = {
         "AST": "Observation",
         "IMG": "Observation",
@@ -76,11 +78,11 @@ class Translation:
         "GEOD": "Science",
         "MGRAV": "Science",
         "SCI": "Science",
-        "TECH": "Tech Demo", # I want this above other category, technically out of order
-        "EW": "Observation", # Early warning: Obs?
-        "SIG": "Observation", # Signals intelligence: Obs?
-        "TARG": "Other", # Target for missile defense tests: Other?
-        "WEAPON": "Other", # Antisat: Other?
+        "TECH": "Tech Demo",
+        "EW": "Observation",
+        "SIG": "Observation",
+        "TARG": "Other",
+        "WEAPON": "Other",
         "CAL": "Other",
         "EDU": "Other",
         "INF": "Other",

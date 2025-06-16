@@ -1,4 +1,5 @@
 import mcdowell_dataset_analysis as mda
+import os
 
 dataset = mda.McdowellDataset("./datasets")
 
@@ -11,6 +12,10 @@ mda.Filters.filter_by_simple_payload_category(dataset.satcat, simple_payload_cat
 
 dataset.satcat.df['Launch_Year'] = dataset.satcat.df['Launch_Date'].dt.year
 
+os.makedirs(f'examples/outputs/raw_dataframes/payloads', exist_ok=True)
+dataset.satcat.df.to_csv(f'examples/outputs/raw_dataframes/payloads/{output_name}.csv', index=False)
+print(f"Dataframe 'raw_dataframe_{output_name}.csv' has been created.")
+
 dataframes = mda.ChartUtils.group_dataset_into_dictionary_by_filter_function(
     dataset.satcat,
     filter_function=mda.Filters.filter_by_simple_payload_category,
@@ -21,16 +26,18 @@ dataframes = mda.ChartUtils.group_dataset_into_dictionary_by_filter_function(
 
 output_df = mda.ChartUtils.combine_dictionary_of_dataframes(dataframes)
 
-output_df.to_csv(f"examples/outputs/csv/{output_name}.csv", index=True)
+os.makedirs(f'examples/outputs/csv/payloads', exist_ok=True)
+output_df.to_csv(f"examples/outputs/csv/payloads/{output_name}.csv", index=True)
 print(f"CSV file '{output_name}.csv' has been created.")
 
+os.makedirs(f'examples/outputs/chart/payloads', exist_ok=True)
 mda.ChartUtils.plot_bar(
     output_df,
     title="Global Payloads vs Year by Simple Payload Category",
     subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
     x_label="Year",
     y_label="Number of Payloads",
-    output_path=f'examples/outputs/chart/{output_name}.png',
+    output_path=f'examples/outputs/chart/payloads/{output_name}.png',
     color_map=mda.ChartUtils.simple_payload_category_color_map,
     bargap=0.0,
     x_tick0=0,

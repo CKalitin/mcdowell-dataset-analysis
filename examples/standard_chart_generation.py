@@ -969,3 +969,74 @@ def launch_apogee_vs_inclination_by_filter_scatter(chart_title_prefix, output_pr
         output_path=f'examples/outputs/chart/{output_prefix}/{output_name}.png',
         color_map=color_map,
     )
+
+def payloads_filtered_vs_year_by_filter(chart_title_prefix, output_prefix, chart_title_suffix, output_suffix, initial_filter_functions, initial_filter_function_parameters_list, filter_function, filter_function_parameters_list, filter_function_additional_parameter=None, initial_filter_function_additional_parameters=[None], x_tick_step_size=1, color_map=None, start_year=None, end_year=None):
+    """Generate a chart showing the number of payloads of a particular filter (eg. filter by simple payload category for earth observation) by year, filtered by a specified filter function.
+    
+    Args:
+        chart_title_prefix (str): Prefix for the chart title (should be the prettified name of the category) (eg. 'Orbital Payloads')
+        output_prefix (str): Simplified name of category for output files (eg. 'orbital' for Orbital Payloads gives "orbital_payloads_vs_year_by_filter")
+        initial_filter_functions (function): Functions to filter the dataset by before doing anything else. Eg. filter by simple payload category for observation satellites. Should take a dataset and a parameter.
+        initial_filter_function_parameters (Any): Parameters to pass to the initial filter functions, one each must be same index as initial filter functions.
+        filter_function (function): Function to filter the dataset by. Should take a dataset and a
+        filter_function_parameters_list (list): List of parameters to pass to the filter function.
+        filter_function_additional_parameter (str, optional): Additional parameter for the filter function. Defaults to None.
+        initial_filter_function_additional_parameters (str, optional): List of additional parameters for the initial filter functions. Defaults to None. eg. ['Something', None, None]
+        x_tick_step_size (int, optional): Step size for x-axis ticks in years. Defaults to 1 (one year).
+        start_year (int, optional): Start year for the data. By default it is the first year of the specified filter in the dataset.
+        end_year (int, optional): End year for the data (inclusive). By default, the final year of the specified filter is used.
+    """
+    
+    dataset = mda.McdowellDataset("./datasets")
+    
+    # Apply initial filters
+    for initial_filter_function, initial_filter_parameter, initial_additional_parameter in zip(initial_filter_functions, initial_filter_function_parameters_list, initial_filter_function_additional_parameters):
+        if initial_additional_parameter is not None:
+            initial_filter_function(dataset.satcat, initial_filter_parameter, initial_additional_parameter)
+        else:
+            initial_filter_function(dataset.satcat, initial_filter_parameter)
+            
+    if start_year == None:
+        start_year = dataset.satcat.df['Launch_Date'].dt.year.min()
+    if end_year == None:
+        end_year = dataset.satcat.df['Launch_Date'].dt.year.max()
+        
+    output_name = f"{output_prefix}_payloads_vs_year_by_{output_suffix}_{start_year}_{end_year}"
+
+    # After getting the start and end years, filter the dataset by launch date
+    mda.Filters.filter_by_launch_date(dataset.satcat, start_date=f'{start_year}-01-01', end_date=f'{end_year}-12-31')
+    
+    dataset.satcat.df['Launch_Year'] = dataset.satcat.df['Launch_Date'].dt.year
+    filtered_df = dataset.satcat.df
+    
+    os.makedirs(f'examples/outputs/raw_dataframes/{output_prefix}', exist_ok=True)
+    filtered_df.to_csv(f'examples/outputs/raw_dataframes/{output_prefix}/raw_dataframe_{output_name}.csv', index=False)
+    print(f"Dataframe 'raw_dataframe_{output_name}.csv' has been created.")
+    
+    # Create a dictionary with key filters and values are dataframes for each filter showing the number of payloads per year
+    dataframes = mda.ChartUtils.group_dataset_into_dictionary_by_filter_function(
+        dataset.satcat,
+        filter_function=filter_function,
+        groups=filter_function_parameters_list,
+        groupby_col="Launch_Year",
+        count_values=True,
+        filter_function_additional_parameter=filter_function_additional_parameter
+    )
+    
+    output_df = mda.ChartUtils.combine_dictionary_of_dataframes(dataframes)
+    
+    os.makedirs(f'examples/outputs/csv/{output_prefix}/', exist_ok=True)
+    output_df.to_csv(f'examples/outputs/csv/{output_prefix}/{output_name}.csv', index=True)
+    print(f"CSV file '{output_name}.csv' has been created.")
+    
+    mda.ChartUtils.plot_bar(
+        output_df,
+        title=f"{chart_title_prefix} Payloads vs Year by {chart_title_suffix}",
+        subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
+        x_label="Year",
+        y_label="Number of Payloads",
+        output_path=f'examples/outputs/chart/{output_prefix}/{output_name}.png',
+        bargap=0.0,
+        x_tick_step_size=x_tick_step_size,
+        color_map=color_map,
+    )

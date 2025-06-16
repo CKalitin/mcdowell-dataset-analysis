@@ -1,6 +1,5 @@
 import standard_chart_generation as scg
 import mcdowell_dataset_analysis as mda
-import csv
 
 chart_title_prefix = "Planet Labs"
 output_prefix = "planet_labs"
