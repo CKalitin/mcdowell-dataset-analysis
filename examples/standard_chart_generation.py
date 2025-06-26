@@ -2,6 +2,173 @@ import mcdowell_dataset_analysis as mda
 import os
 from datetime import datetime
 
+def generate_launch_vehicle_charts(launch_vehicle_simplified_name, chart_title_prefix, output_prefix, mass_step_size_kg=1000, year_x_tick_step_size=1, month_x_tick_step_size=1):
+    mass_suffix = "t" if mass_step_size_kg == 1000 else "kg"
+    mass_divisor = 1000 if mass_step_size_kg == 1000 else 1
+
+    launches_vs_mass_by_orbit(
+        launch_vehicle_simplified_name=launch_vehicle_simplified_name,
+        mass_step_size_kg=mass_step_size_kg,
+        chart_title_prefix=chart_title_prefix,
+        output_prefix=output_prefix,
+        mass_suffix=mass_suffix,
+        mass_divisor=mass_divisor,
+    )
+
+    total_mass_vs_mass_by_orbit(
+        launch_vehicle_simplified_name=launch_vehicle_simplified_name,
+        mass_step_size_kg=mass_step_size_kg,
+        chart_title_prefix=chart_title_prefix,
+        output_prefix=output_prefix,
+        mass_suffix=mass_suffix,
+        mass_divisor=mass_divisor,
+    )
+
+    launches_vs_mass_by_general_launch_payload_type(
+        launch_vehicle_simplified_name=launch_vehicle_simplified_name,
+        mass_step_size_kg=mass_step_size_kg,
+        chart_title_prefix=chart_title_prefix,
+        output_prefix=output_prefix,
+        mass_suffix=mass_suffix,
+        mass_divisor=mass_divisor,
+    )
+
+    total_mass_vs_mass_by_general_launch_payload_type(
+        launch_vehicle_simplified_name=launch_vehicle_simplified_name,
+        mass_step_size_kg=mass_step_size_kg,
+        chart_title_prefix=chart_title_prefix,
+        output_prefix=output_prefix,
+        mass_suffix=mass_suffix,
+        mass_divisor=mass_divisor,
+    )
+
+    launches_vs_month_by_general_launch_payload_type(
+        launch_vehicle_simplified_name=launch_vehicle_simplified_name,
+        chart_title_prefix=chart_title_prefix,
+        output_prefix=output_prefix,
+        x_tick_step_size=month_x_tick_step_size,
+    )
+
+    launches_vs_month_by_orbit(
+        launch_vehicle_simplified_name=launch_vehicle_simplified_name,
+        chart_title_prefix=chart_title_prefix,
+        output_prefix=output_prefix,
+        x_tick_step_size=month_x_tick_step_size,
+    )
+
+    launches_vs_year_by_general_launch_payload_type(
+        launch_vehicle_simplified_name=launch_vehicle_simplified_name,
+        chart_title_prefix=chart_title_prefix,
+        output_prefix=output_prefix,
+        x_tick_step_size=year_x_tick_step_size,
+    )
+
+    launches_vs_year_by_orbit(
+        launch_vehicle_simplified_name=launch_vehicle_simplified_name,
+        chart_title_prefix=chart_title_prefix,
+        output_prefix=output_prefix,
+        x_tick_step_size=year_x_tick_step_size,
+    )
+
+def generate_launch_vehicle_scatter_plots(launch_vehicle_simplified_name, chart_title_prefix, output_prefix, mass_step_size_kg=1000):
+    mass_suffix = "t" if mass_step_size_kg == 1000 else "kg"
+    mass_divisor = 1000 if mass_step_size_kg == 1000 else 1
+    
+    launch_apogee_vs_inclination_by_filter_scatter(
+        chart_title_prefix=chart_title_prefix,
+        output_prefix=output_prefix,
+        series_column='Simple_Orbit',
+        filter_function=mda.Filters.filter_by_launch_vehicle_name_simplified,
+        filter_function_parameter=launch_vehicle_simplified_name,
+        series_title='Orbit',
+        color_map=mda.ChartUtils.orbit_color_map
+    )
+
+    launch_value_vs_date_by_filter_scatter(
+        chart_title_prefix=chart_title_prefix,
+        output_prefix=output_prefix,
+        value_column='Apogee',
+        series_column='Simple_Orbit',
+        filter_function=mda.Filters.filter_by_launch_vehicle_name_simplified,
+        filter_function_parameter=launch_vehicle_simplified_name,
+        x_axis_title_suffix="(km)",
+        value_title='Apogee',
+        series_title='Orbit',
+        color_map=mda.ChartUtils.orbit_color_map
+    )
+
+    launch_value_vs_date_by_filter_scatter(
+        chart_title_prefix=chart_title_prefix,
+        output_prefix=output_prefix,
+        value_column='Inc',
+        series_column='Simple_Orbit',
+        filter_function=mda.Filters.filter_by_launch_vehicle_name_simplified,
+        filter_function_parameter=launch_vehicle_simplified_name,
+        x_axis_title_suffix="(degrees)",
+        value_title='Inclination',
+        series_title='Orbit',
+        color_map=mda.ChartUtils.orbit_color_map
+    )
+
+    launch_value_vs_date_by_filter_scatter(
+        chart_title_prefix=chart_title_prefix,
+        output_prefix=output_prefix,
+        value_column='Payload_Mass',
+        series_column='Simple_Orbit',
+        filter_function=mda.Filters.filter_by_launch_vehicle_name_simplified,
+        filter_function_parameter=launch_vehicle_simplified_name,
+        x_axis_title_suffix=f"({mass_suffix})",
+        value_title='Payload Mass',
+        series_title='Orbit',
+        color_map=mda.ChartUtils.orbit_color_map,
+        y_scaling_factor=1
+    )
+
+def generate_launch_vehicle_family_charts(launch_vehicle_simplified_name, chart_title_prefix, output_prefix, mass_step_size_kg=1000, year_x_tick_step_size=1, color_map=mda.ChartUtils.color_sequence_2_8):
+    mass_suffix = "t" if mass_step_size_kg == 1000 else "kg"
+    mass_divisor = 1000 if mass_step_size_kg == 1000 else 1
+    
+    launches_vs_mass_by_filter(
+        chart_title_prefix=chart_title_prefix,
+        output_prefix=output_prefix,
+        chart_title_suffix='Launch Vehicle',
+        output_suffix='launch_vehicle',
+        filter_function=mda.Filters.filter_by_launch_vehicle_name_simplified,
+        filter_function_parameters_list=launch_vehicle_simplified_name,
+        launch_vehicle_simplified_name=launch_vehicle_simplified_name,
+        mass_step_size_kg=mass_step_size_kg,
+        color_map=color_map,
+        mass_suffix=mass_suffix,
+        mass_divisor=mass_divisor,
+    )
+
+    total_mass_vs_mass_by_filter(
+        chart_title_prefix=chart_title_prefix,
+        output_prefix=output_prefix,
+        chart_title_suffix='Launch Vehicle',
+        output_suffix='launch_vehicle',
+        filter_function=mda.Filters.filter_by_launch_vehicle_name_simplified,
+        filter_function_parameters_list=launch_vehicle_simplified_name,
+        launch_vehicle_simplified_name=launch_vehicle_simplified_name,
+        mass_step_size_kg=mass_step_size_kg,
+        color_map=color_map,
+        mass_suffix=mass_suffix,
+        mass_divisor=mass_divisor,
+    )
+
+    launches_vs_year_by_filter(
+        chart_title_prefix=chart_title_prefix,
+        output_prefix=output_prefix,
+        chart_title_suffix='Launch Vehicle',
+        output_suffix='launch_vehicle',
+        filter_function=mda.Filters.filter_by_launch_vehicle_name_simplified,
+        filter_function_parameters_list=launch_vehicle_simplified_name,
+        launch_vehicle_simplified_name=launch_vehicle_simplified_name,
+        x_tick_step_size=year_x_tick_step_size,
+        color_map=color_map,
+    )
+    
+
 def launches_vs_mass_by_filter(chart_title_prefix, output_prefix, chart_title_suffix, output_suffix, filter_function, filter_function_parameters_list, filter_function_additional_parameter=None, mass_step_size_kg=1000, launch_vehicle_simplified_name=None, launch_vehicle_family=None, color_map=None, mass_suffix='t', mass_divisor=100):
     """Generate a chart showing the number of launches by payload mass range by a given filter function (eg. launch vehicle, launch category, etc.).
     Eg. How many launches were 2-3 tonnes and LEO, how many 6-7 tonnes and GTO, etc.
