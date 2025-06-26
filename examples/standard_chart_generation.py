@@ -81,7 +81,7 @@ def generate_launch_vehicle_scatter_plots(launch_vehicle_simplified_name, chart_
         filter_function=mda.Filters.filter_by_launch_vehicle_name_simplified,
         filter_function_parameter=launch_vehicle_simplified_name,
         series_title='Orbit',
-        color_map=mda.ChartUtils.orbit_color_map
+        color_map=mda.ChartUtils.orbit_color_map,
     )
 
     launch_value_vs_date_by_filter_scatter(
@@ -1072,7 +1072,7 @@ def launch_value_vs_date_by_filter_scatter(chart_title_prefix, output_prefix, va
         output_path=f'examples/outputs/chart/{output_prefix}/{output_name}.png',
         color_map=color_map,
         y_scaling_factor=y_scaling_factor,
-        x_tick_step_size=x_tick_step_size,
+        x_tick_step_size=x_tick_step_size
     )
     
 def launch_apogee_vs_inclination_by_filter_scatter(chart_title_prefix, output_prefix, series_column, filter_function, filter_function_parameter, filter_function_additional_parameter=None, series_title=None, color_map=None, start_year=None, end_year=None):
