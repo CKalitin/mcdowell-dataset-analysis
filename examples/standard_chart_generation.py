@@ -1,5 +1,6 @@
 import mcdowell_dataset_analysis as mda
 import os
+from datetime import datetime
 
 def launches_vs_mass_by_filter(chart_title_prefix, output_prefix, chart_title_suffix, output_suffix, filter_function, filter_function_parameters_list, filter_function_additional_parameter=None, mass_step_size_kg=1000, launch_vehicle_simplified_name=None, launch_vehicle_family=None, color_map=None, mass_suffix='t', mass_divisor=100):
     """Generate a chart showing the number of launches by payload mass range by a given filter function (eg. launch vehicle, launch category, etc.).
@@ -334,7 +335,8 @@ def launches_vs_month_by_orbit(chart_title_prefix, output_prefix, launch_vehicle
     if end_year == None:
         end_year = dataset.launch.df['Launch_Date'].dt.year.max()
 
-    output_name = f"{output_prefix}_launches_vs_month_by_orbit_{start_year}_{end_year}"
+    date_end = "present" if end_year == datetime.now().year else  f"{end_year}"
+    output_name = f"{output_prefix}_launches_vs_month_by_orbit_{start_year}_{date_end}"
 
     # After getting the start and end years, filter the dataset by launch date
     mda.Filters.filter_by_launch_date(dataset.launch, start_date=f'{start_year}-01-01', end_date=f'{end_year}-12-31')
@@ -414,7 +416,8 @@ def launches_vs_month_by_general_launch_payload_type(chart_title_prefix, output_
     if end_year == None:
         end_year = dataset.launch.df['Launch_Date'].dt.year.max()
 
-    output_name = f"{output_prefix}_launches_vs_month_by_general_launch_payload_type_{start_year}_{end_year}"
+    date_end = "present" if end_year == datetime.now().year else  f"{end_year}"
+    output_name = f"{output_prefix}_launches_vs_month_by_general_launch_payload_type_{start_year}_{date_end}"
 
     # After getting the start and end years, filter the dataset by launch date
     mda.Filters.filter_by_launch_date(dataset.launch, start_date=f'{start_year}-01-01', end_date=f'{end_year}-12-31')
@@ -495,7 +498,8 @@ def launches_vs_year_by_orbit(chart_title_prefix, output_prefix, launch_vehicle_
     if end_year == None:
         end_year = dataset.launch.df['Launch_Date'].dt.year.max()
 
-    output_name = f"{output_prefix}_launches_vs_year_by_orbit_{start_year}_{end_year}"
+    date_end = "present" if end_year == datetime.now().year else  f"{end_year}"
+    output_name = f"{output_prefix}_launches_vs_year_by_orbit_{start_year}_{date_end}"
 
     # After getting the start and end years, filter the dataset by launch date
     mda.Filters.filter_by_launch_date(dataset.launch, start_date=f'{start_year}-01-01', end_date=f'{end_year}-12-31')
@@ -569,7 +573,8 @@ def launches_vs_year_by_general_launch_payload_type(chart_title_prefix, output_p
     if end_year == None:
         end_year = dataset.launch.df['Launch_Date'].dt.year.max()
 
-    output_name = f"{output_prefix}_launches_vs_year_by_general_launch_payload_type_{start_year}_{end_year}"
+    date_end = "present" if end_year == datetime.now().year else  f"{end_year}"
+    output_name = f"{output_prefix}_launches_vs_year_by_general_launch_payload_type_{start_year}_{date_end}"
 
     # After getting the start and end years, filter the dataset by launch date
     mda.Filters.filter_by_launch_date(dataset.launch, start_date=f'{start_year}-01-01', end_date=f'{end_year}-12-31')
@@ -646,7 +651,8 @@ def launches_vs_year_by_filter(chart_title_prefix, output_prefix, chart_title_su
     if end_year is None:
         end_year = dataset.launch.df['Launch_Date'].dt.year.max()
 
-    output_name = f"{output_prefix}_launches_vs_year_by_{output_suffix}_{start_year}_{end_year}"
+    date_end = "present" if end_year == datetime.now().year else  f"{end_year}"
+    output_name = f"{output_prefix}_launches_vs_year_by_{output_suffix}_{start_year}_{date_end}"
 
     # After getting the start and end years, filter the dataset by launch date
     mda.Filters.filter_by_launch_date(dataset.launch, start_date=f'{start_year}-01-01', end_date=f'{end_year}-12-31')
@@ -856,7 +862,8 @@ def launch_value_vs_date_by_filter_scatter(chart_title_prefix, output_prefix, va
     if end_year == None:
         end_year = dataset.launch.df['Launch_Date'].dt.year.max()
     
-    output_name = f"{output_prefix}_launches_{value_column.lower()}_vs_date_by_{series_column.lower()}_{start_year}_{end_year}"
+    date_end = "present" if end_year == datetime.now().year else  f"{end_year}"
+    output_name = f"{output_prefix}_launches_{value_column.lower()}_vs_date_by_{series_column.lower()}_{start_year}_{date_end}"
     
     mda.Filters.filter_by_launch_date(dataset.launch, start_date=f'{start_year}-01-01', end_date=f'{end_year}-12-31') # After getting the start and end years, filter the dataset by launch date
     filtered_df = dataset.launch.df
@@ -929,7 +936,8 @@ def launch_apogee_vs_inclination_by_filter_scatter(chart_title_prefix, output_pr
     if end_year == None:
         end_year = dataset.launch.df['Launch_Date'].dt.year.max()
     
-    output_name = f"{output_prefix}_launches_apogee_vs_inc_by_{series_column.lower()}_{start_year}_{end_year}"
+    date_end = "present" if end_year == datetime.now().year else  f"{end_year}"
+    output_name = f"{output_prefix}_launches_apogee_vs_inc_by_{series_column.lower()}_{start_year}_{date_end}"
     
     mda.Filters.filter_by_launch_date(dataset.launch, start_date=f'{start_year}-01-01', end_date=f'{end_year}-12-31') # After getting the start and end years, filter the dataset by launch date
     filtered_df = dataset.launch.df
@@ -1000,8 +1008,9 @@ def payloads_filtered_vs_year_by_filter(chart_title_prefix, output_prefix, chart
         start_year = dataset.satcat.df['Launch_Date'].dt.year.min()
     if end_year == None:
         end_year = dataset.satcat.df['Launch_Date'].dt.year.max()
-        
-    output_name = f"{output_prefix}_payloads_vs_year_by_{output_suffix}_{start_year}_{end_year}"
+
+    date_end = "present" if end_year == datetime.now().year else  f"{end_year}"
+    output_name = f"{output_prefix}_payloads_vs_year_by_{output_suffix}_{start_year}_{date_end}"
 
     # After getting the start and end years, filter the dataset by launch date
     mda.Filters.filter_by_launch_date(dataset.satcat, start_date=f'{start_year}-01-01', end_date=f'{end_year}-12-31')
