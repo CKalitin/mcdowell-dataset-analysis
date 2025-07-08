@@ -43,6 +43,14 @@ class ChartUtils:
         'Tech Demo': "#ee1111",
         'Other': "#434343",
     }
+
+    # https://planet4589.org/space/gcat/web/cat/pcols.html
+    payload_operator_color_map = {
+        "Academic": "#005eff",  # A (Amateur / Academic)
+        "Commercial": "#fbbc04",  # B (Business)
+        "Government": "#008F11",  # C (Civil)
+        "Military": "#ff0000",  # D (Defense)
+    }
     
     # Naming scheme: color_sequence_{number}_{length}
     color_sequence_1_10 = [

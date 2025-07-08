@@ -15,6 +15,7 @@ https://ckalitin.github.io/space/2025/06/08/space-industry-charts.html
    - F9 payload type
 5. F9 Booster Launches Line Chart
 6. ULA charts (really haven't launched more than once a month for a decade?)
+7. Error message for nothing in dataframe after filters
 
 ## Block Diagram
 

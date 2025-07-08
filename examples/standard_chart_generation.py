@@ -1216,3 +1216,75 @@ def payloads_filtered_vs_year_by_filter(chart_title_prefix, output_prefix, chart
         x_tick_step_size=x_tick_step_size,
         color_map=color_map,
     )
+
+
+def payloads_vs_mass_by_filter(chart_title_prefix, output_prefix, chart_title_suffix, output_suffix, filter_function, filter_function_parameters_list, filter_function_additional_parameter=None, mass_step_size_kg=1000, launch_vehicle_simplified_name=None, launch_vehicle_family=None, color_map=None, mass_suffix='t', mass_divisor=100, country=None, max_mass=None):
+    """Generate a chart showing the number of payloads by payload mass range by a given filter function (eg. launch vehicle, launch category, etc.).
+    Eg. How many payloads were 2-3 tonnes and LEO, how many 6-7 tonnes and GTO, etc.
+
+    Args:
+        chart_title_prefix (str): Prefix for the chart title (should be the prettified name of the launch vehicle) (eg. 'Falcon 9') 
+        output_prefix (str): Simplified name of LV for output files (eg. 'f9' for Falcon 9 gives "f9_launches_vs_mass_by_orbit")
+        filter_function (function): Function to filter the dataset by (eg. mda.Filters.filter_by_launch_vehicle_name_simplified)
+        filter_function_parameters_list (list): List of parameters to pass to the filter function
+        filter_function_additional_parameter (str): Additional parameter to pass to the filter function if needed
+        mass_step_size_kg (int): Step size in kg for the mass bins (eg. 1000 gives bins of 0-1000 kg, 1000-2000 kg, etc.)
+        launch_vehicle_simplified_name (str, optional): Launch vehicle to filter by
+        launch_vehicle_family (str, optional): Family of launch vehicle to filter by. If not none, then filtering will be done by family instead of the launch_vehicle field.
+        mass_suffix (str, optional): Suffix for the mass labels (default is 't' for tonnes, use 'kg' if you want). Defaults to 't'.
+        mass_divisor (int, optional): Divisor for the mass values in the chart (default is 1000 to convert kg to tonnes). Defaults to 1000.
+    """
+    
+    output_name = f"{output_prefix}_payloads_vs_mass_by_{output_suffix}"
+
+    # Initialize dataset
+    dataset = mda.McdowellDataset("./datasets")
+
+    mda.Filters.filter_by_sat_type_coarse(dataset.satcat, 'P')
+    if launch_vehicle_family is not None:
+        mda.Filters.filter_by_launch_vehicle_family(dataset.satcat, launch_vehicle_family)
+    if launch_vehicle_simplified_name is not None:
+        mda.Filters.filter_by_launch_vehicle_name_simplified(dataset.satcat, launch_vehicle_simplified_name)
+    if country is not None:
+        mda.Filters.filter_by_country(dataset.satcat, country)
+
+    os.makedirs(f'examples/outputs/raw_dataframes/{output_prefix}', exist_ok=True)
+    dataset.satcat.df.to_csv(f'examples/outputs/raw_dataframes/{output_prefix}/raw_dataframe_{output_name}.csv', index=False) # Save the filtered dataframe to CSV
+    print(f"Dataframe 'raw_dataframe_{output_name}.csv' has been created.")
+    
+    if max_mass is None:
+        max_mass = int(dataset.satcat.df['Mass'].max())
+
+    # Define mass bins and labels
+    bins = list(range(0, max_mass+mass_step_size_kg, mass_step_size_kg)) # +mass_step_size_kg bc. range is exclusive
+    mass_labels = [f"{int(bins[i]/mass_divisor)}-{int(bins[i+1]/mass_divisor)}{mass_suffix}" for i in range(len(bins)-1)]
+
+    # Create a dictionary with key orbits and values are dataframes for each orbit showing the number of launches per payload mass range
+    dataframes = mda.ChartUtils.bin_dataset_into_dictionary_by_filter_function(
+        dataset=dataset.satcat,
+        filter_function=filter_function,
+        filter_function_parameters_list=filter_function_parameters_list,
+        value_col='Mass',
+        bins=bins,
+        bin_labels=mass_labels,
+        filter_function_additional_parameter=filter_function_additional_parameter,
+    )
+
+    # Create dictionary with columns that are the orbits and values are the mass ranges
+    output_df = mda.ChartUtils.combine_dictionary_of_dataframes(dataframes)
+
+    # Save to CSV
+    os.makedirs(f'examples/outputs/csv/{output_prefix}', exist_ok=True)
+    output_df.to_csv(f'examples/outputs/csv/{output_prefix}/{output_name}.csv', index=True)
+    print(f"CSV file '{output_name}.csv' has been created.")
+
+    mda.ChartUtils.plot_bar(
+        output_df,
+        title=f'{chart_title_prefix} Launches vs. Payload Mass by {chart_title_suffix}',
+        subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
+        x_label=f'Payload Mass Range ({mass_suffix})',
+        y_label='Number of Launches',
+        output_path=f'examples/outputs/chart/{output_prefix}/{output_name}.png',
+        color_map=color_map,
+        bargap=0.1,
+    )
