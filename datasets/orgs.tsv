@@ -1,5 +1,5 @@
 #Code	UCode	StateCode	Type	Class	TStart	TStop	ShortName	Name	Location	Longitude	Latitude	Error	Parent	ShortEName	EName	UName
-# Updated 2025 Jun  8 2122:43
+# Updated 2025 Jul  7 2226:44
 EARTH	EARTH	EARTH	AP	C	-	-	Earth	Earth	Earth	-	-	0.0200 	-	Earth (Terra)	Earth	Earth
 LUNA	LUNA	LUNA	AP	C	-	-	Luna	Luna	Luna	-	-	0.0200 	-	Moon	Moon	Luna
 SSYS	SSYS	SSYS	AP	C	-	-	Solar System	Solar System natural celestial objects	Sol	-	-	0.0200 	-	Solar System	Solar System natural celestial objects	Solar System
@@ -486,7 +486,7 @@ ALCT	FIAT	I	PL	B	2005 Jun  1	2007 Apr 10	Alcatel Alenia I	Alcatel Alenia Space (
 ALE	ALE	J	O/PL	B	-	-	ALE	Kabushikigaisha ALE (eru)	Tokyo:Minato	    139.7500 	   35.6600 	0.0200 	-	ALE	Astro Live Experiences Co. Ltd.	株式会社ALE (エール)
 ALEN	FIAT	I	PL	B	1990	2005 Jun  1	Alenia Spazio	Alenia Spazio	Torino	      7.6800 	   45.0800 	0.0200 	-	-	-	Alenia Spazio
 ALENR	SELEN	I	PL	B	1990	2005 Jun  1	Alenia Spazio	Alenia Spazio (Roma)	Roma	     12.4900 	   41.8900 	0.0200 	-	-	-	Alenia Spazio (Roma)
-ALENSP	ALENSP	E	PL	B	2018	-	Alen Space	Alen Space	Nigran, Pontevedro	     -8.8100 	   42.1400 	0.0200 	-	-	-	Alén Space
+ALENSP	ALENSP	E	PL	B	2018	-	Alen Space	Alen Space	Pontevedra:Nigran	     -8.8100 	   42.1400 	0.0200 	-	-	-	Alén Space
 ALIENA	ALIENA	SG	O	B	-	-	ALIENA	ALIENA Pte Ltd.	Singapore	    103.9700 	    1.3400 	0.0200 	-	-	-	ALIENA Pte Ltd.
 ALIEX	ALIEX	CN	O	B	2010	-	AliExpress	AliExpress, Alibaba Group	Hangzhou, Zhejiang	    120.1700 	   30.2500 	0.0200 	-	-	-	AliExpress, Alibaba Group
 ALMAG	ALMAG	US	O	B	2024?	-	Almagest	Almagest Space Corp.	Gaithersburg, Maryland	    -77.2300 	   39.1300 	0.0200 	-	-	-	Almagest Space Corp.
@@ -554,7 +554,7 @@ APOGEO	GPAP	I	PL	B	2023	-	Apogeo Space	Apogeo Space	Gussago, Brescia	     10.150
 APPL	RSRS	UK	-	C	1974	1979	Appleton Lab	Appleton Laboratory	Ditton Park, Buckinghamshire	     -0.5700 	   51.4800 	0.0200 	SERC	-	-	Appleton Laboratory
 APRZ	APRZ	US	O	B	2001 May	-	Aprize	Aprize Satellite Inc.	Fairfax, Virginia	    -77.3000 	   38.8500 	0.0200 	SPQ	-	-	Aprize Satellite Inc.
 APSCO	APSCO	CN	O	C	2005	-	APSCO	Yatai kongjian hezuo zuzhi	Beijing	    116.3800 	   39.9200 	0.0200 	-	-	Asia-Pacific Space Cooperation Organization	亚太空间合作组织
-APSS	APSS	NZ	O/PL	A	2016	-	APSS	Auckland Programme for Space Systems, University of Auckland	Auckland, New Zealand	    174.7700 	   36.8500 	0.0200 	-	-	-	Auckland Programme for Space Systems, University of Auckland
+APSS	APSS	NZ	O/PL	A	2016	2019	APSS	Auckland Programme for Space Systems, University of Auckland	Auckland, New Zealand	    174.7700 	   36.8500 	0.0200 	-	-	-	Auckland Programme for Space Systems, University of Auckland
 APT	APT	HK	O	B	1992	-	APT	Asia Pacific Telecom	Hong Kong	    114.2000 	   22.3000 	0.0200 	-	-	-	Asia Pacific Telecom
 APTS	APTS	CN	O	B	2019?	-	APT Shenzhen	Yatai weixing kuandai tongxin (Shenzhen) YG	Shenzhen	    114.0600 	   22.5400 	0.0200 	-	-	Asia-Pacific Satellite Broadband Communication (Shenzhen)	亚太卫星宽带通信（深圳）有限公司
 APW	APW	D	PL/S	A	1964	1973	APW	Arbeitsgruppe fur physicalische Weltraumforschung, Freiburg	Freiburg, Baden-Wurttemberg	      7.8500 	   47.9800 	0.0200 	-	-	Working Group for Space Physics Research	Arbeitsgruppe für Physikalische Weltraumforschung, Freiburg
@@ -998,6 +998,7 @@ COSG	COSG	US	O/PL/S	A	1989	-	ColoSpaceGrant	Colorado Space Grant Consortium, U C
 COSGIR	COSGIR	J	O	A	2023?	-	Cosmo Girls	Kosumo Joshi	Tokyo:Meguro	    139.7000 	   35.6400 	0.0200 	KANAT	-	Cosmo Girls	コスモ女子
 COSM	COSM	F	PL	B	-	-	COSMOS	COSMOS consortium (Aerospatiale/CASA/MBB/Selenia/MSDS)	Cannes	      7.0100 	   43.5500 	0.0200 	-	-	-	COSMOS consortium (Aerospatiale/CASA/MBB/Selenia/MSDS)
 COSMOG	COSMOG	US	O/PL	B	2011	2013 Jun	Cosmogia	Cosmogia Inc.	San Francisco, California	   -122.4200 	   37.7800 	0.0200 	-	-	-	Cosmogia Inc.
+COSMW	COSMW	KR	O/PL	B	-	-	Cosmoworks	Cosmoworks Inc.	Seoul	    127.0500 	   37.5000 	0.0200 	-	-	-	Cosmoworks Inc.
 COUAL	COUAL	US	-	A	1948	1965	UAL	Upper Atmosphere Lab, University of Colorado	Boulder, Colorado	   -105.2700 	   40.0100 	0.0200 	UCO	-	-	Upper Atmosphere Lab, University of Colorado
 CPUT	CPUT	ZA	O/PL	A	2005	-	CPUT	Cape Peninsula University of Technology, Belleville Campus	Cape Town:Belleville	     18.6300 	  -33.9000 	0.0200 	-	-	-	Cape Peninsula University of Technology, Belleville Campus
 CRA	CRA	I	O/LA/PL/S	C	1959	-	CRA	Centro Richerchi Aerospaziale, Roma la Sapienza	Roma	     12.5200 	   41.9000 	0.0200 	CRPSM	-	Aerospace Research Center	Centro Richerchi Aerospaziale, Roma la Sapienza
@@ -1370,8 +1371,10 @@ G2SS	HGS	US	-	B	2004	2006 Jul 3	G2SS	Panamsat G2 Satellite Solutions	Washington,
 G2SSI	HGS	US	-	B	2006 Jul  3	2006 Jul 4	G2SS (HGS) IN	Panamsat G2 Satellite Solutions (Intelsat)	Washington, DC	    -77.0200 	   38.9000 	0.0200 	INTELD	-	-	Panamsat G2 Satellite Solutions (Intelsat)
 GABEN	GABEN	NZ	O	A	2020	-	Gabe Newell	Gabe Newell, founder of Valve Software	Auckland, New Zealand	    174.7800 	  -36.8700 	0.0200 	-	-	-	Gabe Newell, founder of Valve Software
 GACO	SSTUS	US	O/PL	B	2017 Nov 13	-	GA-EMS	General Atomics Electromagnetic System Group/Englewood	Denver:Englewood, Colorado	   -104.9900 	   39.6500 	0.0200 	GATOM	-	-	General Atomics Electromagnetic Systems Group/Englewood
+GAF	GAF	US	O	B	-	-	Good Ancestor	Good Ancestor Foundation	Austin, Texas	    -97.7900 	   30.4600 	0.0200 	-	-	-	Good Ancestor Foundation
 GAHSV	MILTEC	US	PL	B	2016 May	-	General Atomics	General Atomics, Huntsville	Huntsville, Alabama	    -86.5900 	   34.7300 	0.0200 	GATOM	-	-	General Atomics, Huntsville
 GAISH	GAISH	RU	O	A	1831	-	GAISH	Gos. Astronomicheskiy Inst. im. Shternberg MGU	Moskva:MGU	     37.5300 	   55.7000 	0.0200 	MGU	-	Shternberg Astronomical Institute, MGU	Государственный астрономический институт имени Штернберга
+GALAX	GALAX	CN	O	B	2020	-	Galaxia	Galaxia Mission Systems	Halifax, Nova Scotia	    -63.5900 	   44.6500 	0.0200 	-	-	-	Galaxia Mission Systems
 GAMA	GAMA	F	O/PL	B	2020	-	Gama Space	Gama Space	Paris	      2.3000 	   48.8600 	0.0200 	-	-	-	Gama Space
 GAREF	GAREF	F	-	A	1964	-	GAREF XV	Groupe Amateur de Recherches et d'\'Etudes par Fus\'ees XV	Paris	      2.3000 	   48.8600 	0.0200 	-	-	-	Groupe Amateur de Recherches et d'Études par Fusées XV
 GASL	GASL	US	PL/S	B	1956	2000	GASL	GASL, Inc.	Ronkonkoma, New Yrok	    -73.1300 	   40.8100 	0.0200 	-	-	-	GASL, Inc.
@@ -1602,7 +1605,7 @@ HUAZH	HUAZH	CN	O	A	1953	-	Huazhong U.	Huazhong keji daxue	Guanshan jiedao, Wuhan
 HUBN	HUBN	US	O	B	2021	-	Hubble Network	Hubble Network Inc.	Las Vegas, Nevada	   -115.1400 	   36.1800 	0.0200 	-	-	-	Hubble Network Inc.
 HUMFA	HUMFA	HU	O	C	1848	-	Hungary MFA	Maygarorszag kulugyminisztere	Budapest	     19.0500 	   47.4900 	0.0200 	-	-	Ministry of Foreign Affairs and Trade, Hungary	Magyarország külügyminiszterium
 HUMS	HUMS	US	LV	B	1951	1997	Hughes Missiles	Hughes Missile Systems, AF Plant 44	Tucson, Arizona	   -110.9300 	   32.2200 	0.0200 	-	-	-	Hughes Missile Systems, AF Plant 44
-HUNOR	HUNOR	HU	O	C	2024	-	HUNOR	Hungarian To Orbit Program	Budapest	     19.0500 	   47.4900 	0.0200 	HUMFA	-	-	Hungarian To Orbit Program
+HUNOR	HUNOR	HU	O	C	2024	-	HUNOR	Hungarian To Orbit Program	Budapest	     19.0500 	   47.4900 	0.0200 	MUI	-	-	Hungarian To Orbit Program
 HUNTE	HUNTE	UK	-	B	1957	2001 Oct	Hunting Eng.	Hunting Engineering	Ampthill, Bedfordshire	     -0.4900 	   52.0300 	0.0200 	-	-	-	Hunting Engineering
 HUOPI	HUOPI	CN	O	B	2020?	-	Huoyan Pi	Huojian pi (Huzhou) hangtian keji YG	Beijing	    116.2600 	   40.0700 	0.0200 	-	Rocket Pi	Rocket Pi Space Technology Ltd	火箭派（湖州）航天科技有限公司
 HUOYAN	HUOYAN	CN	O	B	2019	-	Huoyan	Huoyan weizhi shuzhi keji fuwu YG	Shanghai	    121.4700 	   31.2300 	0.0200 	-	-	Huoyan Position Digital Intelligence Tech Service Co Ltd.	火眼位置数智科技服务有限公司
@@ -1614,6 +1617,7 @@ HXKJ	HXKJ	CN	O	B	2018	-	Hainan Xiandai	Hainan xiandai keji jituan	Haikou:Daokecu
 HXWK	HXWK	CN	O	B	2019	-	Xuanying Wangluo	Hangzhou Xuanying Wangluo Keji YG	Hangzhou	    120.1500 	   30.2700 	0.0200 	-	-	Hangzhou Xuanying Network Technology Co Ltd.	杭州瑄盈网络科技有限公司
 HYD	HYD	CN	O	D	1998 Jan	-	Hangtian Yuan D.	ZRJ Hangtian Yuan Dadui	Beijing	    116.2600 	   40.0700 	0.0200 	ZLZB	-	PLA Astronaut Brigade	中国人民解放军航天员大队
 HYDRA	HYDRA	E	O	B	2020?	-	Hydra Space	Hydra Space	Madrid	     -3.5900 	   40.4700 	0.0200 	-	-	-	Hydra Space
+HYDRO	HYDRO	L	O/PL	B	2018	-	Hydrosat	Hydrosat	Luxembourg	      6.1400 	   49.6000 	0.0200 	-	-	-	Hydrosat Europe
 HYEND	HYEND	D	O/LV	A	2006	-	HyEnD	Hybrid Engine Development e.V.	Stuttgart	      9.1800 	   48.7800 	0.0200 	IRSS	-	-	Hybrid Engine Development e.V.
 HYIMP	HYIMP	D	O	B	2018	-	HyImpulse	HyImpulse Technologies GmbH	Neuenstadt am Kocher	      9.3300 	   49.2300 	0.0200 	-	-	-	HyImpulse Techologies GmbH
 HYPGG	SEOPS	US	O/PL	B	2019 Feb	-	Hypergiant Gal.	Hypergiant Galactic Systems (SEOPS LLC)	Houston, Texas	    -95.3800 	   29.7600 	0.0200 	-	-	-	Hypergiant Galactic Systems (SEOPS LLC)
@@ -1793,6 +1797,7 @@ JCSAT	JCSAT	J	O	B	1985 Apr	1993 Aug	JCSAT	JCSAT (Japan Communications Satellite 
 JDA	JDA	J	LA	D	1954 Jul  1	2007 Jan  9	JDA	Boei-cho (Japan Defense Agency)	Tokyo:Minato/Akasaka	    139.7500 	   35.6600 	0.0200 	-	-	Japan Defense Agency	防衛庁
 JENA	JENA	D	PL	B	1991	2010	Jena	DASA Jena Optronic GmbH (DJO)	Jena, Thuringia	     11.5900 	   50.9300 	0.0200 	-	-	-	DASA Jena Optronic GmbH (DJO)
 JENAA	JENA	D	PL	B	2010	-	Jena (Astrium)	DASA Jena Optronic GmbH (DJO)/ Astrium	Jena, Thuringia	     11.5900 	   50.9300 	0.0200 	ASTD	-	-	DASA Jena Optronic GmbH (DJO)/ Astrium
+JENAU	JENAU	D	PL	A	1558	-	Uni Jena	Friedrich-Schiller-Universitat Jena	Jena, Thuringia	     11.5900 	   50.9300 	0.0200 	-	FSU Jena	Freidrich Schiller University Jena	Friedrich-Schiller-Universität Jena
 JGB7	MAI	CN	O/LA	C	1964 Nov 23	1982 Apr	7 Jixie Gon.bu	Qi Jixie gongye bu	Beijing	    116.3800 	   39.9200 	0.0200 	CN	7th Machine Bld.	Seventh Ministry of Machine Building	七机械工业部
 JHQJ	JHQJ	CN	O	C	2021 Sep	-	Jianghui Center	Jianghui qianyan jishu xietong chuangxin zhongxin	Hefei, Anhui	    117.2300 	   31.8200 	0.0200 	-	-	Jianghuai Frontier Technology Collaborative Innovation Ctr	江淮前沿技术协同创新中心
 JHU	JHU	US	PL/S	A	1876	-	JHU	Johns Hopkins Univ.	Baltimore, Maryland	    -76.6200 	   39.3300 	0.0200 	-	-	-	Johns Hopkins Univ.
@@ -2058,6 +2063,8 @@ LUND	LUND	S	S	A	1666	-	Lund	Lunds universitat	Lund, Scania	     13.1900 	   55.7
 LUOUT	LUOUT	US	O/PL	B	2017	-	Lunar Outpost	Lunar Outpost	Golden, Colorado	   -105.2100 	   39.7500 	0.0200 	-	-	-	Lunar Outpost
 LUSO	LUSO	P	O/PL	B	2002	-	LusoSpace	LusoSpace	Lisboa	     -9.1400 	   38.7400 	0.0200 	-	-	-	LusoSpace
 LUX	LUX	UK	PL/S	A	1961	-	LUX	Leicester University X-ray group	Leicester	     -1.1200 	   52.6200 	0.0200 	-	-	-	Leicester University X-ray group
+LUXDD	LUXDD	L	O	D	-	-	Dir. Defence	Direction de la defence (D7)	Luxembourg	      6.1300 	   49.8100 	0.0200 	-	-	-	Direction de la défense
+LUXEO	LUXEO	L	O	B	2018	-	LuxEOPs	LUXEOPs	Betzdorf, Luxembourg	      6.3500 	   49.9600 	0.0200 	OHB	-	-	LUXEOPs
 LUXG	LUXG	L	O	B	2016	-	LuxGovSat	LuxGovSat S.A.	Betzdorf, Luxembourg	      6.3500 	   49.9600 	0.0200 	SES	-	-	LuxGovSat S.A.
 LUXS	LUXS	L	O/PL	B	2004 Nov	-	LuxSpace	LuxSpace Sarl (OHB)	Betzdorf, Luxembourg	      6.3500 	   49.9600 	0.0200 	OHB	-	-	LuxSpace Sarl (OHB)
 LVMS	LTV	US	-	B	1992 Aug 31	1996	Loral Vought	Loral Vought	Dallas:Grand Prairie, Texas	    -97.0200 	   32.7200 	0.0200 	LORC	-	-	Loral Vought
@@ -2110,6 +2117,7 @@ MCI	MCI	US	O	B	1963	1998 Sep	MCI	MCI Communications Corp.	Washington, DC	    -77
 MCI2	MCI	US	O	B	2003 Apr	2006 Jan	MCI	MCI	Washington, DC	    -77.0200 	   38.9000 	0.0200 	-	-	-	MCI
 MCIW	MCI	US	O	B	1998 Sep	2003 Apr	MCI	MCI WorldCom	Washington, DC	    -77.0200 	   38.9000 	0.0200 	-	-	-	MCI WorldCom
 MCMU	MCMU	CA	O	A	1887	-	McMaster U	McMaster University	Hamilton, Ontario	    -79.9200 	   43.2600 	0.0200 	-	-	-	McMaster University
+MCON	MCON	CA	O	B	2015	-	Mission Control	Mission Control Space Services	Ottawa, Ontario	    -75.7200 	   45.4100 	0.0200 	-	-	-	Mission Control Space Services Inc.
 MCSW	AFMCSW	US	O	D	2020 Dec 19	-	USSF MCSW	US Space Force Military Satellite Communications Wing, SMC, LAAFB	Los Angeles:El Segundo, California	   -118.4100 	   33.9200 	0.0200 	AFSMC	-	-	US Space Force Military Satellite Communications Wing, SMC, LAAFB
 MDA	SDIO	US	O/LA/LV/PL/LS/S	D	2002	-	MDA	Missile Defense Agency	Washington,DC:Pentagon	    -77.0600 	   38.8700 	0.0200 	DOD	-	-	Missile Defense Agency
 MDAC	DACHB	US	O/LA/LV/PL/E/S	B	1967	1996 Dec	MDAC-HB	McDonnell Douglas Astronautics Co.	Huntington Beach, California	   -118.0000 	   33.6900 	0.0200 	MDC	-	McDonnell Douglas Astronautics/HB	McDonnell Douglas Astronautics Co.
@@ -2263,6 +2271,7 @@ MTF	MTF	US	-	C	1962 Nov	1988	NASA MTF	NASA Mississippi Test Facility	Pearl River
 MTHK	THK	US	-	B	1982	1989 Jul  1	MTI	Morton Thiokol Inc.	Chicago, Illinois	    -87.6800 	   41.8400 	0.0200 	-	-	-	Morton Thiokol Inc.
 MTU	MTU	US	O/PL	A	-	-	MTU AE	Michigan Technological University Aerospace Enterprise	Houghton, Michigan	    -88.5500 	   47.1200 	0.0200 	-	-	-	Michigan Tech Aerospace Enterprise
 MTUSI	MTUSI	RU	O	A	1918	-	MTUSI	Moskovskiy teknichesky universitet cvyazi i informatiki	Mosvka	     37.7000 	   55.7500 	0.0200 	-	-	Moscow Tech. Univ. of Communications and Informatics	Московский технический университет связи и информатики
+MUI	MUI	HU	O	C	1992 Jan	-	MUI	Magyar Urkutatasi Iroda	Budapest	     19.0500 	   47.4900 	0.0200 	-	HSO	Hungarian Space Research Office	Magyar Űrkutatási Iroda
 MUKD	MUKD	J	O/PL	A	1876	-	Muroran kodai	Muroran Kogyo Daigaku	Muroran, Hokkaido	    141.0300 	   42.3800 	0.0200 	-	-	Muroran Institute of Tech	室蘭工業大学
 MUMEI	MUMEU	CN	O	B	-	-	Mumei Xingkong	Beijing Mumei Xingkong Keji YG	Beijing	    116.3000 	   39.9600 	0.0200 	-	-	Mumei Star Technology	北京沐美星空科技有限公司
 MUNF	MUNF	CA	O	A	1925	-	MU Newfoundland	Memorial University of Newfoundland	St John's, Newfoundland	    -52.7300 	   47.5700 	0.0200 	-	-	-	Memorial University of Newfoundland
@@ -3153,6 +3162,7 @@ SPCOK	SPCOK	US	O/PL	B	-	-	SPACEOK	Shanghai OK wei hangtian keji YG	Shanghai:Jiad
 SPCOM	SPCOM	US	-	B	1976	1993?	Spacecom	Contel Space Communications Co. (Spacecom)	Gaithersburg, Maryland	    -77.2300 	   39.1300 	0.0200 	CONTF	-	-	Contel Space Communications Co. (Spacecom)
 SPCUB	SPCUB	J	O/PL	B	2020?	-	SpaceCubics	SpaceCubics KK	Sapporo, Hokkaido	    141.3500 	   43.0700 	0.0200 	-	-	-	SpaceCubics KK
 SPDEV	SPDEV	US	PL/E	B	1997	2008	SpaceDev	SpaceDev	San Diego:Poway, California	   -117.0400 	   32.9700 	0.0200 	-	-	-	SpaceDev
+SPEQ	SPEQ	SG	O/PL	B	2017	-	SpeQtral	SpeQtral	Singapore	    103.8000 	    1.3000 	0.0200 	-	-	-	SpeQtral
 SPER	SPER	US	PL	B	1960	1986	SUCO	Sperry Utah Co.	Salt Lake City, Utah	   -111.8800 	   40.7500 	0.0200 	-	-	-	Sperry Utah Co.
 SPETZ	OKB9	SU	-	D	1970?	-	Spetztekhnika	AO Spetztekhnika	Sverdlovsk (Ekaterinburg)	     60.5800 	   56.8300 	0.0200 	-	-	-	АО спецтехника
 SPFL	SPFL	US	LA/LV/LS/S	C	1989	2000	SPFLA	Spaceport Florida Authority	Cape Canaveral, Florida	    -80.6000 	   28.3900 	0.0200 	-	-	-	Spaceport Florida Authority
@@ -3381,6 +3391,7 @@ TOSH	TOSH	J	PL	B	1966	-	Toshiba	Toshiba Komukai Works, Space Div	Kawasaki City, 
 TOSHKE	TOSHKE	J	-	B	1966	2001	Toshiba	Toshiba Keihin Works, Space Div	Kawasaki City, Kanagawa	    139.7000 	   35.5200 	0.0200 	-	-	Toshiba Keihin Works	東芝 京浜工場
 TOYA	TOYA	J	S	A	1990	-	Toyama	Toyama kenritsu daigaku	Imizu, Toyama	    137.1000 	   36.7100 	0.0200 	-	-	Toyama Prefectural University	富山県立大学
 TOYON	TOYON	US	S	B	1980	-	Toyon Res.Corp.	Toyon Research Corporation	Goleta, California	   -119.8400 	   34.4300 	0.0200 	-	-	-	Toyon Research Corporation
+TPA	APSS	NZ	O/PL	A	2019	-	TPA Auckland	Te Punaha Atea Space Institute, University of Auckland	Auckland, New Zealand	    174.7700 	   36.8500 	0.0200 	-	-	-	Te Pūnaha Ātea - Auckland Space Institute
 TPIX	TPIX	KR	O	B	2019	-	TelePIX	TelePIX Co. Ltd.	Seoul	    126.9700 	   37.5700 	0.0200 	-	-	-	TelePIX Co. Ltd.
 TPS	TPS	US	O/PL/S	A	1980	-	PlanSoc	The Planetary Society	LA:Pasadena, California	   -118.1300 	   34.1600 	0.0200 	-	-	-	The Planetary Society
 TPU	TPU	RU	O/PL	A	1896	-	Tomsk Polytech.	Tomskiy Politekhnicheskiy Universitet	Tomsk	     84.9700 	   56.5000 	0.0200 	-	-	Tomsk Polytechnic Unviersity	Томский политехнический университет
@@ -3539,6 +3550,7 @@ UNCW	UNCW	US	O	A	1947	-	UNC Wilmington	University of North Carolina, Wilmington	
 UND	UND	US	O	A	1883	-	UND	University of North Dakota	Grand Forks, North Dakota	    -97.0700 	   47.9200 	0.0200 	-	-	-	University of North Dakota
 UNF2	UNF2	I	O	A	1224	-	U Napoli Fed.II	Universita delgi Studi di Napoli Federico II	Napoli	     14.2600 	   40.8500 	0.0200 	-	-	University of Naples Federico II	Università degli Studi di Napoli Federico II
 UNH	UNH	US	O/PL/S	A	1866	-	UNH	University of New Hampshire	Durham, New Hampshire	    -70.9300 	   43.1400 	0.0200 	-	-	-	University of New Hampshire
+UNHAN	UNHAN	ID	O	A	2009	-	UNHAN	Universitas Pertahanan	Sentul Bogor, Java	    106.8500 	   -6.5200 	0.0200 	-	-	Indonesian Defense University	Universitas Pertahanan
 UNIPE	UNIPE	PE	O/PL	A	1876	-	UNI Peru	Universidad Nacional de Ingenieria	Lima:Rimac	    -77.0500 	  -12.0200 	0.0200 	-	-	National University of Engineering	Universidad Nacional de Ingenieria
 UNIS	UNIS	J	O/PL	A	2008?	-	UNISEC	University Space Engineering Consortium	Tokyo:Yayoi	    139.7600 	   35.7200 	0.0200 	-	-	-	University Space Engineering Consortium
 UNISTW	UNISTW	TW	O/PL	A	2020?	-	UNISEC Taiwan	University Space Engineering Consortium - Taiwan	Tainan City	    120.2200 	   23.0000 	0.0200 	NCKU	-	-	Unisec Taiwan
@@ -3552,6 +3564,7 @@ UNKJ	UNKJ	J	O	B	-	-	Unknown (J)	Unknown (probably Japanese) cubesat operator	Tok
 UNKUS	UNKUS	US	PL	B	-	-	Unknown (US)	Unknown US manufacturer (classified satellite)	-	    -77.0200 	   38.9000 	0.0200 	-	-	-	Unknown US manufacturer (classified satellite)
 UNKUS1	UNKUS1	US	PL	B	2017	-	Unknown 1	Unknown US commercial operator	-	    -77.0200 	   38.9000 	0.0200 	-	-	-	Unknown US commercial operator
 UNL	UNL	US	O	A	1869	-	U Nebraska	University of Nebraska-Lincoln	Lincoln, Nebraska	    -96.7000 	   40.8200 	0.0200 	-	-	-	University of Nebraska-Lincoln
+UNLP	UNLP	AR	O	A	1897	-	UNLP	Universdad Nacional de La Plata	La Plata, Buenos Aires Province	    -57.9500 	  -34.9100 	0.0200 	-	-	-	Universidad Nacional de La Plata
 UNLV	UNLV	US	O	A	-	-	UNLV	University of Nevada Las Vegas	Las Vegas, Nevada	   -115.1500 	   36.1800 	0.0200 	-	-	-	University of Nevada Las Vegas
 UNMC	UNMC	US	O/PL	A	-	-	UNM COSMIAC	COSMIAC, University of New Mexico-Albequerque	Albequerque, New Mexico	   -106.6200 	   35.0800 	0.0200 	-	-	-	COSMIAC, University of New Mexico-Albequerque
 UNOPAR	UNOPAR	BR	O/PL	A	1972	-	UNOPAR	Universidade Norte do Parana	Londrina	    -51.1500 	  -23.3000 	0.0200 	-	-	University of North Parana	Universidade Norte do Paraná
@@ -3793,6 +3806,7 @@ XIYW	TIANMU	CN	O/PL	B	2020?	2023	Xiyong Weidian	Xiyong Weidian Yuan, CASIC	Xiyon
 XJRY	XJRY	CN	O/LA/LV/E	B	2016 Oct	-	Xingye Rongyao	Beijing xingji rongyao kongjian keji youxian gongsi	Beijing	    116.3800 	   39.9200 	0.0200 	-	iSpace	Beijing Interstellar Glory Space Tech. Co. Ltd.	北京星际荣耀空间科技有限公司
 XMR	XMR	US	O	B	1988	2008 Jul	XM Radio	XM Satellite Radio Holdings (XM)	Washington, DC	    -77.0200 	   38.9000 	0.0200 	-	-	-	XM Satellite Radio Holdings (XM)
 XMRS	XMR	US	-	B	2008 Jul	-	XM Radio	XM Satellite Radio Holdings (Sirius XM)	Washington, DC	    -77.0200 	   38.9000 	0.0200 	SIRX	-	-	XM Satellite Radio Holdings (Sirius XM)
+XONA	XONA	US	O	B	2019	-	Xona	Xona Space Systems	San Francisco:Burlingame, California	   -122.3500 	   37.5900 	0.0200 	-	-	Xona Space Systems	Xona Space Systems
 XPL	XPL	CA	-	B	-	-	Xplore Inc.	Xplore Inc	Woodstock, New Brunswich	    -67.6000 	   46.1500 	0.0200 	-	-	Xplore, Inc.	Xplore Inc
 XTAR	XTAR	US	O	B	2001	-	XTAR	XTAR LLC  (Hisdesat/Loral)	Rockville, Maryland	    -77.1500 	   39.0800 	0.0200 	HISD/LOR	-	-	XTAR LLC  (Hisdesat/Loral)
 XUNM	XUNM	CN	O	B	-	-	Xunming	Fujian sheng Xunming Laojia Keji YG	Fujian	    119.3000 	   26.0700 	0.1000 	-	-	Fujian Xunming Home Technology Co., Ltd.	福建省寻茗老家科技有限公司

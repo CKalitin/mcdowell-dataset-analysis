@@ -72,6 +72,13 @@ def com_gov_mil_per_year():
 
     dataset.satcat.df['Launch_Year'] = dataset.satcat.df['Launch_Date'].dt.year
 
+    # If sat owner is DRDC/UTIAS, it is a military payload
+    # Manual set
+    dataset.satcat.df.loc[
+        dataset.satcat.df['Owner'].str.contains("DRDC|UTIAS", case=False, na=False),
+        'Payload_Category_Name'
+    ] = "Military"
+
     os.makedirs(f'examples/outputs/raw_dataframes/payloads', exist_ok=True)
     dataset.satcat.df.to_csv(f'examples/outputs/raw_dataframes/payloads/{output_name}.csv', index=False)
     print(f"Dataframe 'raw_dataframe_{output_name}.csv' has been created.")
