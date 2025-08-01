@@ -108,7 +108,7 @@ def generate_launch_vehicle_scatter_plots(launch_vehicle_simplified_name, chart_
     """
     
     mass_suffix = "t" if mass_step_size_kg == 1000 else "kg"
-    mass_divisor = 1000 if mass_step_size_kg == 1000 else 1
+    mass_multiplier = 0.001 if mass_step_size_kg == 1000 else 1
     
     launch_apogee_vs_inclination_by_filter_scatter(
         chart_title_prefix=chart_title_prefix,
@@ -157,7 +157,7 @@ def generate_launch_vehicle_scatter_plots(launch_vehicle_simplified_name, chart_
         value_title='Payload Mass',
         series_title='Orbit',
         color_map=mda.ChartUtils.orbit_color_map,
-        y_scaling_factor=1
+        y_scaling_factor=mass_multiplier
     )
 
 def generate_launch_vehicle_family_charts(launch_vehicle_simplified_name, chart_title_prefix, output_prefix, mass_step_size_kg=1000, year_x_tick_step_size=1, color_map=mda.ChartUtils.color_sequence_2_8):

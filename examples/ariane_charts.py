@@ -16,4 +16,5 @@ scg.generate_launch_vehicle_family_charts(
     launch_vehicle_simplified_name=launch_vehicle_simplified_name,
     chart_title_prefix=chart_title_prefix,
     output_prefix=output_prefix,
+    year_x_tick_step_size=5,
 )
