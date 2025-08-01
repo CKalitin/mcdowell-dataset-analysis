@@ -57,10 +57,8 @@ These are automatically installed when you use `pip`.
 
 ## Updating Datasets
 
-The datasets currently have data up until June 8 2025.
+The datasets currently have data up until July 30 2025.
 
 To update the datasets, you can use the `update_datasets.py` script. This script fetches the latest data from Jonathan McDowell's website and updates the local TSV files.
 
 If the script fails, manually download the datasets as instructed in How-To-Update-Datasets.md.
-
-Use this sparingly, we don't want to DDOS Jonathan McDowell!
