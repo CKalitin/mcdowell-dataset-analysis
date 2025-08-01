@@ -62,7 +62,6 @@ class ChartUtils:
         "#e6f598",
         "#abdda4",
         "#66c2a5",
-        "#66c2a5",
         "#5e4fa2",
     ]
     

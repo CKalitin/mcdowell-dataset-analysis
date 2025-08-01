@@ -86,6 +86,8 @@ Falcon 9 Monthly Launch Cadence & F9 Type breakdown - 17 in a Month!!
 Flight rate of other historic launch vehicles:
 https://substack.com/home/post/p-164367791
 
+Annual Mass To Orbit by Launch Vehicle (Average mass per launch vs total mass)
+https://x.com/luke_leisher_/status/1936646242479522086
+
 Cumulative vehicle launches vs year and year of first launch.
 https://x.com/truthful_ast/status/1940474375448547472?s=46
-
