@@ -3,8 +3,6 @@ https://ckalitin.github.io/space/2025/06/08/space-industry-charts.html
 
 ## TODO
 
-- It lists CAPSTONE as a commercial payload (Great example of high leverage, write this down somewhere, who else would notice this instantly?)
-
 1. Standardize launch vehicle charts into one script (two for single vehicle and vehicle family)
 2. Line charts (eg. launches per country or pad)
 3. Pie charts
@@ -16,6 +14,11 @@ https://ckalitin.github.io/space/2025/06/08/space-industry-charts.html
 5. F9 Booster Launches Line Chart
 6. ULA charts (really haven't launched more than once a month for a decade?)
 7. Error message for nothing in dataframe after filters
+
+Types of charts:
+- Launch Provider charts
+- Country payload & launches charts
+- Launches by launch pad (for all existing types of charts)
 
 ## Block Diagram
 
