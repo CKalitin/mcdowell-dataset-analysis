@@ -3,6 +3,27 @@ import os
 from datetime import datetime
 
 def generate_launch_vehicle_charts(launch_vehicle_simplified_name, chart_title_prefix, output_prefix, mass_step_size_kg=1000, year_x_tick_step_size=1, month_x_tick_step_size=1):
+    """Generate a series of charts for a specific launch vehicle.
+
+    Charts:
+        - Launches vs Mass by Orbit
+        - Total Mass vs Mass by Orbit
+        - Launches vs Mass by General Launch Payload Type
+        - Total Mass vs Mass by General Launch Payload Type
+        - Launches vs Month by General Launch Payload Type
+        - Launches vs Month by Orbit
+        - Launches vs Year by General Launch Payload Type
+        - Launches vs Year by Orbit
+
+    Args:
+        launch_vehicle_simplified_name (str): The simplified name of the launch vehicle.
+        chart_title_prefix (str): The prefix for the chart titles.
+        output_prefix (str): The prefix for the output file names.
+        mass_step_size_kg (int, optional): The step size for mass ranges in kg. Defaults to 1000.
+        year_x_tick_step_size (int, optional): The step size for year ticks on the x-axis. Defaults to 1.
+        month_x_tick_step_size (int, optional): The step size for month ticks on the x-axis. Defaults to 1.
+    """
+    
     mass_suffix = "t" if mass_step_size_kg == 1000 else "kg"
     mass_divisor = 1000 if mass_step_size_kg == 1000 else 1
 
@@ -71,6 +92,21 @@ def generate_launch_vehicle_charts(launch_vehicle_simplified_name, chart_title_p
     )
 
 def generate_launch_vehicle_scatter_plots(launch_vehicle_simplified_name, chart_title_prefix, output_prefix, mass_step_size_kg=1000):
+    """Generate scatter plots for a specific launch vehicle.
+    
+    Charts:
+        - Launch Apogee vs Inclination by Orbit
+        - Launch Apogee vs Date by Apogee and Orbit
+        - Launch Inclination vs Date by Inclination and Orbit
+        - Launch Payload Mass vs Date by Payload Mass and Orbit
+
+    Args:
+        launch_vehicle_simplified_name (str): The simplified name of the launch vehicle.
+        chart_title_prefix (str): The prefix for the chart titles.
+        output_prefix (str): The prefix for the output file names.
+        mass_step_size_kg (int, optional): The step size for mass ranges in kg. Defaults to 1000.
+    """
+    
     mass_suffix = "t" if mass_step_size_kg == 1000 else "kg"
     mass_divisor = 1000 if mass_step_size_kg == 1000 else 1
     
@@ -125,6 +161,19 @@ def generate_launch_vehicle_scatter_plots(launch_vehicle_simplified_name, chart_
     )
 
 def generate_launch_vehicle_family_charts(launch_vehicle_simplified_name, chart_title_prefix, output_prefix, mass_step_size_kg=1000, year_x_tick_step_size=1, color_map=mda.ChartUtils.color_sequence_2_8):
+    """Generate charts for a specific launch vehicle family.
+
+    This is used on top of generate_launch_vehicle_charts if you want a charts that break down launches by vehicle, ie. for the multiple vehicles in a family (eg. Ariane 1 to 5).
+
+    Args:
+        launch_vehicle_simplified_name (str): The simplified name of the launch vehicle.
+        chart_title_prefix (str): The prefix for the chart titles.
+        output_prefix (str): The prefix for the output file names.
+        mass_step_size_kg (int, optional): _description_. Defaults to 1000.
+        year_x_tick_step_size (int, optional): _description_. Defaults to 1.
+        color_map (_type_, optional): _description_. Defaults to mda.ChartUtils.color_sequence_2_8.
+    """
+    
     mass_suffix = "t" if mass_step_size_kg == 1000 else "kg"
     mass_divisor = 1000 if mass_step_size_kg == 1000 else 1
     
@@ -1280,7 +1329,7 @@ def payloads_vs_mass_by_filter(chart_title_prefix, output_prefix, chart_title_su
 
     mda.ChartUtils.plot_bar(
         output_df,
-        title=f'{chart_title_prefix} Launches vs. Payload Mass by {chart_title_suffix}',
+        title=f'{chart_title_prefix} Payloads vs. Payload Mass by {chart_title_suffix}',
         subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
         x_label=f'Payload Mass Range ({mass_suffix})',
         y_label='Number of Launches',

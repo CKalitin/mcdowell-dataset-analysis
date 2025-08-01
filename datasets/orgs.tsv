@@ -1,5 +1,5 @@
 #Code	UCode	StateCode	Type	Class	TStart	TStop	ShortName	Name	Location	Longitude	Latitude	Error	Parent	ShortEName	EName	UName
-# Updated 2025 Jul  7 2226:44
+# Updated 2025 Jul 30 2328:50
 EARTH	EARTH	EARTH	AP	C	-	-	Earth	Earth	Earth	-	-	0.0200 	-	Earth (Terra)	Earth	Earth
 LUNA	LUNA	LUNA	AP	C	-	-	Luna	Luna	Luna	-	-	0.0200 	-	Moon	Moon	Luna
 SSYS	SSYS	SSYS	AP	C	-	-	Solar System	Solar System natural celestial objects	Sol	-	-	0.0200 	-	Solar System	Solar System natural celestial objects	Solar System
@@ -139,6 +139,7 @@ KI	KI	KI	CY	C	1979	-	Kiribati	Kiribati	South Tarawa, Tarawa Atoll	    173.0000 	
 KG	KG	KG	CY	C	1991 Aug	-	Kyrgyzstan	Kyrgyz Respublikasy	Bishek	     74.6100 	   42.8700 	0.0200 	-	Kyrgyzstan	Kyrgyz Republic	Кыргыз Республикасы
 KGSR	KG	KG	CY	C	1936	1991 Aug	Kyrgyz SSR	Kyrgyz Sovettik Sotsialisttik Respublikasy	Frunze	     74.6100 	   42.8700 	0.0200 	-	Kyrgyz SSR	Kirghiz Soviet Socialist Republic	Кыргыз Советтик Социалисттик Республикасы
 KH	KH	KH	CY	C	1993	-	Kampuchea	Preah Reacheanachak Kampuchea	Phnom Penh	    104.9200 	   11.5500 	0.0200 	-	Cambodia	Kingdom of Cambodia	ព្រះរាជាណាចក្រកម្ពុជា
+KN	KN	KN	CY	C	1967 Feb	-	Saint Kitts	Federation of Saint Kitts and Nevis	Basseterre	    -62.7300 	   17.3000 	0.0200 	-	Kitts and Nevis	St Kitts and Nevis, Federation of	St Kitts and Nevis, Federation of
 KORS	KORS	KORS	CYP	C	2010 Oct	-	Korsou	Korsou (Curacao), Nederlandse autonomous country	Willemstad	    -68.9300 	   12.1200 	0.0200 	NL	Neth. Antilles	Netherlands Antilles	Land Curaçao
 KORSA	KORS	KORS	CYP	C	1954	2010 Oct	Curacao	Curacao, terr. in Nderlandse Antillen	Willemstad	    -68.9300 	   12.1200 	0.0200 	ANTN	Neth. Antilles	Netherlands Antilles	Curaçao, Nederlandse Antillen
 KP	KP	KP	CY	C	1948 Sep  9	-	Choson	Choson Minjujuui Inmin Konghwaguk	Pyongyang	    125.7400 	   39.0200 	0.0200 	-	North Korea	Korea (Choson), Democratic People's Republic of	조선민주주의인민공화국
@@ -1193,6 +1194,7 @@ ECHOM	ECHOM	IE	O	B	2015 Mar	-	Echostar Mobile	Echostar Mobile	Dublin	     -6.270
 ECLIP	ECLIP	US	PL	B	2001	-	Ecliptic	Ecliptic Enterprises	Pasadena, California	   -118.1300 	   34.1600 	0.0200 	-	-	-	Ecliptic Enterprises
 ECMLS	EXOL	D	PL	B	2009	2019 Jan	ECM Launch	ECM Launch Services	Berlin	     13.5500 	   52.4400 	0.0200 	-	-	-	ECM Launch Services
 ECOM	SRDL	US	-	D	1962 Aug	1978	USA ECOM	US Army Electronics Command	Ft Monmouth, NJ	    -74.0500 	   40.3100 	0.0200 	USA	-	-	US Army Electronics Command
+EDA	EDA	CA	O	B	2020	-	EarthDaily	EarthDaily Analytics	Vancouver, British Columbia	   -123.1000 	   49.2500 	0.0200 	-	-	-	EarthDaily Analytics
 EDISF	EDISF	P	O	B	2015?	-	Edisoft	Thales Edisoft Portugal S.A.	Lisboa:Paco de Arcos	     -9.2900 	   38.7000 	0.0200 	THALES	-	-	Thales Edisoft Portugal S.A.
 EDLS	EDLS	US	PL	B	1953	-	EDL-Sylvania	Electronics Defense Laboratory-Sylvania	San Jose:Mountain View, California	   -122.0800 	   37.3900 	0.0200 	-	-	-	Electronics Defense Laboratory-Sylvania
 EELEC	EELEC	UK	LV	B	1953	1960	English Elec	English Electric Co., Stevenage	Stevenage	     -0.2000 	   51.9000 	0.0200 	-	-	-	English Electric Co., Stevenage
@@ -1799,6 +1801,7 @@ JENA	JENA	D	PL	B	1991	2010	Jena	DASA Jena Optronic GmbH (DJO)	Jena, Thuringia	  
 JENAA	JENA	D	PL	B	2010	-	Jena (Astrium)	DASA Jena Optronic GmbH (DJO)/ Astrium	Jena, Thuringia	     11.5900 	   50.9300 	0.0200 	ASTD	-	-	DASA Jena Optronic GmbH (DJO)/ Astrium
 JENAU	JENAU	D	PL	A	1558	-	Uni Jena	Friedrich-Schiller-Universitat Jena	Jena, Thuringia	     11.5900 	   50.9300 	0.0200 	-	FSU Jena	Freidrich Schiller University Jena	Friedrich-Schiller-Universität Jena
 JGB7	MAI	CN	O/LA	C	1964 Nov 23	1982 Apr	7 Jixie Gon.bu	Qi Jixie gongye bu	Beijing	    116.3800 	   39.9200 	0.0200 	CN	7th Machine Bld.	Seventh Ministry of Machine Building	七机械工业部
+JHB	ZZB	CN	LA	D	2024 Apr	-	PLA MSF	ZRJ Junshi Hangtian Budui	Beijing	    116.3800 	   39.9200 	0.0200 	PLA	PLA ASF	Military Aerospace Force	军事航天部队
 JHQJ	JHQJ	CN	O	C	2021 Sep	-	Jianghui Center	Jianghui qianyan jishu xietong chuangxin zhongxin	Hefei, Anhui	    117.2300 	   31.8200 	0.0200 	-	-	Jianghuai Frontier Technology Collaborative Innovation Ctr	江淮前沿技术协同创新中心
 JHU	JHU	US	PL/S	A	1876	-	JHU	Johns Hopkins Univ.	Baltimore, Maryland	    -76.6200 	   39.3300 	0.0200 	-	-	-	Johns Hopkins Univ.
 JIG	JIG	CN	O/PL	B	1958	-	Jigang Jituan	Jigang Jituan YG	Jinan, Shandong	    117.0500 	   36.6800 	0.0200 	-	-	Jigang Group	济钢集团有限公司
@@ -1825,6 +1828,7 @@ JSCAO	JSCAO	US	O	C	1959	-	NASA AO	NASA Astronaut Office	Houston:Clear Lake, Texa
 JSDO	NASDA	J	LA	C	1963 Apr  1	1964 Jun	Space Dev Office	Space Development Office, STA	Tokyo, Nippon	    139.6800 	   35.6800 	0.0200 	STA	-	-	宇宙開発室
 JSS	USEF	J	PL	B	2012 Mar	-	J-spacesystems	Ippan zaidan hojin uchu Shisutemu kaihatsu riyo suishin kiko.	Tokyo:Minato	    139.7500 	   35.6600 	0.0200 	-	-	Japan Space Systems	日本サテライトシステムズ
 JTF7	JTF7	US	LA	D	1962	1963	USN JTF-7	Joint Task Force 7 HQ	Arlington, Virginia	    -77.0800 	   38.8800 	0.0200 	USN	-	-	Joint Task Force 7 HQ
+JTSPACE	JTSPACE	J	LV	B	2024	-	jtSPACE	ti Space Japan (jtSPACE)	Tokyo	    139.7200 	   35.7600 	0.0200 	TISPACE	-	-	jtSPACE Inc.
 JTXZ	JTXZ	CN	O/PL	B	2021 Jun	-	Jitian Xingzhou	Suzhou Jitian Xingzhou Kongjian Jishu YG	Suzhou	    120.6200 	   31.3000 	0.0200 	-	-	Jitian Xingzhou Space Tech. Co. Ltd.	苏州吉天星舟空间技术有限公司
 JUNK	JUNK	D	PL	B	1958	1969	Junkers	Junkers Flugzeug- und Motorenwerke GmBH	Munchen	     11.5700 	   48.1300 	0.0200 	-	-	-	Junkers Flugzeug- und Motorenwerke GmBH
 JUNO	JUNO	UK	O	B	1988	1992	Project Juno	Project Juno	London	     -0.0900 	   51.5200 	0.0200 	MNB	-	-	Project Juno
@@ -2156,10 +2160,12 @@ MGON	MGON	SU	O	C	1953	1991 Dec	MGON	Ministerstvo Geologii i Okhrany Nedr	Moskva	
 MGONRU	MGON	RU	O	C	1991 Dec	1996 Aug 14	MGON Russia	Ministerstvo Geologii RF	Moskva	     37.6200 	   55.7500 	0.0200 	-	MGON	Ministry of Geology and Conservation, Russia	Министерство геологии и охраны недр
 MGU	MGU	RU	O/PL	A	1755	-	MGU	Moskovskiy Gosudarstvenniy Universitet im. M.V. Lomonosova	Moskva	     37.6200 	   55.7500 	0.0200 	-	-	Moscow State University	Московский государственный университет имени М. В. Ломоносова
 MGUS	MGUS	RU	O	B	2024?	-	MGU-Standart	OOO MGU-Standart	Mosvka	     37.6200 	   55.7500 	0.0200 	-	-	MGU-Standard Company	МГУ-СТАНДАРТ
+MHB	MHB	IL	O	D	1948	-	MHB	Misrad HaBitahon	Tel Aviv	     34.7900 	   32.0800 	0.0200 	-	-	Israeli Ministry of Defense	משרד הביטחון
 MHI	MHI	J	LA/LV/PL/E	B	1964	-	MHI	Mitsubishi Jukogyo Kabushiki-kaisha	Tokyo:Minato	    139.7500 	   35.6600 	0.0200 	-	-	Mitsubishi Heavy Industries (Launch Services)	三菱重工業株式会社
 MHIKO	MHIKO	J	-	B	-	-	MHI Komaki	MHI Aerospace Systems, Komaki Minami Plant	Nagoya:Komaki (Nagoya Airport)	    136.9200 	   35.2600 	0.0200 	-	-	MHI Aerospace Systems, Komaki Minami Plant	三菱重工業 小牧南工場
 MHIME	MHIME	J	E	B	-	-	MHI Meiyu	MHI Guidance and Propulsion Works (MHI Meiyu)	Nagoya:Komaki	    136.9200 	   35.2600 	0.0200 	-	-	MHI Guidance and Propulsion (Meiyo)	名古屋誘導推進システム製作所
 MHITO	MHITO	J	O/LA/LV/PL	B	-	-	MHI Tobishima	MHI Aerospace Systems, Tobishima Plant	Nagoya:Tobishima	    136.7900 	   35.0800 	0.0200 	-	-	MHI Aerospace Systems, Tobishima Plant	三菱重工業名古屋航空宇宙システム製作所   飛島工場
+MIAO	MIAO	CN	O/PL	B	2021	-	Miaoyue	Zhejiang Miaoyue Hangtian Yingyong Jishu YG	Taizhou, Zhejiang	    121.5300 	   28.6400 	0.0400 	-	-	Zhejiang Miaoyue Aerospace Application Technology Co., Ltd.	浙江妙月航天应用技术有限公司
 MICOM	ABMA	US	O/LA/PL	D	1963 May	1997 Oct	USAMICOM	US Army Missile Command	Huntsville, Alabama	    -86.6500 	   34.6800 	0.0200 	USA	-	-	US Army Missile Command
 MICORB	MICORB	J	O/PL	B	2021 May	-	Micro Orbiter	Kabushikigaisha Maikuroobita	Tokyo:Chiyoda	    139.7600 	   35.6800 	0.0200 	-	-	Micro Orbiter Inc.	株式会社マイクロオービター
 MICRC	MICRC	US	PL	B	1958	1999	MicroCraft	MicroCraft Inc.(Allied Aerospace)	Tullahoma, Tennessee	    -86.2100 	   35.3700 	0.0200 	-	-	-	MicroCraft Inc.(Allied Aerospace)
@@ -2687,7 +2693,8 @@ PHIL	PHIL	NL	-	B	1891	-	Phillips	Phillips	Eindhoven	      5.4800 	   51.4300 	0.
 PHILR	PHILR	US	E	B	1952 Aug  1	1958	Philips Rocket	Phillips Petroleum, Rocket Fuels Division, Air Force Plant 66	McGregor, Texas	    -97.4200 	   31.4300 	0.0200 	-	-	-	Phillips Petroleum, Rocket Fuels Division, Air Force Plant 66
 PHLO	FORNB	US	PL	B	1962	1966	Philco	Philco	Newport Beach, California	   -117.9000 	   33.6200 	0.0200 	-	-	-	Philco
 PHLP	FORDA	US	PL	B	1957	1966	Philco WDL	Philco WDL	Palo Alto, California	   -122.1400 	   37.4300 	0.0200 	PHLO	-	-	Philco WDL
-PICA	PICA	US	-	D	1880	-	Picatinny Arsenal	Picatinny Arsenal, USA ARSEC	Dover:Lake Denmark, New Jersey	    -74.5400 	   40.9600 	0.0200 	USA	-	-	Picatinny Arsenal, USA ARSEC
+PICA	PICA	US	O	D	1880	-	Picatinny Arsenal	Picatinny Arsenal, USA ARSEC	Dover:Lake Denmark, New Jersey	    -74.5400 	   40.9600 	0.0200 	USA	-	-	Picatinny Arsenal, USA ARSEC
+PICO	PICO	I	O	B	2014	-	Picosats	PICOSATS Srl.	Trieste	     13.7900 	   45.6600 	0.0200 	-	-	-	PICOSATS Srl.
 PIESAT	PIESAT	CN	O/PL	B	2008	-	Hangtian Hongtu	Hangtian Hongtu Xinxi Jishu Gufen YG	Beijing	    116.3800 	   39.9200 	0.0200 	-	PIESAT	PIESAT Information Technology Co. Ltd.	航天宏图信息技术股份有限公司
 PIHM	PIHM	PL	LA/LV/E/S	C	1945	1973	PIHM	Panstwowego Instytut Hydrologiczno-Meterologicznego	Warsawa	     21.0200 	   52.2300 	0.0200 	-	-	National Institute of Hydrology and Meteorology	Państwowy Instytut Hydrologiczno-Meteorologiczny
 PION	PION	BR	O	B	2019	-	Pion	Pion Labs	Sao Paulo	    -46.6300 	  -23.5500 	0.0200 	-	-	-	Pion Labs
@@ -2797,6 +2804,7 @@ RAKA	MOM	RU	O/LA	C	1999	2004	RAKA	Rosaviakosmos (Rossiskoe aviatsionno-kosmiches
 RAL	RAL	UK	O/PL/S	C	1979	-	RAL	Rutherford Appleton Laboratory	Chilton, Oxfordshire	     -1.2900 	   51.5700 	0.0200 	SERC	-	-	Rutherford Appleton Laboratory
 RAPTEK	RAPTEK	TW	PL	B	2015	-	Rapidtek	Rapidtek Technologies Inc	New Taipei City	    121.6400 	   25.0600 	0.0200 	-	-	-	Rapidtek Technologies Inc
 RAST	RAST	T	O	A	1963	-	RAST	Smakhm withyu smakhr len haeng prathesthiy	Bangkok	    100.5200 	   13.7500 	0.0200 	-	-	Radio Amateur Society of Thailand	สมาคมวิทยุสมัครเล่นแห่งประเทศไทย
+RATEKS	RATEKS	RU	O	B	2005	-	Rateks	AO Rateks	Moskva	     37.6200 	   55.7500 	0.0200 	-	-	-	АО "Ратэкс"
 RAYBL	BLCAN	US	PL	B	2021	-	Blue Canyon	Raytheon Intelligence and Space/Blue Canyon	Boulder, Colorado	   -105.2700 	   40.0100 	0.0200 	RAYTH	-	-	Blue Canyon Technologies
 RAYES	LTVE	US	PL	B	1995	-	Raytheon IIS	Raytheon IIS (Dallas)	Dallas:Garland, Texas	    -96.6400 	   32.9100 	0.0200 	RAYTH	-	-	Raytheon IIS (Dallas)
 RAYM	RAYM	US	PL	B	1957?	-	Raymond EL	Raymond Engineering Laboratories	Middletown, Connecticut	    -72.6500 	   41.5600 	0.0200 	-	-	-	Raymond Engineering Laboratories
@@ -3124,6 +3132,7 @@ SNECPS	SEPR	F	E	B	2002 Feb 28	2012 Apr	SNECMA PS	SNECMA Propulsion Solide	Bordea
 SNECV	SEP	F	PL/E	B	1997	-	SNECMA-Vernon	SNECMA Moteurs Spatiaux (Vernon)	Vernon, Eure	      1.4900 	   49.0900 	0.0200 	-	-	SNECMA Space Motors	SNECMA Moteurs Spatiaux (Vernon)
 SNECVR	SEPVR	F	E	B	1997	2006	SNECMA-Villaroche	SNECMA-Villaroche	Villaroche, Seine-et-Marne	      2.6700 	   48.6100 	0.0200 	-	-	SNECMA	SNECMA-Villaroche
 SNIU	KAI	RU	O/PL	A	2016 Apr	-	SNIU	Samarskiy Natsional'niy Issledovatel'skiy Univ. im. S.P Koroleva	Samara (Kubyshev)	     50.1400 	   53.2000 	0.0200 	-	-	Samara National Research University	Самарский национальный исследовательский университет имени академика С. П. Королёва
+SNOW	SNOW	NZ	O	B	-	-	Snowdon SCL	Snowdon Consulting Ltd.	Auckland, New Zealand	    174.7700 	   36.8500 	0.0200 	-	-	-	Snowdon Consulting Ltd
 SNPE	SDP	F	E	B	1971 Mar  8	2012 Apr	SNPE	Societe Nationale de Poudres et Explosifs (SNPE)	Saint-Medard-en-Jalles, Gironde	     -0.7200 	   44.9000 	0.0200 	-	-	-	Société nationale des poudres et des explosifs
 SNSB	SNSB	S	-	C	1972 Jul	-	SNSB	Rymdstyrelsen	Stockholm:Solna	     18.0000 	   59.3500 	0.0200 	-	-	Swedish National Space Board	Rymdstyrelsen
 SNVP	SPDEV	US	PL	B	2008	-	SNC SpaceDev	Sierra Nevada Corp. Space Systems (SpaceDev)	San Diego:Poway, California	   -117.0400 	   32.9700 	0.0200 	-	-	-	Sierra Nevada Corp. Space Systems (SpaceDev)
@@ -3344,6 +3353,7 @@ THALA	FIAT	I	PL	B	2007 Apr 10	-	Thales Alenia	Thales Alenia Space/Torino (TAS-I)
 THALP	CFTH	F	P	B	2000	-	Thales Paris	Thales Group	Paris:Neuilly	      2.2700 	   48.8900 	0.0200 	-	-	Thales Group	Thales Group
 THALR	SELEN	I	PL	B	2007 Apr 10	-	Thales Alenia	Thales Alenia Space/Roma	Roma	     12.4900 	   41.8900 	0.0200 	THALP	-	Thales Alenia Space	Thales Alenia Space/Roma
 THALES	SUD	F	PL	B	2007 Apr 10	-	Thales Alenia	Thales Alenia Space/Cannes (TAS-F)	Cannes	      7.0100 	   43.5500 	0.0200 	THALP	-	Thales Alenia Space	Thales Alenia Space/Cannes (TAS-F)
+THALUK	THALUK	UK	O	B	2014	-	Thales UK	Thales Alenia Space UK - Harwell	Harwell	     -1.3100 	   51.5800 	0.0200 	THALP	-	-	Thales Alenia Space UK - Harwell
 THINK	THINK	US	O/PL	B	2021	-	Think Orbital	Think Orbital	Boulder, Colorado	   -105.2700 	   40.0100 	0.0200 	-	-	-	Think Orbital
 THK	THK	US	LV/PL/E	B	1929	1982	Thiokol	Thiokol Chemical Co. (THKE or THKX)	Elkton, Maryland	    -75.8300 	   39.6100 	0.0200 	-	-	-	Thiokol Chemical Co.
 THKAIC	THK	US	PL	B	2000	2001	AIC Group	Alcoa Industrial Components/Thiokol	Salt Lake City, Utah	   -111.8800 	   40.7500 	0.0200 	-	-	-	Alcoa Industrial Components/Thiokol
@@ -3876,7 +3886,7 @@ ZRWC	ZRWC	CN	O	B	-	-	Zhongguancun R.	Zhongguancun ruichen weixing chuangxin ying
 ZSU	ZSU	UA	LA	D	1991	-	ZSU	Zbroini Syly Ukrainy	Kyiv	     30.5200 	   50.4500 	0.0200 	-	-	-	Збройні сили України
 ZVEZ	ZVEZ	SU	PL	B	1952	-	Zvezda	NPP Zvezda	Tomilino, Moskov. Oblast	     37.9500 	   55.6500 	0.0200 	MOM	Zvezda	Zvezda (Star)	ОАО «НПП «Звезда»
 ZWO	ZWO	NL	LS	C	1950	1988	ZWO	Organisatie voor Zuiver-Wetenschappelijk Onderzoek	's-Gravenhage	      4.3200 	   52.0800 	0.0200 	-	-	Organization for Pure Scientific Research	Organisatie voor Zuiver-Wetenschappelijk Onderzoek
-ZLZB	ZZB	CN	LA	D	2016 Jan  1	-	PLA SSF	ZRJ Zhanlue Zhichi Budui	Beijing	    116.3800 	   39.9200 	0.0200 	PLA	-	Strategic Support Troops	战略支持部队
+ZLZB	ZZB	CN	LA	D	2016 Jan  1	2024 Apr	PLA SSF	ZRJ Zhanlue Zhichi Budui	Beijing	    116.3800 	   39.9200 	0.0200 	PLA	-	Strategic Support Troops	战略支持部队
 ZTZM	ZTZM	BY	O	B	2009	-	ZTZM	Zavod Tochnoi Elektromekhaniki	Minsk	     27.5700 	   53.9000 	0.0200 	-	PEMF	Precision Electromechanics Factory	Завод точной электромеханики
 ZXHK	ZXKH	CN	O	B	-	-	Zhongke Xiguang	Xi'an zhongke xiguang hangtian keji YG	Xi'an	    108.9500 	   34.2700 	0.0200 	-	Xiopm Space	Zhongke Xiguang Aerospace Tech Co. Ltd.	西安中科西光航天科技有限公司
 ZXKJ	ZXKJ	CN	O	B	-	-	ZXKJ	Zhongxing kongjian yaogan (jiangsu) weixing jishu fuwu YG	Yizheng	    119.1900 	   32.2800 	0.0200 	-	-	China Sat space remote sensing (Jiangsu) SatTech Co Ltd	中星空间遥感（江苏）卫星技术服务有限公司

@@ -1,11 +1,11 @@
 #LV_Name	LV_Family	LV_Manufacturer	LV_Variant	LV_Alias	LV_Min_Stage	LV_Max_Stage	Length	LFlag	Diameter	DFlag	Launch_Mass	MFlag	LEO_Capacity	GTO_Capacity	TO_Thrust	Class	Apogee	Range
-# Updated 2025 Jul  7 2226:44
+# Updated 2025 Jul 30 2328:50
 ?	Unknown             	-	-	-	  1	1	  0.0 	 	 0.00 	 	     0.0 	 	       0 	       0 	       0 	R	     0 	-
 Unknown	Unknown             	-	-	-	  1	1	  0.0 	 	 0.00 	 	     0.0 	 	       0 	       0 	       0 	R	     0 	-
 N-1 11A52	N-1                 	OKB1	-	-	  1	3	105.3 	 	14.00 	 	  2788.0 	 	   70000 	       0 	   45300 	O	   200 	-
 Saturn V	SaturnV             	MSFC	-	-	  1	4	110.6 	 	10.06 	 	  2913.0 	 	  118000 	       0 	   34030 	O	400000 	-
 Saturn V	SaturnV             	MSFC	2	-	  1	3	104.8 	 	10.06 	 	  2822.0 	 	   75000 	       0 	   34030 	O	   500 	-
-Starship V1.0 Ship	Starship            	SPX	-	-	  1	1	 50.0 	 	 9.00 	 	  1470.0 	 	       0 	       0 	   12000 	R	    20 	-
+Starship V1.0 Ship	Starship            	SPX	-	-	  1	1	 50.0 	 	 9.00 	 	  1470.0 	 	       0 	       0 	   12000 	T	    20 	-
 Starship V1.0	Starship            	SPX	-	-	  1	2	121.3 	 	 9.00 	 	  5020.0 	 	  100000 	       0 	   72500 	O	   200 	-
 Starship V2	Starship            	SPX	R2	-	  1	2	121.4 	 	 9.00 	 	  5200.0 	?	  100000 	       0 	   80800 	O	   200 	-
 Starship V2	Starship            	SPX	-	-	  1	2	124.4 	 	 9.00 	 	  5200.0 	?	  100000 	       0 	   80800 	O	   200 	-
@@ -165,7 +165,7 @@ Falcon 9	Falcon9             	SPX	FT4	-	  1	2	 71.0 	 	 3.65 	 	   480.0 	 	   2
 Falcon 9	Falcon9             	SPX	FT3	-	  1	2	 71.0 	 	 3.65 	 	   480.0 	 	   22800 	    8300 	    5886 	O	   200 	-
 Falcon 9	Falcon9             	SPX	1.1	-	  1	2	 71.0 	 	 3.65 	 	   480.0 	 	   13150 	    4850 	    5886 	O	   200 	-
 Falcon 9	Falcon9             	SPX	FT3/4	-	  1	2	 71.0 	 	 3.65 	 	   480.0 	 	   13150 	    4850 	    5886 	O	   200 	-
-Grasshopper	Falcon9             	SPX	-	-	  1	1	 34.0 	 	 3.65 	 	   200.0 	?	       0 	       0 	     540 	X	     1 	-
+Grasshopper	Falcon9             	SPX	-	-	  1	1	 34.0 	 	 3.65 	 	   200.0 	?	       0 	       0 	     540 	T	     1 	-
 Falcon 9R	Falcon9             	SPX	1	-	  1	1	 49.0 	 	 3.65 	 	   480.0 	 	   13150 	    4850 	    5886 	O	    10 	-
 Nuri	KSLV2               	KARI	-	-	  1	3	 47.2 	 	 3.50 	 	   200.0 	 	       0 	       0 	    2942 	O	   500 	-
 Vega C	VegaC               	AVIO	-	-	  1	4	 35.0 	 	 3.40 	 	   210.0 	 	       0 	    3300 	-	O	   500 	-
@@ -518,7 +518,7 @@ Hwasong-16Na	Hwasong-18         	KPA	-	-	  1	2	 13.0 	?	 2.40 	 	    18.0 	?	   
 Cheonlima-1	Hwasong-15          	NADA	-	-	  1	3	 25.0 	 	 2.40 	?	   100.0 	?	      50 	       0 	    1000 	O	  2000 	-
 NK Kerolox LV	Hwasong-15          	NADA	-	-	  1	3	 25.0 	 	 2.40 	?	   100.0 	?	      50 	       0 	    1000 	O	  2000 	-
 Hwasong-15	Hwasong-15          	KPA	-	-	  1	2	 22.0 	?	 2.40 	?	    85.0 	?	       0 	       0 	-	M	  3000 	-
-Unha-1	Unha                	KPA	-	-	  1	2	 29.0 	 	 2.40 	 	    85.0 	?	       0 	       0 	    1000 	M	  1000 	  4000
+Unha-1	Unha                	KPA	-	-	  1	2	 29.0 	 	 2.40 	 	    85.0 	?	       0 	       0 	    1000 	X	  1000 	  4000
 Unha-2	Unha                	KPA	-	-	  1	3	 30.0 	 	 2.40 	 	    85.0 	?	      50 	       0 	    1000 	O	  2000 	-
 Unha-3	Unha                	KPA	-	-	  1	3	 30.0 	 	 2.40 	 	    85.0 	?	      50 	       0 	    1000 	O	  2000 	-
 Kwangmyongsong	Unha                	KPA	-	Unha-3	  1	3	 30.0 	 	 2.40 	 	    85.0 	?	      50 	       0 	    1000 	O	  2000 	-
@@ -570,10 +570,10 @@ JL-3	DF-31               	ARMT	-	-	  1	3	 11.0 	?	 2.20 	 	    20.0 	?	       0 
 Chang Zheng 11	DF-31               	CALT/SLREC	-	-	  1	4	 20.0 	 	 2.20 	 	    58.0 	 	     500 	       0 	    1177 	O	   200 	   200
 Chang Zheng 11	DF-31               	CALT/SLREC	H	-	  1	4	 20.0 	 	 2.20 	 	    58.0 	 	     500 	       0 	    1177 	O	   200 	   200
 KT-2	DF-31               	CASIC4A	-	-	  1	3	 20.0 	?	 2.20 	 	    30.0 	 	     250 	       0 	-	O	  1000 	  8000
-ADD TV1	ADD-SLV	ADD	d	-	  1	3	 16.2 	?	 2.20 	?	    20.0 	?	       0 	       0 	-	A	   200 	-
-ADD TV1	ADD-SLV	ADD	-	-	  1	3	 16.2 	?	 2.20 	?	    20.0 	?	       0 	       0 	-	A	   200 	-
+ADD TV1	ADD-SLV	ADD	d	-	  1	3	 16.2 	?	 2.20 	?	    20.0 	?	       0 	       0 	-	X	   200 	-
+ADD TV1	ADD-SLV	ADD	-	-	  1	3	 16.2 	?	 2.20 	?	    20.0 	?	       0 	       0 	-	X	   200 	-
 ADD TV2	ADD-SLV	ADD	-	-	  1	3	 20.6 	?	 2.20 	?	    20.0 	?	       0 	       0 	-	O	   500 	   500
-Hyunmoo-5	ADD-SLV	ADD	-	-	  1	2	 16.2 	?	 2.20 	?	    15.0 	?	       0 	       0 	-	O	   500 	-
+Hyunmoo-5	ADD-SLV	ADD	-	-	  1	2	 16.2 	?	 2.20 	?	    15.0 	?	       0 	       0 	-	M	   500 	-
 Trident D-5	Trident             	LMSC	-	-	  1	3	 13.6 	 	 2.11 	 	    58.5 	 	       0 	       0 	-	M	  1000 	 11000
 ISRO TV	ISRO-L40	VSSC	-	-	  1	1	 19.7 	 	 2.10 	 	    46.0 	 	       0 	       0 	     680 	T	    20 	-
 Little Joe 1	LJ1                 	NAA	4P	-	  0	1	 15.2 	 	 2.03 	 	    12.7 	 	       0 	       0 	     650 	T	    60 	-
@@ -582,9 +582,9 @@ Little Joe 1	LJ1                 	NAA	2C	-	  0	1	 15.2 	 	 2.03 	 	    12.7 	 	 
 Little Joe 1	LJ1                 	NAA	4C	-	  0	1	 15.2 	 	 2.03 	 	    12.7 	 	       0 	       0 	    1044 	X	    90 	-
 Cora	Coralie             	LRBA/NORD	-	-	  1	2	 11.0 	 	 2.01 	 	    16.0 	 	       0 	       0 	     268 	T	    55 	-
 Spectrum	Spectrum	ISAR	-	-	  1	2	 28.0 	 	 2.00 	 	   100.0 	?	    1000 	       0 	     675 	O	   500 	-
-PRS-1 5Ya26	PRS-1               	NOVTR	-	-	  1	1	 10.0 	 	 2.00 	?	    12.0 	 	       0 	       0 	-	B	    40 	    80
-PRS-1	PRS-1               	NOVTR	-	-	  1	1	 10.0 	 	 2.00 	?	    12.0 	 	       0 	       0 	-	B	    40 	    80
-PRS-1M	PRS-1               	NOVTR	-	-	  1	1	 10.0 	 	 2.00 	?	    12.0 	 	       0 	       0 	-	B	    40 	    80
+PRS-1 5Ya26	PRS-1               	NOVTR	-	-	  1	1	 10.0 	 	 2.00 	?	    12.0 	 	       0 	       0 	-	A	    40 	    80
+PRS-1	PRS-1               	NOVTR	-	-	  1	1	 10.0 	 	 2.00 	?	    12.0 	 	       0 	       0 	-	A	    40 	    80
+PRS-1M	PRS-1               	NOVTR	-	-	  1	1	 10.0 	 	 2.00 	?	    12.0 	 	       0 	       0 	-	A	    40 	    80
 Black Arrow	BlackArrow          	RAE	-	-	  1	3	 12.9 	 	 2.00 	 	    18.1 	 	      75 	       0 	     222 	O	  1600 	-
 Black Arrow	BlackArrow          	RAE	BA0	-	  1	3	 12.9 	 	 2.00 	 	    18.1 	 	       0 	       0 	     222 	X	   550 	-
 Eris Block 1	Eris	GILM	-	-	  1	3	 25.0 	 	 2.00 	 	    35.0 	 	     300 	       0 	     440 	O	   500 	   500
@@ -667,8 +667,8 @@ R-5	R-5                 	OKB1	-	-	  1	1	 20.7 	 	 1.65 	 	    24.4 	 	       0 	
 R-5A	R-5                 	OKB1	-	-	  1	1	 20.7 	 	 1.65 	 	    24.4 	 	       0 	       0 	     430 	M	   300 	-
 R-5B	R-5                 	OKB1	-	-	  1	1	 20.7 	 	 1.65 	 	    24.4 	?	       0 	       0 	     430 	M	   300 	-
 R-5M	R-5                 	OKB1	-	-	  1	1	 20.3 	 	 1.65 	 	    24.4 	?	       0 	       0 	     430 	M	   500 	-
-R-5V	R-5                 	OKB1	-	-	  1	1	 21.2 	 	 1.65 	 	    24.4 	?	       0 	       0 	     430 	M	   500 	-
-R-5 VAO	R-5                 	OKB1	-	-	  1	1	 21.2 	 	 1.65 	 	    24.4 	?	       0 	       0 	     430 	M	   500 	-
+R-5V	R-5                 	OKB1	-	-	  1	1	 21.2 	 	 1.65 	 	    24.4 	?	       0 	       0 	     430 	R	   500 	-
+R-5 VAO	R-5                 	OKB1	-	-	  1	1	 21.2 	 	 1.65 	 	    24.4 	?	       0 	       0 	     430 	R	   500 	-
 R-12	R-12                	OKB586	-	-	  1	1	 22.5 	 	 1.65 	 	    42.0 	 	       0 	       0 	     730 	M	   402 	-
 R-12U	R-12                	OKB586	-	-	  1	1	 22.5 	 	 1.65 	 	    42.0 	 	       0 	       0 	     730 	M	   402 	-
 K63	R-12                	OKB586	-	-	  1	1	 22.5 	 	 1.65 	 	    42.0 	 	       0 	       0 	     730 	M	   402 	-
@@ -689,13 +689,13 @@ R-1	V-2                 	NII88	-	-	  1	1	 14.1 	 	 1.65 	 	    13.4 	 	       0 
 R-1 8A11	V-2                 	NII88	-	R-1	  1	1	 14.1 	 	 1.65 	 	    13.4 	 	       0 	       0 	     267 	B	   100 	-
 A-1	V-2                 	NII88	-	-	  1	1	 14.1 	 	 1.65 	 	    13.4 	 	       0 	       0 	     267 	R	   100 	-
 R-1A	V-2                 	OKB1	-	R-1	  1	1	 14.1 	 	 1.65 	 	    13.4 	 	       0 	       0 	     267 	B	   100 	-
-R-1B	V-2                 	OKB1	-	R-1	  1	1	 17.5 	 	 1.65 	 	    13.4 	 	       0 	       0 	     267 	B	   100 	-
-R-1V	V-2                 	OKB1	-	R-1	  1	1	 17.5 	 	 1.65 	 	    13.4 	 	       0 	       0 	     267 	B	   100 	-
-R-1D	V-2                 	OKB1	-	R-1	  1	1	 14.1 	 	 1.65 	 	    13.4 	 	       0 	       0 	     267 	B	   100 	-
-R-1E (A-1)	V-2                 	OKB1	-	-	  1	1	 14.1 	 	 1.65 	 	    13.4 	 	       0 	       0 	     267 	B	   100 	-
-R-1E	V-2                 	OKB1	-	-	  1	1	 14.1 	 	 1.65 	 	    13.4 	 	       0 	       0 	     267 	B	   100 	-
+R-1B	V-2                 	OKB1	-	R-1	  1	1	 17.5 	 	 1.65 	 	    13.4 	 	       0 	       0 	     267 	R	   100 	-
+R-1V	V-2                 	OKB1	-	R-1	  1	1	 17.5 	 	 1.65 	 	    13.4 	 	       0 	       0 	     267 	R	   100 	-
+R-1D	V-2                 	OKB1	-	R-1	  1	1	 14.1 	 	 1.65 	 	    13.4 	 	       0 	       0 	     267 	R	   100 	-
+R-1E (A-1)	V-2                 	OKB1	-	-	  1	1	 14.1 	 	 1.65 	 	    13.4 	 	       0 	       0 	     267 	R	   100 	-
+R-1E	V-2                 	OKB1	-	-	  1	1	 14.1 	 	 1.65 	 	    13.4 	 	       0 	       0 	     267 	R	   100 	-
 R-1UK	V-2                 	OKB1	-	-	  1	1	 14.1 	 	 1.65 	 	    13.4 	 	       0 	       0 	     267 	B	   100 	-
-R-2	V-2                 	OKB1	-	-	  1	1	 17.0 	 	 1.65 	 	    20.3 	 	       0 	       0 	     363 	R	   150 	   550
+R-2	V-2                 	OKB1	-	-	  1	1	 17.0 	 	 1.65 	 	    20.3 	 	       0 	       0 	     363 	B	   150 	   550
 R-2A	V-2                 	OKB1	-	-	  1	1	 17.0 	 	 1.65 	 	    20.3 	 	       0 	       0 	     363 	R	   212 	-
 R-2e	V-2                 	OKB1	-	-	  1	1	 17.0 	 	 1.65 	 	    20.3 	 	       0 	       0 	     363 	R	   200 	-
 R-2R	V-2                 	OKB1	-	-	  1	1	 17.0 	 	 1.65 	 	    20.3 	 	       0 	       0 	     363 	R	   200 	-
@@ -722,8 +722,8 @@ SSBS S01	P-10                	SEREB	-	-	  1	2	 15.1 	 	 1.50 	 	    25.0 	?	    
 SSBS S02	P-16                	SEREB	-	-	  1	2	 14.8 	 	 1.50 	 	    31.9 	 	       0 	       0 	     540 	M	   600 	  3000
 SSBS S2	P-16                	SEREB	-	-	  1	2	 14.8 	 	 1.50 	 	    31.9 	 	       0 	       0 	     540 	M	   600 	  3000
 SSBS S3	P-16                	AELM	-	-	  1	2	 13.8 	 	 1.50 	 	    25.8 	 	       0 	       0 	     540 	M	   600 	  3500
-Spaceship One	SS1                 	SCAL	-	-	  0	1	  5.0 	?	 1.50 	?	     4.0 	?	       0 	       0 	-	R	   130 	-
-Spaceship Two	SS2                 	SCAL	-	-	  0	1	 18.3 	 	 2.30 	 	     9.7 	 	       0 	       0 	-	R	   130 	-
+Spaceship One	SS1                 	SCAL	-	-	  0	1	  5.0 	?	 1.50 	?	     4.0 	?	       0 	       0 	-	X	   130 	-
+Spaceship Two	SS2                 	SCAL	-	-	  0	1	 18.3 	 	 2.30 	 	     9.7 	 	       0 	       0 	-	X	   130 	-
 RT-15	RT-15               	ARSL	-	-	  1	2	 11.9 	 	 1.49 	 	    16.0 	 	       0 	       0 	     412 	M	   500 	  2500
 RT-15M	RT-15               	ARSL	-	-	  1	2	 11.9 	 	 1.49 	 	    16.0 	 	       0 	       0 	     412 	M	   500 	  2500
 Kestrel I	Kestrel1	ATSP	-	Hapith I	  1	2	 10.2 	 	 1.46 	 	     3.0 	 	       0 	       0 	      77 	R	   200 	-
@@ -787,7 +787,7 @@ Astra Rocket 3.2	Astra               	ASTRV	-	-	  1	2	 11.6 	 	 1.32 	 	    11.0
 Astra Rocket 3.3	Astra               	ASTRV	-	-	  1	2	 11.8 	 	 1.32 	 	    11.0 	 	      10 	       0 	     140 	O	   300 	   300
 Storm-2	SR19                	OSCC	-	-	  1	1	  9.9 	 	 1.32 	 	    10.0 	 	       0 	       0 	     267 	M	   200 	   600
 SR19	SR19                	COLE	-	-	  1	1	  6.0 	?	 1.32 	 	     8.0 	?	       0 	       0 	     267 	R	   100 	-
-AltAir	SR19                	SVC	-	-	  1	1	  6.0 	?	 1.32 	 	     8.0 	?	       0 	       0 	     267 	R	   100 	-
+AltAir	SR19                	SVC	-	-	  1	1	  6.0 	?	 1.32 	 	     8.0 	?	       0 	       0 	     267 	M	   100 	-
 eMRBM	SR19                	LMCO	-	-	  0	2	 15.5 	 	 1.32 	 	    15.0 	?	       0 	       0 	     267 	M	   300 	-
 MRBM Target	SR19                	LMCO	-	-	  1	2	 15.5 	 	 1.32 	 	    15.0 	?	       0 	       0 	     267 	M	   300 	-
 MRBM Target	SR19                	LMCO	1	-	  1	2	 15.5 	 	 1.32 	 	    15.0 	?	       0 	       0 	     267 	M	   300 	-
@@ -826,8 +826,8 @@ Paektusan 1	Nodong              	KPA	-	-	  1	3	 25.8 	?	 1.25 	 	    33.4 	 	   
 Ghauri	Nodong              	KRLP	-	-	  1	1	 16.0 	?	 1.25 	 	    16.0 	?	       0 	       0 	     255 	B	   150 	-
 Scud D	Nodong              	KPA	-	-	  1	1	 16.0 	?	 1.25 	 	    16.0 	?	       0 	       0 	     255 	B	   150 	-
 AMROC IRR	AMROC               	AMROC	-	-	  1	1	 17.7 	 	 1.29 	 	    12.2 	 	       0 	       0 	     315 	R	   100 	-
-GBI	Pegasus             	OSCC	-	-	  1	3	 15.5 	?	 1.28 	 	    18.0 	?	       0 	       0 	     580 	R	  2000 	-
-GBI	Pegasus             	OSCC	2	-	  1	2	 15.5 	?	 1.28 	 	    18.0 	?	       0 	       0 	     580 	R	  2000 	-
+GBI	Pegasus             	OSCC	-	-	  1	3	 15.5 	?	 1.28 	 	    18.0 	?	       0 	       0 	     580 	M	  2000 	-
+GBI	Pegasus             	OSCC	2	-	  1	2	 15.5 	?	 1.28 	 	    18.0 	?	       0 	       0 	     580 	M	  2000 	-
 ALV	Pegasus             	ATKE	-	-	  1	2	 16.8 	 	 1.28 	 	    15.0 	 	-	-	     580 	R	   200 	-
 Pegasus	Pegasus             	OSCC	-	-	  0	3	 15.5 	 	 1.28 	 	    18.5 	 	     350 	       0 	     580 	O	  4000 	-
 Pegasus/HAPS	Pegasus             	OSCC	-	-	  0	4	 15.5 	 	 1.28 	 	    18.5 	 	     250 	       0 	     580 	O	  4000 	-
@@ -840,13 +840,13 @@ Hyper X	Pegasus             	OSCC	-	-	  0	1	 14.9 	 	 1.28 	 	    18.8 	 	      
 Al Kahir	AlKahir             	EGAO	-	-	  1	1	 12.5 	 	 1.22 	 	    10.0 	?	       0 	       0 	-	A	    60 	-
 LDSD	Star48              	JPL	-	-	  0	1	  2.0 	 	 1.22 	 	     3.0 	?	       0 	       0 	-	A	    60 	-
 Hyunmoo-1	Hyunmoo             	ADD	-	-	  1	2	 11.9 	 	 1.20 	 	     4.9 	 	       0 	       0 	     775 	A	    45 	-
-Hyunmoo-2A	Hyunmoo             	ADD	-	-	  1	1	  7.0 	?	 1.20 	?	     5.0 	?	       0 	       0 	-	A	    80 	-
-Hyunmoo-2B	Hyunmoo             	ADD	-	-	  1	1	  7.0 	?	 1.20 	?	     5.0 	?	       0 	       0 	-	A	    80 	-
-Hyunmoo-2C	Hyunmoo             	ADD	-	-	  1	1	  7.0 	?	 1.20 	?	     5.0 	?	       0 	       0 	-	A	    80 	-
-Hyunmoo-4	Hyunmoo             	ADD	-	-	  1	1	  7.0 	?	 1.20 	?	     5.0 	?	       0 	       0 	-	A	    80 	-
+Hyunmoo-2A	Hyunmoo             	ADD	-	-	  1	1	  7.0 	?	 1.20 	?	     5.0 	?	       0 	       0 	-	B	    80 	-
+Hyunmoo-2B	Hyunmoo             	ADD	-	-	  1	1	  7.0 	?	 1.20 	?	     5.0 	?	       0 	       0 	-	B	    80 	-
+Hyunmoo-2C	Hyunmoo             	ADD	-	-	  1	1	  7.0 	?	 1.20 	?	     5.0 	?	       0 	       0 	-	B	    80 	-
+Hyunmoo-4	Hyunmoo             	ADD	-	-	  1	1	  7.0 	?	 1.20 	?	     5.0 	?	       0 	       0 	-	B	    80 	-
 Electron	Electron            	RLABN	-	-	  1	3	 17.0 	 	 1.20 	 	    12.6 	 	     150 	       0 	     162 	O	   200 	   200
 Electron	Electron            	RLABN	L	-	  1	3	 17.0 	 	 1.20 	 	    12.6 	 	     150 	       0 	     162 	O	   200 	   200
-HASTE	Electron            	RLABN	-	-	  1	3	 17.0 	 	 1.20 	 	    12.6 	 	     150 	       0 	     162 	O	   200 	   200
+HASTE	Electron            	RLABN	-	-	  1	3	 17.0 	 	 1.20 	 	    12.6 	 	     150 	       0 	     162 	V	   200 	   200
 Jielong-1	JL1                 	CZHJ	-	-	  1	4	 19.5 	 	 1.20 	 	    19.5 	 	     150 	       0 	-	O	   200 	   200
 DF-16	DF-16               	CASIC	-	-	  1	1	 12.0 	 	 1.20 	 	    18.0 	?	       0 	       0 	-	M	   200 	  1000
 DF-17	DF-16               	CASIC	-	-	  1	1	 12.0 	 	 1.20 	 	    18.0 	?	       0 	       0 	-	M	   200 	  1000
@@ -871,7 +871,7 @@ Prithvi	Prithvi             	HAL	-	-	  1	1	  9.0 	 	 1.10 	 	     4.5 	 	       
 Prithvi 2	Prithvi             	HAL	-	-	  1	1	  9.0 	 	 1.10 	 	     4.5 	 	       0 	       0 	-	B	   100 	   350
 PDV Target	Prithvi             	HAL	-	-	  1	2	  9.0 	 	 1.10 	 	     4.5 	 	       0 	       0 	-	B	   100 	   350
 PDV	Prithvi             	HAL	-	-	  1	1	  9.0 	 	 1.10 	 	     4.5 	 	       0 	       0 	-	B	   100 	   350
-Dhanush	Prithvi             	HAL	-	-	  1	1	  8.5 	 	 1.10 	 	     4.5 	 	       0 	       0 	-	A	    50 	   150
+Dhanush	Prithvi             	HAL	-	-	  1	1	  8.5 	 	 1.10 	 	     4.5 	 	       0 	       0 	-	B	    50 	   150
 Spartan ABM	Spartan             	MDAC/WELEC	-	-	  1	3	 16.8 	 	 1.09 	 	    13.2 	 	       0 	       0 	    2000 	M	   560 	   740
 Nike Zeus	Spartan             	DACC/WELEC	-	-	  1	2	 14.7 	 	 1.09 	 	    10.3 	 	       0 	       0 	    2002 	M	   200 	   400
 Nike Zeus	Spartan             	DACC/WELEC	3	-	  1	3	 14.6 	 	 1.09 	 	    10.3 	 	       0 	       0 	    2002 	M	   280 	   400
@@ -880,6 +880,7 @@ Dolphin	Dolphin             	STST	-	-	  1	1	 15.5 	 	 1.07 	 	     7.5 	 	      
 Nike Hercules 1810	Hercules            	DACC/WELEC	-	-	  1	2	 11.9 	 	 1.06 	 	     4.9 	 	       0 	       0 	     775 	A	    45 	-
 Nike Hercules R&D	Hercules            	DACC/WELEC	-	-	  1	2	 11.9 	 	 1.06 	 	     4.9 	 	       0 	       0 	     775 	A	    45 	-
 Nike Hercules	Hercules            	DACC/WELEC	-	-	  1	2	 11.9 	 	 1.06 	 	     4.9 	 	       0 	       0 	     775 	A	    45 	-
+Nike Hercules	Hercules            	DACC/WELEC	1	-	  1	2	 11.9 	 	 1.06 	 	     4.9 	 	       0 	       0 	     775 	M	    85 	-
 Nike J	Hercules            	MHITO?	-	-	  1	2	 11.9 	 	 1.06 	 	     4.9 	 	       0 	       0 	     775 	A	    45 	-
 Paekkom	Hercules            	ADD	-	-	  1	2	 11.9 	 	 1.06 	 	     4.9 	 	       0 	       0 	     775 	A	    45 	-
 Hermes A-3A	HermesA3            	GEMTS	-	-	  1	1	  8.7 	 	 1.02 	 	     3.8 	 	       0 	       0 	      80 	A	    30 	-
@@ -911,11 +912,11 @@ Strypi XIIR	Sergeant            	SAND	-	-	  0	2	 16.0 	?	 1.02 	 	    13.5 	?	  
 Castor 4A	Castor4             	OSCC	-	-	  1	1	 16.0 	?	 1.02 	 	    13.5 	?	       0 	       0 	     430 	R	   500 	-
 Maxus	Castor4             	EADSB	-	-	  1	1	 15.5 	 	 1.02 	 	    12.3 	 	       0 	       0 	     500 	R	   850 	-
 Castor 4B	Castor4             	OSCC	-	-	  1	1	 14.0 	?	 1.02 	 	    13.0 	?	       0 	       0 	     500 	R	   500 	-
-MRT	Castor4             	OSCC	-	-	  1	1	 14.0 	?	 1.02 	 	    13.0 	?	       0 	       0 	     500 	R	   500 	-
+MRT	Castor4             	OSCC	-	-	  1	1	 14.0 	?	 1.02 	 	    13.0 	?	       0 	       0 	     500 	B	   500 	-
 Castor-M57A1	Castor4             	OSCC	-	-	  1	2	 16.0 	?	 1.02 	 	    14.0 	?	       0 	       0 	     500 	R	  1100 	-
 Conestoga 1620	Castor4             	EERSSI	-	-	  1	4	 15.2 	 	 1.02 	 	    87.4 	 	     900 	       0 	    1580 	O	   450 	-
-GBI BV	GEM                 	BOHSV	-	-	  1	3	 15.5 	 	 1.02 	 	    14.0 	 	       0 	       0 	     500 	R	   200 	-
-GBI BV+	GEM                 	LMSC	-	-	  1	3	 15.5 	 	 1.02 	 	    14.0 	 	       0 	       0 	     500 	R	   200 	-
+GBI BV	GEM                 	BOHSV	-	-	  1	3	 15.5 	 	 1.02 	 	    14.0 	 	       0 	       0 	     500 	M	   200 	-
+GBI BV+	GEM                 	LMSC	-	-	  1	3	 15.5 	 	 1.02 	 	    14.0 	 	       0 	       0 	     500 	M	   200 	-
 Pershing 1	Pershing            	MARTO	-	-	  1	2	 10.7 	 	 1.02 	 	     4.7 	 	       0 	       0 	     116 	M	   250 	   600
 Pershing 1A	Pershing            	MARTO	-	-	  1	2	 10.7 	 	 1.02 	 	     4.7 	 	       0 	       0 	     116 	M	   250 	   600
 Pershing 2	Pershing            	MARTO	-	-	  1	2	 10.7 	 	 1.02 	 	     7.5 	 	       0 	       0 	-	M	   250 	  1800
@@ -926,9 +927,9 @@ VS-40M	S-40                	INPE	-	-	  1	2	  9.5 	 	 1.01 	 	     6.8 	 	       
 VLS-1	S-40                	INPE	-	-	  0	3	 19.5 	 	 1.01 	 	    50.7 	 	     120 	       0 	    1172 	O	   750 	-
 Temp	Temp                	MIT/VOTK	-	-	  1	1	 12.4 	 	 1.01 	 	     9.7 	 	       0 	       0 	-	M	   150 	   900
 Temp-S	Temp                	MIT/VOTK	-	-	  1	1	 12.4 	 	 1.01 	 	     9.3 	 	       0 	       0 	-	M	   150 	   900
-Astra Rocket 1.0	Astra               	ASTRV	-	-	  1	2	 10.0 	 	 1.00 	 	     6.0 	?	       0 	       0 	-	R	   100 	-
-Astra Rocket 2.0	Astra               	ASTRV	-	-	  1	2	 10.0 	 	 1.00 	 	     6.0 	?	       0 	       0 	-	R	   100 	-
-Orion LAS	Orion.LAS           	OSCC	-	-	  1	1	 11.6 	 	 1.00 	 	     6.1 	?	       0 	       0 	-	M	     1 	-
+Astra Rocket 1.0	Astra               	ASTRV	-	-	  1	2	 10.0 	 	 1.00 	 	     6.0 	?	       0 	       0 	-	X	   100 	-
+Astra Rocket 2.0	Astra               	ASTRV	-	-	  1	2	 10.0 	 	 1.00 	 	     6.0 	?	       0 	       0 	-	X	   100 	-
+Orion LAS	Orion.LAS           	OSCC	-	-	  1	1	 11.6 	 	 1.00 	 	     6.1 	?	       0 	       0 	-	A	     1 	-
 Agni TD	ASLV                	DRDO	-	-	  1	2	 21.0 	 	 1.00 	 	    19.0 	 	       0 	       0 	     503 	M	   300 	  1200
 Agni P	ASLV                	DRDO	-	-	  1	2	 17.2 	 	 1.00 	 	    24.0 	 	       0 	       0 	-	M	   100 	  5000
 Agni 1	ASLV                	DRDO	-	-	  1	1	 15.0 	 	 1.00 	 	    12.0 	 	       0 	       0 	     503 	M	   200 	   700
@@ -940,7 +941,7 @@ SLV-3	ASLV                	ISRO	-	-	  1	4	 23.6 	 	 1.00 	 	    17.0 	 	      42
 SLV-3	ASLV                	ISRO	D4	-	  1	4	 23.6 	 	 1.00 	 	    17.0 	 	      42 	       0 	     503 	O	   900 	-
 HS9	ASLV                	ISRO	-	-	  1	1	 19.0 	 	 1.00 	 	     9.0 	 	       0 	       0 	     503 	R	   100 	-
 KSR-III	KSR-3               	KARI	-	-	  1	1	 13.5 	 	 1.00 	 	     5.6 	 	       0 	       0 	     126 	R	   100 	-
-HANBIT-TLV	HANBIT	INNOSP	-	-	  1	1	 16.3 	 	 1.00 	 	     8.4 	 	       0 	       0 	-	R	   100 	-
+HANBIT-TLV	HANBIT	INNOSP	-	-	  1	1	 16.3 	 	 1.00 	 	     8.4 	 	       0 	       0 	-	X	   100 	-
 Vesta	Vesta               	LRBA	-	-	  1	1	 10.2 	 	 1.00 	 	     6.0 	 	       0 	       0 	     140 	R	   250 	-
 Talon-A	Talon	STRATO	-	-	  0	1	  8.5 	 	 1.00 	 	     6.0 	 	       0 	       0 	      22 	A	    20 	-
 DF-15	DF-15               	ARMT	-	-	  1	1	  9.1 	 	 1.00 	?	     6.2 	 	       0 	       0 	-	B	   100 	   600
@@ -950,27 +951,27 @@ Dezful	Dezful	ANSAL	-	-	  1	1	 10.3 	 	 1.00 	 	     5.0 	?	       0 	       0 	
 Kheibar Shekan	Dezful	IR	-	-	  1	1	 14.0 	 	 1.00 	 	    20.0 	?	       0 	       0 	-	M	   500 	-
 Fattah-1	Dezful	IR	-	-	  1	1	 14.0 	 	 1.00 	 	    20.0 	?	       0 	       0 	-	M	   500 	-
 V-1000	V-1000              	SKB30	-	-	  0	1	 14.5 	 	 1.00 	 	     8.8 	 	       0 	       0 	-	A	    30 	-
-1Ya2TA	V-1000              	SKB30	-	-	  0	1	 14.5 	 	 1.00 	 	     8.8 	 	       0 	       0 	-	A	    30 	-
+1Ya2TA	V-1000              	SKB30	-	-	  0	1	 14.5 	 	 1.00 	 	     8.8 	 	       0 	       0 	-	R	   100 	-
 Oka	Oka                 	KBM	-	-	  1	1	  7.5 	 	 0.92 	 	     4.7 	 	       0 	       0 	-	B	    80 	   400
-Iskander	Oka                 	KBM	-	-	  1	1	  7.3 	 	 0.92 	 	     3.8 	 	       0 	       0 	-	B	    50 	   400
-Kinzhal	Oka                 	KBM	-	-	  0	1	  7.3 	 	 0.92 	 	     3.8 	 	       0 	       0 	-	B	    50 	   400
+Iskander	Oka                 	KBM	-	-	  1	1	  7.3 	 	 0.92 	 	     3.8 	 	       0 	       0 	-	A	    50 	   400
+Kinzhal	Oka                 	KBM	-	-	  0	1	  7.3 	 	 0.92 	 	     3.8 	 	       0 	       0 	-	A	    50 	   400
 Bukguekseong-6	Oka                 	KPA	-	-	  1	1	  8.0 	?	 0.88 	?	    14.0 	?	       0 	       0 	-	M	   500 	  3000
 Hwasong-11Ga	Oka                 	KPA	-	-	  1	1	  7.3 	 	 0.92 	 	     4.0 	 	       0 	       0 	-	M	    20 	-
 Hwasong-11Ka	Oka                 	KPA	-	-	  1	1	  7.3 	 	 0.92 	 	     4.0 	 	       0 	       0 	-	M	    20 	-
 Hwasong-11Da	Oka                 	KPA	-	-	  1	1	  7.3 	 	 0.92 	 	     4.0 	 	       0 	       0 	-	M	    20 	-
 Hwasong-11Da-4.5	Oka                 	KPA	-	-	  1	1	  7.3 	 	 0.92 	 	     4.0 	 	       0 	       0 	-	M	    20 	-
 Hwasong-11Ra	Oka                 	KPA	-	-	  1	1	  7.3 	 	 0.92 	 	     4.0 	 	       0 	       0 	-	M	    20 	-
-Iskander-M	Oka                 	KBM	-	-	  1	1	  7.3 	 	 0.92 	 	     3.8 	 	       0 	       0 	-	B	    50 	   400
-Iskander-E	Oka                 	KBM	-	-	  1	1	  7.3 	 	 0.92 	 	     3.8 	 	       0 	       0 	-	B	    50 	   200
-Falstaff	Stonechat           	RAE/RORD	-	-	  1	1	  5.3 	 	 0.92 	 	     5.1 	 	       0 	       0 	     240 	T	    30 	-
-Falstaff	Stonechat           	RAE/RORD	1	-	  1	1	  5.3 	 	 0.92 	 	     5.1 	 	       0 	       0 	     240 	T	    30 	-
+Iskander-M	Oka                 	KBM	-	-	  1	1	  7.3 	 	 0.92 	 	     3.8 	 	       0 	       0 	-	A	    50 	   400
+Iskander-E	Oka                 	KBM	-	-	  1	1	  7.3 	 	 0.92 	 	     3.8 	 	       0 	       0 	-	A	    50 	   200
+Falstaff	Stonechat           	RAE/RORD	-	-	  1	1	  5.3 	 	 0.92 	 	     5.1 	 	       0 	       0 	     240 	V	    80 	-
+Falstaff	Stonechat           	RAE/RORD	1	-	  1	1	  5.3 	 	 0.92 	 	     5.1 	 	       0 	       0 	     240 	V	    30 	-
 Black Knight	BlackKnight         	SROE	201	-	  1	1	 10.2 	 	 0.91 	 	     5.4 	 	       0 	       0 	      75 	V	   500 	-
 Black Knight	BlackKnight         	SROE	201/C	-	  1	2	 11.6 	 	 0.91 	 	     6.4 	 	       0 	       0 	      95 	V	   500 	-
 Black Knight	BlackKnight         	SROE	201/C2	-	  1	2	 11.6 	 	 0.91 	 	     6.4 	 	       0 	       0 	      95 	V	   500 	-
 Black Knight	BlackKnight         	SROE	301/C	-	  1	2	 11.6 	 	 0.91 	 	     6.4 	 	       0 	       0 	      95 	V	   500 	-
 Black Knight	BlackKnight         	SROE	301/C2	-	  1	2	 11.6 	 	 0.91 	 	     6.4 	 	       0 	       0 	      95 	V	   500 	-
 Nike Zeus A	Spartan             	DACC/WELEC	-	-	  1	2	 13.3 	 	 0.91 	 	     5.0 	 	       0 	       0 	    2002 	A	    50 	   320
-Skybolt ALBM	Skybolt             	DAC	-	-	  1	2	 12.0 	 	 0.91 	 	     5.1 	 	       0 	       0 	     111 	A	   390 	  1200
+Skybolt ALBM	Skybolt             	DAC	-	-	  1	2	 12.0 	 	 0.91 	 	     5.1 	 	       0 	       0 	     111 	M	   390 	  1200
 IRCPS	IRCPS	LMPLM	-	-	  1	2	  7.3 	 	 0.88 	 	     5.0 	?	       0 	       0 	-	M	   100 	-
 Ghaznavi	DF-11               	PKPMO	-	-	  1	1	  9.1 	 	 0.88 	?	     6.2 	?	       0 	       0 	-	B	   100 	   750
 OS-X0	DF-11               	LYK	-	-	  1	1	  8.4 	 	 0.88 	 	     4.6 	 	       0 	       0 	      90 	B	   150 	   300
@@ -1015,25 +1016,25 @@ MD-620	Agate               	DASST/IAI	-	-	  1	1	 13.4 	 	 0.80 	 	     6.5 	 	  
 MD-620	Agate               	DASST/IAI	2	-	  1	2	 13.4 	 	 0.80 	 	     6.5 	 	       0 	       0 	-	B	   100 	   500
 Jericho	Agate               	DASST/IAI	-	-	  1	2	 13.4 	 	 0.80 	 	     6.5 	 	       0 	       0 	-	B	   100 	   500
 Jericho-1	Arrow2              	DASST/IAI	-	-	  1	1	  9.0 	?	 0.80 	?	     6.0 	?	       0 	       0 	-	B	   100 	-
-Arrow 2	Arrow2              	IAI	-	-	  1	2	  6.3 	 	 0.80 	?	     2.5 	 	       0 	       0 	-	A	    40 	    50
-HIBEX	HIBEX               	BOKT?	-	-	  1	1	  5.2 	 	 0.79 	?	     6.0 	?	       0 	       0 	-	T	    20 	-
+Arrow 2	Arrow2              	IAI	-	-	  1	2	  6.3 	 	 0.80 	?	     2.5 	 	       0 	       0 	-	B	    40 	    50
+HIBEX	HIBEX               	BOKT?	-	-	  1	1	  5.2 	 	 0.79 	?	     6.0 	?	       0 	       0 	-	B	    20 	-
 Upstage	HIBEX               	MDAC	-	-	  1	2	  5.2 	 	 0.79 	?	     6.0 	?	       0 	       0 	-	T	    20 	-
 ARPAT	Sergeant            	RAYTH?	-	-	  0	2	  8.0 	?	 0.79 	 	     4.0 	?	       0 	       0 	-	T	    30 	-
 RV-A-10	Sergeant            	GEMTS/JPL	-	-	  1	1	  6.2 	 	 0.79 	 	     3.5 	 	       0 	       0 	     140 	T	    58 	   110
-Sergeant	Sergeant            	JPL	-	-	  1	1	  5.1 	 	 0.79 	 	     2.3 	 	       0 	       0 	     220 	R	    80 	-
+Sergeant	Sergeant            	JPL	-	-	  1	1	  5.1 	 	 0.79 	 	     2.3 	 	       0 	       0 	     220 	B	    80 	-
 Sergeant	Sergeant            	DNA	2R	-	  0	1	  5.1 	 	 0.79 	 	     2.3 	 	       0 	       0 	     220 	R	    80 	-
 High Virgo WS199C	Sergeant            	CONV	-	-	  0	1	  9.4 	 	 0.79 	 	     5.5 	 	       0 	       0 	     220 	M	   250 	-
 Polaris TV	Polaris             	LVN	-	-	  1	1	  8.0 	?	 0.79 	?	     5.0 	?	       0 	       0 	     220 	T	    30 	-
-Polaris FTV-5	Sergeant            	LMSC	-	-	  1	2	 10.1 	 	 0.79 	?	     5.0 	?	       0 	       0 	-	R	    40 	-
+Polaris FTV-5	Sergeant            	LMSC	-	-	  1	2	 10.1 	 	 0.79 	?	     5.0 	?	       0 	       0 	-	B	    40 	-
 Journeyman	Sergeant            	AEROL	-	-	  0	4	 18.9 	 	 0.79 	 	     6.3 	 	       0 	       0 	-	R	  3000 	-
-Bold Orion	Sergeant            	MARTB	1	-	  0	1	 11.3 	 	 0.79 	 	-	 	       0 	       0 	-	R	   100 	-
-Bold Orion	Sergeant            	MARTB	2	-	  0	2	 11.3 	 	 0.79 	 	-	 	       0 	       0 	-	R	   200 	-
+Bold Orion	Sergeant            	MARTB	1	-	  0	1	 11.3 	 	 0.79 	 	-	 	       0 	       0 	-	M	   100 	-
+Bold Orion	Sergeant            	MARTB	2	-	  0	2	 11.3 	 	 0.79 	 	-	 	       0 	       0 	-	M	   200 	-
 Storm	Sergeant            	OSCC	-	-	  1	2	-	 	 0.79 	 	     6.0 	?	       0 	       0 	-	M	   200 	-
 Sergeant Hydac	Sergeant            	SDCO	-	-	  1	2	 13.8 	 	 0.79 	 	     4.8 	 	       0 	       0 	-	R	   500 	-
 Draco	Sergeant            	MCDA	-	-	  1	2	 14.0 	 	 0.79 	 	-	 	       0 	       0 	-	Q	    30 	-
 X-17	Sergeant            	LVN	-	-	  1	3	 12.3 	 	 0.79 	 	     3.4 	 	       0 	       0 	     220 	V	   500 	-
 Polaris FTV-3	Sergeant            	LVN	-	-	  1	3	 12.3 	 	 0.79 	 	     3.4 	 	       0 	       0 	     220 	V	   500 	-
-Polaris FTV-1	Sergeant            	LMSC	-	-	  1	1	 10.1 	 	 0.79 	?	     5.0 	?	       0 	       0 	-	R	    40 	-
+Polaris FTV-1	Sergeant            	LMSC	-	-	  1	1	 10.1 	 	 0.79 	?	     5.0 	?	       0 	       0 	-	A	    40 	-
 Shotput	Sergeant            	PARD	-	-	  0	2	  9.9 	 	 0.79 	 	     5.1 	 	       0 	       0 	     220 	X	   400 	-
 Sergeant 5-stage	Sergeant            	PARD	-	-	  1	5	 14.0 	?	 0.79 	 	-	 	       0 	       0 	     230 	Q	    35 	-
 Castor	Sergeant            	THKX	-	-	  1	1	  8.0 	?	 0.79 	 	-	 	       0 	       0 	     235 	R	   300 	-
@@ -1057,17 +1058,17 @@ Strypi VIIIR	Sergeant            	SAND	-	-	  0	2	 11.2 	 	 0.79 	 	     4.6 	 	 
 Strypi IX	Sergeant            	SAND	-	-	  1	2	-	 	 0.79 	 	-	 	       0 	       0 	-	R	   200 	-
 Strypi XI	Sergeant            	SAND	-	-	  0	3	-	 	 0.79 	 	-	 	       0 	       0 	-	R	   120 	-
 Castor	Sergeant            	THKX	2R	-	  0	1	 10.0 	?	 0.79 	 	     5.2 	?	       0 	       0 	     586 	R	   240 	-
-DOT	Sergeant            	SAND	-	-	  0	2	 11.6 	 	 0.79 	 	     5.5 	 	       0 	       0 	     586 	R	   300 	-
+DOT	Sergeant            	SAND	-	-	  0	2	 11.6 	 	 0.79 	 	     5.5 	 	       0 	       0 	     586 	M	   300 	-
 Athena	Sergeant            	ATLR	-	-	  0	4	 15.2 	 	 0.79 	 	     7.2 	 	       0 	       0 	     586 	M	   200 	-
 WASP	Sergeant            	LARC?	-	-	  0	2	 14.7 	 	 0.79 	 	     6.8 	 	       0 	       0 	     580 	R	   240 	-
 Castor Lance	Sergeant            	SAND	-	-	  0	2	 15.1 	 	 0.79 	 	     5.8 	 	       0 	       0 	-	R	   600 	-
 Castor-Recruit	Sergeant            	SAND	-	-	  1	2	-	 	 0.79 	 	-	 	       0 	       0 	-	R	   150 	-
-Trailblazer 2	Sergeant            	AFCRL	-	-	  0	4	 15.7 	 	 0.79 	 	     6.1 	 	       0 	       0 	     547 	R	   300 	-
-Trailblazer 2	Sergeant            	AFCRL	M	-	  0	5	 15.7 	 	 0.79 	 	     6.1 	 	       0 	       0 	     547 	R	   300 	-
+Trailblazer 2	Sergeant            	AFCRL	-	-	  0	4	 15.7 	 	 0.79 	 	     6.1 	 	       0 	       0 	     547 	V	   300 	-
+Trailblazer 2	Sergeant            	AFCRL	M	-	  0	5	 15.7 	 	 0.79 	 	     6.1 	 	       0 	       0 	     547 	V	   300 	-
 Astrobee 1500	Sergeant            	AJSP	-	-	  0	2	 10.4 	 	 0.79 	 	     5.2 	 	       0 	       0 	     566 	R	  2000 	-
 Scanner	Sergeant            	LARC	-	-	  0	3	-	 	 0.79 	 	-	 	       0 	       0 	     550 	R	   600 	-
 Xaero	Xaero               	MASTEN	-	-	  1	1	  4.6 	?	 0.77 	?	     1.0 	?	       0 	       0 	-	R	    30 	-
-D-21B	Avanti              	LAC	-	-	  1	2	 13.1 	 	 0.77 	 	-	 	       0 	       0 	-	R	    30 	-
+D-21B	Avanti              	LAC	-	-	  1	2	 13.1 	 	 0.77 	 	-	 	       0 	       0 	-	C	    30 	-
 RTV-A-2	MX-774              	CONV	-	-	  1	1	  9.6 	 	 0.76 	 	     1.3 	 	       0 	       0 	      35 	T	    50 	-
 Corporal	Corporal            	SUEL/JPL	-	-	  1	1	 14.0 	 	 0.76 	 	     5.4 	 	       0 	       0 	      89 	A	    50 	-
 Corporal Type 1	Corporal            	SUEL/JPL	-	-	  1	1	 14.0 	 	 0.76 	 	     5.4 	 	       0 	       0 	      89 	A	    50 	-
@@ -1075,8 +1076,8 @@ Corporal E	Corporal            	JPL	-	-	  1	1	 14.0 	 	 0.76 	 	     4.5 	 	    
 Talos	Talos               	APL	-	-	  1	1	  9.8 	 	 0.76 	 	     3.5 	 	       0 	       0 	-	A	    20 	-
 HPB	Talos               	SDCO	-	-	  1	2	 14.4 	 	 0.76 	 	     9.0 	 	       0 	       0 	-	R	   400 	-
 Talos Castor	Talos               	SDCO	-	-	  1	2	 16.9 	 	 0.76 	 	     8.2 	 	       0 	       0 	-	R	   300 	-
-Talos Terrier	Talos               	DNA	-	-	  1	2	 10.0 	?	 0.76 	 	-	 	       0 	       0 	-	R	    12 	-
-Talos Terrier Oriole	Talos               	NASA	-	-	  1	3	 19.8 	 	 0.76 	 	-	 	       0 	       0 	-	R	    12 	-
+Talos Terrier	Talos               	DNA	-	-	  1	2	 10.0 	?	 0.76 	 	-	 	       0 	       0 	-	Q	    12 	-
+Talos Terrier Oriole	Talos               	NASA	-	-	  1	3	 19.8 	 	 0.76 	 	-	 	       0 	       0 	-	R	   120 	-
 SRBM T4-G	Talos               	MDA	-	-	  1	2	 14.0 	?	 0.76 	 	-	 	       0 	       0 	-	R	   200 	-
 LCLV	Talos               	SDCO	-	-	  1	3	 16.5 	 	 0.76 	 	     6.9 	 	       0 	       0 	-	R	   400 	-
 Talos Sergeant Hydac	Talos               	SDCO	-	-	  1	3	 17.3 	 	 0.76 	 	     6.1 	 	       0 	       0 	-	R	   500 	-
@@ -1095,8 +1096,8 @@ Black Brant XI	Talos               	BAL	1	-	  1	3	 17.0 	?	 0.76 	 	     5.3 	 	
 Black Brant XII	Talos               	BAL	1	-	  1	4	 17.0 	?	 0.76 	 	     5.3 	 	       0 	       0 	     489 	R	  1500 	-
 NOTS EV1	HOTROC              	NOTS	-	-	  0	5	  4.4 	 	 0.76 	 	     0.9 	 	       1 	       0 	     125 	O	  5000 	-
 NOTS EV1	HOTROC              	NOTS	1	-	  1	5	  4.4 	 	 0.76 	 	     0.9 	 	       0 	       0 	     125 	T	    10 	-
-Al Samoud 2	Samoud              	IQMIC	-	-	  1	1	  7.2 	 	 0.76 	 	     2.0 	 	       0 	       0 	-	R	    50 	-
-OTRAG	OTRAG               	OTR	-	-	  1	1	 10.3 	 	 0.76 	 	-	 	       0 	       0 	-	T	    20 	-
+Al Samoud 2	Samoud              	IQMIC	-	-	  1	1	  7.2 	 	 0.76 	 	     2.0 	 	       0 	       0 	-	A	    50 	-
+OTRAG	OTRAG               	OTR	-	-	  1	1	 10.3 	 	 0.76 	 	-	 	       0 	       0 	-	X	    20 	-
 TKS VA SAS	TKSVA	OKB52	-	-	  1	1	 10.5 	 	 0.74 	 	-	 	       0 	       0 	-	T	     1 	-
 Lambda 2	Lambda              	ISAS	-	-	  0	2	 15.5 	 	 0.74 	 	     6.3 	 	       0 	       0 	     970 	R	   500 	-
 Lambda 3	Lambda              	ISAS	-	-	  0	3	 17.4 	 	 0.74 	 	     7.0 	 	       0 	       0 	     970 	R	  1000 	-
@@ -1105,54 +1106,55 @@ Lambda 4S	Lambda              	ISAS	-	-	  0	4	 16.5 	 	 0.74 	 	     9.4 	 	    
 Lambda 4SC	Lambda              	ISAS	-	-	  0	4	 16.5 	?	 0.74 	 	     9.4 	?	       0 	       0 	     970 	X	  2000 	-
 Lambda 4T	Lambda              	ISAS	-	-	  0	4	 16.5 	?	 0.74 	 	     9.4 	?	       0 	       0 	     970 	X	  2000 	-
 ST-735	SB-735              	ISAS	-	-	  1	2	 14.0 	?	 0.74 	 	     7.4 	 	       0 	       0 	-	R	   120 	-
-ST-735	SB-735              	ISAS	1	-	  0	1	 14.6 	 	 0.74 	 	     7.4 	 	       0 	       0 	-	R	   120 	-
+ST-735	SB-735              	ISAS	1	-	  0	1	 14.6 	 	 0.74 	 	     7.4 	 	       0 	       0 	-	A	    20 	-
 NAL-735	SB-735              	ISAS/NAL	-	-	  1	1	 10.0 	 	 0.74 	 	     4.7 	 	       0 	       0 	     250 	T	    18 	-
-Shaurya	K-15                	DRDO	-	-	  1	2	 10.0 	 	 0.74 	 	     6.2 	 	       0 	       0 	-	R	   200 	   600
-Kontakt	Kontakt             	FAKEL	-	-	  1	3	 10.0 	 	 0.74 	 	     4.5 	 	       0 	       0 	-	R	   500 	-
+Shaurya	K-15                	DRDO	-	-	  1	2	 10.0 	 	 0.74 	 	     6.2 	 	       0 	       0 	-	M	   200 	   600
+Kontakt	Kontakt             	FAKEL	-	-	  1	3	 10.0 	 	 0.74 	 	     4.5 	 	       0 	       0 	-	M	   500 	-
 VLS-R1	Sonda               	IAE	-	-	  1	2	  6.0 	?	 0.72 	 	     1.0 	?	       0 	       0 	     120 	T	    10 	-
 Pedro Recruit	Pedro               	USAF	-	-	  1	2	  7.8 	 	 0.71 	 	-	 	       0 	       0 	     244 	T	    20 	-
-Arrow 3	Arrow3              	IAI	-	-	  1	2	 11.0 	?	 0.70 	?	     1.5 	?	       0 	       0 	-	A	   100 	    50
+Arrow 3	Arrow3              	IAI	-	-	  1	2	 11.0 	?	 0.70 	?	     1.5 	?	       0 	       0 	-	M	   100 	    50
 Miura 1	Miura	PLDS	-	-	  1	1	 12.7 	 	 0.70 	 	     2.6 	 	       0 	       0 	      30 	R	   100 	-
 Skylark L	SkylarkL	SKYR	-	-	  1	1	 11.7 	 	 0.70 	 	     0.0 	 	       0 	       0 	-	W	    30 	-
 HIMES Rockoon	KM-D                	NISST	-	-	  0	1	  3.5 	?	 0.70 	 	     0.5 	 	       0 	       0 	-	T	    70 	-
 Zulfiqar	Zulfiqar	IR	-	-	  1	1	 10.3 	 	 0.68 	 	     5.0 	?	       0 	       0 	      90 	B	   150 	-
 Zolfaghar	Zulfiqar	IRGC	-	-	  1	1	 10.3 	 	 0.68 	 	     5.0 	?	       0 	       0 	      90 	B	   150 	-
 Apollo LES	Apollo.LES          	NAA	-	-	  1	1	 10.2 	 	 0.66 	 	     2.5 	?	       0 	       0 	     690 	T	     2 	-
-ARRW	ARRW	LMPLM	-	-	  1	1	  5.9 	 	 0.66 	?	     2.3 	 	       0 	       0 	-	M	    50 	-
-KN-02	Tochka              	KPA	-	-	  1	1	  6.4 	 	 0.65 	 	     2.0 	 	       0 	       0 	-	M	    20 	-
-Tochka	Tochka              	KBM	-	-	  1	1	  6.4 	 	 0.65 	 	     2.0 	 	       0 	       0 	-	M	    20 	-
-Tochka-U	Tochka              	KBM	-	-	  1	1	  6.4 	 	 0.65 	 	     2.0 	 	       0 	       0 	-	M	    26 	-
-ZUR-215	V-750               	NPOL	-	-	  1	1	 10.7 	?	 0.65 	?	     2.3 	?	       0 	       0 	     490 	R	    27 	-
-V-750	V-750               	FAKEL	-	-	  0	1	 10.7 	 	 0.65 	 	     2.3 	 	       0 	       0 	     490 	R	    27 	-
-Qahir-1	V-750               	FAKEL	-	-	  0	1	 11.0 	 	 0.65 	 	     2.3 	 	       0 	       0 	     490 	R	    27 	   250
-Qahir-M2	V-750               	FAKEL	-	-	  0	1	 11.0 	 	 0.65 	 	     2.3 	 	       0 	       0 	     490 	R	    27 	   250
-SR75	SR75                	HYIMP	-	-	  1	1	 14.0 	 	 0.64 	 	     1.0 	?	       0 	       0 	      75 	R	    50 	-
-Sabre Zombie	ATACMS              	SMDC	-	-	  1	1	  4.0 	 	 0.61 	 	     1.0 	 	       0 	       0 	      57 	R	    40 	-
-Pathfinder Zombie	ATACMS              	SMDC	-	-	  1	1	  6.0 	 	 0.61 	 	     1.0 	 	       0 	       0 	      57 	R	    40 	-
-ATACMS	ATACMS              	SMDC	-	-	  1	1	  5.0 	?	 0.61 	 	     1.0 	 	       0 	       0 	      57 	R	    40 	-
+ARRW	ARRW	LMPLM	-	-	  1	1	  5.9 	 	 0.66 	?	     2.3 	 	       0 	       0 	-	A	    20 	-
+KN-02	Tochka              	KPA	-	-	  1	1	  6.4 	 	 0.65 	 	     2.0 	 	       0 	       0 	-	A	    20 	-
+Tochka	Tochka              	KBM	-	-	  1	1	  6.4 	 	 0.65 	 	     2.0 	 	       0 	       0 	-	A	    20 	-
+Tochka-U	Tochka              	KBM	-	-	  1	1	  6.4 	 	 0.65 	 	     2.0 	 	       0 	       0 	-	A	    26 	-
+ZUR-215	V-750               	NPOL	-	-	  1	1	 10.7 	?	 0.65 	?	     2.3 	?	       0 	       0 	     490 	A	    27 	-
+V-750	V-750               	FAKEL	-	-	  0	1	 10.7 	 	 0.65 	 	     2.3 	 	       0 	       0 	     490 	A	    27 	-
+Qahir-1	V-750               	FAKEL	-	-	  0	1	 11.0 	 	 0.65 	 	     2.3 	 	       0 	       0 	     490 	A	    27 	   250
+Qahir-M2	V-750               	FAKEL	-	-	  0	1	 11.0 	 	 0.65 	 	     2.3 	 	       0 	       0 	     490 	A	    27 	   250
+SR75	SR75                	HYIMP	-	-	  1	1	 14.0 	 	 0.64 	 	     1.0 	?	       0 	       0 	      75 	A	    50 	-
+Sabre Zombie	ATACMS              	SMDC	-	-	  1	1	  4.0 	 	 0.61 	 	     1.0 	 	       0 	       0 	      57 	B	    40 	-
+Pathfinder Zombie	ATACMS              	SMDC	-	-	  1	1	  6.0 	 	 0.61 	 	     1.0 	 	       0 	       0 	      57 	A	    40 	-
+ATACMS	ATACMS              	SMDC	-	-	  1	1	  5.0 	?	 0.61 	 	     1.0 	 	       0 	       0 	      57 	B	    40 	-
 X-51A	ATACMS              	BNAP	-	-	  0	2	  7.7 	 	 0.61 	 	     1.8 	 	       0 	       0 	     180 	T	    20 	-
 Tayfun	B-611	ROKSN	-	-	  1	1	  7.0 	?	 0.60 	 	     2.0 	?	       0 	       0 	-	M	    50 	   280
-Bora-1	B-611	ROKSN	-	-	  1	1	  7.0 	?	 0.60 	 	     2.0 	?	       0 	       0 	-	M	    50 	   280
+Bora-1	B-611	ROKSN	-	-	  1	1	  7.0 	?	 0.60 	 	     2.0 	?	       0 	       0 	-	A	    50 	   280
 B-611	B-611	SANJ	-	-	  1	1	  7.0 	?	 0.60 	 	     2.0 	?	       0 	       0 	      90 	B	   150 	   600
-TP 0.1	B-611	ROKSN	-	-	  1	1	  6.0 	?	 0.60 	 	     1.0 	 	       0 	       0 	-	R	    20 	-
+TP 0.1	B-611	ROKSN	-	-	  1	1	  6.0 	?	 0.60 	 	     1.0 	 	       0 	       0 	-	A	    20 	-
 TP 0.2	B-611	ROKSN	-	-	  1	2	  8.0 	?	 0.60 	 	     1.0 	 	       0 	       0 	-	R	    20 	-
 SR 0.1	B-611	ROKSN	-	-	  1	2	  8.0 	?	 0.60 	 	     1.0 	 	       0 	       0 	-	R	    20 	-
-K-BATS	ATACMS              	HANWHA	-	-	  1	1	  4.0 	 	 0.60 	 	     1.5 	?	       0 	       0 	-	M	    50 	-
+K-BATS	ATACMS              	HANWHA	-	-	  1	1	  4.0 	 	 0.60 	 	     1.5 	?	       0 	       0 	-	A	    50 	-
 Hwasong-11Na	KN-24               	KP	-	-	  1	1	  5.5 	 	 0.60 	?	     1.5 	?	       0 	       0 	-	M	    50 	-
-Badr-1	Grad                	FAKEL	-	-	  1	1	  5.0 	 	 0.60 	?	     2.0 	?	       0 	       0 	-	M	    20 	-
-Grad	Grad                	FAKEL	-	-	  1	1	  5.0 	 	 0.60 	?	     2.0 	?	       0 	       0 	-	M	    20 	-
+Badr-1	Grad                	FAKEL	-	-	  1	1	  5.0 	 	 0.60 	?	     2.0 	?	       0 	       0 	-	A	    20 	-
+Grad	Grad                	FAKEL	-	-	  1	1	  5.0 	 	 0.60 	?	     2.0 	?	       0 	       0 	-	A	    20 	-
 NOTS EV2	NOTS500             	NOTS	-	-	  0	2	  4.9 	 	 0.61 	 	     1.3 	 	       0 	       0 	-	X	  1200 	-
 GFV	NOTS500             	NOTS	1	-	  0	2	  4.9 	 	 0.61 	 	     1.3 	 	       0 	       0 	-	X	  1200 	-
 GFV	NOTS500             	NOTS	2	-	  0	2	  4.9 	 	 0.61 	 	     1.3 	 	       0 	       0 	-	X	  1200 	-
-HYSR	HYSR                	LMSC	-	-	  1	1	 18.0 	 	 0.61 	 	-	 	       0 	       0 	     270 	R	    70 	-
-SORS	SORS	DVST	-	-	  1	1	 10.0 	?	 0.60 	 	-	 	       0 	       0 	-	R	   100 	-
-LS-C	LS-C                	MHITO?	-	-	  1	2	 10.3 	 	 0.60 	 	     2.3 	 	       0 	       0 	-	R	   100 	-
-LS-C	LS-C                	MHITO?	7	-	  1	2	 10.3 	 	 0.60 	 	     2.3 	 	       0 	       0 	-	R	   100 	-
-Seliger 1	Seliger             	DRG	-	-	  1	1	  3.4 	 	 0.60 	 	     0.5 	?	       0 	       0 	      49 	R	    52 	-
+HYSR	HYSR                	LMSC	-	-	  1	1	 18.0 	 	 0.61 	 	-	 	       0 	       0 	     270 	Q	    70 	-
+SORS	SORS	DVST	-	-	  1	1	 10.0 	?	 0.60 	 	-	 	       0 	       0 	-	A	    50 	-
+LS-C	LS-C                	MHITO?	-	-	  1	2	 10.3 	 	 0.60 	 	     2.3 	 	       0 	       0 	-	A	   100 	-
+LS-C	LS-C                	MHITO?	7	-	  1	2	 10.3 	 	 0.60 	 	     2.3 	 	       0 	       0 	-	A	   100 	-
+Seliger 1	Seliger             	DRG	-	-	  1	1	  3.4 	 	 0.60 	 	     0.5 	?	       0 	       0 	      49 	A	    52 	-
 Seliger 2	Seliger             	DRG	-	-	  1	2	  6.0 	 	 0.60 	 	     1.5 	?	       0 	       0 	      49 	R	    80 	-
 Seliger 3	Seliger             	DRG	-	-	  1	3	 12.8 	 	 0.60 	 	     3.0 	?	       0 	       0 	      49 	R	   120 	-
+JTSPACE Sounding Rocket	JTSPACE	JTSPACE	-	-	  1	2	 11.4 	 	 0.60 	 	     1.4 	 	       0 	       0 	      66 	R	   100 	-
 Javelin	HJ                  	AEROL	-	-	  1	4	 14.8 	 	 0.58 	 	     3.4 	 	       0 	       0 	     365 	R	  1100 	-
-Trailblazer 1	HJ                  	PARD	-	-	  1	6	 17.1 	 	 0.58 	 	     3.4 	 	       0 	       0 	     365 	R	   280 	-
+Trailblazer 1	HJ                  	PARD	-	-	  1	6	 17.1 	 	 0.58 	 	     3.4 	 	       0 	       0 	     365 	V	   280 	-
 Taurus Orion	HJ                  	WFF	-	-	  1	2	 10.1 	 	 0.58 	 	     2.0 	 	       0 	       0 	     457 	R	   200 	-
 Taurus Tomahawk	HJ                  	WFF	-	-	  1	2	  9.4 	 	 0.58 	 	     1.6 	 	       0 	       0 	     457 	R	   550 	-
 Taurus Nike Tomahawk	HJ                  	WFF	-	-	  1	3	 12.0 	 	 0.58 	 	     2.2 	 	       0 	       0 	     457 	R	   700 	-
@@ -1164,7 +1166,7 @@ Strongarm	HJ                  	UMI	1	-	  1	4	 17.1 	 	 0.58 	 	     3.3 	 	     
 Honest John	HJ                  	ORDRSA	-	-	  1	1	  5.0 	 	 0.58 	 	     1.5 	 	       0 	       0 	     365 	T	    10 	-
 Father John	HJ                  	ORDRSA	1	-	  0	1	  5.0 	 	 0.58 	 	     1.5 	 	       0 	       0 	     365 	T	    10 	-
 Father John	HJ                  	ORDRSA	2	-	  0	1	  5.0 	 	 0.58 	 	     1.5 	 	       0 	       0 	     365 	T	    10 	-
-Improved Honest John	HJ                  	DAC	-	-	  1	1	  4.1 	 	 0.58 	 	     1.5 	 	       0 	       0 	-	M	    10 	-
+Improved Honest John	HJ                  	DAC	-	-	  1	1	  4.1 	 	 0.58 	 	     1.5 	 	       0 	       0 	-	A	    10 	-
 HJ	HJ                  	ORDRSA	-	-	  1	1	  5.0 	 	 0.58 	 	     1.5 	 	       0 	       0 	     365 	T	    10 	-
 HJ Hydac	HJ                  	SDCO	-	-	  1	2	 11.3 	 	 0.58 	 	     2.6 	 	       0 	       0 	     365 	R	   150 	-
 HJ Orion	HJ                  	NASA	-	-	  1	2	 12.6 	 	 0.58 	 	     2.0 	?	       0 	       0 	     365 	R	   120 	-
@@ -1180,18 +1182,18 @@ HJ Nike T40 T55	HJ                  	PARD	-	-	  1	4	 12.0 	?	 0.58 	 	-	 	      
 HJ Nike Tri-Deacon T40	HJ                  	PARD	-	-	  1	4	 12.0 	?	 0.58 	 	-	 	       0 	       0 	     365 	Q	    30 	-
 HJ Nike Nike Recruit	HJ                  	PARD	-	-	  1	4	 10.0 	 	 0.58 	 	     1.3 	 	       0 	       0 	     365 	Q	    30 	-
 HJ Nike Nike Recruit T55	HJ                  	PARD	-	-	  1	5	 10.9 	 	 0.58 	 	     1.3 	 	       0 	       0 	     365 	Q	    30 	-
-HJ PRV	HJ                  	PARD	-	-	  1	4	 12.0 	?	 0.58 	 	-	 	       0 	       0 	     365 	R	   100 	-
+HJ PRV	HJ                  	PARD	-	-	  1	4	 12.0 	?	 0.58 	 	-	 	       0 	       0 	     365 	A	   100 	-
 Jason	HJ                  	AEROL	-	-	  1	5	 17.5 	 	 0.58 	 	     3.4 	 	       0 	       0 	     365 	R	   800 	-
 X-7A-1	HJ                  	LVN	-	-	  1	2	  2.1 	 	 0.61 	 	     3.6 	 	       0 	       0 	-	C	    30 	-
-Fateh-110	Zelzal              	IR	-	-	  1	1	  9.0 	?	 0.61 	 	     1.0 	?	       0 	       0 	-	M	    60 	   200
+Fateh-110	Zelzal              	IR	-	-	  1	1	  9.0 	?	 0.61 	 	     1.0 	?	       0 	       0 	-	A	    60 	   200
 Fateh-360	Zelzal              	IR	-	-	  1	1	  9.0 	?	 0.61 	 	     1.0 	?	       0 	       0 	-	M	   100 	   500
 M-600	Zelzal              	SYMC	-	-	  1	1	  9.0 	?	 0.61 	 	     1.0 	?	       0 	       0 	-	M	    60 	   241
-Zelzal	Zelzal              	IR	-	-	  1	1	 10.0 	?	 0.61 	 	     0.9 	 	       0 	       0 	-	R	    50 	   209
-Zelzal-1	Zelzal              	IR	-	-	  1	1	 10.0 	?	 0.61 	 	     0.9 	 	       0 	       0 	-	R	    50 	   209
-Zelzal-2	Zelzal              	IR	-	-	  1	1	 10.0 	?	 0.61 	 	     0.9 	 	       0 	       0 	-	R	    50 	   209
-Zelzal-3	Zelzal              	IR	-	-	  1	1	 10.0 	?	 0.61 	 	     0.9 	 	       0 	       0 	-	R	    50 	   209
+Zelzal	Zelzal              	IR	-	-	  1	1	 10.0 	?	 0.61 	 	     0.9 	 	       0 	       0 	-	A	    50 	   209
+Zelzal-1	Zelzal              	IR	-	-	  1	1	 10.0 	?	 0.61 	 	     0.9 	 	       0 	       0 	-	A	    50 	   209
+Zelzal-2	Zelzal              	IR	-	-	  1	1	 10.0 	?	 0.61 	 	     0.9 	 	       0 	       0 	-	A	    50 	   209
+Zelzal-3	Zelzal              	IR	-	-	  1	1	 10.0 	?	 0.61 	 	     0.9 	 	       0 	       0 	-	A	    50 	   209
 Kavoshgar K110	Zelzal              	IR	-	-	  1	1	 10.0 	?	 0.61 	 	     0.9 	 	       0 	       0 	-	R	    50 	-
-Lance	Lance               	LTVM	-	-	  1	1	  6.2 	 	 0.56 	 	-	 	       0 	       0 	-	M	    46 	-
+Lance	Lance               	LTVM	-	-	  1	1	  6.2 	 	 0.56 	 	-	 	       0 	       0 	-	A	    46 	-
 Sonda 3	Sonda3              	IAE	-	-	  1	2	  8.0 	 	 0.56 	 	     1.5 	 	       0 	       0 	     102 	R	   600 	-
 Sonda 3	Sonda3              	IAE	M1	-	  1	2	  8.0 	 	 0.56 	 	     1.4 	 	       0 	       0 	     102 	R	   600 	-
 Sonda 3	Sonda3              	IAE	M2	-	  1	2	  8.0 	 	 0.56 	 	     1.4 	 	       0 	       0 	     102 	R	   600 	-
@@ -1208,20 +1210,20 @@ RH-560/300 Mk II	Stromboli           	VSSC	-	-	  1	2	  9.1 	 	 0.56 	 	     1.3 
 RH-560 Mk III	Stromboli           	VSSC	-	-	  1	2	  9.1 	 	 0.56 	 	     1.3 	 	       0 	       0 	      76 	R	   400 	-
 RH-560S	Stromboli           	VSSC	-	-	  1	1	  5.9 	 	 0.56 	 	     1.5 	 	       0 	       0 	     119 	R	   250 	-
 RH-560	Stromboli           	VSSC	-	-	  1	2	  8.4 	 	 0.56 	 	     1.3 	 	       0 	       0 	      76 	R	   400 	-
-RH-560/LPR-3T	Stromboli           	VSSC	-	-	  1	2	 10.0 	 	 0.56 	 	     2.5 	 	       0 	       0 	     119 	R	   420 	-
+RH-560/LPR-3T	Stromboli           	VSSC	-	-	  1	2	 10.0 	 	 0.56 	 	     2.5 	 	       0 	       0 	     119 	A	    10 	-
 Berenice	Stromboli           	ONERA	-	-	  1	4	 12.3 	 	 0.56 	 	     3.4 	 	       0 	       0 	     170 	V	   250 	-
 Titus	Stromboli           	ONERA	-	-	  1	2	 11.6 	 	 0.56 	 	     3.4 	 	       0 	       0 	     170 	V	   250 	-
 Tibere	Stromboli           	ONERA	-	-	  1	3	 14.2 	 	 0.56 	 	     4.6 	 	       0 	       0 	     170 	V	  1000 	-
 Tacite	Stromboli           	ONERA	-	-	  1	1	  7.8 	 	 0.56 	 	     2.0 	 	       0 	       0 	     170 	V	   150 	-
-OPd-56-39-22D	Stromboli           	ONERA	-	-	  1	4	 12.2 	 	 0.56 	 	     1.8 	 	       0 	       0 	     200 	R	   280 	-
-Antares	Stromboli           	ONERA	-	OPd-56-39-22D	  1	4	 12.2 	 	 0.56 	 	     1.8 	 	       0 	       0 	     200 	R	   280 	-
+OPd-56-39-22D	Stromboli           	ONERA	-	-	  1	4	 12.2 	 	 0.56 	 	     1.8 	 	       0 	       0 	     200 	V	   280 	-
+Antares	Stromboli           	ONERA	-	OPd-56-39-22D	  1	4	 12.2 	 	 0.56 	 	     1.8 	 	       0 	       0 	     200 	V	   280 	-
 Dragon	Stromboli           	SUD	-	-	  1	2	  7.0 	?	 0.56 	 	     1.2 	?	       0 	       0 	      75 	R	   440 	-
 Dragon 2B	Stromboli           	SUD	-	-	  1	2	  7.0 	 	 0.56 	 	     1.2 	 	       0 	       0 	      97 	R	   440 	-
 Dragon 3	Stromboli           	SUD	-	-	  1	2	  7.3 	 	 0.56 	 	     1.3 	 	       0 	       0 	      97 	R	   520 	-
-Hatf I	Stromboli           	SUPA	-	-	  1	1	  5.3 	 	 0.56 	 	     1.1 	 	       0 	       0 	      97 	R	   116 	-
+Hatf I	Stromboli           	SUPA	-	-	  1	1	  5.3 	 	 0.56 	 	     1.1 	 	       0 	       0 	      97 	A	   116 	-
 Dauphin	Stromboli           	SUD	-	-	  1	1	  5.3 	 	 0.56 	 	     1.1 	 	       0 	       0 	      97 	R	   116 	-
 Eridan	Stromboli           	CNES	-	-	  1	2	  8.3 	 	 0.56 	 	     2.1 	 	       0 	       0 	      97 	R	   480 	-
-Hatf II	Stromboli           	SUPA	-	-	  1	2	  8.3 	 	 0.56 	 	     2.1 	 	       0 	       0 	      97 	R	   250 	-
+Hatf II	Stromboli           	SUPA	-	-	  1	2	  8.3 	 	 0.56 	 	     2.1 	 	       0 	       0 	      97 	B	   250 	-
 SE4400	Stromboli           	SUD	-	-	  1	1	  8.1 	 	 0.56 	 	     1.2 	 	       0 	       0 	-	A	    60 	-
 VE10A Aigle	Stromboli           	LRBA	-	-	  1	1	  8.0 	 	 0.55 	 	     2.3 	 	       0 	       0 	-	Q	    20 	-
 VE10 Aigle	Stromboli           	LRBA	-	-	  1	1	  8.0 	 	 0.55 	 	     2.3 	 	       0 	       0 	-	Q	    20 	-
@@ -1235,7 +1237,7 @@ Veronique 61M	Veronique           	LRBA	-	-	  1	1	  9.5 	 	 0.55 	 	     1.9 	 	
 Veronique P2	Veronique           	LRBA	-	-	  1	1	  6.0 	?	 0.55 	?	     0.5 	 	       0 	       0 	      20 	T	     2 	-
 Veronique P6	Veronique           	LRBA	-	-	  1	1	  6.0 	?	 0.55 	?	     0.5 	 	       0 	       0 	      20 	T	     2 	-
 Sounding Rocket	NSPOB               	NSPO	-	-	  1	2	  8.0 	 	 0.55 	?	     2.0 	?	       0 	       0 	-	R	   200 	-
-Luna-M	Luna                	MITT	-	-	  1	1	  9.4 	 	 0.54 	 	     2.5 	 	       0 	       0 	-	M	    70 	-
+Luna-M	Luna                	MITT	-	-	  1	1	  9.4 	 	 0.54 	 	     2.5 	 	       0 	       0 	-	A	    70 	-
 SM-3	Mk72                	USN	-	-	  1	3	  7.9 	 	 0.53 	 	     1.3 	 	       0 	       0 	-	R	   100 	-
 SM-3-IB	Mk72                	USN	-	-	  1	3	  7.9 	 	 0.53 	 	     1.3 	 	       0 	       0 	-	R	   100 	-
 SM-3-IIA	Mk72                	USN	-	-	  1	3	  7.9 	 	 0.53 	 	     1.3 	 	       0 	       0 	-	R	   100 	-
@@ -1245,31 +1247,32 @@ Hades	Hades               	AELM	-	-	  1	1	  7.5 	 	 0.53 	 	     1.9 	 	       0
 Black Sparrow	BlackSparrow        	IAI	-	-	  0	1	  4.8 	 	 0.53 	 	     1.2 	 	       0 	       0 	-	B	    40 	-
 Blue Sparrow	BlackSparrow        	IAI	-	-	  0	1	  6.5 	 	 0.53 	 	     1.9 	 	       0 	       0 	-	B	   100 	-
 Silver Sparrow	BlackSparrow        	IAI	-	-	  0	1	  8.4 	 	 0.53 	 	     3.1 	 	       0 	       0 	-	B	   100 	-
-Al Samoud	V-750               	IQMIC	-	-	  1	1	  7.7 	 	 0.50 	 	     1.5 	 	       0 	       0 	-	R	    50 	-
-Al Fatah	Fatah               	FATAH	-	-	  1	1	  6.5 	 	 0.50 	 	     1.6 	 	       0 	       0 	-	R	    50 	-
-Cedre 3	Cedre               	LRS	-	-	  1	3	  6.8 	 	 0.52 	 	     1.2 	 	       0 	       0 	-	R	   200 	-
+Al Samoud	V-750               	IQMIC	-	-	  1	1	  7.7 	 	 0.50 	 	     1.5 	 	       0 	       0 	-	A	    50 	-
+Al Fatah	Fatah               	FATAH	-	-	  1	1	  6.5 	 	 0.50 	 	     1.6 	 	       0 	       0 	-	A	    50 	-
+Cedre 3	Cedre               	LRS	-	-	  1	3	  6.8 	 	 0.52 	 	     1.2 	 	       0 	       0 	-	A	   200 	-
 Cedre 4	Cedre               	LRS	-	-	  1	3	  7.0 	?	 0.52 	 	     1.2 	 	       0 	       0 	-	R	   200 	-
 S-520	S-520               	NISST	-	-	  1	1	  9.4 	 	 0.52 	 	     2.2 	 	       0 	       0 	     143 	R	   430 	-
 SS-520	S-520               	NISST	-	-	  1	2	  9.7 	 	 0.52 	 	     2.6 	 	       0 	       0 	-	R	  1000 	-
 SS-520	S-520               	NISST	4	-	  1	3	  9.7 	 	 0.52 	 	     2.6 	 	       0 	       0 	-	O	  1000 	-
 TT-500	JCR                 	NASDA	-	-	  1	2	 10.5 	 	 0.50 	 	     2.2 	 	       0 	       0 	-	R	   200 	-
 TT-500A	JCR                 	NASDA	-	-	  1	2	 10.5 	 	 0.50 	 	     2.2 	 	       0 	       0 	-	R	   290 	-
-48N6	48N6                	FAKEL	-	-	  1	1	  7.5 	 	 0.50 	 	     1.8 	 	       0 	       0 	-	R	    40 	-
+48N6	48N6                	FAKEL	-	-	  1	1	  7.5 	 	 0.50 	 	     1.8 	 	       0 	       0 	-	A	    40 	-
 JCR	JCR                 	NASDA	-	-	  1	2	 10.3 	 	 0.51 	 	     2.3 	 	       0 	       0 	     133 	X	   200 	-
 Momo	Momo                	IST	-	-	  1	1	  9.9 	 	 0.50 	 	     1.1 	 	       0 	       0 	      12 	R	   100 	-
 Momo	Momo                	IST	6	-	  1	1	 10.1 	 	 0.50 	 	     1.2 	 	       0 	       0 	      14 	R	   100 	-
 Hydra Sandhawk	NOTS400             	NOTS/LLNL	-	-	  1	2	 10.0 	?	 0.50 	?	     1.2 	?	       0 	       0 	-	R	   280 	-
 STIG-B	STIG-B              	ARMAD	-	-	  1	1	 10.4 	 	 0.51 	 	     0.7 	 	       0 	       0 	      22 	R	    80 	-
-SARGE	STIG-B              	EXOSA	-	-	  1	1	 11.0 	 	 0.51 	 	     1.1 	 	       0 	       0 	      24 	R	   100 	-
-K-15	K-15                	DRDO	-	-	  1	2	 11.0 	 	 0.50 	?	     4.0 	?	       0 	       0 	-	R	   300 	-
+SARGE	STIG-B              	EXOSA	-	-	  1	1	 11.0 	 	 0.51 	 	     1.1 	 	       0 	       0 	      24 	A	   100 	-
+K-15	K-15                	DRDO	-	-	  1	2	 11.0 	 	 0.50 	?	     4.0 	?	       0 	       0 	-	M	   300 	-
 E-8-5 VA	E8                  	NPOL	-	-	  1	1	  2.3 	 	 0.50 	?	     0.8 	 	       0 	       0 	-	D	 99000 	-
 Long Tom	LongTom             	WRE	-	-	  1	2	  8.3 	 	 0.47 	 	     0.9 	 	       0 	       0 	     190 	R	   120 	-
 Long Tom	LongTom             	WRE	1	-	  1	2	  8.3 	 	 0.47 	 	     0.9 	 	       0 	       0 	     190 	R	   120 	-
-HAT	LongTom             	WRE	-	-	  1	2	  5.0 	?	 0.47 	?	     0.5 	?	       0 	       0 	-	W	    60 	-
+HAT	LongTom             	WRE	-	-	  1	2	  5.0 	?	 0.47 	?	     0.5 	?	       0 	       0 	-	R	    60 	-
 Nike T48 Ajax	T48                 	DAC	-	-	  1	2	  8.0 	 	 0.46 	 	     1.3 	 	       0 	       0 	     190 	A	    20 	-
 SM-2	Terrier             	USN	-	-	  1	2	  7.9 	 	 0.53 	 	     1.3 	 	       0 	       0 	-	A	    30 	-
+SM-2 TMT	Terrier             	USN	-	-	  1	2	  7.9 	 	 0.53 	 	     1.3 	 	       0 	       0 	-	B	    80 	-
 SM-1ER	Terrier             	GDPO	-	-	  1	2	  8.0 	 	 0.46 	 	     1.3 	 	       0 	       0 	     258 	A	    20 	-
-Hugo	Terrier             	NMSU	-	-	  1	2	 10.0 	?	 0.46 	 	     1.3 	?	       0 	       0 	-	A	   160 	-
+Hugo	Terrier             	NMSU	-	-	  1	2	 10.0 	?	 0.46 	 	     1.3 	?	       0 	       0 	-	R	   160 	-
 Terrier Sandhawk	Terrier             	SAND	-	-	  1	2	 11.4 	 	 0.46 	 	-	 	       0 	       0 	     258 	R	   430 	-
 ARAV-ER	Terrier             	KRAT	-	-	  1	3	 14.0 	?	 0.46 	 	     1.0 	?	       0 	       0 	     258 	R	   370 	-
 Oriole II	Terrier             	DTI	-	Terrier Oriole	  1	2	 11.0 	?	 0.46 	 	     1.0 	?	       0 	       0 	     258 	R	   370 	-
@@ -1289,7 +1292,7 @@ Terrier Imp Malemute	Terrier             	GSFC	1	-	  1	2	 12.7 	 	 0.46 	 	     
 Terrier Terrier Imp Mal.	Terrier             	GSFC	-	-	  1	3	 12.7 	 	 0.46 	 	     1.6 	 	       0 	       0 	     258 	R	   500 	-
 Terrier/551	Terrier             	NOTS?	-	-	  1	2	  8.4 	 	 0.46 	 	     1.3 	 	       0 	       0 	     258 	R	   450 	-
 Terrier LEAP	Terrier             	BMDO	-	-	  1	3	 10.0 	?	 0.46 	?	     1.3 	?	       0 	       0 	     258 	A	    30 	-
-Terrier ASAS	Terrier             	BMDO	-	-	  1	2	 12.0 	 	 0.46 	 	     1.3 	?	       0 	       0 	     258 	A	   275 	-
+Terrier ASAS	Terrier             	BMDO	-	-	  1	2	 12.0 	 	 0.46 	 	     1.3 	?	       0 	       0 	     258 	R	   275 	-
 Terrier Hydac	Terrier             	DACC	-	-	  1	2	 10.0 	?	 0.46 	 	-	 	       0 	       0 	     258 	R	   500 	-
 Terrier Nike	Terrier             	SAND	-	-	  1	2	  9.8 	 	 0.46 	 	     1.1 	?	       0 	       0 	     258 	A	     2 	-
 Terrier Asp IV	Terrier             	NOTS	-	-	  1	2	 10.0 	?	 0.46 	 	     1.1 	?	       0 	       0 	     258 	R	   100 	-
@@ -1304,8 +1307,8 @@ Black Dagger	Terrier             	SMDC	-	Boosted Zombie	  1	2	  6.0 	 	 0.46 	 	
 Boosted Zombie	Terrier             	SMDC	-	-	  1	2	  6.0 	 	 0.46 	 	     1.0 	 	       0 	       0 	     258 	R	    40 	-
 Terrier Lynx	Terrier             	NAWC?	-	-	  1	2	  9.0 	?	 0.46 	 	     1.3 	?	       0 	       0 	     258 	R	   200 	-
 Terrier ASROC Cajun	Terrier             	NOTS	-	-	  1	3	 11.0 	?	 0.46 	 	     1.4 	?	       0 	       0 	     258 	R	   100 	-
-Terrier Recruit	Terrier             	WFC	-	-	  1	2	  5.0 	?	 0.46 	 	     1.0 	?	       0 	       0 	     258 	R	    10 	-
-Coyote	Terrier             	OSCC	-	-	  1	1	  9.5 	 	 0.46 	 	     1.0 	?	       0 	       0 	     258 	R	     1 	-
+Terrier Recruit	Terrier             	WFC	-	-	  1	2	  5.0 	?	 0.46 	 	     1.0 	?	       0 	       0 	     258 	Q	    10 	-
+Coyote	Terrier             	OSCC	-	-	  1	1	  9.5 	 	 0.46 	 	     1.0 	?	       0 	       0 	     258 	C	     1 	-
 STAR	Terrier             	OSCC	-	-	  1	1	  4.0 	?	 0.11 	?	     0.0 	 	       0 	       0 	-	Y	    90 	-
 Black Brant IX	Terrier             	BAL	-	-	  1	2	 12.2 	 	 0.46 	 	     2.2 	 	       0 	       0 	     257 	R	   300 	-
 Black Brant IX	Terrier             	BAL	2	-	  1	2	 12.2 	 	 0.46 	 	     2.2 	 	       0 	       0 	     257 	R	   300 	-
@@ -1330,7 +1333,7 @@ Tianying-3C	Tianying            	CSSAR	-	-	  1	1	  6.4 	 	 0.45 	 	     1.1 	 	 
 Tianying-3E	Tianying            	CSSAR	-	-	  1	1	  6.4 	 	 0.45 	 	     1.1 	 	       0 	       0 	-	R	   200 	-
 Tianying-3F	Tianying            	CSSAR	-	-	  1	2	  9.1 	 	 0.45 	 	     1.6 	 	       0 	       0 	-	R	   320 	-
 Huayi-1	Tianying            	HUAYI	-	-	  1	2	  9.1 	 	 0.45 	 	     1.6 	 	       0 	       0 	-	R	   320 	-
-T-7	T-7                 	SIMED	-	-	  0	1	  9.6 	 	 0.45 	 	     1.1 	 	       0 	       0 	-	W	    60 	-
+T-7	T-7                 	SIMED	-	-	  0	1	  9.6 	 	 0.45 	 	     1.1 	 	       0 	       0 	-	R	    60 	-
 T-7A	T-7                 	SIMED	-	-	  0	1	 10.3 	 	 0.45 	 	     1.1 	 	       0 	       0 	-	R	   115 	-
 T-7A-S2	T-7                 	SIMED	-	-	  0	1	 10.0 	 	 0.45 	 	     1.3 	 	       0 	       0 	-	R	   100 	-
 T-7A-S	T-7                 	SIMED	-	-	  0	1	 10.3 	 	 0.45 	 	     1.2 	 	       0 	       0 	-	R	   100 	-
@@ -1370,14 +1373,14 @@ Skylark 10A	Raven               	RAE	-	-	  1	2	  6.0 	?	 0.44 	 	     0.8 	 	   
 Jaguar 1	Raven               	RAE/WRE	-	-	  1	3	 11.9 	 	 0.44 	 	     1.7 	 	       0 	       0 	-	Q	    24 	-
 Jabiru	Raven               	RAE/WRE	-	-	  1	3	 11.9 	 	 0.44 	 	     1.7 	 	       0 	       0 	-	Q	    24 	-
 Jaguar 2	Raven               	RAE/WRE	-	-	  1	3	 12.9 	 	 0.44 	 	     2.2 	 	       0 	       0 	-	Q	    30 	-
-Jabiru 2	Raven               	RAE/WRE	-	-	  1	3	 12.9 	 	 0.44 	 	     2.2 	 	       0 	       0 	-	Q	    30 	-
-Jabiru 3	Raven               	RAE/WRE	-	-	  1	2	 12.7 	?	 0.44 	 	     2.0 	?	       0 	       0 	-	Q	    30 	-
+Jabiru 2	Raven               	RAE/WRE	-	-	  1	3	 12.9 	 	 0.44 	 	     2.2 	 	       0 	       0 	-	V	    80 	-
+Jabiru 3	Raven               	RAE/WRE	-	-	  1	2	 12.7 	?	 0.44 	 	     2.0 	?	       0 	       0 	-	V	    80 	-
 Rook	Raven               	RAE	-	-	  1	1	  5.0 	?	 0.44 	 	     1.2 	?	       0 	       0 	-	Q	    20 	-
 Rook IIIA	Raven               	RAE	-	-	  1	1	  5.0 	?	 0.44 	 	     1.2 	?	       0 	       0 	-	Q	    20 	-
 Leopard	Raven               	RAE	-	-	  1	2	  6.0 	?	 0.44 	 	     1.5 	?	       0 	       0 	-	Q	    20 	-
-Blue Water	Raven               	EELEC	-	-	  1	2	  7.6 	 	 0.44 	 	     1.4 	 	       0 	       0 	     196 	M	    20 	-
+Blue Water	Raven               	EELEC	-	-	  1	2	  7.6 	 	 0.44 	 	     1.4 	 	       0 	       0 	     196 	A	    20 	-
 PrSM	PrSM	USA	-	-	  1	1	  4.0 	 	 0.43 	 	     1.0 	?	       0 	       0 	-	M	   100 	-
-RX-420	RX-420              	LAPAN	-	-	  1	1	  6.2 	 	 0.42 	 	     1.0 	?	       0 	       0 	-	R	    50 	-
+RX-420	RX-420              	LAPAN	-	-	  1	1	  6.2 	 	 0.42 	 	     1.0 	?	       0 	       0 	-	A	    50 	-
 Kappa 7	K420                	ISAS	-	-	  1	1	  6.7 	 	 0.42 	 	     1.2 	 	       0 	       0 	-	T	    50 	-
 Kappa 8	K420                	ISAS	-	-	  1	2	 10.9 	 	 0.42 	 	     1.5 	 	       0 	       0 	-	R	   200 	-
 Kappa 9M	K420                	ISAS	-	-	  1	2	 11.1 	 	 0.42 	 	     1.5 	 	       0 	       0 	-	R	   350 	-
@@ -1404,13 +1407,13 @@ Nike Deacon	Nike                	PARD	1	-	  1	2	  7.8 	 	 0.42 	 	-	 	       0 	
 Nike Nike HPAG	Nike                	PARD	-	-	  1	3	  9.0 	?	 0.42 	 	-	 	       0 	       0 	     217 	Q	    10 	-
 Nike Nike T40	Nike                	PARD	-	-	  1	3	  9.0 	?	 0.42 	 	-	 	       0 	       0 	     217 	Q	    10 	-
 Nike T40 T55	Nike                	PARD	-	-	  1	3	  9.0 	?	 0.42 	 	-	 	       0 	       0 	     217 	Q	    10 	-
-Nike Nike T40 T55	Nike                	PARD	-	-	  1	4	  9.0 	?	 0.42 	 	-	 	       0 	       0 	     217 	R	   100 	-
+Nike Nike T40 T55	Nike                	PARD	-	-	  1	4	  9.0 	?	 0.42 	 	-	 	       0 	       0 	     217 	V	   100 	-
 Nike Nike Tri-Deacon T40	Nike                	PARD	-	-	  1	4	  9.0 	?	 0.42 	 	-	 	       0 	       0 	     217 	Q	    10 	-
 Nike Nike Deacon	Nike                	PARD	-	-	  1	3	  9.0 	?	 0.42 	 	-	 	       0 	       0 	     217 	Q	    10 	-
 Mach 5 TV	Nike                	SAND	-	-	  1	2	  7.0 	?	 0.42 	 	-	 	       0 	       0 	     217 	Q	    16 	-
 Nike Yardbird	Nike                	UMI	-	-	  1	2	  8.1 	 	 0.42 	 	-	 	       0 	       0 	     217 	R	   120 	-
 Nike Cajun	Nike                	UMI	-	-	  1	2	  8.1 	 	 0.42 	 	     0.7 	 	       0 	       0 	     217 	R	   120 	-
-Nike Nike Cajun	Nike                	UMI	-	-	  1	3	  8.1 	 	 0.42 	 	     0.7 	 	       0 	       0 	     217 	R	   120 	-
+Nike Nike Cajun	Nike                	UMI	-	-	  1	3	  8.1 	 	 0.42 	 	     0.7 	 	       0 	       0 	     217 	Q	   120 	-
 Nike Apache	Nike                	SAND	-	-	  1	2	  8.6 	 	 0.42 	 	     0.8 	 	       0 	       0 	     217 	R	   200 	-
 Nike Orion	Nike                	NASA	-	-	  1	2	  9.0 	 	 0.42 	 	     1.1 	 	       0 	       0 	     217 	R	   140 	-
 Nike Improved Orion	Nike                	NASA	-	-	  1	2	  9.0 	 	 0.42 	 	     1.1 	 	       0 	       0 	     217 	R	   140 	-
@@ -1430,24 +1433,24 @@ Aerobee 200A	Nike                	AJGC	-	-	  1	2	 12.6 	 	 0.42 	 	     1.6 	?	 
 Aerobee 200	Nike                	AJGC	-	-	  1	2	 12.6 	 	 0.42 	 	     1.6 	?	       0 	       0 	     225 	R	   250 	-
 Aerobee 350	Nike                	AJGC	-	-	  1	2	 15.9 	 	 0.42 	 	     3.6 	 	       0 	       0 	     217 	R	   450 	-
 Astrobee 200	Nike                	AJSP	-	-	  1	2	  6.3 	 	 0.42 	 	     0.8 	 	       0 	       0 	     161 	R	   350 	-
-AAD	AAD                 	HAL	-	-	  1	1	  7.5 	 	 0.42 	 	     1.3 	 	       0 	       0 	-	B	    40 	   350
+AAD	AAD                 	HAL	-	-	  1	1	  7.5 	 	 0.42 	 	     1.3 	 	       0 	       0 	-	A	    40 	   350
 AAD AD-1	AAD                 	HAL	-	-	  1	2	 10.0 	?	 0.42 	 	     1.3 	 	       0 	       0 	-	B	   150 	   350
-Prahaar	AAD                 	HAL	-	-	  1	1	  7.5 	 	 0.42 	 	     1.3 	 	       0 	       0 	-	B	    40 	   350
+Prahaar	AAD                 	HAL	-	-	  1	1	  7.5 	 	 0.42 	 	     1.3 	 	       0 	       0 	-	A	    40 	   350
 KSR-I	KSR                 	KARI	-	-	  1	1	  6.7 	 	 0.42 	 	     1.2 	 	       0 	       0 	      86 	T	    50 	-
 KSR-II	KSR                 	KARI	-	-	  1	2	  6.7 	 	 0.42 	 	     2.0 	 	       0 	       0 	     298 	R	   130 	-
-Aeolus	LongTom             	WRE	-	-	  1	2	  6.6 	 	 0.41 	 	     0.5 	 	       0 	       0 	      80 	T	    50 	-
+Aeolus	LongTom             	WRE	-	-	  1	2	  6.6 	 	 0.41 	 	     0.5 	 	       0 	       0 	      80 	R	    80 	-
 Malemute	Malemute            	SAND	-	-	  1	1	  2.4 	 	 0.41 	 	     0.8 	?	       0 	       0 	      57 	R	   165 	-
 Improved Malemute	Malemute            	GSFC	-	-	  1	1	  2.4 	 	 0.41 	 	     0.8 	?	       0 	       0 	      57 	R	   165 	-
-PAAT	Malemute            	SMDC	-	-	  1	1	  2.4 	 	 0.41 	 	     0.8 	?	       0 	       0 	      57 	R	   165 	-
+PAAT	Malemute            	SMDC	-	-	  1	1	  2.4 	 	 0.41 	 	     0.8 	?	       0 	       0 	      57 	A	   165 	-
 IM/IO	Malemute            	DLR	-	-	  1	2	  5.0 	?	 0.41 	 	-	 	       0 	       0 	-	R	   165 	-
 IM/IM	Malemute            	DLR	-	-	  1	2	  5.0 	?	 0.41 	 	-	 	       0 	       0 	-	R	   165 	-
 IM/VS-30	Malemute            	DLR	-	-	  1	2	  5.0 	?	 0.41 	 	-	 	       0 	       0 	-	R	   165 	-
-Martlet 1	Gun16               	SRCI	-	-	  1	1	  1.7 	 	 0.41 	 	     0.2 	 	       0 	       0 	-	R	   150 	-
+Martlet 1	Gun16               	SRCI	-	-	  1	1	  1.7 	 	 0.41 	 	     0.2 	 	       0 	       0 	-	A	   150 	-
 Martlet 2	Gun16               	SRCI	-	-	  1	1	  1.7 	 	 0.41 	 	     0.2 	 	       0 	       0 	-	R	   150 	-
 Martlet 2C	Gun16               	SRCI	-	-	  1	1	  1.7 	 	 0.41 	 	     0.2 	 	       0 	       0 	-	R	   150 	-
 Martlet 3A	Gun16               	SRCI	-	-	  1	1	  1.7 	 	 0.41 	 	     0.2 	 	       0 	       0 	-	R	   150 	-
 Martlet 3B	Gun16               	SRCI	-	-	  1	1	  1.7 	 	 0.41 	 	     0.2 	 	       0 	       0 	-	R	   150 	-
-Gun Projectile 16-inch	Gun16               	SRCI	-	-	  1	1	  1.7 	 	 0.41 	 	     0.2 	 	       0 	       0 	-	R	   100 	-
+Gun Projectile 16-inch	Gun16               	SRCI	-	-	  1	1	  1.7 	 	 0.41 	 	     0.2 	 	       0 	       0 	-	B	   100 	-
 Zenit	Zenith              	CONTR	-	-	  1	1	  4.6 	 	 0.42 	 	     0.7 	 	       0 	       0 	      45 	R	   140 	-
 Zenit	Zenith              	CONTR	C	-	  0	1	  5.9 	 	 0.42 	 	     0.9 	 	       0 	       0 	      45 	R	   190 	-
 Daniel	Daniel              	ONERA	-	-	  1	3	  8.4 	 	 0.40 	 	     1.0 	?	       0 	       0 	-	R	   130 	-
@@ -1457,10 +1460,11 @@ Nike-46	Nike-46             	DAC/AJ	-	-	  1	2	  6.0 	?	 0.40 	?	     0.7 	 	    
 Nike-47	Nike-46             	DAC/AJ	-	-	  1	2	  6.0 	?	 0.40 	?	     0.7 	 	       0 	       0 	     400 	A	    10 	-
 Nike-481	Nike-46             	DAC/AJ	-	-	  1	2	  6.0 	?	 0.42 	 	     0.7 	 	       0 	       0 	     217 	A	    20 	-
 Tien Kung 3	NSPO                	NCSIST	-	-	  1	1	  5.5 	 	 0.40 	 	     0.9 	 	       0 	       0 	-	A	    80 	-
-KN-25	KN-25               	KP	-	-	  1	1	  5.0 	?	 0.40 	?	     2.0 	?	       0 	       0 	-	R	   100 	-
+KN-25	KN-25               	KP	-	-	  1	1	  5.0 	?	 0.40 	?	     2.0 	?	       0 	       0 	-	B	   100 	-
 STIG-A	STIG                	ARMAD	-	-	  1	1	  9.8 	 	 0.39 	 	     0.7 	 	       0 	       0 	      22 	R	    80 	-
-ISRO-CES	ISRO-CES	ISRO	-	-	  1	1	  6.0 	?	 0.40 	?	     2.0 	?	       0 	       0 	-	R	     2 	-
-Duqm-1	Duqm	NASCOM	-	-	  1	1	  6.5 	 	 0.40 	?	     0.1 	 	       0 	       0 	-	R	   140 	-
+ISRO-CES	ISRO-CES	ISRO	-	-	  1	1	  6.0 	?	 0.40 	?	     2.0 	?	       0 	       0 	-	T	     2 	-
+Weka	Duqm	NASCOM	-	-	  1	1	  6.5 	 	 0.40 	?	     0.1 	 	       0 	       0 	-	R	   140 	-
+K-200	Duqm	SNOW	-	-	  1	1	  6.5 	 	 0.40 	?	     0.1 	 	       0 	       0 	-	R	   140 	-
 Astrobee F	AstrobeeF           	AJSP	-	-	  1	1	 11.5 	 	 0.38 	 	     1.5 	 	       0 	       0 	     178 	R	   375 	-
 Astrobee 500	Genie               	AJSP	-	-	  1	3	  7.8 	 	 0.38 	 	     0.9 	 	       0 	       0 	     161 	R	  1000 	-
 Paiute Tomahawk	Genie               	THKE	-	-	  1	2	  5.8 	 	 0.38 	 	     0.6 	 	       0 	       0 	     140 	R	   350 	-
@@ -1468,9 +1472,9 @@ Ute Tomahawk	Genie               	THKE	-	-	  1	2	  5.2 	 	 0.38 	 	     0.5 	 	 
 Paiute Apache	Genie               	THKE	-	-	  1	2	  4.8 	?	 0.38 	 	     0.6 	 	       0 	       0 	     140 	R	   200 	-
 Ute Apache	Genie               	THKE	-	-	  1	2	  4.2 	?	 0.38 	 	     0.5 	 	       0 	       0 	      60 	R	   200 	-
 ALARR	Genie               	AFIT?	-	-	  0	1	  3.1 	 	 0.38 	?	     0.5 	?	       0 	       0 	-	R	   100 	-
-Genie	Genie               	SAND	-	-	  1	1	  3.1 	 	 0.38 	?	     0.5 	?	       0 	       0 	-	R	   100 	-
-Genie Genie	Genie               	SAND	-	-	  1	2	  3.1 	 	 0.38 	?	     0.5 	?	       0 	       0 	-	R	   100 	-
-F89J/Genie	Genie               	SAND	-	-	  0	1	  3.1 	 	 0.38 	?	     0.5 	?	       0 	       0 	-	R	   100 	-
+Genie	Genie               	SAND	-	-	  1	1	  3.1 	 	 0.38 	?	     0.5 	?	       0 	       0 	-	A	   100 	-
+Genie Genie	Genie               	SAND	-	-	  1	2	  3.1 	 	 0.38 	?	     0.5 	?	       0 	       0 	-	A	   100 	-
+F89J/Genie	Genie               	SAND	-	-	  0	1	  3.1 	 	 0.38 	?	     0.5 	?	       0 	       0 	-	A	    10 	-
 Jaguar	Recruit             	WFF	-	-	  0	3	  8.8 	 	 0.38 	 	     0.8 	 	       0 	       0 	     440 	R	   800 	-
 Aerobee RTV-A-1a	AerobeeB            	AJ	-	-	  1	2	  7.9 	 	 0.38 	 	     0.7 	 	       0 	       0 	      18 	R	   130 	-
 Aerobee RTV-A-1	AerobeeB            	AJ	-	-	  1	2	  7.9 	 	 0.38 	 	     0.7 	 	       0 	       0 	      18 	R	   130 	-
@@ -1487,7 +1491,7 @@ Aerobee AJ10-25	AerobeeB            	AJ	-	-	  1	2	  7.9 	 	 0.38 	 	     0.7 	 	
 Aerobee AJ10-27	AerobeeB            	AJ	-	-	  1	2	  7.9 	 	 0.38 	 	     0.7 	 	       0 	       0 	      18 	R	   130 	-
 Aerobee AJ10-34	AerobeeB            	AJ	-	-	  1	2	  7.9 	 	 0.38 	 	     0.7 	 	       0 	       0 	      18 	R	   130 	-
 Aerobee 100	AerobeeB            	AJ	-	-	  1	2	  7.8 	 	 0.38 	 	     0.7 	 	       0 	       0 	      18 	R	   100 	-
-Seabee	AerobeeB            	AJ	-	-	  1	1	  7.0 	 	 0.38 	 	     0.7 	 	       0 	       0 	      18 	R	     1 	-
+Seabee	AerobeeB            	AJ	-	-	  1	1	  7.0 	 	 0.38 	 	     0.7 	 	       0 	       0 	      18 	A	     1 	-
 Aerobee	AerobeeB            	AJ	-	-	  1	2	  7.9 	 	 0.38 	 	     0.7 	 	       0 	       0 	      18 	R	   130 	-
 Aerobee Hi	AerobeeB            	AJ	-	-	  1	2	  9.5 	 	 0.38 	 	     0.9 	 	       0 	       0 	      18 	R	   270 	-
 Aerobee 150	AerobeeB            	AJGC	-	-	  1	2	  9.3 	 	 0.38 	 	     0.9 	 	       0 	       0 	      18 	R	   270 	-
@@ -1501,29 +1505,29 @@ Aerobee 300	AerobeeB            	AJGC	-	-	  1	3	  9.9 	 	 0.38 	 	     0.9 	 	  
 Aerobee 300A	AerobeeB            	AJGC	-	-	  1	3	  9.9 	 	 0.38 	 	     0.9 	 	       0 	       0 	      18 	R	   300 	-
 Vikram-S	Vikram-S	SKYRT	-	-	  1	1	  6.0 	 	 0.38 	 	     0.5 	 	       0 	       0 	      70 	R	   100 	-
 Kavoshgar M5	Kavoshgar           	IR	-	-	  1	1	  6.0 	?	 0.36 	 	     0.9 	?	       0 	       0 	-	R	   150 	-
-Nazeat 6H	Kavoshgar           	IR	-	-	  1	1	  6.3 	 	 0.36 	 	     0.9 	 	       0 	       0 	-	R	   150 	-
+Nazeat 6H	Kavoshgar           	IR	-	-	  1	1	  6.3 	 	 0.36 	 	     0.9 	 	       0 	       0 	-	R	    15 	-
 Nucleus	Nucleus             	NAMMO	-	-	  1	1	  9.0 	 	 0.36 	 	     0.1 	 	       0 	       0 	      30 	R	   100 	-
-LS-A	LS-C                	MHITO?	-	-	  1	2	  7.5 	 	 0.35 	 	     0.8 	 	       0 	       0 	      60 	R	   150 	-
+LS-A	LS-C                	MHITO?	-	-	  1	2	  7.5 	 	 0.35 	 	     0.8 	 	       0 	       0 	      60 	A	   150 	-
 Meteor-2H	Meteor2             	PAI	-	-	  1	1	  4.5 	 	 0.35 	 	     0.4 	 	       0 	       0 	      24 	W	    68 	-
 Meteor-2K	Meteor2             	PAI	-	-	  0	1	  4.3 	 	 0.35 	 	     0.4 	 	       0 	       0 	      52 	R	    90 	-
 Aerobee 75	Orion               	AJ	-	-	  1	1	  6.0 	?	 0.35 	 	     0.4 	?	       0 	       0 	       7 	R	    80 	-
 Improved Orion	Orion               	WFF	-	-	  1	1	  5.6 	 	 0.35 	 	     0.4 	 	       0 	       0 	       7 	R	    85 	-
 Orion	Orion               	WFF	-	-	  1	1	  5.6 	 	 0.35 	 	     0.4 	 	       0 	       0 	       7 	R	    85 	-
-Polaris FTV-4	10KS2500            	LMSC	-	-	  1	1	  2.9 	 	 0.35 	?	     0.1 	?	       0 	       0 	      11 	R	    10 	-
-Iraqi Gun Projectile	IraqGun350          	SRCI	-	-	  1	1	  1.5 	 	 0.35 	 	     0.1 	 	       0 	       0 	-	R	   100 	-
+Polaris FTV-4	10KS2500            	LMSC	-	-	  1	1	  2.9 	 	 0.35 	?	     0.1 	?	       0 	       0 	      11 	A	    10 	-
+Iraqi Gun Projectile	IraqGun350          	SRCI	-	-	  1	1	  1.5 	 	 0.35 	 	     0.1 	 	       0 	       0 	-	A	   100 	-
 THAAD	THAAD               	LMPCO	-	-	  1	1	  6.2 	 	 0.34 	 	     0.9 	 	       0 	       0 	-	B	   100 	-
 THAAD	THAAD               	LMCO	1	-	  1	1	  6.2 	 	 0.34 	 	     0.9 	 	       0 	       0 	-	B	   100 	-
 SM-1MR	Standard            	GDPO	-	-	  1	1	  4.5 	 	 0.34 	 	     0.6 	 	       0 	       0 	-	A	    20 	-
 SM-2MR	Standard            	USN	-	-	  1	1	  5.0 	?	 0.35 	 	     1.3 	 	       0 	       0 	-	A	    30 	-
 Lynx	Standard            	USN	-	-	  1	1	  5.0 	?	 0.35 	 	     1.3 	 	       0 	       0 	-	A	    30 	-
 Kappa 4	Kappa4              	ISAS	-	-	  1	2	  5.9 	 	 0.33 	 	     0.2 	 	       0 	       0 	     105 	R	    80 	-
-Kappa 5	Kappa4              	ISAS	-	-	  1	2	  5.9 	 	 0.33 	 	     0.2 	 	       0 	       0 	     105 	R	    80 	-
+Kappa 5	Kappa4              	ISAS	-	-	  1	2	  5.9 	 	 0.33 	 	     0.2 	 	       0 	       0 	     105 	A	    80 	-
 Sandhawk	Sandhawk            	SAND	-	-	  1	1	  5.1 	 	 0.33 	 	     0.8 	 	       0 	       0 	      80 	R	   200 	-
 Sandhawk Tomahawk	Sandhawk            	SAND	-	-	  1	2	  9.0 	?	 0.33 	 	     1.0 	?	       0 	       0 	      80 	R	   550 	-
 Gradicom 1	Gradicom            	CITED	-	-	  1	1	  4.5 	 	 0.32 	 	     0.5 	 	       0 	       0 	-	T	    40 	-
-Gradicom 2	Gradicom            	CITED	-	-	  1	2	  7.7 	 	 0.32 	 	     0.9 	 	       0 	       0 	-	T	   100 	-
+Gradicom 2	Gradicom            	CITED	-	-	  1	2	  7.7 	 	 0.32 	 	     0.9 	 	       0 	       0 	-	R	   100 	-
 RX-320	RX-320              	LAPAN	-	-	  1	1	  4.7 	 	 0.32 	 	     0.5 	 	       0 	       0 	-	T	    70 	-
-BT-310	S-310               	ISAS	-	-	  1	1	  6.0 	?	 0.31 	 	     0.7 	 	       0 	       0 	-	R	     5 	-
+BT-310	S-310               	ISAS	-	-	  1	1	  6.0 	?	 0.31 	 	     0.7 	 	       0 	       0 	-	A	     5 	-
 S-310	S-310               	ISAS	-	-	  1	1	  6.8 	 	 0.31 	 	     0.7 	 	       0 	       0 	-	R	   190 	-
 Belier	Belier              	AESPC	-	-	  1	1	  3.8 	 	 0.31 	 	     0.4 	 	       0 	       0 	-	R	   109 	-
 Belier III	Belier              	AESPC	-	-	  1	1	  3.8 	 	 0.31 	 	     0.4 	 	       0 	       0 	-	R	   109 	-
@@ -1535,7 +1539,7 @@ Hydra-Iris	Iris                	NWC/LLNL	-	-	  0	1	  6.0 	 	 0.31 	 	     0.8 	 
 S-300	S-300               	ISAS	-	-	  1	1	  6.0 	?	 0.30 	 	     0.6 	?	       0 	       0 	-	R	   160 	-
 Bullpup Apache	Bullpup             	THKE	-	-	  1	2	  7.0 	?	 0.30 	?	     0.4 	?	       0 	       0 	     111 	T	    50 	-
 Bullpup Cajun	Bullpup             	THKE	-	-	  1	2	  7.0 	?	 0.30 	?	     0.4 	?	       0 	       0 	     111 	T	    41 	-
-FTI	FTI                 	AVIB	-	-	  1	1	  5.0 	 	 0.30 	 	     0.2 	?	       0 	       0 	-	R	    60 	-
+FTI	FTI                 	AVIB	-	-	  1	1	  5.0 	 	 0.30 	 	     0.2 	?	       0 	       0 	-	A	    60 	-
 WAC A	WAC                 	JPL/DAC	-	-	  0	1	  7.3 	 	 0.30 	 	     0.3 	 	       0 	       0 	-	T	    75 	-
 WAC B	WAC                 	JPL/DAC	-	-	  0	1	  7.3 	 	 0.30 	 	     0.3 	 	       0 	       0 	-	T	    75 	-
 WAC	WAC                 	JPL/DAC	-	-	  0	1	  7.3 	 	 0.30 	 	     0.3 	 	       0 	       0 	-	T	    10 	-
@@ -1551,15 +1555,15 @@ RH-300B	Venus               	VSSC	-	-	  1	2	  6.5 	 	 0.28 	 	     0.6 	 	      
 Tauro	Rigel               	IIAE	-	-	  1	2	  7.7 	 	 0.28 	 	     1.2 	 	       0 	       0 	-	R	   150 	-
 Rigel	Rigel               	IIAE	-	-	  1	2	  6.3 	 	 0.28 	 	     1.0 	?	       0 	       0 	-	R	   310 	-
 Canopus 2	Rigel               	IIAE	-	-	  1	1	  4.0 	?	 0.28 	 	     0.3 	 	       0 	       0 	-	R	   150 	-
-Canopus 1	Rigel               	IIAE	-	-	  1	1	  4.0 	?	 0.28 	 	     0.3 	 	       0 	       0 	-	R	   150 	-
-Centenario	Rigel               	IIAE	-	-	  1	1	  4.6 	 	 0.28 	 	     0.3 	 	       0 	       0 	-	R	    50 	-
+Canopus 1	Rigel               	IIAE	-	-	  1	1	  4.0 	?	 0.28 	 	     0.3 	 	       0 	       0 	-	A	    50 	-
+Centenario	Rigel               	IIAE	-	-	  1	1	  4.6 	 	 0.28 	 	     0.3 	 	       0 	       0 	-	A	    50 	-
 Castor (A)	Rigel               	IIAE	-	-	  1	2	  7.0 	?	 0.28 	?	     0.3 	 	       0 	       0 	-	R	   400 	-
 SpaceLoft XL	SpaceLoft           	UPAE	-	-	  1	1	  6.1 	 	 0.27 	 	     0.4 	 	       0 	       0 	-	R	   100 	-
-Spyder	SpaceLoft           	UPAE	-	-	  1	2	  8.0 	?	 0.27 	?	     0.4 	 	       0 	       0 	-	R	   100 	-
+Spyder	SpaceLoft           	UPAE	-	-	  1	2	  8.0 	?	 0.27 	?	     0.4 	 	       0 	       0 	-	A	   100 	-
 Black Brant III	BB3                 	BAL	-	-	  1	1	  5.5 	 	 0.26 	 	     0.3 	 	       0 	       0 	      49 	R	   170 	-
 Black Brant IIIB	BB3                 	BAL	-	-	  1	1	  5.5 	 	 0.26 	 	     0.3 	 	       0 	       0 	      44 	R	   220 	-
-N2ORTH	Amateur	HYEND	-	-	  1	1	  7.8 	 	 0.26 	 	     0.2 	 	       0 	       0 	      10 	R	    60 	-
-Gosling-Lobster	Gosling             	WRE	-	-	  1	2	  5.0 	?	 0.26 	 	     0.3 	?	       0 	       0 	-	R	    40 	-
+N2ORTH	Amateur	HYEND	-	-	  1	1	  7.8 	 	 0.26 	 	     0.2 	 	       0 	       0 	      10 	A	    60 	-
+Gosling-Lobster	Gosling             	WRE	-	-	  1	2	  5.0 	?	 0.26 	 	     0.3 	?	       0 	       0 	-	Q	    40 	-
 INTA-255	Gosling             	INTA	-	-	  0	1	  6.1 	 	 0.26 	 	     0.3 	 	       0 	       0 	      22 	R	   150 	-
 HAD	Gosling             	WRE	-	-	  1	2	  6.1 	 	 0.26 	 	     0.3 	 	       0 	       0 	     130 	R	   130 	-
 INTA-300	Gosling             	INTA	-	-	  1	2	  7.3 	 	 0.26 	 	     0.5 	 	       0 	       0 	     137 	R	   250 	-
@@ -1572,17 +1576,17 @@ Cockatoo Mk 3	Gosling             	WRE	-	-	  1	2	  6.3 	 	 0.26 	 	     0.3 	 	 
 Cockatoo Mk 4	Gosling             	WRE	-	-	  1	2	  6.3 	 	 0.26 	 	     0.3 	 	       0 	       0 	      99 	R	   140 	-
 Corella	Gosling             	WRE	-	-	  1	2	  8.0 	 	 0.26 	 	     0.4 	 	       0 	       0 	      99 	R	   220 	-
 Hybrid Test Rocket	HTR                 	NAMMO	-	-	  1	1	 10.6 	 	 0.25 	 	     0.4 	 	       0 	       0 	      30 	T	    30 	-
-Evo Space	EvoSpace	EVOL	-	-	  1	1	  6.7 	 	 0.25 	 	     0.4 	 	       0 	       0 	-	T	   120 	-
-Private A	PrivateA            	JPL	-	-	  0	1	  3.4 	 	 0.25 	 	     0.3 	 	       0 	       0 	      98 	R	     1 	-
-Private F	PrivateA            	JPL	-	-	  0	1	  3.4 	 	 0.25 	 	     0.3 	 	       0 	       0 	      98 	R	     1 	-
+Evo Space	EvoSpace	EVOL	-	-	  1	1	  6.7 	 	 0.25 	 	     0.4 	 	       0 	       0 	-	R	   120 	-
+Private A	PrivateA            	JPL	-	-	  0	1	  3.4 	 	 0.25 	 	     0.3 	 	       0 	       0 	      98 	A	     1 	-
+Private F	PrivateA            	JPL	-	-	  0	1	  3.4 	 	 0.25 	 	     0.3 	 	       0 	       0 	      98 	A	     1 	-
 Rhumi	Rhumi	SZI	-	-	  1	1	  6.0 	 	 0.25 	 	     0.2 	 	       0 	       0 	-	C	     2 	-
 Forschungsflugkorper	FFK                 	ERNO	-	-	  1	1	  4.0 	?	 0.25 	?	     0.3 	?	       0 	       0 	-	R	   120 	-
 CSXT	CSXT                	CSXT	-	-	  1	1	  6.5 	 	 0.25 	 	     0.3 	?	       0 	       0 	-	R	   100 	-
 K245	K250                	ISAS	-	-	  1	1	  5.6 	 	 0.25 	 	     0.3 	 	       0 	       0 	-	T	    10 	-
 Kappa 6	K250                	ISAS	-	-	  1	2	  5.6 	 	 0.25 	 	     0.3 	 	       0 	       0 	-	T	    60 	-
-Kappa 6H	K250                	ISAS	-	-	  1	2	  6.9 	 	 0.25 	 	     0.3 	 	       0 	       0 	-	R	    85 	-
+Kappa 6H	K250                	ISAS	-	-	  1	2	  6.9 	 	 0.25 	 	     0.3 	 	       0 	       0 	-	A	    85 	-
 Kappa 8L	K250                	ISAS	-	-	  1	2	  7.3 	 	 0.25 	 	     0.3 	 	       0 	       0 	-	R	   200 	-
-S-250	K250                	ISAS	-	-	  1	1	  5.0 	?	 0.25 	 	     0.2 	?	       0 	       0 	-	T	    40 	-
+S-250	K250                	ISAS	-	-	  1	1	  5.0 	?	 0.25 	 	     0.2 	?	       0 	       0 	-	R	    40 	-
 CB-250/RH-125	CB-250              	VSSC	-	-	  0	1	  3.5 	?	 0.25 	 	     0.1 	 	       0 	       0 	       8 	W	    30 	-
 CB-250/LPR-006	CB-250              	VSSC	-	-	  0	1	  3.5 	?	 0.25 	 	     0.1 	 	       0 	       0 	       8 	W	    30 	-
 NAL-25	STA                 	STA	-	-	  1	1	-	 	 0.25 	 	     0.1 	 	       0 	       0 	-	T	    20 	-
@@ -1590,16 +1594,16 @@ M-100	M-100               	TAIFUN?	-	-	  1	2	  8.3 	 	 0.25 	 	     0.5 	 	     
 M-100 (A-1)	M-100               	TAIFUN?	-	-	  1	2	  8.3 	 	 0.25 	 	     0.5 	 	       0 	       0 	-	Y	    90 	-
 M-100A	M-100               	TAIFUN?	-	-	  1	2	  8.3 	 	 0.25 	 	     0.5 	 	       0 	       0 	-	Y	    90 	-
 M-100B	M-100               	TAIFUN?	-	-	  1	2	  8.3 	 	 0.25 	 	     0.5 	 	       0 	       0 	-	Y	    90 	-
-RX-250-LPN	RX-250              	LAPAN	-	-	  1	1	  5.3 	 	 0.25 	 	     0.3 	 	       0 	       0 	      52 	T	    70 	-
+RX-250-LPN	RX-250              	LAPAN	-	-	  1	1	  5.3 	 	 0.25 	 	     0.3 	 	       0 	       0 	      52 	R	    70 	-
 D-Region Tomahawk	Tomahawk            	SAND	-	-	  1	1	  5.0 	?	 0.23 	 	     0.3 	?	       0 	       0 	      44 	R	   120 	-
 ILR-33 Bursztyn 2K	Bursztyn            	PAI	-	-	  0	1	  5.0 	 	 0.23 	 	     0.3 	?	       0 	       0 	-	R	   100 	-
 Tomahawk	Tomahawk            	SAND	-	-	  1	1	  5.0 	 	 0.23 	 	     0.3 	 	       0 	       0 	      44 	R	    80 	-
 Mesquito	MLRS                	WFF	-	-	  1	1	  5.0 	?	 0.23 	 	     0.2 	?	       0 	       0 	-	R	    60 	-
 Javelin 3	Javelin             	SDCO	-	-	  1	1	  4.5 	 	 0.23 	 	     0.2 	 	       0 	       0 	      86 	R	    60 	-
-Recruit	Recruit             	PARD	-	-	  1	1	  3.0 	?	 0.23 	 	     0.3 	?	       0 	       0 	     156 	R	    10 	-
-Recruit T55	Recruit             	PARD	-	-	  0	2	  5.0 	?	 0.23 	 	     0.4 	?	       0 	       0 	     156 	R	    10 	-
-MX-2227	AeroHTV             	AEROPH	-	-	  1	2	  3.9 	 	 0.23 	 	     0.1 	 	       0 	       0 	-	R	    10 	-
-HTV	AeroHTV             	AEROPH	-	-	  1	2	  3.9 	 	 0.23 	 	     0.1 	 	       0 	       0 	-	R	    10 	-
+Recruit	Recruit             	PARD	-	-	  1	1	  3.0 	?	 0.23 	 	     0.3 	?	       0 	       0 	     156 	A	    10 	-
+Recruit T55	Recruit             	PARD	-	-	  0	2	  5.0 	?	 0.23 	 	     0.4 	?	       0 	       0 	     156 	Q	    10 	-
+MX-2227	AeroHTV             	AEROPH	-	-	  1	2	  3.9 	 	 0.23 	 	     0.1 	 	       0 	       0 	-	Q	    10 	-
+HTV	AeroHTV             	AEROPH	-	-	  1	2	  3.9 	 	 0.23 	 	     0.1 	 	       0 	       0 	-	Q	    10 	-
 Kappa 2	K250                	ISAS	-	-	  1	2	  5.0 	 	 0.22 	 	     0.2 	 	       0 	       0 	-	T	    20 	-
 Kappa 3	K250                	ISAS	-	-	  1	2	  5.0 	 	 0.22 	 	     0.2 	 	       0 	       0 	-	T	    40 	-
 S-210	S-210               	NISST	-	-	  1	1	  5.2 	 	 0.21 	 	     0.3 	 	       0 	       0 	-	R	   110 	-
@@ -1612,7 +1616,7 @@ TT-210	TT-210              	NASDA	-	-	  1	1	  6.0 	?	 0.21 	 	     0.2 	?	      
 TT-200	TT-210              	NASDA	-	-	  1	1	  6.0 	?	 0.20 	 	     0.2 	?	       0 	       0 	-	R	   100 	-
 RH-200	RH-200              	VSSC	-	-	  1	2	  3.6 	 	 0.20 	 	     0.1 	 	       0 	       0 	      17 	R	    80 	-
 RH-200SV	RH-200              	VSSC	-	-	  1	1	  3.0 	?	 0.20 	 	     0.1 	 	       0 	       0 	      17 	R	    80 	-
-MMR-06	MMR-06              	TAIFUN?	-	-	  1	1	  3.5 	 	 0.20 	 	     0.1 	 	       0 	       0 	       8 	W	    60 	-
+MMR-06	MMR-06              	TAIFUN?	-	-	  1	1	  3.5 	 	 0.20 	 	     0.1 	 	       0 	       0 	       8 	Y	    60 	-
 X-17 HTV	Nike                	LVN	1	-	  1	3	  5.0 	?	 0.20 	 	     0.1 	?	       0 	       0 	     209 	Q	    10 	-
 X-17 HTV	Nike                	LVN	-	-	  1	3	  5.0 	?	 0.20 	 	     0.1 	?	       0 	       0 	     209 	Q	    10 	-
 X-17 QTV	T-40                	LVN	-	-	  1	3	  2.5 	?	 0.20 	 	     0.1 	?	       0 	       0 	      13 	Q	    10 	-
@@ -1620,19 +1624,19 @@ Kingfisher	Kingfisher	TMINUS	-	-	  1	1	  4.0 	?	 0.20 	 	     0.0 	 	       0 	 
 Barracuda	Kingfisher	TMINUS	-	-	  1	1	  4.0 	?	 0.20 	 	     0.0 	 	       0 	       0 	       0 	Y	   120 	-
 Traveler	Traveler            	USCLA	-	-	  1	1	  4.0 	 	 0.20 	 	     0.1 	 	       0 	       0 	-	R	     0 	-
 Aftershock	Traveler            	USCLA	-	-	  1	1	  3.8 	 	 0.20 	 	     0.1 	 	       0 	       0 	      19 	R	     0 	-
-Cirrus I	Cirrus              	DRG	-	-	  1	2	  4.1 	 	 0.20 	 	     0.1 	?	       0 	       0 	       5 	R	    35 	-
-Cirrus II	Cirrus              	DRG	-	-	  1	2	  4.1 	 	 0.20 	 	     0.1 	?	       0 	       0 	       5 	R	    35 	-
-Stratos II+	Stratos2            	DARE	-	-	  1	1	  7.0 	 	 0.20 	 	     0.2 	 	       0 	       0 	       8 	R	    50 	-
-Stratos III	Stratos2            	DARE	-	-	  1	1	  7.0 	 	 0.20 	 	     0.2 	 	       0 	       0 	       8 	R	    50 	-
-Proson M1	Proson              	CITEF	-	-	  1	2	  3.1 	 	 0.20 	 	     0.1 	 	       0 	       0 	-	R	    50 	-
+Cirrus I	Cirrus              	DRG	-	-	  1	2	  4.1 	 	 0.20 	 	     0.1 	?	       0 	       0 	       5 	A	    35 	-
+Cirrus II	Cirrus              	DRG	-	-	  1	2	  4.1 	 	 0.20 	 	     0.1 	?	       0 	       0 	       5 	A	    35 	-
+Stratos II+	Stratos2            	DARE	-	-	  1	1	  7.0 	 	 0.20 	 	     0.2 	 	       0 	       0 	       8 	A	    50 	-
+Stratos III	Stratos2            	DARE	-	-	  1	1	  7.0 	 	 0.20 	 	     0.2 	 	       0 	       0 	       8 	A	    50 	-
+Proson M1	Proson              	CITEF	-	-	  1	2	  3.1 	 	 0.20 	 	     0.1 	 	       0 	       0 	-	A	    50 	-
 Sparoair I	Sparrow             	NMC	-	-	  0	2	  3.7 	 	 0.20 	 	     0.1 	 	       0 	       0 	      35 	R	   100 	-
 Sparoair II	Sparrow             	NMC	-	-	  0	2	  3.9 	 	 0.20 	 	     0.1 	 	       0 	       0 	      35 	R	   100 	-
 Sparoair III	Sparrow             	NMC	-	-	  0	2	  3.9 	 	 0.20 	 	     0.1 	 	       0 	       0 	      35 	R	   100 	-
 Sparrow Arcas	Sparrow             	ATLR	-	-	  1	2	  3.8 	 	 0.20 	 	     0.1 	 	       0 	       0 	      35 	R	   175 	-
-Cleansweep IIIB	Sparrow             	ZIMN	-	-	  0	1	  3.0 	?	 0.20 	 	     0.1 	 	       0 	       0 	      16 	R	    51 	-
+Cleansweep IIIB	Sparrow             	ZIMN	-	-	  0	1	  3.0 	?	 0.20 	 	     0.1 	 	       0 	       0 	      16 	A	    51 	-
 Petrel	Petrel              	BAJUK	-	-	  0	1	  3.3 	 	 0.19 	 	     0.2 	 	       0 	       0 	-	R	   140 	-
 Petrel 2	Petrel              	BAJUK	-	-	  0	1	  3.7 	 	 0.19 	 	     0.2 	 	       0 	       0 	-	R	   175 	-
-Gun Projectile 7-inch	Gun07               	BRL	-	-	  1	1	  1.0 	?	 0.18 	 	     0.2 	 	       0 	       0 	-	R	   100 	-
+Gun Projectile 7-inch	Gun07               	BRL	-	-	  1	1	  1.0 	?	 0.18 	 	     0.2 	 	       0 	       0 	-	B	   100 	-
 HAEC	Demon               	WRE	-	-	  1	2	  3.5 	 	 0.18 	 	     0.1 	 	       0 	       0 	       9 	T	    75 	-
 Lorikeet	Demon               	WRE	-	-	  1	2	  5.0 	?	 0.18 	 	     0.1 	?	       0 	       0 	-	R	   100 	-
 Lorikeet Mk 2	Demon               	WRE	-	-	  1	2	  5.0 	?	 0.18 	 	     0.1 	?	       0 	       0 	-	R	   100 	-
@@ -1646,24 +1650,24 @@ Asp III	Asp                 	COOP	4L	-	  0	1	  2.7 	 	 0.17 	 	     0.0 	 	     
 Asp IV	Asp                 	COOP	-	-	  1	1	  2.7 	 	 0.17 	 	     0.0 	 	       0 	       0 	      12 	Y	   109 	-
 Viper-Arrow	Viper               	SAND	-	-	  1	2	  5.0 	 	 0.17 	 	     0.1 	 	       0 	       0 	      24 	R	   100 	-
 Kiva/Hopi	Kiva                	RPI	-	-	  1	2	  5.5 	 	 0.17 	 	     0.1 	 	       0 	       0 	      27 	R	   365 	-
-Cajun Dart	Deacon              	SDCO	-	-	  1	1	  4.1 	 	 0.17 	 	     0.1 	 	       0 	       0 	      36 	W	    74 	-
+Cajun Dart	Deacon              	SDCO	-	-	  1	1	  4.1 	 	 0.17 	 	     0.1 	 	       0 	       0 	      36 	Y	    74 	-
 Double Cajun T40	Deacon              	PARD	-	-	  1	2	  5.0 	?	 0.17 	 	     0.1 	 	       0 	       0 	      36 	Q	    20 	-
 Pogo Hi	Deacon              	NMSU	-	-	  1	1	  4.0 	?	 0.17 	 	     0.1 	 	       0 	       0 	      36 	Q	    25 	-
 Pogo Hi II	Deacon              	NMSU	-	-	  1	1	  4.0 	?	 0.17 	 	     0.1 	 	       0 	       0 	      36 	Q	    25 	-
 Pogo Hi III	Asp                 	NMSU	-	-	  1	1	  4.0 	?	 0.17 	 	     0.1 	 	       0 	       0 	      36 	Q	    25 	-
-Apache	Deacon              	NMSU	-	-	  1	1	  4.0 	?	 0.17 	 	     0.1 	 	       0 	       0 	-	R	    50 	-
+Apache	Deacon              	NMSU	-	-	  1	1	  4.0 	?	 0.17 	 	     0.1 	 	       0 	       0 	-	A	    50 	-
 Cajun	Deacon              	PARD	-	-	  1	1	  4.0 	?	 0.17 	 	     0.1 	 	       0 	       0 	      36 	Q	    20 	-
 S-C	STA                 	MHITO?	-	-	  1	1	  2.9 	 	 0.17 	 	     0.1 	 	       0 	       0 	-	R	    85 	-
 S-B	STA                 	MHITO?	-	-	  1	1	  2.8 	 	 0.16 	 	     0.1 	 	       0 	       0 	-	T	    75 	-
 S-A	STA                 	MHITO?	-	-	  1	1	  2.8 	?	 0.16 	?	     0.0 	 	       0 	       0 	-	T	    50 	-
 S-160	S-160               	NISST	-	-	  1	1	  4.0 	 	 0.16 	 	     0.1 	 	       0 	       0 	-	R	    80 	-
-NAL-16	STA                 	STA	-	-	  1	1	  4.0 	 	 0.16 	 	     0.1 	 	       0 	       0 	      10 	T	    20 	-
+NAL-16	STA                 	STA	-	-	  1	1	  4.0 	 	 0.16 	 	     0.1 	 	       0 	       0 	      10 	R	    20 	-
 Lex	Lex                 	ONERA/SNECMA	-	-	  1	1	  3.4 	 	 0.16 	 	     0.0 	 	       0 	       0 	      10 	R	   130 	-
 Monica I	Monica              	ATEF	-	-	  1	3	  3.1 	 	 0.16 	 	     0.1 	 	       0 	       0 	-	R	    50 	-
 Monica IV	Monica              	ATEF	-	-	  1	3	  5.1 	 	 0.16 	 	     0.1 	 	       0 	       0 	-	R	   100 	-
 Viper V/Dart	Viper5              	OSCC	-	-	  1	1	  3.4 	 	 0.18 	 	     0.0 	 	       0 	       0 	      27 	Y	   150 	-
 Viper Falcon	Viper               	SDCO	-	-	  1	2	  3.5 	?	 0.17 	 	     0.0 	 	       0 	       0 	-	Y	    80 	-
-Viper	Viper               	SDCO	-	-	  1	1	  2.4 	 	 0.16 	 	     0.0 	 	       0 	       0 	-	Y	   100 	-
+Viper	Viper               	SDCO	-	-	  1	1	  2.4 	 	 0.16 	 	     0.0 	 	       0 	       0 	-	W	    40 	-
 Viper-Dart	Viper               	SDCO	-	-	  1	1	  3.4 	 	 0.16 	 	     0.0 	 	       0 	       0 	-	Y	   120 	-
 Rockaire	Deacon              	NRL?	-	-	  0	1	  2.7 	 	 0.16 	?	     0.1 	 	       0 	       0 	      30 	T	    40 	-
 Deacon Rockoon	Deacon              	SUI	-	-	  0	1	  3.7 	 	 0.16 	 	     0.1 	 	       0 	       0 	      15 	R	   100 	-
@@ -1683,9 +1687,9 @@ Quad Deacon	Deacon              	PARD	-	-	  1	1	  7.0 	?	 0.15 	 	     0.1 	 	  
 Deacon	Deacon              	PARD	-	-	  1	1	  4.0 	?	 0.15 	 	     0.1 	 	       0 	       0 	      27 	Q	    20 	-
 Deacon HVAR	Deacon              	PARD	-	-	  1	2	  4.0 	?	 0.15 	 	     0.1 	 	       0 	       0 	      27 	Q	    20 	-
 Deacon Sidewinder	Deacon              	PARD	-	-	  1	2	  4.0 	?	 0.15 	 	     0.1 	 	       0 	       0 	      27 	Q	    20 	-
-Vrbec-Banovic	Amateur	VRBEC	-	-	  1	2	  3.5 	?	 0.15 	 	     0.1 	 	       0 	       0 	-	T	    80 	-
+Vrbec-Banovic	Amateur	VRBEC	-	-	  1	2	  3.5 	?	 0.15 	 	     0.1 	 	       0 	       0 	-	R	    80 	-
 Atea-1	Atea                	RLABN	-	-	  1	1	  5.0 	 	 0.15 	 	     0.1 	 	       0 	       0 	-	R	   100 	-
-Icarus	Icarus              	ERAU	-	-	  1	2	  4.9 	 	 0.15 	 	     0.1 	 	       0 	       0 	      16 	R	    60 	-
+Icarus	Icarus              	ERAU	-	-	  1	2	  4.9 	 	 0.15 	 	     0.1 	 	       0 	       0 	      16 	A	    60 	-
 Hyperion	AMROC               	EAC	-	-	  1	1	  5.8 	 	 0.15 	 	     0.1 	 	       0 	       0 	       6 	T	    36 	-
 K150	K150                	ISAS	-	-	  1	1	  4.0 	?	 0.15 	 	     0.1 	 	       0 	       0 	-	T	     7 	-
 Zhinui	ZN                  	NUDTC	-	-	  1	1	  4.8 	 	 0.15 	 	     0.1 	 	       0 	       0 	      10 	R	   120 	-
@@ -1703,21 +1707,21 @@ Emma	Emma                	MATRA	-	-	  0	1	  3.9 	 	 0.13 	 	     0.1 	 	       0
 Gamma Centauro	GammaCen            	IIAE	-	-	  1	2	  2.4 	 	 0.13 	 	     0.0 	 	       0 	       0 	-	W	    30 	-
 Aurore	Aurore              	SNECMA	-	-	  1	1	  3.3 	 	 0.13 	 	     0.0 	 	       0 	       0 	       8 	W	    60 	-
 Kappa 1	Kappa               	ISAS	-	-	  1	1	  2.7 	 	 0.13 	 	     0.0 	 	       0 	       0 	      10 	T	    40 	-
-Gun Projectile 5-inch	Gun05               	BRL	-	-	  1	1	  1.0 	?	 0.13 	 	     0.2 	 	       0 	       0 	-	R	   100 	-
-Skua	Skua                	BAJUK	-	-	  0	1	  2.2 	 	 0.13 	 	     0.0 	 	       0 	       0 	-	W	    70 	-
+Gun Projectile 5-inch	Gun05               	BRL	-	-	  1	1	  1.0 	?	 0.13 	 	     0.2 	 	       0 	       0 	-	A	   100 	-
+Skua	Skua                	BAJUK	-	-	  0	1	  2.2 	 	 0.13 	 	     0.0 	 	       0 	       0 	-	Y	    70 	-
 Skua 2	Skua                	BAJUK	-	-	  0	1	  2.8 	 	 0.13 	 	     0.1 	 	       0 	       0 	-	R	   100 	-
 Skua 3	Skua                	BAJUK	-	-	  0	1	  2.8 	 	 0.13 	 	     0.1 	 	       0 	       0 	-	R	   120 	-
 Skua 4	Skua                	BAJUK	-	-	  0	1	  2.8 	 	 0.13 	 	     0.1 	 	       0 	       0 	-	R	   120 	-
-FTB	FTB                 	AVIB	-	-	  1	1	  3.0 	 	 0.13 	 	     0.1 	 	       0 	       0 	-	R	    30 	-
+FTB	FTB                 	AVIB	-	-	  1	1	  3.0 	 	 0.13 	 	     0.1 	 	       0 	       0 	-	A	    30 	-
 Sidewinder-Arcas	Sidewinder          	ATLR	-	-	  1	2	  4.3 	 	 0.13 	 	     0.1 	 	       0 	       0 	-	R	    90 	-
 Sidewinder-Raven	Sidewinder          	RPI	-	-	  1	2	  5.2 	 	 0.13 	 	     0.1 	 	       0 	       0 	-	Y	   112 	-
 HPAG	Sidewinder          	PARD	-	-	  1	1	  1.8 	 	 0.13 	 	     0.0 	 	       0 	       0 	      12 	Q	    10 	-
 HPAG Deacon	Sidewinder          	PARD	-	-	  1	2	  3.0 	?	 0.13 	 	     0.0 	 	       0 	       0 	      12 	Q	    10 	-
 Double HPAG Deacon	Sidewinder          	PARD	-	-	  1	2	  3.0 	?	 0.13 	 	     0.0 	 	       0 	       0 	      12 	Q	    10 	-
 ADTV	Lupus               	WRE	-	-	  1	1	  2.2 	 	 0.13 	 	     0.0 	 	       0 	       0 	       9 	T	    20 	-
-Kookaburra	Lupus               	WRE	-	-	  1	2	  3.5 	 	 0.13 	 	     0.1 	 	       0 	       0 	       9 	T	    75 	-
-Kookaburra 2	Lupus               	WRE	-	-	  1	2	  3.5 	 	 0.13 	 	     0.1 	 	       0 	       0 	       9 	T	    75 	-
-Kookaburra 3	Lupus               	WRE	-	-	  1	2	  3.5 	 	 0.13 	 	     0.1 	 	       0 	       0 	       9 	T	    75 	-
+Kookaburra	Lupus               	WRE	-	-	  1	2	  3.5 	 	 0.13 	 	     0.1 	 	       0 	       0 	       9 	R	    75 	-
+Kookaburra 2	Lupus               	WRE	-	-	  1	2	  3.5 	 	 0.13 	 	     0.1 	 	       0 	       0 	       9 	R	    75 	-
+Kookaburra 3	Lupus               	WRE	-	-	  1	2	  3.5 	 	 0.13 	 	     0.1 	 	       0 	       0 	       9 	R	    75 	-
 DAC Roc	DACRoc              	DAC	-	-	  1	1	-	 	 0.13 	?	-	 	       0 	       0 	-	T	    50 	-
 Seagull	Unknown             	UNKUS	-	-	  1	1	-	 	 0.13 	?	-	 	       0 	       0 	-	T	    50 	-
 HALO	HALO                	HAL5	-	-	  1	1	  2.2 	 	 0.13 	 	     0.0 	 	       0 	       0 	-	T	    60 	-
@@ -1729,13 +1733,13 @@ Meteor-3	Meteor              	PAI	-	-	  1	2	  4.3 	 	 0.12 	 	     0.0 	 	      
 Meteor-3B	Meteor              	PAI	-	-	  1	2	  4.3 	 	 0.12 	 	     0.0 	 	       0 	       0 	      14 	W	    65 	-
 RH-125	RH-125              	VSSC	-	-	  1	1	  2.5 	?	 0.12 	 	     0.1 	 	       0 	       0 	       8 	W	    30 	-
 MCR-3/RH-125	RH-125              	VSSC	-	-	  0	1	  3.5 	?	 0.12 	 	     0.1 	 	       0 	       0 	       8 	W	    30 	-
-INTA-100	INTA-100            	INTA	-	-	  1	2	  4.1 	 	 0.12 	 	     0.1 	 	       0 	       0 	      17 	W	   100 	-
+INTA-100	INTA-100            	INTA	-	-	  1	2	  4.1 	 	 0.12 	 	     0.1 	 	       0 	       0 	      17 	Y	   100 	-
 Menaka II	RH-125              	VSSC	-	-	  1	2	  3.8 	 	 0.12 	 	     0.1 	 	       0 	       0 	       8 	W	    60 	-
-Black Brant VI	BB6                 	BAL	-	-	  1	1	  2.8 	 	 0.12 	 	     0.1 	 	       0 	       0 	       7 	W	    72 	-
+Black Brant VI	BB6                 	BAL	-	-	  1	1	  2.8 	 	 0.12 	 	     0.1 	 	       0 	       0 	       7 	Y	    72 	-
 Sonda 1	Sonda               	IAE	-	-	  1	2	  4.5 	 	 0.11 	 	     0.1 	 	       0 	       0 	      27 	W	    65 	-
-Rocketsonde	Rocketsonde         	SDCO?	-	-	  1	1	  3.0 	?	 0.11 	?	     0.0 	 	       0 	       0 	       1 	W	   100 	-
-Rocketsonde2	Rocketsonde2        	SDCO?	-	-	  1	1	  3.0 	?	 0.11 	?	     0.0 	 	       0 	       0 	       1 	W	   100 	-
-MESOS	Amateur	MESOS	-	-	  1	2	  3.5 	 	 0.11 	 	     0.0 	 	       0 	       0 	-	T	    80 	-
+Rocketsonde	Rocketsonde         	SDCO?	-	-	  1	1	  3.0 	?	 0.11 	?	     0.0 	 	       0 	       0 	       1 	Y	   100 	-
+Rocketsonde2	Rocketsonde2        	SDCO?	-	-	  1	1	  3.0 	?	 0.11 	?	     0.0 	 	       0 	       0 	       1 	Y	   100 	-
+MESOS	Amateur	MESOS	-	-	  1	2	  3.5 	 	 0.11 	 	     0.0 	 	       0 	       0 	-	R	    80 	-
 Viper 3A	Viper3              	SDCO	-	-	  1	1	  2.4 	 	 0.11 	 	     0.0 	 	       0 	       0 	-	Y	   120 	-
 DART	Viper3              	TMINUS	-	-	  1	1	  3.4 	 	 0.11 	 	     0.0 	 	       0 	       0 	-	Y	   120 	-
 Arcas	Arcas               	ATLR	-	-	  1	1	  2.3 	 	 0.11 	 	     0.0 	 	       0 	       0 	       1 	Y	    90 	-
@@ -1750,15 +1754,15 @@ Super Loki	SuperLoki           	SDCO	-	-	  1	1	  3.3 	 	 0.10 	 	     0.0 	 	   
 Shadow 1	SuperLoki           	LRRC	-	-	  1	1	  3.3 	 	 0.10 	 	     0.0 	 	       0 	       0 	      18 	Y	    90 	-
 Stable Super Loki	SuperLoki           	SDCO	-	-	  1	1	  3.3 	 	 0.10 	 	     0.0 	 	       0 	       0 	      18 	Y	    90 	-
 FalconLaunch	SuperLoki           	USAFA	-	-	  1	1	  3.3 	 	 0.10 	?	     0.0 	 	       0 	       0 	      22 	Y	   108 	-
-Microstar	SuperLoki           	SPFL	-	-	  1	1	  3.3 	?	 0.10 	?	     0.0 	 	       0 	       0 	-	W	    75 	-
+Microstar	SuperLoki           	SPFL	-	-	  1	1	  3.3 	?	 0.10 	?	     0.0 	 	       0 	       0 	-	Y	    75 	-
 Meraki	Amateur	NZRA	-	-	  1	2	  4.0 	 	 0.10 	 	     0.1 	 	       0 	       0 	       0 	R	   120 	-
-SPEAR-HRT	Amateur	USMA	-	-	  1	2	  3.0 	 	 0.10 	 	     0.0 	 	       0 	       0 	-	T	    90 	-
+SPEAR-HRT	Amateur	USMA	-	-	  1	2	  3.0 	 	 0.10 	 	     0.0 	 	       0 	       0 	-	R	    90 	-
 Skylark Micro	SkylarkMicro	SKYR	-	-	  1	2	  3.3 	 	 0.10 	 	     0.0 	 	       0 	       0 	-	W	    30 	-
 Epona	Belisama            	CFTHB	-	-	  1	2	  4.4 	 	 0.10 	 	     0.1 	 	       0 	       0 	-	W	    60 	-
 SA-II	STA                 	STA	-	-	  1	1	-	 	 0.10 	?	     0.0 	 	       0 	       0 	-	T	    20 	-
 ST	STA                 	STA	-	-	  1	1	-	 	 0.10 	?	     0.0 	 	       0 	       0 	-	T	    20 	-
 Black Brant VII	BB7                 	BAL	-	-	  1	1	  2.1 	 	 0.09 	 	     0.0 	 	       0 	       9 	-	W	    40 	-
-Loki Dart	Loki                	SDCO	-	-	  1	1	  2.6 	 	 0.08 	 	     0.0 	 	       0 	       0 	-	W	    75 	-
+Loki Dart	Loki                	SDCO	-	-	  1	1	  2.6 	 	 0.08 	 	     0.0 	 	       0 	       0 	-	Y	    75 	-
 Loki Dart PWN-8B	Loki                	SDCO	-	-	  1	1	  2.6 	 	 0.08 	 	     0.0 	 	       0 	       0 	-	W	    75 	-
 Loki	Loki                	SDCO	-	-	  1	1	  2.6 	 	 0.08 	 	     0.0 	 	       0 	       0 	-	W	    75 	-
 Loki Rockoon	Loki                	SUI	-	-	  0	1	  2.4 	 	 0.08 	 	     0.0 	 	       0 	       0 	      10 	R	   100 	-
