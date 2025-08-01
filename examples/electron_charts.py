@@ -3,7 +3,7 @@ import mcdowell_dataset_analysis as mda
 
 # STILL BROKEN FIX LATER
 
-scg. launch_value_vs_date_by_filter_scatter(
+scg.launch_value_vs_date_by_filter_scatter(
     chart_title_prefix="Electron",
     output_prefix="electron",
     value_column='Apogee',
@@ -16,16 +16,18 @@ scg. launch_value_vs_date_by_filter_scatter(
     color_map=mda.ChartUtils.orbit_color_map
 )
 
-"""scg.generate_launch_vehicle_charts(
+scg.generate_launch_vehicle_charts(
     launch_vehicle_simplified_name="Electron",
     chart_title_prefix="Electron",
     output_prefix="electron",
     mass_step_size_kg=10,
-)"""
+    year_x_tick_step_size=1,
+    month_x_tick_step_size=12,
+)
 
-"""scg.generate_launch_vehicle_scatter_plots(
+scg.generate_launch_vehicle_scatter_plots(
     launch_vehicle_simplified_name="Electron",
     chart_title_prefix="Electron",
     output_prefix="electron",
     mass_step_size_kg=10,
-)"""
+)

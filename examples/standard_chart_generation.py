@@ -2,7 +2,7 @@ import mcdowell_dataset_analysis as mda
 import os
 from datetime import datetime
 
-def generate_launch_vehicle_charts(launch_vehicle_simplified_name, chart_title_prefix, output_prefix, mass_step_size_kg=1000, year_x_tick_step_size=1, month_x_tick_step_size=1):
+def generate_launch_vehicle_charts(launch_vehicle_simplified_name, chart_title_prefix, output_prefix, mass_step_size_kg=1000, year_x_tick_step_size=1, month_x_tick_step_size=12):
     """Generate a series of charts for a specific launch vehicle.
 
     Charts:
@@ -21,7 +21,7 @@ def generate_launch_vehicle_charts(launch_vehicle_simplified_name, chart_title_p
         output_prefix (str): The prefix for the output file names.
         mass_step_size_kg (int, optional): The step size for mass ranges in kg. Defaults to 1000.
         year_x_tick_step_size (int, optional): The step size for year ticks on the x-axis. Defaults to 1.
-        month_x_tick_step_size (int, optional): The step size for month ticks on the x-axis. Defaults to 1.
+        month_x_tick_step_size (int, optional): The step size for month ticks on the x-axis. Defaults to 12.
     """
     
     mass_suffix = "t" if mass_step_size_kg == 1000 else "kg"
@@ -130,7 +130,8 @@ def generate_launch_vehicle_scatter_plots(launch_vehicle_simplified_name, chart_
         x_axis_title_suffix="(km)",
         value_title='Apogee',
         series_title='Orbit',
-        color_map=mda.ChartUtils.orbit_color_map
+        color_map=mda.ChartUtils.orbit_color_map,
+        x_axis_type='date',
     )
 
     launch_value_vs_date_by_filter_scatter(
@@ -143,7 +144,8 @@ def generate_launch_vehicle_scatter_plots(launch_vehicle_simplified_name, chart_
         x_axis_title_suffix="(degrees)",
         value_title='Inclination',
         series_title='Orbit',
-        color_map=mda.ChartUtils.orbit_color_map
+        color_map=mda.ChartUtils.orbit_color_map,
+        x_axis_type='date',
     )
 
     launch_value_vs_date_by_filter_scatter(
@@ -157,7 +159,8 @@ def generate_launch_vehicle_scatter_plots(launch_vehicle_simplified_name, chart_
         value_title='Payload Mass',
         series_title='Orbit',
         color_map=mda.ChartUtils.orbit_color_map,
-        y_scaling_factor=mass_multiplier
+        y_scaling_factor=mass_multiplier,
+        x_axis_type='date',
     )
 
 def generate_launch_vehicle_family_charts(launch_vehicle_simplified_name, chart_title_prefix, output_prefix, mass_step_size_kg=1000, year_x_tick_step_size=1, color_map=mda.ChartUtils.color_sequence_2_8):
@@ -1044,7 +1047,7 @@ def owner_payloads_vs_year_by_category(chart_title_prefix, output_prefix, owners
         color_map=color_map,
     )
 
-def launch_value_vs_date_by_filter_scatter(chart_title_prefix, output_prefix, value_column, series_column, filter_function, filter_function_parameter, filter_function_additional_parameter=None, x_axis_title_suffix="", value_title=None, series_title=None, color_map=None, x_tick_step_size=None, start_year=None, end_year=None, y_scaling_factor=1):
+def launch_value_vs_date_by_filter_scatter(chart_title_prefix, output_prefix, value_column, series_column, filter_function, filter_function_parameter, filter_function_additional_parameter=None, x_axis_title_suffix="", value_title=None, series_title=None, color_map=None, x_tick_step_size=None, start_year=None, end_year=None, y_scaling_factor=1, x_axis_type=None):
     """
     Plot launches per date with a specified value column (e.g., Apogee, Mass, etc.) and series column (e.g., Launch Pad, Launch Vehicle, etc.) by filtering the dataset with a filter function.
 
@@ -1061,7 +1064,8 @@ def launch_value_vs_date_by_filter_scatter(chart_title_prefix, output_prefix, va
         x_tick_step_size (int, optional): Step size for x-axis ticks. Defaults to 1.
         start_year (int, optional): Start year for the data. Defaults to None (uses earliest year in dataset).
         end_year (int, optional): End year for the data. Defaults to None (uses latest year in dataset).
-    
+        x_axis_type (str, optional): Type of x-axis to use. Defaults to None (linear). Use 'date' for date axis.
+
     Interesting note:
     Because we're using raw dates and not a launch date field or something, we can't set x tick step size and get anything that makes sense. It's not a continuous dx in the dataset since some launches are hours apart and some are months.
     """
@@ -1121,7 +1125,8 @@ def launch_value_vs_date_by_filter_scatter(chart_title_prefix, output_prefix, va
         output_path=f'examples/outputs/chart/{output_prefix}/{output_name}.png',
         color_map=color_map,
         y_scaling_factor=y_scaling_factor,
-        x_tick_step_size=x_tick_step_size
+        x_tick_step_size=x_tick_step_size,
+        x_axis_type=x_axis_type
     )
     
 def launch_apogee_vs_inclination_by_filter_scatter(chart_title_prefix, output_prefix, series_column, filter_function, filter_function_parameter, filter_function_additional_parameter=None, series_title=None, color_map=None, start_year=None, end_year=None):

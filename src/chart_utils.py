@@ -426,7 +426,7 @@ class ChartUtils:
         
         print(f"Plot saved as '{output_path}'.")
     
-    def plot_scatter(dataframe, x_col, y_cols, title, subtitle, x_label, y_label, dot_diameter, output_path, color_map=None, y_scaling_factor=1, x_tick0=None, x_tick_step_size=None):
+    def plot_scatter(dataframe, x_col, y_cols, title, subtitle, x_label, y_label, dot_diameter, output_path, color_map=None, y_scaling_factor=1, x_tick0=None, x_tick_step_size=None, x_axis_type=None):
         """
         Create a scatter plot using Plotly Express.
         Args:
@@ -440,11 +440,11 @@ class ChartUtils:
             y_scaling_factor (float/int): Multiplicative factor to scale the y-axis
             output_path (string): Full path including filename to save the plot
             color_map (dictionary): y_col to color mapping, eg. {'LC40': '#ff0000', 'LC39A': '#00ff00'}
-            x_axis_type (string): Use 'date' if you want it formatted correctly as a date.
+            x_axis_type (string): Use 'date' if you want it formatted correctly as a date. Otherwise, None or don't use it.
         """
         
         df = dataframe.copy()
-        df[x_col] = pd.to_datetime(df[x_col])# if x_axis_type == 'date' else df[x_col]  # Convert x_col to datetime if x_axis_type is 'date'
+        df[x_col] = pd.to_datetime(df[x_col]) if x_axis_type == 'date' else df[x_col]  # Convert x_col to datetime if x_axis_type is 'date'
         if y_scaling_factor != 1:
             for col in y_cols:
                 df[col] = df[col] * y_scaling_factor
