@@ -1,5 +1,5 @@
 #Code	UCode	StateCode	Type	Class	TStart	TStop	ShortName	Name	Location	Longitude	Latitude	Error	Parent	ShortEName	EName	UName
-# Updated 2025 Jul 30 2328:50
+# Updated 2025 Aug  5 0443:38
 EARTH	EARTH	EARTH	AP	C	-	-	Earth	Earth	Earth	-	-	0.0200 	-	Earth (Terra)	Earth	Earth
 LUNA	LUNA	LUNA	AP	C	-	-	Luna	Luna	Luna	-	-	0.0200 	-	Moon	Moon	Luna
 SSYS	SSYS	SSYS	AP	C	-	-	Solar System	Solar System natural celestial objects	Sol	-	-	0.0200 	-	Solar System	Solar System natural celestial objects	Solar System
@@ -490,7 +490,8 @@ ALENR	SELEN	I	PL	B	1990	2005 Jun  1	Alenia Spazio	Alenia Spazio (Roma)	Roma	    
 ALENSP	ALENSP	E	PL	B	2018	-	Alen Space	Alen Space	Pontevedra:Nigran	     -8.8100 	   42.1400 	0.0200 	-	-	-	Alén Space
 ALIENA	ALIENA	SG	O	B	-	-	ALIENA	ALIENA Pte Ltd.	Singapore	    103.9700 	    1.3400 	0.0200 	-	-	-	ALIENA Pte Ltd.
 ALIEX	ALIEX	CN	O	B	2010	-	AliExpress	AliExpress, Alibaba Group	Hangzhou, Zhejiang	    120.1700 	   30.2500 	0.0200 	-	-	-	AliExpress, Alibaba Group
-ALMAG	ALMAG	US	O	B	2024?	-	Almagest	Almagest Space Corp.	Gaithersburg, Maryland	    -77.2300 	   39.1300 	0.0200 	-	-	-	Almagest Space Corp.
+ALMAG	ALMAG	UK	O	B	2024?	-	Almagest IOM	Almagest IOM Ltd.	Douglas, Isle of Man	      4.4800 	   54.1500 	0.0200 	ALMAGU	-	-	Almagest IOM Ltd.
+ALMAGU	ALMAGU	US	O	B	2024?	-	Almagest	Almagest Space Corp.	Gaithersburg, Maryland	    -77.2300 	   39.1300 	0.0200 	-	-	-	Almagest Space Corp.
 ALMAN	ALMAN	RU	LV/PL/E	B	2002	-	PVO Almaz-Antey	AO Kontsern VKO Almaz-Antey	Moskva	     37.6200 	   55.7500 	0.0200 	-	-	-	Концерн ПВО «Алмаз – Антей»
 ALPSP	ALPSP	US	PL	B	2015	2021 Aug	Alpha Space	Alpha Space	Houston, Texas	    -95.3800 	   29.7600 	0.0200 	-	-	-	Alpha Space
 ALYAH	ALYAH	UAE	O	B	2009?	2024 Oct  1	Yahsat	Al Yah Satellite Communications Co. PrJsc	Abu Dhabi	     54.3700 	   24.4700 	0.0200 	-	-	-	Al Yah Satellite Communications Co. PrJsc
@@ -709,6 +710,7 @@ BCCT	BCCT	T	O/PL	A	1902	-	Bangkok Cr.Col.	Rongreiyn krungthephkkhristeiyn withya
 BCSCL	BCSCL	BD	O	B	2017	-	BCSCL	Bangladesh Communications Satellite Company Ltd	Dhaka	     90.4000 	   23.7200 	0.0200 	BTRC	-	-	Bangladesh Communications Satellite Company Ltd
 BDS	BDS	IR	O	B	-	-	Bonyan Danesh	Bonyan Danesh Shargh	Tehran	     51.3900 	   35.6900 	0.0200 	-	-	-	Bonyan Danesh Shargh
 BDSAGR	BDSAGR	CN	O	B	-	-	GZH-NHK BDS AGR	Guozhiheng Beidou hao Nianjing Nongye Keji YG	Zhengzhou, Henan	    113.6500 	   34.7500 	0.0200 	-	-	GHZ-NHK BDS Agricultural Tech. Co.	国智恒北斗好年景农业科技有限公司
+BDSEN	BDSEN	CZ	O	B	-	-	BD SENSORS	BD SENSORS sro.	Buchlovice	     17.3400 	   49.0800 	0.0200 	-	-	-	BD SENSORS sro.
 BELGU	BELGU	RU	O	A	1876	-	NIU BelGU	Belgorodskiy Gosudarstvenniy Natsional'niy Issledovatel'skiy Universitet	Belgorod	     36.5800 	   50.5900 	0.0200 	-	BelSU	Belgorod State University	Белгородский государственный национальный исследовательский университет
 BELINT	BELINT	BY	-	B	2014	-	Belintersat	Belintersat	Minsk, Belarus	     27.5700 	   53.9000 	0.0200 	ZTZM	-	Belintersat	Belintersat
 BELL	BELL	US	LV/PL/E	B	1935	1960	Bell	Bell Aircraft (Air Force Plant 38)	Niagara Falls, New York	    -79.0200 	   43.1000 	0.0200 	-	-	-	Bell Aircraft (Air Force Plant 38)
@@ -3831,6 +3833,7 @@ YERK	YERK	US	S	A	1897	-	Yerkes	Yerkes Observatory	Williams Bay, Wisconsin	    -8
 YINGL	YINGL	CN	O	B	2024	-	Yinglong	Jiangsu Yinglong Weixing Keji YG	Wujin WIZ, Jiangsu	    119.9500 	   31.7000 	0.0200 	-	-	Jiangsu Yinglong Satellite Tech Co. Ltd.	江苏应龙卫星科技有限公司
 YINGSH	YINSGH	CN	O	B	-	-	Yingshiruida	Beijing Yingshiruida Keji Gufen YG	Beijing	    116.3800 	   39.9200 	0.0200 	-	-	Yingshiruida Technology Co., Ltd.	北京英视睿达科技股份有限公司
 YINHE	YINHE	CN	O/PL	B	2018	-	Yinhe	Yinhe hangtian	Beijing-Haidian	    116.3800 	   39.9200 	0.0200 	-	-	Galaxy Aerospace	银河航天
+YINNT	YINNT	CN	O/PL	B	2018	-	Yinhe	Yinhe hangtian Nantong weixing zhihui gongchang	Nantong, Jiangsu	    120.9600 	   31.8900 	0.0100 	-	-	Galaxy Aerospace Nantong Satellite Smart Factory	银河航天南通卫星智慧工厂
 YIX	YIX	CN	O	B	-	-	Yixing Kong.Ji.	Yixing Kongjian Jiaoyu Keji YG	Beijing	    116.3800 	   39.9200 	0.0200 	-	-	Yixing Space Education Technology Co Ltd	北京一颗星空间教育科技有限公司
 YLYZ	YLYZ	CN	O	A	-	-	Yi Ling Yi	Yi Ling Li Zhongxue	Beijing	    116.3800 	   39.9200 	0.0200 	-	-	One Zero One Middle School	一零一中学
 YKVZ	YKVZ	RU	E	C	1758	-	YKVZ	Ust'-Katavskiy Vagonostroitel'niy Zavod	Ust'-Katav (Chelyabinsk)	     58.1800 	   54.9300 	0.0200 	-	-	Ust-Katav Carriage Works	Усть-Катавский вагоностроительный завод

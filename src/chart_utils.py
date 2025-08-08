@@ -353,7 +353,7 @@ class ChartUtils:
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
         pio.write_image(fig, output_path, format='png', width=1280, height=720)
         
-        print(f"Plot saved as '{output_path}'.")
+        ChartUtils.log_and_save_df("png", os.path.basename(output_path))
     
     def plot_bar(dataframe, title, subtitle, x_label, y_label, output_path, color_map=None, barmode='stack', bargap=0, x_tick0=0, x_tick_step_size=1):
         """
@@ -424,7 +424,7 @@ class ChartUtils:
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
         pio.write_image(fig, output_path, format='png', width=1280, height=720)
         
-        print(f"Plot saved as '{output_path}'.")
+        ChartUtils.log_and_save_df("png", os.path.basename(output_path))
     
     def plot_scatter(dataframe, x_col, y_cols, title, subtitle, x_label, y_label, dot_diameter, output_path, color_map=None, y_scaling_factor=1, x_tick0=None, x_tick_step_size=None, x_axis_type=None):
         """
@@ -499,4 +499,17 @@ class ChartUtils:
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
         pio.write_image(fig, output_path, format='png', width=1280, height=720)
         
-        print(f"Plot saved as '{output_path}'.")
+        ChartUtils.log_and_save_df("png", os.path.basename(output_path))
+    
+    def log_and_save_df(log_type, output_name, output_prefix=None, save_dataframe=None):
+        if log_type == "dataframe":
+            os.makedirs(f'examples/outputs/raw_dataframes/{output_prefix}', exist_ok=True)
+            save_dataframe.to_csv(f'examples/outputs/raw_dataframes/{output_prefix}/raw_dataframe_{output_name}.csv', index=False)
+            print(f"\r(1/3) {output_name} dataframe saved", end="")
+        elif log_type == "csv":
+            os.makedirs(f'examples/outputs/csv/{output_prefix}/', exist_ok=True)
+            save_dataframe.to_csv(f'examples/outputs/csv/{output_prefix}/{output_name}.csv', index=True)
+            print(f"\r(2/3) {output_name} csv saved      ", end="")
+        elif log_type == "png":
+            print(f"\r(3/3) {output_name} saved      ")
+            
