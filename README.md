@@ -27,8 +27,11 @@ The package requires:
 - `pandas>=2.0.0`
 - `matplotlib>=3.5.0`
 - `plotly>=5.0.0`
+- `kaleido>=0.2.1`
 
 These are automatically installed when you use `pip`.
+
+Note that plotly requires a chromium-based browser to be installed to render charts. Firefox users beware!
 
 ## Updating Datasets
 
