@@ -1296,7 +1296,7 @@ def payloads_vs_mass_by_filter(chart_title_prefix, output_prefix, chart_title_su
         bargap=0.1,
     )
     
-def cumulative_payloads_by_filter_vs_date_since_first_payload(chart_title_prefix, output_prefix, filter_function, filter_function_parameters_list, filter_function_additional_parameter=None, series_names=None, color_map=None, start_year=None, end_year=None, date_column='Launch_Date', y_axis_type='linear', line_width=2):
+def cumulative_payloads_by_filter_vs_date_since_first_payload(chart_title_prefix, output_prefix, filter_function, filter_function_parameters_list, filter_function_additional_parameter=None, series_names=None, color_map=None, start_year=None, end_year=None, date_column='Launch_Date', y_axis_type='linear', line_width=2, max_cumulative_payloads=None, max_days_since_first=None):
     """
     Plot cumulative payloads by filter vs date since first payload, with option for multiple series (e.g., OneWeb, Starlink).
     
@@ -1314,6 +1314,9 @@ def cumulative_payloads_by_filter_vs_date_since_first_payload(chart_title_prefix
         end_year (int, optional): End year for data.
         date_column (str, optional): Date column to use (default 'Launch_Date').
         y_axis_type (str, optional): 'linear' or 'log' for y-axis scaling.
+        line_width (int, optional): Width of the lines. Defaults to 2.
+        max_cumulative_payloads (int, optional): Maximum cumulative payload count to display on y-axis.
+        max_days_since_first (int, optional): Maximum days since first launch to display on x-axis.
     """
     
     dataset = mda.McdowellDataset("./datasets")
@@ -1325,6 +1328,8 @@ def cumulative_payloads_by_filter_vs_date_since_first_payload(chart_title_prefix
         
     date_end = "present" if end_year == datetime.now().year else  f"{end_year}"
     output_name = f"{output_prefix}_payloads_vs_date_since_first_payload_by_filter_{start_year}_{date_end}"
+    output_name += f"_{max_cumulative_payloads}" if max_cumulative_payloads is not None else ""
+    output_name += f"_{max_days_since_first}" if max_days_since_first is not None else ""
     
     # After getting the start and end years, filter the dataset by launch date
     mda.Filters.filter_by_launch_date(dataset.launch, start_date=f'{start_year}-01-01', end_date=f'{end_year}-12-31')
@@ -1366,6 +1371,16 @@ def cumulative_payloads_by_filter_vs_date_since_first_payload(chart_title_prefix
     
     # Reset index to have Time_Since_First_Payload as a column for plotting
     output_df.reset_index(inplace=True)
+    
+    # Apply limits if specified
+    if max_days_since_first is not None:
+        output_df = output_df[output_df['Time_Since_First_Payload'] <= max_days_since_first]
+    
+    if max_cumulative_payloads is not None:
+        # Clip all payload columns to the maximum value
+        payload_columns = output_df.columns[1:].tolist()  # All columns except Time_Since_First_Payload
+        for col in payload_columns:
+            output_df[col] = output_df[col].clip(upper=max_cumulative_payloads)
     
     # Save to CSV
     mda.ChartUtils.log_and_save_df("csv", output_name, output_prefix, output_df)
