@@ -1327,9 +1327,10 @@ def cumulative_payloads_by_filter_vs_date_since_first_payload(chart_title_prefix
         end_year = dataset.launch.df['Launch_Date'].dt.year.max()
         
     date_end = "present" if end_year == datetime.now().year else  f"{end_year}"
-    output_name = f"{output_prefix}_payloads_vs_date_since_first_payload_by_filter_{start_year}_{date_end}"
+    output_name = f"{output_prefix}_vs_date_since_first_payload_by_filter_{start_year}_{date_end}"
     output_name += f"_{max_cumulative_payloads}" if max_cumulative_payloads is not None else ""
     output_name += f"_{max_days_since_first}" if max_days_since_first is not None else ""
+    output_name += "_log" if y_axis_type == 'log' else ""
     
     # After getting the start and end years, filter the dataset by launch date
     mda.Filters.filter_by_launch_date(dataset.launch, start_date=f'{start_year}-01-01', end_date=f'{end_year}-12-31')

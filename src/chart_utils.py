@@ -646,26 +646,37 @@ class ChartUtils:
         
         fig.update_traces(line=dict(width=line_width, shape='linear'))
         
+        # Configure y-axis based on type
+        yaxis_config = dict(
+            gridcolor="rgba(200, 200, 200, 0.5)",
+            linecolor="#000000",
+            title_font=dict(size=24, family="Arial, sans-serif"),
+            title_text=y_label,
+            type=y_axis_type,
+        )
+        
+        if y_axis_type == 'log':
+            yaxis_config.update({
+                'minor': dict(showgrid=True, gridwidth=0.5, gridcolor="rgba(200, 200, 200, 0.3)"),
+                'dtick': 1,  # This is required for minor ticks to show up right (and unlabelled) on the log chart
+            })
+        else:
+            yaxis_config['rangemode'] = 'tozero'
+        
+        
         fig.update_layout(
             font=dict(family='Arial, sans-serif', size=20, color="#000000"),
             title=dict(font=dict(size=40, family='Arial, sans-serif', color="#000000"), x=0.025, xanchor="left"),
             plot_bgcolor="white",
             paper_bgcolor="white",
             xaxis=dict(
-                gridcolor="rgba(200, 200, 200, 0.5)",
+                gridcolor="rgba(200, 200, 200, 0.8)",
                 linecolor="#000000",
                 tickangle=45,
                 title_font=dict(size=24, family="Arial, sans-serif"),
                 title_text=x_label,
             ),
-            yaxis=dict(
-                gridcolor="rgba(200, 200, 200, 0.5)",
-                linecolor="#000000",
-                rangemode='tozero',
-                title_font=dict(size=24, family="Arial, sans-serif"),
-                title_text=y_label,
-                type=y_axis_type,
-            ),
+            yaxis=yaxis_config,
             showlegend=True,
             legend=dict(
                 font=dict(size=24, family="Arial, sans-serif"),
