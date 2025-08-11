@@ -91,3 +91,7 @@ https://x.com/luke_leisher_/status/1936646242479522086
 
 Cumulative vehicle launches vs year and year of first launch.
 https://x.com/truthful_ast/status/1940474375448547472?s=46
+
+Chart of satellites launched per constellation since date of first launch, ie. deployment pace
+To do this I need lines of total satellites launched per provider
+https://x.com/xdNiBoR/status/1954968151302738223

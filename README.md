@@ -48,7 +48,6 @@ If the script fails, manually download the datasets as instructed in How-To-Upda
 
 ## TODO
 
-1. Standardize launch vehicle charts into one script (two for single vehicle and vehicle family)
 2. Line charts (eg. launches per country or pad)
 3. Pie charts
 4. Launch Types

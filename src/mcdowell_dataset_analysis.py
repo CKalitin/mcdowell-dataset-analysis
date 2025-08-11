@@ -9,7 +9,7 @@ import standard_chart_generation
 # Expose Launch and Satcat directly in this module's namespace
 # This allows for "import mcdowell_dataset_analysis" to allow for Launch.preprocess_launch_df() to work without having to import Launch
 # Ie. single import instead of the mess you see above
-__all__ = ['Launch', 'Satcat', 'Filters', 'McdowellDataset', 'Translation', 'ChartUtils', "standard_chart_generation"]
+__all__ = ['Launch', 'Satcat', 'Filters', 'McdowellDataset', 'Translation', 'ChartUtils']
 
 class McdowellDataset:
     """

@@ -253,7 +253,30 @@ class ChartUtils:
                 filter_function(new_dataset, filter_function_parameter)  # Apply the filter function
             output_dict[key] = ChartUtils.count_values_into_bins(new_dataset.df, value_col, bins, bin_labels, count_values, bin_column)
         return output_dict
- 
+
+    def filter_dataset_into_dictionary_by_filter_function(dataset, filter_function, filter_function_parameters_list, keys=None, filter_function_additional_parameter=None):
+        """Same as the above function except we don't count into bins in the end, we just give you the raw dataframes.
+
+        Args:
+            dataset (launch or satcat): The dataset to filter.
+            filter_function (function): The filter function to apply.
+            filter_function_parameters_list (list): The list of parameters to pass to the filter function.
+            keys (list, optional): The keys to use for the output dictionary. Defaults to None.
+            filter_function_additional_parameter (any, optional): An additional parameter to pass to the filter function. Defaults to None.
+        """
+        
+        if keys is None:
+            keys = filter_function_parameters_list
+        output_dict = {}
+        for filter_function_parameter, key in zip(filter_function_parameters_list, keys):
+            new_dataset = copy.deepcopy(dataset)  # Create a copy of the dataframe to avoid modifying the original, bad solution tbh. Deep copy is required bc dataset is part of another class (i think this is why).
+            if filter_function_additional_parameter is not None: # This is getting ugly
+                filter_function(new_dataset, filter_function_parameter, filter_function_additional_parameter)
+            else:
+                filter_function(new_dataset, filter_function_parameter)  # Apply the filter function
+            output_dict[key] = new_dataset.df
+        return output_dict
+
     def group_dataset_into_dictionary_by_filter_function(dataset, filter_function, groups, groupby_col, keys=None, count_values=False, filter_function_additional_parameter=None):
         """Groups a dataset by a given filter function and returns a dataframe for each group.
         
@@ -302,6 +325,90 @@ class ChartUtils:
         output_df.columns = dataframes.keys() # Name columns by the orbits
         output_df.fillna(0, inplace=True)
         return output_df
+
+    @staticmethod
+    def combine_cumulative_series(dataframes, fill_method='forward'):
+        """
+        Combine cumulative series while handling different end times gracefully. The gracefully part is why we don't use combine_dictionary_of_dataframes.
+        
+        Args:
+            dataframes (dict): Dictionary of pandas Series with cumulative data
+            fill_method (str): How to handle missing values:
+                - 'forward': Forward fill (keep last value) 
+                - 'none': Leave as NaN (lines will end cleanly)
+                - 'zero': Fill with zeros (default behavior)
+        
+        Returns:
+            pandas.DataFrame: Combined dataframe with proper handling of different series lengths
+        """
+        output_df = pd.concat(dataframes.values(), axis=1)
+        output_df.columns = dataframes.keys()
+        
+        if fill_method == 'forward':
+            # Forward fill each column individually to maintain last value
+            output_df = output_df.fillna(method='ffill')
+        elif fill_method == 'none':
+            # Leave NaN values - Plotly will handle this by ending lines cleanly
+            pass
+        elif fill_method == 'zero':
+            # Default behavior - fill with zeros
+            output_df.fillna(0, inplace=True)
+            
+        return output_df
+
+    @staticmethod
+    def create_cumulative_series_by_column(dataframes_dict, column_name):
+        """
+        Create cumulative series based on any given column (e.g., 'Time_Since_First_Payload', 'Launch_Year', etc.).
+        
+        This function takes a dictionary of dataframes and creates cumulative sums based on the specified column.
+        It ensures all values in the range are represented (filling missing values with 0) and calculates cumulative counts.
+        
+        Args:
+            dataframes_dict (dict): Dictionary where keys are series names and values are pandas DataFrames.
+            column_name (str): Name of the column to use for grouping and cumulative calculation.
+            
+        Returns:
+            dict: Dictionary where keys are series names and values are pandas Series with cumulative counts.
+                  The Series index is the specified column and values are cumulative counts.
+            
+        Example:
+            dataframes = {'Starlink': df1, 'OneWeb': df2}
+            cumulative_series = ChartUtils.create_cumulative_series_by_column(dataframes, 'Time_Since_First_Payload')
+            # Then combine using: ChartUtils.combine_dictionary_of_dataframes(cumulative_series)
+        """
+        cumulative_series = {}
+        
+        for series_key, df in dataframes_dict.items():
+            df_copy = df.copy()
+            
+            # Group by the specified column and count occurrences for each value
+            daily_counts = df_copy.groupby(column_name).size().reset_index(name='Daily_Count')
+            
+            # Create a complete range from min to max to fill missing values with 0
+            min_value = daily_counts[column_name].min()
+            max_value = daily_counts[column_name].max()
+            
+            # Handle different data types for the column, holy shit I love you Claude
+            if pd.api.types.is_integer_dtype(daily_counts[column_name]):
+                all_values = pd.DataFrame({column_name: range(int(min_value), int(max_value) + 1)})
+            elif pd.api.types.is_datetime64_any_dtype(daily_counts[column_name]):
+                all_values = pd.DataFrame({column_name: pd.date_range(min_value, max_value, freq='D')})
+            else:
+                # For other types, just use the unique values we have
+                all_values = pd.DataFrame({column_name: sorted(daily_counts[column_name].unique())})
+            
+            # Merge to ensure all values are represented, fill missing with 0
+            daily_counts = all_values.merge(daily_counts, on=column_name, how='left').fillna(0)
+            
+            # Calculate cumulative sum
+            daily_counts['Cumulative_Count'] = daily_counts['Daily_Count'].cumsum()
+            
+            # Store the result with the specified column as index
+            daily_counts.set_index(column_name, inplace=True)
+            cumulative_series[series_key] = daily_counts['Cumulative_Count']
+        
+        return cumulative_series
 
     # Histograms are designed for continuous data, while bar charts are for discrete data.
     def plot_histogram(dataframe, title, subtitle, x_label, y_label, output_path, color_map=None, barmode='stack', bargap=0):
@@ -454,9 +561,9 @@ class ChartUtils:
                          x=x_col,
                          y=y_cols,
                          title=f'<b>{title}</b><br><sup>{subtitle}</sup>',
-                        color_discrete_map=color_map if type(color_map) == dict else None, # Cursed Python but it's beautiful in its own way
-                        color_discrete_sequence=color_map if type(color_map) == list else None, # We either want a color map dict or color sequence list
-                         )
+                         color_discrete_map=color_map if type(color_map) == dict else None, # Cursed Python but it's beautiful in its own way
+                         color_discrete_sequence=color_map if type(color_map) == list else None, # We either want a color map dict or color sequence list
+                        )
         
         # Set diameter
         fig.update_traces(marker=dict(size=dot_diameter))
@@ -498,6 +605,78 @@ class ChartUtils:
             hovermode="x",
         )
 
+        os.makedirs(os.path.dirname(output_path), exist_ok=True)
+        pio.write_image(fig, output_path, format='png', width=1280, height=720)
+        
+        ChartUtils.log_and_save_df("png", os.path.basename(output_path))
+    
+    def plot_line(dataframe, x_col, y_cols, title, subtitle, x_label, y_label, output_path, color_map=None, line_dash_map=None, line_width=2, x_axis_type=None, y_axis_type='linear'):
+        """
+        Create a line chart using Plotly Express.
+        Args:
+            dataframe (Pandas dataframe): Dataframe containing the x_col and y_cols data
+            x_col (string): Column to be used for the x-axis
+            y_cols (list or string): Columns to be plotted as lines
+            title (string): Chart title
+            subtitle (string): Chart subtitle
+            x_label (string): Label for x-axis
+            y_label (string): Label for y-axis
+            output_path (string): Path to save the plot
+            color_map (dict or list, optional): Color mapping or sequence for lines
+            line_dash_map (dict, optional): Mapping for line dash styles
+            line_width (int, optional): Width of lines
+            x_axis_type (string, optional): 'date' for date formatting
+            y_axis_type (string, optional): 'linear' or 'log' for y-axis scaling
+        """
+        
+        df = dataframe.copy()
+        if x_axis_type == 'date':
+            df[x_col] = pd.to_datetime(df[x_col])
+            
+        fig = px.line(
+            df,
+            x=x_col,
+            y=y_cols,
+            title=f'<b>{title}</b><br><sup>{subtitle}</sup>',
+            labels={x_col: x_label, 'value': y_label},
+            color_discrete_map=color_map if isinstance(color_map, dict) else None,
+            color_discrete_sequence=color_map if isinstance(color_map, list) else None,
+            line_dash_map=line_dash_map,
+        )
+        
+        fig.update_traces(line=dict(width=line_width, shape='linear'))
+        
+        fig.update_layout(
+            font=dict(family='Arial, sans-serif', size=20, color="#000000"),
+            title=dict(font=dict(size=40, family='Arial, sans-serif', color="#000000"), x=0.025, xanchor="left"),
+            plot_bgcolor="white",
+            paper_bgcolor="white",
+            xaxis=dict(
+                gridcolor="rgba(200, 200, 200, 0.5)",
+                linecolor="#000000",
+                tickangle=45,
+                title_font=dict(size=24, family="Arial, sans-serif"),
+                title_text=x_label,
+            ),
+            yaxis=dict(
+                gridcolor="rgba(200, 200, 200, 0.5)",
+                linecolor="#000000",
+                rangemode='tozero',
+                title_font=dict(size=24, family="Arial, sans-serif"),
+                title_text=y_label,
+                type=y_axis_type,
+            ),
+            showlegend=True,
+            legend=dict(
+                font=dict(size=24, family="Arial, sans-serif"),
+                bordercolor="white",
+                borderwidth=1,
+                bgcolor="white",
+                title=dict(text=""),
+            ),
+            hovermode="x",
+        )
+        
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
         pio.write_image(fig, output_path, format='png', width=1280, height=720)
         

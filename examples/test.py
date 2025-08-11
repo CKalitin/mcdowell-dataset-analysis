@@ -1,4 +1,5 @@
 import mcdowell_dataset_analysis as mda
+from mcdowell_dataset_analysis import standard_chart_generation as scg
 import os
 
 def launches_vs_mass_LEO_excl_russia_china(mass_step_size_kg, chart_title_prefix, output_prefix, mass_suffix='t', mass_divisor=1000):
@@ -81,8 +82,20 @@ def launches_vs_mass_LEO_excl_russia_china(mass_step_size_kg, chart_title_prefix
         x_tick_step_size=5
     )
 
-launches_vs_mass_LEO_excl_russia_china(
+"""launches_vs_mass_LEO_excl_russia_china(
     mass_step_size_kg=1000,
     chart_title_prefix="test",
     output_prefix="test"
+)"""
+
+scg.cumulative_payloads_by_filter_vs_date_since_first_payload(
+    chart_title_prefix="Constellations",
+    output_prefix="payloads",
+    filter_function=mda.Filters.filter_column_by_contains,
+    filter_function_parameters_list=["Starlink", "OneWeb", "Kuiper"],#, "Iridium SV", "Iridium Next SV"],
+    filter_function_additional_parameter="PLName",
+    series_names=["Starlink", "OneWeb", "Kuiper"],#, "Iridium", "Iridium Next"],
+    start_year=2020,
+    end_year=2025,
+    line_width=4,
 )

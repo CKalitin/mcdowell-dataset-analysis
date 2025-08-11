@@ -111,10 +111,6 @@ class Launch:
         for col in ['Orbit_Canonical_Date', 'Perigee', 'Apogee', 'Inc', 'OpOrbit', 'First_Simple_Payload_Category', 'First_Payload_Class']:
             self.df[col] = self.df['Launch_Tag'].map(first_payload[col])
         
-        # make pandas show it all
-        pd.set_option('display.max_columns', None)
-        pd.set_option('display.max_rows', None)
-            
     def process_auxcat_dependent_columns(self):
         """
         If the given launch has a second stage auxcat entry, use this as the canonical orbit.

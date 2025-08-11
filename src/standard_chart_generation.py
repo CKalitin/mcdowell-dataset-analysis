@@ -1,5 +1,6 @@
 import mcdowell_dataset_analysis as mda
 import os
+import pandas as pd
 from datetime import datetime
 
 def generate_launch_vehicle_charts(launch_vehicle_simplified_name, chart_title_prefix, output_prefix, mass_step_size_kg=1000, year_x_tick_step_size=1, month_x_tick_step_size=12):
@@ -1228,7 +1229,6 @@ def payloads_filtered_vs_year_by_filter(chart_title_prefix, output_prefix, chart
         color_map=color_map,
     )
 
-
 def payloads_vs_mass_by_filter(chart_title_prefix, output_prefix, chart_title_suffix, output_suffix, filter_function, filter_function_parameters_list, filter_function_additional_parameter=None, mass_step_size_kg=1000, launch_vehicle_simplified_name=None, launch_vehicle_family=None, color_map=None, mass_suffix='t', mass_divisor=100, country=None, max_mass=None):
     """Generate a chart showing the number of payloads by payload mass range by a given filter function (eg. launch vehicle, launch category, etc.).
     Eg. How many payloads were 2-3 tonnes and LEO, how many 6-7 tonnes and GTO, etc.
@@ -1294,4 +1294,95 @@ def payloads_vs_mass_by_filter(chart_title_prefix, output_prefix, chart_title_su
         output_path=f'examples/outputs/chart/{output_prefix}/{output_name}.png',
         color_map=color_map,
         bargap=0.1,
+    )
+    
+def cumulative_payloads_by_filter_vs_date_since_first_payload(chart_title_prefix, output_prefix, filter_function, filter_function_parameters_list, filter_function_additional_parameter=None, series_names=None, color_map=None, start_year=None, end_year=None, date_column='Launch_Date', y_axis_type='linear', line_width=2):
+    """
+    Plot cumulative payloads by filter vs date since first payload, with option for multiple series (e.g., OneWeb, Starlink).
+    
+    This normalizes all launches to a common start date for visualization.
+    
+    Args:
+        chart_title_prefix (str): Chart title prefix.
+        output_prefix (str): Output file prefix.
+        filter_function (function): Function to filter the satcat dataset.
+        filter_function_parameters_list (list): List of filter parameters (one per series).
+        filter_function_additional_parameter (any, optional): Additional parameter for filter function.
+        series_names (list, optional): Names for each series (defaults to filter_function_parameters_list).
+        color_map (dict or list, optional): Color mapping for series.
+        start_year (int, optional): Start year for data.
+        end_year (int, optional): End year for data.
+        date_column (str, optional): Date column to use (default 'Launch_Date').
+        y_axis_type (str, optional): 'linear' or 'log' for y-axis scaling.
+    """
+    
+    dataset = mda.McdowellDataset("./datasets")
+    
+    if start_year == None:
+        start_year = dataset.launch.df['Launch_Date'].dt.year.min()
+    if end_year == None:
+        end_year = dataset.launch.df['Launch_Date'].dt.year.max()
+        
+    date_end = "present" if end_year == datetime.now().year else  f"{end_year}"
+    output_name = f"{output_prefix}_payloads_vs_date_since_first_payload_by_filter_{start_year}_{date_end}"
+    
+    # After getting the start and end years, filter the dataset by launch date
+    mda.Filters.filter_by_launch_date(dataset.launch, start_date=f'{start_year}-01-01', end_date=f'{end_year}-12-31')
+    
+    mda.ChartUtils.log_and_save_df("dataframe", output_name, output_prefix, dataset.launch.df)
+    
+    dataframes = mda.ChartUtils.filter_dataset_into_dictionary_by_filter_function(
+        dataset.satcat,
+        filter_function=filter_function,
+        filter_function_parameters_list=filter_function_parameters_list,
+        filter_function_additional_parameter=filter_function_additional_parameter
+    )
+    
+    # Create dict of first payload launch date for each dataframe
+    first_payload_dates = {}
+    for filter_function_parameter in filter_function_parameters_list:
+        first_payload_dates[filter_function_parameter] = dataframes[filter_function_parameter]['Launch_Date'].min()
+        
+    # Create new column of time since first payload in each dataframe
+    for filter_function_parameter in filter_function_parameters_list:
+        first_payload_date = first_payload_dates[filter_function_parameter]
+        dataframes[filter_function_parameter]['Time_Since_First_Payload'] = (
+            dataframes[filter_function_parameter]['Launch_Date'] - first_payload_date
+        ).dt.days
+
+    # Now sum cumulative payloads for each dataframe, versus time_since_first_payload
+    cumulative_dataframes = mda.ChartUtils.create_cumulative_series_by_column(
+        dataframes_dict=dataframes,
+        column_name='Time_Since_First_Payload'
+    )
+    
+    # Combine all series into a single dataframe (use 'none' to avoid lines dropping to zero)
+    output_df = mda.ChartUtils.combine_cumulative_series(cumulative_dataframes, fill_method='none')
+    
+    # Rename columns using series_names if provided
+    if series_names:
+        column_mapping = dict(zip(filter_function_parameters_list, series_names))
+        output_df.rename(columns=column_mapping, inplace=True)
+    
+    # Reset index to have Time_Since_First_Payload as a column for plotting
+    output_df.reset_index(inplace=True)
+    
+    # Save to CSV
+    mda.ChartUtils.log_and_save_df("csv", output_name, output_prefix, output_df)
+    
+    # Create line chart
+    y_columns = output_df.columns[1:].tolist()  # All columns except Time_Since_First_Payload
+    
+    mda.ChartUtils.plot_line(
+        output_df,
+        x_col='Time_Since_First_Payload',
+        y_cols=y_columns,
+        title=f'{chart_title_prefix} Cumulative Sats vs. Days Since First Launch',
+        subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
+        x_label='Days Since First Launch',
+        y_label='Cumulative Number of Sats',
+        output_path=f'examples/outputs/chart/{output_prefix}/{output_name}.png',
+        color_map=color_map,
+        line_width=line_width,
+        y_axis_type=y_axis_type,
     )
