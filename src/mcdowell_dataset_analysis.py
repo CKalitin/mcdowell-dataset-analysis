@@ -4,6 +4,7 @@ from dataset_satcat import Satcat
 from dataframe_filters import Filters
 from translations import Translation
 from chart_utils import ChartUtils
+import standard_chart_generation
 
 # Expose Launch and Satcat directly in this module's namespace
 # This allows for "import mcdowell_dataset_analysis" to allow for Launch.preprocess_launch_df() to work without having to import Launch

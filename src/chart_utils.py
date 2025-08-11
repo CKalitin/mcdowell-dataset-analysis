@@ -311,8 +311,9 @@ class ChartUtils:
                     title=f'<b>{title}</b><br><sup>{subtitle}</sup>',
                     labels={'x': f'{x_label}', 'y': f'{y_label}'},
                     barmode=barmode,
-                    color_discrete_map=color_map,
-                    )
+                    color_discrete_map=color_map if type(color_map) == dict else None, # Cursed Python but it's beautiful in its own way
+                    color_discrete_sequence=color_map if type(color_map) == list else None, # We either want a color map dict or color sequence list
+                )
 
         fig.update_layout(
             # Font settings
@@ -453,7 +454,8 @@ class ChartUtils:
                          x=x_col,
                          y=y_cols,
                          title=f'<b>{title}</b><br><sup>{subtitle}</sup>',
-                         color_discrete_map=color_map,
+                        color_discrete_map=color_map if type(color_map) == dict else None, # Cursed Python but it's beautiful in its own way
+                        color_discrete_sequence=color_map if type(color_map) == list else None, # We either want a color map dict or color sequence list
                          )
         
         # Set diameter

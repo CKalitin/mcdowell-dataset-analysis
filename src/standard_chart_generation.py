@@ -1062,7 +1062,7 @@ def launch_value_vs_date_by_filter_scatter(chart_title_prefix, output_prefix, va
     pivoted_df = mda.ChartUtils.pivot_dataframe(filtered_df, 'Launch_Date', series_column, value_column) # Pivot for plotting
 
     # Reorder in the order of the color map
-    if color_map is not None:
+    if color_map is not None and type(color_map) is dict:
         cols = list(color_map.keys())
         cols = [col for col in cols if col in pivoted_df.columns] # Remove keys that are not in the pivoted_df columns
         cols.insert(0, "Launch_Date")  # Ensure Launch_Date is always included as the first column
@@ -1134,7 +1134,7 @@ def launch_apogee_vs_inclination_by_filter_scatter(chart_title_prefix, output_pr
     pivoted_df = mda.ChartUtils.pivot_dataframe(filtered_df, index_col='Inc', column_col=series_column, value_col='Apogee') # Pivot for plotting
 
     # Reorder in the order of the color map
-    if color_map is not None:
+    if color_map is not None and type(color_map) is dict:
         cols = list(color_map.keys())
         cols = [col for col in cols if col in pivoted_df.columns] # Remove keys that are not in the pivoted_df columns
         cols.insert(0, 'Inc')  # Ensure 'Inc' is always included as the first column

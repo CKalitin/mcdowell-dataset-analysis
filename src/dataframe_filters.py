@@ -74,6 +74,21 @@ class Filters:
             
         dataset_class.df = dataset_class.df[condition]
 
+    def filter_by_flight(dataset_class, pattern, column="Flight", case=False, negate=False):
+        """
+        Filter by regex pattern in a specified column (e.g., 'Starlink' in Flight).
+        Used to filter by flight number (eg. if you want all Starlink flights)
+        """
+        
+        if (type(dataset_class) != dataset_launch.Launch):
+            raise ValueError("Launch dataset expected by filter_by_flight(). Cannot sort by flight in satcat dataset.")
+        
+        condition = dataset_class.df[column].str.contains(pattern, case=case, na=False, regex=True)
+        if negate:
+            condition = ~condition
+            
+        dataset_class.df = dataset_class.df[condition]
+
     def filter_by_Object_Name(dataset_class, pattern, column="PLName", case=False, negate=False):
         """
         Filter by regex pattern in a specified column (e.g., 'Starlink' in Object_Name).
