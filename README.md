@@ -1,6 +1,16 @@
 See the website for this project here:
 https://ckalitin.github.io/space/2025/06/08/space-industry-charts.html
 
+## Example Charts
+
+![Chart](https://github.com/CKalitin/mcdowell-dataset-analysis/blob/main/examples/outputs/chart/f9/f9_launches_vs_mass_by_orbit.png)  
+
+![Chart](https://github.com/CKalitin/mcdowell-dataset-analysis/blob/main/examples/outputs/chart/electron/electron_launches_apogee_vs_inc_by_simple_orbit_2017_present.png)  
+
+![Chart](https://github.com/CKalitin/mcdowell-dataset-analysis/blob/main/examples/outputs/chart/soyuz/soyuz_launches_vs_year_by_general_launch_payload_type_1957_present.png)  
+
+![Chart](https://github.com/CKalitin/mcdowell-dataset-analysis/blob/main/examples/outputs/chart/constellation_payloads/constellation_payloads_vs_date_since_first_payload_by_filter_2020_present_log.png)  
+
 ## Installation
 
 ### Install from PyPI
