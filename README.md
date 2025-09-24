@@ -45,7 +45,7 @@ Note that plotly requires a chromium-based browser to be installed to render cha
 
 ## Updating Datasets
 
-The datasets currently have data up until August 5 2025.
+The datasets currently have data up until September 24 2025.
 
 To update the datasets, you can use the `update_datasets.py` script. This script fetches the latest data from Jonathan McDowell's website and updates the local TSV files.
 
@@ -58,6 +58,7 @@ If the script fails, manually download the datasets as instructed in How-To-Upda
 
 ## TODO
 
+1. Documentation of all the columns in my dataframes + mcdowell documentation
 2. Line charts (eg. launches per country or pad)
 3. Pie charts
 4. Launch Types
