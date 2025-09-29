@@ -43,6 +43,7 @@ def generate(chart_types, vehicle_name, display_name, file_name, year_x_tick_ste
 start_time = datetime.now()
 print("Start time: ", start_time)
 
+generate("single family scatter", ['Antares 110', 'Antares 120', 'Antares 130', 'Antares 230', 'Antares 230+'], "Antares", "antares", 1, 12)
 generate("single scatter", "Falcon 9", "Falcon 9", "f9", 1, 12)
 generate("single", "Falcon Heavy", "Falcon Heavy", "f9h", 1, 12)
 generate("single family", ['Atlas 1', 'Atlas 2', 'Atlas 3', 'Atlas 5'], "Atlas Orbital", "atlas")
