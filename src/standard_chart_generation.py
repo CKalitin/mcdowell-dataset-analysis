@@ -1,9 +1,7 @@
 import mcdowell_dataset_analysis as mda
-import os
-import pandas as pd
 from datetime import datetime
 
-def generate_launch_vehicle_charts(launch_vehicle_simplified_name, chart_title_prefix, output_prefix, mass_step_size_kg=1000, year_x_tick_step_size=1, month_x_tick_step_size=12):
+def generate_launch_vehicle_charts(launch_vehicle_simplified_name, chart_title_prefix, output_prefix, mass_step_size_kg=1000, year_x_tick_step_size=1, month_x_tick_step_size=12, filter_out_suborbital=True):
     """Generate a series of charts for a specific launch vehicle.
 
     Charts:
@@ -35,6 +33,7 @@ def generate_launch_vehicle_charts(launch_vehicle_simplified_name, chart_title_p
         output_prefix=output_prefix,
         mass_suffix=mass_suffix,
         mass_divisor=mass_divisor,
+        filter_out_suborbital=filter_out_suborbital,
     )
 
     total_mass_vs_mass_by_orbit(
@@ -44,6 +43,7 @@ def generate_launch_vehicle_charts(launch_vehicle_simplified_name, chart_title_p
         output_prefix=output_prefix,
         mass_suffix=mass_suffix,
         mass_divisor=mass_divisor,
+        filter_out_suborbital=filter_out_suborbital,
     )
 
     launches_vs_mass_by_general_launch_payload_type(
@@ -53,6 +53,7 @@ def generate_launch_vehicle_charts(launch_vehicle_simplified_name, chart_title_p
         output_prefix=output_prefix,
         mass_suffix=mass_suffix,
         mass_divisor=mass_divisor,
+        filter_out_suborbital=filter_out_suborbital,
     )
 
     total_mass_vs_mass_by_general_launch_payload_type(
@@ -62,6 +63,7 @@ def generate_launch_vehicle_charts(launch_vehicle_simplified_name, chart_title_p
         output_prefix=output_prefix,
         mass_suffix=mass_suffix,
         mass_divisor=mass_divisor,
+        filter_out_suborbital=filter_out_suborbital,
     )
 
     launches_vs_month_by_general_launch_payload_type(
@@ -69,6 +71,7 @@ def generate_launch_vehicle_charts(launch_vehicle_simplified_name, chart_title_p
         chart_title_prefix=chart_title_prefix,
         output_prefix=output_prefix,
         x_tick_step_size=month_x_tick_step_size,
+        filter_out_suborbital=filter_out_suborbital,
     )
 
     launches_vs_month_by_orbit(
@@ -76,6 +79,7 @@ def generate_launch_vehicle_charts(launch_vehicle_simplified_name, chart_title_p
         chart_title_prefix=chart_title_prefix,
         output_prefix=output_prefix,
         x_tick_step_size=month_x_tick_step_size,
+        filter_out_suborbital=filter_out_suborbital,
     )
 
     launches_vs_year_by_general_launch_payload_type(
@@ -83,6 +87,7 @@ def generate_launch_vehicle_charts(launch_vehicle_simplified_name, chart_title_p
         chart_title_prefix=chart_title_prefix,
         output_prefix=output_prefix,
         x_tick_step_size=year_x_tick_step_size,
+        filter_out_suborbital=filter_out_suborbital,
     )
 
     launches_vs_year_by_orbit(
@@ -90,9 +95,10 @@ def generate_launch_vehicle_charts(launch_vehicle_simplified_name, chart_title_p
         chart_title_prefix=chart_title_prefix,
         output_prefix=output_prefix,
         x_tick_step_size=year_x_tick_step_size,
+        filter_out_suborbital=filter_out_suborbital,
     )
 
-def generate_launch_vehicle_scatter_plots(launch_vehicle_simplified_name, chart_title_prefix, output_prefix, mass_step_size_kg=1000):
+def generate_launch_vehicle_scatter_plots(launch_vehicle_simplified_name, chart_title_prefix, output_prefix, mass_step_size_kg=1000, filter_out_suborbital=True):
     """Generate scatter plots for a specific launch vehicle.
     
     Charts:
@@ -119,6 +125,7 @@ def generate_launch_vehicle_scatter_plots(launch_vehicle_simplified_name, chart_
         filter_function_parameter=launch_vehicle_simplified_name,
         series_title='Orbit',
         color_map=mda.ChartUtils.orbit_color_map,
+        filter_out_suborbital=filter_out_suborbital,
     )
 
     launch_value_vs_date_by_filter_scatter(
@@ -133,6 +140,7 @@ def generate_launch_vehicle_scatter_plots(launch_vehicle_simplified_name, chart_
         series_title='Orbit',
         color_map=mda.ChartUtils.orbit_color_map,
         x_axis_type='date',
+        filter_out_suborbital=filter_out_suborbital,
     )
 
     launch_value_vs_date_by_filter_scatter(
@@ -147,6 +155,7 @@ def generate_launch_vehicle_scatter_plots(launch_vehicle_simplified_name, chart_
         series_title='Orbit',
         color_map=mda.ChartUtils.orbit_color_map,
         x_axis_type='date',
+        filter_out_suborbital=filter_out_suborbital,
     )
 
     launch_value_vs_date_by_filter_scatter(
@@ -162,9 +171,10 @@ def generate_launch_vehicle_scatter_plots(launch_vehicle_simplified_name, chart_
         color_map=mda.ChartUtils.orbit_color_map,
         y_scaling_factor=mass_multiplier,
         x_axis_type='date',
+        filter_out_suborbital=filter_out_suborbital,
     )
 
-def generate_launch_vehicle_family_charts(launch_vehicle_simplified_name, chart_title_prefix, output_prefix, mass_step_size_kg=1000, year_x_tick_step_size=1, color_map=mda.ChartUtils.color_sequence_2_8):
+def generate_launch_vehicle_family_charts(launch_vehicle_simplified_name, chart_title_prefix, output_prefix, mass_step_size_kg=1000, year_x_tick_step_size=1, color_map=mda.ChartUtils.color_sequence_2_8, filter_out_suborbital=True):
     """Generate charts for a specific launch vehicle family.
 
     This is used on top of generate_launch_vehicle_charts if you want a charts that break down launches by vehicle, ie. for the multiple vehicles in a family (eg. Ariane 1 to 5).
@@ -193,6 +203,7 @@ def generate_launch_vehicle_family_charts(launch_vehicle_simplified_name, chart_
         color_map=color_map,
         mass_suffix=mass_suffix,
         mass_divisor=mass_divisor,
+        filter_out_suborbital=filter_out_suborbital,
     )
 
     total_mass_vs_mass_by_filter(
@@ -207,6 +218,7 @@ def generate_launch_vehicle_family_charts(launch_vehicle_simplified_name, chart_
         color_map=color_map,
         mass_suffix=mass_suffix,
         mass_divisor=mass_divisor,
+        filter_out_suborbital=filter_out_suborbital,
     )
 
     launches_vs_year_by_filter(
@@ -219,10 +231,11 @@ def generate_launch_vehicle_family_charts(launch_vehicle_simplified_name, chart_
         launch_vehicle_simplified_name=launch_vehicle_simplified_name,
         x_tick_step_size=year_x_tick_step_size,
         color_map=color_map,
+        filter_out_suborbital=filter_out_suborbital,
     )
     
 
-def launches_vs_mass_by_filter(chart_title_prefix, output_prefix, chart_title_suffix, output_suffix, filter_function, filter_function_parameters_list, filter_function_additional_parameter=None, mass_step_size_kg=1000, launch_vehicle_simplified_name=None, launch_vehicle_family=None, color_map=None, mass_suffix='t', mass_divisor=100):
+def launches_vs_mass_by_filter(chart_title_prefix, output_prefix, chart_title_suffix, output_suffix, filter_function, filter_function_parameters_list, filter_function_additional_parameter=None, mass_step_size_kg=1000, launch_vehicle_simplified_name=None, launch_vehicle_family=None, color_map=None, mass_suffix='t', mass_divisor=100, filter_out_suborbital=True):
     """Generate a chart showing the number of launches by payload mass range by a given filter function (eg. launch vehicle, launch category, etc.).
     Eg. How many launches were 2-3 tonnes and LEO, how many 6-7 tonnes and GTO, etc.
 
@@ -244,7 +257,9 @@ def launches_vs_mass_by_filter(chart_title_prefix, output_prefix, chart_title_su
     # Initialize dataset
     dataset = mda.McdowellDataset("./datasets")
 
-    mda.Filters.filter_by_launch_category(dataset.launch, ['O', 'D'])  # Filter for orbital and deep space launches
+    # Filter the base dataset
+    if filter_out_suborbital:
+        mda.Filters.filter_by_launch_category(dataset.launch, ['O', 'D'])  # Filter for orbital and deep space launches
     if launch_vehicle_family is not None:
         mda.Filters.filter_by_launch_vehicle_family(dataset.launch, launch_vehicle_family)
     else:
@@ -286,7 +301,7 @@ def launches_vs_mass_by_filter(chart_title_prefix, output_prefix, chart_title_su
         bargap=0.1,
     )
     
-def launches_vs_mass_by_orbit(mass_step_size_kg, chart_title_prefix, output_prefix, launch_vehicle_simplified_name=None, launch_vehicle_family=None, mass_suffix='t', mass_divisor=1000):
+def launches_vs_mass_by_orbit(mass_step_size_kg, chart_title_prefix, output_prefix, launch_vehicle_simplified_name=None, launch_vehicle_family=None, mass_suffix='t', mass_divisor=1000, filter_out_suborbital=True):
     # Wrapper for back compatibility bc I don't want to ctrl f and replace them all
     launches_vs_mass_by_filter(
         chart_title_prefix=chart_title_prefix,
@@ -301,10 +316,11 @@ def launches_vs_mass_by_orbit(mass_step_size_kg, chart_title_prefix, output_pref
         launch_vehicle_family=launch_vehicle_family,
         color_map=mda.ChartUtils.orbit_color_map,
         mass_suffix=mass_suffix,
-        mass_divisor=mass_divisor
+        mass_divisor=mass_divisor,
+        filter_out_suborbital=filter_out_suborbital
     )
 
-def total_mass_vs_mass_by_filter(chart_title_prefix, output_prefix, chart_title_suffix, output_suffix, filter_function, filter_function_parameters_list, filter_function_additional_parameter=None, mass_step_size_kg=1000, launch_vehicle_simplified_name=None, launch_vehicle_family=None, color_map=None, mass_suffix='t', mass_divisor=1000):
+def total_mass_vs_mass_by_filter(chart_title_prefix, output_prefix, chart_title_suffix, output_suffix, filter_function, filter_function_parameters_list, filter_function_additional_parameter=None, mass_step_size_kg=1000, launch_vehicle_simplified_name=None, launch_vehicle_family=None, color_map=None, mass_suffix='t', mass_divisor=1000, filter_out_suborbital=True):
     """
     Generate a chart showing the distribution of total launched mass versus payload mass range by a given filter function (e.g., launch vehicle, launch category, etc.).
     """
@@ -313,7 +329,9 @@ def total_mass_vs_mass_by_filter(chart_title_prefix, output_prefix, chart_title_
     # Initialize dataset
     dataset = mda.McdowellDataset("./datasets")
 
-    mda.Filters.filter_by_launch_category(dataset.launch, ['O', 'D'])  # Filter for orbital and deep space launches
+    # Filter the base dataset
+    if filter_out_suborbital:
+        mda.Filters.filter_by_launch_category(dataset.launch, ['O', 'D'])  # Filter for orbital and deep space launches
     if launch_vehicle_family is not None:
         mda.Filters.filter_by_launch_vehicle_family(dataset.launch, launch_vehicle_family)
     else:
@@ -360,7 +378,7 @@ def total_mass_vs_mass_by_filter(chart_title_prefix, output_prefix, chart_title_
         bargap=0.1
     )
     
-def total_mass_vs_mass_by_orbit(mass_step_size_kg, chart_title_prefix, output_prefix, launch_vehicle_simplified_name=None, launch_vehicle_family=None, mass_suffix='t', mass_divisor=1000):
+def total_mass_vs_mass_by_orbit(mass_step_size_kg, chart_title_prefix, output_prefix, launch_vehicle_simplified_name=None, launch_vehicle_family=None, mass_suffix='t', mass_divisor=1000, filter_out_suborbital=True):
     # Wrapper
     total_mass_vs_mass_by_filter(
         chart_title_prefix=chart_title_prefix,
@@ -375,10 +393,11 @@ def total_mass_vs_mass_by_orbit(mass_step_size_kg, chart_title_prefix, output_pr
         launch_vehicle_family=launch_vehicle_family,
         color_map=mda.ChartUtils.orbit_color_map,
         mass_suffix=mass_suffix,
-        mass_divisor=mass_divisor
+        mass_divisor=mass_divisor,
+        filter_out_suborbital=filter_out_suborbital
     )
 
-def launches_vs_mass_by_general_launch_payload_type(mass_step_size_kg, chart_title_prefix, output_prefix, launch_vehicle_simplified_name=None, launch_vehicle_family=None, mass_suffix='t', mass_divisor=1000):
+def launches_vs_mass_by_general_launch_payload_type(mass_step_size_kg, chart_title_prefix, output_prefix, launch_vehicle_simplified_name=None, launch_vehicle_family=None, mass_suffix='t', mass_divisor=1000, filter_out_suborbital=True):
     """Generate a chart showing the number of launches by payload mass range by general launch payload type.
     Eg. How many launches were 2-3 tonnes and Starlink, how many 6-7 tonnes and Commercial, etc.
 
@@ -398,7 +417,8 @@ def launches_vs_mass_by_general_launch_payload_type(mass_step_size_kg, chart_tit
     dataset = mda.McdowellDataset("./datasets")
 
     # Filter for orbital and deep space launches
-    mda.Filters.filter_by_launch_category(dataset.launch, ['O', 'D'])
+    if filter_out_suborbital:
+        mda.Filters.filter_by_launch_category(dataset.launch, ['O', 'D'])
     if launch_vehicle_family is not None:
         mda.Filters.filter_by_launch_vehicle_family(dataset.launch, launch_vehicle_family)
     else:
@@ -441,7 +461,7 @@ def launches_vs_mass_by_general_launch_payload_type(mass_step_size_kg, chart_tit
         bargap=0.1,
     )
 
-def total_mass_vs_mass_by_general_launch_payload_type(mass_step_size_kg, chart_title_prefix, output_prefix, launch_vehicle_simplified_name=None, launch_vehicle_family=None, mass_suffix='t', mass_divisor=1000):
+def total_mass_vs_mass_by_general_launch_payload_type(mass_step_size_kg, chart_title_prefix, output_prefix, launch_vehicle_simplified_name=None, launch_vehicle_family=None, mass_suffix='t', mass_divisor=1000, filter_out_suborbital=True):
     """Generate a chart showing the distribution of total launched mass versus payload mass range by general launch payload type.
     Eg. How much total mass was launched in 2-3 tonnes range for Starlink, how much for Commercial, etc.
 
@@ -461,7 +481,8 @@ def total_mass_vs_mass_by_general_launch_payload_type(mass_step_size_kg, chart_t
     dataset = mda.McdowellDataset("./datasets")
 
     # Filter for orbital and deep space launches
-    mda.Filters.filter_by_launch_category(dataset.launch, ['O', 'D'])
+    if filter_out_suborbital:
+        mda.Filters.filter_by_launch_category(dataset.launch, ['O', 'D'])
     if launch_vehicle_family is not None:
         mda.Filters.filter_by_launch_vehicle_family(dataset.launch, launch_vehicle_family)
     else:
@@ -512,7 +533,7 @@ def total_mass_vs_mass_by_general_launch_payload_type(mass_step_size_kg, chart_t
         bargap=0.1
     )
 
-def launches_vs_month_by_orbit(chart_title_prefix, output_prefix, launch_vehicle_simplified_name=None, launch_vehicle_family=None, all_vehicles=False, x_tick_step_size=12, start_year=None, end_year=None):
+def launches_vs_month_by_orbit(chart_title_prefix, output_prefix, launch_vehicle_simplified_name=None, launch_vehicle_family=None, all_vehicles=False, x_tick_step_size=12, start_year=None, end_year=None, filter_out_suborbital=True):
     """Generate a chart showing the number of launches by month by orbit.
 
     Args:
@@ -530,7 +551,8 @@ def launches_vs_month_by_orbit(chart_title_prefix, output_prefix, launch_vehicle
     dataset = mda.McdowellDataset("./datasets")
 
     # Filter the base dataset
-    mda.Filters.filter_by_launch_category(dataset.launch, ['O', 'D'])
+    if filter_out_suborbital:
+        mda.Filters.filter_by_launch_category(dataset.launch, ['O', 'D'])
     if not all_vehicles:
         if launch_vehicle_family is not None:
             mda.Filters.filter_by_launch_vehicle_family(dataset.launch, launch_vehicle_family)
@@ -590,7 +612,7 @@ def launches_vs_month_by_orbit(chart_title_prefix, output_prefix, launch_vehicle
         x_tick_step_size=x_tick_step_size
     )
     
-def launches_vs_month_by_general_launch_payload_type(chart_title_prefix, output_prefix, launch_vehicle_simplified_name=None, launch_vehicle_family=None, all_vehicles=False, x_tick_step_size=12, start_year=None, end_year=None):
+def launches_vs_month_by_general_launch_payload_type(chart_title_prefix, output_prefix, launch_vehicle_simplified_name=None, launch_vehicle_family=None, all_vehicles=False, x_tick_step_size=12, start_year=None, end_year=None, filter_out_suborbital=True):
     """Generate a chart showing the number of launches by month by general launch payload type.
 
     Args:
@@ -608,7 +630,8 @@ def launches_vs_month_by_general_launch_payload_type(chart_title_prefix, output_
     dataset = mda.McdowellDataset("./datasets")
 
     # Filter the base dataset
-    mda.Filters.filter_by_launch_category(dataset.launch, ['O', 'D'])
+    if filter_out_suborbital:
+        mda.Filters.filter_by_launch_category(dataset.launch, ['O', 'D'])
     if not all_vehicles:
         if launch_vehicle_family is not None:
             mda.Filters.filter_by_launch_vehicle_family(dataset.launch, launch_vehicle_family)
@@ -669,7 +692,7 @@ def launches_vs_month_by_general_launch_payload_type(chart_title_prefix, output_
         x_tick_step_size=x_tick_step_size
     )
     
-def launches_vs_year_by_orbit(chart_title_prefix, output_prefix, launch_vehicle_simplified_name=None, launch_vehicle_family=None, all_vehicles=False, x_tick_step_size=1, start_year=None, end_year=None, ):
+def launches_vs_year_by_orbit(chart_title_prefix, output_prefix, launch_vehicle_simplified_name=None, launch_vehicle_family=None, all_vehicles=False, x_tick_step_size=1, start_year=None, end_year=None, filter_out_suborbital=True):
     """Generate a chart showing the number of launches by year by orbit.
 
     Args:
@@ -687,7 +710,8 @@ def launches_vs_year_by_orbit(chart_title_prefix, output_prefix, launch_vehicle_
     dataset = mda.McdowellDataset("./datasets")
 
     # Filter the base dataset
-    mda.Filters.filter_by_launch_category(dataset.launch, ['O', 'D'])
+    if filter_out_suborbital:
+        mda.Filters.filter_by_launch_category(dataset.launch, ['O', 'D'])
     if not all_vehicles:
         if launch_vehicle_family is not None:
             mda.Filters.filter_by_launch_vehicle_family(dataset.launch, launch_vehicle_family)
@@ -741,7 +765,7 @@ def launches_vs_year_by_orbit(chart_title_prefix, output_prefix, launch_vehicle_
         x_tick_step_size=x_tick_step_size
     )
 
-def launches_vs_year_by_general_launch_payload_type(chart_title_prefix, output_prefix, launch_vehicle_simplified_name=None, launch_vehicle_family=None, all_vehicles=False, x_tick_step_size=1, start_year=None, end_year=None):
+def launches_vs_year_by_general_launch_payload_type(chart_title_prefix, output_prefix, launch_vehicle_simplified_name=None, launch_vehicle_family=None, all_vehicles=False, x_tick_step_size=1, start_year=None, end_year=None, filter_out_suborbital=True):
     """Generate a chart showing the number of launches by year by general launch payload type.
 
     Args:
@@ -759,7 +783,8 @@ def launches_vs_year_by_general_launch_payload_type(chart_title_prefix, output_p
     dataset = mda.McdowellDataset("./datasets")
 
     # Filter the base dataset
-    mda.Filters.filter_by_launch_category(dataset.launch, ['O', 'D'])
+    if filter_out_suborbital:
+        mda.Filters.filter_by_launch_category(dataset.launch, ['O', 'D'])
     if not all_vehicles:
         if launch_vehicle_family is not None:
             mda.Filters.filter_by_launch_vehicle_family(dataset.launch, launch_vehicle_family)
@@ -811,10 +836,10 @@ def launches_vs_year_by_general_launch_payload_type(chart_title_prefix, output_p
         output_path=f'examples/outputs/chart/{output_prefix}/{output_name}.png',
         color_map=mda.ChartUtils.general_launch_payload_type_color_map,
         bargap=0.1,
-        x_tick_step_size=x_tick_step_size,
+        x_tick_step_size=x_tick_step_size
     )
-    
-def launches_vs_year_by_filter(chart_title_prefix, output_prefix, chart_title_suffix, output_suffix, filter_function, filter_function_parameters_list, filter_function_additional_parameter=None, launch_vehicle_simplified_name=None, launch_vehicle_family=None, all_vehicles=False, x_tick_step_size=1, color_map=None, start_year=None, end_year=None):
+
+def launches_vs_year_by_filter(chart_title_prefix, output_prefix, chart_title_suffix, output_suffix, filter_function, filter_function_parameters_list, filter_function_additional_parameter=None, launch_vehicle_simplified_name=None, launch_vehicle_family=None, all_vehicles=False, x_tick_step_size=1, color_map=None, start_year=None, end_year=None, filter_out_suborbital=True):
     """Generate a chart showing the number of launches by year by a specified filter function.
 
     Args:
@@ -828,13 +853,15 @@ def launches_vs_year_by_filter(chart_title_prefix, output_prefix, chart_title_su
         x_tick_step_size (int, optional): Step size for x-axis ticks in years. Defaults to 1 (one year).
         start_year (int, optional): Start year for the data. By default it is the first year of the specified vehicle in the dataset.
         end_year (int, optional): End year for the data (inclusive). By default, the final year of the specified vehicle is used.
+        filter_out_suborbital (bool, optional): If True, will filter out suborbital launches. Defaults to True.
     """
     
     # Initialize dataset
     dataset = mda.McdowellDataset("./datasets")
 
     # Filter the base dataset
-    mda.Filters.filter_by_launch_category(dataset.launch, ['O', 'D'])
+    if filter_out_suborbital:
+        mda.Filters.filter_by_launch_category(dataset.launch, ['O', 'D'])
     if all_vehicles == False:
         if launch_vehicle_family is not None:
             mda.Filters.filter_by_launch_vehicle_family(dataset.launch, launch_vehicle_family)
@@ -882,6 +909,90 @@ def launches_vs_year_by_filter(chart_title_prefix, output_prefix, chart_title_su
         bargap=0.1,
         color_map=color_map,
         x_tick_step_size=x_tick_step_size,
+    )
+    
+def launches_vs_month_by_filter(chart_title_prefix, output_prefix, chart_title_suffix, output_suffix, filter_function, filter_function_parameters_list, filter_function_additional_parameter=None, launch_vehicle_simplified_name=None, launch_vehicle_family=None, all_vehicles=False, x_tick_step_size=12, color_map=None, start_year=None, end_year=None, filter_out_suborbital=True):
+    """Generate a chart showing the number of launches by month by a specified filter function.
+
+    Args:
+        chart_title_prefix (str): Prefix for the chart title (should be the prettified name of the launch vehicle) (eg. 'Falcon 9') 
+        output_prefix (str): Simplified name of LV for output files (eg. 'f9' for Falcon 9 gives "f9_launches_vs_month_by_filter")
+        chart_title_suffix (str): Suffix for the chart title (eg. 'Orbit')
+        output_suffix (str): Suffix for the output file names (eg. 'orbit')
+        filter_function (function): Function to filter the dataset by (eg. mda.Filters.filter_by_orbit)
+        filter_function_parameters_list (list): List of parameters to pass to the filter function
+        filter_function_additional_parameter (str, optional): Additional parameter to pass to the filter function if needed
+        launch_vehicle_simplified_name (str, optional): Launch vehicle to filter by
+        launch_vehicle_family (str, optional): Family of launch vehicle to filter by. If not none, then filtering will be done by family instead of the launch_vehicle field.
+        all_vehicles (bool, optional): If True, will not filter by launch vehicle. Defaults to False.
+        x_tick_step_size (int, optional): Step size for x-axis ticks in months. Defaults to 12 (one year).
+        start_year (int, optional): Start year for the data. By default it is the first year of the specified vehicle in the dataset.
+        end_year (int, optional): End year for the data (inclusive). By default, the final year of the specified vehicle is used.
+    """
+    
+    # Initialize dataset
+    dataset = mda.McdowellDataset("./datasets")
+
+    # Filter the base dataset
+    if filter_out_suborbital:
+        mda.Filters.filter_by_launch_category(dataset.launch, ['O', 'D'])
+    if not all_vehicles:
+        if launch_vehicle_family is not None:
+            mda.Filters.filter_by_launch_vehicle_family(dataset.launch, launch_vehicle_family)
+        else:
+            mda.Filters.filter_by_launch_vehicle_name_simplified(dataset.launch, launch_vehicle_simplified_name)
+
+    if start_year == None:
+        start_year = dataset.launch.df['Launch_Date'].dt.year.min()
+    if end_year == None:
+        end_year = dataset.launch.df['Launch_Date'].dt.year.max()
+
+    date_end = "present" if end_year == datetime.now().year else  f"{end_year}"
+    output_name = f"{output_prefix}_launches_vs_month_by_{output_suffix}_{start_year}_{date_end}"
+
+    # After getting the start and end years, filter the dataset by launch date
+    mda.Filters.filter_by_launch_date(dataset.launch, start_date=f'{start_year}-01-01', end_date=f'{end_year}-12-31')
+    
+    # Encode launch month as year*12 + months to get total months since Jesus instead of years since Jesus
+    dataset.launch.df['Launch_Month'] = dataset.launch.df['Launch_Date'].dt.year*12 + dataset.launch.df['Launch_Date'].dt.month
+    
+    mda.ChartUtils.log_and_save_df("dataframe", output_name, output_prefix, dataset.launch.df)
+    
+    months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+
+    bin_labels = []
+    for year in range(start_year, end_year+1, 1):
+        for month in months:
+            bin_labels.append(f"{month} {year}")
+
+    # Create a dictionary with key filters and values are dataframes for each filter showing the number of launches per month
+    dataframes = mda.ChartUtils.bin_dataset_into_dictionary_by_filter_function(
+        dataset=dataset.launch,
+        filter_function=filter_function,
+        filter_function_parameters_list=filter_function_parameters_list,
+        value_col='Launch_Month',
+        bins=list(range(start_year*12, (end_year+1)*12+1)),
+        bin_labels=bin_labels,
+        filter_function_additional_parameter=filter_function_additional_parameter,
+    )
+
+    # Combine dictionary of dataframes into a single dataframe (by column)
+    output_df = mda.ChartUtils.combine_dictionary_of_dataframes(dataframes)
+    
+    # Save to CSV
+    mda.ChartUtils.log_and_save_df("csv", output_name, output_prefix, output_df)
+
+    mda.ChartUtils.plot_bar(
+        output_df,
+        title=f'{chart_title_prefix} Launches vs. Month by {chart_title_suffix}',
+        subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
+        x_label='Date',
+        y_label='Number of Launches',
+        output_path=f'examples/outputs/chart/{output_prefix}/{output_name}.png',
+        color_map=color_map,
+        bargap=0.0,
+        x_tick0=0,
+        x_tick_step_size=x_tick_step_size
     )
 
 def owner_payloads_vs_year_by_program(chart_title_prefix, output_prefix, owners_list, color_map=None, programing_simplification_dict=None, program_order=None):
@@ -1014,7 +1125,7 @@ def owner_payloads_vs_year_by_category(chart_title_prefix, output_prefix, owners
         color_map=color_map,
     )
 
-def launch_value_vs_date_by_filter_scatter(chart_title_prefix, output_prefix, value_column, series_column, filter_function, filter_function_parameter, filter_function_additional_parameter=None, x_axis_title_suffix="", value_title=None, series_title=None, color_map=None, x_tick_step_size=None, start_year=None, end_year=None, y_scaling_factor=1, x_axis_type=None):
+def launch_value_vs_date_by_filter_scatter(chart_title_prefix, output_prefix, value_column, series_column, filter_function, filter_function_parameter, filter_function_additional_parameter=None, x_axis_title_suffix="", value_title=None, series_title=None, color_map=None, x_tick_step_size=None, start_year=None, end_year=None, y_scaling_factor=1, x_axis_type=None, filter_out_suborbital=True):
     """
     Plot launches per date with a specified value column (e.g., Apogee, Mass, etc.) and series column (e.g., Launch Pad, Launch Vehicle, etc.) by filtering the dataset with a filter function.
 
@@ -1023,22 +1134,30 @@ def launch_value_vs_date_by_filter_scatter(chart_title_prefix, output_prefix, va
     Args:
         chart_title_prefix (str): Prefix for the chart title (e.g., 'Falcon 9').
         output_prefix (str): Prefix for output file names.
-        value_column (str): Name of the column to use for the y-axis values (e.g., 'Apogee').
-        series_column (str): Name of the column to use for grouping series (e.g., 'Launch_Pad').
-        filter_function (callable): Function to filter the dataset. Should accept the dataset as its first argument.
-        filter_function_parameters (Any): Parameters to pass to the filter_function.
-        color_map (dict, optional): Dictionary mapping series names to colors. Defaults to None.
-        x_tick_step_size (int, optional): Step size for x-axis ticks. Defaults to 1.
+        value_column (str): Name of the column to plot on y-axis (e.g., 'Apogee', 'Payload_Mass').
+        series_column (str): Name of the column to group series by (e.g., 'Simple_Orbit', 'Launch_Vehicle').
+        filter_function (callable): Function to filter the dataset (e.g., mda.Filters.filter_by_launch_vehicle_name_simplified).
+        filter_function_parameter (Any): Parameter to pass to the filter_function.
+        filter_function_additional_parameter (Any, optional): Additional parameter for the filter_function if needed. Defaults to None.
+        x_axis_title_suffix (str, optional): Suffix to append to the y-axis label (e.g., "(km)", "(tonnes)"). Defaults to "".
+        value_title (str, optional): Display name for the value column. Defaults to formatted value_column name.
+        series_title (str, optional): Display name for the series column. Defaults to formatted series_column name.
+        color_map (dict or list, optional): Color mapping for series. Defaults to None.
+        x_tick_step_size (int, optional): Step size for x-axis ticks in months. Defaults to None.
         start_year (int, optional): Start year for the data. Defaults to None (uses earliest year in dataset).
         end_year (int, optional): End year for the data. Defaults to None (uses latest year in dataset).
-        x_axis_type (str, optional): Type of x-axis to use. Defaults to None (linear). Use 'date' for date axis.
-
+        y_scaling_factor (float, optional): Scaling factor for y-axis values (e.g., 0.001 to convert kg to tonnes). Defaults to 1.
+        x_axis_type (str, optional): Type of x-axis ('date' for date formatting, None for linear). Defaults to None.
+        filter_out_suborbital (bool, optional): If True, filters out suborbital launches. Defaults to True.
+        
     Interesting note:
     Because we're using raw dates and not a launch date field or something, we can't set x tick step size and get anything that makes sense. It's not a continuous dx in the dataset since some launches are hours apart and some are months.
     """
     
     dataset = mda.McdowellDataset()
     
+    if filter_out_suborbital:
+        mda.Filters.filter_by_launch_category(dataset.launch, ['O', 'D'])
     if filter_function_additional_parameter is not None:
         filter_function(dataset.launch, filter_function_parameter, filter_function_additional_parameter)
     else:
@@ -1093,7 +1212,7 @@ def launch_value_vs_date_by_filter_scatter(chart_title_prefix, output_prefix, va
         x_axis_type=x_axis_type
     )
     
-def launch_apogee_vs_inclination_by_filter_scatter(chart_title_prefix, output_prefix, series_column, filter_function, filter_function_parameter, filter_function_additional_parameter=None, series_title=None, color_map=None, start_year=None, end_year=None):
+def launch_apogee_vs_inclination_by_filter_scatter(chart_title_prefix, output_prefix, series_column, filter_function, filter_function_parameter, filter_function_additional_parameter=None, series_title=None, color_map=None, start_year=None, end_year=None, filter_out_suborbital=True):
     """
     Plot launches per date with Apogee vs Inclination by filtering the dataset with a filter function.
 
@@ -1111,6 +1230,8 @@ def launch_apogee_vs_inclination_by_filter_scatter(chart_title_prefix, output_pr
     # Initialize dataset
     dataset = mda.McdowellDataset()
 
+    if filter_out_suborbital:
+        mda.Filters.filter_by_launch_category(dataset.launch, ['O', 'D'])
     if filter_function_additional_parameter is not None:
         filter_function(dataset.launch, filter_function_parameter, filter_function_additional_parameter)
     else:
@@ -1229,7 +1350,7 @@ def payloads_filtered_vs_year_by_filter(chart_title_prefix, output_prefix, chart
         color_map=color_map,
     )
 
-def payloads_vs_mass_by_filter(chart_title_prefix, output_prefix, chart_title_suffix, output_suffix, filter_function, filter_function_parameters_list, filter_function_additional_parameter=None, mass_step_size_kg=1000, launch_vehicle_simplified_name=None, launch_vehicle_family=None, color_map=None, mass_suffix='t', mass_divisor=100, country=None, max_mass=None):
+def payloads_vs_mass_by_filter(chart_title_prefix, output_prefix, chart_title_suffix, output_suffix, filter_function, filter_function_parameters_list, filter_function_additional_parameter=None, mass_step_size_kg=1000, launch_vehicle_simplified_name=None, launch_vehicle_family=None, color_map=None, mass_suffix='t', mass_divisor=100, filter_out_suborbital=True, country=None, max_mass=None):
     """Generate a chart showing the number of payloads by payload mass range by a given filter function (eg. launch vehicle, launch category, etc.).
     Eg. How many payloads were 2-3 tonnes and LEO, how many 6-7 tonnes and GTO, etc.
 

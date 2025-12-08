@@ -1,0 +1,626 @@
+Launch_Tag,Launch_JD,Launch_Date,LV_Type,Variant,Flight_ID,Flight,Mission,FlightCode,Platform,Launch_Site,Launch_Pad,Ascent_Site,Ascent_Pad,Apogee,Apoflag,Range,RangeFlag,Dest,OrbPay,Agency,LaunchCode,FailCode,Group,Category,LTCite,Cite,Notes,Simple_Orbit,V2_Payload_Category,Launch_Vehicle_Family,Launch_Vehicle_Simplified,State,Country,Launch_Site_Parent,Launch_Site_Name,Payload_Mass,Orbit_Canonical_Date,Perigee,Inc,OpOrbit,First_Simple_Payload_Category,First_Payload_Class,General_Launch_Payload_Type
+1942-A01,2430523.95,1942-06-13,A-4,-,2,-,-,-,-,HVP,P7,-,-,1.0, ,    -, ,-,0.0,WEHR,MF,U,-,Test,TTaylor,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1942-A02,2430587.97,1942-08-16,A-4,-,3,-,-,-,-,HVP,P7,-,-,11.0, ,    -, ,-,0.0,WEHR,MF,U,-,Test,Stuhlinger,RocketTeam,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1942-S01,2430636.12,1942-10-03,A-4,-,4,-,-,-,-,HVP,P7,-,-,85.0, ,    -, ,-,0.0,WEHR,MS,-,-,Test,Stuhlinger,AE1961A,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1942-A03,2430653.5,1942-10-21,A-4,-,5,-,-,-,-,HVP,P7,-,-,40.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,AE1961A,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1942-M01,2430672.5,1942-11-09,A-4,-,6,-,-,-,-,HVP,P7,-,-,67.0, ,    -, ,-,0.0,WEHR,MS,-,-,Test,AE1961A,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1942-A04,2430691.5,1942-11-28,A-4,-,7,-,-,-,-,HVP,P7,-,-,5.0,?,    -, ,-,0.0,WEHR,MF,U,-,Test,AE1961A,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1942-A05,2430705.5,1942-12-12,A-4,-,9,-,-,-,-,HVP,P7,-,-,0.0, ,    -, ,-,0.0,WEHR,MF,U,-,Test,AE1961A,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1943-A01,2430731.5,1943-01-07,A-4,-,10,-,-,-,-,HVP,P7,-,-,0.0, ,    -, ,-,0.0,WEHR,MF,U,-,Test,AE1961A,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1943-A02,2430749.5,1943-01-25,A-4,-,11,-,-,-,-,HVP,P7,-,-,40.0,?,    -, ,-,0.0,WEHR,MF,U,-,Test,AE1961A,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1943-A03,2430772.5,1943-02-17,A-4,-,12,-,-,-,-,HVP,P7,-,-,30.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,AE1961A,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1943-A04,2430774.5,1943-02-19,A-4,-,13,-,-,-,-,HVP,P7,-,-,1.0,?,    -, ,-,0.0,WEHR,MF,U,-,Test,AE1961A,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1943-A05,2430786.5,1943-03-03,A-4,-,16,-,-,-,-,HVP,P7,-,-,0.0, ,    -, ,-,0.0,WEHR,MF,U,-,Test,AE1961A,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1943-S01,2430801.5,1943-03-18,A-4,-,18,-,-,-,-,HVP,P7,-,-,95.0,?,    -, ,-,0.0,WEHR,MF,U,-,Test,AE1961A,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1943-A06,2430808.5,1943-03-25,A-4,-,19,-,-,-,-,HVP,P7,-,-,0.0, ,    -, ,-,0.0,WEHR,MF,U,-,Test,AE1961A,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1943-S02,2430828.5,1943-04-14,A-4,-,20,-,-,-,-,HVP,P7,-,-,95.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,AE1961A,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1943-S03,2430837.1,1943-04-22,A-4,-,21,-,-,-,-,HVP,P7,-,-,95.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,DeMaes,AE1961A,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1943-S04,2430858.5,1943-05-14,A-4,-,22,-,-,-,-,HVP,P7,-,-,95.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,AE1961A,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1943-S05,2430870.96,1943-05-26,A-4,-,26,-,-,-,-,HVP,P7,-,-,95.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,AE1961A,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1943-A07,2430871.19,1943-05-26,A-4,-,25,-,-,-,-,HVP,P7,-,-,10.0,?,    -, ,-,0.0,WEHR,MF,U,-,Test,AE1961A,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1943-S06,2430871.5,1943-05-27,A-4,-,24,-,-,-,-,HVP,P7,-,-,95.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,AE1961A,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1943-S07,2430876.5,1943-06-01,A-4,-,23,-,-,-,-,HVP,P7,-,-,95.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,AE1961A,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1943-S08,2430886.5,1943-06-11,A-4,-,29,-,-,-,-,HVP,P7,-,-,95.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,AE1961A,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1943-S09,2430891.5,1943-06-16,A-4,-,31,-,-,-,-,HVP,P7,-,-,95.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,AE1961A,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1943-A08,2430897.5,1943-06-22,A-4,-,28,-,-,-,-,HVP,P7,-,-,5.0,?,    -, ,-,0.0,WEHR,MF,U,-,Test,AE1961A,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1943-S10,2430899.5,1943-06-24,A-4,-,30,-,-,-,-,HVP,P7,-,-,95.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,AE1961A,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1943-S11,2430901.5,1943-06-26,A-4,-,36,-,-,-,-,HVP,P7,-,-,95.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,AE1961A,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1943-A09,2430904.5,1943-06-29,A-4,-,38,-,-,-,-,HVP,P7,-,-,1.0, ,    -, ,-,0.0,WEHR,MF,U,-,Test,AE1961A,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1943-S12,2430904.5,1943-06-29,A-4,-,40,-,-,-,-,HVP,P7,-,-,95.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,AE1961A,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1943-A10,2430906.5,1943-07-01,A-4,-,33,-,-,-,-,HVP,P7,-,-,0.0, ,    -, ,-,0.0,WEHR,MF,U,-,Test,AE1961A,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1943-A11,2430914.5,1943-07-09,A-4,-,41,-,-,-,-,HVP,P7,-,-,0.0, ,    -, ,-,0.0,WEHR,MF,U,-,Test,AE1961A,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1943-A12,2430914.5,1943-07-09,A-4,-,34,-,-,-,-,HVP,P7,-,-,0.0, ,    -, ,-,0.0,WEHR,MF,U,-,Test,AE1961A,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1943-A13,2431033.5,1943-11-05,A-4,-,-,Heidelager Test,-,-,-,HLG,-,-,-,1.0,?,    -, ,-,0.0,WEHR,MF,U,-,Test,RocketTeam,-,-,,Test,V-2,A-4,PL,Poland,Blizna,,,,,,,,,Unknown
+1943-S13,2431037.5,1943-11-09,A-4,-,43,-,-,-,-,HVP,P7,-,-,95.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,DeMaes,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1943-S14,2431038.5,1943-11-10,A-4,-,73,-,-,-,-,HVP,P7,-,-,95.0,?,    -, ,-,0.0,WEHR,MU,-,-,Test,DeMaes,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1943-A14,2431053.54,1943-11-25,A-4,-,-,-,-,-,-,HLG,-,-,-,20.0,?,    -, ,-,0.0,WEHR,MF,U,-,Test,RocketTeam,-,-,,Test,V-2,A-4,PL,Poland,Blizna,,,,,,,,,Unknown
+1943-A15,2431063.54,1943-12-05,A-4,-,-,-,-,-,-,HLG,-,-,-,20.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,RocketTeam,-,-,,Test,V-2,A-4,PL,Poland,Blizna,,,,,,,,,Unknown
+1944-S01,2431089.5,1944-01-01,A-4,-,-,-,-,-,-,HLG,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,RocketTeam,-,-,,Test,V-2,A-4,PL,Poland,Blizna,,,,,,,,,Unknown
+1944-S02,2431089.5,1944-01-01,A-4,-,-,-,-,-,-,HLG,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,RocketTeam,-,-,,Test,V-2,A-4,PL,Poland,Blizna,,,,,,,,,Unknown
+1944-S03,2431089.5,1944-01-01,A-4,-,-,-,-,-,-,HLG,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,RocketTeam,-,-,,Test,V-2,A-4,PL,Poland,Blizna,,,,,,,,,Unknown
+1944-S04,2431089.5,1944-01-01,A-4,-,-,-,-,-,-,HLG,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,RocketTeam,-,-,,Test,V-2,A-4,PL,Poland,Blizna,,,,,,,,,Unknown
+1944-S05,2431095.54,1944-01-06,A-4,-,-,-,-,-,-,HLG,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,RocketTeam,-,-,,Test,V-2,A-4,PL,Poland,Blizna,,,,,,,,,Unknown
+1944-A01,2431116.5,1944-01-27,A-4,-,17003,Mittelwerk Eval,-,-,-,HVP,P7,-,-,0.0, ,    -, ,-,0.0,WEHR,MF,U,-,Test,RocketTeam,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1944-A02,2431119.4,1944-01-29,A-4,-,-,-,-,-,-,HLG,-,-,-,0.0, ,    -, ,-,0.0,WEHR,MF,U,-,Test,RocketTeam,-,-,,Test,V-2,A-4,PL,Poland,Blizna,,,,,,,,,Unknown
+1944-S06,2431120.5,1944-02-01,A-4,-,-,-,-,-,-,HLG,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,RocketTeam,-,-,,Test,V-2,A-4,PL,Poland,Blizna,,,,,,,,,Unknown
+1944-S07,2431120.5,1944-02-01,A-4,-,-,-,-,-,-,HLG,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,RocketTeam,-,-,,Test,V-2,A-4,PL,Poland,Blizna,,,,,,,,,Unknown
+1944-S08,2431120.5,1944-02-01,A-4,-,-,-,-,-,-,HLG,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,RocketTeam,-,-,,Test,V-2,A-4,PL,Poland,Blizna,,,,,,,,,Unknown
+1944-S09,2431120.5,1944-02-01,A-4,-,-,-,-,-,-,HLG,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,RocketTeam,-,-,,Test,V-2,A-4,PL,Poland,Blizna,,,,,,,,,Unknown
+1944-S10,2431120.5,1944-02-01,A-4,-,-,-,-,-,-,HLG,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,RocketTeam,-,-,,Test,V-2,A-4,PL,Poland,Blizna,,,,,,,,,Unknown
+1944-S11,2431149.5,1944-03-01,A-4,-,-,-,-,-,-,HLG,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,RocketTeam,-,-,,Test,V-2,A-4,PL,Poland,Blizna,,,,,,,,,Unknown
+1944-S12,2431149.5,1944-03-01,A-4,-,-,-,-,-,-,HLG,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,RocketTeam,-,-,,Test,V-2,A-4,PL,Poland,Blizna,,,,,,,,,Unknown
+1944-S13,2431149.5,1944-03-01,A-4,-,-,-,-,-,-,HLG,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,RocketTeam,-,-,,Test,V-2,A-4,PL,Poland,Blizna,,,,,,,,,Unknown
+1944-S14,2431149.5,1944-03-01,A-4,-,-,-,-,-,-,HLG,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,RocketTeam,-,-,,Test,V-2,A-4,PL,Poland,Blizna,,,,,,,,,Unknown
+1944-S15,2431149.5,1944-03-01,A-4,-,-,-,-,-,-,HLG,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,RocketTeam,-,-,,Test,V-2,A-4,PL,Poland,Blizna,,,,,,,,,Unknown
+1944-S16,2431149.5,1944-03-01,A-4,-,-,-,-,-,-,HLG,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,RocketTeam,-,-,,Test,V-2,A-4,PL,Poland,Blizna,,,,,,,,,Unknown
+1944-S17,2431149.5,1944-03-01,A-4,-,-,-,-,-,-,HLG,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,RocketTeam,-,-,,Test,V-2,A-4,PL,Poland,Blizna,,,,,,,,,Unknown
+1944-S18,2431149.5,1944-03-01,A-4,-,-,-,-,-,-,HLG,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,RocketTeam,-,-,,Test,V-2,A-4,PL,Poland,Blizna,,,,,,,,,Unknown
+1944-S19,2431149.5,1944-03-01,A-4,-,-,-,-,-,-,HLG,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,RocketTeam,-,-,,Test,V-2,A-4,PL,Poland,Blizna,,,,,,,,,Unknown
+1944-S20,2431149.5,1944-03-01,A-4,-,-,-,-,-,-,HLG,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,RocketTeam,-,-,,Test,V-2,A-4,PL,Poland,Blizna,,,,,,,,,Unknown
+1944-A33,2431166.96,1944-03-17,A-4,-,17.047,-,-,-,-,HVP,P7,-,-,1.0,?,    -, ,-,0.0,WEHR,MF,U,-,Test,DeMaes,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1944-S21,2431180.5,1944-04-01,A-4,-,-,(30 in Apr?),-,-,-,HLG,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,RocketTeam,-,-,,Test,V-2,A-4,PL,Poland,Blizna,,,,,,,,,Unknown
+1944-S22,2431181.45,1944-03-31,A-4,-,-,-,-,-,-,HLG,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MF,U,-,Test,RocketTeam,-,-,,Test,V-2,A-4,PL,Poland,Blizna,,,,,,,,,Unknown
+1944-S23,2431194.5,1944-04-14,A-4,-,17.063,-,-,-,-,HVP,P7,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,DeMaes,RocketTeam,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1944-S24,2431210.5,1944-05-01,A-4,-,-,(30 in May?),-,-,-,HLG,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,RocketTeam,-,-,,Test,V-2,A-4,PL,Poland,Blizna,,,,,,,,,Unknown
+1944-S25,2431230.5,1944-05-20,A-4,-,-,-,-,-,-,HLG,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,RocketTeam,DeMaes,-,,Test,V-2,A-4,PL,Poland,Blizna,,,,,,,,,Unknown
+1944-S26,2431236.96,1944-05-26,A-4,-,-,-,-,-,-,HVP,P7,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,RocketTeam,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1944-A05,2431237.08,1944-05-26,A-4,-,-,-,-,-,-,HVP,P7,-,-,1.0,?,    -, ,-,0.0,WEHR,MF,U,-,Test,RocketTeam,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1944-S27,2431241.5,1944-06-01,A-4,-,-,-,-,-,-,HLG,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,RocketTeam,-,-,,Test,V-2,A-4,PL,Poland,Blizna,,,,,,,,,Unknown
+1944-S28,2431241.5,1944-06-01,A-4,-,-,Vertical test,-,-,-,HVP,GWO,-,-,120.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,Neufeld/220,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1944-S313,2431241.5,1944-06-01,A-4,-,-,Vertical test,-,-,-,HVP,GWO,-,-,110.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,DeMaes,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1944-S314,2431241.5,1944-06-01,A-4,-,-,Vertical test,-,-,-,HVP,GWO,-,-,110.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,DeMaes,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1944-S315,2431241.5,1944-06-01,A-4,-,-,Vertical test,-,-,-,HVP,GWO,-,-,110.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,DeMaes,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1944-S316,2431241.5,1944-06-01,A-4,-,-,Vertical test,-,-,-,HVP,GWO,-,-,110.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,DeMaes,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1944-A06,2431242.5,1944-06-01,A-4,-,-,-,-,-,-,HVP,P7,-,-,0.0,?,    -, ,-,0.0,WEHR,MF,U,-,Test,RocketTeam,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1944-M01,2431255.13,1944-06-13,A-4,-,V89,Kalmar impact,-,-,-,HVP,P7,-,-,50.0,?,    -, ,-,0.0,WEHR,MF,U,-,Test,Stuhlinger,RocketTeam,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1944-S317,2431261.5,1944-06-20,A-4,-,-,Vertical test,-,-,-,HVP,GWO,-,-,110.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,DeMaes,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1944-S29,2431295.5,1944-07-24,A-4,-,-,Last Blizna launch,-,-,-,HLG,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,DeMaes,-,-,,Test,V-2,A-4,PL,Poland,Blizna,,,,,,,,,Unknown
+1944-S318,2431302.5,1944-07-31,A-4,-,V205,-,-,-,-,HVP,P7,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,DeMaes,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1944-S31,2431316.17,1944-08-13,V-2,-,18296,Ma100,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER444,MS,-,-,Training,FE/VB158,-,-,,Training,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S32,2431316.26,1944-08-13,V-2,-,18292,Ma106,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER485-2,MS,-,-,Training,FE/VB158,-,-,,Training,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-A07,2431316.78,1944-08-14,V-2,-,18298,Ma115,-,-,-,HKR,-,-,-,0.0,?,    -, ,-,0.0,WER836-3,MF,U,-,Training,FE/VB158,-,-,,Training,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-A08,2431316.8,1944-08-14,V-2,-,18307,Ma125,-,-,-,HKR,-,-,-,40.0,?,    -, ,-,0.0,WER444,MF,U,-,Training,FE/VB158,-,-,,Training,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-A09,2431316.88,1944-08-14,V-2,-,18302,Ma119,-,-,-,HKR,-,-,-,1.0,?,    -, ,-,0.0,WER444,MF,U,-,Training,FE/VB158,-,-,,Training,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S33,2431316.9,1944-08-14,V-2,-,18291,Ma108,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER485-2,MS,-,-,Training,FE/VB158,-,-,,Training,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S34,2431316.91,1944-08-14,V-2,-,18301,Ma118,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER836-3,MS,-,-,Training,FE/VB158,-,-,,Training,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S35,2431316.97,1944-08-14,V-2,-,18303,Ma120,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER485-2,MS,-,-,Training,FE/VB158,-,-,,Training,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S36,2431317.04,1944-08-14,V-2,-,18305,Ma123,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER485-2,MS,-,-,Training,FE/VB158,-,-,,Training,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-A10,2431317.23,1944-08-14,V-2,-,18308,Ma126,-,-,-,HKR,-,-,-,0.0, ,    -, ,-,0.0,WER485-2,MF,U,-,Training,FE/VB158,-,-,,Training,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S37,2431317.31,1944-08-14,V-2,-,18309,Ma127,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER444,MS,-,-,Training,FE/VB158,-,-,,Training,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S38,2431317.92,1944-08-15,A-4,-,18311,Ma113,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER836-3,MS,-,-,Training,FE/VB159,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S39,2431317.95,1944-08-15,A-4,-,18312,Ma114,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER485-2,MS,-,-,Training,FE/VB159,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S40,2431318.0,1944-08-15,A-4,-,18310,Ma128,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER444,MS,-,-,Training,FE/VB159,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S41,2431318.11,1944-08-15,A-4,-,18314,Ma131,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER444,MS,-,-,Training,FE/VB159,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S42,2431318.21,1944-08-15,A-4,-,18321,Ma143,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER444,MS,-,-,Training,FE/VB159,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S43,2431318.23,1944-08-15,A-4,-,18315,Ma132,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER485-2,MS,-,-,Training,FE/VB159,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S44,2431318.32,1944-08-15,A-4,-,18319,Ma140,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER485-2,MS,-,-,Training,FE/VB159,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S45,2431318.81,1944-08-16,A-4,-,18318,Ma138,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER485-2,MS,-,-,Training,FE/VB159,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S46,2431318.82,1944-08-16,A-4,-,18317,Ma136,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER444,MS,-,-,Training,FE/VB159,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S47,2431318.94,1944-08-16,V-2,-,18295,Ma111,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER444,MS,-,-,Training,FE/VB158,-,-,,Training,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S48,2431318.95,1944-08-16,A-4,-,18323,Ma129,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER485-2,MS,-,-,Training,FE/VB159,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S49,2431319.1,1944-08-16,A-4,-,18328,Ma133,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER836-3,MS,-,-,Training,FE/VB159,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S50,2431320.03,1944-08-17,A-4,-,18320,Ma142,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER485-2,MS,-,-,Training,FE/VB159,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-A11,2431320.04,1944-08-17,V-2,-,18300,Ma116,-,-,-,HKR,-,-,-,10.0,?,    -, ,-,0.0,WER444,MF,U,-,Training,FE/VB158,-,-,,Training,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S51,2431320.05,1944-08-17,A-4,-,18316,Ma134,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER444,MS,-,-,Training,FE/VB159,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S52,2431320.06,1944-08-17,V-2,-,18290,Ma109,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER836-2,MS,-,-,Training,FE/VB158,-,-,,Training,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S53,2431320.19,1944-08-17,A-4,-,18327,Ma147,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER485-2,MS,-,-,Training,FE/VB159,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S54,2431320.22,1944-08-17,A-4,-,18324,Ma144,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER444,MS,-,-,Training,FE/VB159,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S55,2431320.23,1944-08-17,V-2,-,18306,Ma124,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER836-3,MS,-,-,Training,FE/VB158,-,-,,Training,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S56,2431320.36,1944-08-17,A-4,-,18325,Ma107,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER485-2,MS,-,-,Training,FE/VB159,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S57,2431320.82,1944-08-18,A-4,-,18326,Ma146,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER444,MS,-,-,Training,FE/VB159,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S58,2431321.04,1944-08-18,A-4,-,18345,Ma150,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER485-2,MS,-,-,Training,FE/VB160,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-A12,2431321.19,1944-08-18,A-4,-,18350,Ma156,-,-,-,HKR,-,-,-,40.0,?,    -, ,-,0.0,WER836-3,MF,U,-,Training,FE/VB160,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S59,2431321.2,1944-08-18,A-4,-,18336,Ma121,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER444,MS,-,-,Training,FE/VB160,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S60,2431321.31,1944-08-18,A-4,-,18339,Ma157,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER485-2,MS,-,-,Training,FE/VB160,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S61,2431321.32,1944-08-18,A-4,-,18349,Ma135,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER836-3,MS,-,-,Training,FE/VB160,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S62,2431321.35,1944-08-18,A-4,-,18346,Ma112,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER485-2,MS,-,-,Training,FE/VB160,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S63,2431325.3,1944-08-22,A-4,-,18322,Ma141,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER500,MS,-,-,Training,FE/VB159,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S64,2431326.32,1944-08-23,A-4,-,18210,Ma30,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER500,MS,-,-,Training,FE/VB160,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S65,2431327.11,1944-08-24,A-4,-,18209,Ma29,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER500,MS,-,-,Training,FE/VB160,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-A13,2431328.71,1944-08-26,A-4,-,18344,Ma155,-,-,-,HKR,-,-,-,10.0,?,    -, ,-,0.0,WER485-2,MF,U,-,Training,FE/VB160,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S66,2431328.73,1944-08-26,A-4,-,18337,Ma148,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER485-2,MS,-,-,Training,FE/VB160,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S67,2431328.91,1944-08-26,A-4,-,18333,Ma153,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER485-2,MS,-,-,Training,FE/VB160,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S68,2431332.98,1944-08-30,A-4,-,18299,Ma117,-,-,-,HVP,SK,-,-,93.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE175,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1944-S69,2431333.16,1944-08-30,A-4,-,18334,Ma154,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Training,FE/VB160,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S70,2431333.17,1944-08-30,A-4,-,18338,Ma137,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER444,MS,-,-,Training,FE/VB160,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S72,2431333.5,1944-09-01,V-2,-,-,Liege,-,-,-,V2HAAG,-,-,-,95.0,?,    -, ,-,0.0,WER485,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Den Haag,,,,,,,,,Unknown
+1944-S73,2431333.5,1944-09-01,V-2,-,-,Hasselt,-,-,-,V2BURG,-,-,-,95.0,?,    -, ,-,0.0,WER485-1,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Burgsteinfurt,,,,,,,,,Unknown
+1944-S74,2431333.5,1944-09-01,V-2,-,-,Hasselt,-,-,-,V2BURG,-,-,-,95.0,?,    -, ,-,0.0,WER485-1,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Burgsteinfurt,,,,,,,,,Unknown
+1944-S75,2431333.5,1944-09-01,V-2,-,-,Hasselt x4,-,-,-,V2BURG,-,-,-,95.0,?,    -, ,-,0.0,WER485-2,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Burgsteinfurt,,,,,,,,,Unknown
+1944-S76,2431333.5,1944-09-01,V-2,-,-,Tournai x6,-,-,-,V2BURG,-,-,-,95.0,?,    -, ,-,0.0,WER485-2,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Burgsteinfurt,,,,,,,,,Unknown
+1944-S77,2431333.5,1944-09-01,V-2,-,-,Maastricht x8,-,-,-,V2BURG,-,-,-,95.0,?,    -, ,-,0.0,WER485-1,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Burgsteinfurt,,,,,,,,,Unknown
+1944-S78,2431333.5,1944-09-01,V-2,-,-,Maastricht x4,-,-,-,V2BURG,-,-,-,95.0,?,    -, ,-,0.0,WER485-2,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Burgsteinfurt,,,,,,,,,Unknown
+1944-S79,2431333.5,1944-09-01,V-2,-,-,Liege x4,-,-,-,V2BURG,-,-,-,95.0,?,    -, ,-,0.0,WER485-1,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Burgsteinfurt,,,,,,,,,Unknown
+1944-S80,2431333.5,1944-09-01,V-2,-,-,Liege x8,-,-,-,V2BURG,-,-,-,95.0,?,    -, ,-,0.0,WER485-2,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Burgsteinfurt,,,,,,,,,Unknown
+1944-A14,2431336.16,1944-09-02,A-4,-,18293,Ma93,-,-,-,HVP,SK,-,-,35.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE175,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1944-A15,2431339.9,1944-09-06,V-2,-,18589,Paris,-,-,-,V2VIEL,-,-,-,1.0,?,    -, ,-,0.0,WER444,MF,U,-,Weapon,Stuhlinger,RocketTeam,-,,Weapon,V-2,V-2,DR,German Reich,Viesalm,,,,,,,,,Unknown
+1944-A16,2431339.94,1944-09-06,V-2,-,18593,Paris,-,-,-,V2VIEL,-,-,-,1.0,?,    -, ,-,0.0,WER444,MF,U,-,Weapon,Stuhlinger,RocketTeam,-,,Weapon,V-2,V-2,DR,German Reich,Viesalm,,,,,,,,,Unknown
+1944-S71,2431341.5,1944-09-08,A-4,-,-,-,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,DeMaes,RocketTeam,-,,Test,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S81,2431341.82,1944-09-08,V-2,-,-,Paris,-,-,-,V2HOUF,-,-,-,95.0,?,    -, ,-,0.0,WER444,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Houffalize,,,,,,,,,Unknown
+1944-S82,2431342.19,1944-09-08,V-2,-,-,London,-,-,-,V2HAAG,LP1,-,-,95.0,?,    -, ,-,0.0,WER485,MS,-,-,Weapon,DeMaes,RocketTeam,-,,Weapon,V-2,V-2,DR,German Reich,Den Haag,,,,,,,,,Unknown
+1944-S83,2431342.19,1944-09-08,V-2,-,-,London,-,-,-,V2HAAG,LP1,-,-,95.0,?,    -, ,-,0.0,WER485,MS,-,-,Weapon,DeMaes,RocketTeam,-,,Weapon,V-2,V-2,DR,German Reich,Den Haag,,,,,,,,,Unknown
+1944-S84,2431344.31,1944-09-10,V-2,-,-,London,-,-,-,V2VUGHT,-,-,-,95.0,?,    -, ,-,0.0,WER485,MS,-,-,Weapon,DeMaes,RocketTeam,-,,Weapon,V-2,V-2,DR,German Reich,Vught,,,,,,,,,Unknown
+1944-S85,2431344.79,1944-09-11,V-2,-,-,London,-,-,-,V2VUGHT,-,-,-,95.0,?,    -, ,-,0.0,WER485,MS,-,-,Weapon,DeMaes,RocketTeam,-,,Weapon,V-2,V-2,DR,German Reich,Vught,,,,,,,,,Unknown
+1944-S86,2431344.81,1944-09-11,V-2,-,-,London,-,-,-,V2VUGHT,-,-,-,95.0,?,    -, ,-,0.0,WER485,MS,-,-,Weapon,DeMaes,RocketTeam,-,,Weapon,V-2,V-2,DR,German Reich,Vught,,,,,,,,,Unknown
+1944-S87,2431345.76,1944-09-12,V-2,-,-,London,-,-,-,V2VUGHT,-,-,-,95.0,?,    -, ,-,0.0,WER485,MS,-,-,Weapon,DeMaes,RocketTeam,-,,Weapon,V-2,V-2,DR,German Reich,Vught,,,,,,,,,Unknown
+1944-S88,2431345.76,1944-09-12,V-2,-,-,London,-,-,-,V2VUGHT,-,-,-,95.0,?,    -, ,-,0.0,WER485,MS,-,-,Weapon,DeMaes,RocketTeam,-,,Weapon,V-2,V-2,DR,German Reich,Vught,,,,,,,,,Unknown
+1944-S89,2431345.78,1944-09-12,V-2,-,-,London,-,-,-,V2VUGHT,-,-,-,95.0,?,    -, ,-,0.0,WER485,MS,-,-,Weapon,DeMaes,RocketTeam,-,,Weapon,V-2,V-2,DR,German Reich,Vught,,,,,,,,,Unknown
+1944-S90,2431346.01,1944-09-12,A-4,-,18769,Ma184,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER500,MS,-,-,Training,FE/VB161,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S91,2431346.16,1944-09-12,V-2,-,-,London,-,-,-,V2VUGHT,-,-,-,95.0,?,    -, ,-,0.0,WER485,MS,-,-,Weapon,DeMaes,RocketTeam,-,,Weapon,V-2,V-2,DR,German Reich,Vught,,,,,,,,,Unknown
+1944-S92,2431346.63,1944-09-13,A-4,-,18767,Ma173,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER500,MS,-,-,Training,FE/VB161,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S94,2431347.13,1944-09-13,A-4,-,18765,Ma178,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER500,MS,-,-,Training,FE/VB161,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-M02,2431347.2,1944-09-13,A-4,-,18181,M140,-,-,-,HVP,SK,-,-,64.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE175,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1944-S93,2431347.38,1944-09-13,V-2,-,-,London,-,-,-,V2VUGHT,-,-,-,95.0,?,    -, ,-,0.0,WER485,MS,-,-,Weapon,DeMaes,RocketTeam,-,,Weapon,V-2,V-2,DR,German Reich,Vught,,,,,,,,,Unknown
+1944-S95,2431347.5,1944-09-14,A-4,-,18014,Vertical test,MW18014,-,-,HVP,GWO,-,-,175.0, ,    -, ,-,0.0,WEHR,MS,-,-,Test,VonBraun58-8,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1944-S96,2431347.5,1944-09-14,V-2,-,-,Lille,-,-,-,V2EUS,-,-,-,95.0,?,    -, ,-,0.0,WER836,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Euskirchen,,,,,,,,,Unknown
+1944-S97,2431347.5,1944-09-14,V-2,-,-,Mons,-,-,-,V2EUS,-,-,-,95.0,?,    -, ,-,0.0,WER836,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Euskirchen,,,,,,,,,Unknown
+1944-S319,2431347.5,1944-09-14,V-2,-,-,London,-,-,-,V2HAAG,LP2,-,-,95.0,?,    -, ,-,0.0,WER485,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Den Haag,,,,,,,,,Unknown
+1944-S320,2431347.5,1944-09-14,V-2,-,-,London,-,-,-,V2HAAG,LP2,-,-,95.0,?,    -, ,-,0.0,WER485,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Den Haag,,,,,,,,,Unknown
+1944-S100,2431347.62,1944-09-14,V-2,-,-,London,-,-,-,V2HAAG,LP2,-,-,95.0,?,    -, ,-,0.0,WER485,MS,-,-,Weapon,DeMaes,RocketTeam,-,,Weapon,V-2,V-2,DR,German Reich,Den Haag,,,,,,,,,Unknown
+1944-S98,2431347.95,1944-09-14,A-4,-,18745,Ma160,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER500,MS,-,-,Training,FE/VB161,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S99,2431348.09,1944-09-14,A-4,-,18755,Ma174,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER500,MS,-,-,Training,FE/VB161,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S322,2431348.5,1944-09-15,V-2,-,-,London/All Hallows,-,-,-,V2WAL?,-,-,-,90.0,?,    -, ,-,0.0,WER444,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S321,2431348.59,1944-09-15,V-2,-,-,London/Sunbury,-,-,-,V2WAL,-,-,-,90.0,?,    -, ,-,0.0,WER444,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Walcheren,,,,,,,,,Unknown
+1944-A17,2431348.94,1944-09-15,A-4,-,18756,Ma171,-,-,-,HKR,-,-,-,1.0,?,    -, ,-,0.0,WER500,MF,U,-,Training,FE/VB161,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-A18,2431349.25,1944-09-15,A-4,-,18763,Ma177,-,-,-,HKR,-,-,-,5.0,?,    -, ,-,0.0,WER500,MF,U,-,Training,FE/VB161,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S101,2431349.5,1944-09-16,V-2,-,-,Lille  x6,-,-,-,V2EUS,-,-,-,95.0,?,    -, ,-,0.0,WER836,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Euskirchen,,,,,,,,,Unknown
+1944-S102,2431349.5,1944-09-16,V-2,-,-,Mons   x3,-,-,-,V2EUS,-,-,-,95.0,?,    -, ,-,0.0,WER836,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Euskirchen,,,,,,,,,Unknown
+1944-S103,2431349.5,1944-09-16,V-2,-,-,London,-,-,-,V2WAL,-,-,-,95.0,?,    -, ,-,0.0,WER444,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Walcheren,,,,,,,,,Unknown
+1944-S104,2431349.5,1944-09-16,V-2,-,-,London,-,-,-,V2WAL,-,-,-,95.0,?,    -, ,-,0.0,WER444,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Walcheren,,,,,,,,,Unknown
+1944-S105,2431349.99,1944-09-16,A-4,-,18746,Ma161,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER500,MS,-,-,Training,FE/VB161,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S106,2431350.2,1944-09-16,A-4,-,18750,Ma166,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER500,MS,-,-,Training,FE/VB161,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S107,2431350.5,1944-09-17,V-2,-,-,London,-,-,-,V2WAL,-,-,-,95.0,?,    -, ,-,0.0,WER444,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Walcheren,,,,,,,,,Unknown
+1944-S108,2431350.5,1944-09-17,V-2,-,-,London,-,-,-,V2WAL,-,-,-,95.0,?,    -, ,-,0.0,WER444,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Walcheren,,,,,,,,,Unknown
+1944-S111,2431350.5,1944-09-17,V-2,-,-,London,-,-,-,V2WAL,-,-,-,95.0,?,    -, ,-,0.0,WER444,MS,-,-,Weapon,DeMaes,RocketTeam,-,,Weapon,V-2,V-2,DR,German Reich,Walcheren,,,,,,,,,Unknown
+1944-S109,2431350.94,1944-09-17,A-4,-,18752,Ma162,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER500,MS,-,-,Training,FE/VB161,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S110,2431351.08,1944-09-17,A-4,-,18754,Ma170,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER500,MS,-,-,Training,FE/VB161,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S112,2431351.5,1944-09-18,V-2,-,-,London/W Norwood,-,-,-,V2WAL,-,-,-,95.0,?,    -, ,-,0.0,WER444,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Walcheren,,,,,,,,,Unknown
+1944-S113,2431351.92,1944-09-18,A-4,-,18755,Ma169,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER500,MS,-,-,Training,FE/VB161,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S114,2431351.95,1944-09-18,A-4,-,18747,Ma164,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER500,MS,-,-,Training,FE/VB161,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S115,2431352.1,1944-09-18,A-4,-,18766,Ma183,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER500,MS,-,-,Training,FE/VB161,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S116,2431352.18,1944-09-18,A-4,-,18762,Ma176,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER500,MS,-,-,Training,FE/VB161,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S117,2431352.5,1944-09-19,V-2,-,-,Tournai,-,-,-,V2BURG,-,-,-,95.0,?,    -, ,-,0.0,WER485-1,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Burgsteinfurt,,,,,,,,,Unknown
+1944-S118,2431353.09,1944-09-19,A-4,-,18753,Ma159,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER500,MS,-,-,Training,FE/VB161,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S119,2431353.17,1944-09-19,A-4,-,18764,Ma179,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER500,MS,-,-,Training,FE/VB161,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S120,2431353.5,1944-09-20,V-2,-,-,Lille,-,-,-,V2EUS,-,-,-,95.0,?,    -, ,-,0.0,WER836-2,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Euskirchen,,,,,,,,,Unknown
+1944-S121,2431353.5,1944-09-20,V-2,-,-,Arras,-,-,-,V2EUS,-,-,-,95.0,?,    -, ,-,0.0,WER836-2,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Euskirchen,,,,,,,,,Unknown
+1944-S122,2431353.5,1944-09-20,V-2,-,-,Cambrai,-,-,-,V2EUS,-,-,-,95.0,?,    -, ,-,0.0,WER836-2,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Euskirchen,,,,,,,,,Unknown
+1944-S123,2431353.5,1944-09-20,V-2,-,-,Liege,-,-,-,V2EUS,-,-,-,95.0,?,    -, ,-,0.0,WER836-2,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Euskirchen,,,,,,,,,Unknown
+1944-S124,2431353.5,1944-09-20,V-2,-,-,Maastricht,-,-,-,V2EUS,-,-,-,95.0,?,    -, ,-,0.0,WER836-2,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Euskirchen,,,,,,,,,Unknown
+1944-S125,2431353.5,1944-09-20,V-2,-,-,Lille,-,-,-,V2EUS,-,-,-,95.0,?,    -, ,-,0.0,WER836-3,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Euskirchen,,,,,,,,,Unknown
+1944-S126,2431353.5,1944-09-20,V-2,-,-,Arras,-,-,-,V2EUS,-,-,-,95.0,?,    -, ,-,0.0,WER836-3,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Euskirchen,,,,,,,,,Unknown
+1944-S127,2431353.5,1944-09-20,V-2,-,-,Liege,-,-,-,V2EUS,-,-,-,95.0,?,    -, ,-,0.0,WER836-3,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Euskirchen,,,,,,,,,Unknown
+1944-S128,2431353.5,1944-09-20,V-2,-,-,Maastricht,-,-,-,V2EUS,-,-,-,95.0,?,    -, ,-,0.0,WER836-3,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Euskirchen,,,,,,,,,Unknown
+1944-S129,2431354.8,1944-09-21,A-4,-,18824,Ma214,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Training,FE/VB162,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S130,2431355.01,1944-09-21,A-4,-,18822,Ma211,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Training,FE/VB162,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S131,2431355.81,1944-09-22,A-4,-,18825,Ma213,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Training,FE/VB162,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S132,2431356.26,1944-09-22,A-4,-,18826,Ma215,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Training,FE/VB162,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-A19,2431356.89,1944-09-23,A-4,-,18823,Ma212,-,-,-,HKR,-,-,-,20.0,?,    -, ,-,0.0,WER836-1,MF,U,-,Training,FE/VB162,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S133,2431357.16,1944-09-23,A-4,-,18821,Ma210,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Training,FE/VB162,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S134,2431357.27,1944-09-23,A-4,-,18831,Ma217,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Training,FE/VB162,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S135,2431357.97,1944-09-24,A-4,-,18827,Ma216,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Training,FE/VB162,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S136,2431358.5,1944-09-25,V-2,-,-,Lille,-,-,-,V2HACH,-,-,-,95.0,?,    -, ,-,0.0,WER836-2,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Hachenburg,,,,,,,,,Unknown
+1944-S137,2431358.5,1944-09-25,V-2,-,-,Arras,-,-,-,V2HACH,-,-,-,95.0,?,    -, ,-,0.0,WER836-2,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Hachenburg,,,,,,,,,Unknown
+1944-S138,2431358.5,1944-09-25,V-2,-,-,Cambrai,-,-,-,V2HACH,-,-,-,95.0,?,    -, ,-,0.0,WER836-2,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Hachenburg,,,,,,,,,Unknown
+1944-S139,2431358.5,1944-09-25,V-2,-,-,Liege,-,-,-,V2HACH,-,-,-,95.0,?,    -, ,-,0.0,WER836-2,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Hachenburg,,,,,,,,,Unknown
+1944-S140,2431358.5,1944-09-25,V-2,-,-,Maastricht,-,-,-,V2HACH,-,-,-,95.0,?,    -, ,-,0.0,WER836-2,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Hachenburg,,,,,,,,,Unknown
+1944-S141,2431358.5,1944-09-25,V-2,-,-,Lille,-,-,-,V2HACH,-,-,-,95.0,?,    -, ,-,0.0,WER836-3,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Hachenburg,,,,,,,,,Unknown
+1944-S142,2431358.5,1944-09-25,V-2,-,-,Liege,-,-,-,V2HACH,-,-,-,95.0,?,    -, ,-,0.0,WER836-3,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Hachenburg,,,,,,,,,Unknown
+1944-S143,2431358.5,1944-09-25,V-2,-,-,Norwich,-,-,-,V2STAV,LP1,-,-,95.0,?,    -, ,-,0.0,WER444,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Stavorem,,,,,,,,,Unknown
+1944-S144,2431358.91,1944-09-25,A-4,-,18815,Ma223,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Training,FE/VB162,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S145,2431358.99,1944-09-25,A-4,-,18808,Ma225,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Training,FE/VB162,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S146,2431359.19,1944-09-25,A-4,-,18833,Ma226,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Training,FE/VB162,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S147,2431359.29,1944-09-25,A-4,-,18807,Ma224,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Training,FE/VB162,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S148,2431359.31,1944-09-25,A-4,-,18800,Ma218,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Training,FE/VB162,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-A59,2431359.5,1944-09-26,V-2,-,-,London,-,-,-,V2STAV,LP1,-,-,10.0,?,    -, ,-,0.0,WER444,MF,U,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Stavorem,,,,,,,,,Unknown
+1944-S149,2431359.97,1944-09-26,A-4,-,18802,Ma219,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Training,FE/VB162,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S150,2431360.05,1944-09-26,A-4,-,18805,Ma221,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Training,FE/VB162,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S151,2431360.06,1944-09-26,A-4,-,18806,Ma222,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Training,FE/VB162,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S152,2431360.31,1944-09-26,A-4,-,18804,Ma220,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Training,FE/VB162,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S153,2431360.34,1944-09-26,V-2,-,18770,Ma186,-,-,-,HKR?,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S154,2431360.5,1944-09-27,V-2,-,-,Ipswich,-,-,-,V2STAV,LP1,-,-,95.0,?,    -, ,-,0.0,WER444,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Stavorem,,,,,,,,,Unknown
+1944-S155,2431360.5,1944-09-27,V-2,-,-,Norwich,-,-,-,V2STAV,LP1,-,-,95.0,?,    -, ,-,0.0,WER444,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Stavorem,,,,,,,,,Unknown
+1944-S156,2431360.93,1944-09-27,V-2,-,18771,Ma185,-,-,-,HKR?,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S157,2431360.95,1944-09-27,A-4,-,18837,Ma208,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Training,FE/VB162,-,-,,Training,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S158,2431363.5,1944-10-01,V-2,-,-,Paris?,-,-,-,V2MERZ,-,-,-,90.0,?,    -, ,-,0.0,WER836-2,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Merzig,,,,,,,,,Unknown
+1944-S159,2431363.5,1944-10-01,V-2,-,-,London?,-,-,-,V2HAAG,-,-,-,90.0,?,    -, ,-,0.0,WER485-2,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Den Haag,,,,,,,,,Unknown
+1944-S161,2431363.5,1944-10-01,V-2,-,-,Antwerp,-,-,-,V2BURG,-,-,-,90.0,?,    -, ,-,0.0,WER485-3,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Burgsteinfurt,,,,,,,,,Unknown
+1944-S162,2431363.5,1944-10-01,V-2,-,-,Antwerp,-,-,-,V2MERZ,-,-,-,90.0,?,    -, ,-,0.0,WER836,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Merzig,,,,,,,,,Unknown
+1944-S163,2431363.5,1944-10-01,V-2,-,-,Antwerp,-,-,-,V2HERM,-,-,-,90.0,?,    -, ,-,0.0,WER836,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Hermeskeil,,,,,,,,,Unknown
+1944-S164,2431364.17,1944-09-30,V-2,-,18774,Ma189,-,-,-,HKR?,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S165,2431364.37,1944-09-30,V-2,-,18788,Ma182,-,-,-,HKR?,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S166,2431364.45,1944-09-30,V-2,-,18794,Ma175,-,-,-,HKR?,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S167,2431364.91,1944-10-01,V-2,-,18777,Ma192,-,-,-,HKR?,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S168,2431364.98,1944-10-01,V-2,-,18772,Ma187,-,-,-,HKR?,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S169,2431365.01,1944-10-01,V-2,-,18773,Ma188,-,-,-,HKR?,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S170,2431365.5,1944-10-02,V-2,-,-,Paris?,-,-,-,V2MERZ,-,-,-,90.0,?,    -, ,-,0.0,WER836-2,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Merzig,,,,,,,,,Unknown
+1944-S324,2431365.5,1944-10-02,V-2,-,-,Test (post bombing),-,-,-,HVP,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,DeMaes,-,-,,Test,V-2,V-2,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1944-S171,2431365.9,1944-10-02,V-2,-,18778,Ma193,-,-,-,HKR?,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S172,2431365.93,1944-10-02,V-2,-,18776,Ma190,-,-,-,HKR?,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S173,2431366.27,1944-10-02,V-2,-,18796,Ma203,-,-,-,HKR?,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S174,2431366.3,1944-10-02,V-2,-,18795,Ma202,-,-,-,HKR?,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S325,2431366.5,1944-10-03,V-2,-,-,London,-,-,-,V2HAAG?,-,-,-,90.0,?,    -, ,-,0.0,WER485-2,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S326,2431366.5,1944-10-03,V-2,-,-,London,-,-,-,V2HAAG?,-,-,-,90.0,?,    -, ,-,0.0,WER485-2,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S327,2431366.5,1944-10-03,V-2,-,-,London,-,-,-,V2HAAG?,-,-,-,90.0,?,    -, ,-,0.0,WER485-2,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S328,2431366.5,1944-10-03,V-2,-,-,London,-,-,-,V2HAAG?,-,-,-,90.0,?,    -, ,-,0.0,WER485-2,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S329,2431366.5,1944-10-03,V-2,-,-,London,-,-,-,V2HAAG?,-,-,-,90.0,?,    -, ,-,0.0,WER485-2,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S330,2431367.38,1944-10-03,V-2,-,-,London/Wanstead UK43,-,-,-,V2HAAG?,-,-,-,90.0,?,    -, ,-,0.0,WER485-2,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S175,2431367.5,1944-10-04,V-2,-,-,London?,-,-,-,V2HAAG,-,-,-,90.0,?,    -, ,-,0.0,WER485-2,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Den Haag,,,,,,,,,Unknown
+1944-S176,2431368.81,1944-10-05,V-2,-,18799,Ma204,-,-,-,HKR?,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S177,2431368.82,1944-10-05,V-2,-,18798,Ma205,-,-,-,HKR?,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S178,2431369.06,1944-10-05,V-2,-,18792,Ma199,-,-,-,HKR?,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S179,2431369.12,1944-10-05,V-2,-,18797,Ma206,-,-,-,HKR?,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S180,2431369.15,1944-10-05,V-2,-,18803,Ma207,-,-,-,HKR?,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S181,2431369.27,1944-10-05,V-2,-,18791,Ma200,-,-,-,HKR?,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S182,2431369.35,1944-10-05,V-2,-,18790,Ma198,-,-,-,HKR?,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S183,2431369.5,1944-10-06,V-2,-,-,Paris?,-,-,-,V2MERZ,-,-,-,90.0,?,    -, ,-,0.0,WER836-3,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Merzig,,,,,,,,,Unknown
+1944-S184,2431369.96,1944-10-06,V-2,-,19041,WH3,-,-,-,HKR?,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S185,2431370.08,1944-10-06,V-2,-,19048,WH4,-,-,-,HKR?,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S186,2431372.96,1944-10-09,V-2,-,19045,WH9,-,-,-,HKR?,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S187,2431373.05,1944-10-09,V-2,-,19047,WH1,-,-,-,HKR?,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S188,2431373.08,1944-10-09,V-2,-,19039,WH2,-,-,-,HKR?,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S189,2431373.14,1944-10-09,V-2,-,19043,WH10,-,-,-,HKR?,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S190,2431373.2,1944-10-09,V-2,-,19042,WH6,-,-,-,HKR?,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S191,2431373.91,1944-10-10,V-2,-,19046,WH7,-,-,-,HKR?,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S192,2431373.99,1944-10-10,V-2,-,19040,WH5,-,-,-,HKR?,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S193,2431374.02,1944-10-10,V-2,-,19044,WH8,-,-,-,HKR?,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S194,2431374.11,1944-10-10,V-2,-,18810,Ma229,-,-,-,HKR?,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S195,2431374.2,1944-10-10,V-2,-,18813,Ma228,-,-,-,HKR?,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S196,2431374.33,1944-10-10,V-2,-,18809,Ma230,-,-,-,HKR?,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S197,2431374.91,1944-10-11,V-2,-,18811,Ma231,-,-,-,HKR?,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S198,2431375.07,1944-10-11,V-2,-,18816,Ma234,-,-,-,HKR?,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S199,2431375.19,1944-10-11,V-2,-,18814,Ma233,-,-,-,HKR?,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S200,2431375.25,1944-10-11,V-2,-,18818,Ma236,-,-,-,HKR?,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S160,2431376.85,1944-10-13,V-2,-,-,Antwerp,-,-,-,V2BURG,-,-,-,90.0,?,    -, ,-,0.0,WER485-1,MS,-,-,Weapon,DeMaes,RocketTeam,-,,Weapon,V-2,V-2,DR,German Reich,Burgsteinfurt,,,,,,,,,Unknown
+1944-S201,2431377.64,1944-10-14,V-2,-,18812,Ma232,-,-,-,HKR?,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S202,2431377.67,1944-10-14,V-2,-,18819,Ma237,-,-,-,HKR?,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S203,2431377.72,1944-10-14,V-2,-,18817,Ma235,-,-,-,HKR?,-,-,-,90.0,?,    -, ,-,0.0,WER836-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S204,2431379.5,1944-10-16,V-2,-,-,Antwerp,-,-,-,V2BURG,-,-,-,90.0,?,    -, ,-,0.0,SS500,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Burgsteinfurt,,,,,,,,,Unknown
+1944-S205,2431383.5,1944-10-20,V-2,-,-,Antwerp,-,-,-,V2STAV,-,-,-,95.0,?,    -, ,-,0.0,WER444,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Stavorem,,,,,,,,,Unknown
+1944-S206,2431383.5,1944-10-20,V-2,-,-,London/Croydon,-,-,-,V2HAAG,-,-,-,95.0,?,    -, ,-,0.0,WER444,MS,-,-,Weapon,DeMaes,RocketTeam,-,,Weapon,V-2,V-2,DR,German Reich,Den Haag,,,,,,,,,Unknown
+1944-S323,2431385.5,1944-10-22,V-2,-,-,Brussels/Deurne,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-A60,2431391.0,1944-10-27,V-2,-,-,-,-,-,-,V2VUGHT,-,-,-,0.0, ,    -, ,-,0.0,WER485,MF,U,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Vught,,,,,,,,,Unknown
+1944-S207,2431391.95,1944-10-28,V-2,-,19487,Ma239,-,-,-,HKR?,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S208,2431393.08,1944-10-29,V-2,-,19486,Ma242,-,-,-,HKR?,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S332,2431393.5,1944-10-30,V-2,-,-,London/West Ham,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-S333,2431393.5,1944-10-30,V-2,-,-,London/Wapping,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-S331,2431393.72,1944-10-30,V-2,-,-,London/Barking,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-S209,2431393.91,1944-10-30,V-2,-,19484,Ma238,-,-,-,HKR?,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S210,2431394.15,1944-10-30,V-2,-,19498,Ma243,-,-,-,HKR?,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S335,2431394.5,1944-10-31,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-S336,2431394.5,1944-10-31,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-S337,2431394.5,1944-10-31,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-S338,2431394.5,1944-10-31,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-S339,2431394.5,1944-10-31,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-S214,2431394.5,1944-11-01,V-2,-,-,-,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,RocketTeam,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S215,2431394.5,1944-11-01,V-2,-,-,Antwerp,-,-,-,V2HERM,-,-,-,90.0,?,    -, ,-,0.0,WER836,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Hermeskeil,,,,,,,,,Unknown
+1944-S216,2431394.5,1944-11-01,V-2,-,-,Antwerp,-,-,-,V2HACH,-,-,-,90.0,?,    -, ,-,0.0,WER836,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Hachenburg,,,,,,,,,Unknown
+1944-S334,2431394.54,1944-10-31,V-2,-,-,London/Hanwell,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-S217,2431394.96,1944-10-31,V-2,-,19488,Ma240,-,-,-,HKR?,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S218,2431395.0,1944-10-31,V-2,-,19491,Ma245,-,-,-,HKR?,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S219,2431395.23,1944-10-31,V-2,-,19489,Ma244,-,-,-,HKR?,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,,,,,,,,,,,,Unknown
+1944-S211,2431395.5,1944-11-01,V-2,-,-,Antwerp,-,-,-,V2BURG,-,-,-,90.0,?,    -, ,-,0.0,SS500,MS,-,-,Weapon,DeMaes,RocketTeam,-,,Weapon,V-2,V-2,DR,German Reich,Burgsteinfurt,,,,,,,,,Unknown
+1944-S212,2431395.5,1944-11-01,V-2,-,-,Antwerp (60/day),-,-,-,V2BURG,-,-,-,90.0,?,    -, ,-,0.0,WER485-1,MS,-,-,Weapon,DeMaes,RocketTeam,-,,Weapon,V-2,V-2,DR,German Reich,Burgsteinfurt,,,,,,,,,Unknown
+1944-S213,2431395.5,1944-11-01,V-2,-,-,Antwerp,-,-,-,V2BURG,-,-,-,90.0,?,    -, ,-,0.0,WER485-3,MS,-,-,Weapon,DeMaes,RocketTeam,-,,Weapon,V-2,V-2,DR,German Reich,Burgsteinfurt,,,,,,,,,Unknown
+1944-S340,2431395.51,1944-11-01,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-S341,2431395.63,1944-11-01,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-S220,2431395.94,1944-11-01,V-2,-,19504,Ma246,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S221,2431396.18,1944-11-01,V-2,-,19490,Ma247,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S342,2431396.19,1944-11-01,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-S222,2431396.88,1944-11-02,V-2,-,19492,Ma249,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S223,2431396.95,1944-11-02,V-2,-,19493,Ma248,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S224,2431397.49,1944-11-02,V-2,-,19494,Ma251,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S225,2431397.79,1944-11-03,V-2,-,19496,Ma250,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S226,2431399.18,1944-11-04,V-2,-,19495,Ma253,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S227,2431399.21,1944-11-04,V-2,-,19497,Ma252,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S347,2431399.5,1944-11-05,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-S343,2431399.52,1944-11-05,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-S344,2431399.56,1944-11-05,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-S345,2431399.74,1944-11-05,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-S346,2431399.87,1944-11-05,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-S228,2431399.88,1944-11-05,V-2,-,19502,Ma257,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S229,2431400.06,1944-11-05,V-2,-,19500,Ma256,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S348,2431400.11,1944-11-05,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-S349,2431400.13,1944-11-05,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-S230,2431400.15,1944-11-05,V-2,-,19501,Ma254,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S231,2431400.3,1944-11-05,V-2,-,19499,Ma255,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S350,2431400.82,1944-11-06,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-S232,2431401.02,1944-11-06,V-2,-,19508,Ma264,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S233,2431401.94,1944-11-07,V-2,-,19511,Ma265,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S234,2431402.02,1944-11-07,V-2,-,19514,Ma266,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S235,2431402.17,1944-11-07,V-2,-,19506,Ma260,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S236,2431402.44,1944-11-07,V-2,-,19507,Ma258,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S237,2431403.0,1944-11-08,V-2,-,19509,Ma259,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S238,2431404.16,1944-11-09,V-2,-,19520,Ma285,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S239,2431404.9,1944-11-10,V-2,-,19516,Ma280,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S240,2431405.0,1944-11-10,V-2,-,19518,Ma282,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S351,2431405.01,1944-11-10,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-S352,2431406.5,1944-11-12,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-S241,2431406.94,1944-11-12,V-2,-,19528,Ma278,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S242,2431407.1,1944-11-12,V-2,-,19510,Ma263,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S243,2431407.91,1944-11-13,V-2,-,19512,Ma262,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S244,2431408.01,1944-11-13,V-2,-,19513,Ma267,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S245,2431408.87,1944-11-14,V-2,-,19525,Ma283,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S246,2431408.96,1944-11-14,V-2,-,19517,Ma279,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S247,2431409.94,1944-11-15,V-2,-,19549,Ma288,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S248,2431410.0,1944-11-15,V-2,-,19548,Ma289,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S353,2431410.5,1944-11-16,V-2,-,-,Antwerp,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-S354,2431410.5,1944-11-16,V-2,-,-,Antwerp,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-S355,2431410.5,1944-11-16,V-2,-,-,Antwerp,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-S356,2431411.5,1944-11-17,V-2,-,-,Antwerp,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-S249,2431413.29,1944-11-18,V-2,-,19544,Ma290,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S357,2431413.5,1944-11-19,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-S358,2431413.5,1944-11-19,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-S250,2431413.93,1944-11-19,V-2,-,19547,Ma292,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S251,2431413.99,1944-11-19,V-2,-,19545,Ma291,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S252,2431414.91,1944-11-20,V-2,-,19533,Ma293,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S253,2431415.09,1944-11-20,V-2,-,19550,Ma295,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S254,2431415.16,1944-11-20,V-2,-,19552,Ma294,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S359,2431415.5,1944-11-21,V-2,-,-,London 226,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-S255,2431415.87,1944-11-21,V-2,-,19551,Ma296,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S256,2431415.92,1944-11-21,V-2,-,19546,Ma297,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S257,2431416.1,1944-11-21,V-2,-,19829,Ma301,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE/VB170,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S360,2431416.5,1944-11-22,V-2,-,-,London 236,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-S258,2431416.98,1944-11-22,V-2,-,19843,Ma308,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE/VB170,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S259,2431417.17,1944-11-22,V-2,-,19830,Ma300,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE/VB170,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-A20,2431417.35,1944-11-22,V-2,-,19832,Ma302,-,-,-,HKR,-,-,-,0.0,?,    -, ,-,0.0,WER271-1,MF,U,-,Test,FE/VB170,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S361,2431418.5,1944-11-24,V-2,-,-,London 250,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-S260,2431419.1,1944-11-24,V-2,-,19833,Ma303,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE/VB170,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S261,2431419.21,1944-11-24,V-2,-,19844,Ma271,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE/VB170,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-A21,2431419.33,1944-11-24,V-2,-,19834,Ma304,-,-,-,HKR,-,-,-,20.0,?,    -, ,-,0.0,WER271-1,MF,U,-,Test,FE/VB170,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-A22,2431419.96,1944-11-25,V-2,-,19835,Ma298,-,-,-,HKR,-,-,-,30.0,?,    -, ,-,0.0,WER271-1,MF,U,-,Test,FE/VB170,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S362,2431419.97,1944-11-25,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-S262,2431421.07,1944-11-26,V-2,-,19836,Ma305,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE/VB170,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S363,2431421.92,1944-11-27,V-2,-,-,Antwerp,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-S263,2431421.95,1944-11-27,V-2,-,19831,Ma276,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE/VB170,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-A23,2431421.97,1944-11-27,V-2,-,19840,Ma306,-,-,-,HKR,-,-,-,0.0,?,    -, ,-,0.0,WER271-1,MF,U,-,Test,FE/VB170,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S364,2431422.33,1944-11-27,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-S264,2431422.87,1944-11-28,V-2,-,19827,Ma299,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE/VB170,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S265,2431423.94,1944-11-29,V-2,-,19841,Ma316,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE/VB170,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S266,2431424.28,1944-11-29,V-2,-,19825,Ma277,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE/VB170,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S267,2431424.5,1944-12-01,V-2,-,-,Antwerp,-,-,-,V2HACH,-,-,-,90.0,?,    -, ,-,0.0,WER836,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Hachenburg,,,,,,,,,Unknown
+1944-S268,2431424.5,1944-12-01,V-2,-,-,Antwerp,-,-,-,V2BURG,-,-,-,90.0,?,    -, ,-,0.0,WER485-1,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Burgsteinfurt,,,,,,,,,Unknown
+1944-S269,2431424.5,1944-12-01,V-2,-,-,Antwerp,-,-,-,V2BURG,-,-,-,90.0,?,    -, ,-,0.0,WER485-3,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Burgsteinfurt,,,,,,,,,Unknown
+1944-S270,2431424.5,1944-12-01,V-2,-,-,?,-,-,-,V2HAAG,-,-,-,90.0,?,    -, ,-,0.0,WER485-1,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Den Haag,,,,,,,,,Unknown
+1944-S271,2431424.5,1944-12-01,V-2,-,-,Antwerp,-,-,-,V2BURG,-,-,-,90.0,?,    -, ,-,0.0,SS500,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Burgsteinfurt,,,,,,,,,Unknown
+1944-S272,2431424.97,1944-11-30,V-2,-,19846,Ma310,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE/VB170,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S273,2431424.99,1944-11-30,V-2,-,19849,Ma312,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE/VB170,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S274,2431425.98,1944-12-01,V-2,-,19848,Ma311,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE/VB170,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-A24,2431426.33,1944-12-01,V-2,-,19850,Ma275,-,-,-,HKR,-,-,-,1.0,?,    -, ,-,0.0,WER271-1,MF,U,-,Test,FE/VB170,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S275,2431430.0,1944-12-05,V-2,-,19883,Ma346,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S276,2431430.18,1944-12-05,V-2,-,19893,Ma340,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S277,2431430.29,1944-12-05,V-2,-,19905,Ma339,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S365,2431430.5,1944-12-06,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-S366,2431430.5,1944-12-06,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-S278,2431431.08,1944-12-06,V-2,-,19913,Ma338,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-A25,2431431.33,1944-12-06,V-2,-,19891,Ma341,-,-,-,HKR,-,-,-,0.0,?,    -, ,-,0.0,WER271-1,MF,U,-,Test,FE,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S279,2431432.21,1944-12-07,A-4,-,19874,Ma333,-,-,-,HVP,SK,-,-,104.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE175,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1944-S280,2431432.21,1944-12-07,V-2,-,19901,Ma345,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S281,2431433.02,1944-12-08,V-2,-,19894,Ma342,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S282,2431433.23,1944-12-08,V-2,-,19888,Ma344,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S367,2431433.5,1944-12-09,V-2,-,-,Antwerp,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-S283,2431434.16,1944-12-09,V-2,-,19900,Ma347,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WER271-1,MS,-,-,Test,FE,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S284,2431434.22,1944-12-09,A-4,-,19020,-,-,-,-,HVP,SK,-,-,106.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE175,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1944-S285,2431436.12,1944-12-11,V-2,-,19856,Ma319,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE/VB171,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S286,2431436.23,1944-12-11,V-2,-,19858,Ma321,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE/VB171,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S287,2431436.97,1944-12-12,A-4,-,18783,Ma191,-,-,-,HVP,SK,-,-,81.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE175,-,-,,Test,V-2,A-4,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1944-A26,2431437.05,1944-12-12,V-2,-,19855,Ma323,-,-,-,HKR,-,-,-,0.0,?,    -, ,-,0.0,WEHR,MF,U,-,Test,FE/VB171,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S288,2431437.38,1944-12-12,V-2,-,19854,Ma318,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE/VB171,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S289,2431437.9,1944-12-13,V-2,-,19859,Ma322,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE/VB171,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S290,2431437.99,1944-12-13,V-2,-,19870,Ma320,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE/VB171,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-A27,2431438.06,1944-12-13,V-2,-,19857,Ma324,-,-,-,HKR,-,-,-,40.0,?,    -, ,-,0.0,WEHR,MF,U,-,Test,FE/VB171,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S368,2431438.5,1944-12-14,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-S369,2431438.5,1944-12-14,V-2,-,-,Antwerp,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-A28,2431439.13,1944-12-14,V-2,-,19865,Ma325,-,-,-,HKR,-,-,-,1.0,?,    -, ,-,0.0,WEHR,MF,U,-,Test,FE/VB171,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S291,2431440.01,1944-12-15,V-2,-,19847,Ma309,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE/VB173,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S292,2431440.98,1944-12-16,V-2,-,19837,Ma317,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE/VB173,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S293,2431441.01,1944-12-16,V-2,-,19838,Ma314,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE/VB173,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S370,2431441.05,1944-12-16,V-2,-,-,Antwerp,-,-,-,V2ENS,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Enschede,,,,,,,,,Unknown
+1944-S371,2431441.12,1944-12-16,V-2,-,-,Antwerp,-,-,-,V2ENS,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Enschede,,,,,,,,,Unknown
+1944-S294,2431441.92,1944-12-17,V-2,-,19851,Ma273,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE/VB173,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S372,2431442.5,1944-12-18,V-2,-,-,Antwerp,-,-,-,V2ZWOL,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Zwolle,,,,,,,,,Unknown
+1944-S295,2431444.01,1944-12-19,V-2,-,19872,Ma327,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE/VB171,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-A29,2431444.14,1944-12-19,V-2,-,19828,Ma315,-,-,-,HKR,-,-,-,30.0,?,    -, ,-,0.0,WEHR,MF,U,-,Test,FE/VB173,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-A30,2431444.87,1944-12-20,V-2,-,19845,Ma272,-,-,-,HKR,-,-,-,1.0,?,    -, ,-,0.0,WEHR,MF,U,-,Test,FE/VB173,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S296,2431445.02,1944-12-20,V-2,-,19852,Ma269,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE/VB173,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S297,2431445.23,1944-12-20,V-2,-,19853,Ma274,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE/VB173,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S298,2431445.89,1944-12-21,V-2,-,19186,-,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE/VB172,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S299,2431445.95,1944-12-21,V-2,-,19676,-,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE/VB172,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S300,2431446.16,1944-12-21,V-2,-,19778,-,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE/VB172,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S373,2431447.5,1944-12-23,V-2,-,-,Antwerp,-,-,-,V2REM,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Remscheid,,,,,,,,,Unknown
+1944-S301,2431447.91,1944-12-23,V-2,-,19886,-,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE/VB172,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S302,2431448.04,1944-12-23,V-2,-,19674,-,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE/VB172,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S303,2431448.11,1944-12-23,V-2,-,19776,-,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE/VB172,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S304,2431449.94,1944-12-25,V-2,-,19650,-,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE/VB172,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S305,2431450.0,1944-12-25,V-2,-,19681,-,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE/VB172,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S374,2431451.31,1944-12-26,V-2,-,-,London/Islington,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-S306,2431451.86,1944-12-27,V-2,-,20853,Ma421,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE/VB174,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S375,2431452.5,1944-12-28,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-S376,2431452.5,1944-12-28,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-S377,2431452.5,1944-12-28,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-S378,2431452.5,1944-12-28,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-S379,2431452.5,1944-12-28,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-S380,2431452.5,1944-12-28,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-S381,2431452.5,1944-12-28,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-S382,2431452.5,1944-12-28,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1944-S307,2431452.86,1944-12-28,V-2,-,20844,Ma423,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE/VB174,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S308,2431452.93,1944-12-28,V-2,-,20845,Ma422,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE/VB174,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-A32,2431452.98,1944-12-28,V-2,-,20848,Ma427,-,-,-,HKR,-,-,-,20.0,?,    -, ,-,0.0,WEHR,MF,U,-,Test,FE/VB174,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S309,2431455.19,1944-12-30,V-2,-,20820,Ma414,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE/VB174,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S310,2431455.27,1944-12-30,V-2,-,20816,Ma413,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE/VB174,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-A62,2431455.5,1944-12-31,V-2,-,-,London,-,-,-,UNKV2,-,-,-,0.0, ,    -, ,-,0.0,WEHR,MF,U,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S01,2431455.5,1945-01-01,V-2,-,-,?,-,-,-,V2HAAG,-,-,-,90.0,?,    -, ,-,0.0,WER485-1,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Den Haag,,,,,,,,,Unknown
+1945-S02,2431455.5,1945-01-01,V-2,-,-,?,-,-,-,V2HAAG,-,-,-,90.0,?,    -, ,-,0.0,WER485-3,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Den Haag,,,,,,,,,Unknown
+1945-S03,2431455.5,1945-01-01,V-2,-,-,?,-,-,-,V2ZWOL,-,-,-,90.0,?,    -, ,-,0.0,SS500,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Zwolle,,,,,,,,,Unknown
+1944-S311,2431456.03,1944-12-31,V-2,-,20847,Ma425,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE/VB174,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S312,2431456.14,1944-12-31,V-2,-,20825,Ma408,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE/VB174,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1944-S383,2431456.4,1944-12-31,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-A01,2431457.12,1945-01-01,V-2,-,20852,Ma426,-,-,-,HKR,-,-,-,20.0,?,    -, ,-,0.0,WEHR,MF,U,-,Test,FE/VB174,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1945-S04,2431458.0,1945-01-02,V-2,-,20815,Ma411,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE/VB174,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1945-S05,2431458.15,1945-01-02,V-2,-,20817,Ma415,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE/VB174,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1945-S06,2431458.28,1945-01-02,V-2,-,20818,Ma412,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE/VB174,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1945-S38,2431458.78,1945-01-03,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S07,2431459.01,1945-01-03,V-2,-,20838,Ma418,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE/VB174,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1945-S08,2431459.12,1945-01-03,V-2,-,20841,Ma420,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE/VB174,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1945-S09,2431459.21,1945-01-03,V-2,-,20851,Ma424,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE/VB174,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1945-S39,2431459.5,1945-01-04,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S40,2431459.5,1945-01-04,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S41,2431459.5,1945-01-04,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S42,2431459.5,1945-01-04,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S43,2431459.5,1945-01-04,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S44,2431459.5,1945-01-04,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S45,2431459.5,1945-01-04,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S46,2431459.5,1945-01-04,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S47,2431459.5,1945-01-04,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S48,2431459.5,1945-01-04,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S49,2431459.5,1945-01-04,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S50,2431459.5,1945-01-04,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S51,2431459.5,1945-01-04,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S10,2431459.97,1945-01-04,V-2,-,20823,Ma417,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE/VB174,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1945-A02,2431459.99,1945-01-04,V-2,-,20814,Ma410,-,-,-,HKR,-,-,-,30.0,?,    -, ,-,0.0,WEHR,MF,U,-,Test,FE/VB174,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1945-S11,2431464.04,1945-01-08,V-2,-,20843,Ma419,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE/VB174,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1945-S12,2431464.15,1945-01-08,V-2,-,20819,Ma416,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE/VB174,-,-,,Test,V-2,V-2,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1945-S13,2431466.01,1945-01-10,A-4,-,20805,Ma400,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE175,-,-,,Test,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1945-S14,2431466.28,1945-01-10,A-4,-,20808,Ma404,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE175,-,-,,Test,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1945-S15,2431466.31,1945-01-10,A-4,-,20809,Ma405,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE175,-,-,,Test,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1945-S16,2431466.97,1945-01-11,A-4,-,20810,Ma406,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE175,-,-,,Test,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1945-S17,2431467.0,1945-01-11,A-4,-,20807,Ma402,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE175,-,-,,Test,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1945-S18,2431467.13,1945-01-11,A-4,-,20811,Ma398,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE175,-,-,,Test,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1945-S19,2431467.13,1945-01-11,A-4,-,20804,Ma401,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE175,-,-,,Test,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1945-S20,2431467.21,1945-01-11,A-4,-,20806,Ma399,-,-,-,HKR,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Test,FE175,-,-,,Test,V-2,A-4,DR,German Reich,Heidekraut,,,,,,,,,Unknown
+1945-S52,2431468.5,1945-01-13,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S54,2431475.5,1945-01-20,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S55,2431475.5,1945-01-20,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S56,2431475.5,1945-01-20,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S57,2431475.5,1945-01-20,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S59,2431475.5,1945-01-20,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S60,2431475.5,1945-01-20,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S61,2431475.5,1945-01-20,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S62,2431475.5,1945-01-20,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S63,2431475.5,1945-01-20,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S64,2431475.5,1945-01-20,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S65,2431475.5,1945-01-20,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S66,2431475.5,1945-01-20,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S67,2431475.5,1945-01-20,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S53,2431475.87,1945-01-20,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S58,2431475.97,1945-01-20,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S68,2431477.5,1945-01-22,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S21,2431494.5,1945-02-08,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MU,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S22,2431496.87,1945-02-10,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S29,2431497.5,1945-02-11,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S69,2431499.5,1945-02-13,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S23,2431501.15,1945-02-14,V-2,-,4299,Last HVP,-,-,-,HVP,P7,-,-,90.0,?,    -, ,-,0.0,WEHR,MU,-,-,Test,DeMaes,-,-,,Test,V-2,V-2,DR,German Reich,Peenemunde,,,,,,,,,Unknown
+1945-S70,2431501.33,1945-02-14,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S30,2431508.5,1945-02-22,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S31,2431512.5,1945-02-26,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S71,2431513.5,1945-02-27,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S72,2431517.5,1945-03-03,V-2,-,-,London,-,-,-,V2HAAG,LP3,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Den Haag,,,,,,,,,Unknown
+1945-S32,2431521.55,1945-03-07,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S33,2431522.96,1945-03-08,V-2,-,-,London/Smithfield,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S34,2431523.5,1945-03-09,V-2,-,-,Remagen,-,-,-,V2HELL,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Hellendoorn,,,,,,,,,Unknown
+1945-S84,2431525.5,1945-03-11,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S25,2431530.5,1945-03-16,V-2,-,-,Antwerp?,-,-,-,V2HACH,-,-,-,90.0,?,    -, ,-,0.0,WER836,MS,-,-,Weapon,RocketTeam,-,-,,Weapon,V-2,V-2,DR,German Reich,Hachenburg,,,,,,,,,Unknown
+1945-S85,2431530.52,1945-03-16,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S24,2431531.5,1945-03-17,V-2,-,-,Remagen,-,-,-,V2HELL,-,-,-,90.0,?,    -, ,-,0.0,WER902,MS,-,-,Weapon,DeMaes,RocketTeam,-,,Weapon,V-2,V-2,DR,German Reich,Hellendoorn,,,,,,,,,Unknown
+1945-S73,2431531.5,1945-03-17,V-2,-,-,Remagen,-,-,-,V2HELL,-,-,-,90.0,?,    -, ,-,0.0,WER902,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Hellendoorn,,,,,,,,,Unknown
+1945-S74,2431531.5,1945-03-17,V-2,-,-,Remagen,-,-,-,V2HELL,-,-,-,90.0,?,    -, ,-,0.0,WER902,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Hellendoorn,,,,,,,,,Unknown
+1945-S75,2431531.5,1945-03-17,V-2,-,-,Remagen,-,-,-,V2HELL,-,-,-,90.0,?,    -, ,-,0.0,WER902,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Hellendoorn,,,,,,,,,Unknown
+1945-S76,2431531.5,1945-03-17,V-2,-,-,Remagen,-,-,-,V2HELL,-,-,-,90.0,?,    -, ,-,0.0,WER902,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Hellendoorn,,,,,,,,,Unknown
+1945-S77,2431531.5,1945-03-17,V-2,-,-,Remagen,-,-,-,V2HELL,-,-,-,90.0,?,    -, ,-,0.0,WER902,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Hellendoorn,,,,,,,,,Unknown
+1945-S78,2431531.5,1945-03-17,V-2,-,-,Remagen,-,-,-,V2HELL,-,-,-,90.0,?,    -, ,-,0.0,WER902,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Hellendoorn,,,,,,,,,Unknown
+1945-S79,2431531.5,1945-03-17,V-2,-,-,Remagen,-,-,-,V2HELL,-,-,-,90.0,?,    -, ,-,0.0,WER902,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Hellendoorn,,,,,,,,,Unknown
+1945-S80,2431531.5,1945-03-17,V-2,-,-,Remagen,-,-,-,V2HELL,-,-,-,90.0,?,    -, ,-,0.0,WER902,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Hellendoorn,,,,,,,,,Unknown
+1945-S81,2431531.5,1945-03-17,V-2,-,-,Remagen,-,-,-,V2HELL,-,-,-,90.0,?,    -, ,-,0.0,WER902,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Hellendoorn,,,,,,,,,Unknown
+1945-S82,2431531.5,1945-03-17,V-2,-,-,Remagen,-,-,-,V2HELL,-,-,-,90.0,?,    -, ,-,0.0,WER902,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Hellendoorn,,,,,,,,,Unknown
+1945-S86,2431531.66,1945-03-17,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S87,2431532.35,1945-03-17,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S88,2431532.5,1945-03-18,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S83,2431535.5,1945-03-21,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S89,2431535.9,1945-03-21,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-A39,2431537.79,1945-03-23,V-2,-,-,London?,-,-,-,V2HAAG,-,-,-,1.0,?,    -, ,-,0.0,WEHR,MF,U,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Den Haag,,,,,,,,,Unknown
+1945-S35,2431540.37,1945-03-25,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S36,2431541.5,1945-03-27,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S37,2431541.5,1945-03-27,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S90,2431541.5,1945-03-27,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S91,2431541.5,1945-03-27,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S92,2431541.72,1945-03-27,V-2,-,-,London,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S93,2431542.12,1945-03-27,V-2,-,-,London/Orpington,-,-,-,UNKV2,-,-,-,90.0,?,    -, ,-,0.0,WEHR,MS,-,-,Weapon,DeMaes,-,-,,Weapon,V-2,V-2,DR,German Reich,Unk V2,,,,,,,,,Unknown
+1945-S26,2431542.36,1945-03-27,V-2,-,Last launch,Antwerp/Mortsel,-,-,-,V2HAAG,-,-,-,90.0,?,    -, ,-,0.0,WER485,MS,-,-,Weapon,DeMaes,RocketTeam,-,,Weapon,V-2,V-2,DR,German Reich,Den Haag,,,,,,,,,Unknown
+1945-S27,2431731.07,1945-10-02,V-2,-,-,Backfire 1,-,-,-,CUX,-,-,-,69.0, ,    -, ,-,0.0,SPOG/AVKO,MS,-,-,Test,Stuhlinger,RocketTeam,-,,Test,V-2,V-2,D,West Germany,Cuxhaven,,,,,,,,,Unknown
+1945-A08,2431733.05,1945-10-04,V-2,-,-,Backfire 2,-,-,-,CUX,-,-,-,17.0, ,    -, ,-,0.0,SPOG/AVKO,MF,S1,-,Test,Stuhlinger,RocketTeam,-,,Test,V-2,V-2,D,West Germany,Cuxhaven,,,,,,,,,Unknown
+1945-S28,2431744.09,1945-10-15,V-2,-,-,Backfire 3,-,-,-,CUX,-,-,-,64.0, ,    -, ,-,0.0,SPOG/AVKO,MS,-,-,Test,Stuhlinger,RocketTeam,-,,Test,V-2,V-2,D,West Germany,Cuxhaven,,,,,,,,,Unknown
+1946-A02,2431927.41,1946-04-16,V-2,US,2,-,-,-,-,WS,LC33,-,-,8.0, ,    -, ,-,0.0,WSPG,SF,S1,APL/,Test/CR,Hermes-Rpt,-,-,,Test,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1946-S01,2431951.39,1946-05-10,V-2,US,3,-,-,-,-,WS,LC33,-,-,112.0, ,    -, ,-,0.0,WSPG,SS,-,APL/,CR,Hermes-Rpt,-,-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1946-S02,2431970.38,1946-05-29,V-2,US,4,-,-,-,-,WS,LC33,-,-,112.0, ,    -, ,-,0.0,ORD/GEMTS,SS,-,APL/,CR,Hermes-Rpt,-,-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1946-S03,2431985.49,1946-06-13,V-2,US,5,UVS/Ionos prop.,-,-,-,WS,LC33,-,-,117.0, ,    -, ,-,0.0,ORD/GEMTS,SS,-,NRL/Seddon?,Solar UV/Ionos,Hermes-Rpt,-,-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1946-S04,2432000.31,1946-06-28,V-2,US,6,UVS/Ionos prop.,-,-,-,WS,LC33,-,-,108.0, ,    -, ,-,0.0,ORD/NRL,SS,-,"NRL/Seddon,Tousey",Solar UV,Hermes-Rpt,"PhysRev70,223",-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1946-S05,2432011.31,1946-07-09,V-2,US,7,-,-,-,-,WS,LC33,-,-,134.0, ,    -, ,-,0.0,ORD/GEMTS,SS,-,NRL/Seddon,CR/Ionos,Hermes-Rpt,-,-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1946-A09,2432021.3,1946-07-19,V-2,US,8,-,-,-,-,WS,LC33,-,-,5.0, ,    -, ,-,0.0,ORD/GEMTS,SF,S1,NRL/Seddon,Ionos,Hermes-Rpt,-,-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1946-S06,2432032.32,1946-07-30,V-2,US,9,-,-,-,-,WS,LC33,-,-,167.0, ,    -, ,-,0.0,ORD/APL,SS,-,NRL/Seddon,CR/Ionos,Hermes-Rpt,-,-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1946-A10,2432048.25,1946-08-15,V-2,US,10,-,-,-,-,WS,LC33,-,-,3.0, ,    -, ,-,0.0,ORD/PRIN,SF,S1,PRIN/Brinster?,CR/Ionos,Hermes-Rpt,-,-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1946-A11,2432055.22,1946-08-22,V-2,US,11,UM Aeron,-,-,-,WS,LC33,-,-,0.0, ,    -, ,-,0.0,ORD/AFCFS,SF,S1,UMI/AFCRL/Schultz,Aeron,Hermes-Rpt,-,-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1946-S07,2432104.25,1946-10-10,V-2,US,12,-,-,-,-,WS,LC33,-,-,164.0, ,    -, ,-,0.0,ORD/NRL,SS,-,"NRL/Seddon,Tousey",Solar UV,Hermes-Rpt,"PhysRev70,776",-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1946-S08,2432118.3,1946-10-24,V-2,US,13,-,-,-,-,WS,LC33,-,-,105.0, ,    -, ,-,0.0,ORD/APL,SS,-,APL/Hopfield?,Solar UV/CR,Hermes-Rpt,"PhysRev73,877",-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1946-A26,2432132.35,1946-11-07,V-2,US,14,-,-,-,-,WS,LC33,-,-,0.0, ,    -, ,-,0.0,ORD/PRIN,SF,S1,PRIN/Brinster?,CR,Hermes-Rpt,-,-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1946-S10,2432146.2,1946-11-21,V-2,US,15,UM Aeron,-,-,-,WS,LC33,-,-,100.0, ,    -, ,-,0.0,ORD/AFCFS,SS,-,UMI/AFCRL/Schultz,Aeron/Ionos,Hermes-Rpt,-,-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1946-S11,2432160.34,1946-12-05,V-2,US,16,-,-,-,-,WS,LC33,-,-,167.0, ,    -, ,-,0.0,ORD/NRL,SS,-,NRL/,Solar UV,Hermes-Rpt,-,-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1946-S12,2432172.72,1946-12-18,V-2,US,17,CR/Grenades,-,-,-,WS,LC33,-,-,187.0, ,    -, ,-,0.0,ORD/APL,SS,-,APL/AFCRL/Zwicky,CR/Meteor test,"PASP59,32",Hermes-Rpt,-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1947-S01,2432196.38,1947-01-10,V-2,US,18,-,-,-,-,WS,LC33,-,-,116.0, ,    -, ,-,0.0,ORD/NRL,SS,-,NRL/Perlow,CR,Hermes-Rpt,"PhysRev71,325",-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1947-M01,2432209.52,1947-01-24,V-2,US,19,-,-,-,-,WS,LC33,-,-,50.0, ,    -, ,-,0.0,ORD/GEMTS,SS,-,GEMTS/,Test,Hermes-Rpt,-,-,,Test,V-2,V-2,US,United States,White Sands,,,,,,,,,Government
+1947-S02,2432237.26,1947-02-20,V-2,US,20,Blossom I/UM Aeron,-,-,-,WS,LC33,-,-,109.0, ,    -, ,-,0.0,ORD/AFCFS,SS,-,UMI/AFCRL/Schultz,Ionos/Bio,Hermes-Rpt,-,-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1947-S03,2432252.27,1947-03-07,V-2,US,21,-,-,-,-,WS,LC33,-,-,161.0, ,    -, ,-,0.0,ORD/NRL,SS,-,NRL/Seddon,Solar UV/CR/Ionos,Hermes-Rpt,-,-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1947-S04,2432277.34,1947-04-01,V-2,US,22,-,-,-,-,WS,LC33,-,-,129.0, ,    -, ,-,0.0,ORD/APL,SS,-,APL/YERK/,Solar UV/CR,Hermes-Rpt,"PhysRev73,877",-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1947-S05,2432284.51,1947-04-09,V-2,US,23,-,-,-,-,WS,LC33,-,-,103.0, ,    -, ,-,0.0,ORD/APL,SS,-,APL/,Solar UV/CR,Hermes-Rpt,-,-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1947-S06,2432293.47,1947-04-17,V-2,US,24,Grenades,-,-,-,WS,LC33,-,-,140.0, ,    -, ,-,0.0,ORD/GEMTS,SS,-,SCEL/,Test/Aeron,Hermes-Rpt,-,-,,Test,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1947-S07,2432321.46,1947-05-15,V-2,US,26,-,-,-,-,WS,LC33,-,-,122.0, ,    -, ,-,0.0,ORD/NRL,SF,S1G,NRL/Seddon,Solar UV,Hermes-Rpt,-,-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1947-A13,2432377.3,1947-07-10,V-2,US,29,-,-,-,-,WS,LC33,-,-,16.0, ,    -, ,-,0.0,ORD/NRL,SF,S1,NRL/,Aeron,Hermes-Rpt,-,-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1947-S08,2432396.04,1947-07-29,V-2,US,30,-,-,-,-,WS,LC33,-,-,159.0, ,    -, ,-,0.0,ORD/APL,SS,-,"APL/Gangnes,VanAllen",CR/Solar UV,Hermes-Rpt,"PhysRev75,57",-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1947-A16,2432435.16,1947-09-06,V-2,US,-,Operation Sandy,-,-,CV-41,SANDY,-,-,-,1.0, ,    -, ,-,0.0,BUAERG,MF,S1G,BUAERG/Holt,Test,Rosen/AIAA2006-59451,-,-,,Test,V-2,V-2,US,United States,AOR10,,,,,,,,,Unknown
+1947-S09,2432468.3,1947-10-09,V-2,US,27,-,-,-,-,WS,LC33,-,-,156.0, ,    -, ,-,0.0,ORD/GEMTS,SS,-,NRL/UMI/,Solar UV/Aeron,Hermes-Rpt,-,-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1947-S10,2432476.78,1947-10-18,A-4,-,010T,-,-,-,-,GTsP-4,-,-,-,86.0, ,  207, ,-,0.0,GAU4,MS,-,-,Test,Z10,Delo,-,,Test,V-2,A-4,SU,Soviet Union,Kapustin Yar,,,,,,,,,Unknown
+1947-S11,2432478.8,1947-10-20,A-4,-,04T,-,-,-,-,GTsP-4,-,-,-,85.0, ,  231, ,-,0.0,GAU4,MS,-,-,Test,Z10,Delo,-,,Test,V-2,A-4,SU,Soviet Union,Kapustin Yar,,,,,,,,,Unknown
+1947-A24,2432482.05,1947-10-23,A-4,-,08T,-,-,-,-,GTsP-4,-,-,-,14.0, ,   29, ,-,0.0,GAU4,MF,S1,-,Test,Z10,Delo,-,,Test,V-2,A-4,SU,Soviet Union,Kapustin Yar,,,,,,,,,Unknown
+1947-S12,2432487.16,1947-10-28,A-4,-,03T,-,-,-,-,GTsP-4,-,-,-,87.0, ,  274, ,-,0.0,GAU4,MS,-,-,Test,Z10,Delo,-,,Test,V-2,A-4,SU,Soviet Union,Kapustin Yar,,,,,,,,,Unknown
+1947-A28,2432490.15,1947-10-31,A-4,-,06T,-,-,-,-,GTsP-4,-,-,-,0.0, ,    2, ,-,0.0,GAU4,MF,S1,-,Test,Z10,Delo,-,,Test,V-2,A-4,SU,Soviet Union,Kapustin Yar,,,,,,,,,Unknown
+1947-S13,2432492.09,1947-11-02,A-4,-,14N,-,-,-,-,GTsP-4,-,-,-,88.0, ,  260, ,-,0.0,GAU4,MS,-,FIAN/,Test,Z10,Delo,-,,Test,V-2,A-4,SU,Soviet Union,Kapustin Yar,,,,,,,,,Unknown
+1947-A29,2432492.96,1947-11-03,A-4,-,30N,-,-,-,-,GTsP-4,-,-,-,0.0, ,    2, ,-,0.0,GAU4,MF,S1,-,Test,Z10,Delo,-,,Test,V-2,A-4,SU,Soviet Union,Kapustin Yar,,,,,,,,,Unknown
+1947-S14,2432494.08,1947-11-04,A-4,-,01T,-,-,-,-,GTsP-4,-,-,-,89.0, ,  269, ,-,0.0,GAU4,MS,-,-,Test,Z10,Delo,-,,Test,V-2,A-4,SU,Soviet Union,Kapustin Yar,,,,,,,,,Unknown
+1947-A31,2432499.86,1947-11-10,A-4,-,21N,-,-,-,-,GTsP-4,-,-,-,11.0, ,   24, ,-,0.0,GAU4,MF,S1,-,Test,Z10,Delo,-,,Test,V-2,A-4,SU,Soviet Union,Kapustin Yar,,,,,,,,,Unknown
+1947-S15,2432502.81,1947-11-13,A-4,-,22N,-,-,-,-,GTsP-4,-,-,-,89.0, ,  270, ,-,0.0,GAU4,MS,-,FIAN/,Test,Z10,Delo,-,,Test,V-2,A-4,SU,Soviet Union,Kapustin Yar,,,,,,,,,Unknown
+1947-S16,2432503.04,1947-11-13,A-4,-,19N,-,-,-,-,GTsP-4,-,-,-,89.0, ,  262, ,-,0.0,GAU4,MS,-,-,Test,Z10,Delo,-,,Test,V-2,A-4,SU,Soviet Union,Kapustin Yar,,,,,,,,,Unknown
+1947-A33,2432510.49,1947-11-20,V-2,US,Special,G.E. Special,-,-,-,WS,LC33,-,-,29.0, ,    -, ,-,0.0,GEMTS,MF,S1,GEMTS/,Test,Hermes-Rpt,-,-,,Test,V-2,V-2,US,United States,White Sands,,,,,,,,,Government
+1947-S17,2432528.4,1947-12-08,V-2,US,28,Blossom II/UM Aeron,-,-,-,WS,LC33,-,-,105.0, ,    -, ,-,0.0,ORD/AFAMC,SS,-,UMI/AFCRL/Schultz,Solar X/Aeron,Hermes-Rpt,"PhysRev76,987",-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1948-S01,2432573.34,1948-01-22,V-2,US,34,-,-,-,-,WS,LC33,-,-,159.0, ,    -, ,-,0.0,ORD/NRL,SS,-,NRL/Seddon,CR/Aeron,Hermes-Rpt,-,-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1948-S02,2432588.22,1948-02-06,V-2,US,36,-,-,-,-,WS,LC33,-,-,113.0, ,    -, ,-,0.0,GEMTS,SS,-,GEMTS/,Test,Hermes-Rpt,-,-,,Test,V-2,V-2,US,United States,White Sands,,,,,,,,,Government
+1948-A02,2432630.47,1948-03-19,V-2,US,39,Blossom IIA,-,-,-,WS,LC33,-,-,5.0, ,    -, ,-,0.0,ORD/GEMTS,SF,S1,SCEL/UMI/,Aeron/B field,Hermes-Rpt,-,-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1948-S04,2432644.07,1948-04-02,V-2,US,25,UM-1,-,-,-,WS,LC33,-,-,144.0, ,    -, ,-,0.0,ORD/UMI,SS,-,UMI/SCEL/NRL/,Aeron/Ionos/Solar UV,Hermes-Rpt,-,-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1948-M01,2432661.33,1948-04-19,V-2,US,38,-,-,-,-,WS,LC33,-,-,56.0, ,    -, ,-,0.0,ORD/NRL,SF,S1,NRL/,Solar UV/Ionos,Hermes-Rpt,-,-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1948-S07,2432699.09,1948-05-27,V-2,US,35,-,-,-,-,WS,LC33,-,-,140.0, ,    -, ,-,0.0,ORD/APL,SS,-,"APL/Gagnes,VanAllen",Solar UV/CR,Hermes-Rpt,"PhysRev73,245",-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1948-M02,2432713.93,1948-06-11,V-2,US,37,Blossom III (Albert),-,-,-,WS,LC33,-,-,63.0, ,    -, ,-,0.0,ORD/AFCFS,SS,-,AFCRL/,Solar X/Ionos/Bio,Hermes-Rpt,-,-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1948-S09,2432759.25,1948-07-26,V-2,US,40,-,-,-,-,WS,LC33,-,-,97.0, ,    -, ,-,0.0,ORD/APL,SS,-,UMI/APL/,CR/Aeron,Hermes-Rpt,-,-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1948-S10,2432769.0,1948-08-05,V-2,US,43,UV Spec/Solar X,-,-,-,WS,LC33,-,-,166.0, ,    -, ,-,0.0,ORD/NRL,SS,-,NRL/,"Test/Solar UV,X",Hermes-Rpt,-,-,,Test,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1948-S12,2432797.54,1948-09-03,V-2,US,33,UM-2 Grenades,-,-,-,WS,LC33,-,-,151.0, ,    -, ,-,0.0,ORD/UMI,SS,-,UMI/SCEL/,Aeron,Hermes-Rpt,-,-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1948-S23,2432874.44,1948-11-18,V-2,US,44,Hermes B ramjet,-,-,-,WS,LC33,-,-,145.0, ,    -, ,-,0.0,ORD/GEMTS,SS,-,UMI/NRL/Tousey,Solar X/Biology,Hermes-Rpt,-,-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1948-S24,2432895.17,1948-12-09,V-2,US,42,-,-,-,-,WS,LC33,-,-,108.0, ,    -, ,-,0.0,ORD/SCEL,SS,-,UMI/NRL/SCEL/,Aeron/Solar X/Bio,Hermes-Rpt,-,-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1949-M01,2432945.22,1949-01-28,V-2,US,45,Blossom,-,-,-,WS,LC33,-,-,60.0, ,    -, ,-,0.0,ORD/NRL,SF,S1,NRL/AFCRL/Seddon,Solar X/Ionos/Aeron/Bio,Hermes-Rpt,"PhysRev51,552",-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1949-S02,2432965.21,1949-02-17,V-2,US,48,-,-,-,-,WS,LC33,-,-,100.0, ,    -, ,-,0.0,ORD/APL,SS,-,"APL/NRL/VanAllen,Tousey",CR/Solar EUV/Bio,Hermes-Rpt,"PhysRev84,791",-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1949-S05,2432997.78,1949-03-22,V-2,US,41,Blossom IVA,-,-,-,WS,LC33,-,-,129.0, ,    -, ,-,0.0,ORD/AFCFS,SS,-,AFCRL/BU/,Ionos/Aeron/Solar X,AFCRL,-,-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1949-S07,2433018.42,1949-04-11,V-2,US,50,UM-3,-,-,-,WS,LC33,-,-,85.0, ,    -, ,-,0.0,ORD/UMI,SU,-,UMI/SCEL/NRL/Tousey,Aeron/Solar X/Bio,Hermes-Rpt,-,-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1949-A14,2433042.14,1949-05-05,V-2,US,46,Hermes B,-,-,-,WS,LC33,-,-,8.0, ,    -, ,-,0.0,ORD/GEMTS,SF,S1,NRL/,Solar EUV/X,Hermes-Rpt,-,-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1949-S15,2433082.44,1949-06-14,V-2,US,47,Blossom IVB (Alb 2),-,-,-,WS,LC33,-,-,134.0, ,    -, ,-,0.0,ORD/AFCFS,SS,-,AFCRL/UMI/WPAFB,Ionos/Solar X/Biology,Hermes-Rpt,-,-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1949-A24,2433176.47,1949-09-16,V-2,-,32,Blossom IVC (Alb 3),-,-,-,WS,LC33,-,-,5.0, ,    -, ,-,0.0,ORD/AFCFS,SF,S1,AFCRL/,Solar X/Ionos/Biology,AFCRL,-,-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1949-M07,2433189.21,1949-09-29,V-2,US,49,NRL Ionos 1,-,-,-,WS,LC33,-,-,51.0, ,    -, ,-,0.0,ORD/NRL,SS,-,"NRL/Friedman,Bryam",Solar X/Ionos/Meteorites,Hermes-Rpt,"PhysRev83,1025",-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1949-S44,2433239.17,1949-11-18,V-2,US,56,"UM Sampling,Grenades",-,-,-,WS,LC33,-,-,124.0, ,    -, ,-,0.0,ORD/UMI,SS,-,UMI/SCEL/,Aeron/CR,Hermes-Rpt,-,-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1949-S46,2433259.3,1949-12-08,V-2,US,31,Blossom IVD (Alb 4),-,-,-,WS,LC33,-,-,127.0, ,    -, ,-,0.0,ORD/AFCRL,SS,-,AFCRL/,Solar X/Ionos,Hermes-Rpt,-,-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1950-S02,2433330.25,1950-02-17,V-2,US,53,-,-,-,-,WS,LC33,-,-,148.0, ,    -, ,-,0.0,ORD/NRL,SS,-,NRL/Tousey,Solar X/CR/Aeron,Hermes-Rpt,-,-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1950-S08,2433525.21,1950-08-31,V-2,US,51,Blossom IVG (Mouse),-,-,-,WS,LC33,-,-,137.0, ,    -, ,-,0.0,ORD/AFCRL,SS,-,AFCRL/BU/WAML/,Ionos/Solar X/Bio,Hermes-Rpt,-,-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1950-A46,2433581.46,1950-10-26,V-2,US,61,-,-,-,-,WS,LC33,-,-,8.0, ,    -, ,-,0.0,ORD/BRL,SF,S1,BRL/,Ionos/Meteorites,Hermes-Rpt,-,-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1951-A01,2433665.34,1951-01-18,V-2,US,54,-,-,-,-,WS,LC33,-,-,2.0, ,    -, ,-,0.0,ORD/NRL,SF,S1,NRL/,"Solar UV,X/CR",Hermes-Rpt,-,-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1951-A06,2433714.64,1951-03-09,V-2,US,57,Blossom IVE,-,-,-,WS,LC33,-,-,3.0, ,    -, ,-,0.0,ORD/AFCRL,SF,S1,AFCRL/BU/,Ionos/Solar X/Aeron/IR,AFCRL,-,-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1951-A29,2433812.08,1951-06-14,V-2,US,55,-,-,-,-,WS,LC33,-,-,0.0, ,    -, ,-,0.0,ORD/NRL,SF,S1,NRL/,"Solar UV,X/CR",Hermes-Rpt,-,-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1951-A36,2433826.4,1951-06-28,V-2,US,52,Blossom IVF,-,-,-,WS,LC33,-,-,6.0, ,    -, ,-,0.0,ORD/AFCRL,SF,S1,AFCRL/UCO/,"Solar UV,X/Aeron",Hermes-Rpt,AFCRL,-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1951-S40,2433881.29,1951-08-22,V-2,US,TF1,-,-,-,-,WS,LC33,-,-,213.0, ,    -, ,-,0.0,ORD/SCEL,SS,-,SCEL/,Test,REUA,WSMR,-,,Test,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1951-S44,2433949.38,1951-10-29,V-2,US,60,Probe,-,-,-,WS,LC33,-,-,137.0, ,    -, ,-,0.0,ORD/SCEL,SS,-,"UMI/SCEL/Jones,L",Aeron,WDCRF,WSMR,-,,Scientific,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1952-S09,2434153.17,1952-05-20,V-2,US,59/TF2,-,-,-,-,WS,LC33,-,-,124.0, ,    -, ,-,0.0,ORD/SCEL,SS,-,UMI/SCEL/Jones.L,Test/Photo/Aeron,AASH15-335,UM-HA-2,-,,Test,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1952-M04,2434246.81,1952-08-22,V-2,US,TF3,-,-,-,-,WS,LC33,-,-,79.0, ,    -, ,-,0.0,ORD/NRL,SS,-,NRL/,Test/Photo/Solar X/Aeron,WDCRF,AASH15-335,-,,Test,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown
+1952-A161,2434275.16,1952-09-19,V-2,US,TF5,-,-,-,-,WS,LC33,-,-,7.0, ,    -, ,-,0.0,ORD/SCEL,SF,U,SCEL/UMI/,Test/CR,UARS,WSMR,-,,Test,V-2,V-2,US,United States,White Sands,,,,,,,,,Unknown

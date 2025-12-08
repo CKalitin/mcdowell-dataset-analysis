@@ -1,4 +1,5 @@
 import pandas as pd
+from pyparsing import col
 import translations
 import custom_launch_types
 
@@ -66,8 +67,11 @@ class Launch:
         self.df["Simple_Orbit"] = self.df["Simple_Orbit"].where(self.df["Simple_Orbit"].isin(self.translation.launch_category_to_simple_orbit.keys()), float("nan")) # If raw orbit not present in dictionary keys, NaN
         self.df["Simple_Orbit"] = self.df["Simple_Orbit"].replace(self.translation.launch_category_to_simple_orbit) # Translate to simple orbit
 
+        # Yea this is a shitty bodge
+        self.df["V2_Payload_Category"] = self.df["Category"].apply(lambda x: 'Test' if 'Test' in str(x) else 'Weapon' if 'Weapon' in str(x) else 'Training' if 'Training' in str(x) else 'Scientific')
+
         self.df["Launch_Vehicle_Family"] = self.df["LV_Type"].map(self.translation.lv_type_to_lv_family) # Translate LV_Type to LV_Family using the translation dictionary
-        self.df["Launch_Vehicle_Simplified"] = self.df["LV_Type"].map(self.translation.orbital_lv_name_to_lv_simplified) # Translate LV_Type to LV_Simplified using the translation dictionary
+        self.df["Launch_Vehicle_Simplified"] = self.df["LV_Type"].map(lambda x: self.translation.orbital_lv_name_to_lv_simplified.get(x, x)) # Translate LV_Type to LV_Simplified using the translation dictionary, if key not found, go with LV_Type as the Launch_Vehicle_Simplified
         
         self.df["State"] = self.df["Launch_Site"].map(self.translation.launch_site_to_state_code) # Translate Launch_Site to State using the translation dictionary
         self.df["Country"] = self.df["State"].map(self.translation.state_code_to_state_name).map(self.translation.state_name_to_americanized_state_names)
@@ -109,7 +113,15 @@ class Launch:
         
         # Create new columns in launch_df for canonical orbit data
         for col in ['Orbit_Canonical_Date', 'Perigee', 'Apogee', 'Inc', 'OpOrbit', 'First_Simple_Payload_Category', 'First_Payload_Class']:
-            self.df[col] = self.df['Launch_Tag'].map(first_payload[col])
+            mapped = self.df['Launch_Tag'].map(first_payload[col])
+            if col in self.df.columns:
+                self.df[col] = mapped.where(mapped.notna() & (mapped != "-"), self.df[col])  # Keep original if mapped is NaN or "-" (or other invalid indicators)
+            else:
+                self.df[col] = mapped
+        
+        # Convert numeric orbit columns to float
+        for col in ['Perigee', 'Apogee', 'Inc']:
+            self.df[col] = pd.to_numeric(self.df[col], errors="coerce")
         
     def process_auxcat_dependent_columns(self):
         """

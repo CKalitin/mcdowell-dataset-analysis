@@ -468,14 +468,16 @@ class Filters:
         
         dataset_class.df = dataset_class.df[condition]
 
-    def filter_by_apogee(dataset_class, min_apogee=None, max_apogee=None):
+    def filter_by_apogee(dataset_class, apogee_range=None):
         """
         Remove all launches that are not in the given apogee range (inclusive range).
         Args:
             dataset_class: launch or satcat
-            min_apogee (float, optional): Minimum apogee (inclusive). Defaults to None.
-            max_apogee (float, optional): Maximum apogee (inclusive). Defaults to None.
+            apogee_range (tuple, optional): Tuple containing minimum and maximum apogee (inclusive). Defaults to None.
         """
+        
+        min_apogee = apogee_range[0] if apogee_range is not None else None
+        max_apogee = apogee_range[1] if apogee_range is not None else None
         
         if min_apogee is not None:
             dataset_class.df = dataset_class.df[dataset_class.df["Apogee"] >= min_apogee]
