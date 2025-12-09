@@ -77,7 +77,12 @@ class Launch:
         self.df["Country"] = self.df["State"].map(self.translation.state_code_to_state_name).map(self.translation.state_name_to_americanized_state_names)
         
         self.df["Launch_Site_Parent"] = self.df["Launch_Site"].map(self.translation.launch_site_to_launch_site_parent)
-        self.df["Launch_Site_Name"] = self.df["Launch_Site_Parent"].map(self.translation.launch_site_to_launch_site_name) # Translate Launch_Site to Launch_Site_Name using the translation dictionary
+        self.df["Launch_Site_Name"] = self.df["Launch_Site"].map(self.translation.launch_site_to_launch_site_name) # Translate Launch_Site to Launch_Site_Name using the translation dictionary
+
+        # show all rows / columns for debugging, pandas
+        pd.set_option('display.max_columns', None)
+        pd.set_option('display.max_rows', None)
+        print(self.df.head(20))
 
     def process_satcat_dependent_columns(self, satcat):
         """

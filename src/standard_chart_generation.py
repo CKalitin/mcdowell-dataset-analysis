@@ -21,6 +21,7 @@ def generate_launch_vehicle_charts(launch_vehicle_simplified_name, chart_title_p
         mass_step_size_kg (int, optional): The step size for mass ranges in kg. Defaults to 1000.
         year_x_tick_step_size (int, optional): The step size for year ticks on the x-axis. Defaults to 1.
         month_x_tick_step_size (int, optional): The step size for month ticks on the x-axis. Defaults to 12.
+        filter_out_suborbital (bool, optional): Whether to filter out suborbital launches. Defaults to True.
     """
     
     mass_suffix = "t" if mass_step_size_kg == 1000 else "kg"
@@ -112,6 +113,7 @@ def generate_launch_vehicle_scatter_plots(launch_vehicle_simplified_name, chart_
         chart_title_prefix (str): The prefix for the chart titles.
         output_prefix (str): The prefix for the output file names.
         mass_step_size_kg (int, optional): The step size for mass ranges in kg. Defaults to 1000.
+        filter_out_suborbital (bool, optional): Whether to filter out suborbital launches. Defaults to True.
     """
     
     mass_suffix = "t" if mass_step_size_kg == 1000 else "kg"
@@ -186,6 +188,7 @@ def generate_launch_vehicle_family_charts(launch_vehicle_simplified_name, chart_
         mass_step_size_kg (int, optional): _description_. Defaults to 1000.
         year_x_tick_step_size (int, optional): _description_. Defaults to 1.
         color_map (_type_, optional): _description_. Defaults to mda.ChartUtils.color_sequence_2_8.
+        filter_out_suborbital (bool, optional): Whether to filter out suborbital launches. Defaults to True.
     """
     
     mass_suffix = "t" if mass_step_size_kg == 1000 else "kg"
@@ -233,7 +236,72 @@ def generate_launch_vehicle_family_charts(launch_vehicle_simplified_name, chart_
         color_map=color_map,
         filter_out_suborbital=filter_out_suborbital,
     )
+
+
+def generate_extra_charts(launch_vehicle_simplified_name, chart_title_prefix, output_prefix, mass_step_size_kg=1000, year_x_tick_step_size=1, color_map=mda.ChartUtils.color_sequence_2_8, filter_out_suborbital=True):
+    """Generate extra charts.
     
+    Charts:
+        - Launch vs Mass by Launch Site
+        - Total Mass vs Mass by Launch Site
+        - Launces vs Year by Launch Site
+    
+    Args:
+        launch_vehicle_simplified_name (str): The simplified name of the launch vehicle.
+        chart_title_prefix (str): The prefix for the chart titles.
+        output_prefix (str): The prefix for the output file names.
+        mass_step_size_kg (int, optional): _description_. Defaults to 1000.
+        year_x_tick_step_size (int, optional): _description_. Defaults to 1.
+        color_map (_type_, optional): _description_. Defaults to mda.ChartUtils.color_sequence_2_8.
+        filter_out_suborbital (bool, optional): Whether to filter out suborbital launches. Defaults to True.
+    """
+    
+    mass_suffix = "t" if mass_step_size_kg == 1000 else "kg"
+    mass_divisor = 1000 if mass_step_size_kg == 1000 else 1
+    
+    launches_vs_mass_by_filter(
+        chart_title_prefix=chart_title_prefix,
+        output_prefix=output_prefix,
+        chart_title_suffix='Launch Vehicle',
+        output_suffix='launch_vehicle',
+        filter_function=mda.Filters.filter_by_launch_site,
+        filter_function_parameters_list=launch_vehicle_simplified_name,
+        launch_vehicle_simplified_name=launch_vehicle_simplified_name,
+        mass_step_size_kg=mass_step_size_kg,
+        color_map=color_map,
+        mass_suffix=mass_suffix,
+        mass_divisor=mass_divisor,
+        filter_out_suborbital=filter_out_suborbital,
+    )
+
+    total_mass_vs_mass_by_filter(
+        chart_title_prefix=chart_title_prefix,
+        output_prefix=output_prefix,
+        chart_title_suffix='Launch Vehicle',
+        output_suffix='launch_vehicle',
+        filter_function=mda.Filters.filter_by_launch_vehicle_name_simplified,
+        filter_function_parameters_list=launch_vehicle_simplified_name,
+        launch_vehicle_simplified_name=launch_vehicle_simplified_name,
+        mass_step_size_kg=mass_step_size_kg,
+        color_map=color_map,
+        mass_suffix=mass_suffix,
+        mass_divisor=mass_divisor,
+        filter_out_suborbital=filter_out_suborbital,
+    )
+
+    launches_vs_year_by_filter(
+        chart_title_prefix=chart_title_prefix,
+        output_prefix=output_prefix,
+        chart_title_suffix='Launch Vehicle',
+        output_suffix='launch_vehicle',
+        filter_function=mda.Filters.filter_by_launch_vehicle_name_simplified,
+        filter_function_parameters_list=launch_vehicle_simplified_name,
+        launch_vehicle_simplified_name=launch_vehicle_simplified_name,
+        x_tick_step_size=year_x_tick_step_size,
+        color_map=color_map,
+        filter_out_suborbital=filter_out_suborbital,
+    )
+
 
 def launches_vs_mass_by_filter(chart_title_prefix, output_prefix, chart_title_suffix, output_suffix, filter_function, filter_function_parameters_list, filter_function_additional_parameter=None, mass_step_size_kg=1000, launch_vehicle_simplified_name=None, launch_vehicle_family=None, color_map=None, mass_suffix='t', mass_divisor=100, filter_out_suborbital=True):
     """Generate a chart showing the number of launches by payload mass range by a given filter function (eg. launch vehicle, launch category, etc.).
