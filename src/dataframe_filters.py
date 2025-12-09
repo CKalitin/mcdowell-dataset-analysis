@@ -245,7 +245,7 @@ class Filters:
         
         if (type(launch_pads) == str):
             launch_pads = [launch_pads]
-        
+
         condition = dataset_class.df["Launch_Pad"].isin(launch_pads)
         if negate:
             condition = ~condition

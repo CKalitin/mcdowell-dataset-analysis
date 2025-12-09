@@ -1,5 +1,6 @@
 import standard_chart_generation as scg
 from datetime import datetime
+import pandas as pd
 
 def generate(chart_types, vehicle_name, display_name, file_name, year_x_tick_step_size=5, month_x_tick_step_size=60, mass_step_size=1000):
     """ Generates charts for a given launch vehicle using specified chart types.
@@ -39,12 +40,21 @@ def generate(chart_types, vehicle_name, display_name, file_name, year_x_tick_ste
             mass_step_size_kg=mass_step_size,
             year_x_tick_step_size=year_x_tick_step_size,
         )
+    
+    if "extra" in chart_types:
+        scg.generate_extra_charts(
+            launch_vehicle_simplified_name=vehicle_name,
+            chart_title_prefix=display_name,
+            output_prefix=file_name,
+        )
 
 start_time = datetime.now()
 print("Start time: ", start_time)
 
+scg.generate_extra_charts(launch_vehicle_simplified_name="Falcon 9", chart_title_prefix="Falcon 9", output_prefix="f9")
+
 generate("single family scatter", ['Antares 110', 'Antares 120', 'Antares 130', 'Antares 230', 'Antares 230+'], "Antares", "antares", 1, 12)
-generate("single scatter", "Falcon 9", "Falcon 9", "f9", 1, 12)
+generate("single scatter extra", "Falcon 9", "Falcon 9", "f9", 1, 12)
 generate("single", "Falcon Heavy", "Falcon Heavy", "f9h", 1, 12)
 generate("single family", ['Atlas 1', 'Atlas 2', 'Atlas 3', 'Atlas 5'], "Atlas Orbital", "atlas")
 generate("single scatter", "Electron", "Electron", "electron", 1, 12, 10)

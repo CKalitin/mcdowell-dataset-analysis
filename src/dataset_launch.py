@@ -79,11 +79,6 @@ class Launch:
         self.df["Launch_Site_Parent"] = self.df["Launch_Site"].map(self.translation.launch_site_to_launch_site_parent)
         self.df["Launch_Site_Name"] = self.df["Launch_Site"].map(self.translation.launch_site_to_launch_site_name) # Translate Launch_Site to Launch_Site_Name using the translation dictionary
 
-        # show all rows / columns for debugging, pandas
-        pd.set_option('display.max_columns', None)
-        pd.set_option('display.max_rows', None)
-        print(self.df.head(20))
-
     def process_satcat_dependent_columns(self, satcat):
         """
         Create columns in launch_df derived from satcat data:

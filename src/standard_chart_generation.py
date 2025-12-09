@@ -1,5 +1,6 @@
 import mcdowell_dataset_analysis as mda
 from datetime import datetime
+import pandas as pd
 
 def generate_launch_vehicle_charts(launch_vehicle_simplified_name, chart_title_prefix, output_prefix, mass_step_size_kg=1000, year_x_tick_step_size=1, month_x_tick_step_size=12, filter_out_suborbital=True):
     """Generate a series of charts for a specific launch vehicle.
@@ -259,13 +260,19 @@ def generate_extra_charts(launch_vehicle_simplified_name, chart_title_prefix, ou
     mass_suffix = "t" if mass_step_size_kg == 1000 else "kg"
     mass_divisor = 1000 if mass_step_size_kg == 1000 else 1
     
+    # Get every Launch_Pad (column 11) from launch.tsv, bypassing mda since it's not initialized yet
+    launch_df = pd.read_csv("./datasets/launch.tsv", sep="\t", encoding="utf-8", low_memory=False)
+    launch_sites = launch_df["Launch_Pad"].dropna().unique().tolist()
+    
+    color_map = mda.ChartUtils.f9_site_color_map if "Falcon 9" in launch_vehicle_simplified_name else color_map
+    
     launches_vs_mass_by_filter(
         chart_title_prefix=chart_title_prefix,
         output_prefix=output_prefix,
-        chart_title_suffix='Launch Vehicle',
-        output_suffix='launch_vehicle',
-        filter_function=mda.Filters.filter_by_launch_site,
-        filter_function_parameters_list=launch_vehicle_simplified_name,
+        chart_title_suffix='Launch Pad',
+        output_suffix='launch_pad',
+        filter_function=mda.Filters.filter_by_launch_pad_raw,
+        filter_function_parameters_list=launch_sites,
         launch_vehicle_simplified_name=launch_vehicle_simplified_name,
         mass_step_size_kg=mass_step_size_kg,
         color_map=color_map,
@@ -277,10 +284,10 @@ def generate_extra_charts(launch_vehicle_simplified_name, chart_title_prefix, ou
     total_mass_vs_mass_by_filter(
         chart_title_prefix=chart_title_prefix,
         output_prefix=output_prefix,
-        chart_title_suffix='Launch Vehicle',
-        output_suffix='launch_vehicle',
-        filter_function=mda.Filters.filter_by_launch_vehicle_name_simplified,
-        filter_function_parameters_list=launch_vehicle_simplified_name,
+        chart_title_suffix='Launch Pad',
+        output_suffix='launch_pad',
+        filter_function=mda.Filters.filter_by_launch_pad_raw,
+        filter_function_parameters_list=launch_sites,
         launch_vehicle_simplified_name=launch_vehicle_simplified_name,
         mass_step_size_kg=mass_step_size_kg,
         color_map=color_map,
@@ -292,10 +299,10 @@ def generate_extra_charts(launch_vehicle_simplified_name, chart_title_prefix, ou
     launches_vs_year_by_filter(
         chart_title_prefix=chart_title_prefix,
         output_prefix=output_prefix,
-        chart_title_suffix='Launch Vehicle',
-        output_suffix='launch_vehicle',
-        filter_function=mda.Filters.filter_by_launch_vehicle_name_simplified,
-        filter_function_parameters_list=launch_vehicle_simplified_name,
+        chart_title_suffix='Launch Pad',
+        output_suffix='launch_pad',
+        filter_function=mda.Filters.filter_by_launch_pad_raw,
+        filter_function_parameters_list=launch_sites,
         launch_vehicle_simplified_name=launch_vehicle_simplified_name,
         x_tick_step_size=year_x_tick_step_size,
         color_map=color_map,
@@ -351,6 +358,9 @@ def launches_vs_mass_by_filter(chart_title_prefix, output_prefix, chart_title_su
         bin_labels=mass_labels,
         filter_function_additional_parameter=filter_function_additional_parameter,
     )
+    
+    # remove dataframes with no data or all zeroes, so that launch pad filtering doesn't include literally all pads ever
+    dataframes = {key: df for key, df in dataframes.items() if not df.empty and df.sum().sum() > 0}
 
     # Create dictionary with columns that are the orbits and values are the mass ranges
     output_df = mda.ChartUtils.combine_dictionary_of_dataframes(dataframes)
@@ -423,7 +433,13 @@ def total_mass_vs_mass_by_filter(chart_title_prefix, output_prefix, chart_title_
         bin_column='Mass_Range',
         filter_function_additional_parameter=filter_function_additional_parameter
     )
-
+    
+    # remove dataframes with no data or all zeroes, so that launch pad filtering doesn't include literally all pads ever
+    def numeric_sum(df):
+        numeric_cols = df.select_dtypes(include='number').columns
+        return df[numeric_cols].sum().sum() if not df.empty and len(numeric_cols) > 0 else 0
+    dataframes = {key: df for key, df in dataframes.items() if not df.empty and numeric_sum(df) > 0}
+    
     total_masses = {}
     for key in dataframes.keys():
         total_mass = dataframes[key].groupby('Mass_Range', observed=False)['Payload_Mass'].sum()
@@ -961,6 +977,9 @@ def launches_vs_year_by_filter(chart_title_prefix, output_prefix, chart_title_su
         count_values=True,
         filter_function_additional_parameter=filter_function_additional_parameter
     )
+    
+    # remove dataframes with no data or all zeroes, so that launch pad filtering doesn't include literally all pads ever
+    dataframes = {key: df for key, df in dataframes.items() if not df.empty and df.sum().sum() > 0}
 
     output_df = mda.ChartUtils.combine_dictionary_of_dataframes(dataframes)
 
