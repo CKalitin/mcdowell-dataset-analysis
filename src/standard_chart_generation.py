@@ -239,7 +239,7 @@ def generate_launch_vehicle_family_charts(launch_vehicle_simplified_name, chart_
     )
 
 
-def generate_extra_charts(launch_vehicle_simplified_name, chart_title_prefix, output_prefix, mass_step_size_kg=1000, year_x_tick_step_size=1, color_map=mda.ChartUtils.color_sequence_2_8, filter_out_suborbital=True):
+def generate_extra_charts(launch_vehicle_simplified_name, chart_title_prefix, output_prefix, mass_step_size_kg=1000, year_x_tick_step_size=1, month_x_tick_step_size=12, color_map=mda.ChartUtils.color_sequence_2_8, filter_out_suborbital=True):
     """Generate extra charts.
     
     Charts:
@@ -253,6 +253,7 @@ def generate_extra_charts(launch_vehicle_simplified_name, chart_title_prefix, ou
         output_prefix (str): The prefix for the output file names.
         mass_step_size_kg (int, optional): _description_. Defaults to 1000.
         year_x_tick_step_size (int, optional): _description_. Defaults to 1.
+        month_x_tick_step_size (int, optional): _description_. Defaults to 12.
         color_map (_type_, optional): _description_. Defaults to mda.ChartUtils.color_sequence_2_8.
         filter_out_suborbital (bool, optional): Whether to filter out suborbital launches. Defaults to True.
     """
@@ -265,6 +266,32 @@ def generate_extra_charts(launch_vehicle_simplified_name, chart_title_prefix, ou
     launch_sites = launch_df["Launch_Pad"].dropna().unique().tolist()
     
     color_map = mda.ChartUtils.f9_site_color_map if "Falcon 9" in launch_vehicle_simplified_name else color_map
+    
+    launches_vs_month_by_filter(
+        chart_title_prefix=chart_title_prefix,
+        output_prefix=output_prefix,
+        chart_title_suffix='Launch Pad',
+        output_suffix='launch_pad',
+        filter_function=mda.Filters.filter_by_launch_pad_raw,
+        filter_function_parameters_list=launch_sites,
+        launch_vehicle_simplified_name=launch_vehicle_simplified_name,
+        x_tick_step_size=month_x_tick_step_size,
+        color_map=color_map,
+        filter_out_suborbital=filter_out_suborbital,
+    )
+
+    launches_vs_year_by_filter(
+        chart_title_prefix=chart_title_prefix,
+        output_prefix=output_prefix,
+        chart_title_suffix='Launch Pad',
+        output_suffix='launch_pad',
+        filter_function=mda.Filters.filter_by_launch_pad_raw,
+        filter_function_parameters_list=launch_sites,
+        launch_vehicle_simplified_name=launch_vehicle_simplified_name,
+        x_tick_step_size=year_x_tick_step_size,
+        color_map=color_map,
+        filter_out_suborbital=filter_out_suborbital,
+    )
     
     launches_vs_mass_by_filter(
         chart_title_prefix=chart_title_prefix,
@@ -293,19 +320,6 @@ def generate_extra_charts(launch_vehicle_simplified_name, chart_title_prefix, ou
         color_map=color_map,
         mass_suffix=mass_suffix,
         mass_divisor=mass_divisor,
-        filter_out_suborbital=filter_out_suborbital,
-    )
-
-    launches_vs_year_by_filter(
-        chart_title_prefix=chart_title_prefix,
-        output_prefix=output_prefix,
-        chart_title_suffix='Launch Pad',
-        output_suffix='launch_pad',
-        filter_function=mda.Filters.filter_by_launch_pad_raw,
-        filter_function_parameters_list=launch_sites,
-        launch_vehicle_simplified_name=launch_vehicle_simplified_name,
-        x_tick_step_size=year_x_tick_step_size,
-        color_map=color_map,
         filter_out_suborbital=filter_out_suborbital,
     )
 
@@ -360,7 +374,8 @@ def launches_vs_mass_by_filter(chart_title_prefix, output_prefix, chart_title_su
     )
     
     # remove dataframes with no data or all zeroes, so that launch pad filtering doesn't include literally all pads ever
-    dataframes = {key: df for key, df in dataframes.items() if not df.empty and df.sum().sum() > 0}
+    if filter_function == mda.Filters.filter_by_launch_pad_raw:
+        dataframes = {key: df for key, df in dataframes.items() if not df.empty and df.sum().sum() > 0}
 
     # Create dictionary with columns that are the orbits and values are the mass ranges
     output_df = mda.ChartUtils.combine_dictionary_of_dataframes(dataframes)
@@ -435,10 +450,11 @@ def total_mass_vs_mass_by_filter(chart_title_prefix, output_prefix, chart_title_
     )
     
     # remove dataframes with no data or all zeroes, so that launch pad filtering doesn't include literally all pads ever
-    def numeric_sum(df):
-        numeric_cols = df.select_dtypes(include='number').columns
-        return df[numeric_cols].sum().sum() if not df.empty and len(numeric_cols) > 0 else 0
-    dataframes = {key: df for key, df in dataframes.items() if not df.empty and numeric_sum(df) > 0}
+    if filter_function == mda.Filters.filter_by_launch_pad_raw:
+        def numeric_sum(df):
+            numeric_cols = df.select_dtypes(include='number').columns
+            return df[numeric_cols].sum().sum() if not df.empty and len(numeric_cols) > 0 else 0
+        dataframes = {key: df for key, df in dataframes.items() if not df.empty and numeric_sum(df) > 0}
     
     total_masses = {}
     for key in dataframes.keys():
@@ -776,6 +792,95 @@ def launches_vs_month_by_general_launch_payload_type(chart_title_prefix, output_
         x_tick_step_size=x_tick_step_size
     )
     
+def launches_vs_month_by_filter(chart_title_prefix, output_prefix, chart_title_suffix, output_suffix, filter_function, filter_function_parameters_list, filter_function_additional_parameter=None, launch_vehicle_simplified_name=None, launch_vehicle_family=None, all_vehicles=False, x_tick_step_size=12, color_map=None, start_year=None, end_year=None, filter_out_suborbital=True):
+    """Generate a chart showing the number of launches by month by a specified filter function.
+
+    Args:
+        chart_title_prefix (str): Prefix for the chart title (should be the prettified name of the launch vehicle) (eg. 'Falcon 9') 
+        output_prefix (str): Simplified name of LV for output files (eg. 'f9' for Falcon 9 gives "f9_launches_vs_month_by_filter")
+        chart_title_suffix (str): Suffix for the chart title (eg. 'Orbit')
+        output_suffix (str): Suffix for the output file names (eg. 'orbit')
+        filter_function (function): Function to filter the dataset by (eg. mda.Filters.filter_by_orbit)
+        filter_function_parameters_list (list): List of parameters to pass to the filter function
+        filter_function_additional_parameter (str, optional): Additional parameter to pass to the filter function if needed
+        launch_vehicle_simplified_name (str, optional): Launch vehicle to filter by
+        launch_vehicle_family (str, optional): Family of launch vehicle to filter by. If not none, then filtering will be done by family instead of the launch_vehicle field.
+        all_vehicles (bool, optional): If True, will not filter by launch vehicle. Defaults to False.
+        x_tick_step_size (int, optional): Step size for x-axis ticks in months. Defaults to 12 (one year).
+        start_year (int, optional): Start year for the data. By default it is the first year of the specified vehicle in the dataset.
+        end_year (int, optional): End year for the data (inclusive). By default, the final year of the specified vehicle is used.
+    """
+    
+    # Initialize dataset
+    dataset = mda.McdowellDataset("./datasets")
+
+    # Filter the base dataset
+    if filter_out_suborbital:
+        mda.Filters.filter_by_launch_category(dataset.launch, ['O', 'D'])
+    if not all_vehicles:
+        if launch_vehicle_family is not None:
+            mda.Filters.filter_by_launch_vehicle_family(dataset.launch, launch_vehicle_family)
+        else:
+            mda.Filters.filter_by_launch_vehicle_name_simplified(dataset.launch, launch_vehicle_simplified_name)
+
+    if start_year == None:
+        start_year = dataset.launch.df['Launch_Date'].dt.year.min()
+    if end_year == None:
+        end_year = dataset.launch.df['Launch_Date'].dt.year.max()
+
+    date_end = "present" if end_year == datetime.now().year else  f"{end_year}"
+    output_name = f"{output_prefix}_launches_vs_month_by_{output_suffix}_{start_year}_{date_end}"
+
+    # After getting the start and end years, filter the dataset by launch date
+    mda.Filters.filter_by_launch_date(dataset.launch, start_date=f'{start_year}-01-01', end_date=f'{end_year}-12-31')
+    
+    # Encode launch month as year*12 + months to get total months since Jesus instead of years since Jesus
+    dataset.launch.df['Launch_Month'] = dataset.launch.df['Launch_Date'].dt.year*12 + dataset.launch.df['Launch_Date'].dt.month
+    
+    mda.ChartUtils.log_and_save_df("dataframe", output_name, output_prefix, dataset.launch.df)
+    
+    months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+
+    bin_labels = []
+    for year in range(start_year, end_year+1, 1):
+        for month in months:
+            bin_labels.append(f"{month} {year}")
+
+    # Create a dictionary with key filters and values are dataframes for each filter showing the number of launches per month
+    dataframes = mda.ChartUtils.bin_dataset_into_dictionary_by_filter_function(
+        dataset=dataset.launch,
+        filter_function=filter_function,
+        filter_function_parameters_list=filter_function_parameters_list,
+        value_col='Launch_Month',
+        bins=list(range(start_year*12, (end_year+1)*12+1)),
+        bin_labels=bin_labels,
+        filter_function_additional_parameter=filter_function_additional_parameter,
+    )
+
+
+    # remove dataframes with no data or all zeroes, so that launch pad filtering doesn't include literally all pads ever
+    if filter_function == mda.Filters.filter_by_launch_pad_raw:
+        dataframes = {key: df for key, df in dataframes.items() if not df.empty and df.sum().sum() > 0}
+
+    # Combine dictionary of dataframes into a single dataframe (by column)
+    output_df = mda.ChartUtils.combine_dictionary_of_dataframes(dataframes)
+    
+    # Save to CSV
+    mda.ChartUtils.log_and_save_df("csv", output_name, output_prefix, output_df)
+
+    mda.ChartUtils.plot_bar(
+        output_df,
+        title=f'{chart_title_prefix} Launches vs. Month by {chart_title_suffix}',
+        subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
+        x_label='Date',
+        y_label='Number of Launches',
+        output_path=f'examples/outputs/chart/{output_prefix}/{output_name}.png',
+        color_map=color_map,
+        bargap=0.0,
+        x_tick0=0,
+        x_tick_step_size=x_tick_step_size
+    )
+    
 def launches_vs_year_by_orbit(chart_title_prefix, output_prefix, launch_vehicle_simplified_name=None, launch_vehicle_family=None, all_vehicles=False, x_tick_step_size=1, start_year=None, end_year=None, filter_out_suborbital=True):
     """Generate a chart showing the number of launches by year by orbit.
 
@@ -977,9 +1082,10 @@ def launches_vs_year_by_filter(chart_title_prefix, output_prefix, chart_title_su
         count_values=True,
         filter_function_additional_parameter=filter_function_additional_parameter
     )
-    
+
     # remove dataframes with no data or all zeroes, so that launch pad filtering doesn't include literally all pads ever
-    dataframes = {key: df for key, df in dataframes.items() if not df.empty and df.sum().sum() > 0}
+    if filter_function == mda.Filters.filter_by_launch_pad_raw:
+        dataframes = {key: df for key, df in dataframes.items() if not df.empty and df.sum().sum() > 0}
 
     output_df = mda.ChartUtils.combine_dictionary_of_dataframes(dataframes)
 
@@ -996,90 +1102,6 @@ def launches_vs_year_by_filter(chart_title_prefix, output_prefix, chart_title_su
         bargap=0.1,
         color_map=color_map,
         x_tick_step_size=x_tick_step_size,
-    )
-    
-def launches_vs_month_by_filter(chart_title_prefix, output_prefix, chart_title_suffix, output_suffix, filter_function, filter_function_parameters_list, filter_function_additional_parameter=None, launch_vehicle_simplified_name=None, launch_vehicle_family=None, all_vehicles=False, x_tick_step_size=12, color_map=None, start_year=None, end_year=None, filter_out_suborbital=True):
-    """Generate a chart showing the number of launches by month by a specified filter function.
-
-    Args:
-        chart_title_prefix (str): Prefix for the chart title (should be the prettified name of the launch vehicle) (eg. 'Falcon 9') 
-        output_prefix (str): Simplified name of LV for output files (eg. 'f9' for Falcon 9 gives "f9_launches_vs_month_by_filter")
-        chart_title_suffix (str): Suffix for the chart title (eg. 'Orbit')
-        output_suffix (str): Suffix for the output file names (eg. 'orbit')
-        filter_function (function): Function to filter the dataset by (eg. mda.Filters.filter_by_orbit)
-        filter_function_parameters_list (list): List of parameters to pass to the filter function
-        filter_function_additional_parameter (str, optional): Additional parameter to pass to the filter function if needed
-        launch_vehicle_simplified_name (str, optional): Launch vehicle to filter by
-        launch_vehicle_family (str, optional): Family of launch vehicle to filter by. If not none, then filtering will be done by family instead of the launch_vehicle field.
-        all_vehicles (bool, optional): If True, will not filter by launch vehicle. Defaults to False.
-        x_tick_step_size (int, optional): Step size for x-axis ticks in months. Defaults to 12 (one year).
-        start_year (int, optional): Start year for the data. By default it is the first year of the specified vehicle in the dataset.
-        end_year (int, optional): End year for the data (inclusive). By default, the final year of the specified vehicle is used.
-    """
-    
-    # Initialize dataset
-    dataset = mda.McdowellDataset("./datasets")
-
-    # Filter the base dataset
-    if filter_out_suborbital:
-        mda.Filters.filter_by_launch_category(dataset.launch, ['O', 'D'])
-    if not all_vehicles:
-        if launch_vehicle_family is not None:
-            mda.Filters.filter_by_launch_vehicle_family(dataset.launch, launch_vehicle_family)
-        else:
-            mda.Filters.filter_by_launch_vehicle_name_simplified(dataset.launch, launch_vehicle_simplified_name)
-
-    if start_year == None:
-        start_year = dataset.launch.df['Launch_Date'].dt.year.min()
-    if end_year == None:
-        end_year = dataset.launch.df['Launch_Date'].dt.year.max()
-
-    date_end = "present" if end_year == datetime.now().year else  f"{end_year}"
-    output_name = f"{output_prefix}_launches_vs_month_by_{output_suffix}_{start_year}_{date_end}"
-
-    # After getting the start and end years, filter the dataset by launch date
-    mda.Filters.filter_by_launch_date(dataset.launch, start_date=f'{start_year}-01-01', end_date=f'{end_year}-12-31')
-    
-    # Encode launch month as year*12 + months to get total months since Jesus instead of years since Jesus
-    dataset.launch.df['Launch_Month'] = dataset.launch.df['Launch_Date'].dt.year*12 + dataset.launch.df['Launch_Date'].dt.month
-    
-    mda.ChartUtils.log_and_save_df("dataframe", output_name, output_prefix, dataset.launch.df)
-    
-    months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-
-    bin_labels = []
-    for year in range(start_year, end_year+1, 1):
-        for month in months:
-            bin_labels.append(f"{month} {year}")
-
-    # Create a dictionary with key filters and values are dataframes for each filter showing the number of launches per month
-    dataframes = mda.ChartUtils.bin_dataset_into_dictionary_by_filter_function(
-        dataset=dataset.launch,
-        filter_function=filter_function,
-        filter_function_parameters_list=filter_function_parameters_list,
-        value_col='Launch_Month',
-        bins=list(range(start_year*12, (end_year+1)*12+1)),
-        bin_labels=bin_labels,
-        filter_function_additional_parameter=filter_function_additional_parameter,
-    )
-
-    # Combine dictionary of dataframes into a single dataframe (by column)
-    output_df = mda.ChartUtils.combine_dictionary_of_dataframes(dataframes)
-    
-    # Save to CSV
-    mda.ChartUtils.log_and_save_df("csv", output_name, output_prefix, output_df)
-
-    mda.ChartUtils.plot_bar(
-        output_df,
-        title=f'{chart_title_prefix} Launches vs. Month by {chart_title_suffix}',
-        subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
-        x_label='Date',
-        y_label='Number of Launches',
-        output_path=f'examples/outputs/chart/{output_prefix}/{output_name}.png',
-        color_map=color_map,
-        bargap=0.0,
-        x_tick0=0,
-        x_tick_step_size=x_tick_step_size
     )
 
 def owner_payloads_vs_year_by_program(chart_title_prefix, output_prefix, owners_list, color_map=None, programing_simplification_dict=None, program_order=None):
