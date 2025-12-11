@@ -1,1 +1,0 @@
-generate_launch_vehicle_charts
