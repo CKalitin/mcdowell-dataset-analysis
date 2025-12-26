@@ -548,9 +548,9 @@ def plot_f9_and_starship_launches_vs_month():
 	df = df_starship.copy()
 	df['Launch_Date'] = pd.to_datetime(df['Launch_Month'], format='%b %Y')
 	
-	# Calculate totals
-	y_f9_total = df['F9 Total']
-	y_starship_total = df['Starship Total']
+	# Calculate totals, fill NaN with 0
+	y_f9_total = df['F9 Total'].fillna(0)
+	y_starship_total = df['Starship Total'].fillna(0)
 	
 	# Calculate months since Jan 2010 for sigmoid
 	start_date = pd.to_datetime('2010-01-01')
@@ -689,6 +689,53 @@ def plot_starlink_capacity_tbps():
 	if SHOW:
 		plt.show()
 
+def plot_starship_launches_by_type():
+	"""Plots stacked bars for Starship launches by type: Starlink vs Other."""
+	starship_csv = 'examples/other/starship_prediction.csv'
+	df = pd.read_csv(starship_csv)
+	df['Launch_Date'] = pd.to_datetime(df['Launch_Month'], format='%b %Y')
+	
+	# Fill NaN with 0
+	y_starlink = df['Starship (Starlink)'].fillna(0)
+	y_other = df['Starship'].fillna(0)
+	
+	# Plot
+	fig, ax = plt.subplots(figsize=(12, 7))
+	
+	bar_width = 31
+	positions = df['Launch_Date']
+	
+	# Stacked bars: Starlink bottom, Other on top
+	ax.bar(positions, y_starlink, width=bar_width, label='Starship Starlink Launches', color='#005eff', alpha=0.7, edgecolor='#005eff')
+	ax.bar(positions, y_other, width=bar_width, bottom=y_starlink, label='Starship Other Launches', color='#fbbc04', alpha=0.7, edgecolor='#fbbc04')
+	
+	ax.set_xlabel('Launch Month', fontsize=12)
+	ax.set_ylabel('Number of Launches', fontsize=12)
+	ax.set_title('Starship Launches by Type: Starlink vs Other', fontsize=14)
+	ax.grid(True, linestyle='--', alpha=0.5)
+	
+	# Set x-axis to show Jan of each year
+	ax.xaxis.set_major_locator(mdates.MonthLocator(bymonth=1))
+	ax.xaxis.set_major_formatter(mdates.DateFormatter('%b %Y'))
+	fig.autofmt_xdate()
+	
+	# Set xlim to include up to 2030
+	ax.set_xlim(pd.to_datetime('2010-01-01'), pd.to_datetime('2030-01-01'))
+	
+	ax.legend(loc='upper left')
+	
+	plt.tight_layout()
+	
+	# Save
+	img_path = 'examples/outputs/chart/f9_matplotlib/starship_launches_by_type.png'
+	csv_out_path = 'examples/outputs/csv/f9_matplotlib/starship_launches_by_type.csv'
+	
+	plt.savefig(img_path)
+	df.to_csv(csv_out_path, index=False)
+	
+	if SHOW:
+		plt.show()
+
 # F9 Launch Sites: LC40, LC39A, SLC4E 
 df = pd.read_csv("examples/outputs/raw_dataframes/f9/raw_dataframe_f9_launches_apogee_vs_date_by_simple_orbit_2010_present.csv")
 plot_days_between_launches_from_site(df, "LC40", date_range=("2022-01-01", None))
@@ -710,3 +757,5 @@ plot_f9_and_starship_launches_vs_month()
 
 # Call the Starlink capacity function
 plot_starlink_capacity_tbps()
+
+plot_starship_launches_by_type()
