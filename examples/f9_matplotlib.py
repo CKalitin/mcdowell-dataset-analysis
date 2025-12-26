@@ -757,6 +757,8 @@ def plot_starship_launches_by_type():
 # F9 Launch Sites: LC40, LC39A, SLC4E 
 df = pd.read_csv("examples/outputs/raw_dataframes/f9/raw_dataframe_f9_launches_apogee_vs_date_by_simple_orbit_2010_present.csv")
 plot_days_between_launches_from_site(df, "LC40", date_range=("2022-01-01", None))
+plot_days_between_launches_from_site(df, "LC40", date_range=("2018-01-01", None))
+plot_days_between_launches_from_site(df, "LC40", date_range=("2010-01-01", None))
 plot_days_between_launches_from_site(df, "LC39A", date_range=("2022-01-01", None))
 plot_days_between_launches_from_site(df, "SLC4E", date_range=("2022-01-01", None))
 
