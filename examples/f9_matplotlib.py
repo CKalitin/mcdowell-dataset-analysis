@@ -609,6 +609,12 @@ def plot_f9_and_starship_launches_vs_month():
 	# Set xlim to include up to 2030
 	ax.set_xlim(pd.to_datetime('2010-01-01'), pd.to_datetime('2030-01-01'))
 	
+	# Add vertical line at Dec 2025 for predictions start
+	ax.axvline(x=pd.to_datetime('2025-12-01'), color='#333333', linestyle='--', linewidth=2)
+	ylim = ax.get_ylim()
+	y_pos = ylim[1] - 0.05 * (ylim[1] - ylim[0])
+	ax.text(pd.to_datetime('2025-12-01'), y_pos, 'Predictions Start', color='#333333', fontsize=10, fontweight='bold', rotation=90, va='top', ha='right')
+	
 	ax.legend()
 	
 	plt.tight_layout()
@@ -659,6 +665,12 @@ def plot_starlink_capacity_tbps():
 	
 	# Set xlim to include up to 2030
 	ax.set_xlim(pd.to_datetime('2010-01-01'), pd.to_datetime('2030-01-01'))
+	
+	# Add vertical line at Dec 2025 for predictions start
+	ax.axvline(x=pd.to_datetime('2025-12-01'), color='#333333', linestyle='--', linewidth=2)
+	ylim = ax.get_ylim()
+	y_pos = ylim[1] - 0.05 * (ylim[1] - ylim[0])
+	ax.text(pd.to_datetime('2025-12-01'), y_pos, 'Predictions Start', color='#333333', fontsize=10, fontweight='bold', rotation=90, va='top', ha='right')
 	
 	# Add capacity info
 	note = (
@@ -721,6 +733,12 @@ def plot_starship_launches_by_type():
 	
 	# Set xlim to include up to 2030
 	ax.set_xlim(pd.to_datetime('2010-01-01'), pd.to_datetime('2030-01-01'))
+	
+	# Add vertical line at Dec 2025 for predictions start
+	ax.axvline(x=pd.to_datetime('2025-12-01'), color='#333333', linestyle='--', linewidth=2)
+	ylim = ax.get_ylim()
+	y_pos = ylim[1] - 0.05 * (ylim[1] - ylim[0])
+	ax.text(pd.to_datetime('2025-12-01'), y_pos, 'Predictions Start', color='#333333', fontsize=10, fontweight='bold', rotation=90, va='top', ha='right')
 	
 	ax.legend(loc='upper left')
 	
