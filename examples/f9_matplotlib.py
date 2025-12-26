@@ -409,6 +409,286 @@ def plot_days_between_vs_date_all_boosters(booster_launch_info, window=25, show_
 	if SHOW:
 		plt.show()
 
+def plot_f9_launches_vs_month_by_payload_type():
+	"""Plots bar chart for F9 launches per month by payload type, with sigmoid overlay for Starlink."""
+	csv_path = 'examples/outputs/csv/f9/f9_launches_vs_month_by_general_launch_payload_type_2010_present.csv'
+	df = pd.read_csv(csv_path)
+	
+	# Convert Launch_Month to datetime
+	df['Launch_Date'] = pd.to_datetime(df['Launch_Month'], format='%b %Y')
+	
+	# Extend to Jan 2030
+	end_date = pd.to_datetime('2030-01-01')
+	current_end = df['Launch_Date'].max()
+	if current_end < end_date:
+		new_dates = pd.date_range(start=current_end + pd.DateOffset(months=1), end=end_date, freq='MS')
+		new_rows = pd.DataFrame({
+			'Launch_Month': new_dates.strftime('%b %Y'),
+			'Starlink': 0,
+			'Commercial': 0,
+			'Chinese Commercial': 0,
+			'Government': 0,
+			'Eastern Government': 0,
+			'Military': 0,
+			'Eastern Military': 0,
+			'Launch_Date': new_dates
+		})
+		df = pd.concat([df, new_rows], ignore_index=True)
+	
+	# Calculate months since Jan 2010
+	start_date = pd.to_datetime('2010-01-01')
+	df['Months_Since_Start'] = ((df['Launch_Date'] - start_date) / pd.Timedelta(days=30.44)).round().astype(int)
+	
+	x = df['Months_Since_Start']
+	y_starlink = df['Starlink']
+	y_other = df[['Commercial', 'Chinese Commercial', 'Government', 'Eastern Government', 'Military', 'Eastern Military']].sum(axis=1)
+	
+	# Sigmoid parameters (for Starlink)
+	x_bias = 168
+	x_gain = 1/15
+	y_bias = 0.5
+	y_gain = 17
+	
+	y_line = y_gain / (1 + np.exp(-x_gain * (x - x_bias))) + y_bias
+	
+	# Plot
+	fig, ax = plt.subplots(figsize=(12, 7))
+	
+	# Bar width in days
+	bar_width = 30  # slightly wider to eliminate gaps
+	
+	# Stacked bars
+	positions = df['Launch_Date']
+	# Starlink bars (bottom)
+	ax.bar(positions, y_starlink, width=bar_width, label='Starlink Launches', color='#005eff', alpha=0.7, edgecolor='#005eff')
+	# Other bars (on top)
+	ax.bar(positions, y_other, width=bar_width, bottom=y_starlink, label='Other Launches', color='#fbbc04', alpha=0.7, edgecolor='#fbbc04')
+	
+	# Sigmoid fit (on Starlink)
+	ax.plot(df['Launch_Date'], y_line, label='Sigmoid Fit', color='red', linewidth=2)
+	
+	# Add parameters box
+	note = (
+		f"Sigmoid Parameters:\n"
+		f"x_bias: {x_bias}\n"
+		f"x_gain: {x_gain:.4f}\n"
+		f"y_bias: {y_bias}\n"
+		f"y_gain: {y_gain}\n"
+		"[x] = months\n"
+		"[y] = num launches"
+	)
+	ax.text(
+		0.013, 0.847, note,
+		transform=ax.transAxes,
+		fontsize=10,
+		va='top', ha='left',
+		color='black',
+		bbox=dict(facecolor='white', edgecolor='gray', boxstyle='round,pad=0.5', alpha=0.85)
+	)
+	
+	ax.set_xlabel('Launch Month', fontsize=12)
+	ax.set_ylabel('Number of Launches', fontsize=12)
+	ax.set_title('F9 Monthly Launches: Starlink vs Other with Sigmoid Fit', fontsize=14)
+	ax.grid(True, linestyle='--', alpha=0.5)
+	
+	# Set x-axis to show Jan of each year
+	ax.xaxis.set_major_locator(mdates.MonthLocator(bymonth=1))
+	ax.xaxis.set_major_formatter(mdates.DateFormatter('%b %Y'))
+	fig.autofmt_xdate()
+	
+	# Set xlim to include up to 2030
+	ax.set_xlim(pd.to_datetime('2010-01-01'), pd.to_datetime('2030-01-01'))
+	
+	ax.legend()
+	
+	plt.tight_layout()
+	
+	# Save
+	img_path = 'examples/outputs/chart/f9_matplotlib/f9_starlink_launches_vs_month_with_sigmoid.png'
+	csv_out_path = 'examples/outputs/csv/f9_matplotlib/f9_starlink_launches_vs_month_with_sigmoid.csv'
+	
+	plt.savefig(img_path)
+	df.to_csv(csv_out_path, index=False)
+	
+	if SHOW:
+		plt.show()
+
+def plot_f9_and_starship_launches_vs_month():
+	"""Plots side-by-side bars for F9 and Starship total launches per month, with F9 sigmoid fit."""
+	csv_path = 'examples/outputs/csv/f9/f9_launches_vs_month_by_general_launch_payload_type_2010_present.csv'
+	df = pd.read_csv(csv_path)
+	
+	# Convert Launch_Month to datetime
+	df['Launch_Date'] = pd.to_datetime(df['Launch_Month'], format='%b %Y')
+	
+	# Extend to Jan 2030
+	end_date = pd.to_datetime('2030-01-01')
+	current_end = df['Launch_Date'].max()
+	if current_end < end_date:
+		new_dates = pd.date_range(start=current_end + pd.DateOffset(months=1), end=end_date, freq='MS')
+		new_rows = pd.DataFrame({
+			'Launch_Month': new_dates.strftime('%b %Y'),
+			'Starlink': 0,
+			'Commercial': 0,
+			'Chinese Commercial': 0,
+			'Government': 0,
+			'Eastern Government': 0,
+			'Military': 0,
+			'Eastern Military': 0,
+			'Launch_Date': new_dates
+		})
+		df = pd.concat([df, new_rows], ignore_index=True)
+	
+	# Load Starship data
+	starship_csv = 'examples/other/starship_prediction.csv'
+	df_starship = pd.read_csv(starship_csv)
+	df_starship['Launch_Date'] = pd.to_datetime(df_starship['Launch_Month'], format='%b %Y')
+	
+	# Use the starship data as the base, since it includes F9 predictions
+	df = df_starship.copy()
+	df['Launch_Date'] = pd.to_datetime(df['Launch_Month'], format='%b %Y')
+	
+	# Calculate totals
+	y_f9_total = df['F9 Total']
+	y_starship_total = df['Starship Total']
+	
+	# Calculate months since Jan 2010 for sigmoid
+	start_date = pd.to_datetime('2010-01-01')
+	df['Months_Since_Start'] = ((df['Launch_Date'] - start_date) / pd.Timedelta(days=30.44)).round().astype(int)
+	x = df['Months_Since_Start']
+	
+	# Sigmoid parameters (for F9)
+	x_bias = 168
+	x_gain = 1/15
+	y_bias = 0.5
+	y_gain = 17
+	y_line = y_gain / (1 + np.exp(-x_gain * (x - x_bias))) + y_bias
+	
+	# Plot
+	fig, ax = plt.subplots(figsize=(12, 7))
+	
+	bar_width = 30  # days, slightly wider to eliminate gaps
+	positions = df['Launch_Date']
+	
+	# Stacked bars: F9 bottom, Starship on top
+	ax.bar(positions, y_f9_total, width=bar_width, label='F9 Total Launches', color='#005eff', alpha=0.7, edgecolor='#005eff')
+	ax.bar(positions, y_starship_total, width=bar_width, bottom=y_f9_total, label='Starship Total Launches', color='#fbbc04', alpha=0.7, edgecolor='#fbbc04')
+	
+	# F9 Sigmoid fit
+	ax.plot(df['Launch_Date'], y_line, label='F9 Sigmoid Fit', color='red', linewidth=2)
+	
+	# Add parameters box
+	note = (
+		f"Sigmoid Parameters:\n"
+		f"x_bias: {x_bias}\n"
+		f"x_gain: {x_gain:.4f}\n"
+		f"y_bias: {y_bias}\n"
+		f"y_gain: {y_gain}\n"
+		"[x] = months\n"
+		"[y] = num launches"
+	)
+	ax.text(
+		0.013, 0.847, note,
+		transform=ax.transAxes,
+		fontsize=10,
+		va='top', ha='left',
+		color='black',
+		bbox=dict(facecolor='white', edgecolor='gray', boxstyle='round,pad=0.5', alpha=0.85)
+	)
+	
+	ax.set_xlabel('Launch Month', fontsize=12)
+	ax.set_ylabel('Number of Launches', fontsize=12)
+	ax.set_title('F9 & Starship Stacked Total Monthly Launches with F9 Sigmoid Fit', fontsize=14)
+	ax.grid(True, linestyle='--', alpha=0.5)
+	
+	# Set x-axis to show Jan of each year
+	ax.xaxis.set_major_locator(mdates.MonthLocator(bymonth=1))
+	ax.xaxis.set_major_formatter(mdates.DateFormatter('%b %Y'))
+	fig.autofmt_xdate()
+	
+	# Set xlim to include up to 2030
+	ax.set_xlim(pd.to_datetime('2010-01-01'), pd.to_datetime('2030-01-01'))
+	
+	ax.legend()
+	
+	plt.tight_layout()
+	
+	# Save
+	img_path = 'examples/outputs/chart/f9_matplotlib/f9_and_starship_total_launches_vs_month.png'
+	csv_out_path = 'examples/outputs/csv/f9_matplotlib/f9_and_starship_total_launches_vs_month.csv'
+	
+	plt.savefig(img_path)
+	df.to_csv(csv_out_path, index=False)
+	
+	if SHOW:
+		plt.show()
+
+def plot_starlink_capacity_tbps():
+	"""Plots Starlink capacity in Tbps for F9 and Starship."""
+	starship_csv = 'examples/other/starship_prediction.csv'
+	df = pd.read_csv(starship_csv)
+	df['Launch_Date'] = pd.to_datetime(df['Launch_Month'], format='%b %Y')
+	
+	# Capacity per launch
+	f9_tbps_per_launch = 3
+	starship_tbps_per_launch = 60
+	
+	# Monthly Tbps, fill NaN with 0
+	df['F9_Starlink_Tbps'] = df['Starlink'].fillna(0) * f9_tbps_per_launch
+	df['Starship_Starlink_Tbps'] = df['Starship (Starlink)'].fillna(0) * starship_tbps_per_launch
+	
+	# Plot
+	fig, ax = plt.subplots(figsize=(12, 7))
+	
+	bar_width = 31
+	positions = df['Launch_Date']
+	
+	# Stacked bars: F9 bottom, Starship on top
+	ax.bar(positions, df['F9_Starlink_Tbps'], width=bar_width, label='F9 Starlink Additional Capacity', color='#005eff', alpha=0.7, edgecolor='#005eff')
+	ax.bar(positions, df['Starship_Starlink_Tbps'], width=bar_width, bottom=df['F9_Starlink_Tbps'], label='Starship Starlink Additional Capacity', color='#fbbc04', alpha=0.7, edgecolor='#fbbc04')
+	
+	ax.set_xlabel('Launch Month', fontsize=12)
+	ax.set_ylabel('Additional Capacity Launched (Tbps)', fontsize=12)
+	ax.set_title('Monthly Additional Starlink Capacity: F9 vs Starship', fontsize=14)
+	ax.grid(True, linestyle='--', alpha=0.5)
+	
+	# Set x-axis to show Jan of each year
+	ax.xaxis.set_major_locator(mdates.MonthLocator(bymonth=1))
+	ax.xaxis.set_major_formatter(mdates.DateFormatter('%b %Y'))
+	fig.autofmt_xdate()
+	
+	# Set xlim to include up to 2030
+	ax.set_xlim(pd.to_datetime('2010-01-01'), pd.to_datetime('2030-01-01'))
+	
+	# Add capacity info
+	note = (
+		f"Capacity per Launch:\n"
+		f"F9: {f9_tbps_per_launch} Tbps\n"
+		f"Starship: {starship_tbps_per_launch} Tbps"
+	)
+	ax.text(
+		0.013, 0.882, note,
+		transform=ax.transAxes,
+		fontsize=10,
+		va='top', ha='left',
+		color='black',
+		bbox=dict(facecolor='white', edgecolor='gray', boxstyle='round,pad=0.5', alpha=0.85)
+	)
+	
+	ax.legend(loc='upper left')
+	
+	plt.tight_layout()
+	
+	# Save
+	img_path = 'examples/outputs/chart/f9_matplotlib/starlink_capacity_tbps.png'
+	csv_out_path = 'examples/outputs/csv/f9_matplotlib/starlink_capacity_tbps.csv'
+	
+	plt.savefig(img_path)
+	df.to_csv(csv_out_path, index=False)
+	
+	if SHOW:
+		plt.show()
+
 # F9 Launch Sites: LC40, LC39A, SLC4E 
 df = pd.read_csv("examples/outputs/raw_dataframes/f9/raw_dataframe_f9_launches_apogee_vs_date_by_simple_orbit_2010_present.csv")
 plot_days_between_launches_from_site(df, "LC40", date_range=("2022-01-01", None))
@@ -421,3 +701,12 @@ booster_launch_info = load_and_prepare_data(csv_path)
 
 # Call the new function
 plot_days_between_vs_date_all_boosters(booster_launch_info)
+
+# Call the bar chart function
+plot_f9_launches_vs_month_by_payload_type()
+
+# Call the combined F9 and Starship function
+plot_f9_and_starship_launches_vs_month()
+
+# Call the Starlink capacity function
+plot_starlink_capacity_tbps()
