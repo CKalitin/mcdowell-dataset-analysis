@@ -45,7 +45,7 @@ Note that plotly requires a chromium-based browser to be installed to render cha
 
 ## Updating Datasets
 
-The datasets currently have data up until December 1 2025.
+The datasets currently have data up until Feb 11 2026.
 
 To update the datasets, you can use the `update_datasets.py` script. This script fetches the latest data from Jonathan McDowell's website and updates the local TSV files.
 

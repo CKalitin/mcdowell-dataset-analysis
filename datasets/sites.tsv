@@ -1,5 +1,5 @@
 #Site	Code	UCode	Type	StateCode	TStart	TStop	ShortName	Name	Location	Longitude	Latitude	Error	Parent	ShortEName	EName	Group	UName
-# Updated 2025 Dec  1 0108:57
+# Updated 2026 Feb 11 0112:18
 OCEAN	-	OCEAN	LS	EARTH	-	-	Ocean	Ocean launch sites	-	-	-	0.0000 	-	Ocean	-	-	Ocean launch sites
 A51	-	A51	LS	US	1968	1972	Area 51	Groom Lake Air Force Base, Area 51, Nevada	Groom Lake, Nevada	   -115.8000 	   37.2300 	0.1000 	NRO	-	-	-	Groom Lake Air Force Base, Area 51, Nevada
 AAAF	-	HADC	LS	US	1941 Apr 13	1949 Dec  2	Alamagordo	Alamagordo Army Air Field	-	   -106.1030 	   32.8496 	0.0001 	USAF	-	-	WS	Alamagordo Army Air Field
@@ -167,7 +167,7 @@ HAMI	-	HAMI	LS	CN	2021	-	Hami	Hami missile base, Xinjiang	-	     92.4920 	   42.
 HAMJ	-	HAMJ	LS	KP	2021	-	Hamju	Hamju, S Hamyong Prov, North Korea	-	    127.4372 	   39.8469 	0.0001 	KP	-	-	-	Hamhung, S Hamyong Prov, North Korea
 HAMNC	-	HAMNC	LS	US	1997	1997	Hampstead	Hampstead, North Carolina, 1 mi W of Topsail Beach	-	    -77.6400 	   34.3600 	0.0500 	HAL5	-	-	-	Hampstead, North Carolina, 1 mi W of Topsail Beach
 HARBIN	-	HARBIN	LS	CN	1967	*	Harbin	Harbin missile test site, Heilongjiang, Manchuria, China	-	    126.6800 	   45.7500 	0.0200 	CN	-	-	-	Harbin, Heilongjiang, Manchuria, China
-HCSLS	-	HCSLS	LS	CN	2024	*	Hainan CLS	Hainan Shangye Hangtian Fashe Chang (Hainan Commercial Space Launch Site)	Wenchang, Hainan	    110.9308 	   19.5968 	0.0001 	CN	-	-	-	海南商业航天发射场
+HCSLS	-	HCSLS	LS	CN	2024	*	Hainan CLS	Hainan Shangye Hangtian Fashe Chang (Hainan Commercial Space Launch Site)	Wenchang, Hainan	    110.9308 	   19.5968 	0.0001 	HICAL	-	-	-	海南商业航天发射场
 HHAI	-	HHAI	LS	CN	2019	-	Huang Hai	Huang Hai CZ-11 launch zone	-	    121.1900 	   34.9000 	0.0100 	CALT	-	-	-	Huang Hai CZ-11 launch zone
 HICK	-	HICK	LS	US	-	-	Hickam AFB	Joint Base Pearl Harbor-Hickam, Honolulu	Pearl Harbor, Hawaii	   -157.9483 	   21.3353 	0.0100 	USAF	-	-	-	Joint Base Pearl Harbor-Hickam, Honolulu
 HKR	-	HKR	LS	DR	1944	1945	Heidekraut	Heidekraut, Tucheler Heide, Deutschland (now Polska)	-	     18.0000 	   53.6000 	0.3000 	WEHR	-	-	-	Heidekraut, Tucheler Heide, Deutschland (now Polska)
@@ -320,6 +320,7 @@ ROBI	-	ROBI	LS	US	-	-	Robins AFB	Robins AFB, Georgia	-	    -83.5920 	   32.6400 
 ROTH	-	ROTH	LS	BAT	1998	1998	Rothera	Rothera, British Antarctic Territory	-	    -68.1170 	  -67.5670 	0.0100 	BAS	-	-	-	Rothera, British Antarctic Territory
 RYO	-	RYO	LS	J	1970 Apr	*	Ryori	Ryori, Sanrikucho, Japan	-	    141.8300 	   39.0300 	0.0200 	JMA	-	-	-	Ryori, Sanrikucho, Japan
 RYONPO	-	RYONPO	LS	KP	2019	-	Ryonpo	Ryonpo, Hamju County	-	    127.5330 	   39.7900 	0.0050 	CMIK	-	-	-	Ryonpo, Hamju County
+RYOKPO	-	RYOKPO	LS	KP	2026	-	Ryokpo	Ryokpo County launch site, Pyongyang, CMIK	-	    125.8300 	   38.9300 	0.1000 	CMIK	-	-	-	Ryokpo launch site, CMIK
 SADAH	-	SADAH	LS	YE	2015	2015	Sa'dah	Sa'dah (Saa'da), Yemen and Dammaj Valley area	-	     43.8500 	   16.6680 	0.2000 	ANSAL	-	-	-	Sa'dah (Saa'da), Yemen and Dammaj Valley area
 SAIN	-	SAIN	LS	MN	1989	1989	Sainshand	Sainshand meteorological rocket station	Sainshand, Dornogovi, Mongolia	    110.1400 	   44.8900 	0.1000 	GMS	-	-	-	Sainshand meteorological rocket station
 SALKH	-	SALKH	LS	SU	1961	1962	Salekhard	Salekhard R-12 missile base, Polyarniy	Salekhard, Yamalo-Nenets	     66.5900 	   66.5900 	0.0200 	RVSN	-	-	-	Salekhard R-12 missile base, Polyarniy

@@ -51,8 +51,8 @@ def generate(chart_types, vehicle_name, display_name, file_name, year_x_tick_ste
 start_time = datetime.now()
 print("Start time: ", start_time)
 
-scg.generate_extra_charts(launch_vehicle_simplified_name="Falcon 9", chart_title_prefix="Falcon 9", output_prefix="f9")
-
+generate("single scatter", "Ariane 6", "Ariane 6", "ariane6", 1, 12)
+generate("single scatter", "Vulcan", "Vulcan", "vulcan", 1, 12)
 generate("single family scatter", ['Antares 110', 'Antares 120', 'Antares 130', 'Antares 230', 'Antares 230+'], "Antares", "antares", 1, 12)
 generate("single scatter extra", "Falcon 9", "Falcon 9", "f9", 1, 12)
 generate("single", "Falcon Heavy", "Falcon Heavy", "f9h", 1, 12)
@@ -62,6 +62,8 @@ generate("single family scatter", ['Titan 2', 'Titan 3', 'Titan 4'], "Titan Orbi
 generate("single", "Soyuz", "Soyuz", "soyuz")
 generate("single family", ['Delta 1', 'Delta 2', 'Delta 3', 'Delta 4M', 'Delta 4H'], "Delta Orbital", "delta")
 generate("single family", ["Ariane 1", "Ariane 2", "Ariane 3", "Ariane 4", "Ariane 5", "Ariane 6"], "Ariane", "ariane")
+
+scg.generate_extra_charts(launch_vehicle_simplified_name="Falcon 9", chart_title_prefix="Falcon 9", output_prefix="f9")
 
 print("End time: ", datetime.now())
 print("Elapsed time: ", datetime.now() - start_time)
