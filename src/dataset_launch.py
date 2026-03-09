@@ -38,7 +38,8 @@ class Launch:
         Lots of string manipulation to get the dates into a format that pandas can understand.
         """
         
-        self.date_updated = " ".join(self.df.iloc[0, 0].strip().replace("  ", " ").split(" ")[2:5])
+        # Get date of last launch in dataset
+        self.date_updated = " ".join(str(self.df.iloc[-1, 2]).strip().split()[:3])
         
         # Remove second row of tsv, signifies date of last update
         self.df = self.df.drop(index=0).reset_index(drop=True)
@@ -65,7 +66,7 @@ class Launch:
 
         self.df["Simple_Orbit"] = self.df["Category"].str.split(" ").str[1].str.strip() # Extract orbit from category eg. "Sat SSO SD 0"
         self.df["Simple_Orbit"] = self.df["Simple_Orbit"].where(self.df["Simple_Orbit"].isin(self.translation.launch_category_to_simple_orbit.keys()), float("nan")) # If raw orbit not present in dictionary keys, NaN
-        self.df["Simple_Orbit"] = self.df["Simple_Orbit"].replace(self.translation.launch_category_to_simple_orbit) # Translate to simple orbit
+        self.df["Simple_Orbit"] = self.df["Simple_Orbit"].map(self.translation.launch_category_to_simple_orbit) # Translate to simple orbit
 
         # Yea this is a shitty bodge
         self.df["V2_Payload_Category"] = self.df["Category"].apply(lambda x: 'Test' if 'Test' in str(x) else 'Weapon' if 'Weapon' in str(x) else 'Training' if 'Training' in str(x) else 'Scientific')

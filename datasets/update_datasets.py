@@ -36,6 +36,10 @@ for url in urls:
 launch_file_path = os.path.join(save_directory, "launch.tsv")
 if os.path.exists(launch_file_path):
     with open(launch_file_path, 'r') as file:
-        file.readline() # Skip first line
-        date = " ".join(file.readline().strip().replace("  ", " ").split(" ")[2:5])
-        print(f"Launch dataset cutoff: {date}")
+        lines = file.readlines()
+        if lines:
+            last_line = lines[-1].strip()
+            columns = last_line.split("\t")
+            date_col = columns[2].strip()  # e.g. "2026 Mar  8 1100:19"
+            date = " ".join(date_col.split()[:3])  # "2026 Mar 8"
+            print(f"Launch dataset cutoff: {date}")

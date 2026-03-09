@@ -38,7 +38,8 @@ class Satcat:
         Lots of string manipulation to get the dates into a format that pandas can understand.
         """
         
-        self.date_updated = " ".join(self.df.iloc[0, 0].strip().replace("  ", " ").split(" ")[2:5])
+        # Get date of last entry in dataset
+        self.date_updated = " ".join(str(self.df.iloc[-1, 7]).strip().split()[:3])
         
         # Remove second row of tsv, signifies date of last update
         self.df = self.df.drop(index=0).reset_index(drop=True)
@@ -80,7 +81,7 @@ class Satcat:
         
         # Create Simple Orbit Column
         # Orbits: https://planet4589.org/space/gcat/web/intro/orbits.html
-        self.df["Simple_Orbit"] = self.df["OpOrbit"].str.strip()
+        self.df["Simple_Orbit"] = self.df["OpOrbit"].astype(str).str.strip()
         self.df["Simple_Orbit"] = self.df["Simple_Orbit"].replace(self.translation.opOrbit_to_simple_orbit)
         
         self.df["Country"] = self.df["State"].map(self.translation.state_code_to_state_name).map(self.translation.state_name_to_americanized_state_names)
