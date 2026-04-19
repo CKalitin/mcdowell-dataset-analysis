@@ -1,4 +1,5 @@
 #Site	Code	UCode	Type	StateCode	TStart	TStop	ShortName	Name	Location	Longitude	Latitude	Error	Parent	ShortEName	EName	Group	UName
+# Updated 2026 Apr 17 0432:17
 OCEAN	-	OCEAN	LS	EARTH	-	-	Ocean	Ocean launch sites	-	-	-	0.0000 	-	Ocean	-	-	Ocean launch sites
 A51	-	A51	LS	US	1968	1972	Area 51	Groom Lake Air Force Base, Area 51, Nevada	Groom Lake, Nevada	   -115.8000 	   37.2300 	0.1000 	NRO	-	-	-	Groom Lake Air Force Base, Area 51, Nevada
 AAAF	-	HADC	LS	US	1941 Apr 13	1949 Dec  2	Alamagordo	Alamagordo Army Air Field	-	   -106.1030 	   32.8496 	0.0001 	USAF	-	-	WS	Alamagordo Army Air Field
@@ -459,6 +460,7 @@ ZINGST	-	ZINGST	LS	DD	1988 Oct 21	1992 Apr	Zingst-	Zingst Range, MMR-06 pad, DDR
 AMR	-	AMR	LZ	US	1958	1964	AMR	Atlantic Missile Range Drop Zone, N Atlantic Ocean	Atlantic Ocean	    -80.0000 	   28.5000 	1.0000 	USAF	-	-	CC	Atlantic Missile Range Drop Zone, N Atlantic Ocean
 ANTIM	-	ANTIM	LZ	US	1965	1974	Anitmeridian	Meteo Rocket Ship Launch Area, 180E 0N (AntiMeridian), Pacific Ocean	Pacific Ocean	    180.0000 	    0.0000 	1.0000 	DVNG	-	-	OCEAN	Meteo Rocket Ship Launch Area, 180E 0N (AntiMeridian), Pacific Ocean
 AONC	-	AONC	LZ	US	1992	1995	AOR15 -	USS Turner, Aegis NTW test launch area, 150 km off N Carolina	Atlantic Ocean	    -73.6890 	   33.7540 	0.0010 	USN	-	-	OCEAN	USS Turner, Aegis NTW test launch area, 150 km off N Carolina
+ARBSEA	-	ARBSEA	LZ	US	2026	-	Arabian Seaf	US Navy interceptor launch point, Aegis ships, Arabian Sea	Arabian Sea	     52.0000 	   27.0000 	4.0000 	USN	-	-	OCEAN	US Navy interceptor launch point, Aegis ships, Arabian Sea
 BELA	-	BELA	LZ	SU	1960	*	White Sea	White Sea Launch Area, Beloye More, Archangel'sk Oblast'	White Sea	     38.0000 	   65.5000 	1.0000 	VMF	-	-	OCEAN	White Sea Launch Area, Beloye More, Archangel'sk Oblast'
 BFJL	-	BFJL	LZ	SU	2009	*	Franz Josef Land	Franz Josef Land Launch Area, Barentsovo More	Barents Sea	     58.0000 	   79.5000 	1.0000 	VMF	-	-	OCEAN	Franz Josef Land Launch Area, Barentsovo More
 BLA	-	BLA	LZ	SU	1960	*	Barents Sea	Barents Launch Area, Barentsovo More, Murmansk Oblast'  (Os. Kildin)	Barents Sea	     34.0000 	   70.0000 	0.5000 	VMF	-	-	OCEAN	Barents Launch Area, Barentsovo More, Murmansk Oblast'  (Os. Kildin)
@@ -487,6 +489,7 @@ NWSLA	-	NWSLA	LZ	SU	1988	1988	Norw.Sea	Norwegian Sea Launch Area	-	      5.0000 
 OJP	-	OJP	LZ	SU	1978	-	Ontong Java Pl.	Meteo Rocket Ship Launch Area, Ontong Java Plateau region, SW Pacific Ocean	-	    160.0000 	    0.0000 	1.0000 	DVNG	-	-	OCEAN	Meteo Rocket Ship Launch Area, Ontong Java Plateau region, SW Pacific Ocean
 OMLA	-	OMLA	LZ	SU	1960	*	Sea of Okhotsk	Okhotsk Launch Area, Okhotskoye More	-	    148.0000 	   57.0000 	2.0000 	VMF	-	-	OCEAN	Okhotsk Launch Area, Okhotskoye More
 PBLA	-	PBLA	LZ	US	2024	-	Port Bienville	Port Bienville Launch Area, Gulf of Mexico	-	    -88.9770 	   29.9980 	0.0010 	EVOL	-	-	OCEAN	Port Bienville Launch Area
+PGULF	-	PGULF	LZ	US	2026	-	Persian Gulf	US Navy interceptor launch point, Aegis ships, Persian Gulf	Persian Gulf	     52.0000 	   27.0000 	4.0000 	USN	-	-	OCEAN	US Navy interceptor launch point, Aegis ships, Persian Gulf
 PHLDZ	-	PHLDZ	LZ	US	1968	1974	Philippines DZ	SENIOR BOWL, Philippines drop zone	-	    118.0000 	   12.0000 	2.0000 	NRO	-	-	AIR	SENIOR BOWL, Philippines drop zone
 POLA	-	POLA	LZ	SU	-	-	Pacific	Pacific Ocean Launch Area for Soviet/Russian submarines (unknown, guess)	Pacific Ocean	    170.0000 	   30.0000 	9.0000 	VMF	-	-	OCEAN	Pacific Ocean Launch Area for Soviet/Russian submarines (unknown, guess)
 POLA58	-	POLA58	LZ	SU	-	-	Pacific	R-11 launch point in 1958 (Pacific, but location unknown)	Pacific Ocean	    150.0000 	   40.0000 	9.0000 	VMF	-	-	OCEAN	R-11 launch point in 1958 (Pacific, but location unknown)

@@ -34,7 +34,7 @@ os.makedirs(f'examples/outputs/chart/global', exist_ok=True)
 mda.ChartUtils.plot_bar(
     output_df,
     title="Global Payloads vs Year by Simple Payload Category",
-    subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
+    subtitle=f'Christopher Kalitin 2026 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
     x_label="Year",
     y_label="Number of Payloads",
     output_path=f'examples/outputs/chart/global/{output_name}.png',

@@ -386,7 +386,7 @@ def launches_vs_mass_by_filter(chart_title_prefix, output_prefix, chart_title_su
     mda.ChartUtils.plot_bar(
         output_df,
         title=f'{chart_title_prefix} Launches vs. Payload Mass by {chart_title_suffix}',
-        subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
+        subtitle=f'Christopher Kalitin 2026 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
         x_label=f'Payload Mass Range ({mass_suffix})',
         y_label='Number of Launches',
         output_path=f'examples/outputs/chart/{output_prefix}/{output_name}.png',
@@ -470,7 +470,7 @@ def total_mass_vs_mass_by_filter(chart_title_prefix, output_prefix, chart_title_
     mda.ChartUtils.plot_bar(
         output_df,
         title=f'{chart_title_prefix} Net Payload Mass vs Mass Range by {chart_title_suffix}',
-        subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
+        subtitle=f'Christopher Kalitin 2026 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
         x_label=f'Payload Mass Range ({mass_suffix})',
         y_label=f'Total Payload Mass ({mass_suffix})',
         output_path=f'examples/outputs/chart/{output_prefix}/{output_name}.png',
@@ -553,7 +553,7 @@ def launches_vs_mass_by_general_launch_payload_type(mass_step_size_kg, chart_tit
     mda.ChartUtils.plot_bar(
         output_df,
         title=f'{chart_title_prefix} Launches vs. Payload Mass by Payload Type',
-        subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
+        subtitle=f'Christopher Kalitin 2026 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
         x_label=f'Payload Mass Range ({mass_suffix})',
         y_label='Number of Launches',
         output_path=f'examples/outputs/chart/{output_prefix}/{output_name}.png',
@@ -625,7 +625,7 @@ def total_mass_vs_mass_by_general_launch_payload_type(mass_step_size_kg, chart_t
     mda.ChartUtils.plot_bar(
         output_df,
         title=f'{chart_title_prefix} Net Payload Mass vs Mass Range by Payload Type',
-        subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
+        subtitle=f'Christopher Kalitin 2026 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
         x_label=f'Payload Mass Range ({mass_suffix})',
         y_label=f'Total Payload Mass ({mass_suffix})',
         output_path=f'examples/outputs/chart/{output_prefix}/{output_name}.png',
@@ -702,7 +702,7 @@ def launches_vs_month_by_orbit(chart_title_prefix, output_prefix, launch_vehicle
     mda.ChartUtils.plot_bar(
         output_df,
         title=f'{chart_title_prefix} Launches vs. Month by Orbit',
-        subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
+        subtitle=f'Christopher Kalitin 2026 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
         x_label='Date',
         y_label='Number of Launches',
         output_path=f'examples/outputs/chart/{output_prefix}/{output_name}.png',
@@ -782,7 +782,7 @@ def launches_vs_month_by_general_launch_payload_type(chart_title_prefix, output_
     mda.ChartUtils.plot_bar(
         output_df,
         title=f'{chart_title_prefix} Launches vs. Month by Payload Type',
-        subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
+        subtitle=f'Christopher Kalitin 2026 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
         x_label='Date',
         y_label='Number of Launches',
         output_path=f'examples/outputs/chart/{output_prefix}/{output_name}.png',
@@ -871,7 +871,7 @@ def launches_vs_month_by_filter(chart_title_prefix, output_prefix, chart_title_s
     mda.ChartUtils.plot_bar(
         output_df,
         title=f'{chart_title_prefix} Launches vs. Month by {chart_title_suffix}',
-        subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
+        subtitle=f'Christopher Kalitin 2026 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
         x_label='Date',
         y_label='Number of Launches',
         output_path=f'examples/outputs/chart/{output_prefix}/{output_name}.png',
@@ -945,7 +945,7 @@ def launches_vs_year_by_orbit(chart_title_prefix, output_prefix, launch_vehicle_
     mda.ChartUtils.plot_bar(
         output_df,
         title=f'{chart_title_prefix} Launches vs. Year by Orbit',
-        subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
+        subtitle=f'Christopher Kalitin 2026 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
         x_label='Year',
         y_label='Number of Launches',
         output_path=f'examples/outputs/chart/{output_prefix}/{output_name}.png',
@@ -1019,7 +1019,7 @@ def launches_vs_year_by_general_launch_payload_type(chart_title_prefix, output_p
     mda.ChartUtils.plot_bar(
         output_df,
         title=f'{chart_title_prefix} Launches vs. Year by Payload Type',
-        subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
+        subtitle=f'Christopher Kalitin 2026 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
         x_label='Year',
         y_label='Number of Launches',
         output_path=f'examples/outputs/chart/{output_prefix}/{output_name}.png',
@@ -1095,7 +1095,7 @@ def launches_vs_year_by_filter(chart_title_prefix, output_prefix, chart_title_su
     mda.ChartUtils.plot_bar(
         output_df,
         title=f'{chart_title_prefix} Launches vs. Year by {chart_title_suffix}',
-        subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
+        subtitle=f'Christopher Kalitin 2026 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
         x_label='Year',
         y_label='Number of Launches',
         output_path=f'examples/outputs/chart/{output_prefix}/{output_name}.png',
@@ -1162,7 +1162,7 @@ def owner_payloads_vs_year_by_program(chart_title_prefix, output_prefix, owners_
     mda.ChartUtils.plot_bar(
         output_df,
         title=f"{chart_title_prefix} Payloads vs Year by Program",
-        subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
+        subtitle=f'Christopher Kalitin 2026 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
         x_label="Year",
         y_label="Number of Payloads",
         output_path=f'examples/outputs/chart/{output_prefix}/{output_name}.png',
@@ -1226,7 +1226,7 @@ def owner_payloads_vs_year_by_category(chart_title_prefix, output_prefix, owners
     mda.ChartUtils.plot_bar(
         output_df,
         title=f"{chart_title_prefix} Payloads vs Year by {category}",
-        subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
+        subtitle=f'Christopher Kalitin 2026 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
         x_label="Year",
         y_label="Number of Payloads",
         output_path=f'examples/outputs/chart/{output_prefix}/{output_name}.png',
@@ -1310,7 +1310,7 @@ def launch_value_vs_date_by_filter_scatter(chart_title_prefix, output_prefix, va
         x_col='Launch_Date',
         y_cols=pivoted_df.columns[1:], # Skip date line? pls fix
         title=f'{chart_title_prefix} Launches {value_title} vs. Date by {series_title}',
-        subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
+        subtitle=f'Christopher Kalitin 2026 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
         x_label='Launch Date',
         y_label=f'{value_title} {x_axis_title_suffix}',
         dot_diameter=10,
@@ -1382,7 +1382,7 @@ def launch_apogee_vs_inclination_by_filter_scatter(chart_title_prefix, output_pr
         x_col='Inc',
         y_cols=pivoted_df.columns,
         title=f'{chart_title_prefix} Launches Apogee vs Inclination by {series_title}',
-        subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
+        subtitle=f'Christopher Kalitin 2026 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
         x_label='Inclination (degrees)',
         y_label='Apogee (km)',
         dot_diameter=10,
@@ -1450,7 +1450,7 @@ def payloads_filtered_vs_year_by_filter(chart_title_prefix, output_prefix, chart
     mda.ChartUtils.plot_bar(
         output_df,
         title=f"{chart_title_prefix} Payloads vs Year by {chart_title_suffix}",
-        subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
+        subtitle=f'Christopher Kalitin 2026 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
         x_label="Year",
         y_label="Number of Payloads",
         output_path=f'examples/outputs/chart/{output_prefix}/{output_name}.png',
@@ -1518,7 +1518,7 @@ def payloads_vs_mass_by_filter(chart_title_prefix, output_prefix, chart_title_su
     mda.ChartUtils.plot_bar(
         output_df,
         title=f'{chart_title_prefix} Payloads vs. Payload Mass by {chart_title_suffix}',
-        subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
+        subtitle=f'Christopher Kalitin 2026 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
         x_label=f'Payload Mass Range ({mass_suffix})',
         y_label='Number of Launches',
         output_path=f'examples/outputs/chart/{output_prefix}/{output_name}.png',
@@ -1624,11 +1624,382 @@ def cumulative_payloads_by_filter_vs_date_since_first_payload(chart_title_prefix
         x_col='Time_Since_First_Payload',
         y_cols=y_columns,
         title=f'{chart_title_prefix} Cumulative Sats vs. Days Since First Launch',
-        subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
+        subtitle=f'Christopher Kalitin 2026 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
         x_label='Days Since First Launch',
         y_label='Cumulative Number of Sats',
         output_path=f'examples/outputs/chart/{output_prefix}/{output_name}.png',
         color_map=color_map,
         line_width=line_width,
         y_axis_type=y_axis_type,
+    )
+
+
+# ---------------------------------------------------------------------------
+# Helpers used by commercial western category charts
+# ---------------------------------------------------------------------------
+
+_SMALL_SAT_MASS_KG = 600
+_RIDESHARE_THRESHOLD = 10  # payloads on same launch to qualify as rideshare
+
+# Small-sat constellations: individually small but part of a deployed constellation
+_LEO_CONSTELLATION_KEYWORDS = [
+    'OneWeb', 'Kuiper', 'Telesat', 'Iridium', 'Globalstar', 'Orbcomm',
+    'Swarm', 'Spire', 'ICEYE', 'Flock', 'H360',
+    'Kineis', 'Kepler', 'Satelog', 'Astrocast', 'Myriota',
+]
+
+_GEO_MEO_CONSTELLATION_KEYWORDS = ['O3b', 'mPOWER']
+
+_CAPSULE_CARGO_KEYWORDS = ['Dragon', 'Cygnus', 'Starliner', 'CST-100', 'Dream Chaser']
+
+COMMERCIAL_WESTERN_CATEGORY_ORDER = [
+    'Starlink',
+    'LEO Constellation',
+    'GEO/MEO Constellation',
+    'Small Sat Rideshare',
+    'Small Sat',
+    'Commercial LEO/SSO/MEO',
+    'Commercial GTO/GEO',
+    'Capsule/Cargo',
+    'High-Energy',
+]
+
+# Priority used when collapsing payload categories to one label per launch (lower = wins).
+# Separate from display order: Capsule/Cargo wins over Small Sat so a Dragon mission
+# carrying cubesat secondaries is classified as Capsule/Cargo, not Small Sat.
+_CATEGORY_PRIORITY = {
+    'Starlink': 0,
+    'Capsule/Cargo': 1,
+    'GEO/MEO Constellation': 2,
+    'LEO Constellation': 3,
+    'High-Energy': 4,
+    'Commercial GTO/GEO': 5,
+    'Small Sat Rideshare': 6,
+    'Commercial LEO/SSO/MEO': 7,
+    'Small Sat': 8,
+}
+
+
+def _derive_orbit_from_apogee(apogee_series, perigee_series=None):
+    """Map apogee (km) to a simple orbit string. Returns a Series of strings."""
+    import numpy as np
+
+    apo = apogee_series.copy()
+    peri = perigee_series if perigee_series is not None else pd.Series([0.0] * len(apo), index=apo.index)
+
+    conditions = [
+        (apo <= 0) | apo.isna(),
+        apo < 2000,
+        (apo >= 2000) & (apo < 35000),
+        (apo >= 35000) & (apo < 42000) & (peri.fillna(0) > 25000),  # circular near GEO
+        (apo >= 35000) & (apo < 42000),                              # elliptical → GTO
+    ]
+    choices = ['Unknown', 'LEO', 'MEO', 'GEO', 'GTO']
+    return pd.Series(np.select(conditions, choices, default='HEO'), index=apo.index)
+
+
+def _load_psatcat_orbit(df):
+    """Merge psatcat UN-registration orbit data into *df* and add Derived_Orbit column."""
+    psatcat = pd.read_csv("./datasets/psatcat.tsv", sep="\t", encoding="utf-8", low_memory=False)
+    psatcat = psatcat.drop(index=0).reset_index(drop=True)
+    psatcat.rename(columns={"#JCAT": "JCAT"}, inplace=True)
+    psatcat["JCAT"] = psatcat["JCAT"].astype(str).str.upper().str.strip()
+    for col in ["UNApogee", "UNPerigee", "DispApo", "DispPeri"]:
+        psatcat[col] = pd.to_numeric(psatcat[col], errors="coerce")
+
+    df = df.merge(psatcat[["JCAT", "UNApogee", "UNPerigee", "DispApo", "DispPeri"]], on="JCAT", how="left")
+    eff_apo  = df["UNApogee"].where(df["UNApogee"].fillna(0) > 0, df["DispApo"])
+    eff_peri = df["UNPerigee"].where(df["UNPerigee"].fillna(0) > 0, df["DispPeri"])
+    df["Derived_Orbit"] = _derive_orbit_from_apogee(eff_apo, eff_peri)
+    return df
+
+
+def _filter_commercial_western(df):
+    """Return commercial western payload rows from a satcat-style dataframe."""
+    return df[
+        (df["Type"].str.strip().str.startswith("P", na=False)) &
+        (~df["Launch_State"].isin(["CN", "RU", "SU"])) &
+        (df["Payload_Class"] == "B")
+    ].copy()
+
+
+def _classify_commercial_western_categories(df, orbit_col='Derived_Orbit'):
+    """Return a copy of *df* with 'Commercial_Western_Category' column.
+
+    Rows must already be filtered to western commercial payloads only.
+
+    Categories (highest priority wins):
+        Starlink > Capsule/Cargo > High-Energy > GEO/MEO Constellation
+        > LEO Constellation > Commercial GTO/GEO > Commercial LEO/SSO/MEO
+        > Small Sat Rideshare > Small Sat
+    """
+    df = df.copy()
+
+    # Default by mass: large payload → Commercial LEO/SSO/MEO, small → Small Sat
+    df['Commercial_Western_Category'] = 'Commercial LEO/SSO/MEO'
+    small_mask = df['Mass'] <= _SMALL_SAT_MASS_KG
+    df.loc[small_mask, 'Commercial_Western_Category'] = 'Small Sat'
+
+    # Orbit-based overrides
+    gto_geo_mask = df[orbit_col].isin(['GTO', 'GEO'])
+    df.loc[gto_geo_mask, 'Commercial_Western_Category'] = 'Commercial GTO/GEO'
+
+    heo_mask = df[orbit_col] == 'HEO'
+    df.loc[heo_mask, 'Commercial_Western_Category'] = 'High-Energy'
+
+    # Small sat rideshare: many small payloads on the same launch
+    small_per_launch = df.loc[small_mask].groupby('Launch_Tag').size()
+    rideshare_tags = set(small_per_launch[small_per_launch > _RIDESHARE_THRESHOLD].index)
+    df.loc[small_mask & df['Launch_Tag'].isin(rideshare_tags), 'Commercial_Western_Category'] = 'Small Sat Rideshare'
+
+    # GEO/MEO constellations (override orbit/size categories)
+    gmc_pattern = '|'.join(_GEO_MEO_CONSTELLATION_KEYWORDS)
+    gmc_mask = (
+        df['Payload_Program'].str.contains(gmc_pattern, case=False, na=False) |
+        df['Payload_Name'].str.contains(gmc_pattern, case=False, na=False)
+    )
+    df.loc[gmc_mask, 'Commercial_Western_Category'] = 'GEO/MEO Constellation'
+
+    # LEO constellations (override orbit/size categories)
+    lc_pattern = '|'.join(_LEO_CONSTELLATION_KEYWORDS)
+    lc_mask = (
+        df['Payload_Program'].str.contains(lc_pattern, case=False, na=False) |
+        df['Payload_Name'].str.contains(lc_pattern, case=False, na=False)
+    )
+    df.loc[lc_mask, 'Commercial_Western_Category'] = 'LEO Constellation'
+
+    # Capsule/Cargo (override constellations)
+    cap_pattern = '|'.join(_CAPSULE_CARGO_KEYWORDS)
+    cap_mask = (
+        df['Payload_Program'].str.contains(cap_pattern, case=False, na=False) |
+        df['Payload_Name'].str.contains(cap_pattern, case=False, na=False)
+    )
+    df.loc[cap_mask, 'Commercial_Western_Category'] = 'Capsule/Cargo'
+
+    # Starlink always wins
+    sl_mask = (
+        df['Payload_Name'].str.contains('Starlink', case=False, na=False) |
+        df['Payload_Program'].str.contains('Starlink', case=False, na=False)
+    )
+    df.loc[sl_mask, 'Commercial_Western_Category'] = 'Starlink'
+
+    return df
+
+
+def _get_classified_cw_satcat(dataset):
+    """Return a satcat dataframe with commercial western payloads classified."""
+    df = _filter_commercial_western(dataset.satcat.df.copy())
+    df = _load_psatcat_orbit(df)
+    return _classify_commercial_western_categories(df)
+
+
+def commercial_western_payload_categories_pie(
+    chart_title_prefix='Commercial Western',
+    output_prefix='commercial_western',
+    start_year=None,
+    end_year=None,
+):
+    """Generate pie charts of commercial western payloads broken down by mission category.
+
+    Produces two charts:
+        - Payload count per category
+        - Total launched mass per category (tonnes)
+
+    Western = Launch_State not in CN / RU / SU.
+    Commercial = Payload_Class == 'B' (Business).
+    Orbit is derived from psatcat UN-registration apogee/perigee.
+
+    Args:
+        chart_title_prefix (str): Prefix for chart titles.
+        output_prefix (str): Prefix for output file names.
+        start_year (int, optional): Start year for filtering data.
+        end_year (int, optional): End year for filtering data.
+    """
+    output_name_count = f"{output_prefix}_payload_category_count_pie"
+    output_name_mass  = f"{output_prefix}_payload_category_mass_pie"
+
+    dataset = mda.McdowellDataset("./datasets")
+    df = _get_classified_cw_satcat(dataset)
+
+    # Optional date range filter
+    if start_year is not None:
+        df = df[df['Launch_Date'].dt.year >= start_year]
+    if end_year is not None:
+        df = df[df['Launch_Date'].dt.year <= end_year]
+
+    count_by_cat = df.groupby('Commercial_Western_Category').size().reindex(COMMERCIAL_WESTERN_CATEGORY_ORDER, fill_value=0)
+    mass_by_cat  = (df.groupby('Commercial_Western_Category')['Mass'].sum() / 1000).reindex(COMMERCIAL_WESTERN_CATEGORY_ORDER, fill_value=0)
+
+    count_by_cat = count_by_cat[count_by_cat > 0]
+    mass_by_cat  = mass_by_cat[mass_by_cat > 0]
+
+    mda.ChartUtils.log_and_save_df("csv", output_name_count, output_prefix,
+                                   count_by_cat.rename("Count").reset_index())
+    mda.ChartUtils.log_and_save_df("csv", output_name_mass, output_prefix,
+                                   mass_by_cat.rename("Mass_t").reset_index())
+
+    color_map = mda.ChartUtils.commercial_western_category_color_map
+
+    mda.ChartUtils.plot_pie(
+        values=count_by_cat.values,
+        names=count_by_cat.index.tolist(),
+        title=f'{chart_title_prefix} Payload Count by Category',
+        subtitle=f'Christopher Kalitin 2026 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
+        output_path=f'examples/outputs/chart/{output_prefix}/{output_name_count}.png',
+        color_map=color_map,
+    )
+
+    mda.ChartUtils.plot_pie(
+        values=mass_by_cat.values,
+        names=mass_by_cat.index.tolist(),
+        title=f'{chart_title_prefix} Total Launched Mass by Category (tonnes)',
+        subtitle=f'Christopher Kalitin 2026 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
+        output_path=f'examples/outputs/chart/{output_prefix}/{output_name_mass}.png',
+        color_map=color_map,
+    )
+
+
+def _dominant_launch_category(satcat_df):
+    """Assign one commercial western category to each launch.
+
+    Uses priority ordering (Starlink > Capsule/Cargo > ...) but detects
+    rideshare launches by program-diversity so mixed Transporter missions
+    are classified as 'Small Sat Rideshare' rather than 'LEO Constellation'.
+
+    A launch is 'Small Sat Rideshare' if it has > _RIDESHARE_THRESHOLD small
+    commercial western payloads from at least 5 distinct Payload_Programs.
+    """
+    _RIDESHARE_PROGRAM_THRESHOLD = 5
+
+    small_mask = satcat_df['Mass'] <= _SMALL_SAT_MASS_KG
+    small_df = satcat_df[small_mask]
+
+    # Unique program count per launch among small payloads
+    unique_programs = small_df.groupby('Launch_Tag')['Payload_Program'].nunique()
+    small_count = small_df.groupby('Launch_Tag').size()
+
+    rideshare_launch_tags = set(
+        small_count[
+            (small_count > _RIDESHARE_THRESHOLD) &
+            (unique_programs >= _RIDESHARE_PROGRAM_THRESHOLD)
+        ].index
+    )
+
+    def dominant(group):
+        tag = group.name
+        if tag in rideshare_launch_tags:
+            return 'Small Sat Rideshare'
+        return min(group, key=lambda c: _CATEGORY_PRIORITY.get(c, 99))
+
+    return (
+        satcat_df.groupby('Launch_Tag')['Commercial_Western_Category']
+        .apply(dominant)
+        .reset_index()
+        .rename(columns={'Commercial_Western_Category': 'Launch_Category'})
+    )
+
+
+def commercial_western_launches_vs_mass_by_category(
+    chart_title_prefix='Commercial Western',
+    output_prefix='commercial_western',
+    mass_step_size_kg=1000,
+    max_display_mass_kg=20000,
+    mass_suffix='t',
+    mass_divisor=1000,
+    start_year=None,
+    end_year=None,
+):
+    """Generate a bar chart: launches vs payload mass range by commercial western category.
+
+    Each launch is assigned one category. Rideshare is detected by program
+    diversity so Transporter-style missions appear as 'Small Sat Rideshare'
+    even when they also carry constellation satellites.
+
+    X-axis = total payload mass range, Y-axis = launch count, series = category.
+
+    Args:
+        chart_title_prefix (str): Prefix for chart titles.
+        output_prefix (str): Prefix for output file names.
+        mass_step_size_kg (int): Width of each mass bin in kg. Default 1000 (1 tonne).
+        max_display_mass_kg (int): Cap on displayed mass range. Default 20000 (20 t).
+        mass_suffix (str): Unit label suffix. Default 't'.
+        mass_divisor (int): Divisor to convert kg to display units. Default 1000.
+        start_year (int, optional): Inclusive start year filter. Default None (all years).
+        end_year (int, optional): Inclusive end year filter. Default None (all years).
+    """
+    output_name = f"{output_prefix}_launches_vs_mass_by_category"
+
+    dataset = mda.McdowellDataset("./datasets")
+
+    satcat_df = _get_classified_cw_satcat(dataset)
+    launch_category = _dominant_launch_category(satcat_df)
+
+    # Compute commercial western payload mass from satcat (not total launch mass).
+    # Using total launch mass caused non-commercial primary payloads (SAOCOM-1B, Orion)
+    # to inflate the mass when only tiny commercial rideshare sats were the CW payload.
+    _cap_pattern = '|'.join(_CAPSULE_CARGO_KEYWORDS)
+    cap_name_mask = (
+        satcat_df['Name'].astype(str).str.strip().str.contains(_cap_pattern, case=False, na=False) |
+        satcat_df['Payload_Name'].astype(str).str.contains(_cap_pattern, case=False, na=False) |
+        satcat_df['Payload_Program'].astype(str).str.contains(_cap_pattern, case=False, na=False)
+    )
+    # Carrier vessels (Cygnus): Mass = cargo only, DryMass = spacecraft structure → total = Mass + DryMass.
+    # Capsules (Dragon): Mass = total launch mass; DryMass > Mass from McDowell convention → use Mass.
+    # Distinguish by DryMass/Mass ratio: carriers have DryMass > 2 × Mass.
+    # TotMass = full spacecraft at launch; Mass = cargo/pressurized payload only for cargo ships.
+    # Use TotMass for capsule/cargo entries where TotMass > Mass (i.e. spacecraft ≠ just cargo).
+    satcat_df = satcat_df.copy()
+    satcat_df['Effective_Mass'] = satcat_df['Mass'].copy()
+    capsule_tot_mask = cap_name_mask & (satcat_df['TotMass'] > satcat_df['Mass'])
+    satcat_df.loc[capsule_tot_mask, 'Effective_Mass'] = satcat_df.loc[capsule_tot_mask, 'TotMass']
+    cw_mass_by_launch = satcat_df.groupby('Launch_Tag')['Effective_Mass'].sum()
+
+    # Join with launch dataset for context columns
+    launch_df = dataset.launch.df[['Launch_Tag', 'Launch_Date', 'LV_Type', 'Mission']].copy()
+    launch_df = launch_df.merge(launch_category, on='Launch_Tag', how='inner')
+    launch_df['Payload_Mass'] = launch_df['Launch_Tag'].map(cw_mass_by_launch).fillna(0)
+
+    launch_df = launch_df[launch_df['Payload_Mass'] > 0].sort_values('Launch_Date')
+
+    # Optional date range filter
+    if start_year is not None:
+        launch_df = launch_df[launch_df['Launch_Date'].dt.year >= start_year]
+    if end_year is not None:
+        launch_df = launch_df[launch_df['Launch_Date'].dt.year <= end_year]
+
+    # Save the per-launch raw dataframe (all launches, not just display range)
+    mda.ChartUtils.log_and_save_df("dataframe", output_name, output_prefix,
+                                   launch_df[['Launch_Tag', 'Launch_Date', 'LV_Type', 'Mission',
+                                              'Payload_Mass', 'Launch_Category']])
+
+    # Clip to display range (very heavy Starship launches would dominate otherwise)
+    launch_df = launch_df[launch_df['Payload_Mass'] <= max_display_mass_kg]
+
+    bins = list(range(0, max_display_mass_kg + mass_step_size_kg, mass_step_size_kg))
+    mass_labels = [f"{int(bins[i]/mass_divisor)}-{int(bins[i+1]/mass_divisor)}{mass_suffix}"
+                   for i in range(len(bins) - 1)]
+
+    output_dict = {}
+    for cat in COMMERCIAL_WESTERN_CATEGORY_ORDER:
+        cat_df = launch_df[launch_df['Launch_Category'] == cat]
+        binned = pd.cut(cat_df['Payload_Mass'], bins=bins, labels=mass_labels, include_lowest=True)
+        output_dict[cat] = binned.value_counts().reindex(mass_labels, fill_value=0)
+
+    output_df = pd.DataFrame(output_dict, index=mass_labels)
+
+    # Trim trailing all-zero rows
+    last_nonzero = (output_df.sum(axis=1) > 0).cumsum()
+    output_df = output_df.loc[last_nonzero > 0]
+
+    mda.ChartUtils.log_and_save_df("csv", output_name, output_prefix, output_df)
+
+    mda.ChartUtils.plot_bar(
+        output_df,
+        title=f'{chart_title_prefix} Launches vs. Payload Mass by Category',
+        subtitle=f'Christopher Kalitin 2026 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
+        x_label=f'Payload Mass Range ({mass_suffix})',
+        y_label='Number of Launches',
+        output_path=f'examples/outputs/chart/{output_prefix}/{output_name}.png',
+        color_map=mda.ChartUtils.commercial_western_category_color_map,
+        bargap=0.1,
     )

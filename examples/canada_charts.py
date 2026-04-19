@@ -40,7 +40,7 @@ def simple_payload_category_per_year():
     mda.ChartUtils.plot_bar(
         output_df,
         title="Canada Payloads vs Year by Simple Payload Category",
-        subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
+        subtitle=f'Christopher Kalitin 2026 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
         x_label="Year",
         y_label="Number of Payloads",
         output_path=f'examples/outputs/chart/canada/{output_name}.png',
@@ -102,7 +102,7 @@ def com_gov_mil_per_year():
     mda.ChartUtils.plot_bar(
         output_df,
         title="Canada Payloads vs Year by Operator Type",
-        subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
+        subtitle=f'Christopher Kalitin 2026 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
         x_label="Year",
         y_label="Number of Payloads",
         output_path=f'examples/outputs/chart/canada/{output_name}.png',

@@ -69,9 +69,12 @@ class Satcat:
         self.df.rename(columns={"LDate": "Launch_Date", "SDate": "Separation_Date", "DDate": "Decay_Date", "ODate": "Orbit_Canonical_Date"}, inplace=True)
 
         # Convert numeric fields to int or float and handle NaN
-        self.df["Mass"] = pd.to_numeric(self.df["Mass"], errors="coerce").fillna(0)
-        self.df["DryMass"] = pd.to_numeric(self.df["DryMass"], errors="coerce").fillna(0)
-        self.df["TotMass"] = pd.to_numeric(self.df["TotMass"], errors="coerce").fillna(0)
+        # Strip uncertainty marker '?' before conversion so values like "10028 ?" parse correctly
+        for col in ["Mass", "DryMass", "TotMass"]:
+            self.df[col] = pd.to_numeric(
+                self.df[col].astype(str).str.replace("?", "", regex=False).str.strip(),
+                errors="coerce"
+            ).fillna(0)
         self.df["Length"] = pd.to_numeric(self.df["Length"], errors="coerce").fillna(0)
         self.df["Diameter"] = pd.to_numeric(self.df["Diameter"], errors="coerce").fillna(0)
         self.df["Span"] = pd.to_numeric(self.df["Span"], errors="coerce").fillna(0)

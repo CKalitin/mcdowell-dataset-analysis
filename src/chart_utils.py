@@ -51,6 +51,18 @@ class ChartUtils:
         "Government": "#008F11",  # C (Civil)
         "Military": "#ff0000",  # D (Defense)
     }
+
+    commercial_western_category_color_map = {
+        'Starlink': "#0b5394",
+        'LEO Constellation': "#0563c1",
+        'GEO/MEO Constellation': "#3d85c6",
+        'Small Sat Rideshare': "#00d6b3",
+        'Small Sat': "#18c544",
+        'Commercial LEO/SSO/MEO': "#ffca3f",
+        'Commercial GTO/GEO': "#ed7d31",
+        'Capsule/Cargo': "#cc0000",
+        'High-Energy': "#3c4043",
+    }
     
     # Naming scheme: color_sequence_{number}_{length}
     color_sequence_1_10 = [
@@ -693,6 +705,52 @@ class ChartUtils:
         
         ChartUtils.log_and_save_df("png", os.path.basename(output_path))
     
+    def plot_pie(values, names, title, subtitle, output_path, color_map=None):
+        """
+        Create a pie chart using Plotly Express.
+        Args:
+            values (list or array): Numeric values for each slice.
+            names (list or array): Labels for each slice.
+            title (string): Chart title.
+            subtitle (string): Chart subtitle.
+            output_path (string): Full path including filename to save the plot.
+            color_map (dict or list, optional): Color map dict or color sequence list.
+        """
+        fig = px.pie(
+            names=names,
+            values=values,
+            title=f'<b>{title}</b><br><sup>{subtitle}</sup>',
+            color=names,
+            color_discrete_map=color_map if isinstance(color_map, dict) else None,
+            color_discrete_sequence=color_map if isinstance(color_map, list) else None,
+        )
+
+        fig.update_traces(
+            textposition='inside',
+            textinfo='percent+label',
+            textfont=dict(size=16, family="Arial, sans-serif"),
+            insidetextorientation='radial',
+        )
+
+        fig.update_layout(
+            font=dict(family='Arial, sans-serif', size=20, color="#000000"),
+            title=dict(font=dict(size=40, family='Arial, sans-serif', color="#000000"), x=0.025, xanchor="left"),
+            paper_bgcolor="white",
+            showlegend=True,
+            legend=dict(
+                font=dict(size=24, family="Arial, sans-serif"),
+                bordercolor="white",
+                borderwidth=1,
+                bgcolor="white",
+                title=dict(text=""),
+            ),
+        )
+
+        os.makedirs(os.path.dirname(output_path), exist_ok=True)
+        pio.write_image(fig, output_path, format='png', width=1280, height=720)
+
+        ChartUtils.log_and_save_df("png", os.path.basename(output_path))
+
     def log_and_save_df(log_type, output_name, output_prefix=None, save_dataframe=None):
         if log_type == "dataframe":
             os.makedirs(f'examples/outputs/raw_dataframes/{output_prefix}', exist_ok=True)

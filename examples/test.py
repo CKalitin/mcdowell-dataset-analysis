@@ -73,7 +73,7 @@ def launches_vs_mass_LEO_excl_russia_china(mass_step_size_kg, chart_title_prefix
     mda.ChartUtils.plot_bar(
         output_df,
         title=f'{chart_title_prefix} Launches to LEO (Excl. Russia/China) vs. Payload Mass',
-        subtitle=f'Christopher Kalitin 2025 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
+        subtitle=f'Christopher Kalitin 2026 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}',
         x_label=f'Payload Mass Range ({mass_suffix})',
         y_label='Number of Launches',
         output_path=f'examples/outputs/chart/{output_prefix}/{output_name}.png',
