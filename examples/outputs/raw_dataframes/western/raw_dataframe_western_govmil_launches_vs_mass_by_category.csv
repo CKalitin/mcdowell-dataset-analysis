@@ -1,0 +1,246 @@
+Launch_Tag,Launch_Date,LV_Type,Mission,Payload_Mass,Launch_Category
+2020-005,2020-01-16,Ariane 5ECA+,Eutelsat Konnect/GSAT-30,3357.0,Government non-LEO
+2020-007,2020-01-31,Electron,NROL-151,150.0,Military LEO
+2020-009,2020-02-09,H-IIA 202,IGS O-7,1500.0,Military LEO
+2020-010,2020-02-10,Atlas V 411,Solar Orbiter,1800.0,Government non-LEO
+2020-011,2020-02-15,Antares 230+,Cygnus NG-13,120.0,Military LEO
+2020-013,2020-02-18,Ariane 5ECA+,JCSAT-17/GEO-Kompsat 2B,3379.0,Government non-LEO
+2020-016,2020-03-07,Falcon 9,Dragon C112.3,1.0,Government LEO
+2020-022,2020-03-26,Atlas V 551,AEHF 6,6220.0,Military non-LEO
+2020-024,2020-04-22,Qased,-,15.0,Military LEO
+2020-029,2020-05-17,Atlas V 501,X-37B No. 1?,5280.0,Military LEO
+2020-030,2020-05-20,H-IIB,HTV 9,6225.0,ISS
+2020-037,2020-06-13,Electron,NRO/ANDESITE/M2PF,156.5,Military LEO
+2020-041,2020-06-30,Falcon 9,GPS III SV-03,4400.0,Military non-LEO
+2020-044,2020-07-06,Shavit 2,'Ofeq-16,300.0,Military LEO
+2020-046,2020-07-15,Minotaur IV,NROL-129,1000.0,Military LEO
+2020-047,2020-07-19,H-IIA 202,Hope Probe,1350.0,Government non-LEO
+2020-048,2020-07-20,Falcon 9,ANASIS-2,5600.0,Military non-LEO
+2020-052,2020-07-30,Atlas V 541,Perseverance,1025.0,Government non-LEO
+2020-059,2020-08-30,Falcon 9,SAOCOM-1B,3050.0,Government LEO
+2020-061,2020-09-03,Vega,SSMS,155.0,Government LEO
+2020-069,2020-10-03,Antares 230+,Cygnus NG-14,18.6,Military LEO
+2020-078,2020-11-05,Falcon 9,GPS III SV-04,4400.0,Military non-LEO
+2020-081,2020-11-07,PSLV-DL,PSLV Rideshare 17,628.0,Government LEO
+2020-083,2020-11-13,Atlas V 531,TOPAZ?,7000.0,Military non-LEO
+2020-085,2020-11-20,Electron,Electron 16 Rideshare,1.0,Government LEO
+2020-086,2020-11-21,Falcon 9,Sentinel-6,1192.0,Government LEO
+2020-089,2020-11-29,H-IIA 202,Deta Chukei Eisei 1,3800.0,Military non-LEO
+2020-090,2020-12-02,Soyuz-ST-A,FalconEye 2,1197.0,Military LEO
+2020-095,2020-12-11,Delta 4H,ORION 10?,5000.0,Military non-LEO
+2020-099,2020-12-17,PSLV-XL,GSAT-12R,1410.0,Government non-LEO
+2020-101,2020-12-19,Falcon 9,NROL-108,4000.0,Military LEO
+2020-104,2020-12-29,Soyuz-ST-A,CSO 2,3562.0,Military LEO
+2021-002,2021-01-17,LauncherOne,-,30.0,Government LEO
+2021-006,2021-01-24,Falcon 9,Transporter-1,31.1,Government LEO
+2021-013,2021-02-20,Antares 230+,Cygnus NG-15,76.768,Government LEO
+2021-015,2021-02-28,PSLV-DL,PSLV Rideshare 18,653.75,Government LEO
+2021-023,2021-03-22,Electron,Global-5/Pathstone,24.0,Government LEO
+2021-032,2021-04-26,Delta 4H,Improved CRYSTAL?,20000.0,Military LEO
+2021-034,2021-04-29,Vega,Pleiades-Neo 3,920.0,Government LEO
+2021-042,2021-05-18,Atlas V 421,SBIRS GEO-5,4540.0,Military non-LEO
+2021-048,2021-06-03,Falcon 9,Dragon C209,7.0,Government LEO
+2021-051,2021-06-13,Pegasus XL,TacRL-2,250.0,Military LEO
+2021-052,2021-06-15,Minotaur I,NROL-111,450.0,Military LEO
+2021-054,2021-06-17,Falcon 9,GPS III SV05,4400.0,Military non-LEO
+2021-058,2021-06-30,LauncherOne,Tubular Bells I,26.0,Military LEO
+2021-059,2021-06-30,Falcon 9,Transporter-2,131.0,Military LEO
+2021-068,2021-07-29,Electron,Monolith,20.0,Military LEO
+2021-073,2021-08-17,Vega,Pleiades-Neo 4,927.0,Government LEO
+2021-078,2021-08-29,Falcon 9,Dragon C208.2,17.54,Government LEO
+2021-088,2021-09-27,Atlas V 401,Landsat 9,2730.0,Government LEO
+2021-093,2021-10-16,Atlas V 401,Lucy,1550.0,Government non-LEO
+2021-095,2021-10-24,Ariane 5ECA+,SES-17/Syracuse 4A,3852.0,Military non-LEO
+2021-096,2021-10-26,H-IIA 202,QZSS 1R,4020.0,Government non-LEO
+2021-102,2021-11-09,Epsilon,-,229.0,Government LEO
+2021-105,2021-11-16,Vega,CERES 1-3,1338.0,Military LEO
+2021-108,2021-11-20,Astra Rocket 3.3,STP-27AD2,1.0,Military LEO
+2021-110,2021-11-24,Falcon 9,DART,610.0,Government non-LEO
+2021-116,2021-12-05,Soyuz-ST-B,GalileoSat-27/28,1466.0,Government non-LEO
+2021-118,2021-12-07,Atlas V 551,STPSAT-6/LDPE-1,1525.0,Military non-LEO
+2021-121,2021-12-09,Falcon 9,IXPE,330.0,Government LEO
+2021-127,2021-12-21,Falcon 9,Dragon C209.2,24.5,Military LEO
+2021-130,2021-12-25,Ariane 5ECA+,JWST,6161.0,Government non-LEO
+2022-002,2022-01-13,Falcon 9,Transporter-3,1416.75,Military LEO
+2022-003,2022-01-13,LauncherOne,Above The Clouds,18.0,Government LEO
+2022-006,2022-01-21,Atlas V 511,GSSAP 5/6,1000.0,Military LEO
+2022-008,2022-01-31,Falcon 9,COSMO-Skymed SG FM2,2205.0,Military LEO
+2022-009,2022-02-02,Falcon 9,CRYSTAL Block 5?,10000.0,Military LEO
+2022-013,2022-02-14,PSLV-XL,RISAT-1A,1735.6,Government LEO
+2022-015,2022-02-19,Antares 230+,Cygnus NG-17,16.0,Government LEO
+2022-021,2022-03-01,Atlas V 541,GOES T,5209.0,Government non-LEO
+2022-024,2022-03-08,Qased,-,15.0,Military LEO
+2022-026,2022-03-15,Astra Rocket 3.3,Spaceflight Astra 1,1.0,Government LEO
+2022-033,2022-04-01,Falcon 9,Transporter-4,940.0,Government LEO
+2022-040,2022-04-17,Falcon 9,INTRUDER,1000.0,Military LEO
+2022-057,2022-05-25,Falcon 9,Transporter-5,211.8,Military LEO
+2022-061,2022-06-08,Falcon 9,Nilesat 301,3938.0,Government non-LEO
+2022-063,2022-06-18,Falcon 9,SARah-1,4000.0,Military LEO
+2022-064,2022-06-19,Falcon 9,Globalstar FM15,1200.0,Military LEO
+2022-065,2022-06-21,Nuri,-,1485.0,Government LEO
+2022-072,2022-06-30,PSLV,DS-EO/POEM,573.0,Military LEO
+2022-073,2022-07-01,Atlas V 541,WFOV,3600.0,Military non-LEO
+2022-074,2022-07-02,LauncherOne,Straight Up,78.4,Military LEO
+2022-079,2022-07-13,Electron,NROL-162,100.0,Military LEO
+2022-080,2022-07-13,Vega C,LARES 2,309.0,Government non-LEO
+2022-081,2022-07-15,Falcon 9,Dragon C208.3,18.0,Government LEO
+2022-094,2022-08-04,Falcon 9,KPLO,678.0,Government non-LEO
+2022-091,2022-08-04,Electron,NROL-199,100.0,Military LEO
+2022-092,2022-08-04,Atlas V 421,SBIRS GEO-6,4500.0,Military non-LEO
+2022-117,2022-09-24,Delta 4H,Improved CRYSTAL?,20000.0,Military LEO
+2022-122,2022-10-01,Firefly Alpha,-,7.75,Government LEO
+2022-144,2022-11-01,Falcon Heavy,LDPE-2,2200.0,Military non-LEO
+2022-147,2022-11-04,Electron,MATS,54.0,Government LEO
+2022-149,2022-11-07,Antares 230+,Cygnus NG-18,5.0,Government LEO
+2022-150,2022-11-10,Atlas V 401,JPSS-2/LOFTID,2930.0,Government LEO
+2022-156,2022-11-16,SLS Block 1,-,10387.0,Government non-LEO
+2022-158,2022-11-26,PSLV-XL,PSLV Rideshare 19,1135.0,Government LEO
+2022-159,2022-11-26,Falcon 9,Dragon C211,33.6,Government LEO
+2022-168,2022-12-11,Falcon 9,Hakuto-R M1,14.0,Government non-LEO
+2022-170,2022-12-13,Ariane 5ECA+,Galaxy 35/36/MTG-I1,3760.0,Government non-LEO
+2022-173,2022-12-16,Falcon 9,SWOT,2200.0,Government LEO
+2023-001,2023-01-03,Falcon 9,Transporter-6,34.172,Government LEO
+2023-008,2023-01-15,Falcon Heavy,CBAS-2/LDPE-3A,3700.0,Military non-LEO
+2023-009,2023-01-18,Falcon 9,GPS III SV06,4352.0,Military non-LEO
+2023-012,2023-01-26,H-IIA 202,IGS R-7,1500.0,Military LEO
+2023-019,2023-02-10,SSLV,EOS-07,165.0,Government LEO
+2023-033,2023-03-15,Falcon 9,Dragon C209.3,10.0,Government LEO
+2023-044,2023-03-28,Shavit 2,'Ofeq-13,300.0,Military LEO
+2023-050,2023-04-02,Falcon 9,SDA-0A,4000.0,Military LEO
+2023-053,2023-04-14,Ariane 5ECA+,JUICE,5963.0,Government non-LEO
+2023-054,2023-04-15,Falcon 9,Transporter-7,893.1,Government LEO
+2023-057,2023-04-22,PSLV,TeLEOS-2,66.0,Government LEO
+2023-062,2023-05-08,Electron,Tropics SV05/SV06,8.0,Government LEO
+2023-072,2023-05-25,Nuri,-,210.0,Government LEO
+2023-073,2023-05-26,Electron,Tropics SV03/SV07,8.0,Government LEO
+2023-076,2023-05-29,GSLV Mk II,IRNSS-1J,2232.0,Government non-LEO
+2023-080,2023-06-05,Falcon 9,Dragon C208.4,22.0,Government LEO
+2023-084,2023-06-12,Falcon 9,Transporter-8,858.75,Military LEO
+2023-089,2023-06-22,Delta 4H,ORION 11?,5000.0,Military non-LEO
+2023-092,2023-07-01,Falcon 9,Euclid,1921.0,Government non-LEO
+2023-093,2023-07-05,Ariane 5ECA+,Heinrich Hertz/Syracuse,6980.0,Military non-LEO
+2023-098,2023-07-14,LVM3,Chandrayaan-3,3869.0,Government non-LEO
+2023-100,2023-07-18,Electron,Electron 39 Rideshare,48.0,Government LEO
+2023-109,2023-07-30,PSLV,DS-SAR,406.5,Military LEO
+2023-132,2023-09-02,PSLV-XL,Aditya-L1,1480.0,Government non-LEO
+2023-133,2023-09-02,Falcon 9,SDA-0B,4900.0,Military LEO
+2023-137,2023-09-06,H-IIA 202,XRISM/SLIM,3400.0,Government LEO
+2023-140,2023-09-10,Atlas V 551,SILENT BARKER,3600.0,Military non-LEO
+2023-142,2023-09-15,Firefly Alpha,-,100.0,Military LEO
+2023-150,2023-09-27,Qased,-,15.0,Military LEO
+2023-155,2023-10-09,Vega,THEOS-2/TRITON,695.0,Government LEO
+2023-157,2023-10-13,Falcon Heavy,Psyche,2608.0,Government non-LEO
+2023-173,2023-11-10,Falcon 9,Dragon C211.2,6.0,Government LEO
+2023-174,2023-11-11,Falcon 9,Transporter-9,164.375,Military LEO
+2023-179,2023-11-21,Cheonlima-1,-,200.0,Military LEO
+2023-185,2023-12-01,Falcon 9,Korea 425,877.9,Military LEO
+2023-204,2023-12-24,Falcon 9,SARah-2/3,3600.0,Military LEO
+2023-210,2023-12-29,Falcon Heavy,X-37B No. 2/USSF-52,5000.0,Military LEO
+2024-001,2024-01-01,PSLV-DL,XPoSAT,519.0,Government LEO
+2024-010,2024-01-12,H-IIA 202,IGS O-8,1500.0,Military LEO
+2024-015,2024-01-20,Qaem-100,-,50.0,Military LEO
+2024-018,2024-01-28,Simorgh,Mehda,42.0,Government LEO
+2024-025,2024-02-08,Falcon 9,PACE,1700.0,Government LEO
+2024-028,2024-02-14,Falcon 9,HBTSS/SDA-0C,4000.0,Military LEO
+2024-032,2024-02-17,H3-22S,VEP-4,2900.0,Government LEO
+2024-033,2024-02-17,GSLV Mk II,INSAT-2DS,2275.0,Government non-LEO
+2024-043,2024-03-04,Falcon 9,Transporter-10,405.6,Government LEO
+2024-050,2024-03-19,Falcon 9,Starlink Group 7-16,1460.0,Military LEO
+2024-054,2024-03-21,Falcon 9,Dragon C209.4,49.0,Government LEO
+2024-053,2024-03-21,Electron,NROL-123,130.0,Military LEO
+2024-066,2024-04-07,Falcon 9,Bandwagon-1,800.0,Military LEO
+2024-067,2024-04-09,Delta 4H,ORION 12?,5000.0,Military non-LEO
+2024-070,2024-04-11,Falcon 9,USSF-62,1200.0,Military LEO
+2024-077,2024-04-23,Electron,Neonsat-1,116.1,Government LEO
+2024-079,2024-04-28,Falcon 9,Galileo L12,1466.0,Government non-LEO
+2024-096,2024-05-22,Falcon 9,NRO Starshield A1,15750.0,Military LEO
+2024-099,2024-05-25,Electron,PREFIRE-1,10.0,Government LEO
+2024-101,2024-05-28,Falcon 9,EarthCARE,2200.0,Government LEO
+2024-108,2024-06-05,Electron,PREFIRE-2,10.0,Government LEO
+2024-119,2024-06-25,Falcon Heavy,GOES U,5000.0,Government non-LEO
+2024-121,2024-06-29,Falcon 9,NRO Starshield A2,15750.0,Military LEO
+2024-123,2024-07-01,H3-22S,ALOS 4,2900.0,Government LEO
+2024-125,2024-07-04,Firefly Alpha,VCLS Demo-2FB,47.7,Government LEO
+2024-128,2024-07-09,Ariane 62,Cubesats,1631.0,Government LEO
+2024-134,2024-07-30,Atlas V 551,USSF-51,7300.0,Military non-LEO
+2024-139,2024-08-04,Falcon 9,Cygnus NG-21,15.0,Government LEO
+2024-147,2024-08-16,SSLV,EOS-08,176.2,Government LEO
+2024-149,2024-08-16,Falcon 9,Transporter-11,263.0,Government LEO
+2024-157,2024-09-05,Vega,Sentinel-2C,1143.0,Government LEO
+2024-160,2024-09-06,Falcon 9,NRO Starshield A3,15750.0,Military LEO
+2024-165,2024-09-14,Qaem-100,-,60.0,Military LEO
+2024-167,2024-09-17,Falcon 9,Galileo L13,1466.0,Government non-LEO
+2024-176,2024-09-26,H-IIA 202,IGS O-9,1500.0,Military LEO
+2024-180,2024-10-07,Falcon 9,Hera,1081.0,Government non-LEO
+2024-182,2024-10-14,Falcon Heavy,Europa Clipper,5700.0,Government non-LEO
+2024-192,2024-10-24,Falcon 9,NRO Starshield A4,13600.0,Military LEO
+2024-198,2024-11-04,H3-22S,DSN 3,5000.0,Military non-LEO
+2024-200,2024-11-05,Falcon 9,Dragon C208.5,13.0,Government LEO
+2024-212,2024-11-17,Falcon 9,Optus X,4000.0,Military non-LEO
+2024-214,2024-11-18,Falcon 9,GSAT-20,4700.0,Government non-LEO
+2024-225,2024-11-30,Falcon 9,NRO St B2/NRO PA05,1600.0,Military LEO
+2024-235,2024-12-05,Vega C,Sentinel-1C,2157.0,Government LEO
+2024-233,2024-12-05,PSLV-XL,PROBA-3,540.0,Government non-LEO
+2024-236,2024-12-06,Simorgh,-,310.0,Military LEO
+2024-242,2024-12-17,Falcon 9,RRT-1,4352.0,Military non-LEO
+2024-243,2024-12-17,Falcon 9,NRO Starshield A5,17600.0,Military LEO
+2024-247,2024-12-21,Falcon 9,Bandwagon-2,804.0,Military LEO
+2024-253,2024-12-30,PSLV,SPADEX,490.0,Government LEO
+2025-005,2025-01-10,Falcon 9,NRO Starshield A6,17600.0,Military LEO
+2025-009,2025-01-14,Falcon 9,Transporter-12,930.5,Government LEO
+2025-014,2025-01-21,Falcon 9,Starlink Group 13-1,1600.0,Military LEO
+2025-020,2025-01-29,GSLV Mk II,IRNSS-1K?,2232.0,Government non-LEO
+2025-021,2025-01-30,Falcon 9,Spainsat NG-1,6100.0,Military non-LEO
+2025-023,2025-02-02,H3-22S,QZS 6,4900.0,Government non-LEO
+2025-038,2025-02-27,Falcon 9,IM-2/Odin/LTB/CGEO-1,210.0,Government non-LEO
+2025-044,2025-03-06,Ariane 62,CSO 3,3562.0,Military LEO
+2025-047,2025-03-12,Falcon 9,SPHEREx,758.0,Government LEO
+2025-052,2025-03-15,Falcon 9,Transporter-13,367.75,Government LEO
+2025-058,2025-03-21,Falcon 9,NRO Starshield A7,8800.0,Military LEO
+2025-060,2025-03-24,Falcon 9,INTRUDER?,1000.0,Military LEO
+2025-074,2025-04-12,Falcon 9,NRO Starshield A8,17600.0,Military LEO
+2025-077,2025-04-16,Minotaur IV,NROL-174 Asterion,500.0,Military LEO
+2025-079,2025-04-20,Falcon 9,NRO Starshield A9,17600.0,Military LEO
+2025-081,2025-04-22,Falcon 9,Bandwagon-3,800.0,Military LEO
+2025-090,2025-04-29,Vega C,Biomass,1131.0,Government LEO
+2025-116,2025-05-30,Falcon 9,GPS III SV08,4352.0,Military non-LEO
+2025-135,2025-06-23,Falcon 9,Transporter-14,567.8,Government LEO
+2025-141,2025-06-28,H-IIA 202,GOSAT-GW,2900.0,Government LEO
+2025-143,2025-07-01,Falcon 9,MTG-S1,3800.0,Government non-LEO
+2025-148,2025-07-13,Falcon 9,Dror-1,4500.0,Government non-LEO
+2025-154,2025-07-23,Falcon 9,TRACERS,655.0,Government LEO
+2025-156,2025-07-26,Vega C,CO3D/Microcarb,1320.0,Government LEO
+2025-163,2025-07-30,GSLV Mk II,NISAR,2393.0,Government LEO
+2025-165,2025-07-31,Falcon 9,Starlink Group 13-4,1600.0,Military LEO
+2025-172,2025-08-13,Ariane 62,METOP-SG A1,4040.0,Government LEO
+2025-173,2025-08-13,Vulcan Centaur VC4S,NTS-3,1850.0,Military non-LEO
+2025-183,2025-08-22,Falcon 9,X-37B No. 1/USSF-36,5020.0,Military LEO
+2025-193,2025-09-02,Shavit 2,'Ofeq-19,300.0,Military LEO
+2025-203,2025-09-10,Falcon 9,Tranche 1 TL-B,6300.0,Military LEO
+2025-213,2025-09-22,Falcon 9,NRO Starshield A10,6400.0,Military LEO
+2025-215,2025-09-24,Falcon 9,IMAP,1517.0,Government non-LEO
+2025-230,2025-10-15,Falcon 9,Tranche 1 TL-C,8400.0,Military LEO
+2025-239,2025-10-24,Falcon 9,Spainsat NG-II,6100.0,Military non-LEO
+2025-241,2025-10-26,H3-24W,HTV-X1,10010.0,ISS
+2025-248,2025-11-02,Falcon 9,Bandwagon-4,848.0,Military LEO
+2025-249,2025-11-02,LVM3,GSAT-7R,4400.0,Military non-LEO
+2025-251,2025-11-04,Ariane 62,Sentinel-1D,2157.0,Government LEO
+2025-260,2025-11-13,New Glenn 7x2,-,1070.0,Government non-LEO
+2025-264,2025-11-17,Falcon 9,Sentinel-6B,1140.0,Government LEO
+2025-274,2025-11-26,Nuri,-,45.9,Government LEO
+2025-276,2025-11-28,Falcon 9,Transporter-15,645.5,Government LEO
+2025-279,2025-12-01,Vega C,Kompsat-7,1800.0,Government LEO
+2025-291,2025-12-09,Falcon 9,INTRUDER?,1000.0,Military LEO
+2025-297,2025-12-14,Electron,RAISE-4,110.0,Government LEO
+2025-302,2025-12-17,Ariane 62,Galileosat 33-34,1466.0,Government non-LEO
+2025-305,2025-12-18,Electron,DiskSat 1-4,12.0,Military LEO
+2026-001,2026-01-03,Falcon 9,COSMO-Skymed SG FM3,2205.0,Military LEO
+2026-004,2026-01-11,Falcon 9,Twilight,443.4,Government LEO
+2026-011,2026-01-17,Falcon 9,NRO Starshield B5?,7200.0,Military LEO
+2026-017,2026-01-28,Falcon 9,GPS III SV09,4352.0,Military non-LEO
+2026-019,2026-01-30,Electron,NEONSAT-1A,100.0,Government LEO
+2026-029,2026-02-12,Vulcan Centaur VC4S,GSSAP,1500.0,Military non-LEO
+2026-065,2026-03-28,Electron,Celeste,50.0,Government LEO
+2026-067,2026-03-30,Falcon 9,Transporter-16,164.2,Government LEO
+2026-069,2026-04-01,SLS Block 1,Integrity,10427.0,Government non-LEO
+2026-074,2026-04-07,Minotaur IV,STP-S29A,159.9,Military LEO

@@ -63,6 +63,40 @@ class ChartUtils:
         'Capsule/Cargo': "#cc0000",
         'High-Energy': "#3c4043",
     }
+
+    western_orbit_color_map = {
+        'LEO': '#ffc000',
+        'MEO': '#cc0000',
+        'GEO': '#1155cc',
+        'GTO': '#3d85c6',
+        'HEO': '#51606e',
+        'Unknown': '#9e9e9e',
+    }
+
+    western_govmil_category_color_map = {
+        'ISS': '#005eff',
+        'Military LEO': '#cc0000',
+        'Military non-LEO': '#7f0000',
+        'Government LEO': '#2da53f',
+        'Government non-LEO': '#135e21',
+    }
+
+    western_net_category_color_map = {
+        'Starlink': "#0b5394",
+        'LEO Constellation': "#0563c1",
+        'GEO/MEO Constellation': "#3d85c6",
+        'Small Sat Rideshare': "#00d6b3",
+        'Small Sat': "#18c544",
+        'Commercial LEO/SSO/MEO': "#ffca3f",
+        'Commercial GTO/GEO': "#ed7d31",
+        'Capsule/Cargo': "#cc0000",
+        'High-Energy': "#3c4043",
+        'ISS': '#005eff',
+        'Military LEO': '#8B0000',
+        'Military non-LEO': '#4a0000',
+        'Government LEO': '#2da53f',
+        'Government non-LEO': '#135e21',
+    }
     
     # Naming scheme: color_sequence_{number}_{length}
     color_sequence_1_10 = [

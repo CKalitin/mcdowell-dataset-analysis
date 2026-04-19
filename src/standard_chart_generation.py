@@ -1698,8 +1698,11 @@ def _derive_orbit_from_apogee(apogee_series, perigee_series=None):
     return pd.Series(np.select(conditions, choices, default='HEO'), index=apo.index)
 
 
-def _load_psatcat_orbit(df):
-    """Merge psatcat UN-registration orbit data into *df* and add Derived_Orbit column."""
+def _load_psatcat_orbit(df, launch_df=None):
+    """Merge psatcat UN-registration orbit data into *df* and add Derived_Orbit column.
+
+    Falls back to Simple_Orbit from launch_df for entries where apogee data is unavailable.
+    """
     psatcat = pd.read_csv("./datasets/psatcat.tsv", sep="\t", encoding="utf-8", low_memory=False)
     psatcat = psatcat.drop(index=0).reset_index(drop=True)
     psatcat.rename(columns={"#JCAT": "JCAT"}, inplace=True)
@@ -1711,6 +1714,18 @@ def _load_psatcat_orbit(df):
     eff_apo  = df["UNApogee"].where(df["UNApogee"].fillna(0) > 0, df["DispApo"])
     eff_peri = df["UNPerigee"].where(df["UNPerigee"].fillna(0) > 0, df["DispPeri"])
     df["Derived_Orbit"] = _derive_orbit_from_apogee(eff_apo, eff_peri)
+
+    if launch_df is not None and "Simple_Orbit" in launch_df.columns:
+        orbit_lookup = (
+            launch_df[["Launch_Tag", "Simple_Orbit"]]
+            .drop_duplicates("Launch_Tag")
+            .rename(columns={"Simple_Orbit": "_Launch_Simple_Orbit"})
+        )
+        df = df.merge(orbit_lookup, on="Launch_Tag", how="left")
+        unknown_mask = df["Derived_Orbit"] == "Unknown"
+        df.loc[unknown_mask, "Derived_Orbit"] = df.loc[unknown_mask, "_Launch_Simple_Orbit"].fillna("Unknown").values
+        df = df.drop(columns=["_Launch_Simple_Orbit"])
+
     return df
 
 
@@ -1789,8 +1804,34 @@ def _classify_commercial_western_categories(df, orbit_col='Derived_Orbit'):
 def _get_classified_cw_satcat(dataset):
     """Return a satcat dataframe with commercial western payloads classified."""
     df = _filter_commercial_western(dataset.satcat.df.copy())
-    df = _load_psatcat_orbit(df)
-    return _classify_commercial_western_categories(df)
+    df = _load_psatcat_orbit(df, dataset.launch.df)
+    df = _classify_commercial_western_categories(df)
+    return _apply_effective_mass(df)
+
+
+def _apply_effective_mass(satcat_df):
+    """Add Effective_Mass column: TotMass for capsule/cargo spacecraft where TotMass > Mass.
+
+    Cygnus/HTV: Mass = cargo only, TotMass = full spacecraft.
+    Dragon: Mass = cargo+capsule (lower estimate), TotMass = full assembly.
+    Normal satellites: TotMass == Mass so no change.
+    """
+    satcat_df = satcat_df.copy()
+    satcat_df['Effective_Mass'] = satcat_df['Mass'].copy()
+    _cap_pattern = '|'.join(_CAPSULE_CARGO_KEYWORDS)
+    cap_mask = (
+        satcat_df['Name'].astype(str).str.strip().str.contains(_cap_pattern, case=False, na=False) |
+        satcat_df['Payload_Name'].astype(str).str.contains(_cap_pattern, case=False, na=False) |
+        satcat_df['Payload_Program'].astype(str).str.contains(_cap_pattern, case=False, na=False)
+    )
+    tot_mask = cap_mask & (satcat_df['TotMass'] > satcat_df['Mass'])
+    satcat_df.loc[tot_mask, 'Effective_Mass'] = satcat_df.loc[tot_mask, 'TotMass']
+    return satcat_df
+
+
+def _mass_per_launch(satcat_df):
+    """Return a Series of total Effective_Mass per Launch_Tag."""
+    return satcat_df.groupby('Launch_Tag')['Effective_Mass'].sum()
 
 
 def commercial_western_payload_categories_pie(
@@ -1931,30 +1972,10 @@ def commercial_western_launches_vs_mass_by_category(
 
     dataset = mda.McdowellDataset("./datasets")
 
-    satcat_df = _get_classified_cw_satcat(dataset)
+    satcat_df = _get_classified_cw_satcat(dataset)  # already applies _apply_effective_mass
     launch_category = _dominant_launch_category(satcat_df)
+    cw_mass_by_launch = _mass_per_launch(satcat_df)
 
-    # Compute commercial western payload mass from satcat (not total launch mass).
-    # Using total launch mass caused non-commercial primary payloads (SAOCOM-1B, Orion)
-    # to inflate the mass when only tiny commercial rideshare sats were the CW payload.
-    _cap_pattern = '|'.join(_CAPSULE_CARGO_KEYWORDS)
-    cap_name_mask = (
-        satcat_df['Name'].astype(str).str.strip().str.contains(_cap_pattern, case=False, na=False) |
-        satcat_df['Payload_Name'].astype(str).str.contains(_cap_pattern, case=False, na=False) |
-        satcat_df['Payload_Program'].astype(str).str.contains(_cap_pattern, case=False, na=False)
-    )
-    # Carrier vessels (Cygnus): Mass = cargo only, DryMass = spacecraft structure → total = Mass + DryMass.
-    # Capsules (Dragon): Mass = total launch mass; DryMass > Mass from McDowell convention → use Mass.
-    # Distinguish by DryMass/Mass ratio: carriers have DryMass > 2 × Mass.
-    # TotMass = full spacecraft at launch; Mass = cargo/pressurized payload only for cargo ships.
-    # Use TotMass for capsule/cargo entries where TotMass > Mass (i.e. spacecraft ≠ just cargo).
-    satcat_df = satcat_df.copy()
-    satcat_df['Effective_Mass'] = satcat_df['Mass'].copy()
-    capsule_tot_mask = cap_name_mask & (satcat_df['TotMass'] > satcat_df['Mass'])
-    satcat_df.loc[capsule_tot_mask, 'Effective_Mass'] = satcat_df.loc[capsule_tot_mask, 'TotMass']
-    cw_mass_by_launch = satcat_df.groupby('Launch_Tag')['Effective_Mass'].sum()
-
-    # Join with launch dataset for context columns
     launch_df = dataset.launch.df[['Launch_Tag', 'Launch_Date', 'LV_Type', 'Mission']].copy()
     launch_df = launch_df.merge(launch_category, on='Launch_Tag', how='inner')
     launch_df['Payload_Mass'] = launch_df['Launch_Tag'].map(cw_mass_by_launch).fillna(0)
@@ -2003,3 +2024,356 @@ def commercial_western_launches_vs_mass_by_category(
         color_map=mda.ChartUtils.commercial_western_category_color_map,
         bargap=0.1,
     )
+
+
+# ---------------------------------------------------------------------------
+# Shared helpers for all western charts
+# ---------------------------------------------------------------------------
+
+WESTERN_ORBIT_ORDER = ['LEO', 'MEO', 'GEO', 'GTO', 'HEO', 'Unknown']
+
+WESTERN_GOVMIL_CATEGORY_ORDER = [
+    'ISS',
+    'Military LEO',
+    'Military non-LEO',
+    'Government LEO',
+    'Government non-LEO',
+]
+
+WESTERN_NET_CATEGORY_ORDER = COMMERCIAL_WESTERN_CATEGORY_ORDER + WESTERN_GOVMIL_CATEGORY_ORDER
+
+
+def _filter_western_govmil(df):
+    """Return western non-commercial payload rows (Defense, Civil, Academic)."""
+    return df[
+        (df['Type'].str.strip().str.startswith('P', na=False)) &
+        (~df['Launch_State'].isin(['CN', 'RU', 'SU'])) &
+        (df['Payload_Class'] != 'B') &
+        df['Payload_Class'].notna() &
+        (df['Payload_Class'].astype(str).str.strip() != '')
+    ].copy()
+
+
+def _filter_western_all(df):
+    """Return all western payload rows regardless of class."""
+    return df[
+        (df['Type'].str.strip().str.startswith('P', na=False)) &
+        (~df['Launch_State'].isin(['CN', 'RU', 'SU']))
+    ].copy()
+
+
+def _classify_western_govmil_categories(df, orbit_col='Derived_Orbit'):
+    """Classify western gov/mil payloads: ISS, Military LEO/non-LEO, Government LEO/non-LEO.
+
+    ISS: Payload_Category == 'SS' and orbit is not HEO (captures HTV, Kounotori, ATV).
+    Military: Payload_Class == 'D'.
+    Government/Academic: Class C/A.
+    LEO includes SSO; non-LEO includes Unknown (likely classified high orbits).
+    """
+    df = df.copy()
+    leo_mask = df[orbit_col].isin(['LEO', 'SSO'])
+    mil_mask = df['Payload_Class'].astype(str).str.strip() == 'D'
+    _LUNAR_PROGRAMS = ['Artemis', 'Lunar Gateway', 'Lunar Reconnaissance']
+    iss_mask = (
+        df['Payload_Category'].astype(str).str.strip().str.contains('SS', na=False) &
+        (df[orbit_col] != 'HEO') &
+        ~df['Payload_Program'].astype(str).str.strip().isin(_LUNAR_PROGRAMS)
+    )
+
+    df['Western_GovMil_Category'] = 'Government non-LEO'
+    df.loc[leo_mask, 'Western_GovMil_Category'] = 'Government LEO'
+    df.loc[mil_mask & ~leo_mask, 'Western_GovMil_Category'] = 'Military non-LEO'
+    df.loc[mil_mask & leo_mask, 'Western_GovMil_Category'] = 'Military LEO'
+    df.loc[iss_mask, 'Western_GovMil_Category'] = 'ISS'
+    return df
+
+
+def _get_classified_western_govmil_satcat(dataset):
+    df = _filter_western_govmil(dataset.satcat.df.copy())
+    df = _load_psatcat_orbit(df, dataset.launch.df)
+    df = _classify_western_govmil_categories(df)
+    return _apply_effective_mass(df)
+
+
+def _classify_western_all_categories(df, orbit_col='Derived_Orbit'):
+    """Classify all western payloads: commercial categories for B-class, govmil for others."""
+    df = df.copy()
+    df['Western_Category'] = 'Unknown'
+    commercial_mask = df['Payload_Class'].astype(str).str.strip() == 'B'
+
+    if commercial_mask.any():
+        comm_df = _classify_commercial_western_categories(df[commercial_mask].copy(), orbit_col)
+        df.loc[commercial_mask, 'Western_Category'] = comm_df['Commercial_Western_Category'].values
+
+    if (~commercial_mask).any():
+        gm_df = _classify_western_govmil_categories(df[~commercial_mask].copy(), orbit_col)
+        df.loc[~commercial_mask, 'Western_Category'] = gm_df['Western_GovMil_Category'].values
+
+    return df
+
+
+def _get_classified_western_all_satcat(dataset):
+    df = _filter_western_all(dataset.satcat.df.copy())
+    df = _load_psatcat_orbit(df, dataset.launch.df)
+    df = _classify_western_all_categories(df)
+    return _apply_effective_mass(df)
+
+
+def _dominant_category_by_mass(satcat_df, category_col):
+    """For each launch, pick the category of the highest Effective_Mass payload."""
+    idx = satcat_df.groupby('Launch_Tag')['Effective_Mass'].idxmax()
+    return (
+        satcat_df.loc[idx, ['Launch_Tag', category_col]]
+        .rename(columns={category_col: 'Launch_Category'})
+        .reset_index(drop=True)
+    )
+
+
+
+def _bar_and_pies(
+    launch_df,
+    category_order,
+    output_prefix,
+    output_name,
+    chart_title_prefix,
+    date_updated,
+    color_map,
+    mass_step_size_kg=1000,
+    max_display_mass_kg=20000,
+    mass_suffix='t',
+    mass_divisor=1000,
+    bargap=0.1,
+):
+    """Generate bar chart + count pie + mass pie from a per-launch dataframe."""
+    subtitle = f'Christopher Kalitin 2026 - Data Source: Jonathan McDowell - Data Cutoff: {date_updated}'
+
+    count_by_cat = launch_df.groupby('Launch_Category').size().reindex(category_order, fill_value=0)
+    mass_by_cat = (launch_df.groupby('Launch_Category')['Payload_Mass'].sum() / mass_divisor
+                   ).reindex(category_order, fill_value=0)
+    count_by_cat = count_by_cat[count_by_cat > 0]
+    mass_by_cat  = mass_by_cat[mass_by_cat > 0]
+
+    mda.ChartUtils.log_and_save_df('csv', f'{output_name}_count_pie', output_prefix,
+                                   count_by_cat.rename('Count').reset_index())
+    mda.ChartUtils.log_and_save_df('csv', f'{output_name}_mass_pie', output_prefix,
+                                   mass_by_cat.rename(f'Mass_{mass_suffix}').reset_index())
+    mda.ChartUtils.plot_pie(
+        values=count_by_cat.values,
+        names=count_by_cat.index.tolist(),
+        title=f'{chart_title_prefix} Launch Count by Category',
+        subtitle=subtitle,
+        output_path=f'examples/outputs/chart/{output_prefix}/{output_name}_count_pie.png',
+        color_map=color_map,
+    )
+    mda.ChartUtils.plot_pie(
+        values=mass_by_cat.values,
+        names=mass_by_cat.index.tolist(),
+        title=f'{chart_title_prefix} Total Launched Mass by Category ({mass_suffix})',
+        subtitle=subtitle,
+        output_path=f'examples/outputs/chart/{output_prefix}/{output_name}_mass_pie.png',
+        color_map=color_map,
+    )
+
+    bins = list(range(0, max_display_mass_kg + mass_step_size_kg, mass_step_size_kg))
+    mass_labels = [f"{int(bins[i]/mass_divisor)}-{int(bins[i+1]/mass_divisor)}{mass_suffix}"
+                   for i in range(len(bins) - 1)]
+    bar_df = launch_df[launch_df['Payload_Mass'] <= max_display_mass_kg]
+    output_dict = {}
+    for cat in category_order:
+        cat_df = bar_df[bar_df['Launch_Category'] == cat]
+        binned = pd.cut(cat_df['Payload_Mass'], bins=bins, labels=mass_labels, include_lowest=True)
+        output_dict[cat] = binned.value_counts().reindex(mass_labels, fill_value=0)
+    bar_out = pd.DataFrame(output_dict, index=mass_labels)
+    last_nonzero = (bar_out.sum(axis=1) > 0).cumsum()
+    bar_out = bar_out.loc[last_nonzero > 0]
+    mda.ChartUtils.log_and_save_df('csv', output_name, output_prefix, bar_out)
+    mda.ChartUtils.plot_bar(
+        bar_out,
+        title=f'{chart_title_prefix} Launches vs. Payload Mass by Category',
+        subtitle=subtitle,
+        x_label=f'Payload Mass Range ({mass_suffix})',
+        y_label='Number of Launches',
+        output_path=f'examples/outputs/chart/{output_prefix}/{output_name}.png',
+        color_map=color_map,
+        bargap=bargap,
+    )
+
+
+def _build_launch_df(satcat_df, category_col, dataset, start_year=None, end_year=None):
+    """Assemble per-launch dataframe with dominant category and total effective mass."""
+    launch_category = _dominant_category_by_mass(satcat_df, category_col)
+    mass_by_launch = _mass_per_launch(satcat_df)
+
+    launch_df = dataset.launch.df[['Launch_Tag', 'Launch_Date', 'LV_Type', 'Mission']].copy()
+    launch_df = launch_df.merge(launch_category, on='Launch_Tag', how='inner')
+    launch_df['Payload_Mass'] = launch_df['Launch_Tag'].map(mass_by_launch).fillna(0)
+    launch_df = launch_df[launch_df['Payload_Mass'] > 0].sort_values('Launch_Date')
+    if start_year is not None:
+        launch_df = launch_df[launch_df['Launch_Date'].dt.year >= start_year]
+    if end_year is not None:
+        launch_df = launch_df[launch_df['Launch_Date'].dt.year <= end_year]
+    return launch_df
+
+
+# ---------------------------------------------------------------------------
+# Western all launches by orbit
+# ---------------------------------------------------------------------------
+
+def western_launches_vs_mass_by_orbit(
+    chart_title_prefix='Western',
+    output_prefix='western',
+    mass_step_size_kg=1000,
+    max_display_mass_kg=20000,
+    start_year=None,
+    end_year=None,
+):
+    """Bar chart + pies: all western launches vs payload mass, series = orbit."""
+    output_name = f'{output_prefix}_launches_vs_mass_by_orbit'
+    dataset = mda.McdowellDataset('./datasets')
+
+    satcat_df = _filter_western_all(dataset.satcat.df.copy())
+    satcat_df = _load_psatcat_orbit(satcat_df, dataset.launch.df)
+    satcat_df = _apply_effective_mass(satcat_df)
+    satcat_df['Launch_Orbit'] = satcat_df['Derived_Orbit']
+
+    launch_df = _build_launch_df(satcat_df, 'Launch_Orbit', dataset, start_year, end_year)
+    mda.ChartUtils.log_and_save_df('dataframe', output_name, output_prefix,
+                                   launch_df[['Launch_Tag', 'Launch_Date', 'LV_Type', 'Mission',
+                                              'Payload_Mass', 'Launch_Category']])
+    _bar_and_pies(launch_df, WESTERN_ORBIT_ORDER, output_prefix, output_name,
+                  chart_title_prefix, dataset.date_updated,
+                  mda.ChartUtils.western_orbit_color_map,
+                  mass_step_size_kg, max_display_mass_kg)
+
+
+# ---------------------------------------------------------------------------
+# Western gov/mil charts
+# ---------------------------------------------------------------------------
+
+def western_govmil_payload_categories_pie(
+    chart_title_prefix='Western Gov/Mil',
+    output_prefix='western',
+):
+    """Pie charts (count + mass) for western gov/mil payloads by category."""
+    dataset = mda.McdowellDataset('./datasets')
+    df = _get_classified_western_govmil_satcat(dataset)
+    subtitle = f'Christopher Kalitin 2026 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}'
+
+    count_by_cat = df.groupby('Western_GovMil_Category').size().reindex(WESTERN_GOVMIL_CATEGORY_ORDER, fill_value=0)
+    mass_by_cat  = (df.groupby('Western_GovMil_Category')['Effective_Mass'].sum() / 1000
+                    ).reindex(WESTERN_GOVMIL_CATEGORY_ORDER, fill_value=0)
+    count_by_cat = count_by_cat[count_by_cat > 0]
+    mass_by_cat  = mass_by_cat[mass_by_cat > 0]
+
+    out_count = f'{output_prefix}_govmil_payload_category_count_pie'
+    out_mass  = f'{output_prefix}_govmil_payload_category_mass_pie'
+    mda.ChartUtils.log_and_save_df('csv', out_count, output_prefix,
+                                   count_by_cat.rename('Count').reset_index())
+    mda.ChartUtils.log_and_save_df('csv', out_mass, output_prefix,
+                                   mass_by_cat.rename('Mass_t').reset_index())
+    mda.ChartUtils.plot_pie(
+        values=count_by_cat.values, names=count_by_cat.index.tolist(),
+        title=f'{chart_title_prefix} Payload Count by Category', subtitle=subtitle,
+        output_path=f'examples/outputs/chart/{output_prefix}/{out_count}.png',
+        color_map=mda.ChartUtils.western_govmil_category_color_map,
+    )
+    mda.ChartUtils.plot_pie(
+        values=mass_by_cat.values, names=mass_by_cat.index.tolist(),
+        title=f'{chart_title_prefix} Total Launched Mass by Category (tonnes)', subtitle=subtitle,
+        output_path=f'examples/outputs/chart/{output_prefix}/{out_mass}.png',
+        color_map=mda.ChartUtils.western_govmil_category_color_map,
+    )
+
+
+def western_govmil_launches_vs_mass_by_category(
+    chart_title_prefix='Western Gov/Mil',
+    output_prefix='western',
+    mass_step_size_kg=1000,
+    max_display_mass_kg=20000,
+    start_year=None,
+    end_year=None,
+):
+    """Bar chart + pies: western gov/mil launches vs payload mass by category."""
+    output_name = f'{output_prefix}_govmil_launches_vs_mass_by_category'
+    dataset = mda.McdowellDataset('./datasets')
+
+    satcat_df = _get_classified_western_govmil_satcat(dataset)
+    launch_df = _build_launch_df(satcat_df, 'Western_GovMil_Category', dataset, start_year, end_year)
+    mda.ChartUtils.log_and_save_df('dataframe', output_name, output_prefix,
+                                   launch_df[['Launch_Tag', 'Launch_Date', 'LV_Type', 'Mission',
+                                              'Payload_Mass', 'Launch_Category']])
+    _bar_and_pies(launch_df, WESTERN_GOVMIL_CATEGORY_ORDER, output_prefix, output_name,
+                  chart_title_prefix, dataset.date_updated,
+                  mda.ChartUtils.western_govmil_category_color_map,
+                  mass_step_size_kg, max_display_mass_kg)
+
+
+# ---------------------------------------------------------------------------
+# Net western (all launches) charts
+# ---------------------------------------------------------------------------
+
+def western_net_by_orbit_pie(
+    chart_title_prefix='Western',
+    output_prefix='western',
+    start_year=None,
+    end_year=None,
+):
+    """Pie charts (launch count + mass) for all western launches by orbit."""
+    dataset = mda.McdowellDataset('./datasets')
+
+    satcat_df = _filter_western_all(dataset.satcat.df.copy())
+    satcat_df = _load_psatcat_orbit(satcat_df, dataset.launch.df)
+    satcat_df = _apply_effective_mass(satcat_df)
+    satcat_df['Launch_Orbit'] = satcat_df['Derived_Orbit']
+
+    launch_df = _build_launch_df(satcat_df, 'Launch_Orbit', dataset, start_year, end_year)
+
+    subtitle = f'Christopher Kalitin 2026 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}'
+    out_count = f'{output_prefix}_net_launches_by_orbit_count_pie'
+    out_mass  = f'{output_prefix}_net_launches_by_orbit_mass_pie'
+
+    count_by_orbit = launch_df.groupby('Launch_Category').size().reindex(WESTERN_ORBIT_ORDER, fill_value=0)
+    mass_by_orbit  = (launch_df.groupby('Launch_Category')['Payload_Mass'].sum() / 1000
+                      ).reindex(WESTERN_ORBIT_ORDER, fill_value=0)
+    count_by_orbit = count_by_orbit[count_by_orbit > 0]
+    mass_by_orbit  = mass_by_orbit[mass_by_orbit > 0]
+
+    mda.ChartUtils.log_and_save_df('csv', out_count, output_prefix,
+                                   count_by_orbit.rename('Count').reset_index())
+    mda.ChartUtils.log_and_save_df('csv', out_mass, output_prefix,
+                                   mass_by_orbit.rename('Mass_t').reset_index())
+    mda.ChartUtils.plot_pie(
+        values=count_by_orbit.values, names=count_by_orbit.index.tolist(),
+        title=f'{chart_title_prefix} Launch Count by Orbit', subtitle=subtitle,
+        output_path=f'examples/outputs/chart/{output_prefix}/{out_count}.png',
+        color_map=mda.ChartUtils.western_orbit_color_map,
+    )
+    mda.ChartUtils.plot_pie(
+        values=mass_by_orbit.values, names=mass_by_orbit.index.tolist(),
+        title=f'{chart_title_prefix} Total Launched Mass by Orbit (tonnes)', subtitle=subtitle,
+        output_path=f'examples/outputs/chart/{output_prefix}/{out_mass}.png',
+        color_map=mda.ChartUtils.western_orbit_color_map,
+    )
+
+
+def western_net_launches_vs_mass_by_category(
+    chart_title_prefix='Western',
+    output_prefix='western',
+    mass_step_size_kg=1000,
+    max_display_mass_kg=20000,
+    start_year=None,
+    end_year=None,
+):
+    """Bar chart + pies: all western launches vs payload mass by combined category."""
+    output_name = f'{output_prefix}_net_launches_vs_mass_by_category'
+    dataset = mda.McdowellDataset('./datasets')
+
+    satcat_df = _get_classified_western_all_satcat(dataset)
+    launch_df = _build_launch_df(satcat_df, 'Western_Category', dataset, start_year, end_year)
+    mda.ChartUtils.log_and_save_df('dataframe', output_name, output_prefix,
+                                   launch_df[['Launch_Tag', 'Launch_Date', 'LV_Type', 'Mission',
+                                              'Payload_Mass', 'Launch_Category']])
+    _bar_and_pies(launch_df, WESTERN_NET_CATEGORY_ORDER, output_prefix, output_name,
+                  chart_title_prefix, dataset.date_updated,
+                  mda.ChartUtils.western_net_category_color_map,
+                  mass_step_size_kg, max_display_mass_kg)
