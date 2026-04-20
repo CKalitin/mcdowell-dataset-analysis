@@ -74,11 +74,17 @@ class ChartUtils:
     }
 
     western_govmil_category_color_map = {
-        'ISS': '#005eff',
-        'Military LEO': '#cc0000',
-        'Military non-LEO': '#7f0000',
-        'Government LEO': '#2da53f',
-        'Government non-LEO': '#135e21',
+        'ISS': '#ffca3f',
+        'Military LEO': '#b10202',
+        'Military non-LEO': "#c44a32",
+        'Government LEO': "#0563c1",
+        'Government non-LEO': '#4080e7',
+    }
+
+    rideshare_lv_color_map = {
+        'Falcon 9': "#005eff",
+        'Vega': "#ff8000",
+        'Electron': "#18c544",
     }
 
     western_net_category_color_map = {
@@ -91,11 +97,11 @@ class ChartUtils:
         'Commercial GTO/GEO': "#ed7d31",
         'Capsule/Cargo': "#cc0000",
         'High-Energy': "#3c4043",
-        'ISS': '#005eff',
-        'Military LEO': '#8B0000',
-        'Military non-LEO': '#4a0000',
-        'Government LEO': '#2da53f',
-        'Government non-LEO': '#135e21',
+        'ISS': '#ffca3f',
+        'Military LEO': '#b10202',
+        'Military non-LEO': '#c44a32',
+        'Government LEO': '#0563c1',
+        'Government non-LEO': '#4080e7',
     }
     
     # Naming scheme: color_sequence_{number}_{length}
@@ -158,6 +164,17 @@ class ChartUtils:
         "#3b48ba",
         "#7322af",
         "#d3288e",
+    ]
+    
+    color_sequence_3_8 = [
+        "#ff2702",
+        "#fc6313",
+        "#f79f24",
+        "#fff001",
+        "#7fd100",
+        "#02c1af",
+        "#3b48ba",
+        "#7322af",
     ]
     
     color_sequence_4_12 = [
@@ -739,7 +756,7 @@ class ChartUtils:
         
         ChartUtils.log_and_save_df("png", os.path.basename(output_path))
     
-    def plot_pie(values, names, title, subtitle, output_path, color_map=None):
+    def plot_pie(values, names, title, subtitle, output_path, color_map=None, sort=True):
         """
         Create a pie chart using Plotly Express.
         Args:
@@ -749,6 +766,7 @@ class ChartUtils:
             subtitle (string): Chart subtitle.
             output_path (string): Full path including filename to save the plot.
             color_map (dict or list, optional): Color map dict or color sequence list.
+            sort (bool): If False, slices appear in the order provided rather than largest-first.
         """
         fig = px.pie(
             names=names,
@@ -764,6 +782,7 @@ class ChartUtils:
             textinfo='percent+label',
             textfont=dict(size=16, family="Arial, sans-serif"),
             insidetextorientation='radial',
+            sort=sort,
         )
 
         fig.update_layout(

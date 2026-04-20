@@ -1,0 +1,272 @@
+Launch_Tag,Launch_Date,LV_Type,Mission,Payload_Mass,Mass_Bin_200kg,Launch_Category,Payload_Names
+2020-007,2020-01-31,Electron,NROL-151,150.0,0-200kg,LEO,USA 294
+2020-009,2020-02-09,H-IIA 202,IGS O-7,1500.0,1400-1600kg,LEO,2020-009A
+2020-010,2020-02-10,Atlas V 411,Solar Orbiter,1800.0,1600-1800kg,BEO,Solar Orbiter
+2020-024,2020-04-22,Qased,-,15.0,0-200kg,LEO,Noor 1
+2020-037,2020-06-13,Electron,NRO/ANDESITE/M2PF,156.5,0-200kg,LEO,"USA 301, USA 302, USA 303, ANDESITE, M2 Pathfinder"
+2020-041,2020-06-30,Falcon 9,GPS III SV-03,4400.0,4200-4400kg,MEO,Navstar 79 (USA 304)
+2020-044,2020-07-06,Shavit 2,'Ofeq-16,300.0,200-400kg,LEO,'Ofeq-16
+2020-046,2020-07-15,Minotaur IV,NROL-129,1000.0,800-1000kg,LEO,"USA 305, USA 306, USA 307, USA 308"
+2020-047,2020-07-19,H-IIA 202,Hope Probe,1350.0,1200-1400kg,HEO,Hope Probe
+2020-052,2020-07-30,Atlas V 541,Perseverance,1025.0,1000-1200kg,BEO,Mars 2020
+2020-059,2020-08-30,Falcon 9,SAOCOM-1B,3091.0,3000-3200kg,LEO,"SAOCOM 1B, GNOMES-1, EG-1 (Tyvak 0172)"
+2020-060,2020-08-31,Electron,Sequoia,120.0,0-200kg,LEO,"RLFL14, Capella-2"
+2020-061,2020-09-03,Vega,SSMS,832.208,800-1000kg,LEO,"Nusat-6, ESAIL, ION-mk-1 SVC-001 Lucas, Athena, UPM Sat-2, NEMO-HD, GHGSat-C1, SIMBA, TRISAT, PICASSO, Flock 4v 9, Flock 4v 12, Dido-3, Flock 4v 11, Flock 4v 14, AMICal-Sat, Flock 4v 8, Flock 4v 6, Flock 4v 5, Flock 4v 7, 3Cat-5/A, 3Cat-5/B, OSM-1 CICERO, EG-2 (Tyvak 0171), Flock 4v 10, Flock 4v 13, Lemur 2 EthanOakes, Lemur 2 Oscarlator, Spacebee-21, Spacebee-20, Spacebee-15, Spacebee-19, Spacebee-18, Spacebee-10, Spacebee-17, Spacebee-11, Spacebee-16, Spacebee-12, Spacebee-13, Spacebee-14, Hamarik, Flock 4v 1, Flock 4v 4, Lemur 2 Schmidtfall, Lemur 2 Djuproera, Lemur 2 Squarejaws, Lemur 2 Ursa Avion, KEPLER-2 (TARS), NAPA 1, Flock 4v 2, Flock 4v 3, Flock 4v 16, Flock 4v 15, Flock 4v 17, Flock 4v 21, Flock 4v 18, Flock 4v 19, Flock 4v 20, Flock 4v 22, Flock 4v 23, Flock 4v 24, Flock 4v 25, Flock 4v 26"
+2020-077,2020-10-28,Electron,Electron 15 Rideshare,86.3,0-200kg,LEO,"Flock EP 1, Flock EP 7, Flock EP 9, Flock EP 8, Flock EP 5, CE-SAT-IIB, Flock EP 3, Flock EP 2, Flock EP 4, Flock EP 6"
+2020-078,2020-11-05,Falcon 9,GPS III SV-04,4400.0,4200-4400kg,MEO,Navstar 80 (USA 309)
+2020-081,2020-11-07,PSLV-DL,PSLV Rideshare 17,693.2,600-800kg,LEO,"EOS-01, KSM1-d, KSM1-c, Lemur 2 Ozarak, Lemur 2 Jindra, Lemur 2 Wallace, Lemur 2 Jeremiah, KSM1-a, R2, KSM1-b"
+2020-085,2020-11-20,Electron,Electron 16 Rideshare,61.815999999999995,0-200kg,LEO,"CORVUS BC5, APSS-1 QuakeTEC, Spacebee-34, Spacebee-35, Spacebee-36, Spacebee-37, Spacebee-38, SpaceBEENZ-3, SpaceBEENZ-4, BRO-2, SpaceBEENZ-5, SpaceBEENZ-6, BRO-3, Spacebee-33, SpaceBEE-29, Spacebee-31, SpaceBEE-32, Spacebee-28, SpaceBEE-30, Spacebee-27, Spacebee-25, Spacebee-24, Spacebee-22, Dragracer 1 (Alchemy), Dragracer 2 (Augury), Spacebee-26, SpaceBEENZ-2, Spacebee-39, SpaceBEENZ-1, Spacebee-23"
+2020-086,2020-11-21,Falcon 9,Sentinel-6,1192.0,1000-1200kg,LEO,Sentinel-6 Michael Freilich
+2020-089,2020-11-29,H-IIA 202,Deta Chukei Eisei 1,3800.0,3600-3800kg,GEO,Japanese Data Relay System
+2020-090,2020-12-02,Soyuz-ST-A,FalconEye 2,1197.0,1000-1200kg,LEO,Falcon Eye 2
+2020-095,2020-12-11,Delta 4H,ORION 10?,5000.0,4800-5000kg,GTO,USA 311
+2020-098,2020-12-15,Electron,Strix-Alpha,150.0,0-200kg,LEO,StriX-Alpha
+2020-099,2020-12-17,PSLV-XL,GSAT-12R,1410.0,1400-1600kg,GEO,CMS-01
+2020-101,2020-12-19,Falcon 9,NROL-108,4000.0,3800-4000kg,LEO,"USA 312, USA 313"
+2020-104,2020-12-29,Soyuz-ST-A,CSO 2,3562.0,3400-3600kg,LEO,CSO 2
+2021-001,2021-01-08,Falcon 9,Turksat 5A,3500.0,3400-3600kg,GEO,TURKSAT-5A
+2021-002,2021-01-17,LauncherOne,-,30.0,0-200kg,LEO,"CAPE-3, PolarCube, AO-109, TechEdSat-7, Prometheus 2.11, MiTEE 1, Q-PACE, PICS 1, PICS 2, ExoCube 2, CACTUS-1, Prometheus 2.8"
+2021-004,2021-01-20,Electron,BIU GMS-T,50.0,0-200kg,LEO,GMS-T
+2021-006,2021-01-24,Falcon 9,Transporter-1,4586.724,4400-4600kg,LEO,"Starlink-2199, Starlink-2200, Starlink-2201, Starlink-2202, Starlink-2203, Starlink-2204, Starlink-2205, Starlink-2206, Starlink-2207, Starlink-2208, SpaceBEE-52, SpaceBEE-46, SpaceBEE-47, SpaceBEE-59, SpaceBEE-62, Astrocast-1.x1, SpaceBEE-61, SpaceBEE-49, SpaceBEE-60, SpaceBEE-53, Transporter-1, UVSQ-SAT, Yushan Weixing, Aurora Insight Charlie, ASELSAT, SpaceBEE-63, SpaceBEE-50, SpaceBEE-51, SOMP2b, KEPLER-12 (BOBA), SpaceBEE-48, CubeL, SpaceBEE-40, FM136, LEMUR-2 Neva, SpaceBEE-41, Flock 4s 22, Lemur-2 SaoirSedh5Guo, KEPLER-13 (LUCKY), SpaceBEE-42, Flock 4s 21, Lemur-2 NallyWacker, IDEASSat, SpaceBEE-55, SpaceBEE-54, KEPLER-15 (SUDORMRF), Flock 4s 11, V-R3X 1, SpaceBEE-58, SpaceBEE-57, SpaceBEE-44, V-R3X 2, SpaceBEE-56, Flock 4s 33, SpaceBEE-45, Flock 4s 12, Flock 4s 13, Flock 4s 35, Flock 4s 8, Flock 4s 31, KEPLER-8 (AMAROK), Flock 4s 34, Flock 4s 9, Flock 4s 32, SpaceBEE-43, Capella-4 (Whitney), NASA PTD-1, P2-10, ARCE 1C, QPS-SAR-2 Izanami, Celestis 17/Sherpa-FX1, Astrocast-1.x3, Astrocast-1.x2, Whitney 1, Flock 4s 39, Flock 4s 4, Flock 4s 17, Lemur 2 Mango1, Flock 4s 3, Flock 4s 27, Flock 4s 18, Flock 4s 26, Flock 4s 2, Flock 4s 40, Flock 4s 19, KEPLER-10 (BABY YODA), Hawk 2C, KEPLER-11 (DANEEL), ION-SCV 002 Laurentius, Hawk 2A, ICEYE-X9, XR1, Hawk 2B, GHGSat-C2, ICEYE-X8, Lemur-2 Ruari-Eilidh, Flock 4s 38, Flock 4s 28, Flock 4s 5, Flock 4s 16, Astrocast-1.x5, Flock 4s 6, Astrocast-1.x4, Flock 4s 29, Flock 4s 15, Flock 4s 37, Flock 4s 10, V-R3X 3, Lemur-2 JenniferSong, KEPLER-14 (STELLA), Flock 4s 7, Flock 4s 14, Lemur-2 Chantal, Flock 4s 36, KEPLER-9 (ARTEMIS), Lemur-2, Flock 4s 24, Flock 4s 20, Hiber 4, Flock 4s 25, Flock 4s 1, Flock 4s 30, Flock 4s 23, Flock 4s 42, ARCE-1B, ARCE-1A, Flock 4s 48, Flock 4s 46, Flock 4s 47, Flock 4s 44, Flock 4s 43, Flock 4s 45, Flock 4s 41, SpaceBEE-64, SpaceBEE-65, SpaceBEE-66, SpaceBEE-67, SpaceBEE-68, SpaceBEE-69, SpaceBEE-70, SpaceBEE-71, SpaceBEE-72, SpaceBEE-73, SpaceBEE-74, SpaceBEE-75"
+2021-015,2021-02-28,PSLV-DL,PSLV Rideshare 18,657.158,600-800kg,LEO,"Amazonia-1, SAI-1 NanoConnect-2, Sindhu Netra, SpaceBEE-87, SpaceBEE-86, SpaceBEE-85, SpaceBEE-84, SpaceBEE-83, SpaceBEE-82, SpaceBEE-81, SpaceBEE-78, SpaceBEE-76, SpaceBEE-80, SpaceBEE-77, SpaceBEE-79, UNITYsat-SriShakthiSat, UNITYsat-GHRCEsat, UNITYsat-JITsat, SDSAT"
+2021-023,2021-03-22,Electron,Global-5/Pathstone,115.0,0-200kg,LEO,"Veery-RL1, Centauri 3 (Tyvak 0210), M2, Myriota 7 (Tyvak 0152), Gunsmoke-J 3, Global-9, Photon-02, M2-B"
+2021-034,2021-04-29,Vega,Pleiades-Neo 3,964.2,800-1000kg,LEO,"Pleiades NEO 3 (PNEO3), Lemur 2 Amanda-Svante, AII-Bravo, TYVAK-182A (ELO Alpha), NorSat-3, Lemur 2 Special K"
+2021-042,2021-05-18,Atlas V 421,SBIRS GEO-5,4540.0,4400-4600kg,GTO,"SBIRS GEO-5 (USA 315), TDO 3, TDO 4"
+2021-051,2021-06-13,Pegasus XL,TacRL-2,250.0,200-400kg,LEO,Odyssey
+2021-052,2021-06-15,Minotaur I,NROL-111,450.0,400-600kg,LEO,"USA 316, USA 317, USA 318"
+2021-054,2021-06-17,Falcon 9,GPS III SV05,4400.0,4200-4400kg,MEO,Navstar 81 (USA 319)
+2021-058,2021-06-30,LauncherOne,Tubular Bells I,36.0,0-200kg,LEO,"STORK 5, STORK 4, CNCE 3, CNCE 1, BRIK-II, HALO-Net Free Flyer, Gunsmoke-J 4"
+2021-059,2021-06-30,Falcon 9,Transporter-2,2629.552,2600-2800kg,LEO,"Starlink-3003, Starlink-3004, Starlink-3005, SpaceBEE-NZ10, SpaceBEE-100, SpaceBEE-101, FM139, LEMUR-2 Jackson, SpaceBEE-102, SpaceBEE-NZ9, SpaceBEE-103, SpaceBEE-NZ7, SpaceBEE-104, SpaceBEE-NZ8, EG-3 (Tyvak-0173), SpaceBEE-106, SpaceBEE-107, SpaceBEE-108, SpaceBEE-105, SpaceBEE-109, Centauri 4 (Tyvak-0211), SpaceBEE-110, TUBIN, TROPICS Pathfinder, LINCS 1, LINCS 2, SpaceBEE-111, Nusat-19, Umbra-SAR 2001, Mandrake 2 Able, Mandrake 2 Baker, PACE-1, GNOMES 2, YAM 2, ION SVC-003 Dauntless David, Capella-5 (Whitney), ICEYE-X12, YAM 3, ICEYE-X13, ICEYE-X15, ICEYE-X11, Nusat-22, Nusat-21, Nusat-20, D2/Atlacom-1, FM140, LEMUR-2 AnnaBanana, Faraday Phoenix, FM143, LEMUR-2 John-Treires, KSF-1B, FM148, LEMUR-2 AC-Cubed, PAINANI-2, Lemur 2 Merima, KSF1-A, Hawk-3B, SpaceBEE-92, SpaceBEE-89, SpaceBEE-96, SpaceBEE-88, SpaceBEE-99, SpaceBEE-94, Lynk 06 (Shannon), SpaceBEE-93, SpaceBEE-91, Sherpa-LTE 1, KSF-1C, QMR-KWT, Ayan-21, SpaceBEE-95, SpaceBEE-97, SpaceBEE-90, Hawk-3C, SpaceBEE-98, KSF-1D, Astro Dig. Demo 8 (Tenzing), Astrocast-010x, ARTHUR-1, Astro Dig. Demo 9 (Aurora), Hawk-3A, Sherpa-FX2, FM150, LEMUR-2 CarlSantaMari, Astrocast-0202, Ghalib, NAPA-2, SPARTAN, W-Cube, NEPTUNO-1"
+2021-068,2021-07-29,Electron,Monolith,20.0,0-200kg,LEO,Monolith
+2021-073,2021-08-17,Vega,Pleiades-Neo 4,939.0,800-1000kg,LEO,"BRO-4, RadCube, Sunstorm, LEDSAT, Pleiades NEO 4 (PNEO4)"
+2021-088,2021-09-27,Atlas V 401,Landsat 9,2750.0,2600-2800kg,LEO,"Landsat 9, CS1, CS2, CUTE-LASP, CuPID"
+2021-093,2021-10-16,Atlas V 401,Lucy,1550.0,1400-1600kg,BEO,Lucy
+2021-096,2021-10-26,H-IIA 202,QZSS 1R,4020.0,4000-4200kg,GEO,QZS 1R
+2021-102,2021-11-09,Epsilon,-,323.0,200-400kg,LEO,"ASTERISC, TeikyoSat-4, RAISE-2, NanoDragon, Z-Sat, HIBARI, DRUMS, KOSEN-1, ARICA, DRUMS Target 1, DRUMS Target 2"
+2021-105,2021-11-16,Vega,CERES 1-3,1338.0,1200-1400kg,LEO,"CERES 1, CERES 2, CERES 3"
+2021-106,2021-11-18,Electron,Global-14/Global-15,110.0,0-200kg,LEO,"Global-14, Global-15"
+2021-108,2021-11-20,Astra Rocket 3.3,STP-27AD2,1.0,0-200kg,LEO,Astra Satellite 00001
+2021-110,2021-11-24,Falcon 9,DART,610.0,600-800kg,BEO,NASA DART
+2021-116,2021-12-05,Soyuz-ST-B,GalileoSat-27/28,1466.0,1400-1600kg,MEO,"GalileoSat-27, GalileoSat-28"
+2021-118,2021-12-07,Atlas V 551,STPSAT-6/LDPE-1,1525.0,1400-1600kg,GEO,"STPSat-6, LDPE 1, ASCENT"
+2021-120,2021-12-09,Electron,Global-16/Global-17,110.0,0-200kg,LEO,"Global-17, Global-16"
+2021-121,2021-12-09,Falcon 9,IXPE,330.0,200-400kg,LEO,IXPE
+2021-126,2021-12-19,Falcon 9,Turksat 5B,4500.0,4400-4600kg,GEO,TURKSAT-5B
+2022-002,2022-01-13,Falcon 9,Transporter-3,2424.15,2400-2600kg,LEO,"WiseSat-2, WiseSat-1, Umbra-2, FossaSat-2E4, Tevel-3, Tevel-8, Pilot-1, FossaSat-2E6, Flock 4X 8, ION SVC-004 Elysian Eleonora, Flock 4X 44, MDASAT-1A, Flock 4X 2, Flock 4X 20, Tevel-5, Tevel-6, Flock 4X 30, FossaSat-2E5, KEPLER-18 (BLIP-A), Flock 4X 22, Flock 4X 5, Flock 4X 41, Flock 4X 3, Flock 4X 18, ICEYE-X16, Flock 4X 37, Flock 4X 15, Flock 4X 29, Flock 4X 27, Tevel-1, SATTLA-2B, Flock 4X 12, Flock 4X 25, Flock 4X 1, Flock 4X 42, Pion BR-1, Flock 4X 16, FM149, LEMUR-2 Ramonamae, FM141, LEMUR-2 King-Julien, Flock 4X 38, Flock 4X 32, Grizu-263A, Flock 4X 26, Flock 4X 43, Flock 4X 13, Flock 4X 39, Sich-2-1, SanoSat-1, Unicorn-2D, SATTLA-2A, Flock 4X 23, Flock 4X 17, FM154, LEMUR-2 Rohovithsa, Flock 4X 10, MDASAT-1C, Flock 4X 36, Flock 4X 21, Flock 4X 31, Flock 4X 34, Flock 4X 6, IRIS, Flock 4X 28, Flock 4X 19, Flock 4X 9, Flock 4X 35, Flock 4X 11, MDASAT-1B, KEPLER-19 (TBD), Flock 4X 40, HYPSO-1, FM152, LEMUR-2 Miriwari, Flock 4X 33, Flock 4X 24, KEPLER-16 (ASTRAEUS), FM153, LEMUR-2 Djirang, KEPLER-17 (KARINA), ETV-1, BRO-5, Tevel-7, Tevel-4, Flock 4X 4, Flock 4X 7, Flock 4X 14, DEWASAT-1, Gossamer Piccolomini, Tevel-2, Iceye X14, Capella-8-Whitney, Capella-7-Whitney, MDQube-SAT1, Delfi-PQ, USA 320, NuX-1, USA 321, USA 322, USA 323, Hades, EASAT-2, Challenger, Unicorn-2TA1, DODONA, VZLUSAT-2, LabSat, STORK 1, STORK 2, SW1FT"
+2022-003,2022-01-13,LauncherOne,Above The Clouds,28.37,0-200kg,LEO,"PAN A, TECHEDSAT 13, PAN B, Gearrs-3, STORK 3, SteamSat-2, FM151, LEMUR-2 KRYWE"
+2022-006,2022-01-21,Atlas V 511,GSSAP 5/6,1000.0,800-1000kg,LEO,"USA 324, USA 325"
+2022-008,2022-01-31,Falcon 9,COSMO-Skymed SG FM2,2205.0,2200-2400kg,LEO,COSMO-SkyMed FM2
+2022-013,2022-02-14,PSLV-XL,RISAT-1A,1735.6,1600-1800kg,LEO,"EOS-4, INSPIREsat-1, INS-2TD"
+2022-020,2022-02-28,Electron,Strix Beta,150.0,0-200kg,LEO,StriX-Beta
+2022-024,2022-03-08,Qased,-,15.0,0-200kg,LEO,Noor 2
+2022-026,2022-03-15,Astra Rocket 3.3,Spaceflight Astra 1,16.68,0-200kg,LEO,"S4 Crossover/Astra, SpaceBEE-121, SpaceBEE-114, SpaceBEE-126, SpaceBEE-118, SpaceBEE-120, SpaceBEE-122, SpaceBEE-119, SpaceBEE-115, ORESAT0, SpaceBEENZ-14, SpaceBEENZ-11, SpaceBEE-127, SpaceBEE-125, SpaceBEE-117, SpaceBEE-116, SpaceBEE-113, SpaceBEE-112, SpaceBEENZ-13, SpaceBEE-123, SpaceBEENZ-12, SpaceBEE-124"
+2022-033,2022-04-01,Falcon 9,Transporter-4,1628.908,1600-1800kg,LEO,"Omni-L1, Gnomes-3, ENMAP, Alfacrux, ARCSAT, Lynk Tower 1, ION SVC-005 Almighty Alexius, SpaceBEE-136, Hawk-4B, SpaceBEE-138, Hawk-4A, NuSat 23, MP42, Hawk-4C, NuSat-25, NuSat-27, Shakuntala, BRO-7, BDSAT, SpaceBEE-130, SpaceBEE-139, NuSat-24, SpaceBEE-129, SpaceBEE-134, SpaceBEE-131, SpaceBEE-128, SpaceBEE-133, NuSat-26, SpaceBEE-132, SpaceBEE-137, SpaceBEE-135, PlantSat, KSF2-C, KSF2-D, SUCHAI-3, SUCHAI-2, KSF2-B, KSF2-A"
+2022-034,2022-04-02,Electron,Global-18/Global-20,110.0,0-200kg,LEO,"Global-18, Global-20"
+2022-040,2022-04-17,Falcon 9,INTRUDER,1000.0,800-1000kg,LEO,USA 327
+2022-047,2022-05-02,Electron,E-Space Demo,51.316,0-200kg,LEO,"SpaceBEE-143, SpaceBEENZ-15, SpaceBEENZ-16, SpaceBEENZ-17, SpaceBEENZ-18, SpaceBEE-140, SpaceBEE-141, SpaceBEE-142, SpaceBEENZ-20, SpaceBEENZ-22, SpaceBEENZ-19, SpaceBEENZ-21, SpaceBEE-148, SpaceBEE-149, SpaceBEE-153, SpaceBEE-144, SpaceBEE-150, SpaceBEE-145, SpaceBEE-146, SpaceBEE-151, SpaceBEE-152, SpaceBEE-147, SpaceBEE-155, SpaceBEE-154, TRSI-3, MyRadar 1, TRSI-2, Unicorn-2, BRO-6, E-Space 1, E-Space 2, E-Space 3, Copia, AuroraSat-1"
+2022-057,2022-05-25,Falcon 9,Transporter-5,1698.4,1600-1800kg,LEO,"FM162, LEMUR-2 TennysonLily, FM155, LEMUR-2 VanDenDries, PTD-3 (Tyvak-0125), OP15 FLT2 (TYVAK-0821), FM163, LEMUR-2 Karen_B, GHGSat-C3, Planetum-1, Connecta T1.1, FM161, LEMUR-2 Hancom-1, OP15 FLT1 (TYVAK-0820), Centauri 5, BRONCOSAT-1, GHGSat-C5, AMS, GHGSat-C4, Nusat-28, Nusat-30, ICEYE-X18/Carcara 1, FOSSASat-2E11, SPiN-1, Nusat-31, Umbra-03, Hawk-5C, Iceye-X24, Hawk-5B, Hawk-5A, ICEYE-X18/Carcara 2, ICEYE-X20, Vigoride-3, ION SCV-006 Thrilling Thomas, Iceye-X17, Sherpa-Ac1, Nusat-29, Armsat1, Celestis 21-Varisat-1C, CNCE4, CNCE5, FM156, LEMUR-2 Mimi1307, PLATFORM-1, Omni-L2, CPOD FLT1 (Tyvak-0032), FOSSASat-2E12, SBUDNIC, Guardian-1, FOSSASat-2E13, VEERY-FS 1, FOSSASat-2E7, FOSSASat-2E8, CPOD FLT2, Foresail-1, SELFIESAT"
+2022-061,2022-06-08,Falcon 9,Nilesat 301,3938.0,3800-4000kg,GEO,[Nilesat 301]
+2022-063,2022-06-18,Falcon 9,SARah-1,4000.0,3800-4000kg,LEO,SARah-1
+2022-064,2022-06-19,Falcon 9,Globalstar FM15,1915.0,1800-2000kg,LEO,"Globalstar M087, USA 328, USA 329, USA 330, USA 331"
+2022-065,2022-06-21,Nuri,-,1485.0,1400-1600kg,LEO,"PVSAT, KSLV-II FT2 Dummy Payload, STEP Cube Lab-II, RANDEV, SNUGLITE-II, MIMAN, AP-JOEY"
+2022-070,2022-06-28,Electron,CAPSTONE,300.0,200-400kg,HEO,"Capstone, Lunar Photon"
+2022-071,2022-06-29,Falcon 9,SES-22,3500.0,3400-3600kg,GEO,SES-22
+2022-072,2022-06-30,PSLV,DS-EO/POEM,573.0,400-600kg,LEO,"DS-EO, NeuSAR, SCOOB-I, PSLV-C53 R/B"
+2022-073,2022-07-01,Atlas V 541,WFOV,3600.0,3400-3600kg,GEO,"USA 332, USA 333, USA 337"
+2022-074,2022-07-02,LauncherOne,Straight Up,78.4,0-200kg,LEO,"Recurve, NACHOS-2, Slingshot 1, GPX-2, MISR-B 1, CTIM-FD, Gunsmoke-L"
+2022-079,2022-07-13,Electron,NROL-162,100.0,0-200kg,LEO,USA 334
+2022-080,2022-07-13,Vega C,LARES 2,310.0,200-400kg,MEO,"LARES 2, GREENCUBE, ASTROBIO, TRISAT-R, Alpha, Celesta, MTCube-2"
+2022-091,2022-08-04,Electron,NROL-199,100.0,0-200kg,LEO,USA 335
+2022-092,2022-08-04,Atlas V 421,SBIRS GEO-6,4500.0,4400-4600kg,GEO,SBIRS GEO 6 (USA 336)
+2022-094,2022-08-04,Falcon 9,KPLO,678.0,600-800kg,BEO,Korean Pathfinder Lunar Orb.
+2022-113,2022-09-15,Electron,Strix-1,150.0,0-200kg,LEO,StriX-1
+2022-122,2022-10-01,Firefly Alpha,-,7.75,0-200kg,LEO,"TIS Serenity, ASTROLAND-1, TechEdSat-15, ASTROLAND-2"
+2022-123,2022-10-04,Atlas V 531,SES-20/SES-21,3267.0,3200-3400kg,GEO,"SES 20, SES 21"
+2022-127,2022-10-07,Electron,GAzelle,118.0,0-200kg,LEO,OTB-3-GAzelle
+2022-134,2022-10-15,Falcon 9,Hot Bird 13F,4476.0,4400-4600kg,GEO,EUTELSAT HOTBIRDTM 13F
+2022-144,2022-11-01,Falcon Heavy,LDPE-2,2243.0,2200-2400kg,GTO,"LDPE-2, USA 339, USA 340, USA 341, LINUSS1, LINUSS2, USA 344, USA 399, USA 546, USA 547, USA 548, USA 551, USA 552, USA 553, USA 556, USA 557"
+2022-146,2022-11-03,Falcon 9,Hot Bird 13G,4476.0,4400-4600kg,GEO,EUTELSAT HOTBIRDTM 13G
+2022-147,2022-11-04,Electron,MATS,54.0,0-200kg,LEO,MATS
+2022-150,2022-11-10,Atlas V 401,JPSS-2/LOFTID,2930.0,2800-3000kg,LEO,JPSS 2 (NOAA-21)
+2022-157,2022-11-23,Falcon 9,Eutelsat 10B,4500.0,4400-4600kg,GEO,EUTELSAT 10B
+2022-158,2022-11-26,PSLV-XL,PSLV Rideshare 19,1170.95,1000-1200kg,LEO,"EOS-6, Thybolt-1, Thybolt 2, INS-2B, Anand, Astrocast-0304, Astrocast-0303, Astrocast-0302, Astrocast-0301"
+2022-168,2022-12-11,Falcon 9,Hakuto-R M1,1064.0,1000-1200kg,HEO,"Hakuto-R M1, Lunar Flashlight"
+2022-173,2022-12-16,Falcon 9,SWOT,2200.0,2000-2200kg,LEO,SWOT
+2022-174,2022-12-16,Falcon 9,O3b mPOWER 1/2,3400.0,3200-3400kg,MEO,"MP01 (O3b mPOWER F1), MP02 (O3b mPOWER F2)"
+2022-179,2022-12-30,Falcon 9,EROS C3,400.0,200-400kg,LEO,EROS C3
+2023-001,2023-01-03,Falcon 9,Transporter-6,2762.08,2600-2800kg,LEO,"STAR VIBE, Menut, BRO-8, Connecta T1.2, FM166, LEMUR-2 PhilAri, FM165, LEMUR-2 Disclaimer, Birkeland, SharedSat 2211, FM168, LEMUR-2 SteveAlbers, KSF3-C, KSF3-B, Flock 4Y 24, Flock 4Y 32, Flock 4Y 22, Flock 4Y 18, Flock 4Y 14, Flock 4Y 30, Flock 4Y 19, Flock 4Y 25, Flock 4Y 5, Flock 4Y 10, Flock 4Y 29, Flock 4Y 17, Flock 4Y 7, Flock 4Y 28, Lynk Tower 4, Flock 4Y 3, Umbra-05, FM164, LEMUR-2 Emmaculate, FM167, LEMUR-2 MMolo, Flock 4Y 1, Flock 4Y 16, Skykraft 1 Carrier, Flock 4Y 33, Flock 4Y 11, Sternula-1, Nusat-34, Lynk Tower 3, Nusat-33, Nusat-35, ICEYE-X21, Umbra-04, ION SCV-008 Fierce Francis., Skykraft 1D, ZA-008 (AgriSat-1), Skykraft 1A, Flock 4Y 4, Vigoride VR-5, Flock 4Y 35, Skykraft 1B, Orbiter SN1, ION SCV-007 Glorious Gratia, Skykraft 1C, ICEYE-X27, Flock 4Y 20, Nusat-32, Flock 4Y 12, Flock 4Y 6, NSL-2, Flock 4Y 15, Flock 4Y 9, Flock 4Y 26, Flock 4Y 8, SPHERE-1, TAUSat3, Flock 4Y 2, Flock 4Y 31, YAM-5, Flock 4Y 21, Flock 4Y 36, Flock 4Y 13, Flock 4Y 23, PolyITAN-HP-30, Flock 4Y 34, Flock 4Y 27, Gama-Alpha, KSF3-D, KSF3-A, SpaceBEE-167, FM169, LEMUR-2 Fuentetaja-01, SpaceBEE-163, CHIMERA LEO 1, SpaceBEE-164, SpaceBEE-166, Huygens, SpaceBEE-165, SpaceBEE-162, SpaceBEE-161, SpaceBEE-160, BDSAT-2, SpaceBEE-156, SpaceBEE-158, SpaceBEE-159, SpaceBEE-157, KuwaitSat-1, Sharjah-Sat-1, FUTURA-SM1, FUTURA-SM3, AAC-AIS-SAT1, Zeus-1, Astrocast-0401, Astrocast-0402, Astrocast-0403, Astrocast-0404"
+2023-008,2023-01-15,Falcon Heavy,CBAS-2/LDPE-3A,3700.0,3600-3800kg,GTO,"USA 342, LDPE-3A"
+2023-009,2023-01-18,Falcon 9,GPS III SV06,4352.0,4200-4400kg,MEO,Navstar 82 (USA 343)
+2023-011,2023-01-24,Electron,Hawk 6,93.0,0-200kg,LEO,"Hawk 6B, Hawk 6C, Hawk 6A"
+2023-012,2023-01-26,H-IIA 202,IGS R-7,1500.0,1400-1600kg,LEO,2023-012A
+2023-017,2023-02-07,Falcon 9,Amazonas Nexus,4500.0,4400-4600kg,GEO,Amazonas Nexus
+2023-019,2023-02-10,SSLV,EOS-07,175.0,0-200kg,LEO,"EOS-7, Azaadisat-2, Janus-1"
+2023-035,2023-03-16,Electron,Capella 9/10,224.0,200-400kg,LEO,"Capella 10, Capella 9"
+2023-041,2023-03-24,Electron,Global-19/Global-5,110.0,0-200kg,LEO,"Global-19, Global-5"
+2023-044,2023-03-28,Shavit 2,'Ofeq-13,300.0,200-400kg,LEO,'Ofeq-13
+2023-050,2023-04-02,Falcon 9,SDA-0A,4000.0,3800-4000kg,LEO,"Checkmate 8, Checkmate 5, Checkmate 4, Checkmate 6, Checkmate 7, Checkmate 2, Checkmate 1, Checkmate 3, BB 2, BB 1"
+2023-054,2023-04-15,Falcon 9,Transporter-7,2166.707,2000-2200kg,LEO,"IMECE, Brokkr-1, DEWASAT-2, KILICSAT, Lemur-2 OnReflection, Sateliot-0, SSS-2B, BRO-9, GHGSat-C, Lemur-2 SpaceGus, CIRBE, It's About Time, Nusat-36, Hawk 7A, ION SCV-010 Masterful Matt., Hawk 7B, NORSAT-TD, GHOST-1, Vigoride VR-6, GHOST-2, Umbra-06, Tomorrow-R1, Hawk 7C, Nusat-39, Nusat-38, Nusat-37, GHGSat-C6, FACSAT-2 Chiribiquete, Lemur-2 Romeo-N-LEO, Pleiadas Yearling, Taifa-1, GHGSat-C7, Connecta T2.1, InspireSat-7, RoseyCubesat-1, Sapling Giganteum, LacunaSat-3C?, VCUB-1, ELO 3, Kepler 20, Kepler 21, LLITED B, LLITED A, IRIS-C, DISCO-1, VIREO, Revela, AAC-HSI-SAT1"
+2023-057,2023-04-22,PSLV,TeLEOS-2,807.0,800-1000kg,LEO,"POEM-2, LUMELITE-4, TeLEOS-2"
+2023-059,2023-04-28,Falcon 9,O3b mPOWER 3/4,3400.0,3200-3400kg,MEO,"MP03 (O3b mPOWER F3), MP04 (O3b mPOWER F4)"
+2023-062,2023-05-08,Electron,Tropics SV05/SV06,8.0,0-200kg,LEO,"TROPICS-05, TROPICS-06"
+2023-072,2023-05-25,Nuri,-,226.2,200-400kg,LEO,"NEXTSAT-2, KASI SAT-D, KASI SAT-B, KASI SAT-A, KSAT3U, JAC, LUMIR-T1"
+2023-073,2023-05-26,Electron,Tropics SV03/SV07,8.0,0-200kg,LEO,"TROPICS-03, TROPICS-07"
+2023-075,2023-05-27,Falcon 9,Arabsat 7B,4500.0,4400-4600kg,GEO,Badr 8
+2023-076,2023-05-29,GSLV Mk II,IRNSS-1J,2232.0,2200-2400kg,GEO,NVS-01
+2023-084,2023-06-12,Falcon 9,Transporter-8,3269.158,3200-3400kg,LEO,"Outpost Mission 1, Skykraft 3B, Skykraft 3C, Skykraft 3 Carrier, Istanbul, SATLLA-2I, FEROX 3, Otter Pup, GEI-SAT Precursor, FEROX 4, FEROX 1, EIVE, FEROX 2, TIGER-4, MISR-B, MDQSAT-1D, AFRL-XVI, Nusat-40, Nusat-41, MDQSAT-1C, Gregoire, ICEYE-X30, ROM-2, ICEYE-X23, Blackjack Aces-3, QPS-SAR-6 AMAERU-III, Blackjack Aces-4, Fasat-Delta, SSTL MWIR Pathfinder, Blackjack Aces-2, Blackjack Aces-1, ION SCV-011 Savvy Simon, GHOSt-3, Photon-04, Orbiter SN3, ICEYE-X26, Tomorrow-R2, ICEYE-X25, ABA First Runner, Droid-001, Nusat-42, MUSAT-1, Nusat-43, SpaceBEE-179, Lemur-2 Embrionovis, MISR-A, SpaceBEE-177, SpaceBEE-178, Lemur-2 Naziyah, SpaceBEE-176, SpaceBEE-174, Lemur-2 Aadam-Aliyah, SpaceBEE-173, SpaceBEE-172, SpaceBEE-171, Skykraft 3A, SpaceBEE-169, SpaceBEE-170, SpaceBEE-168, SpaceBEE-175, Ayris-2, AII-Delta, Ayris-1, Pleiades Squared, ELO 4, Spei Satelles, URESAT, MRC-100, Unicorn-2I, AAC-HSI-SAT2, AAC-AIS-SAT2, Skykraft 3D"
+2023-086,2023-06-18,Falcon 9,Satria,4600.0,4400-4600kg,GEO,Nusuntara Tiga
+2023-089,2023-06-22,Delta 4H,ORION 11?,5000.0,4800-5000kg,GTO,USA 345
+2023-092,2023-07-01,Falcon 9,Euclid,1921.0,1800-2000kg,HEO,Euclid
+2023-098,2023-07-14,LVM3,Chandrayaan-3,3869.0,3800-4000kg,HEO,"Chandrayaan-3 Lander Module, Chandrayaan-3 Prop. Mod."
+2023-100,2023-07-18,Electron,Electron 39 Rideshare,88.0,0-200kg,LEO,"Starling 4, Starling 2, Starling 1, Starling 3, Lemur-2 Mano, Lemur-2 Deverill-M-T, LEO 3"
+2023-109,2023-07-30,PSLV,DS-SAR,422.5,400-600kg,LEO,"DS-SAR, VELOX-AM, ORB-12 STRIDER, SCOOB-II, ARCADE, Galassia-2, NuLIoN"
+2023-112,2023-08-03,Falcon 9,Galaxy 37,5000.0,4800-5000kg,GEO,Galaxy 37
+2023-126,2023-08-23,Electron,Capella 11 Acadia-1,180.0,0-200kg,LEO,Capella 11
+2023-132,2023-09-02,PSLV-XL,Aditya-L1,1480.0,1400-1600kg,HEO,ADITYA-L1
+2023-133,2023-09-02,Falcon 9,SDA-0B,4900.0,4800-5000kg,LEO,"Wildfire 4, BB4, Wildfire 3, BB3, Wildfire 7, Checkmate 10, Wildfire 6, Wildfire 1, Wildfire 9, Wildfire 10, Wildfire 2, Wildfire 8, Wildfire 5"
+2023-137,2023-09-06,H-IIA 202,XRISM/SLIM,3400.0,3200-3400kg,LEO,"XRISM, SLIM"
+2023-140,2023-09-10,Atlas V 551,SILENT BARKER,3600.0,3400-3600kg,GTO,"USA 346, USA 347, USA 348"
+2023-142,2023-09-15,Firefly Alpha,-,100.0,0-200kg,LEO,Victus Nox
+2023-150,2023-09-27,Qased,-,15.0,0-200kg,LEO,Noor 3
+2023-154,2023-10-06,Atlas V 501,KuiperSat-1/2,1200.0,1000-1200kg,LEO,"Kuiper-P2, Kuiper-P1"
+2023-155,2023-10-09,Vega,THEOS-2/TRITON,725.0,600-800kg,LEO,"THEOS-2, FORMOSAT-7R, ANSER-FLW-2, ANSER-FLW-1, N3SS, CSC-2, CSC-1, PRETTY, MACSAT, PVCC"
+2023-157,2023-10-13,Falcon Heavy,Psyche,2608.0,2600-2800kg,BEO,Psyche
+2023-174,2023-11-11,Falcon 9,Transporter-9,2315.125,2200-2400kg,LEO,"Connecta T3.1, MANTIS, OrbAstro PC1, Juba, Lemur-2 Dilightful, Veronika/OM9VER, PLATERO, Lemur-2 Good-Vibes, BRO-11, PEARL-1H, Djibouti-1A, Lemur-2 Sanita-Vetra, Connecta T3.2, IRIS-C2, Flock 4Q 1, Flock 4Q 16, TIGER-6, Flock 4Q 11, Flock 4Q 36, Flock 4Q 12, GENMAT-1, TIGER-5, Flock 4Q 19, Flock 4Q 8, Flock 4Q 28, AETHER-1, Flock 4Q 27, Flock 4Q 17, Flock 4Q 26, Flock 4Q 31, Flock 4Q 30, PICO-1A-9, ICEYE-X31, Hello Test 1, Hello Test 2, Falconsat-10, Umbra-08, ICEYE-X32, ICEYE-X34, SpaceVan 1, Pelican 3001, Umbra-07, SPIP, AETHER-2, ION SCV013 Ultimate Hugo, Impulse-1 Mira, ICEYE-X35, Flock 4Q 25, Flock 4Q 29, Flock 4Q 18, Flock 4Q 22, Flock 4Q 23, Flock 4Q 33, Flock 4Q 35, Flock 4Q 32, Flock 4Q 14, Flock 4Q 3, Flock 4Q 20, Flock 4Q 24, Flock 4Q 6, Flock 4Q 34, KAFASAT, Flock 4Q 7, Flock 4Q 15, Flock 4Q 2, ProtoMethee, Flock 4Q 9, Observer-1A, Flock 4Q 10, Flock 4Q 5, PICO-1A-3, Flock 4Q 4, Flock 4Q 13, Flock 4Q 21, PICO-1A-5, BRO-10, Lemur-2 Marapamasm, Lemur-2 The-Cleaner, Outpost Mission 2, Lemur 2 Mango2A, Elliot, Lemur 2 Mango2B, Barry-1, PLATFORM-5, Vanguard, NinjaSat, PEARL-1C, PICO-1A-8, PICO-1A-2, PICO-1A-6, PICO-1A-1, Intuition-1, Unicorn-2J, HADES-D, HERON Mk.II, Unicorn-2K, OMNI-LER1, SpaceANT-D, Time We'll Tell, PICO-1A-7, OSW Cazorla, Lemur-2-NanaZ, EPIC Hyper-3, AAC-AIS-SAT3, EXO-0, Crypto3"
+2023-175,2023-11-12,Falcon 9,O3b mPOWER 5/6,3400.0,3200-3400kg,MEO,"MP05 (O3b mPOWER F5), MP06 (O3b mPOWER F6)"
+2023-179,2023-11-21,Cheonlima-1,-,200.0,0-200kg,LEO,Manligyeong-1 F3
+2023-185,2023-12-01,Falcon 9,Korea 425,1280.65,1200-1400kg,LEO,"GNOMES-4, 425 EO/IR, KOYOH, Bane, uHETsat, Lilium 1, SpIRIT, ION SCV-0015 Daring Diego, ENSO, Hayasat-1, EIRSAT-1, ALISIO-1, Unicorn-2N, MDQubesat-2, Unicorn-2M, NanoFF 2, NanoFF 1"
+2023-188,2023-12-04,ADD TV2,-,80.0,0-200kg,LEO,SS-20000
+2023-196,2023-12-15,Electron,QPS-SAR-5,120.0,0-200kg,LEO,QPS-SAR-5 Tsukoyomi-I
+2023-202,2023-12-22,Firefly Alpha,Tantrum,250.0,200-400kg,LEO,Tyvak-1015 (TANTRUM)
+2023-204,2023-12-24,Falcon 9,SARah-2/3,3600.0,3400-3600kg,LEO,"SARah 2, SARah 3"
+2023-210,2023-12-29,Falcon Heavy,X-37B No. 2/USSF-52,5000.0,4800-5000kg,LEO,USA 349
+2024-001,2024-01-01,PSLV-DL,XPoSAT,519.0,400-600kg,LEO,"XPoSAT, POEM-3"
+2024-003,2024-01-03,Falcon 9,Ovzon-3,1800.0,1600-1800kg,GEO,Ovzon 3
+2024-006,2024-01-08,Vulcan Centaur VC2S,CERT-1,1283.0,1200-1400kg,HEO,Peregrine
+2024-010,2024-01-12,H-IIA 202,IGS O-8,1500.0,1400-1600kg,LEO,2024-010A
+2024-015,2024-01-20,Qaem-100,-,50.0,0-200kg,LEO,Suraya
+2024-018,2024-01-28,Simorgh,Mehda,42.0,0-200kg,LEO,"Mehda, Kaihan 2, Hatef 1"
+2024-022,2024-01-31,Electron,Lemur SSA 1-4,100.0,0-200kg,LEO,Lemur
+2024-025,2024-02-08,Falcon 9,PACE,1700.0,1600-1800kg,LEO,PACE
+2024-030,2024-02-15,Falcon 9,IM-1,1908.0,1800-2000kg,HEO,IM-1 (Odysseus)
+2024-032,2024-02-17,H3-22S,VEP-4,2975.0,2800-3000kg,LEO,"CE-SAT-IE, VEP-4, TIRSAT"
+2024-033,2024-02-17,GSLV Mk II,INSAT-2DS,2275.0,2200-2400kg,GEO,Insat 3DS
+2024-034,2024-02-18,Electron,ADRAS-J,150.0,0-200kg,LEO,ADRAS-J
+2024-035,2024-02-20,Falcon 9,HTS 113BT,4000.0,3800-4000kg,GEO,Merah Putih 2
+2024-043,2024-03-04,Falcon 9,Transporter-10,3632.3,3600-3800kg,LEO,"HORACIO, MUSAT2, ICEYE-X38, MethaneSAT, ICEYE-X37, ICEYE-X36, PE-FLT2 (Tyvak-0262), PE-FLT1 (Tyvak-0261), RROCI-2, BRO-13, BRO-12, PY4 SV3, IRIS-F1, ONDOSAT-OWL-1, SONATE-2, ONDOSAT-OWL-2, PYXIS, Lemur-2 CharlieRose, Lemur-2 Feldhus, CONTECSAT-1, CBAS-LACE 1, LaCE-2, TIGER-8, Lynk Tower 5, NewSat-44, Lynk Tower 6, ROSE, OrbAstro-TR2, YAM-6, Jackal-01, Optimus, Apex Aries 1, GHOSt-5, Meson-1, LizzieSat, GHOSt-4, Jackal-02, FIFI, RIRI, LOULOU, PY4 SV2, PY4 SV1, Sentry, TIGER-7, Veery-0E, M3, PY4 SV4, AEROS, Lemur 2 Johnny Truong, Lemur 2 Rocinante, Hammer"
+2024-047,2024-03-12,Electron,Strix-3,150.0,0-200kg,LEO,StriX-3
+2024-053,2024-03-21,Electron,NROL-123,130.0,0-200kg,LEO,"USA 352, Mola, AEROCUBE 16A, AEROCUBE 16B"
+2024-059,2024-03-30,Falcon 9,EUTELSAT 36D,5000.0,4800-5000kg,GEO,EUTELSAT 36D
+2024-066,2024-04-07,Falcon 9,Bandwagon-1,1348.0,1200-1400kg,LEO,"TSAT-1A, Hawk-8A, Capella-14 (Acadia), Hawk-8B, Hawk-9A, QPS-SAR-7 TSUKUYOMI-II, Hawk-9C, Hawk-8C, Hawk-9B, Centauri 6, ADD-425 Project SAR"
+2024-067,2024-04-09,Delta 4H,ORION 12?,5000.0,4800-5000kg,GTO,USA 353
+2024-070,2024-04-11,Falcon 9,USSF-62,1200.0,1000-1200kg,LEO,WSF-M
+2024-077,2024-04-23,Electron,Neonsat-1,116.1,0-200kg,LEO,"NEONSAT-01, ACS 3"
+2024-079,2024-04-28,Falcon 9,Galileo L12,1466.0,1400-1600kg,MEO,"GalileoSat-29, GalileoSat-30"
+2024-081,2024-05-02,Falcon 9,Maxar 1,1400.0,1200-1400kg,LEO,"Legion 1, Legion 2"
+2024-099,2024-05-25,Electron,PREFIRE-1,10.0,0-200kg,LEO,Prefire-2
+2024-101,2024-05-28,Falcon 9,EarthCARE,2200.0,2000-2200kg,LEO,EarthCARE
+2024-108,2024-06-05,Electron,PREFIRE-2,10.0,0-200kg,LEO,Prefire-1
+2024-114,2024-06-20,Electron,Kineis 1A-1E,140.0,0-200kg,LEO,"Kineis IoT 1, Kineis IoT 2, Kineis IoT 3, Kineis IoT 4, Kineis IoT 5"
+2024-115,2024-06-20,Falcon 9,Astra 1P,5000.0,4800-5000kg,GEO,SES-24/ASTRA 1P
+2024-119,2024-06-25,Falcon Heavy,GOES U,5000.0,4800-5000kg,GEO,GOES-U
+2024-123,2024-07-01,H3-22S,ALOS 4,2900.0,2800-3000kg,LEO,"ALOS-4 ""Daichi-4"""
+2024-125,2024-07-04,Firefly Alpha,VCLS Demo-2FB,47.7,0-200kg,LEO,"SOC-i, KUbesat-1, Serenity, R5-S4, R5-S2, TechEdSat-11, MESAT-1, CatSat"
+2024-127,2024-07-08,Falcon 9,Turksat 6A,4250.0,4200-4400kg,GEO,TURKSAT-6A
+2024-128,2024-07-09,Ariane 62,Cubesats,1660.0,1600-1800kg,LEO,"CURIE A, 3Cat-4, GRBBeta, ISTsat-1, Ariane 6, OOV-Cube, Replicator, Curium One, Robusta-3A"
+2024-129,2024-07-12,Falcon 9,Starlink Group 9-3,1920.0,1800-2000kg,LEO,"Starlink-11214, Starlink-11202"
+2024-137,2024-08-02,Electron,Strix-4,150.0,0-200kg,LEO,StriX-4
+2024-142,2024-08-11,Electron,Capella 13 Acadia-3,180.0,0-200kg,LEO,Capella 13
+2024-146,2024-08-15,Falcon 9,Maxar-2,1400.0,1200-1400kg,LEO,"Legion 3, Legion 4"
+2024-147,2024-08-16,SSLV,EOS-08,176.2,0-200kg,LEO,"EOS-08, SR-0 Demosat"
+2024-149,2024-08-16,Falcon 9,Transporter-11,2417.388,2400-2600kg,LEO,"Waratah Seed WS-1, PHISAT-2, Lemur-2 Tomatokechup, Connecta T4.1, Lopen, Rock, Connecta T4.3, QUBE, Satoro-T2, WREN-1, Tomorrow-S1, Flock 4BE 18, Flock 4BE 7, Flock 4BE 4, Flock 4BE 16, Flock 4BE 26, Tomorrow-S2, Flock 4BE 36, Flock 4BE 25, Flock 4BE 31, Flock 4BE 20, Flock 4BE 23, Flock 4BE 15, Flock 4BE 17, Newsat-50, Flock 4BE 22, Flock 4BE 34, TYCHE, Flock 4BE 32, Newsat-48, Flock 4BE 30, Newsat-49, Flock 4BE 11, Flock 4BE 33, Flock 4BE 10, YAM-7, Flock 4BE 24, LUR-1, Tanager 4001, EAGLEEYE, Flock 4BE 29, CAKRA-1, Flock 4BE 2, Flock 4BE 13, Flock 4BE 27, Flock 4BE 9, Flock 4BE 8, Flock 4BE 6, Flock 4BE 14, Flock 4BE 1, Flock 4BE 28, Iperdrone.0, GNA-3, Connecta T4.2, PTD-R (Tyvak-0127), Connecta T4.4, OreSat0.5, Deimos, CUAVA-2, Ernst, GaindeSat, TORO, HYPSO-2, Lemu Nge, Lemur 2 Stella, Sateliot-2, Nightjar, Lemur 2 Marhisyam, Sateliot-4, PICO-1B1+, ICEYE-X43, Hawk-10A, Umbra-09, Amateru 4, AWS, Capella-15 (Acadia), Hawk-10B, ICEYE-X39, Umbra-10, ICEYE-X33, Foresight-1 (ICEYE-X40), Sateliot-1, BRO-14, Sateliot-3, BRO-15, UM5Sat-Ribat, UM5Sat-EOSAT, Kanyini, TROOP-F2, Flock 4BE 35, Flock 4BE 5, Flock 4BE 12, Flock 4BE 3, Hyperfield-1A, Flock 4BE 19, PTD-4, ION SCV Magnificent Mo, GNOMES-5, Hawk-10C, FM199, LEMUR-2 AHMED-ASRAR, FM196, LEMUR-2 LLOYD, FM198, LEMUR-2 SQUIRRELCOMM, FM197, LEMUR-2 SIERRINI, AAC-AIS-SAT4"
+2024-157,2024-09-05,Vega,Sentinel-2C,1143.0,1000-1200kg,LEO,Sentinel-2C
+2024-165,2024-09-14,Qaem-100,-,60.0,0-200kg,LEO,Chamran-1
+2024-167,2024-09-17,Falcon 9,Galileo L13,1466.0,1400-1600kg,MEO,"GalileoSat-31, GalileoSat-32"
+2024-172,2024-09-20,Electron,Kineis 3A-3E,140.0,0-200kg,LEO,"Kineis-3C, Kineis-3D, Kineis-3E, Kineis-3A, Kineis-3B"
+2024-176,2024-09-26,H-IIA 202,IGS O-9,1500.0,1400-1600kg,SSO,JSE reda-8 gouki
+2024-179,2024-10-04,Vulcan Centaur VC2S,CERT-2,1500.0,1400-1600kg,LEO,Vulcan Centaur R/B
+2024-180,2024-10-07,Falcon 9,Hera,1081.0,1000-1200kg,BEO,HERA
+2024-188,2024-10-20,Falcon 9,OneWeb L20,2960.0,2800-3000kg,LEO,"OWLID 0636, OWLID 0637, OWLID 0638, OWLID 0639, OWLID 0640, OWLID 0641, OWLID 0642, OWLID 0643, OWLID 0644, OWLID 0645, OWLID 0646, OWLID 0647, OWLID 0648, OWLID 0649, OWLID 0650, OWLID 0651, OWLID 0652, OWLID 0653, OWLID 0654, OWLID 0655"
+2024-198,2024-11-04,H3-22S,DSN 3,5000.0,4800-5000kg,GTO,Kirameki 3
+2024-201,2024-11-05,Electron,E-Space 4,100.0,0-200kg,SSO,Protosat-1
+2024-206,2024-11-11,Falcon 9,Koreasat-6A,3500.0,3400-3600kg,GEO,KOREASAT 6A
+2024-212,2024-11-17,Falcon 9,Optus X,4000.0,3800-4000kg,GEO,ADS-01
+2024-214,2024-11-18,Falcon 9,GSAT-20,4700.0,4600-4800kg,GTO,GSAT-20
+2024-219,2024-11-25,Electron,Kineis 5A-5E,140.0,0-200kg,SSO,"Kineis-5D, Kineis-5C, Kineis-5E, Kineis-5A, Kineis-5B"
+2024-233,2024-12-05,PSLV-XL,PROBA-3,540.0,400-600kg,GTO,"PROBA-3 CSC, PROBA-3 OSC"
+2024-235,2024-12-05,Vega C,Sentinel-1C,2157.0,2000-2200kg,SSO,Sentinel-1C
+2024-236,2024-12-06,Simorgh,-,310.0,200-400kg,LEO,"Fakhr-1, Saman-1, Simorgh satellite"
+2024-242,2024-12-17,Falcon 9,RRT-1,4352.0,4200-4400kg,MEO,GPS III SV07
+2024-244,2024-12-17,Falcon 9,O3b mPOWER 7/8,3400.0,3200-3400kg,MEO,"MP07, MP08"
+2024-247,2024-12-21,Falcon 9,Bandwagon-2,1520.25,1400-1600kg,LEO,"ADD-425 Project SAR, TANSTAAFL-2, Hawk-11B, Think Orbital F2, Hawk-11C, Hawk-11A, LizzieSat-2, ICEYE-X49, ONDOSAT-OWL-11, Tomorrow-S4, Pleiades-Orpheus, GITAI-SC1, ICEYE-X47, LasarSat-1, Tomorrow-S3, ONDOSAT-OWL-3, CroCube, ONDOSAT-OWL-9, ONDOSAT-OWL-5, ONDOSAT-OWL-6, ONDOSAT-OWL-7, ONDOSAT-OWL-8, XCUBE-1, CTC-0, DJIBOUTI-1B, ONDOSAT-OWL-12, ONDOSAT-OWL-10, ONDOSAT-OWL-4"
+2024-248,2024-12-21,Electron,Strix-2,150.0,0-200kg,SSO,StriX-2
+2024-252,2024-12-29,Falcon 9,Astranis,1600.0,1400-1600kg,HEO,"UtilitySat, NuView Alpha, AGILA, NuView Bravo"
+2024-253,2024-12-30,PSLV,SPADEX,490.0,400-600kg,LEO,"SPADEX-A, SPADEX-B, POEM-4"
+2025-001,2025-01-04,Falcon 9,Thuraya 4-NGS,5000.0,4800-5000kg,GEO,Thuraya 4
+2025-009,2025-01-14,Falcon 9,Transporter-12,3696.6,3600-3800kg,LEO,"Buzzzer-1, EDISON-1, BALKAN-1, GESAT Gen1, Flock 4g-8, HCT-SAT1, Veery-0F, InnoCube, SCOT-Digantara, AE1d, IRIS-F3, Saturnin-1, Flock 4g-13, Flock 4g-9, Otter, Flock 4g-7, Flock 4g-12, MBZ-Sat, Ray 1.0, ION SCV Amazing Antonius, Flock 4g-11, ION SCV Eminent Emmanuel, PELICAN 3009, SIGI 1, Flock 4g-26, Flock 4G 28, GARAI A, Flock 4g-20, Flock 4G 24, Flock 4g-16, Flock 4g-3, NewSat-45, Flock 4g-27, Flock 4g-29, Flock 4g-32, ANSER-L-S, Flock 4g-22, Flock 4G 25, Flock 4g-23, LIME, AE1c, Flock 4G 34, Flock 4G 21, Flock 4g-31, PAUSAT-1, BRO-16, FGN-100-d1, PARUS-T1, TROLL, Flock 4g-4, Flock 4g-6, Flock 4g-2, Pioneer-02, Flock 4g-5, Lyra-1, Jay D2, Flock 4g-1, Flock 4g-14, Jay C, Jay D1, Flock 4g-10, SkyBee-1, Skylink-2, Impulse-2 Mira, FUSION 1, Flock 4g-36, FOSSASAT F0019, Elevation-1, Flock 4g-15, Flock 4g-30, Flock 4g-18, Flock 4g-17, FOREST-3, Flock 4g-35, IRIS-F2, Flock 4g-33, FOSSASAT F0018, Hype AGH, BlueBon, LOGSATS-2, HADES-R, Poquito, HYDRA-T, Skylink-1, Lemur-2 Wilson, Connecta IOT-8, Lemur-2 Star-Fox, HEO-1, Foresight 1R, Lemur-2 Arianna, Iceye-X41, Firefly 1, NORSAT-4, Connecta IOT-5, Firefly 2, Iceye-X45, LEMUR 2 Alisia, Foresight 2, Centauri-7, Connecta IOT-6, Firefly 3, LEMUR 2 Rountripper, LEMUR 2 Mynameisjeff, SatGus, Centauri 8, Connecta IOT-7, PROMETHEUS-1, FOSSASAT F0020, ALAINSAT-1, SEDNA-2, PoSAT-2"
+2025-010,2025-01-15,Falcon 9,BG-1/Hakuto-R M2,2550.0,2400-2600kg,HEO,"Blue Ghost, Resilience"
+2025-011,2025-01-16,New Glenn 7x2,DS-1,3980.0,3800-4000kg,MEO,Blue Ring Pathfinder
+2025-020,2025-01-29,GSLV Mk II,IRNSS-1K?,2232.0,2200-2400kg,GTO,NVS-02
+2025-023,2025-02-02,H3-22S,QZS 6,4900.0,4800-5000kg,GTO,Michibiki-6
+2025-025,2025-02-04,Falcon 9,Maxar-3,1400.0,1200-1400kg,LEO,"WorldView Legion 5, WorldView Legion 6"
+2025-028,2025-02-08,Electron,Kineis 2A-2E,140.0,0-200kg,SSO,"Kineis-2C, Kineis-2D, Kineis-2E, Kineis-2A, Kineis-2B"
+2025-033,2025-02-18,Electron,BlackSky Gen3,138.0,0-200kg,LEO,Global Gen 3-1
+2025-038,2025-02-27,Falcon 9,IM-2/Odin/LTB/CGEO-1,2736.0,2600-2800kg,HEO,"IM-2 Athena, Chimera GEO 1, Lunar Trailblazer, Odin"
+2025-044,2025-03-06,Ariane 62,CSO 3,3562.0,3400-3600kg,SSO,CSO-3
+2025-047,2025-03-12,Falcon 9,SPHEREx,758.0,600-800kg,LEO,"PUNCH-NFI00, PUNCH-WFI01, PUNCH-WFI03, PUNCH-WFI02, SPHEREx"
+2025-050,2025-03-15,Electron,QPS-SAR-9,120.0,0-200kg,LEO,Susanoo-I
+2025-052,2025-03-15,Falcon 9,Transporter-13,3159.2,3000-3200kg,LEO,"JINJUSat-1, NUSHSat 1, IOD1 CNS, Tevel 2-9, Tevel 2-2, Tevel 2-8, Botsat-1, Tevel 2-7, Tevel 2-6, Tevel 2-5, AeroCube 18A, ORCA-2b, AeroCube 18B, DROID.002, Pioneer-03, Tomorrow-S6, Etihad-Sat, Clarity-1, RAPSat-1A, SPACEEYE-T1, ION Marvelous Mathias, M-SEL, Sphinx, LizzieSat-3 (LS-3), Tomorrow-S5, OTP-2, OrbAstro-TR5, Tevel 2-4, Tevel 2-1, Tevel 2-3, AlMunther, NILA, HERMES Pathfinder H1, HERMES Pathfinder H2, PANDORE, Bucanneer-MM, Lemur-2 Leia-Philip, EZIE-A, Lemur-2 Lia-Martin, EZIE 3, EZIE-B, UVSQ-Sat NG, ARVAKER I, ICEYE-X48, YAM-8, ICEYE-X50, FireSat0, ICEYE-X51, ICEYE-X46, LEMUR 2 Deloitte-1, HYVRID, Lemur-2 EmersonRose, Lemur-2 Marache-Fran, SOAP, Lemur-2 TheFalconer, Lemur-2 Balto, HERMES Pathfinder H6, HYDRA-W, Unicorn-2Q, HADES-ICM, HERMES Pathfinder H4, HERMES Pathfinder H5, HERMES Pathfinder H3, Unicorn-2O, Unicorn-2P"
+2025-056,2025-03-18,Electron,Kineis 4A-4E,140.0,0-200kg,SSO,"Kineis-4E, Kineis-4C, Kineis-4D, Kineis-4A, Kineis-4B"
+2025-060,2025-03-24,Falcon 9,INTRUDER?,1000.0,800-1000kg,LEO,USA 498
+2025-061,2025-03-26,Electron,OTC Phase 1,120.0,0-200kg,SSO,"OTC-P1-1, OTC-P1-2, OTC-P1-3, OTC-P1-4, OTC-P1-5, OTC-P1-6, OTC-P1-7, OTC-P1-8"
+2025-077,2025-04-16,Minotaur IV,NROL-174 Asterion,500.0,400-600kg,LEO,"USA 521 (NROL-174), USA 522"
+2025-081,2025-04-22,Falcon 9,Bandwagon-3,812.0,800-1000kg,LEO,"ADD-425-4, Tomorrow-S7"
+2025-090,2025-04-29,Vega C,Biomass,1131.0,1000-1200kg,SSO,Biomass
+2025-104,2025-05-17,Electron,QPS-SAR-10,120.0,0-200kg,LEO,Wadatsumi-I
+2025-116,2025-05-30,Falcon 9,GPS III SV08,4352.0,4200-4400kg,GTO,GPS III SV08
+2025-118,2025-06-02,Electron,BlackSky Gen3-2,138.0,0-200kg,LEO,Global-32
+2025-125,2025-06-11,Electron,QPS-SAR-11,120.0,0-200kg,LEO,Yamatsumi-I
+2025-135,2025-06-23,Falcon 9,Transporter-14,3394.8,3200-3400kg,LEO,"Good Ancestor Kilakila, Pierre, DUTHSat-2, HORIS-1, RIDU-Sat 1, TPA-1, Connecta IOT-9, UND ROADS 1, WISESAT-3, Otter Pup 2, Startical IOD-2, MMS-1, ARCSTONE, Pulsar IOV, York T1DES, Winnebago-4, SkyBee-AO2, ION Passionate Paula, ForgeStar-1, JACK-001, Valmay, UND ROADS 2, BRO-18, SATMAR, Hyperfield-1B, Connecta IOT-12, HORIS-2, Connecta IOT-10, MOBIUS-1, Connecta IOT-11, Quick3, PADRE, ADDCUBE, Lemur-2 Krish, Lilo, AE3Va, Time Flies, Shaggy, ARVAKER 3, ARVAKER 2, IRIDE-MS2-HEO-3, IRIDE-MS2-HEO-2, ICEYE-X54, IRIDE-MS2-HEO-5, ICEYE-X52, VanZyl-2, ICEYE-X56, ION Charismatic Carlus, IRIDE-MS2-HEO-6, Lyra 1-03, ICEYE-X57, GRUS-3 Alpha, YAM-10, ICEYE-X55, IRIDE-MS2-HEO-4, Capella 17, ICEYE-X53, IRIDE-MS2-HEO-9, Sejong-2, IRIDE-MS2-HEO-8, BIFROST-DNK, Satoro-T3, PARUS-T2, AE2a, Stitch, Scooby, Lemur-2"
+2025-138,2025-06-26,Electron,Hawk 12/Kestrel 0A,105.0,0-200kg,SSO,"Hawk 12C, Hawk 12B, Hawk 12A, Kestrel-0A"
+2025-140,2025-06-28,Electron,Lyra 4,74.0,0-200kg,LEO,LYRA-4
+2025-141,2025-06-28,H-IIA 202,GOSAT-GW,2900.0,2800-3000kg,SSO,Ibuki-GW
+2025-143,2025-07-01,Falcon 9,MTG-S1,3800.0,3600-3800kg,GEO,METEOSAT 13 (MTG-S1)
+2025-148,2025-07-13,Falcon 9,Dror-1,4500.0,4400-4600kg,GTO,Dror 1
+2025-153,2025-07-22,Falcon 9,O3b mPOWER 9/10,3400.0,3200-3400kg,MEO,"O3b mPOWER F9, O3b mPOWER F10"
+2025-154,2025-07-23,Falcon 9,TRACERS,920.0,800-1000kg,SSO,"LIDE, TRACERS T1, EPIC Athena, Skykraft 4B, TRACERS T2, Bard, REAL, Skykraft 4C, Skykraft 4A, Skykraft 4D, Skykraft 4E"
+2025-156,2025-07-26,Vega C,CO3D/Microcarb,1320.0,1200-1400kg,SSO,"MicroCarb, CO3D F1, CO3D F2, CO3D F3, CO3D F4"
+2025-163,2025-07-30,GSLV Mk II,NISAR,2393.0,2200-2400kg,SSO,NISAR
+2025-169,2025-08-05,Electron,QPS-SAR-12,120.0,0-200kg,LEO,QPS-SAR-12 KUSHINADA-I
+2025-172,2025-08-13,Ariane 62,METOP-SG A1,4040.0,4000-4200kg,LEO,METOP-SG A1
+2025-173,2025-08-13,Vulcan Centaur VC4S,NTS-3,1850.0,1800-2000kg,GEO,"NTS 3, USA 554, USA 571"
+2025-185,2025-08-23,Electron,E-Space,150.0,0-200kg,LEO,"DRESDEN, STARK, FOURIER, BASIL, DOJO"
+2025-188,2025-08-26,Falcon 9,NAOS,1350.0,1200-1400kg,SSO,"Pelican 3, Pelican 4, NAOS, Capella 16?, Firefly 5, Firefly 4, LEAP-1, Firefly 6"
+2025-193,2025-09-02,Shavit 2,'Ofeq-19,300.0,200-400kg,LEO,'Ofeq-19
+2025-215,2025-09-24,Falcon 9,IMAP,1517.0,1400-1600kg,BEO,"IMAP, SWFO-L1, Carruthers Geocorona Obs"
+2025-229,2025-10-14,Electron,Strix-5,150.0,0-200kg,LEO,StriX-5
+2025-248,2025-11-02,Falcon 9,Bandwagon-4,1824.408,1800-2000kg,LEO,"ADD-425-5, Semi-1, Lemur-2 Affie-Wauwie, TAURUS 3, Semi-3, Semi-1N, FGN-100-d2, Foresight-3, Foresight-4, Foresight-5, Starcloud-1, CEVROSAT, TAURUS 1, TAURUS 2, TAURUS 4, Tomorrow-S8, Tomorrow-S9, Haven-Demo"
+2025-249,2025-11-02,LVM3,GSAT-7R,4400.0,4200-4400kg,GTO,CMS-03
+2025-251,2025-11-04,Ariane 62,Sentinel-1D,2157.0,2000-2200kg,SSO,Sentinel-1D
+2025-252,2025-11-05,Electron,QPS-SAR-14,120.0,0-200kg,LEO,Yachihoko-I
+2025-260,2025-11-13,New Glenn 7x2,-,1080.0,1000-1200kg,BEO,"ESCAPADE Blue, ESCAPADE Gold, Viasat CPS Demo"
+2025-264,2025-11-17,Falcon 9,Sentinel-6B,1140.0,1000-1200kg,LEO,Sentinel-6B
+2025-267,2025-11-20,Electron,BlackSky Gen3-3,138.0,0-200kg,LEO,Global-33
+2025-274,2025-11-26,Nuri,-,592.9,400-600kg,SSO,"Bicheon, E3 TESTER KARI-1, CAS500-3, Sejong-4, JACK-003, COSMIC, ETRISat, SPIRONE, PERSAT01, JACK-004, INHA-RoSAT, Hana, K-HERO"
+2025-276,2025-11-28,Falcon 9,Transporter-15,4203.4,4200-4400kg,LEO,"Formosat-8A, Pelican 5, Phasma-Lamarr, HCT-SAT2, Hunity, WISDOM B, BRO-17, TORO2, BRO-20, Sari 1, Sari 2, ANISCSAT, Lemur-2 DeanAndMeave, Lilium 2, Otter, CTC-1B, ION Galactic Giorgius, 6GStarLab, MICE-1, LEO Express 3, Lemur-2 Stas-Gorbuk, PW-6U, WISDOM A, AC1-003, SPiN 2, TRYAD 1, Beatrice Tinsley, TRYAD 2, YAM-9, IRIDE-MS1-Eaglet-2-1, IRIDE-MS1-Eaglet-2-2, IRIDE-MS1-Eaglet-2-3, IRIDE-MS1-Eaglet-2-4, IRIDE-MS1-Eaglet-2-5, IRIDE-MS1-Eaglet-2-6, IRIDE-MS1-Eaglet-2-7, IRIDE-MS1-Eaglet-2-8, Pelican 6, Flock 4h-1, Flock 4h-2, Flock 4h-3, Flock 4h-4, Flock 4h-5, Flock 4h-6, Flock 4h-7, Flock 4h-8, Flock 4h-9, Flock 4h-10, Flock 4h-11, Flock 4h-12, Flock 4h-13, Flock 4h-14, Flock 4h-15, Flock 4h-16, Flock 4h-17, Flock 4h-18, Flock 4h-19, Flock 4h-20, Flock 4h-21, Flock 4h-22, Flock 4h-23, Flock 4h-24, Flock 4h-25, Flock 4h-26, Flock 4h-27, Flock 4h-28, Flock 4h-29, Flock 4h-30, Flock 4h-31, Flock 4h-32, Flock 4h-33, Flock 4h-34, Flock 4h-35, Yvonne Brill, Black Kite 1, Mercury One, Melina Furman, AC1-001, AC1-002, Phasma-Dirac, W-5, Umbra-11, PIAST-S1, CTC-1C, ICEYE-X58, ICEYE-X59, ICEYE-X60, ICEYE-X61, ICEYE-X62, MAUVE, PIAST-S2, PIAST-M, Veery-0G, AE5RA, AE5RB, HydroGNSS-1, HydroGNSS-2, Nahla, AE5RC, T.Microsat-1, Accenture-1, Lemur-2 Teodor, Speqtre, Lilium 3, Gyeonggisat-1, IHI-SAT-2, CTC-1A, Ororatech Gena-OT-1, PHI-1, Lemur-2 Laila, Luna-1, Foresail-1 Prime, WISESAT-5, WISESAT-7, Lacuna-4, Lemur-2 Finnian, Lemur-2 Starlight, Lemur-2 Tartiflette, Lemur-2 Vukasin, Lemur-2 Hotspur-Tom, Lemur-2 Lacunasat, ION Stellar Stephanus"
+2025-279,2025-12-01,Vega C,Kompsat-7,1800.0,1600-1800kg,SSO,Arirang-7
+2025-291,2025-12-09,Falcon 9,INTRUDER?,1000.0,800-1000kg,LEO,USA 570
+2025-297,2025-12-14,Electron,RAISE-4,110.0,0-200kg,SSO,RAISE-4
+2025-302,2025-12-17,Ariane 62,Galileosat 33-34,1466.0,1400-1600kg,MEO,"GalileoSat-33, GalileoSat-34"
+2025-305,2025-12-18,Electron,DiskSat 1-4,12.0,0-200kg,LEO,"DiskSat C, DiskSat B, DiskSat D, DiskSat A"
+2025-307,2025-12-21,Electron,QPS-SAR-15,120.0,0-200kg,LEO,QPS-SAR-15
+2026-001,2026-01-03,Falcon 9,COSMO-Skymed SG FM3,2205.0,2200-2400kg,SSO,CSG FM3
+2026-004,2026-01-11,Falcon 9,Twilight,4436.2,4400-4600kg,SSO,"Lemur-2 FikretDengiz, Lemur-2 Callum-K-J, Lemur-2 Mario-Sousa, Dcubed-1, Lemur-2 Sonnenblume, Lemur-2 Wobler, BlackCAT, Lemur-2 Gram-E-Sue, Umbra-12, ICEYE-X63, ICEYE-X64, Aether-3, Aether-4, Aether-5, Aether-6, Aether-7, Aether-8, Aether-9, Aether-10, Aether-11, Aether-12, Capella 19, Capella 18, SPARCS, Lemur-2 Kate, Lemur-2 HCS-Bazus, Hydra-2, Connecta IOT-15, Flamingo-1, Hawk 13A, Hawk 13C, Lemur-2 Kutar, Pandora, Hawk 13B, CarbSAR-IOD, Tomorrow-S10, Tomorrow-S11, Connecta IOT-13, Connecta IOT-14, Connecta IOT-16"
+2026-015,2026-01-22,Electron,Open Cosmos,40.0,0-200kg,LEO,"Open Constellation 1, Open Constellation 2"
+2026-017,2026-01-28,Falcon 9,GPS III SV09,4352.0,4200-4400kg,GTO,GPS III SV09
+2026-019,2026-01-30,Electron,NEONSAT-1A,100.0,0-200kg,SSO,Neonsat-1A
+2026-029,2026-02-12,Vulcan Centaur VC4S,GSSAP,1500.0,1400-1600kg,GEO,"USA 582, USA 583, USA 584"
+2026-043,2026-03-05,Electron,BlackSky Gen3-4,138.0,0-200kg,LEO,Global-34?
+2026-046,2026-03-12,Firefly Alpha,LM-400 Tech Demo,1100.0,1000-1200kg,LEO,LM-400 Tech Demo
+2026-056,2026-03-20,Electron,Strix-6,150.0,0-200kg,LEO,StriX-6
+2026-065,2026-03-28,Electron,Celeste,50.0,0-200kg,LEO,"Celeste IOD-1, Celeste IOD-2"
+2026-074,2026-04-07,Minotaur IV,STP-S29A,159.9,0-200kg,LEO,"ASTRA-HyRAX, Rawhide 1, STPSat-7, MISR-C, Rawhide 2, AggieSat-6, CANVAS"
