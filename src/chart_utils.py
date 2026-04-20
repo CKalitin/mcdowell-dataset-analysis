@@ -16,7 +16,7 @@ class ChartUtils:
         'GTO': '#3d85c6',
         'GEO': '#1155cc',
         'HEO': "#51606e",
-        'BEO': '#3c4043'
+        'BEO': '#3c4043',
     }
     
     f9_site_color_map={
@@ -66,19 +66,20 @@ class ChartUtils:
 
     western_orbit_color_map = {
         'LEO': '#ffc000',
+        'SSO': "#ffdf80",
         'MEO': '#cc0000',
-        'GEO': '#1155cc',
         'GTO': '#3d85c6',
-        'HEO': '#51606e',
-        'Unknown': '#9e9e9e',
+        'GEO': '#1155cc',
+        'HEO': "#51606e",
+        'BEO': '#3c4043',
     }
 
     western_govmil_category_color_map = {
         'ISS': '#ffca3f',
         'Military LEO': '#b10202',
         'Military non-LEO': "#c44a32",
-        'Government LEO': "#0563c1",
-        'Government non-LEO': '#4080e7',
+        'Government LEO': "#067706",
+        'Government non-LEO': "#089b08",
     }
 
     rideshare_lv_color_map = {
@@ -100,8 +101,8 @@ class ChartUtils:
         'ISS': '#ffca3f',
         'Military LEO': '#b10202',
         'Military non-LEO': '#c44a32',
-        'Government LEO': '#0563c1',
-        'Government non-LEO': '#4080e7',
+        'Government LEO': "#067706",
+        'Government non-LEO': "#089b08",
     }
     
     # Naming scheme: color_sequence_{number}_{length}
