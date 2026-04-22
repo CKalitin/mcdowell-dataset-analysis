@@ -4,11 +4,24 @@ import standard_chart_generation as scg
 scg.electron_launches(
     chart_title_prefix='Electron',
     output_prefix='western',
+    output_name_by_category='electron_launches_by_category',
     start_year=2017,
     org_top_n=10,
     org_color_map=scg.mda.ChartUtils.color_sequence_3_12 + ['#9e9e9e'],
+    include_haste=True,
     save_raw_df=True,
     raw_df_title='electron_launches_classified',
+)
+
+scg.electron_launches(
+    chart_title_prefix='Electron',
+    output_prefix='western',
+    output_name_by_org='electron_launches_by_org_no_hypersonic',
+    output_name_by_category='electron_launches_by_category_no_hypersonic',
+    start_year=2017,
+    org_top_n=10,
+    org_color_map=scg.mda.ChartUtils.color_sequence_3_12 + ['#9e9e9e'],
+    include_haste=False,
 )
 
 # --- Small sat 2018-2025 (megaconstellations excluded) ---

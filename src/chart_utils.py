@@ -97,7 +97,7 @@ class ChartUtils:
         'Commercial':                '#fbbc04',
         'Government':                '#008F11',
         'Military':                  '#cc0000',
-        'HASTE':                     "#3B3C3D",
+        'Hypersonic':                "#3B3C3D",
         'Other':                     '#434343',
     }
 

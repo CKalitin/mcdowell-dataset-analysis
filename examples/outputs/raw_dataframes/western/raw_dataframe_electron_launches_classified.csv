@@ -33,7 +33,7 @@ Launch_Tag,Year,Mission,Launch_Date,Org,Category,N_Payloads
 2023-041,2023,Global-19/Global-5,2023-03-24,BlackSky Global,Constellation (Earth obs),2
 2023-062,2023,Tropics SV05/SV06,2023-05-08,MIT-LL,Constellation (Earth obs),2
 2023-073,2023,Tropics SV03/SV07,2023-05-26,MIT-LL,Constellation (Earth obs),2
-2023-S29,2023,DYNAMO-A,2023-06-18,HASTE,HASTE,0
+2023-S29,2023,DYNAMO-A,2023-06-18,Hypersonic,Hypersonic,0
 2023-100,2023,Electron 39 Rideshare,2023-07-18,Rideshare,Rideshare,7
 2023-126,2023,Capella 11 Acadia-1,2023-08-23,Capella Space,Constellation (SAR),1
 2023-196,2023,QPS-SAR-5,2023-12-15,QPS Labs,Constellation (SAR),1
@@ -49,9 +49,9 @@ Launch_Tag,Year,Mission,Launch_Date,Org,Category,N_Payloads
 2024-142,2024,Capella 13 Acadia-3,2024-08-11,Capella Space,Constellation (SAR),1
 2024-172,2024,Kineis 3A-3E,2024-09-20,Kineis,Constellation (Comms),5
 2024-201,2024,E-Space 4,2024-11-05,E-Space Rwanda,Constellation (Comms),1
-2024-S76,2024,MACH-TB-2,2024-11-24,HASTE,HASTE,0
+2024-S76,2024,MACH-TB-2,2024-11-24,Hypersonic,Hypersonic,0
 2024-219,2024,Kineis 5A-5E,2024-11-25,Kineis,Constellation (Comms),5
-2024-S85,2024,MACH-TB-3,2024-12-14,HASTE,HASTE,0
+2024-S85,2024,MACH-TB-3,2024-12-14,Hypersonic,Hypersonic,0
 2024-248,2024,Strix-2,2024-12-21,Synspective,Constellation (SAR),1
 2025-028,2025,Kineis 2A-2E,2025-02-08,Kineis,Constellation (Comms),5
 2025-033,2025,BlackSky Gen3,2025-02-18,BlackSky Global,Constellation (Earth obs),1
@@ -65,18 +65,18 @@ Launch_Tag,Year,Mission,Launch_Date,Org,Category,N_Payloads
 2025-140,2025,Lyra 4,2025-06-28,Echostar AU,Constellation (Comms),1
 2025-169,2025,QPS-SAR-12,2025-08-05,QPS Labs,Constellation (SAR),1
 2025-185,2025,E-Space,2025-08-23,E-Space,Constellation (Comms),5
-2025-S45,2025,MACH-TB-4?,2025-09-23,HASTE,HASTE,0
-2025-S51,2025,MACH-TB-5?,2025-10-01,HASTE,HASTE,0
+2025-S45,2025,MACH-TB-4?,2025-09-23,Hypersonic,Hypersonic,0
+2025-S51,2025,MACH-TB-5?,2025-10-01,Hypersonic,Hypersonic,0
 2025-229,2025,Strix-5,2025-10-14,Synspective,Constellation (SAR),1
 2025-252,2025,QPS-SAR-14,2025-11-05,QPS Labs,Constellation (SAR),1
-2025-S58,2025,Prometheus Run,2025-11-18,HASTE,HASTE,0
+2025-S58,2025,Prometheus Run,2025-11-18,Hypersonic,Hypersonic,0
 2025-267,2025,BlackSky Gen3-3,2025-11-20,BlackSky Global,Constellation (Earth obs),1
 2025-297,2025,RAISE-4,2025-12-14,JAXA,Government,1
 2025-305,2025,DiskSat 1-4,2025-12-18,USAF STP,Military,4
 2025-307,2025,QPS-SAR-15,2025-12-21,QPS Labs,Constellation (SAR),1
 2026-015,2026,Open Cosmos,2026-01-22,Open Cosmos,Constellation (Comms),2
 2026-019,2026,NEONSAT-1A,2026-01-30,KAIST,Government,1
-2026-M03,2026,Cassowary Vex,2026-02-28,HASTE,HASTE,0
+2026-M03,2026,Cassowary Vex,2026-02-28,Hypersonic,Hypersonic,0
 2026-043,2026,BlackSky Gen3-4,2026-03-05,BlackSky Global,Constellation (Earth obs),1
 2026-056,2026,Strix-6,2026-03-20,Synspective,Constellation (SAR),1
 2026-065,2026,Celeste,2026-03-28,ESA,Government,2

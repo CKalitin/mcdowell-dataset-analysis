@@ -2611,28 +2611,30 @@ def electron_launches(
     org_top_n=10,
     org_color_map=None,
     category_color_map=None,
+    include_haste=True,
     save_raw_df=False,
     raw_df_title=None,
 ):
     """Per-year bar charts of Electron satellite launches by customer org and by mission category.
 
-    Excludes Hypersonic / suborbital Electron flights (MACH-TB, DYNAMO-A series).
     Rideshare rule: >5 payloads, >2 distinct owners, no owner >=80% of payloads.
     """
     _CATEGORY_ORDER = [
         'Constellation (Earth obs)', 'Constellation (SAR)',
         'Constellation (SSA)', 'Constellation (Comms)',
-        'Commercial', 'Rideshare', 'Government', 'Military', 'HASTE', 'Other',
+        'Commercial', 'Rideshare', 'Government', 'Military', 'Hypersonic', 'Other',
     ]
 
     dataset = mda.McdowellDataset('./datasets')
     launch_df = dataset.launch.df
     satcat_df = dataset.satcat.df
 
-    # All Electron launches: satellites + HASTE (Hypersonic suborbital)
+    # All Electron launches: satellites + optionally Hypersonic suborbital
+    cat_filter = launch_df['Category'].str.startswith('Sat', na=False)
+    if include_haste:
+        cat_filter = cat_filter | (launch_df['Category'] == 'Hypersonic')
     el = launch_df[
-        (launch_df['Launch_Vehicle_Simplified'] == 'Electron') &
-        (launch_df['Category'].str.startswith('Sat', na=False) | (launch_df['Category'] == 'Hypersonic'))
+        (launch_df['Launch_Vehicle_Simplified'] == 'Electron') & cat_filter
     ].copy()
     el['Year'] = el['Launch_Date'].dt.year
     if start_year:
@@ -2674,8 +2676,8 @@ def electron_launches(
             'Year': launch_row['Year'],
             'Mission': launch_row['Mission'],
             'Launch_Date': launch_row['Launch_Date'],
-            'Org': 'HASTE',
-            'Category': 'HASTE',
+            'Org': 'Hypersonic',
+            'Category': 'Hypersonic',
             'N_Payloads': 0,
         })
     launch_classified = pd.DataFrame(rows).sort_values('Launch_Date')
@@ -2689,6 +2691,8 @@ def electron_launches(
     if save_raw_df:
         df_name = raw_df_title if raw_df_title else output_name_by_org
         mda.ChartUtils.log_and_save_df('dataframe', df_name, output_prefix, launch_classified)
+
+    _title_suffix = ' (with HASTE)' if include_haste else ' (Orbital)' # This one we call HASTE instead of hypersonic as used elsewhere just do to title length constraints in the image
 
     # --- Chart 1: by customer org ---
     org_counts = launch_classified['Org'].value_counts()
@@ -2711,7 +2715,7 @@ def electron_launches(
     mda.ChartUtils.log_and_save_df('csv', output_name_by_org, output_prefix, org_pivot)
     mda.ChartUtils.plot_bar(
         org_pivot,
-        title=f'{chart_title_prefix} Launches per Year by Customer Organization',
+        title=f'{chart_title_prefix} Launches per Year by Customer Org{_title_suffix}',
         subtitle=subtitle,
         x_label='Year', y_label='Launches',
         output_path=f'examples/outputs/chart/{output_prefix}/{output_name_by_org}.png',
@@ -2726,7 +2730,7 @@ def electron_launches(
     mda.ChartUtils.log_and_save_df('csv', output_name_by_category, output_prefix, cat_pivot)
     mda.ChartUtils.plot_bar(
         cat_pivot,
-        title=f'{chart_title_prefix} Launches per Year by Mission Category',
+        title=f'{chart_title_prefix} Launches per Year by Mission Category{_title_suffix}',
         subtitle=subtitle,
         x_label='Year', y_label='Launches',
         output_path=f'examples/outputs/chart/{output_prefix}/{output_name_by_category}.png',
