@@ -1679,6 +1679,12 @@ WESTERN_NET_CATEGORY_ORDER = [
     'ISS', 'Military LEO', 'Military non-LEO', 'Government LEO', 'Government non-LEO',
 ]
 
+_OWNER_CONSOLIDATION = {
+    'PLAN':   'Planet Labs',
+    'PLABS':  'Planet Labs',
+    'PLABST': 'Planet Labs',
+}
+
 _CAPSULE_CARGO_KEYWORDS = ['Dragon', 'Cygnus', 'Starliner', 'CST-100', 'Dream Chaser']
 
 COMMERCIAL_WESTERN_CATEGORY_ORDER = [
@@ -1956,7 +1962,7 @@ def western_launches_vs_mass(
             satcat_df = _filter_western_all(dataset.satcat.df.copy())
             satcat_df = _apply_effective_mass(satcat_df)
         mass_by_launch = _mass_per_launch(satcat_df)
-        launch_df = dataset.launch.df[['Launch_Tag', 'Launch_Date', 'LV_Type', 'Mission']].copy()
+        launch_df = dataset.launch.df[['Launch_Tag', 'Launch_Date', 'Launch_Vehicle_Simplified', 'Mission']].copy()
         launch_df['Payload_Mass'] = launch_df['Launch_Tag'].map(mass_by_launch).fillna(0)
         launch_df = launch_df[launch_df['Payload_Mass'] > 0].sort_values('Launch_Date')
         if start_year is not None:
@@ -1967,11 +1973,11 @@ def western_launches_vs_mass(
             (launch_df['Payload_Mass'] >= min_mass_kg) &
             (launch_df['Payload_Mass'] <= max_mass_kg)
         ]
-        lv_counts = launch_df.groupby('LV_Type').size().sort_values(ascending=False)
+        lv_counts = launch_df.groupby('Launch_Vehicle_Simplified').size().sort_values(ascending=False)
         top_lvs = lv_counts.index[:top_n].tolist() if top_n else lv_counts.index.tolist()
-        has_other = top_n is not None and (~launch_df['LV_Type'].isin(top_lvs)).any()
-        launch_df['LV_Display'] = launch_df['LV_Type'].where(
-            launch_df['LV_Type'].isin(top_lvs), other='Other'
+        has_other = top_n is not None and (~launch_df['Launch_Vehicle_Simplified'].isin(top_lvs)).any()
+        launch_df['LV_Display'] = launch_df['Launch_Vehicle_Simplified'].where(
+            launch_df['Launch_Vehicle_Simplified'].isin(top_lvs), other='Other'
         )
         category_order = top_lvs + (['Other'] if has_other else [])
         group_col = 'LV_Display'
@@ -1995,7 +2001,7 @@ def western_launches_vs_mass(
             satcat_df = _get_classified_cw_satcat(dataset)
             launch_category = _dominant_launch_category(satcat_df)
             mass_by_launch = _mass_per_launch(satcat_df)
-            launch_df = dataset.launch.df[['Launch_Tag', 'Launch_Date', 'LV_Type', 'Mission']].copy()
+            launch_df = dataset.launch.df[['Launch_Tag', 'Launch_Date', 'Launch_Vehicle_Simplified', 'Mission']].copy()
             launch_df = launch_df.merge(launch_category, on='Launch_Tag', how='inner')
             launch_df['Payload_Mass'] = launch_df['Launch_Tag'].map(mass_by_launch).fillna(0)
             launch_df = launch_df[launch_df['Payload_Mass'] > 0].sort_values('Launch_Date')
@@ -2039,7 +2045,7 @@ def western_launches_vs_mass(
     )
 
     if save_raw_df:
-        raw_cols = ['Launch_Tag', 'Launch_Date', 'LV_Type', 'Mission', 'Payload_Mass', group_col]
+        raw_cols = ['Launch_Tag', 'Launch_Date', 'Launch_Vehicle_Simplified', 'Mission', 'Payload_Mass', group_col]
         raw_df = launch_df[raw_cols].copy()
         raw_df['Mass_Bin'] = pd.cut(
             raw_df['Payload_Mass'], bins=bins, labels=mass_labels, include_lowest=True
@@ -2187,6 +2193,548 @@ def western_payload_pie(
     )
 
 
+def western_small_sat_by_category(
+    chart_title_prefix='Western',
+    output_prefix='western',
+    output_name='western_small_sat_by_year',
+    max_mass_kg=600,
+    start_year=None,
+    end_year=None,
+    date_range=None,
+    color_map=None,
+    include_mass_dist=False,
+    mass_dist_output_name='western_small_sat_mass_dist',
+    mass_dist_start_year=None,
+    mass_dist_end_year=None,
+    mass_dist_date_range=None,
+    mass_step_size_kg=50,
+    include_lv_by_year=False,
+    lv_by_year_output_name='western_small_sat_by_year_by_lv',
+    lv_top_n=10,
+    lv_color_map=None,
+    include_customer_by_year=False,
+    customer_by_year_output_name='western_small_sat_by_year_by_customer',
+    include_customer_mass_dist=False,
+    customer_mass_dist_output_name='western_small_sat_mass_dist_by_customer',
+    include_org_by_year=False,
+    org_by_year_output_name='western_small_sat_by_year_by_org',
+    include_org_mass_dist=False,
+    org_mass_dist_output_name='western_small_sat_mass_dist_by_org',
+    org_top_n=12,
+    org_color_map=None,
+    include_program_by_year=False,
+    program_by_year_output_name='western_small_sat_by_year_by_program',
+    include_program_mass_dist=False,
+    program_mass_dist_output_name='western_small_sat_mass_dist_by_program',
+    program_top_n=12,
+    program_color_map=None,
+    exclude_large_constellations=False,
+    save_raw_df=False,
+    raw_df_title=None,
+):
+    """Stacked bar of western small satellites per year by Simple_Payload_Category.
+
+    Optionally also generates a mass distribution histogram for a secondary year range.
+    """
+    # Excludes megaconstellations (Starlink, OneWeb) and large government constellations
+    # (SDA tranche programmes) which would dwarf genuine small sat demand signals.
+    _EXCL_PREFIXES = ('Starlink', 'SDA')
+    _EXCL_EXACT = {'OneWeb'}
+
+    def _apply_excl(df):
+        p = df['Payload_Program'].fillna('')
+        return df[~p.str.startswith(_EXCL_PREFIXES) & ~p.isin(_EXCL_EXACT)].copy()
+
+    dataset = mda.McdowellDataset('./datasets')
+    satcat_df = _filter_western_all(dataset.satcat.df.copy())
+    satcat_df = satcat_df[satcat_df['Mass'].fillna(0) <= max_mass_kg].copy()
+    if exclude_large_constellations:
+        satcat_df = _apply_excl(satcat_df)
+    satcat_df['Year'] = satcat_df['Launch_Date'].dt.year
+
+    if start_year is not None:
+        satcat_df = satcat_df[satcat_df['Year'] >= start_year]
+    if end_year is not None:
+        satcat_df = satcat_df[satcat_df['Year'] <= end_year]
+
+    if save_raw_df:
+        raw_cols = ['Launch_Date', 'Launch_Vehicle_Simplified', 'Payload_Name', 'Owner', 'Mass', 'Simple_Payload_Category', 'Payload_Program', 'Launch_Tag']
+        raw_out = satcat_df[[c for c in raw_cols if c in satcat_df.columns]].sort_values('Launch_Date')
+        df_name = raw_df_title if raw_df_title else output_name
+        mda.ChartUtils.log_and_save_df('dataframe', df_name, output_prefix, raw_out)
+
+    cat_order = ['Observation', 'Communications', 'Science', 'Tech Demo', 'Other']
+    satcat_df['Category'] = satcat_df['Simple_Payload_Category'].where(
+        satcat_df['Simple_Payload_Category'].isin(cat_order), other='Other'
+    ).fillna('Other')
+
+    date_range_note = f' - {date_range}' if date_range else ''
+    subtitle = (
+        f'Christopher Kalitin 2026 - Data Source: Jonathan McDowell'
+        f' - Data Cutoff: {dataset.date_updated}{date_range_note}'
+    )
+    _color_map = color_map if color_map else mda.ChartUtils.simple_payload_category_color_map
+
+    pivot = satcat_df.groupby(['Year', 'Category']).size().unstack(fill_value=0)
+    pivot = pivot.reindex(columns=[c for c in cat_order if c in pivot.columns], fill_value=0)
+    mda.ChartUtils.log_and_save_df('csv', output_name, output_prefix, pivot)
+    mda.ChartUtils.plot_bar(
+        pivot,
+        title=f'{chart_title_prefix} Small Satellites Launched per Year by Category',
+        subtitle=subtitle,
+        x_label='Year',
+        y_label='Number of Satellites',
+        output_path=f'examples/outputs/chart/{output_prefix}/{output_name}.png',
+        color_map=_color_map,
+        bargap=0.1,
+    )
+
+    if include_mass_dist:
+        dist_df = _filter_western_all(dataset.satcat.df.copy())
+        dist_df = dist_df[dist_df['Mass'].fillna(0) <= max_mass_kg].copy()
+        if exclude_large_constellations:
+            dist_df = _apply_excl(dist_df)
+        dist_df['Year'] = dist_df['Launch_Date'].dt.year
+        if mass_dist_start_year is not None:
+            dist_df = dist_df[dist_df['Year'] >= mass_dist_start_year]
+        if mass_dist_end_year is not None:
+            dist_df = dist_df[dist_df['Year'] <= mass_dist_end_year]
+        dist_df['Category'] = dist_df['Simple_Payload_Category'].where(
+            dist_df['Simple_Payload_Category'].isin(cat_order), other='Other'
+        ).fillna('Other')
+
+        bins = list(range(0, max_mass_kg + mass_step_size_kg, mass_step_size_kg))
+        mass_labels = [f"{bins[i]}-{bins[i+1]}kg" for i in range(len(bins) - 1)]
+        dist_dict = {}
+        for cat in cat_order:
+            cat_df = dist_df[dist_df['Category'] == cat]
+            binned = pd.cut(cat_df['Mass'].fillna(0), bins=bins, labels=mass_labels, include_lowest=True)
+            dist_dict[cat] = binned.value_counts().reindex(mass_labels, fill_value=0)
+        dist_output_df = pd.DataFrame(dist_dict, index=mass_labels)
+        last_nonzero = (dist_output_df.sum(axis=1) > 0).cumsum()
+        dist_output_df = dist_output_df.loc[last_nonzero > 0]
+
+        dist_date_range_note = f' - {mass_dist_date_range}' if mass_dist_date_range else ''
+        dist_subtitle = (
+            f'Christopher Kalitin 2026 - Data Source: Jonathan McDowell'
+            f' - Data Cutoff: {dataset.date_updated}{dist_date_range_note}'
+        )
+        mda.ChartUtils.log_and_save_df('csv', mass_dist_output_name, output_prefix, dist_output_df)
+        mda.ChartUtils.plot_bar(
+            dist_output_df,
+            title=f'{chart_title_prefix} Small Satellite Mass Distribution by Category',
+            subtitle=dist_subtitle,
+            x_label='Mass (kg)',
+            y_label='Number of Satellites',
+            output_path=f'examples/outputs/chart/{output_prefix}/{mass_dist_output_name}.png',
+            color_map=_color_map,
+            bargap=0.1,
+        )
+
+    if include_lv_by_year:
+        lv_counts = satcat_df['Launch_Vehicle_Simplified'].value_counts()
+        top_lvs = lv_counts.nlargest(lv_top_n).index.tolist()
+        satcat_df['LV'] = satcat_df['Launch_Vehicle_Simplified'].where(satcat_df['Launch_Vehicle_Simplified'].isin(top_lvs), other='Other')
+        lv_order = top_lvs + (['Other'] if (satcat_df['LV'] == 'Other').any() else [])
+        lv_pivot = satcat_df.groupby(['Year', 'LV']).size().unstack(fill_value=0)
+        lv_pivot = lv_pivot.reindex(columns=[c for c in lv_order if c in lv_pivot.columns], fill_value=0)
+        mda.ChartUtils.log_and_save_df('csv', lv_by_year_output_name, output_prefix, lv_pivot)
+        _lv_seq = lv_color_map if lv_color_map else mda.ChartUtils.color_sequence_3_12 + ['#9e9e9e']
+        _lv_color_map = {lv: _lv_seq[min(i, len(_lv_seq) - 2)] for i, lv in enumerate(top_lvs)}
+        if 'Other' in lv_order:
+            _lv_color_map['Other'] = _lv_seq[-1]
+        mda.ChartUtils.plot_bar(
+            lv_pivot,
+            title=f'{chart_title_prefix} Small Satellites Launched per Year by Launch Vehicle',
+            subtitle=subtitle,
+            x_label='Year',
+            y_label='Number of Satellites',
+            output_path=f'examples/outputs/chart/{output_prefix}/{lv_by_year_output_name}.png',
+            color_map=_lv_color_map,
+            bargap=0.1,
+        )
+
+    _CUSTOMER_CLASS_MAP = {'B': 'Commercial', 'D': 'Military', 'C': 'Government', 'A': 'Government'}
+    _CUSTOMER_ORDER = ['Commercial', 'Government', 'Military']
+
+    if include_customer_by_year or include_customer_mass_dist:
+        satcat_df['Customer'] = satcat_df['Payload_Class'].map(_CUSTOMER_CLASS_MAP).fillna('Other')
+
+    if include_customer_by_year:
+        cust_pivot = satcat_df.groupby(['Year', 'Customer']).size().unstack(fill_value=0)
+        cust_pivot = cust_pivot.reindex(columns=[c for c in _CUSTOMER_ORDER if c in cust_pivot.columns], fill_value=0)
+        mda.ChartUtils.log_and_save_df('csv', customer_by_year_output_name, output_prefix, cust_pivot)
+        mda.ChartUtils.plot_bar(
+            cust_pivot,
+            title=f'{chart_title_prefix} Small Satellites Launched per Year by Customer',
+            subtitle=subtitle,
+            x_label='Year',
+            y_label='Number of Satellites',
+            output_path=f'examples/outputs/chart/{output_prefix}/{customer_by_year_output_name}.png',
+            color_map=mda.ChartUtils.payload_operator_color_map,
+            bargap=0.1,
+        )
+
+    if include_customer_mass_dist:
+        cust_dist_df = _filter_western_all(dataset.satcat.df.copy())
+        cust_dist_df = cust_dist_df[cust_dist_df['Mass'].fillna(0) <= max_mass_kg].copy()
+        if exclude_large_constellations:
+            cust_dist_df = _apply_excl(cust_dist_df)
+        cust_dist_df['Year'] = cust_dist_df['Launch_Date'].dt.year
+        if mass_dist_start_year is not None:
+            cust_dist_df = cust_dist_df[cust_dist_df['Year'] >= mass_dist_start_year]
+        if mass_dist_end_year is not None:
+            cust_dist_df = cust_dist_df[cust_dist_df['Year'] <= mass_dist_end_year]
+        cust_dist_df['Customer'] = cust_dist_df['Payload_Class'].map(_CUSTOMER_CLASS_MAP).fillna('Other')
+        bins = list(range(0, max_mass_kg + mass_step_size_kg, mass_step_size_kg))
+        mass_labels = [f"{bins[i]}-{bins[i+1]}kg" for i in range(len(bins) - 1)]
+        cust_dist_dict = {}
+        for cust in _CUSTOMER_ORDER:
+            c_df = cust_dist_df[cust_dist_df['Customer'] == cust]
+            binned = pd.cut(c_df['Mass'].fillna(0), bins=bins, labels=mass_labels, include_lowest=True)
+            cust_dist_dict[cust] = binned.value_counts().reindex(mass_labels, fill_value=0)
+        cust_dist_output_df = pd.DataFrame(cust_dist_dict, index=mass_labels)
+        last_nonzero_c = (cust_dist_output_df.sum(axis=1) > 0).cumsum()
+        cust_dist_output_df = cust_dist_output_df.loc[last_nonzero_c > 0]
+        dist_date_range_note = f' - {mass_dist_date_range}' if mass_dist_date_range else ''
+        cust_dist_subtitle = (
+            f'Christopher Kalitin 2026 - Data Source: Jonathan McDowell'
+            f' - Data Cutoff: {dataset.date_updated}{dist_date_range_note}'
+        )
+        mda.ChartUtils.log_and_save_df('csv', customer_mass_dist_output_name, output_prefix, cust_dist_output_df)
+        mda.ChartUtils.plot_bar(
+            cust_dist_output_df,
+            title=f'{chart_title_prefix} Small Satellite Mass Distribution by Customer',
+            subtitle=cust_dist_subtitle,
+            x_label='Mass (kg)',
+            y_label='Number of Satellites',
+            output_path=f'examples/outputs/chart/{output_prefix}/{customer_mass_dist_output_name}.png',
+            color_map=mda.ChartUtils.payload_operator_color_map,
+            bargap=0.1,
+        )
+
+    if include_org_by_year or include_org_mass_dist:
+        satcat_df['Org'] = _resolve_owner_to_org(satcat_df['Owner'])
+        org_counts = satcat_df['Org'].value_counts()
+        top_orgs = org_counts.nlargest(org_top_n).index.tolist()
+        satcat_df['OrgGroup'] = satcat_df['Org'].where(satcat_df['Org'].isin(top_orgs), other='Other')
+        org_order = top_orgs + (['Other'] if (satcat_df['OrgGroup'] == 'Other').any() else [])
+        _org_seq = org_color_map if org_color_map else mda.ChartUtils.color_sequence_3_12 + ['#9e9e9e']
+        _org_color_map = {org: _org_seq[min(i, len(_org_seq) - 2)] for i, org in enumerate(top_orgs)}
+        if 'Other' in org_order:
+            _org_color_map['Other'] = _org_seq[-1]
+
+    if include_org_by_year:
+        org_pivot = satcat_df.groupby(['Year', 'OrgGroup']).size().unstack(fill_value=0)
+        org_pivot = org_pivot.reindex(columns=[c for c in org_order if c in org_pivot.columns], fill_value=0)
+        mda.ChartUtils.log_and_save_df('csv', org_by_year_output_name, output_prefix, org_pivot)
+        mda.ChartUtils.plot_bar(
+            org_pivot,
+            title=f'{chart_title_prefix} Small Satellites Launched per Year by Organization',
+            subtitle=subtitle,
+            x_label='Year',
+            y_label='Number of Satellites',
+            output_path=f'examples/outputs/chart/{output_prefix}/{org_by_year_output_name}.png',
+            color_map=_org_color_map,
+            bargap=0.1,
+        )
+
+    if include_org_mass_dist:
+        org_dist_df = _filter_western_all(dataset.satcat.df.copy())
+        org_dist_df = org_dist_df[org_dist_df['Mass'].fillna(0) <= max_mass_kg].copy()
+        if exclude_large_constellations:
+            org_dist_df = _apply_excl(org_dist_df)
+        org_dist_df['Year'] = org_dist_df['Launch_Date'].dt.year
+        if mass_dist_start_year is not None:
+            org_dist_df = org_dist_df[org_dist_df['Year'] >= mass_dist_start_year]
+        if mass_dist_end_year is not None:
+            org_dist_df = org_dist_df[org_dist_df['Year'] <= mass_dist_end_year]
+        org_dist_df['Org'] = _resolve_owner_to_org(org_dist_df['Owner'])
+        org_dist_df['OrgGroup'] = org_dist_df['Org'].where(org_dist_df['Org'].isin(top_orgs), other='Other')
+        bins = list(range(0, max_mass_kg + mass_step_size_kg, mass_step_size_kg))
+        mass_labels = [f"{bins[i]}-{bins[i+1]}kg" for i in range(len(bins) - 1)]
+        org_dist_dict = {}
+        for org in org_order:
+            o_df = org_dist_df[org_dist_df['OrgGroup'] == org]
+            binned = pd.cut(o_df['Mass'].fillna(0), bins=bins, labels=mass_labels, include_lowest=True)
+            org_dist_dict[org] = binned.value_counts().reindex(mass_labels, fill_value=0)
+        org_dist_output_df = pd.DataFrame(org_dist_dict, index=mass_labels)
+        last_nonzero_o = (org_dist_output_df.sum(axis=1) > 0).cumsum()
+        org_dist_output_df = org_dist_output_df.loc[last_nonzero_o > 0]
+        dist_date_range_note = f' - {mass_dist_date_range}' if mass_dist_date_range else ''
+        org_dist_subtitle = (
+            f'Christopher Kalitin 2026 - Data Source: Jonathan McDowell'
+            f' - Data Cutoff: {dataset.date_updated}{dist_date_range_note}'
+        )
+        mda.ChartUtils.log_and_save_df('csv', org_mass_dist_output_name, output_prefix, org_dist_output_df)
+        mda.ChartUtils.plot_bar(
+            org_dist_output_df,
+            title=f'{chart_title_prefix} Small Satellite Mass Distribution by Organization',
+            subtitle=org_dist_subtitle,
+            x_label='Mass (kg)',
+            y_label='Number of Satellites',
+            output_path=f'examples/outputs/chart/{output_prefix}/{org_mass_dist_output_name}.png',
+            color_map=_org_color_map,
+            bargap=0.1,
+        )
+
+    if include_program_by_year or include_program_mass_dist:
+        prog_counts = satcat_df['Payload_Program'].value_counts()
+        top_programs = prog_counts.nlargest(program_top_n).index.tolist()
+        satcat_df['Program'] = satcat_df['Payload_Program'].where(
+            satcat_df['Payload_Program'].isin(top_programs), other='Other'
+        ).fillna('Other')
+        prog_order = top_programs + (['Other'] if (satcat_df['Program'] == 'Other').any() else [])
+        _prog_color_map = program_color_map if program_color_map else mda.ChartUtils.color_sequence_3_12 + ['#9e9e9e']
+
+    if include_program_by_year:
+        prog_pivot = satcat_df.groupby(['Year', 'Program']).size().unstack(fill_value=0)
+        prog_pivot = prog_pivot.reindex(columns=[c for c in prog_order if c in prog_pivot.columns], fill_value=0)
+        mda.ChartUtils.log_and_save_df('csv', program_by_year_output_name, output_prefix, prog_pivot)
+        mda.ChartUtils.plot_bar(
+            prog_pivot,
+            title=f'{chart_title_prefix} Small Satellites Launched per Year by Program',
+            subtitle=subtitle,
+            x_label='Year',
+            y_label='Number of Satellites',
+            output_path=f'examples/outputs/chart/{output_prefix}/{program_by_year_output_name}.png',
+            color_map=_prog_color_map,
+            bargap=0.1,
+        )
+
+    if include_program_mass_dist:
+        bins = list(range(0, max_mass_kg + mass_step_size_kg, mass_step_size_kg))
+        mass_labels = [f"{bins[i]}-{bins[i+1]}kg" for i in range(len(bins) - 1)]
+        prog_dist_dict = {}
+        for prog in prog_order:
+            p_df = satcat_df[satcat_df['Program'] == prog]
+            binned = pd.cut(p_df['Mass'].fillna(0), bins=bins, labels=mass_labels, include_lowest=True)
+            prog_dist_dict[prog] = binned.value_counts().reindex(mass_labels, fill_value=0)
+        prog_dist_df = pd.DataFrame(prog_dist_dict, index=mass_labels)
+        last_nonzero_p = (prog_dist_df.sum(axis=1) > 0).cumsum()
+        prog_dist_df = prog_dist_df.loc[last_nonzero_p > 0]
+        mda.ChartUtils.log_and_save_df('csv', program_mass_dist_output_name, output_prefix, prog_dist_df)
+        mda.ChartUtils.plot_bar(
+            prog_dist_df,
+            title=f'{chart_title_prefix} Small Satellite Mass Distribution by Program',
+            subtitle=subtitle,
+            x_label='Mass (kg)',
+            y_label='Number of Satellites',
+            output_path=f'examples/outputs/chart/{output_prefix}/{program_mass_dist_output_name}.png',
+            color_map=_prog_color_map,
+            bargap=0.1,
+        )
+
+
+_ELECTRON_RL_OWNERS = frozenset({'RLABN', 'RLABLB'})
+
+# Maps primary payload owner code → launch category for dedicated Electron missions
+_ELECTRON_OWNER_CATEGORY = {
+    # SAR imaging constellations
+    'SYNSP': 'Constellation (SAR)', 'CAPSP': 'Constellation (SAR)', 'QPS': 'Constellation (SAR)',
+    # Optical / thermal EO constellations
+    'BSKG': 'Constellation (Earth obs)', 'ORORA': 'Constellation (Earth obs)',
+    'PLAN': 'Constellation (Earth obs)', 'CANON': 'Constellation (Earth obs)',
+    # SSA / RF-monitoring constellations
+    'HE360': 'Constellation (SSA)', 'UNSEEN': 'Constellation (SSA)',
+    # Spire: all variants → Earth obs (weather, maritime, ATC — observation products)
+    'SPIRE': 'Constellation (Earth obs)', 'SPIRE/NSTAR': 'Constellation (Earth obs)',
+    # IoT / broadband comms constellations
+    'KINEIS': 'Constellation (Comms)', 'SWARM': 'Constellation (Comms)',
+    'SWARMX': 'Constellation (Comms)', 'SWARNZ': 'Constellation (Comms)',
+    'ESPACE': 'Constellation (Comms)', 'ESPRW': 'Constellation (Comms)',
+    'ECHOAU': 'Constellation (Comms)', 'TCANL': 'Constellation (Comms)',
+    'OCOSB': 'Constellation (Comms)', 'FLEET': 'Constellation (Comms)',
+    'MYRI': 'Constellation (Comms)', 'GEOOPT': 'Constellation (Comms)',
+    'STARA': 'Constellation (Comms)',
+    # Military / DoD
+    'STP': 'Military', 'AFSPC': 'Military', 'DARPA2': 'Military', 'SOCOM': 'Military',
+    'AERO': 'Military', 'NROC': 'Military', 'USNA': 'Military', 'USNPS': 'Military',
+    'SEDENA': 'Military', 'AFOTD4': 'Military', 'AFRL': 'Military', 'SMDC': 'Military',
+    # MITLL (MIT Lincoln Lab) operates TROPICS — a NASA Earth science constellation
+    'MITLL': 'Constellation (Earth obs)',
+    # Government / civil / academic
+    'ARC': 'Government', 'GSFC': 'Government', 'JPL': 'Government', 'LARCN': 'Government',
+    'GRC': 'Government', 'ESA': 'Government', 'JAXA': 'Government', 'SNSB': 'Government',
+    'KAIST': 'Government', 'ADVSP': 'Government', 'BU': 'Government',
+    # Dedicated commercial one-offs (tech demos, single commercial payloads)
+    'GACO': 'Commercial', 'ASTSC': 'Commercial',
+    'ADIG': 'Commercial', 'OHB': 'Commercial',
+}
+
+
+def _classify_electron_launch(sats_df, org_short_map):
+    """Return (primary_org_display, category) for one Electron launch's payload rows.
+
+    Rideshare: >5 payloads AND >2 distinct owners AND no single owner >=80% by count.
+    Rocket Lab housekeeping payloads (RLABN/RLABLB) are excluded when finding the
+    primary owner so they don't mask the actual customer.
+    """
+    n = len(sats_df)
+    owner_counts = sats_df['Owner'].fillna('?').value_counts()
+    n_owners = len(owner_counts)
+
+    # Rideshare check
+    if n > 5 and n_owners > 2 and (owner_counts.iloc[0] / n) < 0.8:
+        return 'Rideshare', 'Rideshare'
+
+    # Primary owner excluding Rocket Lab housekeeping payloads
+    non_rl = owner_counts[~owner_counts.index.isin(_ELECTRON_RL_OWNERS)]
+    primary = non_rl.index[0] if len(non_rl) > 0 else owner_counts.index[0]
+
+    # Category lookup: try exact code, then first segment of compound codes (e.g. ADVSP/ARC)
+    category = _ELECTRON_OWNER_CATEGORY.get(primary)
+    if category is None:
+        base = primary.split('/')[0]
+        category = _ELECTRON_OWNER_CATEGORY.get(base)
+    if category is None:
+        # Fall back to org class
+        category = 'Other'
+
+    # Display name
+    if primary in _OWNER_CONSOLIDATION:
+        org = _OWNER_CONSOLIDATION[primary]
+    else:
+        org = org_short_map.get(primary, primary)
+
+    return org, category
+
+
+def electron_launches(
+    chart_title_prefix='Electron',
+    output_prefix='electron',
+    output_name_by_org='electron_launches_by_org',
+    output_name_by_category='electron_launches_by_category',
+    start_year=2017,
+    end_year=None,
+    date_range=None,
+    org_top_n=10,
+    org_color_map=None,
+    category_color_map=None,
+    save_raw_df=False,
+    raw_df_title=None,
+):
+    """Per-year bar charts of Electron satellite launches by customer org and by mission category.
+
+    Excludes Hypersonic / suborbital Electron flights (MACH-TB, DYNAMO-A series).
+    Rideshare rule: >5 payloads, >2 distinct owners, no owner >=80% of payloads.
+    """
+    _CATEGORY_ORDER = [
+        'Constellation (Earth obs)', 'Constellation (SAR)',
+        'Constellation (SSA)', 'Constellation (Comms)',
+        'Commercial', 'Rideshare', 'Government', 'Military', 'HASTE', 'Other',
+    ]
+
+    dataset = mda.McdowellDataset('./datasets')
+    launch_df = dataset.launch.df
+    satcat_df = dataset.satcat.df
+
+    # All Electron launches: satellites + HASTE (Hypersonic suborbital)
+    el = launch_df[
+        (launch_df['Launch_Vehicle_Simplified'] == 'Electron') &
+        (launch_df['Category'].str.startswith('Sat', na=False) | (launch_df['Category'] == 'Hypersonic'))
+    ].copy()
+    el['Year'] = el['Launch_Date'].dt.year
+    if start_year:
+        el = el[el['Year'] >= start_year]
+    if end_year:
+        el = el[el['Year'] <= end_year]
+
+    # Load orgs lookup
+    orgs = pd.read_csv('datasets/orgs.tsv', sep='\t', low_memory=False).rename(columns={'#Code': 'Code'})
+    org_short = orgs.set_index('Code')['ShortName'].to_dict()
+
+    # Payload rows for Electron launches (payload type only)
+    el_sats = satcat_df[
+        satcat_df['Launch_Tag'].isin(el['Launch_Tag']) &
+        (satcat_df['Type'].str.strip().str.startswith('P', na=False))
+    ].copy()
+
+    # Classify each launch; HASTE launches have no satcat payload rows
+    sat_tags = set(el_sats['Launch_Tag'].unique())
+    haste_tags = set(el[el['Category'] == 'Hypersonic']['Launch_Tag'].unique())
+
+    rows = []
+    for tag, group in el_sats.groupby('Launch_Tag'):
+        org, category = _classify_electron_launch(group, org_short)
+        launch_row = el[el['Launch_Tag'] == tag].iloc[0]
+        rows.append({
+            'Launch_Tag': tag,
+            'Year': launch_row['Year'],
+            'Mission': launch_row['Mission'],
+            'Launch_Date': launch_row['Launch_Date'],
+            'Org': org,
+            'Category': category,
+            'N_Payloads': len(group),
+        })
+    for tag in haste_tags - sat_tags:
+        launch_row = el[el['Launch_Tag'] == tag].iloc[0]
+        rows.append({
+            'Launch_Tag': tag,
+            'Year': launch_row['Year'],
+            'Mission': launch_row['Mission'],
+            'Launch_Date': launch_row['Launch_Date'],
+            'Org': 'HASTE',
+            'Category': 'HASTE',
+            'N_Payloads': 0,
+        })
+    launch_classified = pd.DataFrame(rows).sort_values('Launch_Date')
+
+    date_range_note = f' - {date_range}' if date_range else ''
+    subtitle = (
+        f'Christopher Kalitin 2026 - Data Source: Jonathan McDowell'
+        f' - Data Cutoff: {dataset.date_updated}{date_range_note}'
+    )
+
+    if save_raw_df:
+        df_name = raw_df_title if raw_df_title else output_name_by_org
+        mda.ChartUtils.log_and_save_df('dataframe', df_name, output_prefix, launch_classified)
+
+    # --- Chart 1: by customer org ---
+    org_counts = launch_classified['Org'].value_counts()
+    # Always keep Rideshare as its own slice; top_n for the rest
+    non_rs_orgs = org_counts[org_counts.index != 'Rideshare'].nlargest(org_top_n).index.tolist()
+    shown_orgs = (['Rideshare'] if 'Rideshare' in org_counts.index else []) + non_rs_orgs
+    launch_classified['OrgGroup'] = launch_classified['Org'].where(
+        launch_classified['Org'].isin(shown_orgs), other='Other'
+    )
+    if launch_classified['OrgGroup'].eq('Other').any() and 'Other' not in shown_orgs:
+        shown_orgs = shown_orgs + ['Other']
+
+    org_seq = org_color_map if org_color_map else mda.ChartUtils.color_sequence_3_12 + ['#9e9e9e']
+    org_cmap = {org: org_seq[min(i, len(org_seq) - 2)] for i, org in enumerate(shown_orgs)}
+    if 'Other' in shown_orgs:
+        org_cmap['Other'] = org_seq[-1]
+
+    org_pivot = launch_classified.groupby(['Year', 'OrgGroup']).size().unstack(fill_value=0)
+    org_pivot = org_pivot.reindex(columns=[c for c in shown_orgs if c in org_pivot.columns], fill_value=0)
+    mda.ChartUtils.log_and_save_df('csv', output_name_by_org, output_prefix, org_pivot)
+    mda.ChartUtils.plot_bar(
+        org_pivot,
+        title=f'{chart_title_prefix} Launches per Year by Customer Organization',
+        subtitle=subtitle,
+        x_label='Year', y_label='Launches',
+        output_path=f'examples/outputs/chart/{output_prefix}/{output_name_by_org}.png',
+        color_map=org_cmap,
+        bargap=0.1,
+    )
+
+    # --- Chart 2: by mission category ---
+    cat_pivot = launch_classified.groupby(['Year', 'Category']).size().unstack(fill_value=0)
+    cat_pivot = cat_pivot.reindex(columns=[c for c in _CATEGORY_ORDER if c in cat_pivot.columns], fill_value=0)
+    _cat_cmap = category_color_map if category_color_map else mda.ChartUtils.electron_category_color_map
+    mda.ChartUtils.log_and_save_df('csv', output_name_by_category, output_prefix, cat_pivot)
+    mda.ChartUtils.plot_bar(
+        cat_pivot,
+        title=f'{chart_title_prefix} Launches per Year by Mission Category',
+        subtitle=subtitle,
+        x_label='Year', y_label='Launches',
+        output_path=f'examples/outputs/chart/{output_prefix}/{output_name_by_category}.png',
+        color_map=_cat_cmap,
+        bargap=0.1,
+    )
+
+
 def commercial_western_rideshare_by_lv(
     chart_title_prefix='Commercial Western',
     output_prefix='commercial_western',
@@ -2226,7 +2774,7 @@ def commercial_western_rideshare_by_lv(
     launch_category = _dominant_launch_category(satcat_df)
     cw_mass_by_launch = _mass_per_launch(satcat_df)
 
-    launch_df = dataset.launch.df[['Launch_Tag', 'Launch_Date', 'LV_Type', 'Mission']].copy()
+    launch_df = dataset.launch.df[['Launch_Tag', 'Launch_Date', 'Launch_Vehicle_Simplified', 'Mission']].copy()
     launch_df = launch_df.merge(launch_category, on='Launch_Tag', how='inner')
     launch_df['Payload_Mass'] = launch_df['Launch_Tag'].map(cw_mass_by_launch).fillna(0)
 
@@ -2240,7 +2788,7 @@ def commercial_western_rideshare_by_lv(
     if end_year is not None:
         launch_df = launch_df[launch_df['Launch_Date'].dt.year <= end_year]
 
-    lv_order = launch_df.groupby('LV_Type')['Payload_Mass'].sum().sort_values(ascending=False).index.tolist()
+    lv_order = launch_df.groupby('Launch_Vehicle_Simplified')['Payload_Mass'].sum().sort_values(ascending=False).index.tolist()
 
     date_range_note = f' - {date_range}' if date_range else ''
     subtitle = (f'Christopher Kalitin 2026 - Data Source: Jonathan McDowell'
@@ -2255,7 +2803,7 @@ def commercial_western_rideshare_by_lv(
 
     output_dict = {}
     for lv in lv_order:
-        lv_df = bar_df[bar_df['LV_Type'] == lv]
+        lv_df = bar_df[bar_df['Launch_Vehicle_Simplified'] == lv]
         binned = pd.cut(lv_df['Payload_Mass'], bins=bins, labels=mass_labels, include_lowest=True)
         output_dict[lv] = binned.value_counts().reindex(mass_labels, fill_value=0)
 
@@ -2276,8 +2824,8 @@ def commercial_western_rideshare_by_lv(
     )
 
     # --- Pie charts ---
-    count_by_lv = launch_df.groupby('LV_Type').size().reindex(lv_order, fill_value=0)
-    mass_by_lv  = (launch_df.groupby('LV_Type')['Payload_Mass'].sum() / 1000).reindex(lv_order, fill_value=0)
+    count_by_lv = launch_df.groupby('Launch_Vehicle_Simplified').size().reindex(lv_order, fill_value=0)
+    mass_by_lv  = (launch_df.groupby('Launch_Vehicle_Simplified')['Payload_Mass'].sum() / 1000).reindex(lv_order, fill_value=0)
 
     mda.ChartUtils.log_and_save_df("csv", output_name_count, output_prefix,
                                    count_by_lv.rename("Count").reset_index())
@@ -2377,6 +2925,25 @@ def _get_classified_western_all_satcat(dataset):
     df = _load_psatcat_orbit(df, dataset.launch.df)
     df = _classify_western_all_categories(df)
     return _apply_effective_mass(df)
+
+
+def _resolve_owner_to_org(owner_series):
+    """Map Owner codes to display org names using orgs.tsv ShortName + parent chain + consolidation."""
+    orgs = pd.read_csv('datasets/orgs.tsv', sep='\t', low_memory=False).rename(columns={'#Code': 'Code'})
+    code_to_short = orgs.set_index('Code')['ShortName'].to_dict()
+    code_to_parent = orgs.set_index('Code')['Parent'].to_dict()
+
+    def _resolve(code):
+        if code in _OWNER_CONSOLIDATION:
+            return _OWNER_CONSOLIDATION[code]
+        parent = code_to_parent.get(code, '-')
+        if parent and parent != '-':
+            if parent in _OWNER_CONSOLIDATION:
+                return _OWNER_CONSOLIDATION[parent]
+            return code_to_short.get(parent, code_to_short.get(code, code))
+        return code_to_short.get(code, code)
+
+    return owner_series.map(_resolve)
 
 
 def _dominant_category_by_mass(satcat_df, category_col):
@@ -2494,7 +3061,7 @@ def _build_launch_df(satcat_df, category_col, dataset, start_year=None, end_year
     launch_category = _dominant_category_by_mass(satcat_df, category_col)
     mass_by_launch = _mass_per_launch(satcat_df)
 
-    launch_df = dataset.launch.df[['Launch_Tag', 'Launch_Date', 'LV_Type', 'Mission']].copy()
+    launch_df = dataset.launch.df[['Launch_Tag', 'Launch_Date', 'Launch_Vehicle_Simplified', 'Mission']].copy()
     launch_df = launch_df.merge(launch_category, on='Launch_Tag', how='inner')
     launch_df['Payload_Mass'] = launch_df['Launch_Tag'].map(mass_by_launch).fillna(0)
     launch_df = launch_df[launch_df['Payload_Mass'] > 0].sort_values('Launch_Date')
@@ -2541,6 +3108,7 @@ def western_orbits_addressable_by_mass(
     dataset = mda.McdowellDataset('./datasets')
 
     satcat_df = _filter_western_all(dataset.satcat.df.copy())
+    satcat_df = satcat_df[~satcat_df['Payload_Program'].fillna('').str.startswith('Starlink')].copy()
     satcat_df = _load_psatcat_orbit(satcat_df, dataset.launch.df)
     satcat_df = _apply_effective_mass(satcat_df)
     satcat_df = _classify_western_all_categories(satcat_df)
@@ -2587,7 +3155,7 @@ def western_orbits_addressable_by_mass(
         raw_df = qual_launch_df.drop_duplicates('Launch_Tag').merge(
             launch_western_cat, on='Launch_Tag', how='left'
         )
-        raw_df = raw_df[['Launch_Date', 'LV_Type', 'Mission', 'Launch_Category', 'Payload_Mass', 'Western_Category', 'Launch_Tag']]
+        raw_df = raw_df[['Launch_Date', 'Launch_Vehicle_Simplified', 'Mission', 'Launch_Category', 'Payload_Mass', 'Western_Category', 'Launch_Tag']]
         raw_df = raw_df.rename(columns={'Launch_Category': 'Orbit', 'Payload_Mass': 'Total_Payload_Mass_kg'})
         raw_df = raw_df.sort_values('Launch_Date')
         df_name = raw_df_title if raw_df_title else f'{output_name}_launches'
@@ -2634,7 +3202,7 @@ def western_orbits_addressable_by_mass(
         type_launch_df['Launch_Type'] = type_launch_df['Western_Category'].map(_simplified_type).fillna('Unknown')
 
         type_order = ['Commercial', 'Government', 'Military']
-        type_color_map = {'Commercial': '#0563c1', 'Government': '#18c544', 'Military': '#b10202'}
+        type_color_map = mda.ChartUtils.payload_operator_color_map
         type_dict = {}
         for ltype in type_order:
             ltype_df = type_launch_df[type_launch_df['Launch_Type'] == ltype]
@@ -2689,10 +3257,10 @@ def western_orbits_addressable_by_mass(
         )
 
     if include_lv_chart and not qual_launch_df.empty:
-        lv_counts = qual_launch_df['LV_Type'].value_counts()
+        lv_counts = qual_launch_df['Launch_Vehicle_Simplified'].value_counts()
         top_lvs = lv_counts.nlargest(lv_top_n).index.tolist()
         lv_df = qual_launch_df.copy()
-        lv_df['LV'] = lv_df['LV_Type'].where(lv_df['LV_Type'].isin(top_lvs), other='Other')
+        lv_df['LV'] = lv_df['Launch_Vehicle_Simplified'].where(lv_df['Launch_Vehicle_Simplified'].isin(top_lvs), other='Other')
         lv_order = top_lvs + (['Other'] if (lv_df['LV'] == 'Other').any() else [])
 
         lv_dict = {}

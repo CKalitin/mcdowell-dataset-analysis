@@ -1,10 +1,10 @@
-Launch_Tag,Launch_Date,LV_Type,Mission,Payload_Mass,Launch_Category,Mass_Bin
+Launch_Tag,Launch_Date,Launch_Vehicle_Simplified,Mission,Payload_Mass,Launch_Category,Mass_Bin
 2020-001,2020-01-07,Falcon 9,Starlink V1.0-L2,15600.0,Starlink,15-16t
-2020-005,2020-01-16,Ariane 5ECA+,Eutelsat Konnect/GSAT-30,3619.0,Commercial GTO/GEO,3-4t
+2020-005,2020-01-16,Ariane 5,Eutelsat Konnect/GSAT-30,3619.0,Commercial GTO/GEO,3-4t
 2020-006,2020-01-29,Falcon 9,Starlink V1.0-L3,15600.0,Starlink,15-16t
 2020-011,2020-02-15,Antares 230+,Cygnus NG-13,8000.0,Capsule/Cargo,7-8t
 2020-012,2020-02-17,Falcon 9,Starlink V1.0-L4,15600.0,Starlink,15-16t
-2020-013,2020-02-18,Ariane 5ECA+,JCSAT-17/GEO-Kompsat 2B,5857.0,Commercial GTO/GEO,5-6t
+2020-013,2020-02-18,Ariane 5,JCSAT-17/GEO-Kompsat 2B,5857.0,Commercial GTO/GEO,5-6t
 2020-016,2020-03-07,Falcon 9,Dragon C112.3,10011.0,Capsule/Cargo,10-11t
 2020-019,2020-03-18,Falcon 9,Starlink V1.0-L5,15600.0,Starlink,15-16t
 2020-025,2020-04-22,Falcon 9,Starlink V1.0-L6,15600.0,Starlink,15-16t
@@ -12,7 +12,7 @@ Launch_Tag,Launch_Date,LV_Type,Mission,Payload_Mass,Launch_Category,Mass_Bin
 2020-035,2020-06-04,Falcon 9,Starlink V1.0-L7,15600.0,Starlink,15-16t
 2020-038,2020-06-13,Falcon 9,Starlink V1.0-L8/SkySat,15410.0,Starlink,15-16t
 2020-055,2020-08-07,Falcon 9,Starlink V1.0-L9/BSky,14930.0,Starlink,14-15t
-2020-056,2020-08-15,Ariane 5ECA+,Galaxy 30/MEV2/BSAT-4b,9154.0,Commercial GTO/GEO,9-10t
+2020-056,2020-08-15,Ariane 5,Galaxy 30/MEV2/BSAT-4b,9154.0,Commercial GTO/GEO,9-10t
 2020-057,2020-08-18,Falcon 9,Starlink V1.0-L10/SkySat,15410.0,Starlink,15-16t
 2020-059,2020-08-30,Falcon 9,SAOCOM-1B,41.0,Small Sat,0-1t
 2020-060,2020-08-31,Electron,Sequoia,120.0,Small Sat,0-1t
@@ -23,7 +23,7 @@ Launch_Tag,Launch_Date,LV_Type,Mission,Payload_Mass,Launch_Category,Mass_Bin
 2020-073,2020-10-18,Falcon 9,Starlink V1.0-L13,15600.0,Starlink,15-16t
 2020-074,2020-10-24,Falcon 9,Starlink V1.0-L14,15600.0,Starlink,15-16t
 2020-077,2020-10-28,Electron,Electron 15 Rideshare,86.3,LEO Constellation,0-1t
-2020-081,2020-11-07,PSLV-DL,PSLV Rideshare 17,65.2,LEO Constellation,0-1t
+2020-081,2020-11-07,PSLV,PSLV Rideshare 17,65.2,LEO Constellation,0-1t
 2020-084,2020-11-16,Falcon 9,Dragon C207,13000.0,Capsule/Cargo,12-13t
 2020-085,2020-11-20,Electron,Electron 16 Rideshare,60.815999999999995,LEO Constellation,0-1t
 2020-088,2020-11-25,Falcon 9,Starlink V1.0-L15,15600.0,Starlink,15-16t
@@ -37,7 +37,7 @@ Launch_Tag,Launch_Date,LV_Type,Mission,Payload_Mass,Launch_Category,Mass_Bin
 2021-009,2021-02-04,Falcon 9,Starlink V1.0-L18,15600.0,Starlink,15-16t
 2021-012,2021-02-16,Falcon 9,Starlink V1.0-L19,15600.0,Starlink,15-16t
 2021-013,2021-02-20,Antares 230+,Cygnus NG-15,8052.0,Capsule/Cargo,8-9t
-2021-015,2021-02-28,PSLV-DL,PSLV Rideshare 18,3.4079999999999995,LEO Constellation,0-1t
+2021-015,2021-02-28,PSLV,PSLV Rideshare 18,3.4079999999999995,LEO Constellation,0-1t
 2021-017,2021-03-04,Falcon 9,Starlink V1.0-L17,15600.0,Starlink,15-16t
 2021-018,2021-03-11,Falcon 9,Starlink V1.0-L20,15600.0,Starlink,15-16t
 2021-021,2021-03-14,Falcon 9,Starlink V1.0-L21,15600.0,Starlink,15-16t
@@ -55,14 +55,14 @@ Launch_Tag,Launch_Date,LV_Type,Mission,Payload_Mass,Launch_Category,Mass_Bin
 2021-049,2021-06-06,Falcon 9,SXM-8,7000.0,Commercial GTO/GEO,6-7t
 2021-058,2021-06-30,LauncherOne,Tubular Bells I,10.0,Small Sat,0-1t
 2021-059,2021-06-30,Falcon 9,Transporter-2,2498.552,Small Sat Rideshare,2-3t
-2021-069,2021-07-30,Ariane 5ECA+,Star One D2/Eutelsat Q,9651.0,Commercial GTO/GEO,9-10t
+2021-069,2021-07-30,Ariane 5,Star One D2/Eutelsat Q,9651.0,Commercial GTO/GEO,9-10t
 2021-072,2021-08-10,Antares 230+,Cygnus NG-16,8050.0,Capsule/Cargo,8-9t
 2021-073,2021-08-17,Vega,Pleiades-Neo 4,12.0,Small Sat,0-1t
 2021-078,2021-08-29,Falcon 9,Dragon C208.2,15000.0,Capsule/Cargo,14-15t
 2021-082,2021-09-14,Falcon 9,Starlink Group 2-1,15147.0,Starlink,15-16t
 2021-084,2021-09-16,Falcon 9,Dragon C207.2,13000.0,Capsule/Cargo,12-13t
-2021-088,2021-09-27,Atlas V 401,Landsat 9,20.0,Small Sat,0-1t
-2021-095,2021-10-24,Ariane 5ECA+,SES-17/Syracuse 4A,6411.0,Commercial GTO/GEO,6-7t
+2021-088,2021-09-27,Atlas 5,Landsat 9,20.0,Small Sat,0-1t
+2021-095,2021-10-24,Ariane 5,SES-17/Syracuse 4A,6411.0,Commercial GTO/GEO,6-7t
 2021-102,2021-11-09,Epsilon,-,94.0,Small Sat,0-1t
 2021-103,2021-11-11,Falcon 9,Dragon C210,13055.0,Capsule/Cargo,13-14t
 2021-104,2021-11-13,Falcon 9,Starlink Group 4-1,15370.0,Starlink,15-16t
@@ -72,20 +72,20 @@ Launch_Tag,Launch_Date,LV_Type,Mission,Payload_Mass,Launch_Category,Mass_Bin
 2021-125,2021-12-18,Falcon 9,Starlink Group 4-4,15080.0,Starlink,15-16t
 2021-126,2021-12-19,Falcon 9,Turksat 5B,4500.0,Commercial GTO/GEO,4-5t
 2021-127,2021-12-21,Falcon 9,Dragon C209.2,15000.3,Capsule/Cargo,15-16t
-2021-128,2021-12-22,H-IIA 204,Inmarsat 6F1,5470.0,Commercial GTO/GEO,5-6t
+2021-128,2021-12-22,H2,Inmarsat 6F1,5470.0,Commercial GTO/GEO,5-6t
 2022-001,2022-01-06,Falcon 9,Starlink Group 4-5,14553.0,Starlink,14-15t
 2022-002,2022-01-13,Falcon 9,Transporter-3,1007.4,Small Sat Rideshare,1-2t
 2022-003,2022-01-13,LauncherOne,Above The Clouds,10.370000000000001,Small Sat,0-1t
 2022-005,2022-01-19,Falcon 9,Starlink Group 4-6,14553.0,Starlink,14-15t
 2022-010,2022-02-03,Falcon 9,Starlink Group 4-7,5049.0,Starlink,5-6t
-2022-012,2022-02-10,Soyuz-ST-B,OneWeb L13,5032.0,LEO Constellation,5-6t
+2022-012,2022-02-10,Soyuz,OneWeb L13,5032.0,LEO Constellation,5-6t
 2022-015,2022-02-19,Antares 230+,Cygnus NG-17,8055.0,Capsule/Cargo,8-9t
 2022-016,2022-02-21,Falcon 9,Starlink Group 4-8,13662.0,Starlink,13-14t
 2022-017,2022-02-25,Falcon 9,Starlink Group 4-11,14850.0,Starlink,14-15t
 2022-020,2022-02-28,Electron,Strix Beta,150.0,Small Sat,0-1t
 2022-022,2022-03-03,Falcon 9,Starlink Group 4-9,13959.0,Starlink,13-14t
 2022-025,2022-03-09,Falcon 9,Starlink Group 4-10,14256.0,Starlink,14-15t
-2022-026,2022-03-15,Astra Rocket 3.3,Spaceflight Astra 1,15.68,LEO Constellation,0-1t
+2022-026,2022-03-15,Astra Rocket 3,Spaceflight Astra 1,15.68,LEO Constellation,0-1t
 2022-029,2022-03-19,Falcon 9,Starlink Group 4-12,15741.0,Starlink,15-16t
 2022-033,2022-04-01,Falcon 9,Transporter-4,688.908,Small Sat Rideshare,0-1t
 2022-034,2022-04-02,Electron,Global-18/Global-20,110.0,Small Sat,0-1t
@@ -98,16 +98,16 @@ Launch_Tag,Launch_Date,LV_Type,Mission,Payload_Mass,Launch_Category,Mass_Bin
 2022-051,2022-05-13,Falcon 9,Starlink Group 4-13,15741.0,Starlink,15-16t
 2022-052,2022-05-14,Falcon 9,Starlink Group 4-15,15741.0,Starlink,15-16t
 2022-053,2022-05-18,Falcon 9,Starlink Group 4-18,15741.0,Starlink,15-16t
-2022-055,2022-05-19,Atlas V N22,Starliner SC2,8000.0,Capsule/Cargo,7-8t
+2022-055,2022-05-19,Atlas 5,Starliner SC2,8000.0,Capsule/Cargo,7-8t
 2022-057,2022-05-25,Falcon 9,Transporter-5,1486.6,Small Sat Rideshare,1-2t
 2022-062,2022-06-17,Falcon 9,Starlink Group 4-19,15741.0,Starlink,15-16t
 2022-064,2022-06-19,Falcon 9,Globalstar FM15,715.0,LEO Constellation,0-1t
-2022-067,2022-06-22,Ariane 5ECA+,Measat 3D/GSAT-24,9829.0,Commercial GTO/GEO,9-10t
+2022-067,2022-06-22,Ariane 5,Measat 3D/GSAT-24,9829.0,Commercial GTO/GEO,9-10t
 2022-070,2022-06-28,Electron,CAPSTONE,300.0,High-Energy,0-1t
 2022-071,2022-06-29,Falcon 9,SES-22,3500.0,Commercial GTO/GEO,3-4t
 2022-076,2022-07-07,Falcon 9,Starlink Group 4-21,15741.0,Starlink,15-16t
 2022-077,2022-07-11,Falcon 9,Starlink Group 3-1,13662.0,Starlink,13-14t
-2022-080,2022-07-13,Vega C,LARES 2,1.0,Small Sat,0-1t
+2022-080,2022-07-13,Vega,LARES 2,1.0,Small Sat,0-1t
 2022-081,2022-07-15,Falcon 9,Dragon C208.3,15000.0,Capsule/Cargo,14-15t
 2022-083,2022-07-17,Falcon 9,Starlink Group 4-22,15741.0,Starlink,15-16t
 2022-084,2022-07-22,Falcon 9,Starlink Group 3-2,13662.0,Starlink,13-14t
@@ -118,19 +118,19 @@ Launch_Tag,Launch_Date,LV_Type,Mission,Payload_Mass,Launch_Category,Mass_Bin
 2022-104,2022-08-28,Falcon 9,Starlink Group 4-23,16200.0,Starlink,16-17t
 2022-105,2022-08-31,Falcon 9,Starlink Group 3-4,13800.0,Starlink,13-14t
 2022-107,2022-09-05,Falcon 9,Starlink Group 4-20/SLTC,15735.0,Starlink,15-16t
-2022-110,2022-09-07,Ariane 5ECA+,Eutelsat Konnect VHTS,6500.0,Commercial GTO/GEO,6-7t
+2022-110,2022-09-07,Ariane 5,Eutelsat Konnect VHTS,6500.0,Commercial GTO/GEO,6-7t
 2022-111,2022-09-11,Falcon 9,Starlink Group 4-2/BW3,11870.0,Starlink,11-12t
 2022-113,2022-09-15,Electron,Strix-1,150.0,Small Sat,0-1t
 2022-114,2022-09-19,Falcon 9,Starlink Group 4-34,16470.0,Starlink,16-17t
 2022-119,2022-09-24,Falcon 9,Starlink Group 4-35,15860.0,Starlink,15-16t
-2022-123,2022-10-04,Atlas V 531,SES-20/SES-21,3267.0,Commercial GTO/GEO,3-4t
+2022-123,2022-10-04,Atlas 5,SES-20/SES-21,3267.0,Commercial GTO/GEO,3-4t
 2022-124,2022-10-05,Falcon 9,Dragon C210.2,13055.0,Capsule/Cargo,13-14t
 2022-125,2022-10-05,Falcon 9,Starlink Group 4-29,15860.0,Starlink,15-16t
 2022-127,2022-10-07,Electron,GAzelle,118.0,Small Sat,0-1t
 2022-128,2022-10-08,Falcon 9,Galaxy 33/34,7350.0,Commercial GTO/GEO,7-8t
 2022-134,2022-10-15,Falcon 9,Hot Bird 13F,4476.0,Commercial GTO/GEO,4-5t
 2022-136,2022-10-20,Falcon 9,Starlink Group 4-36,16470.0,Starlink,16-17t
-2022-138,2022-10-22,LVM3,OneWeb L14,5328.0,LEO Constellation,5-6t
+2022-138,2022-10-22,GSLV,OneWeb L14,5328.0,LEO Constellation,5-6t
 2022-141,2022-10-28,Falcon 9,Starlink Group 4-31,16165.0,Starlink,16-17t
 2022-144,2022-11-01,Falcon Heavy,LDPE-2,43.0,Commercial GTO/GEO,0-1t
 2022-146,2022-11-03,Falcon 9,Hot Bird 13G,4476.0,Commercial GTO/GEO,4-5t
@@ -138,10 +138,10 @@ Launch_Tag,Launch_Date,LV_Type,Mission,Payload_Mass,Launch_Category,Mass_Bin
 2022-153,2022-11-12,Falcon 9,Galaxy 31/32,6600.0,Commercial GTO/GEO,6-7t
 2022-157,2022-11-23,Falcon 9,Eutelsat 10B,4500.0,Commercial GTO/GEO,4-5t
 2022-159,2022-11-26,Falcon 9,Dragon C211,15012.0,Capsule/Cargo,15-16t
-2022-158,2022-11-26,PSLV-XL,PSLV Rideshare 19,35.95,LEO Constellation,0-1t
+2022-158,2022-11-26,PSLV,PSLV Rideshare 19,35.95,LEO Constellation,0-1t
 2022-166,2022-12-08,Falcon 9,OneWeb L15,5920.0,LEO Constellation,5-6t
 2022-168,2022-12-11,Falcon 9,Hakuto-R M1,1050.0,High-Energy,1-2t
-2022-170,2022-12-13,Ariane 5ECA+,Galaxy 35/36/MTG-I1,6300.0,Commercial GTO/GEO,6-7t
+2022-170,2022-12-13,Ariane 5,Galaxy 35/36/MTG-I1,6300.0,Commercial GTO/GEO,6-7t
 2022-174,2022-12-16,Falcon 9,O3b mPOWER 1/2,3400.0,GEO/MEO Constellation,3-4t
 2022-175,2022-12-17,Falcon 9,Starlink Group 4-37,16470.0,Starlink,16-17t
 2022-177,2022-12-28,Falcon 9,Starlink Group 5-1,16470.0,Starlink,16-17t
@@ -168,7 +168,7 @@ Launch_Tag,Launch_Date,LV_Type,Mission,Payload_Mass,Launch_Category,Mass_Bin
 2023-038,2023-03-17,Falcon 9,SES-18/19,7255.0,Commercial GTO/GEO,7-8t
 2023-041,2023-03-24,Electron,Global-19/Global-5,110.0,Small Sat,0-1t
 2023-042,2023-03-24,Falcon 9,Starlink Group 5-5,17080.0,Starlink,17-18t
-2023-043,2023-03-26,LVM3,OneWeb L18,5328.0,LEO Constellation,5-6t
+2023-043,2023-03-26,GSLV,OneWeb L18,5328.0,LEO Constellation,5-6t
 2023-046,2023-03-29,Falcon 9,Starlink Group 5-10,17080.0,Starlink,17-18t
 2023-052,2023-04-07,Falcon 9,IS-40e,6013.0,Commercial GTO/GEO,6-7t
 2023-054,2023-04-15,Falcon 9,Transporter-7,1273.607,Small Sat Rideshare,1-2t
@@ -222,7 +222,7 @@ Launch_Tag,Launch_Date,LV_Type,Mission,Payload_Mass,Launch_Category,Mass_Bin
 2023-148,2023-09-25,Falcon 9,Starlink Group 7-3,15330.0,Starlink,15-16t
 2023-151,2023-09-30,Falcon 9,Starlink Group 6-19,16060.0,Starlink,16-17t
 2023-153,2023-10-05,Falcon 9,Starlink Group 6-21,16060.0,Starlink,16-17t
-2023-154,2023-10-06,Atlas V 501,KuiperSat-1/2,1200.0,LEO Constellation,1-2t
+2023-154,2023-10-06,Atlas 5,KuiperSat-1/2,1200.0,LEO Constellation,1-2t
 2023-155,2023-10-09,Vega,THEOS-2/TRITON,30.0,Small Sat,0-1t
 2023-156,2023-10-09,Falcon 9,Starlink Group 7-4,15330.0,Starlink,15-16t
 2023-158,2023-10-13,Falcon 9,Starlink Group 6-22,16060.0,Starlink,16-17t
@@ -253,7 +253,7 @@ Launch_Tag,Launch_Date,LV_Type,Mission,Payload_Mass,Launch_Category,Mass_Bin
 2024-002,2024-01-03,Falcon 9,Starlink Group 7-9,16710.0,Starlink,16-17t
 2024-003,2024-01-03,Falcon 9,Ovzon-3,1800.0,Commercial GTO/GEO,1-2t
 2024-005,2024-01-07,Falcon 9,Starlink Group 6-35,16790.0,Starlink,16-17t
-2024-006,2024-01-08,Vulcan Centaur VC2S,CERT-1,1283.0,High-Energy,1-2t
+2024-006,2024-01-08,Vulcan,CERT-1,1283.0,High-Energy,1-2t
 2024-011,2024-01-14,Falcon 9,Starlink Group 7-10,16060.0,Starlink,16-17t
 2024-012,2024-01-15,Falcon 9,Starlink Group 6-37,16790.0,Starlink,16-17t
 2024-014,2024-01-18,Falcon 9,Dragon C212.3,13000.0,Capsule/Cargo,12-13t
@@ -266,7 +266,7 @@ Launch_Tag,Launch_Date,LV_Type,Mission,Payload_Mass,Launch_Category,Mass_Bin
 2024-028,2024-02-14,Falcon 9,HBTSS/SDA-0C,2000.0,Commercial LEO/SSO/MEO,1-2t
 2024-030,2024-02-15,Falcon 9,IM-1,1908.0,High-Energy,1-2t
 2024-031,2024-02-15,Falcon 9,Starlink Group 7-14,16060.0,Starlink,16-17t
-2024-032,2024-02-17,H3-22S,VEP-4,75.0,Small Sat,0-1t
+2024-032,2024-02-17,H3,VEP-4,75.0,Small Sat,0-1t
 2024-034,2024-02-18,Electron,ADRAS-J,150.0,Small Sat,0-1t
 2024-035,2024-02-20,Falcon 9,HTS 113BT,4000.0,Commercial GTO/GEO,3-4t
 2024-036,2024-02-23,Falcon 9,Starlink Group 7-15,16060.0,Starlink,16-17t
@@ -308,7 +308,7 @@ Launch_Tag,Launch_Date,LV_Type,Mission,Payload_Mass,Launch_Category,Mass_Bin
 2024-100,2024-05-28,Falcon 9,Starlink Group 6-60,16790.0,Starlink,16-17t
 2024-106,2024-06-01,Falcon 9,Starlink Group 6-64,16790.0,Starlink,16-17t
 2024-107,2024-06-05,Falcon 9,Starlink Group 8-5,17590.0,Starlink,17-18t
-2024-109,2024-06-05,Atlas V N22,Starliner SC3,8000.0,Capsule/Cargo,7-8t
+2024-109,2024-06-05,Atlas 5,Starliner SC3,8000.0,Capsule/Cargo,7-8t
 2024-111,2024-06-08,Falcon 9,Starlink Group 10-1,16060.0,Starlink,16-17t
 2024-112,2024-06-08,Falcon 9,Starlink Group 8-8,17590.0,Starlink,17-18t
 2024-113,2024-06-19,Falcon 9,Starlink Group 9-1,17590.0,Starlink,17-18t
@@ -319,7 +319,7 @@ Launch_Tag,Launch_Date,LV_Type,Mission,Payload_Mass,Launch_Category,Mass_Bin
 2024-120,2024-06-27,Falcon 9,Starlink Group 10-3,16790.0,Starlink,16-17t
 2024-124,2024-07-03,Falcon 9,Starlink Group 8-9,17590.0,Starlink,17-18t
 2024-127,2024-07-08,Falcon 9,Turksat 6A,4250.0,Commercial GTO/GEO,4-5t
-2024-128,2024-07-09,Ariane 62,Cubesats,29.0,Small Sat,0-1t
+2024-128,2024-07-09,Ariane 6,Cubesats,29.0,Small Sat,0-1t
 2024-129,2024-07-12,Falcon 9,Starlink Group 9-3,1920.0,Starlink,1-2t
 2024-131,2024-07-27,Falcon 9,Starlink Group 10-9,16790.0,Starlink,16-17t
 2024-132,2024-07-28,Falcon 9,Starlink Group 10-4,16790.0,Starlink,16-17t
@@ -346,7 +346,7 @@ Launch_Tag,Launch_Date,LV_Type,Mission,Payload_Mass,Launch_Category,Mass_Bin
 2024-172,2024-09-20,Electron,Kineis 3A-3E,140.0,LEO Constellation,0-1t
 2024-175,2024-09-25,Falcon 9,Starlink Group 9-8,17590.0,Starlink,17-18t
 2024-178,2024-09-28,Falcon 9,Dragon C212.4,13055.0,Capsule/Cargo,13-14t
-2024-179,2024-10-04,Vulcan Centaur VC2S,CERT-2,1500.0,Commercial LEO/SSO/MEO,1-2t
+2024-179,2024-10-04,Vulcan,CERT-2,1500.0,Commercial LEO/SSO/MEO,1-2t
 2024-183,2024-10-15,Falcon 9,Starlink Group 10-10,16790.0,Starlink,16-17t
 2024-184,2024-10-15,Falcon 9,Starlink Group 9-7,17590.0,Starlink,17-18t
 2024-187,2024-10-18,Falcon 9,Starlink Group 8-19,17590.0,Starlink,17-18t
@@ -431,7 +431,7 @@ Launch_Tag,Launch_Date,LV_Type,Mission,Payload_Mass,Launch_Category,Mass_Bin
 2025-083,2025-04-25,Falcon 9,Starlink Group 6-74,16100.0,Starlink,16-17t
 2025-085,2025-04-28,Falcon 9,Starlink Group 12-23,18230.0,Starlink,18-19t
 2025-087,2025-04-28,Falcon 9,Starlink Group 11-9,15525.0,Starlink,15-16t
-2025-088,2025-04-28,Atlas V 551,KA-01,13230.0,LEO Constellation,13-14t
+2025-088,2025-04-28,Atlas 5,KA-01,13230.0,LEO Constellation,13-14t
 2025-089,2025-04-29,Falcon 9,Starlink Group 12-10,18230.0,Starlink,18-19t
 2025-091,2025-05-02,Falcon 9,Starlink Group 6-75,16100.0,Starlink,16-17t
 2025-092,2025-05-04,Falcon 9,Starlink Group 6-84,16675.0,Starlink,16-17t
@@ -461,7 +461,7 @@ Launch_Tag,Launch_Date,LV_Type,Mission,Payload_Mass,Launch_Category,Mass_Bin
 2025-129,2025-06-17,Falcon 9,Starlink Group 15-9,14950.0,Starlink,14-15t
 2025-130,2025-06-18,Falcon 9,Starlink Group 10-18,16100.0,Starlink,16-17t
 2025-133,2025-06-23,Falcon 9,Starlink Group 10-23,15525.0,Starlink,15-16t
-2025-134,2025-06-23,Atlas V 551,KA-02,13230.0,LEO Constellation,13-14t
+2025-134,2025-06-23,Atlas 5,KA-02,13230.0,LEO Constellation,13-14t
 2025-135,2025-06-23,Falcon 9,Transporter-14,2827.0,Small Sat Rideshare,2-3t
 2025-136,2025-06-25,Falcon 9,Dragon C213.1,13000.0,Capsule/Cargo,12-13t
 2025-137,2025-06-25,Falcon 9,Starlink Group 10-16,15525.0,Starlink,15-16t
@@ -505,7 +505,7 @@ Launch_Tag,Launch_Date,LV_Type,Mission,Payload_Mass,Launch_Category,Mass_Bin
 2025-210,2025-09-18,Falcon 9,Starlink Group 10-61,16100.0,Starlink,16-17t
 2025-211,2025-09-19,Falcon 9,Starlink Group 17-12,13800.0,Starlink,13-14t
 2025-212,2025-09-21,Falcon 9,Starlink Group 10-27,16100.0,Starlink,16-17t
-2025-217,2025-09-25,Atlas V 551,KA-03,13230.0,LEO Constellation,13-14t
+2025-217,2025-09-25,Atlas 5,KA-03,13230.0,LEO Constellation,13-14t
 2025-216,2025-09-25,Falcon 9,Starlink Group 10-15,16100.0,Starlink,16-17t
 2025-218,2025-09-26,Falcon 9,Starlink Group 17-11,13800.0,Starlink,13-14t
 2025-221,2025-09-29,Falcon 9,Starlink Group 11-20,16100.0,Starlink,16-17t
@@ -530,7 +530,7 @@ Launch_Tag,Launch_Date,LV_Type,Mission,Payload_Mass,Launch_Category,Mass_Bin
 2025-257,2025-11-09,Falcon 9,Starlink Group 10-51,16675.0,Starlink,16-17t
 2025-259,2025-11-11,Falcon 9,Starlink Group 6-87,16675.0,Starlink,16-17t
 2025-260,2025-11-13,New Glenn 7x2,-,10.0,Small Sat,0-1t
-2025-261,2025-11-14,Atlas V 551,Viasat-3 F2,6400.0,Commercial GTO/GEO,6-7t
+2025-261,2025-11-14,Atlas 5,Viasat-3 F2,6400.0,Commercial GTO/GEO,6-7t
 2025-262,2025-11-15,Falcon 9,Starlink Group 6-89,16675.0,Starlink,16-17t
 2025-263,2025-11-15,Falcon 9,Starlink Group 6-85,16675.0,Starlink,16-17t
 2025-265,2025-11-19,Falcon 9,Starlink Group 6-94,16675.0,Starlink,16-17t
@@ -550,11 +550,11 @@ Launch_Tag,Launch_Date,LV_Type,Mission,Payload_Mass,Launch_Category,Mass_Bin
 2025-294,2025-12-11,Falcon 9,Starlink Group 6-90,16675.0,Starlink,16-17t
 2025-298,2025-12-14,Falcon 9,Starlink Group 15-12,15525.0,Starlink,15-16t
 2025-299,2025-12-15,Falcon 9,Starlink Group 6-82,16675.0,Starlink,16-17t
-2025-301,2025-12-16,Atlas V 551,LA-04,13230.0,LEO Constellation,13-14t
+2025-301,2025-12-16,Atlas 5,LA-04,13230.0,LEO Constellation,13-14t
 2025-303,2025-12-17,Falcon 9,Starlink Group 6-99,16675.0,Starlink,16-17t
 2025-304,2025-12-17,Falcon 9,Starlink Group 15-13,15525.0,Starlink,15-16t
 2025-307,2025-12-21,Electron,QPS-SAR-15,120.0,Small Sat,0-1t
-2025-309,2025-12-24,LVM3,BlueBird Block-2 FM1,5850.0,Commercial LEO/SSO/MEO,5-6t
+2025-309,2025-12-24,GSLV,BlueBird Block-2 FM1,5850.0,Commercial LEO/SSO/MEO,5-6t
 2026-002,2026-01-04,Falcon 9,Starlink Group 6-88,16675.0,Starlink,16-17t
 2026-003,2026-01-09,Falcon 9,Starlink Group 6-96,16675.0,Starlink,16-17t
 2026-004,2026-01-11,Falcon 9,Twilight,3992.8,Small Sat Rideshare,3-4t
@@ -569,7 +569,7 @@ Launch_Tag,Launch_Date,LV_Type,Mission,Payload_Mass,Launch_Category,Mass_Bin
 2026-022,2026-02-02,Falcon 9,Starlink Group 17-32,14375.0,Starlink,14-15t
 2026-025,2026-02-07,Falcon 9,Starlink Group 17-33,14375.0,Starlink,14-15t
 2026-026,2026-02-11,Falcon 9,Starlink Group 17-34,13800.0,Starlink,13-14t
-2026-030,2026-02-12,Ariane 64,Amazon LE-01,15680.0,LEO Constellation,15-16t
+2026-030,2026-02-12,Ariane 6,Amazon LE-01,15680.0,LEO Constellation,15-16t
 2026-031,2026-02-13,Falcon 9,Dragon C212.5,13055.0,Capsule/Cargo,13-14t
 2026-032,2026-02-15,Falcon 9,Starlink Group 17-13,13800.0,Starlink,13-14t
 2026-033,2026-02-16,Falcon 9,Starlink Group 6-103,16675.0,Starlink,16-17t
@@ -597,9 +597,9 @@ Launch_Tag,Launch_Date,LV_Type,Mission,Payload_Mass,Launch_Category,Mass_Bin
 2026-063,2026-03-26,Falcon 9,Starlink Group 17-17,14375.0,Starlink,14-15t
 2026-067,2026-03-30,Falcon 9,Transporter-16,5293.95,Small Sat Rideshare,5-6t
 2026-068,2026-03-30,Falcon 9,Starlink Group 10-44,16675.0,Starlink,16-17t
-2026-069,2026-04-01,SLS Block 1,Integrity,20.0,Small Sat,0-1t
+2026-069,2026-04-01,SLS,Integrity,20.0,Small Sat,0-1t
 2026-070,2026-04-02,Falcon 9,Starlink Group 10-58,16675.0,Starlink,16-17t
-2026-072,2026-04-04,Atlas V 551,LA-05,14210.0,LEO Constellation,14-15t
+2026-072,2026-04-04,Atlas 5,LA-05,14210.0,LEO Constellation,14-15t
 2026-073,2026-04-07,Falcon 9,Starlink Group 17-35,14375.0,Starlink,14-15t
 2026-077,2026-04-11,Falcon 9,Starlink Group 17-21,14375.0,Starlink,14-15t
 2026-079,2026-04-11,Falcon 9,Cygnus NG-24,8050.0,Capsule/Cargo,8-9t

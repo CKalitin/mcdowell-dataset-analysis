@@ -1,0 +1,13 @@
+Things to really optimize for using it with Claude in the next version:
+
+- An export for a given vehicles launches, satellites launched by a vehicle in a given time frame, launches from a country in a period, etc.
+    - This should be just like one function with sort functions
+- Make every sort function explicit. Eg. Cull all entries not from X country and make the syntax really nice
+- Make overrides / definitions for some values clear. Eg. pattern match column and text to be a given category. Eg. "PLAN" org = "Planet Labs" expanded name, or "PLAN" on an "Electron" vehicle is a "Constellation" type of launch, with an ordering to the rules so I'm the one in control of the rules
+    - Really in the end, Claude is what's generating charts for me but I want complete override control for how we label certain things.
+- The point above is the most important thing. Give me a really nice interface to control how things are categorized and labeled and make it really easy to do so. I used to do things in Google Sheets and I had a bunch of columns to give me context on the given launch / satellite I was looking at, make a similar system where I get a nice row / column representation (implementation is up in the air, csv in vscode is a little ugly and bad to work with) and can assign it an override for a given label, or make a new rule based on it. See the rule example above.
+- The charts should be matplotlib as well, it's ideal. Plotly is nice and should be supported, but it's far less important than matplotlib, the language of data science.
+- The exported raw dataframes should have far more context in them, this is the same point as letting me categorized, override, and make new rules with enough context. I need context presented well, presented in a technical manner too, not ooh wow slow web ui, but raw utilitarian spreadsheet (again, implementation Claude will decide)
+- Rules should be dictionaries or something (Claude can think of the best implementation), easy to see and edit and add
+- Some more cases for what I'd want to sort, eg. don't include programs with >50 sats at the 200-500 kg class, eg. if I want to exclude SDA satellites. Note the original search for "don't include programs" should be substitutable for "don't include X"
+- An automated pipeline for an LLM to compare a launch to eg. Gunters Space Page for categorization would be amazing. Eg. take in a name and cospar id and some other context, search it and find out if it's properly labelled automatically. I love language models with web search!

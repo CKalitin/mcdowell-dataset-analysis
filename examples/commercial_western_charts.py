@@ -1,9 +1,87 @@
 import standard_chart_generation as scg
 
+# --- Electron launches ---
+scg.electron_launches(
+    chart_title_prefix='Electron',
+    output_prefix='western',
+    start_year=2017,
+    org_top_n=10,
+    org_color_map=scg.mda.ChartUtils.color_sequence_3_12 + ['#9e9e9e'],
+    save_raw_df=True,
+    raw_df_title='electron_launches_classified',
+)
+
+# --- Small sat 2018-2025 (megaconstellations excluded) ---
+scg.western_small_sat_by_category(
+    chart_title_prefix='Western',
+    output_prefix='western',
+    output_name='western_small_sat_by_year_and_category_2018_2025',
+    max_mass_kg=300,
+    start_year=2018,
+    end_year=2025,
+    date_range='2018-2025',
+    color_map=scg.mda.ChartUtils.simple_payload_category_color_map,
+    exclude_large_constellations=True,
+    save_raw_df=True,
+    raw_df_title='western_small_sat_2018_2025_raw',
+    include_mass_dist=True,
+    mass_dist_output_name='western_small_sat_mass_dist_2018_2025',
+    mass_dist_start_year=2018,
+    mass_dist_end_year=2025,
+    mass_dist_date_range='2018-2025',
+    mass_step_size_kg=10,
+    include_lv_by_year=True,
+    lv_by_year_output_name='western_small_sat_by_year_by_lv_2018_2025',
+    lv_top_n=10,
+    lv_color_map=scg.mda.ChartUtils.color_sequence_3_12 + ['#9e9e9e'],
+    include_customer_by_year=True,
+    customer_by_year_output_name='western_small_sat_by_year_by_customer_2018_2025',
+    include_customer_mass_dist=True,
+    customer_mass_dist_output_name='western_small_sat_mass_dist_by_customer_2018_2025',
+    include_org_by_year=True,
+    org_by_year_output_name='western_small_sat_by_year_by_org_2018_2025',
+    include_org_mass_dist=True,
+    org_mass_dist_output_name='western_small_sat_mass_dist_by_org_2018_2025',
+    org_top_n=12,
+    org_color_map=scg.mda.ChartUtils.color_sequence_3_12 + ['#9e9e9e'],
+)
+
+# --- Small sat by category ---
+scg.western_small_sat_by_category(
+    chart_title_prefix='Western',
+    output_prefix='western',
+    output_name='western_small_sat_by_year_and_category',
+    max_mass_kg=300,
+    start_year=2000,
+    end_year=2017,
+    date_range='2000-2017',
+    color_map=scg.mda.ChartUtils.simple_payload_category_color_map,
+    include_mass_dist=True,
+    mass_dist_output_name='western_small_sat_mass_dist_2000_2017',
+    mass_dist_start_year=2000,
+    mass_dist_end_year=2017,
+    mass_dist_date_range='2000-2017',
+    mass_step_size_kg=10,
+    include_lv_by_year=True,
+    lv_by_year_output_name='western_small_sat_by_year_by_lv_2000_2017',
+    lv_top_n=10,
+    lv_color_map=scg.mda.ChartUtils.color_sequence_3_12 + ['#9e9e9e'],
+    include_customer_by_year=True,
+    customer_by_year_output_name='western_small_sat_by_year_by_customer_2000_2017',
+    include_customer_mass_dist=True,
+    customer_mass_dist_output_name='western_small_sat_mass_dist_by_customer_2000_2017',
+    include_org_by_year=True,
+    org_by_year_output_name='western_small_sat_by_year_by_org_2000_2017',
+    include_org_mass_dist=True,
+    org_mass_dist_output_name='western_small_sat_mass_dist_by_org_2000_2017',
+    org_top_n=12,
+    org_color_map=scg.mda.ChartUtils.color_sequence_3_12 + ['#9e9e9e'],
+)
+
 # --- Orbits addressable by mass ---
 scg.western_orbits_addressable_by_mass(
     chart_title_prefix='Western',
-    chart_title="Orbits Addressable By NordSpace's Titan",
+    chart_title="Launches Addressable by NordSpace's Titan",
     output_prefix='western',
     leo_max_kg=5000,
     meo_max_kg=3000,

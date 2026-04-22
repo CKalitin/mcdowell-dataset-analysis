@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python examples/commercial_western_charts.py)"
+    ]
+  }
+}
