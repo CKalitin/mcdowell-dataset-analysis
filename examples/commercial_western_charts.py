@@ -1,5 +1,15 @@
 import standard_chart_generation as scg
 
+# For Jacob Keeton https://x.com/CKalitin/status/2047190844718105019
+# --- Launch cadence comparison ---
+scg.launch_cadence_cumulative(
+    output_prefix='western',
+    output_name='launch_cadence_cumulative',
+    chart_title='Cumulative Orbital Launches Since First Flight',
+    max_years=10,
+    color_map=scg.mda.ChartUtils.color_sequence_3_8,
+)
+
 # --- Orbits addressable by mass ---
 scg.western_orbits_addressable_by_mass(
     chart_title_prefix='Western',

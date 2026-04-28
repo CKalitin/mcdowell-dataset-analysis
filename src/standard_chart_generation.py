@@ -1672,8 +1672,11 @@ _LAUNCH_STATE_NAMES = {
 
 _NORDSPACE_CATEGORY_ORDER = [
     'Commercial LEO', 'Rideshare', 'Constellation',
-    'US Gov/Military', 'Foreign Gov/Military', 'Other',
+    'US Gov/Military', 'European Gov/Military', 'Foreign Gov/Military', 'Other',
 ]
+
+# Launch_State codes considered European for the NordSpace category split.
+_EUROPEAN_LAUNCH_STATES = frozenset({'F', 'GUF', 'ESCN', 'G', 'I', 'D', 'S', 'NO', 'NL', 'B', 'PL'})
 
 # Manual launch-tag overrides for NordSpace category classification.
 _NORDSPACE_LAUNCH_OVERRIDES = {
@@ -1685,6 +1688,9 @@ _NORDSPACE_PROGRAM_OVERRIDES = {
     'Tantrum': 'Commercial LEO',
     'EROS C3': 'Commercial LEO',
 }
+
+# Mission names excluded from the NordSpace addressable market (certification/test flights).
+_NORDSPACE_EXCLUDED_MISSIONS = frozenset({'CERT-2'})
 
 WESTERN_ORBIT_ORDER = ['LEO', 'SSO', 'MEO', 'GTO', 'GEO', 'HEO', 'BEO', 'Unknown']
 
@@ -3095,6 +3101,80 @@ def _build_launch_df(satcat_df, category_col, dataset, start_year=None, end_year
 
 
 # ---------------------------------------------------------------------------
+# Launch cadence comparison
+# ---------------------------------------------------------------------------
+
+def launch_cadence_cumulative(
+    output_prefix='analysis',
+    output_name='launch_cadence_cumulative',
+    chart_title='Cumulative Orbital Launches Since First Flight',
+    max_years=10,
+    color_map=None,
+):
+    """Line chart: cumulative orbital launches vs years since first launch per vehicle.
+
+    Vehicles compared: Electron, Falcon 9, Atlas V, Titan family, Soyuz/R-7 family,
+    Space Shuttle, Delta II, Proton family.
+    """
+    import numpy as np
+
+    dataset = mda.McdowellDataset('./datasets')
+    orbital = dataset.launch.df[
+        dataset.launch.df['Category'].str.startswith('Sat', na=False)
+    ].copy()
+    lv = orbital['Launch_Vehicle_Simplified'].fillna('')
+
+    vehicle_defs = [
+        ('Electron',      orbital[lv == 'Electron']),
+        ('Falcon 9',      orbital[lv == 'Falcon 9']),
+        ('Atlas V',       orbital[lv.str.contains(r'Atlas V|Atlas 5', case=False, na=False)]),
+        ('Titan',         orbital[lv.str.contains(r'^Titan', regex=True, na=False)]),
+        ('Soyuz/R-7',     orbital[lv.str.contains(r'Soyuz|Vostok|Voskhod|Molniya|Sputnik|R-7', case=False, na=False)]),
+        ('Space Shuttle', orbital[lv == 'Space Shuttle']),
+        ('Delta II',      orbital[lv.str.contains(r'Delta.?II|Delta.?2\b', case=False, regex=True, na=False)]),
+        ('Proton',        orbital[lv.str.contains(r'^Proton', regex=True, na=False)]),
+    ]
+
+    # Monthly x-axis (1/12-year steps) from 0 to max_years
+    x_points = np.arange(0, max_years + 1/12, 1/12)
+    data = {'Year': x_points}
+    vehicle_names = []
+
+    for name, vdf in vehicle_defs:
+        if vdf.empty:
+            continue
+        first = vdf['Launch_Date'].min()
+        frac_years = (vdf['Launch_Date'] - first).dt.days / 365.25
+        frac_years = frac_years[frac_years <= max_years].sort_values().values
+        last_launch = frac_years[-1] if len(frac_years) else 0
+        # Use NaN beyond the last launch so the line ends rather than going flat
+        data[name] = [
+            float((frac_years <= xp).sum()) if xp <= last_launch else float('nan')
+            for xp in x_points
+        ]
+        vehicle_names.append(name)
+
+    df = pd.DataFrame(data)
+    mda.ChartUtils.log_and_save_df('csv', output_name, output_prefix, df)
+
+    subtitle = f'Christopher Kalitin 2026 - Data Source: Jonathan McDowell - Data Cutoff: {dataset.date_updated}'
+    _cmap = color_map if color_map else mda.ChartUtils.color_sequence_3_8
+
+    mda.ChartUtils.plot_line(
+        df,
+        x_col='Year',
+        y_cols=vehicle_names,
+        title=chart_title,
+        subtitle=subtitle,
+        x_label='Years Since First Orbital Launch',
+        y_label='Cumulative Orbital Launches',
+        output_path=f'examples/outputs/chart/{output_prefix}/{output_name}.png',
+        color_map=_cmap,
+        line_width=3,
+    )
+
+
+# ---------------------------------------------------------------------------
 # NordSpace category classification
 # ---------------------------------------------------------------------------
 
@@ -3102,7 +3182,7 @@ def _classify_nordspace_categories(qual_launch_df, satcat_df):
     """Map a per-launch dataframe to NordSpace Titan market categories.
 
     Categories: Commercial LEO, Rideshare, Constellation,
-                US Gov/Military, Foreign Gov/Military, Other.
+                US Gov/Military, European Gov/Military, Foreign Gov/Military, Other.
     """
     western_cats = _dominant_western_category_per_launch(satcat_df)
     western_map = western_cats.set_index('Launch_Tag')['Launch_Category']
@@ -3126,10 +3206,12 @@ def _classify_nordspace_categories(qual_launch_df, satcat_df):
             return 'Constellation'
         if wcat in ('Commercial LEO/SSO/MEO', 'Small Sat'):
             return 'Commercial LEO'
-        if wcat in ('Military LEO', 'Military non-LEO'):
-            return 'US Gov/Military' if state == 'US' else 'Foreign Gov/Military'
-        if wcat in ('Government LEO', 'Government non-LEO', 'ISS'):
-            return 'US Gov/Military' if state == 'US' else 'Foreign Gov/Military'
+        if wcat in ('Military LEO', 'Military non-LEO', 'Government LEO', 'Government non-LEO', 'ISS'):
+            if state == 'US':
+                return 'US Gov/Military'
+            if state in _EUROPEAN_LAUNCH_STATES:
+                return 'European Gov/Military'
+            return 'Foreign Gov/Military'
         return 'Other'
 
     result['NordSpace_Category'] = result.apply(_map, axis=1)
@@ -3194,6 +3276,11 @@ def western_orbits_addressable_by_mass(
         dataset.launch.df[dataset.launch.df['Launch_Vehicle_Simplified'] == 'Electron']['Launch_Tag']
     )
     satcat_df = satcat_df[~satcat_df['Launch_Tag'].isin(_electron_tags)].copy()
+    # Remove specific excluded missions (e.g. certification flights)
+    _excluded_tags = set(
+        dataset.launch.df[dataset.launch.df['Mission'].isin(_NORDSPACE_EXCLUDED_MISSIONS)]['Launch_Tag']
+    )
+    satcat_df = satcat_df[~satcat_df['Launch_Tag'].isin(_excluded_tags)].copy()
     satcat_df = _load_psatcat_orbit(satcat_df, dataset.launch.df)
     satcat_df = _apply_effective_mass(satcat_df)
     satcat_df = _classify_western_all_categories(satcat_df)
@@ -3242,7 +3329,9 @@ def western_orbits_addressable_by_mass(
         )
         state_map = satcat_df.drop_duplicates('Launch_Tag').set_index('Launch_Tag')['Launch_State']
         raw_df['Launch_Country'] = raw_df['Launch_Tag'].map(state_map).map(_LAUNCH_STATE_NAMES).fillna('Unknown')
-        raw_df = raw_df[['Launch_Date', 'Launch_Vehicle_Simplified', 'Mission', 'Launch_Category', 'Payload_Mass', 'Launch_Country', 'Western_Category', 'Launch_Tag']]
+        ns_classified = _classify_nordspace_categories(raw_df, satcat_df)
+        raw_df['NordSpace_Category'] = ns_classified['NordSpace_Category']
+        raw_df = raw_df[['Launch_Date', 'Launch_Vehicle_Simplified', 'Mission', 'Launch_Category', 'Payload_Mass', 'Launch_Country', 'Western_Category', 'NordSpace_Category', 'Launch_Tag']]
         raw_df = raw_df.rename(columns={'Launch_Category': 'Orbit', 'Payload_Mass': 'Total_Payload_Mass_kg'})
         raw_df = raw_df.sort_values('Launch_Date')
         df_name = raw_df_title if raw_df_title else f'{output_name}_launches'
@@ -3427,4 +3516,22 @@ def western_orbits_addressable_by_mass(
             output_path=f'examples/outputs/chart/{output_prefix}/{ns_output_name}.png',
             color_map=mda.ChartUtils.nordspace_category_color_map,
             bargap=0.1,
+        )
+        ns_count = ns_df.groupby('NordSpace_Category').size().reindex(_NORDSPACE_CATEGORY_ORDER).dropna().astype(int)
+        ns_mass  = ns_df.groupby('NordSpace_Category')['Payload_Mass'].sum().reindex(_NORDSPACE_CATEGORY_ORDER).dropna()
+        ns_count = ns_count[ns_count > 0]
+        ns_mass  = ns_mass[ns_mass > 0]
+        pie_title_base = (f"{chart_title}" if chart_title else f'{chart_title_prefix} Addressable Launches')
+        mda.ChartUtils.log_and_save_df('csv', f'{ns_output_name}_count_pie', output_prefix,
+                                       ns_count.rename('Count').reset_index())
+        mda.ChartUtils.log_and_save_df('csv', f'{ns_output_name}_mass_pie', output_prefix,
+                                       ns_mass.rename('Mass_kg').reset_index())
+        mda.ChartUtils.plot_pie(
+            values=ns_count.values,
+            names=ns_count.index.tolist(),
+            title=f'{pie_title_base} - Category',
+            subtitle=subtitle,
+            output_path=f'examples/outputs/chart/{output_prefix}/{ns_output_name}_count_pie.png',
+            color_map=mda.ChartUtils.nordspace_category_color_map,
+            sort=False,
         )
