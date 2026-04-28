@@ -1,5 +1,31 @@
 import standard_chart_generation as scg
 
+# --- Orbits addressable by mass ---
+scg.western_orbits_addressable_by_mass(
+    chart_title_prefix='Western',
+    chart_title="Launches Addressable by NordSpace's Titan",
+    output_prefix='western',
+    output_name='nordspace_titan_addressable_by_mass',
+    leo_max_kg=5000,
+    meo_max_kg=3000,
+    gto_max_kg=2000,
+    geo_max_kg=1000,
+    heo_max_kg=1000,
+    beo_max_kg=1000,
+    min_mass_kg=200,
+    max_mass_kg=5000,
+    mass_step_size_kg=200,
+    start_year=2020,
+    date_range='2020-2026',
+    save_raw_df=True,
+    raw_df_title='nordspace_titan_addressable_payload_list',
+    include_type_chart=True,
+    include_category_chart=True,
+    include_lv_chart=True,
+    include_country_chart=True,
+    include_nordspace_category_chart=True,
+)
+
 # --- Electron launches ---
 scg.electron_launches(
     chart_title_prefix='Electron',
@@ -90,31 +116,6 @@ scg.western_small_sat_by_category(
     org_top_n=12,
     org_color_map=scg.mda.ChartUtils.color_sequence_3_12 + ['#9e9e9e'],
 )
-
-# --- Orbits addressable by mass ---
-scg.western_orbits_addressable_by_mass(
-    chart_title_prefix='Western',
-    chart_title="Launches Addressable by NordSpace's Titan",
-    output_prefix='western',
-    leo_max_kg=5000,
-    meo_max_kg=3000,
-    gto_max_kg=2000,
-    geo_max_kg=1000,
-    heo_max_kg=1000,
-    beo_max_kg=1000,
-    min_mass_kg=200,
-    max_mass_kg=5000,
-    mass_step_size_kg=200,
-    start_year=2020,
-    date_range='2020-2026',
-    save_raw_df=True,
-    raw_df_title='nordspace_titan_addressable_payload_list',
-    include_type_chart=True,
-    include_category_chart=True,
-    include_lv_chart=True,
-    include_country_chart=True,
-)
-
 # --- Commercial western ---
 scg.western_payload_pie(
     chart_title_prefix='Commercial Western',

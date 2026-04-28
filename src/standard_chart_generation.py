@@ -1666,6 +1666,24 @@ _LAUNCH_STATE_NAMES = {
     'DZ':   'Algeria',
     'IR':   'Iran',
     'KP':   'North Korea',
+    'KZ':   'Kazakhstan',
+    'F':    'France',
+}
+
+_NORDSPACE_CATEGORY_ORDER = [
+    'Commercial LEO', 'Rideshare', 'Constellation',
+    'US Gov/Military', 'Foreign Gov/Military', 'Other',
+]
+
+# Manual launch-tag overrides for NordSpace category classification.
+_NORDSPACE_LAUNCH_OVERRIDES = {
+    '2022-072': 'Commercial LEO',  # DS-EO/POEM misclassified as Military
+}
+
+# Payload_Program names that should always map to a specific NordSpace category.
+_NORDSPACE_PROGRAM_OVERRIDES = {
+    'Tantrum': 'Commercial LEO',
+    'EROS C3': 'Commercial LEO',
 }
 
 WESTERN_ORBIT_ORDER = ['LEO', 'SSO', 'MEO', 'GTO', 'GEO', 'HEO', 'BEO', 'Unknown']
@@ -3077,12 +3095,63 @@ def _build_launch_df(satcat_df, category_col, dataset, start_year=None, end_year
 
 
 # ---------------------------------------------------------------------------
+# NordSpace category classification
+# ---------------------------------------------------------------------------
+
+def _classify_nordspace_categories(qual_launch_df, satcat_df):
+    """Map a per-launch dataframe to NordSpace Titan market categories.
+
+    Categories: Commercial LEO, Rideshare, Constellation,
+                US Gov/Military, Foreign Gov/Military, Other.
+    """
+    western_cats = _dominant_western_category_per_launch(satcat_df)
+    western_map = western_cats.set_index('Launch_Tag')['Launch_Category']
+
+    idx = satcat_df.groupby('Launch_Tag')['Effective_Mass'].idxmax()
+    dom_state = satcat_df.loc[idx].set_index('Launch_Tag')['Launch_State']
+
+    result = qual_launch_df.copy()
+    result['_WCat'] = result['Launch_Tag'].map(western_map)
+    result['_State'] = result['Launch_Tag'].map(dom_state)
+
+    def _map(row):
+        wcat = row['_WCat']
+        state = str(row['_State'])
+        mission = str(row.get('Mission', ''))
+        if any(kw in mission.lower() for kw in ('rideshare', 'cubesat', 'cubesats')):
+            return 'Rideshare'
+        if wcat == 'Small Sat Rideshare':
+            return 'Rideshare'
+        if wcat in ('LEO Constellation', 'GEO/MEO Constellation'):
+            return 'Constellation'
+        if wcat in ('Commercial LEO/SSO/MEO', 'Small Sat'):
+            return 'Commercial LEO'
+        if wcat in ('Military LEO', 'Military non-LEO'):
+            return 'US Gov/Military' if state == 'US' else 'Foreign Gov/Military'
+        if wcat in ('Government LEO', 'Government non-LEO', 'ISS'):
+            return 'US Gov/Military' if state == 'US' else 'Foreign Gov/Military'
+        return 'Other'
+
+    result['NordSpace_Category'] = result.apply(_map, axis=1)
+
+    for prog, cat in _NORDSPACE_PROGRAM_OVERRIDES.items():
+        prog_tags = set(satcat_df[satcat_df['Payload_Program'].fillna('') == prog]['Launch_Tag'].unique())
+        result.loc[result['Launch_Tag'].isin(prog_tags), 'NordSpace_Category'] = cat
+
+    for tag, cat in _NORDSPACE_LAUNCH_OVERRIDES.items():
+        result.loc[result['Launch_Tag'] == tag, 'NordSpace_Category'] = cat
+
+    return result.drop(columns=['_WCat', '_State'])
+
+
+# ---------------------------------------------------------------------------
 # Western all launches by orbit
 # ---------------------------------------------------------------------------
 
 def western_orbits_addressable_by_mass(
     chart_title_prefix='Western',
     output_prefix='western',
+    output_name=None,
     leo_max_kg=20000,
     meo_max_kg=6000,
     gto_max_kg=8000,
@@ -3106,13 +3175,25 @@ def western_orbits_addressable_by_mass(
     include_country_chart=False,
     country_top_n=10,
     country_color_map=None,
+    include_nordspace_category_chart=False,
 ):
     """Bar chart: western launches by orbit, each orbit capped at its own max payload mass."""
-    output_name = f'{output_prefix}_orbits_addressable_by_mass'
+    output_name = output_name if output_name else f'{output_prefix}_orbits_addressable_by_mass'
     dataset = mda.McdowellDataset('./datasets')
 
     satcat_df = _filter_western_all(dataset.satcat.df.copy())
+    # Remove Starlink payloads and any launch whose mission name starts with 'Starlink'
+    # (catches co-manifested payloads like BlueWalker 3 and SkySats on Starlink flights)
     satcat_df = satcat_df[~satcat_df['Payload_Program'].fillna('').str.startswith('Starlink')].copy()
+    _sl_mission_tags = set(
+        dataset.launch.df[dataset.launch.df['Mission'].str.startswith('Starlink', na=False)]['Launch_Tag']
+    )
+    satcat_df = satcat_df[~satcat_df['Launch_Tag'].isin(_sl_mission_tags)].copy()
+    # Remove Electron launches (not in NordSpace Titan's addressable market)
+    _electron_tags = set(
+        dataset.launch.df[dataset.launch.df['Launch_Vehicle_Simplified'] == 'Electron']['Launch_Tag']
+    )
+    satcat_df = satcat_df[~satcat_df['Launch_Tag'].isin(_electron_tags)].copy()
     satcat_df = _load_psatcat_orbit(satcat_df, dataset.launch.df)
     satcat_df = _apply_effective_mass(satcat_df)
     satcat_df = _classify_western_all_categories(satcat_df)
@@ -3159,7 +3240,9 @@ def western_orbits_addressable_by_mass(
         raw_df = qual_launch_df.drop_duplicates('Launch_Tag').merge(
             launch_western_cat, on='Launch_Tag', how='left'
         )
-        raw_df = raw_df[['Launch_Date', 'Launch_Vehicle_Simplified', 'Mission', 'Launch_Category', 'Payload_Mass', 'Western_Category', 'Launch_Tag']]
+        state_map = satcat_df.drop_duplicates('Launch_Tag').set_index('Launch_Tag')['Launch_State']
+        raw_df['Launch_Country'] = raw_df['Launch_Tag'].map(state_map).map(_LAUNCH_STATE_NAMES).fillna('Unknown')
+        raw_df = raw_df[['Launch_Date', 'Launch_Vehicle_Simplified', 'Mission', 'Launch_Category', 'Payload_Mass', 'Launch_Country', 'Western_Category', 'Launch_Tag']]
         raw_df = raw_df.rename(columns={'Launch_Category': 'Orbit', 'Payload_Mass': 'Total_Payload_Mass_kg'})
         raw_df = raw_df.sort_values('Launch_Date')
         df_name = raw_df_title if raw_df_title else f'{output_name}_launches'
@@ -3318,5 +3401,30 @@ def western_orbits_addressable_by_mass(
             y_label='Number of Launches',
             output_path=f'examples/outputs/chart/{output_prefix}/{output_name}_by_country.png',
             color_map=_country_color_map,
+            bargap=0.1,
+        )
+
+    if include_nordspace_category_chart and not qual_launch_df.empty:
+        ns_df = _classify_nordspace_categories(qual_launch_df, satcat_df)
+        ns_order = [c for c in _NORDSPACE_CATEGORY_ORDER if c in ns_df['NordSpace_Category'].unique()]
+        ns_dict = {}
+        for cat in ns_order:
+            cat_sub = ns_df[ns_df['NordSpace_Category'] == cat]
+            binned = pd.cut(cat_sub['Payload_Mass'], bins=bins, labels=mass_labels, include_lowest=True)
+            ns_dict[cat] = binned.value_counts().reindex(mass_labels, fill_value=0)
+        ns_out = pd.DataFrame(ns_dict, index=mass_labels)
+        last_nz_ns = (ns_out.sum(axis=1) > 0).cumsum()
+        ns_out = ns_out.loc[last_nz_ns > 0]
+        ns_output_name = f'{output_name}_by_nordspace_category'
+        mda.ChartUtils.log_and_save_df('csv', ns_output_name, output_prefix, ns_out)
+        ns_title = (f"{chart_title} - Category" if chart_title else f'{chart_title_prefix} Addressable Launches by Category')
+        mda.ChartUtils.plot_bar(
+            ns_out,
+            title=ns_title,
+            subtitle=f'{subtitle}  |  {cap_note}',
+            x_label='Total Payload Mass (kg)',
+            y_label='Number of Launches',
+            output_path=f'examples/outputs/chart/{output_prefix}/{ns_output_name}.png',
+            color_map=mda.ChartUtils.nordspace_category_color_map,
             bargap=0.1,
         )

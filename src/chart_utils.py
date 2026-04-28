@@ -101,6 +101,15 @@ class ChartUtils:
         'Other':                     '#434343',
     }
 
+    nordspace_category_color_map = {
+        'Commercial LEO':       "#ffc32d",
+        'Rideshare':            "#e66f1f",
+        'Constellation':        "#3194eb",
+        'US Gov/Military':      "#089b08",
+        'Foreign Gov/Military': '#cc0000',
+        'Other':                '#434343',
+    }
+
     western_net_category_color_map = {
         'Starlink': "#0b5394",
         'LEO Constellation': "#0563c1",
