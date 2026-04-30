@@ -1,15 +1,15 @@
 ,Launch_Category,Mass_t
-0,Starlink,6018.935552
+0,Starlink,6047.110552
 1,LEO Constellation,169.61520000000002
 2,GEO/MEO Constellation,17.0
 3,Small Sat Rideshare,21.405695
 4,Small Sat,6.2501999999999995
-5,Commercial LEO/SSO/MEO,52.77435
+5,Commercial LEO/SSO/MEO,58.38035
 6,Commercial GTO/GEO,239.576
 7,Capsule/Cargo,576.339908
 8,High-Energy,18.641
 9,ISS,16.235
-10,Military LEO,339.422758
-11,Military non-LEO,135.166
-12,Government LEO,75.374343
+10,Military LEO,339.44275799999997
+11,Military non-LEO,139.518
+12,Government LEO,75.393643
 13,Government non-LEO,120.217

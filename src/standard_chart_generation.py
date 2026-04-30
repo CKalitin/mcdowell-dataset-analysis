@@ -2071,6 +2071,14 @@ def western_launches_vs_mass(
     if save_raw_df:
         raw_cols = ['Launch_Tag', 'Launch_Date', 'Launch_Vehicle_Simplified', 'Mission', 'Payload_Mass', group_col]
         raw_df = launch_df[raw_cols].copy()
+        if group_by == 'lv':
+            _orbit_satcat = _filter_western_all(dataset.satcat.df.copy())
+            _orbit_satcat = _load_psatcat_orbit(_orbit_satcat, dataset.launch.df)
+            _orbit_satcat = _apply_effective_mass(_orbit_satcat)
+            _dom_orbit = _dominant_category_by_mass(_orbit_satcat, 'Derived_Orbit').rename(
+                columns={'Launch_Category': 'Orbit'}
+            )
+            raw_df = raw_df.merge(_dom_orbit, on='Launch_Tag', how='left')
         raw_df['Mass_Bin'] = pd.cut(
             raw_df['Payload_Mass'], bins=bins, labels=mass_labels, include_lowest=True
         )

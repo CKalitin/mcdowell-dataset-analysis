@@ -35,8 +35,8 @@ Launch_Tag,Launch_Date,Launch_Vehicle_Simplified,Mission,Payload_Mass,LV_Display
 2022-070,2022-06-28,Electron,CAPSTONE,300.0,Electron,250-300kg,0-1t
 2022-072,2022-06-30,PSLV,DS-EO/POEM,573.0,PSLV,550-600kg,0-1t
 2022-074,2022-07-02,LauncherOne,Straight Up,78.4,LauncherOne,50-100kg,0-1t
-2022-080,2022-07-13,Vega,LARES 2,310.0,Vega,300-350kg,0-1t
 2022-079,2022-07-13,Electron,NROL-162,100.0,Electron,50-100kg,0-1t
+2022-080,2022-07-13,Vega,LARES 2,310.0,Vega,300-350kg,0-1t
 2022-091,2022-08-04,Electron,NROL-199,100.0,Electron,50-100kg,0-1t
 2022-094,2022-08-04,Falcon 9,KPLO,678.0,Falcon 9,650-700kg,0-1t
 2022-113,2022-09-15,Electron,Strix-1,150.0,Electron,100-150kg,0-1t
@@ -111,4 +111,5 @@ Launch_Tag,Launch_Date,Launch_Vehicle_Simplified,Mission,Payload_Mass,LV_Display
 2026-043,2026-03-05,Electron,BlackSky Gen3-4,138.0,Electron,100-150kg,0-1t
 2026-056,2026-03-20,Electron,Strix-6,150.0,Electron,100-150kg,0-1t
 2026-065,2026-03-28,Electron,Celeste,50.0,Electron,0-50kg,0-1t
-2026-074,2026-04-07,Minotaur 4,STP-S29A,159.9,Minotaur 4,150-200kg,0-1t
+2026-074,2026-04-07,Minotaur 4,STP-S29A,179.9,Minotaur 4,150-200kg,0-1t
+2026-088,2026-04-23,Electron,JAXA ISTD-4,15.3,Electron,0-50kg,0-1t

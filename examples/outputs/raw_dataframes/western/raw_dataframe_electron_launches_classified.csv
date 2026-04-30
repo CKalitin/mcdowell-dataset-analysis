@@ -80,3 +80,5 @@ Launch_Tag,Year,Mission,Launch_Date,Org,Category,N_Payloads
 2026-043,2026,BlackSky Gen3-4,2026-03-05,BlackSky Global,Constellation (Earth obs),1
 2026-056,2026,Strix-6,2026-03-20,Synspective,Constellation (SAR),1
 2026-065,2026,Celeste,2026-03-28,ESA,Government,2
+2026-S232,2026,MACH-TB?,2026-04-22,Hypersonic,Hypersonic,0
+2026-088,2026,JAXA ISTD-4,2026-04-23,Rideshare,Rideshare,8

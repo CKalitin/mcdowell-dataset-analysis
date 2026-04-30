@@ -16,8 +16,8 @@ Launch_Tag,Launch_Date,Launch_Vehicle_Simplified,Mission,Payload_Mass,Launch_Cat
 2020-030,2020-05-20,H2,HTV 9,6225.0,LEO,6-7t
 2020-033,2020-05-30,Falcon 9,Dragon C206,13055.0,LEO,13-14t
 2020-035,2020-06-04,Falcon 9,Starlink V1.0-L7,15600.0,LEO,15-16t
-2020-037,2020-06-13,Electron,NRO/ANDESITE/M2PF,156.5,LEO,0-1t
 2020-038,2020-06-13,Falcon 9,Starlink V1.0-L8/SkySat,15410.0,LEO,15-16t
+2020-037,2020-06-13,Electron,NRO/ANDESITE/M2PF,156.5,LEO,0-1t
 2020-041,2020-06-30,Falcon 9,GPS III SV-03,4400.0,MEO,4-5t
 2020-044,2020-07-06,Shavit,'Ofeq-16,300.0,LEO,0-1t
 2020-046,2020-07-15,Minotaur 4,NROL-129,1000.0,LEO,0-1t
@@ -69,8 +69,8 @@ Launch_Tag,Launch_Date,Launch_Vehicle_Simplified,Mission,Payload_Mass,Launch_Cat
 2021-027,2021-04-07,Falcon 9,Starlink V1.0-L23,15600.0,LEO,15-16t
 2021-030,2021-04-23,Falcon 9,Dragon C206.2,13055.0,LEO,13-14t
 2021-032,2021-04-26,Delta 4H,Improved CRYSTAL?,20000.0,LEO,19-20t
-2021-036,2021-04-29,Falcon 9,Starlink V1.0-L24,15600.0,LEO,15-16t
 2021-034,2021-04-29,Vega,Pleiades-Neo 3,964.2,LEO,0-1t
+2021-036,2021-04-29,Falcon 9,Starlink V1.0-L24,15600.0,LEO,15-16t
 2021-038,2021-05-04,Falcon 9,Starlink V1.0-L25,15600.0,LEO,15-16t
 2021-040,2021-05-09,Falcon 9,Starlink V1.0-L27,15600.0,LEO,15-16t
 2021-041,2021-05-15,Falcon 9,Starlink V1.0-L26,13643.0,LEO,13-14t
@@ -112,8 +112,8 @@ Launch_Tag,Launch_Date,Launch_Vehicle_Simplified,Mission,Payload_Mass,Launch_Cat
 2021-128,2021-12-22,H2,Inmarsat 6F1,5470.0,GEO,5-6t
 2021-130,2021-12-25,Ariane 5,JWST,6161.0,HEO,6-7t
 2022-001,2022-01-06,Falcon 9,Starlink Group 4-5,14553.0,LEO,14-15t
-2022-003,2022-01-13,LauncherOne,Above The Clouds,28.37,LEO,0-1t
 2022-002,2022-01-13,Falcon 9,Transporter-3,2424.15,LEO,2-3t
+2022-003,2022-01-13,LauncherOne,Above The Clouds,28.37,LEO,0-1t
 2022-005,2022-01-19,Falcon 9,Starlink Group 4-6,14553.0,LEO,14-15t
 2022-006,2022-01-21,Atlas 5,GSSAP 5/6,1000.0,LEO,0-1t
 2022-008,2022-01-31,Falcon 9,COSMO-Skymed SG FM2,2205.0,LEO,2-3t
@@ -157,8 +157,8 @@ Launch_Tag,Launch_Date,Launch_Vehicle_Simplified,Mission,Payload_Mass,Launch_Cat
 2022-074,2022-07-02,LauncherOne,Straight Up,78.4,LEO,0-1t
 2022-076,2022-07-07,Falcon 9,Starlink Group 4-21,15741.0,LEO,15-16t
 2022-077,2022-07-11,Falcon 9,Starlink Group 3-1,13662.0,LEO,13-14t
-2022-080,2022-07-13,Vega,LARES 2,310.0,MEO,0-1t
 2022-079,2022-07-13,Electron,NROL-162,100.0,LEO,0-1t
+2022-080,2022-07-13,Vega,LARES 2,310.0,MEO,0-1t
 2022-081,2022-07-15,Falcon 9,Dragon C208.3,15018.0,LEO,15-16t
 2022-083,2022-07-17,Falcon 9,Starlink Group 4-22,15741.0,LEO,15-16t
 2022-084,2022-07-22,Falcon 9,Starlink Group 3-2,13662.0,LEO,13-14t
@@ -180,8 +180,8 @@ Launch_Tag,Launch_Date,Launch_Vehicle_Simplified,Mission,Payload_Mass,Launch_Cat
 2022-119,2022-09-24,Falcon 9,Starlink Group 4-35,15860.0,LEO,15-16t
 2022-122,2022-10-01,Firefly Alpha,-,7.75,LEO,0-1t
 2022-123,2022-10-04,Atlas 5,SES-20/SES-21,3267.0,GEO,3-4t
-2022-125,2022-10-05,Falcon 9,Starlink Group 4-29,15860.0,LEO,15-16t
 2022-124,2022-10-05,Falcon 9,Dragon C210.2,13055.0,LEO,13-14t
+2022-125,2022-10-05,Falcon 9,Starlink Group 4-29,15860.0,LEO,15-16t
 2022-127,2022-10-07,Electron,GAzelle,118.0,LEO,0-1t
 2022-128,2022-10-08,Falcon 9,Galaxy 33/34,7350.0,GEO,7-8t
 2022-134,2022-10-15,Falcon 9,Hot Bird 13F,4476.0,GEO,4-5t
@@ -196,8 +196,8 @@ Launch_Tag,Launch_Date,Launch_Vehicle_Simplified,Mission,Payload_Mass,Launch_Cat
 2022-153,2022-11-12,Falcon 9,Galaxy 31/32,6600.0,GEO,6-7t
 2022-156,2022-11-16,SLS,-,10387.0,HEO,10-11t
 2022-157,2022-11-23,Falcon 9,Eutelsat 10B,4500.0,GEO,4-5t
-2022-158,2022-11-26,PSLV,PSLV Rideshare 19,1170.95,LEO,1-2t
 2022-159,2022-11-26,Falcon 9,Dragon C211,15045.6,LEO,15-16t
+2022-158,2022-11-26,PSLV,PSLV Rideshare 19,1170.95,LEO,1-2t
 2022-166,2022-12-08,Falcon 9,OneWeb L15,5920.0,LEO,5-6t
 2022-168,2022-12-11,Falcon 9,Hakuto-R M1,1064.0,HEO,1-2t
 2022-170,2022-12-13,Ariane 5,Galaxy 35/36/MTG-I1,10060.0,GEO,10-11t
@@ -212,8 +212,8 @@ Launch_Tag,Launch_Date,Launch_Vehicle_Simplified,Mission,Payload_Mass,Launch_Cat
 2023-009,2023-01-18,Falcon 9,GPS III SV06,4352.0,MEO,4-5t
 2023-010,2023-01-19,Falcon 9,Starlink Group 2-4,15555.0,LEO,15-16t
 2023-011,2023-01-24,Electron,Hawk 6,93.0,LEO,0-1t
-2023-013,2023-01-26,Falcon 9,Starlink Group 5-2,17080.0,LEO,17-18t
 2023-012,2023-01-26,H2,IGS R-7,1500.0,LEO,1-2t
+2023-013,2023-01-26,Falcon 9,Starlink Group 5-2,17080.0,LEO,17-18t
 2023-014,2023-01-31,Falcon 9,Starlink Group 2-6,15105.0,LEO,15-16t
 2023-015,2023-02-02,Falcon 9,Starlink Group 5-3,16165.0,LEO,16-17t
 2023-017,2023-02-07,Falcon 9,Amazonas Nexus,4500.0,GEO,4-5t
@@ -229,8 +229,8 @@ Launch_Tag,Launch_Date,Launch_Vehicle_Simplified,Mission,Payload_Mass,Launch_Cat
 2023-035,2023-03-16,Electron,Capella 9/10,224.0,LEO,0-1t
 2023-037,2023-03-17,Falcon 9,Starlink Group 2-8,15860.0,LEO,15-16t
 2023-038,2023-03-17,Falcon 9,SES-18/19,7255.0,GEO,7-8t
-2023-041,2023-03-24,Electron,Global-19/Global-5,110.0,LEO,0-1t
 2023-042,2023-03-24,Falcon 9,Starlink Group 5-5,17080.0,LEO,17-18t
+2023-041,2023-03-24,Electron,Global-19/Global-5,110.0,LEO,0-1t
 2023-043,2023-03-26,GSLV,OneWeb L18,5328.0,LEO,5-6t
 2023-044,2023-03-28,Shavit,'Ofeq-13,300.0,LEO,0-1t
 2023-046,2023-03-29,Falcon 9,Starlink Group 5-10,17080.0,LEO,17-18t
@@ -303,8 +303,8 @@ Launch_Tag,Launch_Date,Launch_Vehicle_Simplified,Mission,Payload_Mass,Launch_Cat
 2023-154,2023-10-06,Atlas 5,KuiperSat-1/2,1200.0,LEO,1-2t
 2023-155,2023-10-09,Vega,THEOS-2/TRITON,725.0,LEO,0-1t
 2023-156,2023-10-09,Falcon 9,Starlink Group 7-4,15330.0,LEO,15-16t
-2023-158,2023-10-13,Falcon 9,Starlink Group 6-22,16060.0,LEO,16-17t
 2023-157,2023-10-13,Falcon Heavy,Psyche,2608.0,BEO,2-3t
+2023-158,2023-10-13,Falcon 9,Starlink Group 6-22,16060.0,LEO,16-17t
 2023-160,2023-10-18,Falcon 9,Starlink Group 6-23,16060.0,LEO,16-17t
 2023-161,2023-10-21,Falcon 9,Starlink Group 7-5,15330.0,LEO,15-16t
 2023-162,2023-10-22,Falcon 9,Starlink Group 6-24,16790.0,LEO,16-17t
@@ -329,8 +329,8 @@ Launch_Tag,Launch_Date,Launch_Vehicle_Simplified,Mission,Payload_Mass,Launch_Cat
 2023-202,2023-12-22,Firefly Alpha,Tantrum,250.0,LEO,0-1t
 2023-203,2023-12-23,Falcon 9,Starlink Group 6-32,16790.0,LEO,16-17t
 2023-204,2023-12-24,Falcon 9,SARah-2/3,3600.0,LEO,3-4t
-2023-210,2023-12-29,Falcon Heavy,X-37B No. 2/USSF-52,5000.0,LEO,4-5t
 2023-211,2023-12-29,Falcon 9,Starlink Group 6-36,16790.0,LEO,16-17t
+2023-210,2023-12-29,Falcon Heavy,X-37B No. 2/USSF-52,5000.0,LEO,4-5t
 2024-001,2024-01-01,PSLV,XPoSAT,519.0,LEO,0-1t
 2024-002,2024-01-03,Falcon 9,Starlink Group 7-9,16710.0,LEO,16-17t
 2024-003,2024-01-03,Falcon 9,Ovzon-3,1800.0,GEO,1-2t
@@ -341,15 +341,15 @@ Launch_Tag,Launch_Date,Launch_Vehicle_Simplified,Mission,Payload_Mass,Launch_Cat
 2024-012,2024-01-15,Falcon 9,Starlink Group 6-37,16790.0,LEO,16-17t
 2024-014,2024-01-18,Falcon 9,Dragon C212.3,13000.0,LEO,12-13t
 2024-017,2024-01-24,Falcon 9,Starlink Group 7-11,16060.0,LEO,16-17t
-2024-019,2024-01-29,Falcon 9,Starlink Group 6-38,16790.0,LEO,16-17t
 2024-020,2024-01-29,Falcon 9,Starlink Group 7-12,16060.0,LEO,16-17t
+2024-019,2024-01-29,Falcon 9,Starlink Group 6-38,16790.0,LEO,16-17t
 2024-021,2024-01-30,Falcon 9,Cygnus NG-20,8050.0,LEO,8-9t
 2024-022,2024-01-31,Electron,Lemur SSA 1-4,100.0,LEO,0-1t
 2024-025,2024-02-08,Falcon 9,PACE,1700.0,LEO,1-2t
 2024-027,2024-02-10,Falcon 9,Starlink Group 7-13,16060.0,LEO,16-17t
 2024-028,2024-02-14,Falcon 9,HBTSS/SDA-0C,6000.0,LEO,5-6t
-2024-031,2024-02-15,Falcon 9,Starlink Group 7-14,16060.0,LEO,16-17t
 2024-030,2024-02-15,Falcon 9,IM-1,1908.0,HEO,1-2t
+2024-031,2024-02-15,Falcon 9,Starlink Group 7-14,16060.0,LEO,16-17t
 2024-032,2024-02-17,H3,VEP-4,2975.0,LEO,2-3t
 2024-033,2024-02-17,GSLV,INSAT-2DS,2275.0,GEO,2-3t
 2024-034,2024-02-18,Electron,ADRAS-J,150.0,LEO,0-1t
@@ -381,8 +381,8 @@ Launch_Tag,Launch_Date,Launch_Vehicle_Simplified,Mission,Payload_Mass,Launch_Cat
 2024-071,2024-04-13,Falcon 9,Starlink Group 6-49,16790.0,LEO,16-17t
 2024-073,2024-04-17,Falcon 9,Starlink Group 6-51,16790.0,LEO,16-17t
 2024-074,2024-04-18,Falcon 9,Starlink Group 6-52,16790.0,LEO,16-17t
-2024-077,2024-04-23,Electron,Neonsat-1,116.1,LEO,0-1t
 2024-076,2024-04-23,Falcon 9,Starlink Group 6-53,16790.0,LEO,16-17t
+2024-077,2024-04-23,Electron,Neonsat-1,116.1,LEO,0-1t
 2024-079,2024-04-28,Falcon 9,Galileo L12,1466.0,MEO,1-2t
 2024-080,2024-04-28,Falcon 9,Starlink Group 6-54,16790.0,LEO,16-17t
 2024-081,2024-05-02,Falcon 9,Maxar 1,1400.0,LEO,1-2t
@@ -397,8 +397,8 @@ Launch_Tag,Launch_Date,Launch_Vehicle_Simplified,Mission,Payload_Mass,Launch_Cat
 2024-097,2024-05-23,Falcon 9,Starlink Group 6-62,16790.0,LEO,16-17t
 2024-098,2024-05-24,Falcon 9,Starlink Group 6-63,16790.0,LEO,16-17t
 2024-099,2024-05-25,Electron,PREFIRE-1,10.0,LEO,0-1t
-2024-100,2024-05-28,Falcon 9,Starlink Group 6-60,16790.0,LEO,16-17t
 2024-101,2024-05-28,Falcon 9,EarthCARE,2200.0,LEO,2-3t
+2024-100,2024-05-28,Falcon 9,Starlink Group 6-60,16790.0,LEO,16-17t
 2024-106,2024-06-01,Falcon 9,Starlink Group 6-64,16790.0,LEO,16-17t
 2024-107,2024-06-05,Falcon 9,Starlink Group 8-5,17590.0,LEO,17-18t
 2024-108,2024-06-05,Electron,PREFIRE-2,10.0,LEO,0-1t
@@ -420,8 +420,8 @@ Launch_Tag,Launch_Date,Launch_Vehicle_Simplified,Mission,Payload_Mass,Launch_Cat
 2024-128,2024-07-09,Ariane 6,Cubesats,1660.0,LEO,1-2t
 2024-129,2024-07-12,Falcon 9,Starlink Group 9-3,1920.0,LEO,1-2t
 2024-131,2024-07-27,Falcon 9,Starlink Group 10-9,16790.0,LEO,16-17t
-2024-132,2024-07-28,Falcon 9,Starlink Group 10-4,16790.0,LEO,16-17t
 2024-133,2024-07-28,Falcon 9,Starlink Group 9-4,18320.0,LEO,18-19t
+2024-132,2024-07-28,Falcon 9,Starlink Group 10-4,16790.0,LEO,16-17t
 2024-134,2024-07-30,Atlas 5,USSF-51,7300.0,GTO,7-8t
 2024-136,2024-08-02,Falcon 9,Starlink Group 10-6,16790.0,LEO,16-17t
 2024-137,2024-08-02,Electron,Strix-4,150.0,LEO,0-1t
@@ -438,8 +438,8 @@ Launch_Tag,Launch_Date,Launch_Vehicle_Simplified,Mission,Payload_Mass,Launch_Cat
 2024-152,2024-08-28,Falcon 9,Starlink Group 8-6,18320.0,LEO,18-19t
 2024-154,2024-08-31,Falcon 9,Starlink Group 8-10,18320.0,LEO,18-19t
 2024-155,2024-08-31,Falcon 9,Starlink Group 9-5,18320.0,LEO,18-19t
-2024-158,2024-09-05,Falcon 9,Starlink Group 8-11,18320.0,LEO,18-19t
 2024-157,2024-09-05,Vega,Sentinel-2C,1143.0,LEO,1-2t
+2024-158,2024-09-05,Falcon 9,Starlink Group 8-11,18320.0,LEO,18-19t
 2024-160,2024-09-06,Falcon 9,NRO Starshield A3,15750.0,LEO,15-16t
 2024-161,2024-09-10,Falcon 9,Dragon C207.3,13000.0,LEO,12-13t
 2024-163,2024-09-12,Falcon 9,BlueBird 1-1,7500.0,LEO,7-8t
@@ -453,15 +453,15 @@ Launch_Tag,Launch_Date,Launch_Vehicle_Simplified,Mission,Payload_Mass,Launch_Cat
 2024-179,2024-10-04,Vulcan,CERT-2,1500.0,LEO,1-2t
 2024-180,2024-10-07,Falcon 9,Hera,1081.0,BEO,1-2t
 2024-182,2024-10-14,Falcon Heavy,Europa Clipper,5700.0,BEO,5-6t
-2024-183,2024-10-15,Falcon 9,Starlink Group 10-10,16790.0,LEO,16-17t
 2024-184,2024-10-15,Falcon 9,Starlink Group 9-7,17590.0,LEO,17-18t
+2024-183,2024-10-15,Falcon 9,Starlink Group 10-10,16790.0,LEO,16-17t
 2024-187,2024-10-18,Falcon 9,Starlink Group 8-19,17590.0,LEO,17-18t
 2024-188,2024-10-20,Falcon 9,OneWeb L20,2960.0,LEO,2-3t
 2024-191,2024-10-23,Falcon 9,Starlink Group 6-61,16790.0,LEO,16-17t
 2024-192,2024-10-24,Falcon 9,NRO Starshield A4,13600.0,LEO,13-14t
 2024-193,2024-10-26,Falcon 9,Starlink Group 10-8,16060.0,LEO,16-17t
-2024-196,2024-10-30,Falcon 9,Starlink Group 10-13,16790.0,LEO,16-17t
 2024-195,2024-10-30,Falcon 9,Starlink Group 9-9,17590.0,LEO,17-18t
+2024-196,2024-10-30,Falcon 9,Starlink Group 10-13,16790.0,LEO,16-17t
 2024-198,2024-11-04,H3,DSN 3,5000.0,GTO,4-5t
 2024-200,2024-11-05,Falcon 9,Dragon C208.5,15623.0,LEO,15-16t
 2024-201,2024-11-05,Electron,E-Space 4,100.0,SSO,0-1t
@@ -476,26 +476,26 @@ Launch_Tag,Launch_Date,Launch_Vehicle_Simplified,Mission,Payload_Mass,Launch_Cat
 2024-214,2024-11-18,Falcon 9,GSAT-20,4700.0,GTO,4-5t
 2024-216,2024-11-21,Falcon 9,Starlink Group 6-66,17520.0,LEO,17-18t
 2024-217,2024-11-24,Falcon 9,Starlink Group 9-13,17590.0,LEO,17-18t
-2024-219,2024-11-25,Electron,Kineis 5A-5E,140.0,SSO,0-1t
 2024-220,2024-11-25,Falcon 9,Starlink Group 12-1,17350.0,LEO,17-18t
+2024-219,2024-11-25,Electron,Kineis 5A-5E,140.0,SSO,0-1t
 2024-222,2024-11-27,Falcon 9,Starlink Group 6-76,17520.0,LEO,17-18t
 2024-224,2024-11-30,Falcon 9,Starlink Group 6-65,17520.0,LEO,17-18t
 2024-225,2024-11-30,Falcon 9,NRO St B2/NRO PA05,16200.0,LEO,16-17t
 2024-229,2024-12-04,Falcon 9,Starlink Group 6-70,17520.0,LEO,17-18t
-2024-235,2024-12-05,Vega,Sentinel-1C,2157.0,SSO,2-3t
-2024-234,2024-12-05,Falcon 9,SXM-9,7000.0,GEO,6-7t
 2024-231,2024-12-05,Falcon 9,Starlink Group 9-14,17590.0,LEO,17-18t
 2024-233,2024-12-05,PSLV,PROBA-3,540.0,GTO,0-1t
+2024-234,2024-12-05,Falcon 9,SXM-9,7000.0,GEO,6-7t
+2024-235,2024-12-05,Vega,Sentinel-1C,2157.0,SSO,2-3t
 2024-237,2024-12-08,Falcon 9,Starlink Group 12-5,17780.0,LEO,17-18t
 2024-239,2024-12-13,Falcon 9,Starlink Group 11-2,16060.0,LEO,16-17t
 2024-242,2024-12-17,Falcon 9,RRT-1,4352.0,MEO,4-5t
 2024-243,2024-12-17,Falcon 9,NRO Starshield A5,17600.0,LEO,17-18t
 2024-244,2024-12-17,Falcon 9,O3b mPOWER 7/8,3400.0,MEO,3-4t
-2024-248,2024-12-21,Electron,Strix-2,150.0,SSO,0-1t
 2024-247,2024-12-21,Falcon 9,Bandwagon-2,1520.25,LEO,1-2t
+2024-248,2024-12-21,Electron,Strix-2,150.0,SSO,0-1t
 2024-249,2024-12-23,Falcon 9,Starlink Group 12-2,18320.0,LEO,18-19t
-2024-252,2024-12-29,Falcon 9,Astranis,1600.0,HEO,1-2t
 2024-251,2024-12-29,Falcon 9,Starlink Group 11-3,16060.0,LEO,16-17t
+2024-252,2024-12-29,Falcon 9,Astranis,1600.0,HEO,1-2t
 2024-253,2024-12-30,PSLV,SPADEX,490.0,LEO,0-1t
 2024-254,2024-12-31,Falcon 9,Starlink Group 12-6,18320.0,LEO,18-19t
 2025-001,2025-01-04,Falcon 9,Thuraya 4-NGS,5000.0,GEO,4-5t
@@ -515,8 +515,8 @@ Launch_Tag,Launch_Date,Launch_Vehicle_Simplified,Mission,Payload_Mass,Launch_Cat
 2025-021,2025-01-30,Falcon 9,Spainsat NG-1,6100.0,GTO,6-7t
 2025-022,2025-02-01,Falcon 9,Starlink Group 11-4,16060.0,LEO,16-17t
 2025-023,2025-02-02,H3,QZS 6,4900.0,GTO,4-5t
-2025-025,2025-02-04,Falcon 9,Maxar-3,1400.0,LEO,1-2t
 2025-024,2025-02-04,Falcon 9,Starlink Group 12-3,18320.0,LEO,18-19t
+2025-025,2025-02-04,Falcon 9,Maxar-3,1400.0,LEO,1-2t
 2025-027,2025-02-08,Falcon 9,Starlink Group 12-9,18320.0,LEO,18-19t
 2025-028,2025-02-08,Electron,Kineis 2A-2E,140.0,SSO,0-1t
 2025-029,2025-02-11,Falcon 9,Starlink Group 11-10,16790.0,LEO,16-17t
@@ -526,18 +526,18 @@ Launch_Tag,Launch_Date,Launch_Vehicle_Simplified,Mission,Payload_Mass,Launch_Cat
 2025-034,2025-02-18,Falcon 9,Starlink Group 10-12,16790.0,LEO,16-17t
 2025-035,2025-02-21,Falcon 9,Starlink Group 12-14,18230.0,LEO,18-19t
 2025-037,2025-02-23,Falcon 9,Starlink Group 15-1,16060.0,LEO,16-17t
-2025-039,2025-02-27,Falcon 9,Starlink Group 12-13,18320.0,LEO,18-19t
 2025-038,2025-02-27,Falcon 9,IM-2/Odin/LTB/CGEO-1,2736.0,HEO,2-3t
+2025-039,2025-02-27,Falcon 9,Starlink Group 12-13,18320.0,LEO,18-19t
 2025-043,2025-03-03,Falcon 9,Starlink Group 12-20,18320.0,LEO,18-19t
 2025-044,2025-03-06,Ariane 6,CSO 3,3562.0,SSO,3-4t
 2025-047,2025-03-12,Falcon 9,SPHEREx,758.0,LEO,0-1t
 2025-048,2025-03-13,Falcon 9,Starlink Group 12-21,18320.0,LEO,18-19t
 2025-049,2025-03-14,Falcon 9,Dragon C210.4,13055.0,LEO,13-14t
-2025-052,2025-03-15,Falcon 9,Transporter-13,3159.2,LEO,3-4t
 2025-050,2025-03-15,Electron,QPS-SAR-9,120.0,LEO,0-1t
+2025-052,2025-03-15,Falcon 9,Transporter-13,3159.2,LEO,3-4t
 2025-053,2025-03-15,Falcon 9,Starlink Group 12-16,18230.0,LEO,18-19t
-2025-057,2025-03-18,Falcon 9,Starlink Group 12-25,18230.0,LEO,18-19t
 2025-056,2025-03-18,Electron,Kineis 4A-4E,140.0,SSO,0-1t
+2025-057,2025-03-18,Falcon 9,Starlink Group 12-25,18230.0,LEO,18-19t
 2025-058,2025-03-21,Falcon 9,NRO Starshield A7,8800.0,LEO,8-9t
 2025-060,2025-03-24,Falcon 9,INTRUDER?,1000.0,LEO,0-1t
 2025-061,2025-03-26,Electron,OTC Phase 1,120.0,SSO,0-1t
@@ -565,8 +565,8 @@ Launch_Tag,Launch_Date,Launch_Vehicle_Simplified,Mission,Payload_Mass,Launch_Cat
 2025-093,2025-05-07,Falcon 9,Starlink Group 6-93,16100.0,LEO,16-17t
 2025-094,2025-05-10,Falcon 9,Starlink Group 15-3,14950.0,LEO,14-15t
 2025-095,2025-05-10,Falcon 9,Starlink Group 6-91,16100.0,LEO,16-17t
-2025-098,2025-05-13,Falcon 9,Starlink Group 15-4,14950.0,LEO,14-15t
 2025-099,2025-05-13,Falcon 9,Starlink Group 6-83,16100.0,LEO,16-17t
+2025-098,2025-05-13,Falcon 9,Starlink Group 15-4,14950.0,LEO,14-15t
 2025-101,2025-05-14,Falcon 9,Starlink Group 6-67,16100.0,LEO,16-17t
 2025-102,2025-05-16,Falcon 9,Starlink Group 15-5,14950.0,LEO,14-15t
 2025-104,2025-05-17,Electron,QPS-SAR-10,120.0,LEO,0-1t
@@ -584,20 +584,20 @@ Launch_Tag,Launch_Date,Launch_Vehicle_Simplified,Mission,Payload_Mass,Launch_Cat
 2025-123,2025-06-08,Falcon 9,Starlink Group 15-8,14950.0,LEO,14-15t
 2025-124,2025-06-10,Falcon 9,Starlink Group 12-24,18230.0,LEO,18-19t
 2025-125,2025-06-11,Electron,QPS-SAR-11,120.0,LEO,0-1t
-2025-127,2025-06-13,Falcon 9,Starlink Group 12-26,18230.0,LEO,18-19t
 2025-126,2025-06-13,Falcon 9,Starlink Group 15-6,14950.0,LEO,14-15t
+2025-127,2025-06-13,Falcon 9,Starlink Group 12-26,18230.0,LEO,18-19t
 2025-129,2025-06-17,Falcon 9,Starlink Group 15-9,14950.0,LEO,14-15t
 2025-130,2025-06-18,Falcon 9,Starlink Group 10-18,16100.0,LEO,16-17t
+2025-135,2025-06-23,Falcon 9,Transporter-14,3394.8,LEO,3-4t
 2025-133,2025-06-23,Falcon 9,Starlink Group 10-23,15525.0,LEO,15-16t
 2025-134,2025-06-23,Atlas 5,KA-02,13230.0,LEO,13-14t
-2025-135,2025-06-23,Falcon 9,Transporter-14,3394.8,LEO,3-4t
 2025-136,2025-06-25,Falcon 9,Dragon C213.1,13000.0,LEO,12-13t
 2025-137,2025-06-25,Falcon 9,Starlink Group 10-16,15525.0,LEO,15-16t
 2025-138,2025-06-26,Electron,Hawk 12/Kestrel 0A,105.0,SSO,0-1t
-2025-142,2025-06-28,Falcon 9,Starlink Group 15-7,14950.0,LEO,14-15t
-2025-141,2025-06-28,H2,GOSAT-GW,2900.0,SSO,2-3t
 2025-139,2025-06-28,Falcon 9,Starlink Group 10-34,15525.0,LEO,15-16t
 2025-140,2025-06-28,Electron,Lyra 4,74.0,LEO,0-1t
+2025-141,2025-06-28,H2,GOSAT-GW,2900.0,SSO,2-3t
+2025-142,2025-06-28,Falcon 9,Starlink Group 15-7,14950.0,LEO,14-15t
 2025-143,2025-07-01,Falcon 9,MTG-S1,3800.0,GEO,3-4t
 2025-144,2025-07-02,Falcon 9,Starlink Group 10-25,15525.0,LEO,15-16t
 2025-147,2025-07-08,Falcon 9,Starlink Group 10-28,16100.0,LEO,16-17t
@@ -607,18 +607,18 @@ Launch_Tag,Launch_Date,Launch_Vehicle_Simplified,Mission,Payload_Mass,Launch_Cat
 2025-152,2025-07-19,Falcon 9,Starlink Group 17-3,13800.0,SSO,13-14t
 2025-153,2025-07-22,Falcon 9,O3b mPOWER 9/10,3400.0,MEO,3-4t
 2025-154,2025-07-23,Falcon 9,TRACERS,920.0,SSO,0-1t
-2025-157,2025-07-26,Falcon 9,Starlink Group 10-26,16100.0,LEO,16-17t
 2025-156,2025-07-26,Vega,CO3D/Microcarb,1320.0,SSO,1-2t
+2025-157,2025-07-26,Falcon 9,Starlink Group 10-26,16100.0,LEO,16-17t
 2025-158,2025-07-27,Falcon 9,Starlink Group 17-2,13800.0,SSO,13-14t
-2025-161,2025-07-30,Falcon 9,Starlink Group 10-29,16100.0,LEO,16-17t
 2025-163,2025-07-30,GSLV,NISAR,2393.0,SSO,2-3t
+2025-161,2025-07-30,Falcon 9,Starlink Group 10-29,16100.0,LEO,16-17t
 2025-165,2025-07-31,Falcon 9,Starlink Group 13-4,12525.0,SSO,12-13t
 2025-166,2025-08-01,Falcon 9,Dragon C206.6,13055.0,LEO,13-14t
 2025-167,2025-08-04,Falcon 9,Starlink Group 10-30,16100.0,LEO,16-17t
 2025-169,2025-08-05,Electron,QPS-SAR-12,120.0,LEO,0-1t
 2025-171,2025-08-11,Falcon 9,Kuiper KF-02,11760.0,LEO,11-12t
-2025-173,2025-08-13,Vulcan,NTS-3,1850.0,GEO,1-2t
 2025-172,2025-08-13,Ariane 6,METOP-SG A1,4040.0,LEO,4-5t
+2025-173,2025-08-13,Vulcan,NTS-3,1850.0,GEO,1-2t
 2025-175,2025-08-14,Falcon 9,Starlink Group 17-4,13800.0,SSO,13-14t
 2025-176,2025-08-14,Falcon 9,Starlink Group 10-20,16100.0,LEO,16-17t
 2025-179,2025-08-18,Falcon 9,Starlink Group 17-5,13800.0,SSO,13-14t
@@ -632,8 +632,8 @@ Launch_Tag,Launch_Date,Launch_Vehicle_Simplified,Mission,Payload_Mass,Launch_Cat
 2025-191,2025-08-30,Falcon 9,Starlink Group 17-7,13800.0,SSO,13-14t
 2025-192,2025-08-31,Falcon 9,Starlink Group 10-14,16100.0,LEO,16-17t
 2025-193,2025-09-02,Shavit,'Ofeq-19,300.0,LEO,0-1t
-2025-194,2025-09-03,Falcon 9,Starlink Group 17-8,13800.0,SSO,13-14t
 2025-195,2025-09-03,Falcon 9,Starlink Group 10-22,16100.0,LEO,16-17t
+2025-194,2025-09-03,Falcon 9,Starlink Group 17-8,13800.0,SSO,13-14t
 2025-198,2025-09-05,Falcon 9,Starlink Group 10-57,16100.0,LEO,16-17t
 2025-200,2025-09-06,Falcon 9,Starlink Group 17-9,13800.0,SSO,13-14t
 2025-203,2025-09-10,Falcon 9,Tranche 1 TL-B,6300.0,LEO,6-7t
@@ -661,8 +661,8 @@ Launch_Tag,Launch_Date,Launch_Vehicle_Simplified,Mission,Payload_Mass,Launch_Cat
 2025-237,2025-10-22,Falcon 9,Starlink Group 11-5,16100.0,LEO,16-17t
 2025-239,2025-10-24,Falcon 9,Spainsat NG-II,6100.0,GTO,6-7t
 2025-240,2025-10-25,Falcon 9,Starlink Group 11-12,16100.0,LEO,16-17t
-2025-243,2025-10-26,Falcon 9,Starlink Group 10-21,16100.0,LEO,16-17t
 2025-241,2025-10-26,H3-24W,HTV-X1,10010.0,LEO,10-11t
+2025-243,2025-10-26,Falcon 9,Starlink Group 10-21,16100.0,LEO,16-17t
 2025-244,2025-10-28,Falcon 9,Starlink Group 11-21,16100.0,LEO,16-17t
 2025-245,2025-10-29,Falcon 9,Starlink Group 10-37,16675.0,LEO,16-17t
 2025-247,2025-10-31,Falcon 9,Starlink Group 11-23,16100.0,LEO,16-17t
@@ -685,24 +685,24 @@ Launch_Tag,Launch_Date,Launch_Vehicle_Simplified,Mission,Payload_Mass,Launch_Cat
 2025-270,2025-11-22,Falcon 9,Starlink Group 6-79,16675.0,LEO,16-17t
 2025-271,2025-11-23,Falcon 9,Starlink Group 11-30,16100.0,LEO,16-17t
 2025-274,2025-11-26,Nuri,-,592.9,SSO,0-1t
-2025-276,2025-11-28,Falcon 9,Transporter-15,4203.4,LEO,4-5t
+2025-276,2025-11-28,Falcon 9,Transporter-15,4207.4,LEO,4-5t
 2025-278,2025-12-01,Falcon 9,Starlink Group 6-86,16675.0,LEO,16-17t
 2025-279,2025-12-01,Vega,Kompsat-7,1800.0,SSO,1-2t
-2025-280,2025-12-02,Falcon 9,Starlink Group 15-10,15525.0,LEO,15-16t
 2025-281,2025-12-02,Falcon 9,Starlink Group 6-95,16675.0,LEO,16-17t
+2025-280,2025-12-02,Falcon 9,Starlink Group 15-10,15525.0,LEO,15-16t
 2025-283,2025-12-04,Falcon 9,Starlink Group 11-25,16100.0,LEO,16-17t
 2025-286,2025-12-07,Falcon 9,Starlink Group 11-15,16100.0,LEO,16-17t
 2025-288,2025-12-08,Falcon 9,Starlink Group 6-92,16675.0,LEO,16-17t
 2025-291,2025-12-09,Falcon 9,INTRUDER?,1000.0,LEO,0-1t
 2025-293,2025-12-10,Falcon 9,Starlink Group 15-11,15525.0,LEO,15-16t
 2025-294,2025-12-11,Falcon 9,Starlink Group 6-90,16675.0,LEO,16-17t
-2025-298,2025-12-14,Falcon 9,Starlink Group 15-12,15525.0,LEO,15-16t
 2025-297,2025-12-14,Electron,RAISE-4,110.0,SSO,0-1t
+2025-298,2025-12-14,Falcon 9,Starlink Group 15-12,15525.0,LEO,15-16t
 2025-299,2025-12-15,Falcon 9,Starlink Group 6-82,16675.0,LEO,16-17t
 2025-301,2025-12-16,Atlas 5,LA-04,13230.0,LEO,13-14t
+2025-304,2025-12-17,Falcon 9,Starlink Group 15-13,15525.0,LEO,15-16t
 2025-302,2025-12-17,Ariane 6,Galileosat 33-34,1466.0,MEO,1-2t
 2025-303,2025-12-17,Falcon 9,Starlink Group 6-99,16675.0,LEO,16-17t
-2025-304,2025-12-17,Falcon 9,Starlink Group 15-13,15525.0,LEO,15-16t
 2025-305,2025-12-18,Electron,DiskSat 1-4,12.0,LEO,0-1t
 2025-307,2025-12-21,Electron,QPS-SAR-15,120.0,LEO,0-1t
 2025-309,2025-12-24,GSLV,BlueBird Block-2 FM1,5850.0,LEO,5-6t
@@ -719,8 +719,8 @@ Launch_Tag,Launch_Date,Launch_Vehicle_Simplified,Mission,Payload_Mass,Launch_Cat
 2026-016,2026-01-25,Falcon 9,Starlink Group 17-20,14375.0,LEO,14-15t
 2026-017,2026-01-28,Falcon 9,GPS III SV09,4352.0,GTO,4-5t
 2026-018,2026-01-29,Falcon 9,Starlink Group 17-19,14375.0,LEO,14-15t
-2026-019,2026-01-30,Electron,NEONSAT-1A,100.0,SSO,0-1t
 2026-020,2026-01-30,Falcon 9,Starlink Group 6-101,16675.0,LEO,16-17t
+2026-019,2026-01-30,Electron,NEONSAT-1A,100.0,SSO,0-1t
 2026-022,2026-02-02,Falcon 9,Starlink Group 17-32,14375.0,LEO,14-15t
 2026-025,2026-02-07,Falcon 9,Starlink Group 17-33,14375.0,LEO,14-15t
 2026-026,2026-02-11,Falcon 9,Starlink Group 17-34,13800.0,LEO,13-14t
@@ -744,22 +744,27 @@ Launch_Tag,Launch_Date,Launch_Vehicle_Simplified,Mission,Payload_Mass,Launch_Cat
 2026-046,2026-03-12,Firefly Alpha,LM-400 Tech Demo,1100.0,LEO,1-2t
 2026-049,2026-03-13,Falcon 9,Starlink Group 17-31,14375.0,LEO,14-15t
 2026-050,2026-03-14,Falcon 9,Starlink Group 10-48,16675.0,LEO,16-17t
-2026-053,2026-03-17,Falcon 9,Starlink Group 17-24,14375.0,LEO,14-15t
 2026-054,2026-03-17,Falcon 9,Starlink Group 10-46,16675.0,LEO,16-17t
+2026-053,2026-03-17,Falcon 9,Starlink Group 17-24,14375.0,LEO,14-15t
 2026-055,2026-03-19,Falcon 9,Starlink Group 10-33,16675.0,LEO,16-17t
 2026-056,2026-03-20,Electron,Strix-6,150.0,LEO,0-1t
 2026-057,2026-03-20,Falcon 9,Starlink Group 17-15,14375.0,LEO,14-15t
 2026-059,2026-03-22,Falcon 9,Starlink Group 10-62,16675.0,LEO,16-17t
 2026-063,2026-03-26,Falcon 9,Starlink Group 17-17,14375.0,LEO,14-15t
 2026-065,2026-03-28,Electron,Celeste,50.0,LEO,0-1t
-2026-067,2026-03-30,Falcon 9,Transporter-16,5458.15,LEO,5-6t
+2026-067,2026-03-30,Falcon 9,Transporter-16,5214.15,LEO,5-6t
 2026-068,2026-03-30,Falcon 9,Starlink Group 10-44,16675.0,LEO,16-17t
 2026-069,2026-04-01,SLS,Integrity,10447.0,BEO,10-11t
 2026-070,2026-04-02,Falcon 9,Starlink Group 10-58,16675.0,LEO,16-17t
 2026-072,2026-04-04,Atlas 5,LA-05,14210.0,LEO,14-15t
 2026-073,2026-04-07,Falcon 9,Starlink Group 17-35,14375.0,LEO,14-15t
-2026-074,2026-04-07,Minotaur 4,STP-S29A,159.9,LEO,0-1t
+2026-074,2026-04-07,Minotaur 4,STP-S29A,179.9,LEO,0-1t
 2026-077,2026-04-11,Falcon 9,Starlink Group 17-21,14375.0,LEO,14-15t
 2026-079,2026-04-11,Falcon 9,Cygnus NG-24,8050.0,LEO,8-9t
 2026-081,2026-04-14,Falcon 9,Starlink Group 10-24,16675.0,LEO,16-17t
 2026-082,2026-04-15,Falcon 9,Starlink Group 17-27,14375.0,LEO,14-15t
+2026-085,2026-04-19,New Glenn 7x2,-,5850.0,LEO,5-6t
+2026-086,2026-04-19,Falcon 9,Starlink Group 17-22,14375.0,LEO,14-15t
+2026-087,2026-04-21,Falcon 9,GPS III SV10,4352.0,GTO,4-5t
+2026-088,2026-04-23,Electron,JAXA ISTD-4,15.3,SSO,0-1t
+2026-089,2026-04-23,Falcon 9,Starlink Group 17-14,13800.0,LEO,13-14t

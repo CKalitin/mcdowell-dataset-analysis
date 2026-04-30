@@ -1,5 +1,5 @@
 #Code	UCode	StateCode	Type	Class	TStart	TStop	ShortName	Name	Location	Longitude	Latitude	Error	Parent	ShortEName	EName	UName
-# Updated 2026 Apr 17 0432:17
+# Updated 2026 Apr 24 1739:51
 EARTH	EARTH	EARTH	AP	C	-	-	Earth	Earth	Earth	-	-	0.0200 	-	Earth (Terra)	Earth	Earth
 LUNA	LUNA	LUNA	AP	C	-	-	Luna	Luna	Luna	-	-	0.0200 	-	Moon	Moon	Luna
 SSYS	SSYS	SSYS	AP	C	-	-	Solar System	Solar System natural celestial objects	Sol	-	-	0.0200 	-	Solar System	Solar System natural celestial objects	Solar System
@@ -2022,7 +2022,7 @@ LAND	LAND	CN	O	B	1985?	2018	Land Group	Land Economic Group	Beijing	    116.3800 
 LANDSP	LANDSP	CN	O/LA/E	B	2015	-	Lanjian Hangtian	Beijing lanjian kongjian keji youxian gongsi	Beijing	    116.3800 	   39.9200 	0.0200 	-	LandSpace	LandSpace Technology	北京蓝箭空间科技有限公司
 LANL	LASL	US	O/PL/S	D	1980?	-	LANL	Los Alamos National Laboratory	Los Alamos, New Mexico	   -106.3200 	   35.8800 	0.0200 	DOE	-	-	Los Alamos National Laboratory
 LANT	FORDA	US	PL	B	2025 Oct	-	Lanteris	Lanteris	Palo Alto, California	   -122.1400 	   37.4300 	0.0200 	-	-	-	Lanteris
-LANTSJ	MAXSJ	US	PL	B	2025 Oct    -	-	Lanteris SJ	Lanteris/San Jose	San Jose, California	   -121.9000 	   37.3300 	0.0200 	LANT	-	-	Lanteris/San Jose
+LANTSJ	MAXSJ	US	PL	B	2025 Oct	-	Lanteris SJ	Lanteris/San Jose	San Jose, California	   -121.9000 	   37.3300 	0.0200 	LANT	-	-	Lanteris/San Jose
 LAOJV	LAOJV	LA	-	B	2015	-	LaoSat JVC	Lao Satellite Joint Venture Company	Vientiane	    102.6000 	   17.9700 	0.0200 	LANAST	-	-	Lao Satellite Joint Venture Co.
 LAPAN	LAPAN	ID	O/LA/LV/PL/E/LS/S	C	1964 Nov 27	2021 Sep  1	LAPAN	Lembaga Penerbangan dan Antariksa Nasional/LAPAN	Jakarta	    106.8200 	   -6.2000 	0.0200 	-	-	-	Lembaga Penerbangan dan Antariksa Nasional/LAPAN
 LAPANR	LAPANR	ID	-	C	-	-	LAPAN RML	LAPAN Rocket Motor Lab	Tarogong, W Java	    107.8900 	   -7.2100 	0.0200 	-	-	-	LAPAN Rocket Motor Lab

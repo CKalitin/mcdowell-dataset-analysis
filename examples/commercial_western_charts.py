@@ -4,10 +4,35 @@ import standard_chart_generation as scg
 # --- Launch cadence comparison ---
 scg.launch_cadence_cumulative(
     output_prefix='western',
-    output_name='launch_cadence_cumulative',
+    output_name='launch_cadence_cumulative_10_years',
     chart_title='Cumulative Orbital Launches Since First Flight',
     max_years=10,
     color_map=scg.mda.ChartUtils.color_sequence_3_8,
+)
+
+# For this guy https://x.com/moqtadalsadr/status/2049684195903971339?s=20
+scg.launch_cadence_cumulative(
+    output_prefix='western',
+    output_name='launch_cadence_cumulative_20_years',
+    chart_title='Cumulative Orbital Launches Since First Flight',
+    max_years=20,
+    color_map=scg.mda.ChartUtils.color_sequence_3_8,
+)
+
+scg.western_launches_vs_mass(
+    chart_title_prefix='Western',
+    output_prefix='western',
+    output_name='western_launches_vs_mass_200kg_by_lv',
+    data_filter='all',
+    group_by='lv',
+    top_n=8,
+    color_map=scg.mda.ChartUtils.color_sequence_3_8 + ['#434343'],
+    min_mass_kg=200,
+    max_mass_kg=5000,
+    mass_step_size_kg=200,
+    start_year=2020,
+    date_range='2020-2026',
+    save_raw_df=True,
 )
 
 # --- Orbits addressable by mass ---
@@ -177,27 +202,11 @@ scg.commercial_western_rideshare_by_lv(
 scg.western_launches_vs_mass(
     chart_title_prefix='Western',
     output_prefix='western',
-    output_name='western_launches_vs_mass_200kg_by_lv',
-    data_filter='all',
-    group_by='lv',
-    top_n=8,
-    color_map=scg.mda.ChartUtils.color_sequence_3_8 + ['#434343'],
-    min_mass_kg=0,
-    max_mass_kg=5000,
-    mass_step_size_kg=200,
-    start_year=2020,
-    date_range='2020-2026',
-    save_raw_df=True,
-)
-
-scg.western_launches_vs_mass(
-    chart_title_prefix='Western',
-    output_prefix='western',
     output_name='western_launches_vs_mass_200kg_by_orbit',
     data_filter='all',
     group_by='orbit',
     color_map=scg.mda.ChartUtils.western_orbit_color_map,
-    min_mass_kg=0,
+    min_mass_kg=200,
     max_mass_kg=5000,
     mass_step_size_kg=200,
     start_year=2020,

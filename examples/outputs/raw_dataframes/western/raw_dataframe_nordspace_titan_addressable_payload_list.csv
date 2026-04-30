@@ -101,7 +101,7 @@ Launch_Date,Launch_Vehicle_Simplified,Mission,Orbit,Total_Payload_Mass_kg,Launch
 2025-11-04,Ariane 6,Sentinel-1D,SSO,2157.0,France,Government LEO,European Gov/Military,2025-251
 2025-11-17,Falcon 9,Sentinel-6B,LEO,1140.0,United States,Government LEO,US Gov/Military,2025-264
 2025-11-26,Nuri,-,SSO,592.9,South Korea,Small Sat Rideshare,Rideshare,2025-274
-2025-11-28,Falcon 9,Transporter-15,LEO,4203.4,United States,Small Sat Rideshare,Rideshare,2025-276
+2025-11-28,Falcon 9,Transporter-15,LEO,4207.4,United States,Small Sat Rideshare,Rideshare,2025-276
 2025-12-01,Vega,Kompsat-7,SSO,1800.0,France,Government LEO,European Gov/Military,2025-279
 2025-12-09,Falcon 9,INTRUDER?,LEO,1000.0,United States,Military LEO,US Gov/Military,2025-291
 2025-12-17,Ariane 6,Galileosat 33-34,MEO,1466.0,France,Government non-LEO,European Gov/Military,2025-302
