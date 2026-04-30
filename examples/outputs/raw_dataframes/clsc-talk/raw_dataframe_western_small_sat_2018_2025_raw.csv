@@ -1,0 +1,2377 @@
+Launch_Date,Launch_Vehicle_Simplified,Payload_Name,Owner,Mass,Simple_Payload_Category,Payload_Program,Launch_Tag
+2018-01-12,PSLV,LEO 1,TCANL,100.0,Communications,Vantage,2018-004
+2018-01-12,PSLV,Tyvak-61C,LLNL/TYVAK,4.0,Observation,LLNL,2018-004
+2018-01-12,PSLV,CICERO 7,GEOOPT,10.0,MET-RO,CICERO,2018-004
+2018-01-12,PSLV,Spacebee-1,SWARM,0.284,Communications,Swarm,2018-004
+2018-01-12,PSLV,Spacebee-2,SWARM,0.298,Communications,Swarm,2018-004
+2018-01-12,PSLV,Spacebee-3,SWARM,0.313,Communications,Swarm,2018-004
+2018-01-12,PSLV,Spacebee-4,SWARM,0.377,Communications,Swarm,2018-004
+2018-01-12,PSLV,STEP-1 (STEP Cube Lab),CHOSU,1.0,Tech Demo,Chosun,2018-004
+2018-01-12,PSLV,AO-92,AMNA,1.0,Communications,AMSAT-NA,2018-004
+2018-01-12,PSLV,CANYVAL-X Tom and Jerry,YONS,2.7,Tech Demo,Yonsei,2018-004
+2018-01-12,PSLV,KHUSAT-03,KHUS,4.0,Tech Demo,KHU,2018-004
+2018-01-12,PSLV,CNUSAIL-1,CNU,4.0,Tech Demo,Chungnam,2018-004
+2018-01-12,PSLV,PICSAT,OPM,5.0,Observation,CNES Cube,2018-004
+2018-01-12,PSLV,MicroMAS 2A,MITLL,3.8,EOSCI,MIT Cube,2018-004
+2018-01-12,PSLV,Arkyd 6A,PLRES,10.0,Tech Demo,Arkyd,2018-004
+2018-01-12,PSLV,KAUSAT-5,KRAU,4.0,Observation,KAU,2018-004
+2018-01-12,PSLV,DemoSat 2,ASTRAN,4.0,Communications,Astranis,2018-004
+2018-01-12,PSLV,ICEYE-X1,ICEYE,70.0,IMG-R,ICEYE,2018-004
+2018-01-12,PSLV,Microsat-TD,DRDO/ISRO,120.0,Tech Demo,IMS,2018-004
+2018-01-12,PSLV,INS-1C,ISRO,11.0,Tech Demo,INS,2018-004
+2018-01-12,PSLV,Corvus BC3,ADIG,10.0,Observation,Landmapper,2018-004
+2018-01-12,PSLV,Flock 3PP 3,PLAN,4.7,Observation,Flock-3,2018-004
+2018-01-12,PSLV,Flock 3PP 2,PLAN,4.7,Observation,Flock-3,2018-004
+2018-01-12,PSLV,Carbonite-2,EARI/UKSPOC,100.0,Observation,SSTL,2018-004
+2018-01-12,PSLV,Flock 3PP 4,PLAN,4.7,Observation,Flock-3,2018-004
+2018-01-12,PSLV,LEMUR 2 McCafferty,SPIRE,4.0,COM/MET-RO,Spire,2018-004
+2018-01-12,PSLV,LEMUR 2 PeterWebster,SPIRE,4.0,COM/MET-RO,Spire,2018-004
+2018-01-12,PSLV,LEMUR 2 BrownCow,SPIRE,4.0,COM/MET-RO,Spire,2018-004
+2018-01-12,PSLV,LEMUR 2 DaveWilson,SPIRE,4.0,COM/MET-RO,Spire,2018-004
+2018-01-12,PSLV,Flock 3PP 1,PLAN,4.7,Observation,Flock-3,2018-004
+2018-01-21,Electron,Humanity Star,RLABN,8.0,Tech Demo,Beck Star,2018-010
+2018-01-21,Electron,LEMUR 2 Tallhamn-ATC,SPIRE,4.6,COM/MET-RO,Spire,2018-010
+2018-01-21,Electron,Dove Pioneer,PLAN,5.0,Observation,Flock Dove,2018-010
+2018-01-21,Electron,LEMUR 2 Marshall,SPIRE,4.6,COM/MET-RO,Spire,2018-010
+2018-02-03,SS-520,TRICOM-1R,TOK,3.0,Communications,Tokyo,2018-016
+2018-03-06,Falcon 9,PODSat,DARPA2,90.0,Tech Demo,Satlet,2018-023
+2018-04-02,Falcon 9,UBAKUSAT,ITUTR,4.0,Tech Demo,ITU,2018-032
+2018-04-02,Falcon 9,RemoveDebris Net,SSTLA,3.0,Tech Demo,SSTL,2018-032
+2018-04-02,Falcon 9,RemoveDebris,SSTLA,100.0,Tech Demo,SSTL,2018-032
+2018-04-02,Falcon 9,Batsu-CS1,ACAE/ITCR,1.0,Tech Demo,ACAE,2018-032
+2018-04-02,Falcon 9,1KUNS-PF,NAIR,1.0,Tech Demo,Nairobi,2018-032
+2018-04-02,Falcon 9,DebrisSat-2,SSTLA,3.0,Tech Demo,SSTL,2018-032
+2018-04-14,Atlas 5,USA 285,AFRL,100.0,EW*,ESPASAT,2018-036
+2018-04-14,Atlas 5,USA 287,AFRL,100.0,TECH*,ESPASAT,2018-036
+2018-04-14,Atlas 5,USA 286,AFRL,100.0,TECH*,ESPASAT,2018-036
+2018-05-05,Atlas 5,Marco-B,JPL,13.5,Other,Mars Cubesat,2018-042
+2018-05-05,Atlas 5,Marco-A,JPL,13.5,Other,Mars Cubesat,2018-042
+2018-05-21,Antares 230,-,CSU/JPL,11.1,EOSCI,Colo State,2018-046
+2018-05-21,Antares 230,CubeRRT,OSU,11.4,Tech Demo,OSU,2018-046
+2018-05-21,Antares 230,LEMUR 2 TomHenderson,SPIRE,4.6,COM/MET-RO,Spire,2018-046
+2018-05-21,Antares 230,LEMUR 2 Vu,SPIRE,4.6,COM/MET-RO,Spire,2018-046
+2018-05-21,Antares 230,Aerocube 12B,AERO,5.0,Tech Demo,Aerocube,2018-046
+2018-05-21,Antares 230,Aerocube 12A,AERO,5.0,Tech Demo,Aerocube,2018-046
+2018-05-21,Antares 230,LEMUR 2 Yuasa,SPIRE,4.6,COM/MET-RO,Spire,2018-046
+2018-05-21,Antares 230,RadSat-g,MSU,4.0,Tech Demo,MSU,2018-046
+2018-05-21,Antares 230,MemSat,ROWAN,0.7,Tech Demo,Rowan,2018-046
+2018-05-21,Antares 230,RainCube,JPL,12.0,Tech Demo,JPL Cube,2018-046
+2018-05-21,Antares 230,HaloSat,UIA,6.0,Observation,Iowa,2018-046
+2018-05-21,Antares 230,LEMUR 2 Alexander,SPIRE,4.6,COM/MET-RO,Spire,2018-046
+2018-05-21,Antares 230,ENDUROSAT ONE,ENDUR,1.0,Communications,Endurosat,2018-046
+2018-05-21,Antares 230,Equisat,BROWN,1.2,Tech Demo,Brown,2018-046
+2018-05-21,Antares 230,Radix,ANSP,10.0,Tech Demo,Analytic,2018-046
+2018-06-29,Falcon 9,UiTMSAT-1,UITM,1.0,Tech Demo,UITM,2018-055
+2018-06-29,Falcon 9,Maya-1,DOST,1.0,Tech Demo,DOST Cube,2018-055
+2018-06-29,Falcon 9,Bhutan-1,BTDITT,1.0,Tech Demo,Bhutan,2018-055
+2018-09-15,Delta 2,CP7,CALP,1.0,Tech Demo,CP,2018-070
+2018-09-15,Delta 2,ELFIN-STAR,UCLA,4.0,Science,UCLA,2018-070
+2018-09-15,Delta 2,ELFIN,UCLA,4.0,Science,UCLA,2018-070
+2018-09-15,Delta 2,SurfSat,UCF,3.0,Science,UCF,2018-070
+2018-09-22,H2,SPATIUM-I,KYUT/NTU,3.0,Tech Demo,NTU,2018-073
+2018-09-22,H2,RSP-00,RSP,1.0,Tech Demo,Ryman,2018-073
+2018-09-22,H2,STARS-Me,SHIZ,1.0,Tech Demo,STARS,2018-073
+2018-10-29,H2,AUTCube-2,AUT,1.6,Tech Demo,Aichi,2018-084
+2018-10-29,H2,Diwata-2,DOST/UPD,56.0,Observation,DOST Micro,2018-084
+2018-10-29,H2,Ten-Koh,KYUT,22.3,Tech Demo,Kyutech,2018-084
+2018-10-29,H2,STARS AO (Aoi),SHIZ,1.4,Observation,STARS,2018-084
+2018-11-11,Electron,Lemur-2-Chanusiak,SPIRE,4.6,COM/MET-RO,Spire,2018-088
+2018-11-11,Electron,Cicero 10,GEOOPT,10.0,MET-RO,CICERO,2018-088
+2018-11-11,Electron,NABEO,HPS,1.0,Tech Demo,HPS,2018-088
+2018-11-11,Electron,Irvine01,IPSF,1.0,Tech Demo,Irvine,2018-088
+2018-11-11,Electron,Proxima-I,FLEET,2.0,Communications,Fleet,2018-088
+2018-11-11,Electron,Lemur 2 Zupanski,SPIRE,4.6,COM/MET-RO,Spire,2018-088
+2018-11-11,Electron,Proxima-II,FLEET,2.0,Communications,Fleet,2018-088
+2018-11-17,Antares 230,CHEFSat-2,NRL,2.7,Tech Demo,NRL Cube,2018-092
+2018-11-17,Antares 230,MySat-1,MASDAR,1.0,Tech Demo,Masdar,2018-092
+2018-11-17,Antares 230,KickSat 2,ARC,2.16,Tech Demo,Ames,2018-092
+2018-11-29,PSLV,Flock 3R 7,PLAN,4.7,Observation,Flock-3,2018-096
+2018-11-29,PSLV,Flock 3R 1,PLAN,4.7,Observation,Flock-3,2018-096
+2018-11-29,PSLV,Flock 3R 10,PLAN,4.7,Observation,Flock-3,2018-096
+2018-11-29,PSLV,Reaktor Hello World,REAKT,2.0,Communications,Reaktor,2018-096
+2018-11-29,PSLV,Flock 3R 6,PLAN,4.7,Observation,Flock-3,2018-096
+2018-11-29,PSLV,Hiber 1,HIBER,10.0,Communications,Hiber,2018-096
+2018-11-29,PSLV,Flock 3R 13,PLAN,4.7,Observation,Flock-3,2018-096
+2018-11-29,PSLV,LEMUR 2 Vladimir,SPIRE,4.6,COM/MET-RO,Spire,2018-096
+2018-11-29,PSLV,Flock 3R 2,PLAN,4.7,Observation,Flock-3,2018-096
+2018-11-29,PSLV,Flock 3R 14,PLAN,4.7,Observation,Flock-3,2018-096
+2018-11-29,PSLV,CICERO-8,GEOOPT,10.0,MET-RO,CICERO,2018-096
+2018-11-29,PSLV,Lemur-2,SPIRE,4.6,COM/MET-RO,Spire,2018-096
+2018-11-29,PSLV,Flock 3R 15,PLAN,4.7,Observation,Flock-3,2018-096
+2018-11-29,PSLV,InnoSAT-2,ATSB,3.0,Tech Demo,BKSA,2018-096
+2018-11-29,PSLV,Flock 3R 3,PLAN,4.7,Observation,Flock-3,2018-096
+2018-11-29,PSLV,HSAT1,HARR,13.2,Tech Demo,Harris,2018-096
+2018-11-29,PSLV,Flock 3R 16,PLAN,4.7,Observation,Flock-3,2018-096
+2018-11-29,PSLV,Centauri-1,FLEET,5.0,Communications,Fleet,2018-096
+2018-11-29,PSLV,Flock 3R 9,PLAN,4.7,Observation,Flock-3,2018-096
+2018-11-29,PSLV,Flock 3R 12,PLAN,4.7,Observation,Flock-3,2018-096
+2018-11-29,PSLV,Flock 3R 11,PLAN,4.7,Observation,Flock-3,2018-096
+2018-11-29,PSLV,Flock 3R 5,PLAN,4.7,Observation,Flock-3,2018-096
+2018-11-29,PSLV,FACSAT,EMAVI,3.0,Observation,FAC,2018-096
+2018-11-29,PSLV,3Cat-1,UPC,1.0,Tech Demo,UPC,2018-096
+2018-11-29,PSLV,KEPLER-1 (CASE),KEPLER,3.0,Communications,Kepler,2018-096
+2018-11-29,PSLV,Global-1,BSKG,55.0,Observation,BlackSky,2018-096
+2018-11-29,PSLV,Lemur-2,SPIRE,4.6,COM/MET-RO,Spire,2018-096
+2018-11-29,PSLV,Lemur-2,SPIRE,4.6,COM/MET-RO,Spire,2018-096
+2018-11-29,PSLV,Flock 3R 4,PLAN,4.7,Observation,Flock-3,2018-096
+2018-11-29,PSLV,Flock 3R 8,PLAN,4.7,Observation,Flock-3,2018-096
+2018-12-03,Falcon 9,KNACKSAT,KMUTNB,1.0,Tech Demo,KMUT,2018-099
+2018-12-03,Falcon 9,Al-Farabi 2,KAZNU,4.0,Tech Demo,Al Farabi,2018-099
+2018-12-03,Falcon 9,Suomi-100,AALTO,1.0,Tech Demo,Aalto,2018-099
+2018-12-03,Falcon 9,JY1SAT,JUST,1.0,Tech Demo,JUST,2018-099
+2018-12-03,Falcon 9,SkySat C13,PLABST,110.0,Observation,Skysat,2018-099
+2018-12-03,Falcon 9,K2SAT,KAIST/KAFA,4.0,Tech Demo,KAIST Cube,2018-099
+2018-12-03,Falcon 9,Astrocast-0.1,ACAST,5.0,Communications,Astrocast,2018-099
+2018-12-03,Falcon 9,Hawk-C,HE360,12.75,Observation,H360,2018-099
+2018-12-03,Falcon 9,SkySat C12,PLABST,110.0,Observation,Skysat,2018-099
+2018-12-03,Falcon 9,THEA,AUINS/SPQ,5.0,Observation,AII,2018-099
+2018-12-03,Falcon 9,OrbWeaver 1,DARPA2,5.0,COM?,DARPA Light,2018-099
+2018-12-03,Falcon 9,Eu:CROPIS,DLR2,250.0,Science,CROPIS,2018-099
+2018-12-03,Falcon 9,ICEYE-X2,ICEYE,80.0,IMG-R,ICEYE,2018-099
+2018-12-03,Falcon 9,Polar Scout Yukon,USCGR/DHSST,10.0,Tech Demo,ORS,2018-099
+2018-12-03,Falcon 9,Hawk-B,HE360,12.75,Observation,H360,2018-099
+2018-12-03,Falcon 9,Audacy Zero,AUDACY,4.7,Tech Demo,Audacy,2018-099
+2018-12-03,Falcon 9,NEXTSat-1,KAIST,100.0,AST/TECH,KAIST NEXT,2018-099
+2018-12-03,Falcon 9,Global-2,BSKG,55.0,Observation,BlackSky,2018-099
+2018-12-03,Falcon 9,BRIO,MYRI/SPQ,5.0,Tech Demo,Myriota,2018-099
+2018-12-03,Falcon 9,PW-Sat2,PWAR,3.0,Tech Demo,Warsaw,2018-099
+2018-12-03,Falcon 9,FalconSat-6,AFSMC,181.0,Tech Demo,Falconsat,2018-099
+2018-12-03,Falcon 9,SpaceBEE-7,SWARM,1.0,Communications,Swarm,2018-099
+2018-12-03,Falcon 9,SpaceBEE-5,SWARM,1.0,Communications,Swarm,2018-099
+2018-12-03,Falcon 9,SpaceBEE-6,SWARM,1.0,Communications,Swarm,2018-099
+2018-12-03,Falcon 9,eXCITe,DARPA2,155.0,Tech Demo,Satlet,2018-099
+2018-12-03,Falcon 9,SeaHawk 1,UNCW/MOOREF,5.0,Tech Demo,UNCW,2018-099
+2018-12-03,Falcon 9,Flock 3S 2,PLAN,4.7,Observation,Flock-3,2018-099
+2018-12-03,Falcon 9,VisionCube,KRAU,2.0,Tech Demo,KAU,2018-099
+2018-12-03,Falcon 9,Centauri-2,FLEET,5.0,Communications,Fleet,2018-099
+2018-12-03,Falcon 9,CSIM,CLASP,10.0,Observation,UCO,2018-099
+2018-12-03,Falcon 9,RANGE B,GIT,2.0,Tech Demo,GA Tech,2018-099
+2018-12-03,Falcon 9,Capella-1,CAPSP,30.0,IMG-R,Capella,2018-099
+2018-12-03,Falcon 9,ESEO,ESA,120.0,Tech Demo,ESA Tech,2018-099
+2018-12-03,Falcon 9,Elysium Lower Free Flyer,SFLIN,260.0,Tech Demo,SFLIN,2018-099
+2018-12-03,Falcon 9,Sirion Pathfinder-2,SIRION/HELW,10.0,Communications,Sirion,2018-099
+2018-12-03,Falcon 9,WeissSat 1,WEISS,1.0,Tech Demo,Weiss,2018-099
+2018-12-03,Falcon 9,STPSat-5,STP,110.0,Tech Demo,STPSAT,2018-099
+2018-12-03,Falcon 9,Polar Scout Kodiak,USCGR/DHSST,10.0,Tech Demo,ORS,2018-099
+2018-12-03,Falcon 9,Hawk-A,HE360,12.75,Observation,H360,2018-099
+2018-12-03,Falcon 9,SPAWAR-CAL-O,SPAWAR,1.0,Other,Spawar,2018-099
+2018-12-03,Falcon 9,Corvus-BC4,ADIG,10.0,Observation,Landmapper,2018-099
+2018-12-03,Falcon 9,Aistechsat-2,AISTS,10.0,Communications,Aistech,2018-099
+2018-12-03,Falcon 9,Flock 3S 1,PLAN,4.7,Observation,Flock-3,2018-099
+2018-12-03,Falcon 9,AO-95,AMNA,1.0,Tech Demo,AMSAT-NA,2018-099
+2018-12-03,Falcon 9,Orbital Reflector,NVART,3.2,Tech Demo,NV Art,2018-099
+2018-12-03,Falcon 9,RANGE-A,GIT,2.0,Tech Demo,GA Tech,2018-099
+2018-12-03,Falcon 9,Hiber 2,HIBER,10.0,Communications,Hiber,2018-099
+2018-12-03,Falcon 9,MinXSS-2,CLASP,3.52,Observation,UCO,2018-099
+2018-12-03,Falcon 9,SPAWAR-CAL-R,SPAWAR,1.0,Other,Spawar,2018-099
+2018-12-03,Falcon 9,Eaglet 1,OHBI,5.0,Tech Demo,OHBI,2018-099
+2018-12-03,Falcon 9,IRVINE02,IPSF,1.0,Tech Demo,Irvine,2018-099
+2018-12-03,Falcon 9,Flock 3S 3,PLAN,4.7,Observation,Flock-3,2018-099
+2018-12-03,Falcon 9,KazSciSat,GHALAM,4.0,Tech Demo,Ghalam,2018-099
+2018-12-03,Falcon 9,ITASAT,ITA,8.0,Tech Demo,ITA,2018-099
+2018-12-03,Falcon 9,Exseedsat-1,EXSEED,1.0,Tech Demo,VUSAT,2018-099
+2018-12-03,Falcon 9,SNUGLITE,SNU,2.0,Tech Demo,SNU,2018-099
+2018-12-03,Falcon 9,OrbWeaver 2,DARPA2,5.0,COM?,DARPA Light,2018-099
+2018-12-03,Falcon 9,SNUSAT 2,SNU,4.0,Tech Demo,SNU,2018-099
+2018-12-03,Falcon 9,VESTA,HONEYA/UKSA,5.0,Tech Demo,ComDev,2018-099
+2018-12-03,Falcon 9,MOVE 2,TUM,1.0,Tech Demo,TUM,2018-099
+2018-12-03,Falcon 9,M1,RAAF,5.0,Observation,RAAF,2018-099
+2018-12-03,Falcon 9,SPAWAR-CAL-OR,SPAWAR,1.0,Other,Spawar,2018-099
+2018-12-03,Falcon 9,LACMA Enoch,LACMA,4.0,Tech Demo,LACMA,2018-099
+2018-12-03,Falcon 9,KazSTSat,GHALAM,110.0,Observation,Ghalam,2018-099
+2018-12-05,Falcon 9,Delphini-1,AARH,1.0,Observation,Aarhus,2018-101
+2018-12-05,Falcon 9,Quantum Radar 2,HYPGG,5.0,Other,QuantumR,2018-101
+2018-12-05,Falcon 9,Quantum Radar 1,HYPGG,5.0,Other,QuantumR,2018-101
+2018-12-05,Falcon 9,CATsat-1,APL,4.0,Tech Demo,APL Cube,2018-101
+2018-12-05,Falcon 9,TechEdSat-8,ARC/SJSU,10.0,Tech Demo,TES,2018-101
+2018-12-05,Falcon 9,CATsat-2,APL,4.0,Tech Demo,APL Cube,2018-101
+2018-12-05,Falcon 9,UNITE,USIN,1.0,Science,USI,2018-101
+2018-12-16,Electron,Goergen,DARPA2,5.1,Observation,DARPA Light,2018-104
+2018-12-16,Electron,AlBUS,GRC,2.91,Tech Demo,LERC Cube,2018-104
+2018-12-16,Electron,AeroCube 11 R3,AERO,4.66,Observation,Aerocube,2018-104
+2018-12-16,Electron,STF-1,GSFC/WVU,3.01,Tech Demo,GSFC Cube,2018-104
+2018-12-16,Electron,CeReS,GSFC,4.5,EOSCI,GSFC Cube,2018-104
+2018-12-16,Electron,RSat-P,USNA,3.07,Tech Demo,USNA,2018-104
+2018-12-16,Electron,CHOMPTT,UFL,3.59,Tech Demo,UF,2018-104
+2018-12-16,Electron,CP11 (ISX),CALP,3.5,Tech Demo,CP,2018-104
+2018-12-16,Electron,DaVinci,NISCA/LCFE,3.38,Tech Demo,NISCA,2018-104
+2018-12-16,Electron,CubeSail USat,UIUC/CATHU,1.5,Tech Demo,UIUC,2018-104
+2018-12-16,Electron,Shields 1,LARCN,6.93,Tech Demo,LARC Cube,2018-104
+2018-12-16,Electron,NMTSat,NMTECH,2.48,Tech Demo,NMT,2018-104
+2018-12-16,Electron,AeroCube 11 Eagle Scout,AERO,5.03,Observation,Aerocube,2018-104
+2019-01-18,Epsilon,ALE-DOM,ALE,1.0,Tech Demo,ALE,2019-003
+2019-01-18,Epsilon,RAPIS-1,JAXA,200.0,Tech Demo,JAXA Tech,2019-003
+2019-01-18,Epsilon,OrigamiSat-1,TIT,4.0,Tech Demo,TIT,2019-003
+2019-01-18,Epsilon,AOBA VELOX-IV,KYUT,3.0,Tech Demo,NTU,2019-003
+2019-01-18,Epsilon,MicroDragon,VNSC,50.0,Tech Demo,VNSC,2019-003
+2019-01-18,Epsilon,NEXUS,NIHON,1.0,Tech Demo,Nihon,2019-003
+2019-01-18,Epsilon,ALE-1,ALE,68.0,Tech Demo,ALE,2019-003
+2019-01-18,Epsilon,RiseSat,TOHO,59.0,Tech Demo,Tohoku,2019-003
+2019-01-24,PSLV,PS4 .. with KalamSat-V2,SKI,1.26,Tech Demo,SKI,2019-006
+2019-02-22,Falcon 9,S5,AFRL,61.0,Observation,AFRL Cube,2019-009
+2019-03-28,Electron,R3D2,DARPA2,160.0,Tech Demo,DARPA Tech,2019-016
+2019-04-01,PSLV,Flock 4A 11,PLAN,5.7,Observation,Flock-4,2019-018
+2019-04-01,PSLV,Flock 4A 16,PLAN,5.7,Observation,Flock-4,2019-018
+2019-04-01,PSLV,Flock 4A 10,PLAN,5.7,Observation,Flock-4,2019-018
+2019-04-01,PSLV,Flock 4A 9,PLAN,5.7,Observation,Flock-4,2019-018
+2019-04-01,PSLV,Flock 4A 15,PLAN,5.7,Observation,Flock-4,2019-018
+2019-04-01,PSLV,Flock 4A 12,PLAN,5.7,Observation,Flock-4,2019-018
+2019-04-01,PSLV,Flock 4A 13,PLAN,5.7,Observation,Flock-4,2019-018
+2019-04-01,PSLV,Aistechsat-3,AISTS,2.3,Communications,Aistech,2019-018
+2019-04-01,PSLV,PS4 Orbital Platform of..,ISRO,20.0,Tech Demo,ISRO Aux,2019-018
+2019-04-01,PSLV,BlueWalker 1,NANAV/ASTS,10.0,Communications,BlueWalker,2019-018
+2019-04-01,PSLV,M6P,NANAV,6.8,Communications,Nanoav,2019-018
+2019-04-01,PSLV,Flock 4A 5,PLAN,5.7,Observation,Flock-4,2019-018
+2019-04-01,PSLV,Flock 4A 14,PLAN,5.7,Observation,Flock-4,2019-018
+2019-04-01,PSLV,Flock 4A 6,PLAN,5.7,Observation,Flock-4,2019-018
+2019-04-01,PSLV,Flock 4A 18,PLAN,5.7,Observation,Flock-4,2019-018
+2019-04-01,PSLV,Flock 4A 8,PLAN,5.7,Observation,Flock-4,2019-018
+2019-04-01,PSLV,Flock 4A 7,PLAN,5.7,Observation,Flock-4,2019-018
+2019-04-01,PSLV,Flock 4A 1,PLAN,5.7,Observation,Flock-4,2019-018
+2019-04-01,PSLV,Flock 4A 2,PLAN,5.7,Observation,Flock-4,2019-018
+2019-04-01,PSLV,Flock 4A 3,PLAN,5.7,Observation,Flock-4,2019-018
+2019-04-01,PSLV,Astrocast 0.2,ACAST,3.8,Communications,Astrocast,2019-018
+2019-04-01,PSLV,"FM99, LEMUR-2 JohanLoran",SPIREL/SPIRE,4.6,COM/MET-RO,Spire,2019-018
+2019-04-01,PSLV,Flock 4A 4,PLAN,5.7,Observation,Flock-4,2019-018
+2019-04-01,PSLV,"FM101, LEMUR-2 Elham",SPIREL/SPIRE,4.6,COM/MET-RO,Spire,2019-018
+2019-04-01,PSLV,"FM102, LEMUR-2 Victor-Andrew",SPIREL/SPIRE,4.6,COM/MET-RO,Spire,2019-018
+2019-04-01,PSLV,Flock 4A 17,PLAN,5.7,Observation,Flock-4,2019-018
+2019-04-01,PSLV,Flock 4A 19,PLAN,5.7,Observation,Flock-4,2019-018
+2019-04-01,PSLV,Flock 4A 20,PLAN,5.7,Observation,Flock-4,2019-018
+2019-04-01,PSLV,"FM100, LEMUR-2 Beaudacious",SPIREL/SPIRE,4.6,COM/MET-RO,Spire,2019-018
+2019-04-17,Antares 230,VCC B,UVA,1.31,Tech Demo,UVA Cube,2019-022
+2019-04-17,Antares 230,KRAKsat,KRAK/AGHU,1.374,Tech Demo,Kraksat,2019-022
+2019-04-17,Antares 230,VCC A,ODU,1.21,Tech Demo,ODU Cube,2019-022
+2019-04-17,Antares 230,EntrySat,ISAE/ONERA,2.0,Tech Demo,ISAE,2019-022
+2019-04-17,Antares 230,VCC C,VAP,1.13,Tech Demo,VPI Cube,2019-022
+2019-04-17,Antares 230,Aerocube 10B (DougSat),AERO,2.1,Tech Demo,Aerocube,2019-022
+2019-04-17,Antares 230,Aerocube 10a Probe,AERO,0.016,Science,AC10 Probe,2019-022
+2019-04-17,Antares 230,AC-10 Probe (Venturini),AERO,0.016,Science,AC10 Probe,2019-022
+2019-04-17,Antares 230,AC-10 Probe Gangestad,AERO,0.016,Science,AC10 Probe,2019-022
+2019-04-17,Antares 230,Aerocube 10a Probe,AERO,0.016,Science,AC10 Probe,2019-022
+2019-04-17,Antares 230,AC10 Probe (Golf),AERO,0.016,Science,AC10 Probe,2019-022
+2019-04-17,Antares 230,Swiatowid,SATRV,2.0,Observation,SatRev,2019-022
+2019-04-17,Antares 230,Aerocube 10A (JimSat),AERO,2.1,Tech Demo,Aerocube,2019-022
+2019-04-17,Antares 230,IOD-1 GEMS,CATAP/OMSUK,3.0,Tech Demo,GEMS,2019-022
+2019-04-17,Antares 230,Seeker,JSC,3.0,Tech Demo,JSC Prox,2019-022
+2019-04-17,Antares 230,Uguisu,KYUT,1.0,Tech Demo,Kyutech,2019-022
+2019-04-17,Antares 230,Raavana-1,ACCIMT,1.0,Tech Demo,ACIMT,2019-022
+2019-04-17,Antares 230,NepaliSat-1,NAST,1.0,Tech Demo,NAST,2019-022
+2019-04-17,Antares 230,SpooQy-1,NUS,3.0,Tech Demo,NUS,2019-022
+2019-05-04,Falcon 9,Pinot/RedEye,DARPA2,50.0,Tech Demo,DARPA RE,2019-025
+2019-05-05,Electron,SPARC-1,AFRL/FMV,10.0,Tech Demo,AFRL Cube,2019-026
+2019-05-05,Electron,Harbinger,YORKSS,150.0,IMG-R,Harbinger,2019-026
+2019-05-05,Electron,AFOTEC1,AFOTD4/USAFA,1.0,Tech Demo,Falconsat,2019-026
+2019-06-25,Falcon Heavy,COSMIC-2 FM1,NSPO,278.0,Observation,COSMIC,2019-036
+2019-06-25,Falcon Heavy,Prometheus 2-6,SOCOM,2.0,Communications,Prometheus,2019-036
+2019-06-25,Falcon Heavy,LightSail,TPS,4.0,Tech Demo,TPS,2019-036
+2019-06-25,Falcon Heavy,FalconSat-7,USAFA,5.0,Tech Demo,Falconsat,2019-036
+2019-06-25,Falcon Heavy,TEPCE,NRL,2.0,Tech Demo,NRL Cube,2019-036
+2019-06-25,Falcon Heavy,Prox-1,GIT,70.0,Tech Demo,GA Tech,2019-036
+2019-06-25,Falcon Heavy,GPIM,MSFC,154.0,Tech Demo,GPIM,2019-036
+2019-06-25,Falcon Heavy,NPSat1,USNPS,83.0,TECH/SCI,NPS,2019-036
+2019-06-25,Falcon Heavy,Oculus-ASR,MTU,70.0,Tech Demo,MTU,2019-036
+2019-06-25,Falcon Heavy,COSMIC-2 FM6,NSPO,278.0,Observation,COSMIC,2019-036
+2019-06-25,Falcon Heavy,COSMIC-2 FM5,NSPO,278.0,Observation,COSMIC,2019-036
+2019-06-25,Falcon Heavy,Oculus-ASR Sphere 1,MTU,1.0,Other,MTU,2019-036
+2019-06-25,Falcon Heavy,OTB,GACO,100.0,TECH/MISC,Gen Atomic,2019-036
+2019-06-25,Falcon Heavy,TBEX-A,UMI/SRII,4.0,Science,UMI,2019-036
+2019-06-25,Falcon Heavy,COSMIC-2 FM2,NSPO,278.0,Observation,COSMIC,2019-036
+2019-06-25,Falcon Heavy,Armadillo,UT,4.15,Tech Demo,UT,2019-036
+2019-06-25,Falcon Heavy,COSMIC-2 FM3,NSPO,278.0,Observation,COSMIC,2019-036
+2019-06-25,Falcon Heavy,PSAT2,USNA,2.0,Communications,USNA,2019-036
+2019-06-25,Falcon Heavy,BRICSat 2,USNA,2.0,TECH/COM,USNA,2019-036
+2019-06-25,Falcon Heavy,Prometheus Mass Model,SOCOM,2.0,Tech Demo,Prometheus,2019-036
+2019-06-25,Falcon Heavy,COSMIC-2 FM4,NSPO,278.0,Observation,COSMIC,2019-036
+2019-06-25,Falcon Heavy,TBEX-B,UMI/SRII,4.0,Science,UMI,2019-036
+2019-06-25,Falcon Heavy,CP-9 LEO,CALP,1.9,Tech Demo,CP,2019-036
+2019-06-25,Falcon Heavy,StangSat,MIHS,0.77,Tech Demo,MIHS,2019-036
+2019-06-29,Electron,Prometheus 2-7,SOCOM,2.0,Communications,Prometheus,2019-037
+2019-06-29,Electron,Painani I,SEDENA,4.0,Tech Demo,Sedena,2019-037
+2019-06-29,Electron,SpaceBee-8,SWARM,1.0,Communications,Swarm,2019-037
+2019-06-29,Electron,Prometheus 2-9,SOCOM,2.0,Communications,Prometheus,2019-037
+2019-06-29,Electron,Global-3,BSKG,55.0,Observation,BlackSky,2019-037
+2019-06-29,Electron,SpaceBee-9,SWARM,1.0,Communications,Swarm,2019-037
+2019-06-29,Electron,ACRUX 1,MELB,1.0,Tech Demo,MSP,2019-037
+2019-07-25,Falcon 9,NARSSCube-2,EGYSA,1.0,Tech Demo,NARSS,2019-044
+2019-07-25,Falcon 9,Quantum-Radar-3,HYPGG,5.0,Other,QuantumR,2019-044
+2019-07-25,Falcon 9,RFTSat,NWNAZ,2.8,Tech Demo,NWNU,2019-044
+2019-07-25,Falcon 9,ORCA-1,DARPA2/HYPGG,8.0,Communications,ORCA,2019-044
+2019-08-08,Atlas 5,TDO Spacecraft,AFSMC,20.0,Tech Demo,SMC Cube,2019-051
+2019-08-19,Electron,Pearl White 2,AFSPC,10.0,Tech Demo,SPC Cube,2019-054
+2019-08-19,Electron,Pearl White 1,AFSPC,10.0,Tech Demo,SPC Cube,2019-054
+2019-08-19,Electron,BRO-1,UNSEEN,10.0,Observation,Unseen,2019-054
+2019-08-19,Electron,Global-4,BSKG,55.0,Observation,BlackSky,2019-054
+2019-09-24,H2,RWASAT-1,RWMTI/ARKE,3.0,Tech Demo,Rwanda,2019-062
+2019-09-24,H2,AQT-D,TOK/SPABD,3.0,Tech Demo,Tokyo,2019-062
+2019-09-24,H2,NARSScube-1,EGYSA,1.0,Observation,NARSS,2019-062
+2019-10-11,Pegasus,ICON,GSFC,288.0,Science,MIDEX,2019-068
+2019-10-17,Electron,Palisade,ADIG,40.0,Observation,ADIG Tech,2019-069
+2019-11-02,Antares 230+,AeroCube 14A,AERO/NROC,4.0,Tech Demo,Aerocube,2019-071
+2019-11-02,Antares 230+,AeroCube 14B,AERO/NROC,4.0,Tech Demo,Aerocube,2019-071
+2019-11-02,Antares 230+,AeroCube 15B,AERO/SMC,4.0,Tech Demo,Aerocube,2019-071
+2019-11-02,Antares 230+,AeroCube 15A,AERO/SMC,4.0,Tech Demo,Aerocube,2019-071
+2019-11-02,Antares 230+,HuskySat,UWA,4.0,Tech Demo,U Wash,2019-071
+2019-11-02,Antares 230+,Argus-02-US,SLU,1.0,Tech Demo,SLU,2019-071
+2019-11-02,Antares 230+,SOCRATES-BEL,UMN,4.0,Tech Demo,UMN,2019-071
+2019-11-02,Antares 230+,Phoenix,ASU,4.0,Observation,ASU,2019-071
+2019-11-02,Antares 230+,RadSat-u,MSU,4.0,Tech Demo,MSU,2019-071
+2019-11-02,Antares 230+,Orbital Factory 2,UTEP,1.0,Tech Demo,UTEP,2019-071
+2019-11-02,Antares 230+,HARP,UMBC,4.0,Tech Demo,UMBC,2019-071
+2019-11-02,Antares 230+,STPSat-4,STP,50.0,Tech Demo,STPSAT,2019-071
+2019-11-02,Antares 230+,SwampSat-2,UFL,4.0,Tech Demo,UF,2019-071
+2019-11-27,PSLV,Flock 4P 2,PLAN,5.7,Observation,Flock-4,2019-081
+2019-11-27,PSLV,Flock 4P 6,PLAN,5.7,Observation,Flock-4,2019-081
+2019-11-27,PSLV,Flock 4P 10,PLAN,5.7,Observation,Flock-4,2019-081
+2019-11-27,PSLV,Flock 4P 9,PLAN,5.7,Observation,Flock-4,2019-081
+2019-11-27,PSLV,Flock 4P 11,PLAN,5.7,Observation,Flock-4,2019-081
+2019-11-27,PSLV,Flock 4P 5,PLAN,5.7,Observation,Flock-4,2019-081
+2019-11-27,PSLV,Flock 4P 12,PLAN,5.7,Observation,Flock-4,2019-081
+2019-11-27,PSLV,Meshbed,ANSP,5.0,Tech Demo,Analytic,2019-081
+2019-11-27,PSLV,Flock 4P 4,PLAN,5.7,Observation,Flock-4,2019-081
+2019-11-27,PSLV,Flock 4P 3,PLAN,5.7,Observation,Flock-4,2019-081
+2019-11-27,PSLV,Flock 4P 7,PLAN,5.7,Observation,Flock-4,2019-081
+2019-11-27,PSLV,Flock 4P 1,PLAN,5.7,Observation,Flock-4,2019-081
+2019-11-27,PSLV,Flock 4P 8,PLAN,5.7,Observation,Flock-4,2019-081
+2019-12-05,Falcon 9,CIRiS,USU,10.0,Observation,USU,2019-083
+2019-12-05,Falcon 9,MakerSat,NWNAZ,0.5,Tech Demo,NWNU,2019-083
+2019-12-05,Falcon 9,MiniCarb,GSFC/LLNL,8.0,EOSCI,LLNL,2019-083
+2019-12-05,Falcon 9,EdgeCube,SOSU,1.0,Observation,Sonoma,2019-083
+2019-12-05,Falcon 9,ORCA,DARPA2/HYPGG,10.0,Communications,ORCA,2019-083
+2019-12-05,Falcon 9,CryoCube,KSC,5.0,Tech Demo,KSC Cube,2019-083
+2019-12-05,Falcon 9,AztechSat 1,UPAEP,1.0,Communications,Puebla,2019-083
+2019-12-05,Falcon 9,QARMAN,VKI,3.0,Tech Demo,VKI,2019-083
+2019-12-05,Falcon 9,SORTIE,UNMC/ASTRA,7.9,Science,UNM,2019-083
+2019-12-05,Falcon 9,ORCA,DARPA2/HYPGG,8.0,Communications,ORCA,2019-083
+2019-12-05,Falcon 9,VPM,AFRL,8.0,Science,AFRL Cube,2019-083
+2019-12-06,Electron,ATL-1,ATLH,0.5,SIG/TECH,HUATL,2019-084
+2019-12-06,Electron,TRSI-Sat,TRSI,0.25,Tech Demo,STADOKO,2019-084
+2019-12-06,Electron,NOOR-1A,STARA,0.75,Communications,Stara,2019-084
+2019-12-06,Electron,SMOG-P,BME,0.25,Observation,BUTE,2019-084
+2019-12-06,Electron,NOOR-1B,STARA,0.75,Communications,Stara,2019-084
+2019-12-06,Electron,FossaSat 1,FOSSA,0.25,Tech Demo,Fossa,2019-084
+2019-12-06,Electron,ALE-2,ALE,75.0,Tech Demo,ALE,2019-084
+2019-12-11,PSLV,COMMTRAIL,ELBIT,4.0,Communications,Elbit,2019-089
+2019-12-11,PSLV,PTD-3,TYVAK,11.0,Tech Demo,Tyvak,2019-089
+2019-12-11,PSLV,Duchifat-3,HSCIL,4.0,Observation,Herzliya,2019-089
+2019-12-11,PSLV,QPS-SAR-1 Izanagi,QPS,120.0,IMG-R,QPS,2019-089
+2019-12-11,PSLV,1HOPSAT,HERA,22.0,Observation,Hera Sys,2019-089
+2019-12-11,PSLV,LEMUR 2 HiMomAndDad,SPIRE,4.6,COM/MET-RO,Spire,2019-089
+2019-12-11,PSLV,LEMUR 2 JPGSquared,SPIRE,4.6,COM/MET-RO,Spire,2019-089
+2019-12-11,PSLV,LEMUR 2 Theodosia,SPIRE,4.6,COM/MET-RO,Spire,2019-089
+2019-12-11,PSLV,LEMUR 2 Pappy,SPIRE,4.6,COM/MET-RO,Spire,2019-089
+2019-12-18,Soyuz,Cheops,ESA,273.0,Observation,ESA Ast,2019-092
+2019-12-18,Soyuz,ANGELS,CNES,27.0,Communications,CNES Cube,2019-092
+2019-12-18,Soyuz,EyeSat-Nano,CNES,7.0,Observation,CNES Cube,2019-092
+2019-12-18,Soyuz,OPS-SAT,ESA,7.0,Tech Demo,ESA Cube,2019-092
+2020-01-31,Electron,USA 294,NROC,150.0,TECH?,NRO TS,2020-007
+2020-02-15,Antares 230+,RedEye 3 (Cabernet),DARPA2,50.0,Tech Demo,DARPA RE,2020-011
+2020-02-15,Antares 230+,DeMi,DARPA2/AURFS,10.0,Tech Demo,MIT Cube,2020-011
+2020-02-15,Antares 230+,TechEdSat-10,ARC/SJSU,10.0,Tech Demo,TES,2020-011
+2020-02-15,Antares 230+,RedEye 2 (Merlot),DARPA2,50.0,Tech Demo,DARPA RE,2020-011
+2020-03-07,Falcon 9,Quetzal-1,UVG,1.0,Observation,UVG,2020-016
+2020-03-07,Falcon 9,G-satellite,OTEAM/TOK,3.0,Other,Tokyo,2020-016
+2020-03-07,Falcon 9,ULTP,LYNK,8.0,Communications,Lynk,2020-016
+2020-03-26,Atlas 5,TDO 2,AFRL,20.0,Other,SMC Cube,2020-022
+2020-05-17,Atlas 5,FalconSat-8,USAFA,140.0,Tech Demo,FalconSat,2020-029
+2020-05-17,Atlas 5,USA 300,USAFA?,140.0,Tech Demo,NRO X,2020-029
+2020-06-13,Falcon 9,SkySat C14,PLABST,110.0,Observation,Skysat,2020-038
+2020-06-13,Falcon 9,SkySat C15,PLABST,110.0,Observation,Skysat,2020-038
+2020-06-13,Electron,USA 301,NROC,50.0,SIG?*,NRO TS,2020-037
+2020-06-13,Falcon 9,SkySat C16,PLABST,110.0,Observation,Skysat,2020-038
+2020-06-13,Electron,USA 303,NROC,50.0,SIG?*,NRO TS,2020-037
+2020-06-13,Electron,ANDESITE,BU,2.5,TECH*,BU,2020-037
+2020-06-13,Electron,M2 Pathfinder,RAAF/UNSW,4.0,COM*,RAAF,2020-037
+2020-06-13,Electron,USA 302,NROC,50.0,SIG?*,NRO TS,2020-037
+2020-07-06,Shavit,'Ofeq-16,DDRD/U9900,300.0,Observation,Ofeq,2020-044
+2020-07-15,Minotaur 4,USA 307,NROC,250.0,SIG?*,NRO TS,2020-046
+2020-07-15,Minotaur 4,USA 306,NROC,250.0,SIG?*,NRO TS,2020-046
+2020-07-15,Minotaur 4,USA 305,NROC,250.0,SIG?*,NRO TS,2020-046
+2020-07-15,Minotaur 4,USA 308,NROC,250.0,SIG?*,NRO TS,2020-046
+2020-08-07,Falcon 9,Global-7,BSKG,55.0,Observation,BlackSky,2020-055
+2020-08-07,Falcon 9,Global-8,BSKG,55.0,Observation,BlackSky,2020-055
+2020-08-18,Falcon 9,SkySat C17,PLABST,110.0,Observation,Skysat,2020-057
+2020-08-18,Falcon 9,SkySat C18,PLABST,110.0,Observation,Skysat,2020-057
+2020-08-18,Falcon 9,SkySat C19,PLABST,110.0,Observation,Skysat,2020-057
+2020-08-30,Falcon 9,GNOMES-1,PLANQ,30.0,MET-RO,PlanetIQ,2020-059
+2020-08-30,Falcon 9,EG-1 (Tyvak 0172),ECHOAU,11.0,Tech Demo,Sirion,2020-059
+2020-08-31,Electron,Capella-2,CAPSP,100.0,IMG-R,Capella,2020-060
+2020-08-31,Electron,RLFL14,RLABN,20.0,Tech Demo,Photon,2020-060
+2020-09-03,Vega,Spacebee-11,SWARM,0.284,Communications,Swarm,2020-061
+2020-09-03,Vega,Spacebee-16,SWARM,0.284,Communications,Swarm,2020-061
+2020-09-03,Vega,Spacebee-12,SWARM,0.284,Communications,Swarm,2020-061
+2020-09-03,Vega,Spacebee-13,SWARM,0.284,Communications,Swarm,2020-061
+2020-09-03,Vega,Spacebee-14,SWARM,0.284,Communications,Swarm,2020-061
+2020-09-03,Vega,Hamarik,TTU,1.0,Observation,Tallinn,2020-061
+2020-09-03,Vega,Flock 4v 1,PLAN,5.7,Observation,Flock-4,2020-061
+2020-09-03,Vega,Flock 4v 4,PLAN,5.7,Observation,Flock-4,2020-061
+2020-09-03,Vega,Lemur 2 Schmidtfall,SPIRE,4.6,COM/MET-RO,Spire,2020-061
+2020-09-03,Vega,Lemur 2 Djuproera,SPIRE,4.6,COM/MET-RO,Spire,2020-061
+2020-09-03,Vega,Lemur 2 Squarejaws,SPIRE,4.6,COM/MET-RO,Spire,2020-061
+2020-09-03,Vega,Lemur 2 Ursa Avion,SPIRE,4.6,COM/MET-RO,Spire,2020-061
+2020-09-03,Vega,KEPLER-2 (TARS),KEPLER,15.0,Communications,Kepler,2020-061
+2020-09-03,Vega,Flock 4v 22,PLAN,5.7,Observation,Flock-4,2020-061
+2020-09-03,Vega,Flock 4v 2,PLAN,5.7,Observation,Flock-4,2020-061
+2020-09-03,Vega,Flock 4v 3,PLAN,5.7,Observation,Flock-4,2020-061
+2020-09-03,Vega,Flock 4v 16,PLAN,5.7,Observation,Flock-4,2020-061
+2020-09-03,Vega,Flock 4v 15,PLAN,5.7,Observation,Flock-4,2020-061
+2020-09-03,Vega,Flock 4v 17,PLAN,5.7,Observation,Flock-4,2020-061
+2020-09-03,Vega,Flock 4v 21,PLAN,5.7,Observation,Flock-4,2020-061
+2020-09-03,Vega,Flock 4v 18,PLAN,5.7,Observation,Flock-4,2020-061
+2020-09-03,Vega,Flock 4v 19,PLAN,5.7,Observation,Flock-4,2020-061
+2020-09-03,Vega,Flock 4v 20,PLAN,5.7,Observation,Flock-4,2020-061
+2020-09-03,Vega,Flock 4v 23,PLAN,5.7,Observation,Flock-4,2020-061
+2020-09-03,Vega,Flock 4v 24,PLAN,5.7,Observation,Flock-4,2020-061
+2020-09-03,Vega,Flock 4v 25,PLAN,5.7,Observation,Flock-4,2020-061
+2020-09-03,Vega,Flock 4v 26,PLAN,5.7,Observation,Flock-4,2020-061
+2020-09-03,Vega,NAPA 1,RTAF,10.0,Observation,RTAF,2020-061
+2020-09-03,Vega,Spacebee-17,SWARM,0.284,Communications,Swarm,2020-061
+2020-09-03,Vega,Spacebee-15,SWARM,0.284,Communications,Swarm,2020-061
+2020-09-03,Vega,Spacebee-18,SWARM,0.284,Communications,Swarm,2020-061
+2020-09-03,Vega,ION-mk-1 SVC-001 Lucas,DORBIT,150.0,Tech Demo,DORBIT,2020-061
+2020-09-03,Vega,Nusat-6,URUGUS,44.0,Observation,Satelog,2020-061
+2020-09-03,Vega,ESAIL,EXEA,112.0,Communications,ComDev,2020-061
+2020-09-03,Vega,Spacebee-10,SWARM,0.284,Communications,Swarm,2020-061
+2020-09-03,Vega,UPM Sat-2,UPM,45.0,Tech Demo,UPM,2020-061
+2020-09-03,Vega,NEMO-HD,SPSI,65.0,Observation,Space-SI,2020-061
+2020-09-03,Vega,GHGSat-C1,GHG,15.0,EOSCI,GHG,2020-061
+2020-09-03,Vega,SIMBA,IRMB,4.0,Science,RMI,2020-061
+2020-09-03,Vega,TRISAT,UMARB,4.0,Observation,Maribor,2020-061
+2020-09-03,Vega,PICASSO,IASB,4.0,EOSCI/SCI,IASB,2020-061
+2020-09-03,Vega,Flock 4v 9,PLAN,5.7,Observation,Flock-4,2020-061
+2020-09-03,Vega,Flock 4v 12,PLAN,5.7,Observation,Flock-4,2020-061
+2020-09-03,Vega,Athena,PNTV,138.0,COM?,PointView,2020-061
+2020-09-03,Vega,Flock 4v 11,PLAN,5.7,Observation,Flock-4,2020-061
+2020-09-03,Vega,Flock 4v 14,PLAN,5.7,Observation,Flock-4,2020-061
+2020-09-03,Vega,Dido-3,SPHARM,4.0,Science,Dido,2020-061
+2020-09-03,Vega,Flock 4v 8,PLAN,5.7,Observation,Flock-4,2020-061
+2020-09-03,Vega,Spacebee-19,SWARM,0.284,Communications,Swarm,2020-061
+2020-09-03,Vega,Spacebee-20,SWARM,0.284,Communications,Swarm,2020-061
+2020-09-03,Vega,Spacebee-21,SWARM,0.284,Communications,Swarm,2020-061
+2020-09-03,Vega,AMICal-Sat,CSUG,2.0,Science,Grenoble,2020-061
+2020-09-03,Vega,Lemur 2 EthanOakes,SPIRE,4.6,COM/MET-RO,Spire,2020-061
+2020-09-03,Vega,Flock 4v 13,PLAN,5.7,Observation,Flock-4,2020-061
+2020-09-03,Vega,Flock 4v 10,PLAN,5.7,Observation,Flock-4,2020-061
+2020-09-03,Vega,Lemur 2 Oscarlator,SPIRE,4.6,COM/MET-RO,Spire,2020-061
+2020-09-03,Vega,OSM-1 CICERO,OSM/GEOOPT,10.0,MET-RO,CICERO,2020-061
+2020-09-03,Vega,3Cat-5/B,UPC,10.0,Tech Demo,UPC,2020-061
+2020-09-03,Vega,3Cat-5/A,UPC,10.0,Tech Demo,UPC,2020-061
+2020-09-03,Vega,Flock 4v 7,PLAN,5.7,Observation,Flock-4,2020-061
+2020-09-03,Vega,Flock 4v 5,PLAN,5.7,Observation,Flock-4,2020-061
+2020-09-03,Vega,Flock 4v 6,PLAN,5.7,Observation,Flock-4,2020-061
+2020-09-03,Vega,EG-2 (Tyvak 0171),ECHOAU,10.0,Tech Demo,Sirion,2020-061
+2020-10-03,Antares 230+,DESCENT,YORK,1.0,Tech Demo,YorkU,2020-069
+2020-10-03,Antares 230+,Lemur-2-Djara,SPIREL/ONI,4.6,COM/MET-RO,Spire,2020-069
+2020-10-03,Antares 230+,Lemur-2-Baxter-Oliver,SPIREL/SPIRE,4.6,COM/MET-RO,Spire,2020-069
+2020-10-03,Antares 230+,SATTLA-1,ARIU,1.0,Tech Demo,AriU,2020-069
+2020-10-03,Antares 230+,NEUTRON-1,UHI,4.0,Science,UHI,2020-069
+2020-10-03,Antares 230+,Bobcat-1,OHIOU,4.0,Tech Demo,OU,2020-069
+2020-10-03,Antares 230+,SPOC,UGA,4.0,Observation,UGA,2020-069
+2020-10-28,Electron,Flock EP 2,PLAN,5.7,Observation,Flock-4,2020-077
+2020-10-28,Electron,Flock EP 9,PLAN,5.7,Observation,Flock-4,2020-077
+2020-10-28,Electron,Flock EP 1,PLAN,5.7,Observation,Flock-4,2020-077
+2020-10-28,Electron,Flock EP 7,PLAN,5.7,Observation,Flock-4,2020-077
+2020-10-28,Electron,Flock EP 8,PLAN,5.7,Observation,Flock-4,2020-077
+2020-10-28,Electron,Flock EP 5,PLAN,5.7,Observation,Flock-4,2020-077
+2020-10-28,Electron,CE-SAT-IIB,CANON,35.0,Observation,Canon,2020-077
+2020-10-28,Electron,Flock EP 3,PLAN,5.7,Observation,Flock-4,2020-077
+2020-10-28,Electron,Flock EP 6,PLAN,5.7,Observation,Flock-4,2020-077
+2020-10-28,Electron,Flock EP 4,PLAN,5.7,Observation,Flock-4,2020-077
+2020-11-07,PSLV,KSM1-c,KLEOS,10.0,Observation,Kleos,2020-081
+2020-11-07,PSLV,Lemur 2 Ozarak,SPIRE,4.6,COM/MET-RO,Spire,2020-081
+2020-11-07,PSLV,KSM1-d,KLEOS,10.0,Observation,Kleos,2020-081
+2020-11-07,PSLV,KSM1-b,KLEOS,10.0,Observation,Kleos,2020-081
+2020-11-07,PSLV,R2,NANAV,6.8,Tech Demo,Nanoav,2020-081
+2020-11-07,PSLV,KSM1-a,KLEOS,10.0,Observation,Kleos,2020-081
+2020-11-07,PSLV,Lemur 2 Jeremiah,SPIRE,4.6,COM/MET-RO,Spire,2020-081
+2020-11-07,PSLV,Lemur 2 Wallace,SPIRE,4.6,COM/MET-RO,Spire,2020-081
+2020-11-07,PSLV,Lemur 2 Jindra,SPIRE,4.6,COM/MET-RO,Spire,2020-081
+2020-11-20,Electron,SpaceBEE-30,SWARM,0.284,Communications,Swarm,2020-085
+2020-11-20,Electron,Spacebee-27,SWARM,0.284,Communications,Swarm,2020-085
+2020-11-20,Electron,Spacebee-25,SWARM,0.284,Communications,Swarm,2020-085
+2020-11-20,Electron,Spacebee-24,SWARM,0.284,Communications,Swarm,2020-085
+2020-11-20,Electron,Spacebee-22,SWARM,0.284,Communications,Swarm,2020-085
+2020-11-20,Electron,SpaceBEENZ-2,SWARNZ,0.284,Communications,Swarm,2020-085
+2020-11-20,Electron,Dragracer 2 (Augury),TSEPT,12.0,Tech Demo,TUI,2020-085
+2020-11-20,Electron,Spacebee-26,SWARM,0.284,Communications,Swarm,2020-085
+2020-11-20,Electron,Spacebee-28,SWARM,0.284,Communications,Swarm,2020-085
+2020-11-20,Electron,SpaceBEENZ-1,SWARNZ,0.284,Communications,Swarm,2020-085
+2020-11-20,Electron,Spacebee-23,SWARM,0.284,Communications,Swarm,2020-085
+2020-11-20,Electron,Dragracer 1 (Alchemy),TSEPT,12.0,Tech Demo,TUI,2020-085
+2020-11-20,Electron,SpaceBEE-32,SWARM,0.284,Communications,Swarm,2020-085
+2020-11-20,Electron,Spacebee-39,SWARM,0.284,Communications,Swarm,2020-085
+2020-11-20,Electron,SpaceBEE-29,SWARM,0.284,Communications,Swarm,2020-085
+2020-11-20,Electron,APSS-1 QuakeTEC,APSS,1.0,Science,APSS,2020-085
+2020-11-20,Electron,CORVUS BC5,ADIG/DARPA2?,10.0,Observation,Landmapper,2020-085
+2020-11-20,Electron,Spacebee-31,SWARM,0.284,Communications,Swarm,2020-085
+2020-11-20,Electron,Spacebee-34,SWARM,0.284,Communications,Swarm,2020-085
+2020-11-20,Electron,Spacebee-35,SWARM,0.284,Communications,Swarm,2020-085
+2020-11-20,Electron,Spacebee-37,SWARM,0.284,Communications,Swarm,2020-085
+2020-11-20,Electron,Spacebee-38,SWARM,0.284,Communications,Swarm,2020-085
+2020-11-20,Electron,Spacebee-36,SWARM,0.284,Communications,Swarm,2020-085
+2020-11-20,Electron,SpaceBEENZ-4,SWARNZ,0.284,Communications,Swarm,2020-085
+2020-11-20,Electron,BRO-2,UNSEEN,10.0,Observation,Unseen,2020-085
+2020-11-20,Electron,SpaceBEENZ-5,SWARNZ,0.284,Communications,Swarm,2020-085
+2020-11-20,Electron,SpaceBEENZ-6,SWARNZ,0.284,Communications,Swarm,2020-085
+2020-11-20,Electron,BRO-3,UNSEEN,10.0,Observation,Unseen,2020-085
+2020-11-20,Electron,Spacebee-33,SWARM,0.284,Communications,Swarm,2020-085
+2020-11-20,Electron,SpaceBEENZ-3,SWARNZ,0.284,Communications,Swarm,2020-085
+2020-12-15,Electron,StriX-Alpha,SYNSP,150.0,IMG-R,Synspective,2020-098
+2021-01-17,LauncherOne,ExoCube 2,CALP/NSF,4.0,Science,CP,2021-002
+2021-01-17,LauncherOne,Prometheus 2.8,SOCOM,2.0,Communications,Prometheus,2021-002
+2021-01-17,LauncherOne,CACTUS-1,CAPTU,4.0,Tech Demo,CTU,2021-002
+2021-01-17,LauncherOne,PICS 2,BYU,1.0,Tech Demo,BYU,2021-002
+2021-01-17,LauncherOne,PICS 1,BYU,1.0,Tech Demo,BYU,2021-002
+2021-01-17,LauncherOne,Q-PACE,UCF,3.0,Tech Demo,UCF,2021-002
+2021-01-17,LauncherOne,MiTEE 1,UMI,3.0,Tech Demo,UMI,2021-002
+2021-01-17,LauncherOne,Prometheus 2.11,SOCOM,2.0,Communications,Prometheus,2021-002
+2021-01-17,LauncherOne,TechEdSat-7,ARC/SJSU,4.0,Tech Demo,TES,2021-002
+2021-01-17,LauncherOne,AO-109,AMNA/VANDU,1.0,Tech Demo,AMSAT-NA,2021-002
+2021-01-17,LauncherOne,PolarCube,COSG,4.0,EOSCI,UCO,2021-002
+2021-01-17,LauncherOne,CAPE-3,ULLAF,1.0,Tech Demo,ULALA,2021-002
+2021-01-20,Electron,GMS-T,OHB/YUANX,50.0,Communications,GMS-T,2021-004
+2021-01-24,Falcon 9,Flock 4s 16,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,Astrocast-1.x5,ACAST,5.0,Communications,Astrocast,2021-006
+2021-01-24,Falcon 9,Flock 4s 6,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,Astrocast-1.x4,ACAST,5.0,Communications,Astrocast,2021-006
+2021-01-24,Falcon 9,Flock 4s 29,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,Lemur-2 JenniferSong,SPIRE,4.6,COM/MET-RO,Spire,2021-006
+2021-01-24,Falcon 9,Flock 4s 10,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,V-R3X 3,ARC/CMU,1.0,Tech Demo,Ames,2021-006
+2021-01-24,Falcon 9,Flock 4s 5,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,KEPLER-14 (STELLA),KEPLER,15.0,Communications,Kepler,2021-006
+2021-01-24,Falcon 9,Flock 4s 7,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,Flock 4s 14,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,Flock 4s 37,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,Flock 4s 28,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,Flock 4s 40,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,Lemur-2 Ruari-Eilidh,SPIRE,4.6,COM/MET-RO,Spire,2021-006
+2021-01-24,Falcon 9,ICEYE-X8,ICEYE,80.0,IMG-R,ICEYE,2021-006
+2021-01-24,Falcon 9,GHGSat-C2,GHG,15.0,EOSCI,GHG,2021-006
+2021-01-24,Falcon 9,Hawk 2B,HE360,31.0,Observation,H360,2021-006
+2021-01-24,Falcon 9,XR1,R2SP/OFX,80.0,IMG-R,ICEYE,2021-006
+2021-01-24,Falcon 9,ICEYE-X9,ICEYE,80.0,IMG-R,ICEYE,2021-006
+2021-01-24,Falcon 9,Hawk 2A,HE360,31.0,Observation,H360,2021-006
+2021-01-24,Falcon 9,ION-SCV 002 Laurentius,DORBIT,150.0,Tech Demo,DORBIT,2021-006
+2021-01-24,Falcon 9,KEPLER-11 (DANEEL),KEPLER,15.0,Communications,Kepler,2021-006
+2021-01-24,Falcon 9,Hawk 2C,HE360,31.0,Observation,H360,2021-006
+2021-01-24,Falcon 9,KEPLER-10 (BABY YODA),KEPLER,15.0,Communications,Kepler,2021-006
+2021-01-24,Falcon 9,Flock 4s 19,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,Lemur-2 Chantal,SPIRE,4.6,COM/MET-RO,Spire,2021-006
+2021-01-24,Falcon 9,Flock 4s 2,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,Flock 4s 38,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,Flock 4s 36,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,Flock 4s 47,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,Lemur-2,SPIRE,4.6,COM/MET-RO,Spire,2021-006
+2021-01-24,Falcon 9,SpaceBEE-75,SWARM,0.284,Communications,Swarm,2021-006
+2021-01-24,Falcon 9,SpaceBEE-74,SWARM,0.284,Communications,Swarm,2021-006
+2021-01-24,Falcon 9,SpaceBEE-73,SWARM,0.284,Communications,Swarm,2021-006
+2021-01-24,Falcon 9,SpaceBEE-72,SWARM,0.284,Communications,Swarm,2021-006
+2021-01-24,Falcon 9,SpaceBEE-71,SWARM,0.284,Communications,Swarm,2021-006
+2021-01-24,Falcon 9,SpaceBEE-70,SWARM,0.284,Communications,Swarm,2021-006
+2021-01-24,Falcon 9,SpaceBEE-69,SWARM,0.284,Communications,Swarm,2021-006
+2021-01-24,Falcon 9,SpaceBEE-68,SWARM,0.284,Communications,Swarm,2021-006
+2021-01-24,Falcon 9,SpaceBEE-67,SWARM,0.284,Communications,Swarm,2021-006
+2021-01-24,Falcon 9,SpaceBEE-66,SWARM,0.284,Communications,Swarm,2021-006
+2021-01-24,Falcon 9,SpaceBEE-65,SWARM,0.284,Communications,Swarm,2021-006
+2021-01-24,Falcon 9,SpaceBEE-64,SWARM,0.284,Communications,Swarm,2021-006
+2021-01-24,Falcon 9,Flock 4s 26,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,Flock 4s 41,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,Flock 4s 45,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,Flock 4s 43,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,Flock 4s 44,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,Flock 4s 46,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,Flock 4s 48,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,ARCE-1A,USF,0.5,Tech Demo,USF,2021-006
+2021-01-24,Falcon 9,ARCE-1B,USF,0.5,Tech Demo,USF,2021-006
+2021-01-24,Falcon 9,Flock 4s 42,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,Flock 4s 23,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,Flock 4s 30,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,Flock 4s 1,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,Flock 4s 25,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,Hiber 4,HIBER,4.0,Communications,Hiber,2021-006
+2021-01-24,Falcon 9,Flock 4s 20,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,Flock 4s 24,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,KEPLER-9 (ARTEMIS),KEPLER,15.0,Communications,Kepler,2021-006
+2021-01-24,Falcon 9,Flock 4s 18,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,Flock 4s 15,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,Flock 4s 3,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,SpaceBEE-55,SWARM,0.284,Communications,Swarm,2021-006
+2021-01-24,Falcon 9,IDEASSat,NCU,4.0,Science,NCU,2021-006
+2021-01-24,Falcon 9,Lemur-2 NallyWacker,SPIRE,4.6,COM/MET-RO,Spire,2021-006
+2021-01-24,Falcon 9,Flock 4s 21,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,SpaceBEE-42,SWARM,0.284,Communications,Swarm,2021-006
+2021-01-24,Falcon 9,KEPLER-13 (LUCKY),KEPLER,15.0,Communications,Kepler,2021-006
+2021-01-24,Falcon 9,Lemur-2 SaoirSedh5Guo,SPIRE,4.6,COM/MET-RO,Spire,2021-006
+2021-01-24,Falcon 9,Flock 4s 22,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,SpaceBEE-41,SWARM,0.284,Communications,Swarm,2021-006
+2021-01-24,Falcon 9,"FM136, LEMUR-2 Neva",SPIREL/SPIRE,4.6,COM/MET-RO,Spire,2021-006
+2021-01-24,Falcon 9,SpaceBEE-40,SWARM,0.284,Communications,Swarm,2021-006
+2021-01-24,Falcon 9,CubeL,DLR2,4.0,Tech Demo,DLR Micro,2021-006
+2021-01-24,Falcon 9,SpaceBEE-48,SWARM,0.284,Communications,Swarm,2021-006
+2021-01-24,Falcon 9,ASELSAT,ASELSN,4.0,Tech Demo,ASELSAN,2021-006
+2021-01-24,Falcon 9,SpaceBEE-54,SWARM,0.284,Communications,Swarm,2021-006
+2021-01-24,Falcon 9,SOMP2b,TUD,2.0,EOSCI,TUD,2021-006
+2021-01-24,Falcon 9,SpaceBEE-50,SWARM,0.284,Communications,Swarm,2021-006
+2021-01-24,Falcon 9,SpaceBEE-46,SWARM,0.284,Communications,Swarm,2021-006
+2021-01-24,Falcon 9,SpaceBEE-52,SWARM,0.284,Communications,Swarm,2021-006
+2021-01-24,Falcon 9,SpaceBEE-47,SWARM,0.284,Communications,Swarm,2021-006
+2021-01-24,Falcon 9,SpaceBEE-63,SWARM,0.284,Communications,Swarm,2021-006
+2021-01-24,Falcon 9,SpaceBEE-59,SWARM,0.284,Communications,Swarm,2021-006
+2021-01-24,Falcon 9,SpaceBEE-62,SWARM,0.284,Communications,Swarm,2021-006
+2021-01-24,Falcon 9,Astrocast-1.x1,ACAST,5.0,Communications,Astrocast,2021-006
+2021-01-24,Falcon 9,SpaceBEE-61,SWARM,0.284,Communications,Swarm,2021-006
+2021-01-24,Falcon 9,SpaceBEE-49,SWARM,0.284,Communications,Swarm,2021-006
+2021-01-24,Falcon 9,SpaceBEE-60,SWARM,0.284,Communications,Swarm,2021-006
+2021-01-24,Falcon 9,SpaceBEE-53,SWARM,0.284,Communications,Swarm,2021-006
+2021-01-24,Falcon 9,UVSQ-SAT,UVSQ/LATMOS,1.6,Science,UVSQ,2021-006
+2021-01-24,Falcon 9,Yushan Weixing,NTOU,2.0,Communications,NTOU,2021-006
+2021-01-24,Falcon 9,SpaceBEE-51,SWARM,0.284,Communications,Swarm,2021-006
+2021-01-24,Falcon 9,KEPLER-15 (SUDORMRF),KEPLER,15.0,Communications,Kepler,2021-006
+2021-01-24,Falcon 9,KEPLER-12 (BOBA),KEPLER,15.0,Communications,Kepler,2021-006
+2021-01-24,Falcon 9,V-R3X 1,ARC/CMU,1.0,Tech Demo,Ames,2021-006
+2021-01-24,Falcon 9,Flock 4s 11,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,Capella-4 (Whitney),CAPSP,112.0,IMG-R,Capella,2021-006
+2021-01-24,Falcon 9,NASA PTD-1,ARC/TYVAK,11.0,Tech Demo,Ames,2021-006
+2021-01-24,Falcon 9,P2-10,SOCOM,2.0,Communications,Prometheus,2021-006
+2021-01-24,Falcon 9,ARCE 1C,USF,0.5,Tech Demo,USF,2021-006
+2021-01-24,Falcon 9,QPS-SAR-2 Izanami,QPS,120.0,IMG-R,QPS,2021-006
+2021-01-24,Falcon 9,SpaceBEE-43,SWARM,0.284,Communications,Swarm,2021-006
+2021-01-24,Falcon 9,Celestis 17/Sherpa-FX1,SFLIN,130.0,Tech Demo,SFLIN,2021-006
+2021-01-24,Falcon 9,Astrocast-1.x2,ACAST,5.0,Communications,Astrocast,2021-006
+2021-01-24,Falcon 9,Whitney 1,CAPSP,112.0,IMG-R,Capella,2021-006
+2021-01-24,Falcon 9,Flock 4s 39,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,Flock 4s 4,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,Flock 4s 17,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,Lemur 2 Mango1,SPIRE/JACOBS,4.6,COM/MET-RO,Spire,2021-006
+2021-01-24,Falcon 9,Astrocast-1.x3,ACAST,5.0,Communications,Astrocast,2021-006
+2021-01-24,Falcon 9,Flock 4s 32,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,Aurora Insight Charlie,AUINS/SPQAA,10.0,Observation,AII,2021-006
+2021-01-24,Falcon 9,Flock 4s 34,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,Flock 4s 31,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,KEPLER-8 (AMAROK),KEPLER,15.0,Communications,Kepler,2021-006
+2021-01-24,Falcon 9,Flock 4s 8,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,Flock 4s 35,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,Flock 4s 13,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,Flock 4s 12,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,Flock 4s 27,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,Flock 4s 9,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,Flock 4s 33,PLAN,5.7,Observation,Flock-4,2021-006
+2021-01-24,Falcon 9,SpaceBEE-56,SWARM,0.284,Communications,Swarm,2021-006
+2021-01-24,Falcon 9,V-R3X 2,ARC/CMU,1.0,Tech Demo,Ames,2021-006
+2021-01-24,Falcon 9,SpaceBEE-44,SWARM,0.284,Communications,Swarm,2021-006
+2021-01-24,Falcon 9,SpaceBEE-57,SWARM,0.284,Communications,Swarm,2021-006
+2021-01-24,Falcon 9,SpaceBEE-58,SWARM,0.284,Communications,Swarm,2021-006
+2021-01-24,Falcon 9,SpaceBEE-45,SWARM,0.284,Communications,Swarm,2021-006
+2021-02-20,Antares 230+,OPUSAT-II,OPU/MUKD,2.368,Tech Demo,OPU,2021-013
+2021-02-20,Antares 230+,IT-SPINS,MSU,4.0,Science,MSU,2021-013
+2021-02-20,Antares 230+,DhabiSat,MASDAR,4.0,Tech Demo,Masdar,2021-013
+2021-02-20,Antares 230+,ORCA-6,DARPA2,2.0,Communications,ORCA,2021-013
+2021-02-20,Antares 230+,Gunsmoke-J 2,SMDC/TSEPT,4.0,Communications,Gunsmoke,2021-013
+2021-02-20,Antares 230+,ORCA-7,DARPA2,2.0,Communications,ORCA,2021-013
+2021-02-20,Antares 230+,GuaraniSat,AEP,1.0,Tech Demo,AEP,2021-013
+2021-02-20,Antares 230+,MMSAT-1,MAEU/HOKK,50.0,Observation,Hokkaido,2021-013
+2021-02-20,Antares 230+,STARS-EC,SHIZ,1.4,Tech Demo,STARS,2021-013
+2021-02-20,Antares 230+,Tsuru,KYUT,1.0,Tech Demo,Kyutech,2021-013
+2021-02-20,Antares 230+,TAU-Sat-1,TAU,4.0,Science,TAU,2021-013
+2021-02-20,Antares 230+,RSP-01,RSP,1.0,Tech Demo,Ryman,2021-013
+2021-02-20,Antares 230+,WARP-01,WARP,1.0,Tech Demo,Warp,2021-013
+2021-02-20,Antares 230+,Maya-2,DOST,1.0,Tech Demo,DOST Cube,2021-013
+2021-02-28,PSLV,SAI-1 NanoConnect-2,UNAM/SAIUS,2.0,Tech Demo,UNAMSAT,2021-015
+2021-02-28,PSLV,Sindhu Netra,PESU/DRDO,10.0,TECH/COM,PESU,2021-015
+2021-02-28,PSLV,SpaceBEE-87,SWARM,0.284,Communications,Swarm,2021-015
+2021-02-28,PSLV,SpaceBEE-86,SWARM,0.284,Communications,Swarm,2021-015
+2021-02-28,PSLV,SpaceBEE-85,SWARM,0.284,Communications,Swarm,2021-015
+2021-02-28,PSLV,SpaceBEE-84,SWARM,0.284,Communications,Swarm,2021-015
+2021-02-28,PSLV,SpaceBEE-83,SWARM,0.284,Communications,Swarm,2021-015
+2021-02-28,PSLV,SpaceBEE-82,SWARM,0.284,Communications,Swarm,2021-015
+2021-02-28,PSLV,SpaceBEE-78,SWARM,0.284,Communications,Swarm,2021-015
+2021-02-28,PSLV,SpaceBEE-76,SWARM,0.284,Communications,Swarm,2021-015
+2021-02-28,PSLV,SpaceBEE-80,SWARM,0.284,Communications,Swarm,2021-015
+2021-02-28,PSLV,SpaceBEE-77,SWARM,0.284,Communications,Swarm,2021-015
+2021-02-28,PSLV,UNITYsat-SriShakthiSat,SIET,0.25,Tech Demo,SSIET,2021-015
+2021-02-28,PSLV,UNITYsat-GHRCEsat,GHRCE,0.25,Tech Demo,GHRCE,2021-015
+2021-02-28,PSLV,UNITYsat-JITsat,JIT,0.25,Tech Demo,JIT,2021-015
+2021-02-28,PSLV,SDSAT,SKI,4.0,Tech Demo,SKI,2021-015
+2021-02-28,PSLV,SpaceBEE-81,SWARM,0.284,Communications,Swarm,2021-015
+2021-02-28,PSLV,SpaceBEE-79,SWARM,0.284,Communications,Swarm,2021-015
+2021-03-22,Electron,Myriota 7 (Tyvak 0152),MYRI,5.0,Communications,Myriota,2021-023
+2021-03-22,Electron,M2,UNSW/RAAF,10.0,Communications,RAAF,2021-023
+2021-03-22,Electron,M2-B,UNSW/RAAF,10.0,Communications,RAAF,2021-023
+2021-03-22,Electron,Veery-RL1,CAREWX,1.0,Communications,CWX,2021-023
+2021-03-22,Electron,Centauri 3 (Tyvak 0210),FLEET,10.0,Communications,Fleet,2021-023
+2021-03-22,Electron,Gunsmoke-J 3,SMDC/TSEPT,4.0,Communications,Gunsmoke,2021-023
+2021-03-22,Electron,Global-9,BSKG,55.0,Observation,BlackSky,2021-023
+2021-03-22,Electron,Photon-02,RLABLB,20.0,Tech Demo,Photon,2021-023
+2021-04-29,Vega,Lemur 2 Special K,SPIRE,4.6,COM/MET-RO,Spire,2021-034
+2021-04-29,Vega,NorSat-3,STATS,15.0,Communications,NORSAT,2021-034
+2021-04-29,Vega,TYVAK-182A (ELO Alpha),TYVI/EUTSA,10.0,Communications,ELO,2021-034
+2021-04-29,Vega,AII-Bravo,AUINS/NANAV,10.0,Observation,AII,2021-034
+2021-04-29,Vega,Lemur 2 Amanda-Svante,SPIRE,4.6,COM/MET-RO,Spire,2021-034
+2021-05-15,Falcon 9,Tyvak-0130,TYVAK/LLNL,11.0,TECH/AST,LLNL,2021-041
+2021-05-15,Falcon 9,Capella-6 (Whitney),CAPSP,112.0,IMG-R,Capella,2021-041
+2021-05-18,Atlas 5,TDO 4,SMC/USAFA,20.0,Tech Demo,SMC Cube,2021-042
+2021-05-18,Atlas 5,TDO 3,SMC/USAFA,20.0,Tech Demo,SMC Cube,2021-042
+2021-06-03,Falcon 9,MIR-SAT1,MRIC,1.0,Tech Demo,MRIC,2021-048
+2021-06-03,Falcon 9,SOAR,MANU,4.0,Tech Demo,ManU,2021-048
+2021-06-03,Falcon 9,RamSat,ROBMS,2.0,Observation,Ramsat,2021-048
+2021-06-03,Falcon 9,G-Satellite2,OTEAM/TOK,3.0,Other,Tokyo,2021-048
+2021-06-13,Pegasus,Odyssey,SMC,250.0,Observation,Safari,2021-051
+2021-06-15,Minotaur 1,USA 318,NROC,150.0,COM?,NRO TS,2021-052
+2021-06-15,Minotaur 1,USA 317,NROC,150.0,COM?,NRO TS,2021-052
+2021-06-15,Minotaur 1,USA 316,NROC,150.0,COM?,NRO TS,2021-052
+2021-06-30,Falcon 9,Ayan-21,OQT/OQTR,10.0,Tech Demo,OQT,2021-059
+2021-06-30,Falcon 9,QMR-KWT,ORBSKW,1.0,Tech Demo,OrbSp Kwt,2021-059
+2021-06-30,Falcon 9,KSF-1C,KLEOS,10.0,Observation,Kleos,2021-059
+2021-06-30,Falcon 9,Sherpa-LTE 1,SFLIN,203.0,Tech Demo,SFLIN,2021-059
+2021-06-30,Falcon 9,SpaceBEE-91,SWARM,0.284,Communications,Swarm,2021-059
+2021-06-30,Falcon 9,SpaceBEE-93,SWARM,0.284,Communications,Swarm,2021-059
+2021-06-30,Falcon 9,Lynk 06 (Shannon),LYNK,30.0,Communications,Lynk,2021-059
+2021-06-30,Falcon 9,SpaceBEE-94,SWARM,0.284,Communications,Swarm,2021-059
+2021-06-30,Falcon 9,SpaceBEE-96,SWARM,0.284,Communications,Swarm,2021-059
+2021-06-30,Falcon 9,SpaceBEE-88,SWARM,0.284,Communications,Swarm,2021-059
+2021-06-30,Falcon 9,SpaceBEE-89,SWARM,0.284,Communications,Swarm,2021-059
+2021-06-30,Falcon 9,SpaceBEE-92,SWARM,0.284,Communications,Swarm,2021-059
+2021-06-30,Falcon 9,Hawk-3B,HE360,31.0,Observation,H360,2021-059
+2021-06-30,Falcon 9,KSF1-A,KLEOS,10.0,Observation,Kleos,2021-059
+2021-06-30,Falcon 9,Lemur 2 Merima,SPIRE,4.6,COM/MET-RO,Spire,2021-059
+2021-06-30,Falcon 9,SpaceBEE-95,SWARM,0.284,Communications,Swarm,2021-059
+2021-06-30,Falcon 9,PAINANI-2,SEDENA,4.0,Tech Demo,Sedena,2021-059
+2021-06-30,Falcon 9,SpaceBEE-99,SWARM,0.284,Communications,Swarm,2021-059
+2021-06-30,Falcon 9,SpaceBEE-97,SWARM,0.284,Communications,Swarm,2021-059
+2021-06-30,Falcon 9,Sherpa-FX2,SFLIN,128.0,Tech Demo,SFLIN,2021-059
+2021-06-30,Falcon 9,Hawk-3C,HE360,31.0,Observation,H360,2021-059
+2021-06-30,Falcon 9,"FM148, LEMUR-2 AC-Cubed",SPIREL/SPIRE,4.6,COM/MET-RO,Spire,2021-059
+2021-06-30,Falcon 9,NEPTUNO-1,ELDEC,4.0,Observation,Eldec,2021-059
+2021-06-30,Falcon 9,W-Cube,REAKT,5.0,Tech Demo,Reaktor,2021-059
+2021-06-30,Falcon 9,SPARTAN,ENDUR,10.0,Tech Demo,Endurosat,2021-059
+2021-06-30,Falcon 9,NAPA-2,RTAF,10.0,Observation,RTAF,2021-059
+2021-06-30,Falcon 9,Ghalib,MARINT,2.0,Tech Demo,Marshall Intech,2021-059
+2021-06-30,Falcon 9,Astrocast-0202,ACAST,5.0,Communications,Astrocast,2021-059
+2021-06-30,Falcon 9,Astrocast-010x,ACAST,5.0,Communications,Astrocast,2021-059
+2021-06-30,Falcon 9,SpaceBEE-90,SWARM,0.284,Communications,Swarm,2021-059
+2021-06-30,Falcon 9,"FM150, LEMUR-2 CarlSantaMari",SPIREL/SPIRE,4.6,COM/MET-RO,Spire,2021-059
+2021-06-30,Falcon 9,Astro Dig. Demo 9 (Aurora),ADIG/ORBSK,23.0,Tech Demo,ADIG Tech,2021-059
+2021-06-30,Falcon 9,Astrocast-010x,ACAST,5.0,Communications,Astrocast,2021-059
+2021-06-30,Falcon 9,Astrocast-010x,ACAST,5.0,Communications,Astrocast,2021-059
+2021-06-30,Falcon 9,ARTHUR-1,ASPLB,20.0,Tech Demo,Aerospacelab,2021-059
+2021-06-30,Falcon 9,Astrocast-010x,ACAST,5.0,Communications,Astrocast,2021-059
+2021-06-30,Falcon 9,Astro Dig. Demo 8 (Tenzing),ADIG/OFAB,35.0,Tech Demo,ADIG Tech,2021-059
+2021-06-30,Falcon 9,KSF-1D,KLEOS,10.0,Observation,Kleos,2021-059
+2021-06-30,Falcon 9,SpaceBEE-98,SWARM,0.284,Communications,Swarm,2021-059
+2021-06-30,Falcon 9,Hawk-3A,HE360,31.0,Observation,H360,2021-059
+2021-06-30,Falcon 9,KSF-1B,KLEOS,10.0,Observation,Kleos,2021-059
+2021-06-30,Falcon 9,ION SVC-003 Dauntless David,DORBIT,150.0,Tech Demo,DORBIT,2021-059
+2021-06-30,Falcon 9,Faraday Phoenix,INSPM,10.0,Tech Demo,InSpace,2021-059
+2021-06-30,Falcon 9,SpaceBEE-105,SWARM,0.284,Communications,Swarm,2021-059
+2021-06-30,Falcon 9,SpaceBEE-108,SWARM,0.284,Communications,Swarm,2021-059
+2021-06-30,Falcon 9,SpaceBEE-107,SWARM,0.284,Communications,Swarm,2021-059
+2021-06-30,Falcon 9,SpaceBEE-106,SWARM,0.284,Communications,Swarm,2021-059
+2021-06-30,Falcon 9,EG-3 (Tyvak-0173),ECHOAU,11.0,Tech Demo,Sirion,2021-059
+2021-06-30,Falcon 9,SpaceBEE-NZ8,SWARNZ,0.284,Communications,Swarm,2021-059
+2021-06-30,Falcon 9,SpaceBEE-104,SWARM,0.284,Communications,Swarm,2021-059
+2021-06-30,Falcon 9,SpaceBEE-103,SWARM,0.284,Communications,Swarm,2021-059
+2021-06-30,Falcon 9,SpaceBEE-NZ9,SWARNZ,0.284,Communications,Swarm,2021-059
+2021-06-30,Falcon 9,SpaceBEE-102,SWARM,0.284,Communications,Swarm,2021-059
+2021-06-30,Falcon 9,"FM139, LEMUR-2 Jackson",SPIREL/SPIRE,4.6,COM/MET-RO,Spire,2021-059
+2021-06-30,Falcon 9,SpaceBEE-101,SWARM,0.284,Communications,Swarm,2021-059
+2021-06-30,Falcon 9,SpaceBEE-100,SWARM,0.284,Communications,Swarm,2021-059
+2021-06-30,Falcon 9,SpaceBEE-NZ10,SWARNZ,0.284,Communications,Swarm,2021-059
+2021-06-30,LauncherOne,Gunsmoke-J 4,SMDC/TSEPT,4.0,Communications,Gunsmoke,2021-058
+2021-06-30,LauncherOne,HALO-Net Free Flyer,SPAWAR,4.0,Tech Demo,Spawar,2021-058
+2021-06-30,LauncherOne,BRIK-II,RNAF,10.0,Tech Demo,BRIK,2021-058
+2021-06-30,LauncherOne,CNCE 1,MDA,4.0,Communications,STP2,2021-058
+2021-06-30,LauncherOne,CNCE 3,MDA,4.0,Communications,STP2,2021-058
+2021-06-30,LauncherOne,STORK 4,SATRV,5.0,Observation,STORK,2021-058
+2021-06-30,LauncherOne,STORK 5,SATRV,5.0,Observation,STORK,2021-058
+2021-06-30,Falcon 9,SpaceBEE-109,SWARM,0.284,Communications,Swarm,2021-059
+2021-06-30,Falcon 9,Centauri 4 (Tyvak-0211),FLEET,10.0,Communications,Fleet,2021-059
+2021-06-30,Falcon 9,SpaceBEE-NZ7,SWARNZ,0.284,Communications,Swarm,2021-059
+2021-06-30,Falcon 9,TUBIN,TUB,17.0,Tech Demo,TUB X,2021-059
+2021-06-30,Falcon 9,"FM140, LEMUR-2 AnnaBanana",SPIREL/SPIRE,4.6,COM/MET-RO,Spire,2021-059
+2021-06-30,Falcon 9,D2/Atlacom-1,NANAV,10.0,Tech Demo,Nanoav,2021-059
+2021-06-30,Falcon 9,SpaceBEE-110,SWARM,0.284,Communications,Swarm,2021-059
+2021-06-30,Falcon 9,Nusat-20,URUGUS,44.0,Observation,Satelog,2021-059
+2021-06-30,Falcon 9,Nusat-21,URUGUS,44.0,Observation,Satelog,2021-059
+2021-06-30,Falcon 9,Nusat-22,URUGUS,44.0,Observation,Satelog,2021-059
+2021-06-30,Falcon 9,ICEYE-X11,ICEYE,80.0,IMG-R,ICEYE,2021-059
+2021-06-30,Falcon 9,ICEYE-X15,ICEYE,80.0,IMG-R,ICEYE,2021-059
+2021-06-30,Falcon 9,ICEYE-X13,ICEYE,80.0,IMG-R,ICEYE,2021-059
+2021-06-30,Falcon 9,YAM 3,LOFT,80.0,Tech Demo,LOFT,2021-059
+2021-06-30,Falcon 9,ICEYE-X12,ICEYE,80.0,IMG-R,ICEYE,2021-059
+2021-06-30,Falcon 9,"FM143, LEMUR-2 John-Treires",SPIREL/SPIRE,4.6,COM/MET-RO,Spire,2021-059
+2021-06-30,Falcon 9,YAM 2,LOFT,80.0,Tech Demo,LOFT,2021-059
+2021-06-30,Falcon 9,GNOMES 2,PLANQ,30.0,Communications,Planetiq,2021-059
+2021-06-30,Falcon 9,TROPICS Pathfinder,MITLL/GSFC,4.0,EOSCI,MIT Cube,2021-059
+2021-06-30,Falcon 9,PACE-1,ARC,10.0,Tech Demo,Ames,2021-059
+2021-06-30,Falcon 9,Mandrake 2 Baker,SDA/DARPA2,23.0,Communications,Mandrake,2021-059
+2021-06-30,Falcon 9,Mandrake 2 Able,SDA/DARPA2,23.0,Communications,Mandrake,2021-059
+2021-06-30,Falcon 9,Umbra-SAR 2001,UMBRA,65.0,IMG-R,Umbra,2021-059
+2021-06-30,Falcon 9,Nusat-19,URUGUS,44.0,Observation,Satelog,2021-059
+2021-06-30,Falcon 9,Capella-5 (Whitney),CAPSP,112.0,IMG-R,Capella,2021-059
+2021-06-30,Falcon 9,SpaceBEE-111,SWARM,0.284,Communications,Swarm,2021-059
+2021-07-29,Electron,Monolith,STP,20.0,Tech Demo,STP2,2021-068
+2021-08-17,Vega,LEDSAT,ROSAP,1.0,Tech Demo,ROSAP,2021-073
+2021-08-17,Vega,RadCube,CERHU/C3S,4.0,Science,CERHU,2021-073
+2021-08-17,Vega,BRO-4,UNSEEN,10.0,Observation,Unseen,2021-073
+2021-08-17,Vega,Sunstorm,REAKT/ESA,2.0,Observation,Reaktor,2021-073
+2021-08-29,Falcon 9,Cuava-1,USYD/UNSW,4.0,Tech Demo,Sydney,2021-078
+2021-08-29,Falcon 9,SPACE HAUC,UMAL,4.0,Tech Demo,UMAL,2021-078
+2021-08-29,Falcon 9,PR-CuNaR2,UIPRB,2.54,Tech Demo,UIPR,2021-078
+2021-08-29,Falcon 9,Binar-1,CURTIN,1.0,Tech Demo,Curtin,2021-078
+2021-08-29,Falcon 9,Maya-3,DOST/UPD,1.0,Tech Demo,DOST Cube,2021-078
+2021-08-29,Falcon 9,Maya-4,DOST/UPD,1.0,Tech Demo,DOST Cube,2021-078
+2021-08-29,Falcon 9,CAPSat,UIUC,4.0,Tech Demo,UIUC,2021-078
+2021-09-27,Atlas 5,CS2,CESIUM,10.0,Tech Demo,Cesium,2021-088
+2021-09-27,Atlas 5,CUTE-LASP,UCO,10.0,Observation,UCO,2021-088
+2021-09-27,Atlas 5,CS1,CESIUM,10.0,Tech Demo,Cesium,2021-088
+2021-09-27,Atlas 5,CuPID,BU,10.0,Observation,BU,2021-088
+2021-11-09,Epsilon,KOSEN-1,KOCHI,3.0,Observation,KOSEN,2021-102
+2021-11-09,Epsilon,DRUMS Target 2,KAWA,1.0,Tech Demo,Kawasaki,2021-102
+2021-11-09,Epsilon,ARICA,AOGD,1.0,Observation,Aoyama Gakuin,2021-102
+2021-11-09,Epsilon,DRUMS Target 1,KAWA,1.0,Tech Demo,Kawasaki,2021-102
+2021-11-09,Epsilon,DRUMS,KAWA,46.0,Tech Demo,Kawasaki,2021-102
+2021-11-09,Epsilon,Z-Sat,MHIME,46.0,Observation,MHI,2021-102
+2021-11-09,Epsilon,NanoDragon,VNSC/MEISEI,4.0,COM/TECH,VNSC,2021-102
+2021-11-09,Epsilon,RAISE-2,JAXA,110.0,Tech Demo,JAXA Tech,2021-102
+2021-11-09,Epsilon,TeikyoSat-4,TEIK,52.0,Tech Demo,Teikyo,2021-102
+2021-11-09,Epsilon,ASTERISC,CHIBA,4.0,Science,Chiba,2021-102
+2021-11-09,Epsilon,HIBARI,TIT/TOHO,55.0,Tech Demo,TIT,2021-102
+2021-11-18,Electron,Global-14,BSKG,55.0,Observation,BlackSky,2021-106
+2021-11-18,Electron,Global-15,BSKG,55.0,Observation,BlackSky,2021-106
+2021-11-20,Astra Rocket 3,Astra Satellite 00001,STP,1.0,Tech Demo,Astra Rocket,2021-108
+2021-12-02,Falcon 9,Global-12,BSKG,55.0,Observation,BlackSky,2021-115
+2021-12-02,Falcon 9,Global-13,BSKG,55.0,Observation,BlackSky,2021-115
+2021-12-07,Atlas 5,ASCENT,AFRL,25.0,Tech Demo,AFRL Cube,2021-118
+2021-12-09,Electron,Global-17,BSKG,55.0,Observation,BlackSky,2021-120
+2021-12-09,Electron,Global-16,BSKG,55.0,Observation,BlackSky,2021-120
+2021-12-21,Falcon 9,GASPACS,USU,1.0,Tech Demo,USU,2021-127
+2021-12-21,Falcon 9,FEES,GPAP,0.3,Communications,GPAP,2021-127
+2021-12-21,Falcon 9,PATCOOL,KSC/UFL,4.0,Tech Demo,KSC Cube,2021-127
+2021-12-21,Falcon 9,DAILI,AERO,10.0,EOSCI,Aerocube,2021-127
+2021-12-21,Falcon 9,Light-1,NYUAD,4.0,Science,NYUAD,2021-127
+2021-12-21,Falcon 9,GT-1,GIT,1.0,Tech Demo,GA Tech,2021-127
+2021-12-21,Falcon 9,TARGIT,GIT,4.5,Tech Demo,GA Tech,2021-127
+2022-01-13,Falcon 9,BRO-5,UNSEEN,10.0,Observation,Unseen,2022-002
+2022-01-13,Falcon 9,Tevel-2,HSCIL,1.0,Communications,Herzliya,2022-002
+2022-01-13,Falcon 9,Gossamer Piccolomini,LUNASD,1.0,IMG-R,Lunasonde,2022-002
+2022-01-13,Falcon 9,DEWASAT-1,DEWA,4.0,Communications,DEWA,2022-002
+2022-01-13,Falcon 9,Flock 4X 14,PLAN,5.7,Observation,Flock-4,2022-002
+2022-01-13,Falcon 9,Flock 4X 7,PLAN,5.7,Observation,Flock-4,2022-002
+2022-01-13,Falcon 9,Flock 4X 4,PLAN,5.7,Observation,Flock-4,2022-002
+2022-01-13,Falcon 9,Tevel-4,HSCIL,1.0,Communications,Herzliya,2022-002
+2022-01-13,Falcon 9,Tevel-7,HSCIL,1.0,Communications,Herzliya,2022-002
+2022-01-13,Falcon 9,Flock 4X 9,PLAN,5.7,Observation,Flock-4,2022-002
+2022-01-13,Falcon 9,MDASAT-1B,CPUT,3.0,Communications,CPUT,2022-002
+2022-01-13,Falcon 9,"FM153, LEMUR-2 Djirang",MYRI/SPIREL,10.0,Communications,Myriota,2022-002
+2022-01-13,Falcon 9,KEPLER-16 (ASTRAEUS),KEPLER,15.0,Communications,Kepler,2022-002
+2022-01-13,Falcon 9,Flock 4X 24,PLAN,5.7,Observation,Flock-4,2022-002
+2022-01-13,Falcon 9,Flock 4X 33,PLAN,5.7,Observation,Flock-4,2022-002
+2022-01-13,Falcon 9,"FM152, LEMUR-2 Miriwari",MYRI/SPIREL,10.0,Communications,Myriota,2022-002
+2022-01-13,Falcon 9,HYPSO-1,NTNU,10.0,Observation,NSC,2022-002
+2022-01-13,Falcon 9,Flock 4X 40,PLAN,5.7,Observation,Flock-4,2022-002
+2022-01-13,Falcon 9,KEPLER-19 (TBD),KEPLER,15.0,Communications,Kepler,2022-002
+2022-01-13,Falcon 9,Iceye X14,ICEUS,80.0,IMG-R,ICEYE,2022-002
+2022-01-13,Falcon 9,Flock 4X 11,PLAN,5.7,Observation,Flock-4,2022-002
+2022-01-13,Falcon 9,Flock 4X 35,PLAN,5.7,Observation,Flock-4,2022-002
+2022-01-13,Falcon 9,KEPLER-17 (KARINA),KEPLER,15.0,Communications,Kepler,2022-002
+2022-01-13,Falcon 9,Capella-8-Whitney,CAPSP,112.0,IMG-R,Capella,2022-002
+2022-01-13,Falcon 9,EASAT-2,AMEA,0.375,Communications,AMEA,2022-002
+2022-01-13,Falcon 9,MDQube-SAT1,INNO,0.5,Communications,Innova,2022-002
+2022-01-13,LauncherOne,"FM151, LEMUR-2 KRYWE",OEWF/SPIREL,6.0,Science,OEWF,2022-003
+2022-01-13,LauncherOne,SteamSat-2,STEAM/SATRV,1.37,Tech Demo,STEAM,2022-003
+2022-01-13,LauncherOne,STORK 3,SATRV,5.0,Observation,STORK,2022-003
+2022-01-13,LauncherOne,Gearrs-3,NSL/AFRL,4.0,Communications,NSL,2022-003
+2022-01-13,LauncherOne,PAN B,CORN/LARCN,4.0,Tech Demo,Cornell,2022-003
+2022-01-13,LauncherOne,TECHEDSAT 13,ARC/SJSU,4.0,Tech Demo,TES,2022-003
+2022-01-13,LauncherOne,PAN A,CORN/LARCN,4.0,Tech Demo,Cornell,2022-003
+2022-01-13,Falcon 9,SW1FT,SATRV,3.0,Observation,STORK,2022-002
+2022-01-13,Falcon 9,STORK 2,SATRV,5.0,Observation,STORK,2022-002
+2022-01-13,Falcon 9,STORK 1,SATRV,5.0,Observation,STORK,2022-002
+2022-01-13,Falcon 9,Capella-7-Whitney,CAPSP,112.0,IMG-R,Capella,2022-002
+2022-01-13,Falcon 9,LabSat,SATRV,5.0,Tech Demo,STORK,2022-002
+2022-01-13,Falcon 9,DODONA,USCLA/LMSSD,5.0,Tech Demo,USC,2022-002
+2022-01-13,Falcon 9,Unicorn-2TA1,CMU,0.2,Tech Demo,CMU,2022-002
+2022-01-13,Falcon 9,Challenger,INTUDX,0.75,Communications,Intuidex,2022-002
+2022-01-13,Falcon 9,Hades,AMEA,0.375,Observation,AMEA,2022-002
+2022-01-13,Falcon 9,USA 323,NROC,300.0,SIG?,NRO Star P,2022-002
+2022-01-13,Falcon 9,USA 322,NROC,300.0,SIG?,NRO Star P,2022-002
+2022-01-13,Falcon 9,USA 321,NROC,300.0,SIG?,NRO Star P,2022-002
+2022-01-13,Falcon 9,NuX-1,NUSP,4.0,Communications,NuSpace,2022-002
+2022-01-13,Falcon 9,USA 320,NROC,300.0,SIG?,NRO Star P,2022-002
+2022-01-13,Falcon 9,Delfi-PQ,DELFT,0.6,Communications,Delft,2022-002
+2022-01-13,Falcon 9,VZLUSAT-2,VZLU,5.0,EOSCI/AST,VZLU,2022-002
+2022-01-13,Falcon 9,Flock 4X 19,PLAN,5.7,Observation,Flock-4,2022-002
+2022-01-13,Falcon 9,ETV-1,SEN,20.0,Observation,SenETV,2022-002
+2022-01-13,Falcon 9,IRIS,NCKU,3.0,Communications,NCKU,2022-002
+2022-01-13,Falcon 9,Flock 4X 29,PLAN,5.7,Observation,Flock-4,2022-002
+2022-01-13,Falcon 9,Flock 4X 15,PLAN,5.7,Observation,Flock-4,2022-002
+2022-01-13,Falcon 9,Flock 4X 37,PLAN,5.7,Observation,Flock-4,2022-002
+2022-01-13,Falcon 9,ICEYE-X16,ICEYE,80.0,IMG-R,ICEYE,2022-002
+2022-01-13,Falcon 9,Flock 4X 18,PLAN,5.7,Observation,Flock-4,2022-002
+2022-01-13,Falcon 9,Flock 4X 3,PLAN,5.7,Observation,Flock-4,2022-002
+2022-01-13,Falcon 9,Flock 4X 41,PLAN,5.7,Observation,Flock-4,2022-002
+2022-01-13,Falcon 9,Flock 4X 5,PLAN,5.7,Observation,Flock-4,2022-002
+2022-01-13,Falcon 9,Flock 4X 22,PLAN,5.7,Observation,Flock-4,2022-002
+2022-01-13,Falcon 9,KEPLER-18 (BLIP-A),KEPLER,15.0,Communications,Kepler,2022-002
+2022-01-13,Falcon 9,FossaSat-2E5,FOSSA,0.5,Communications,Fossa,2022-002
+2022-01-13,Falcon 9,Flock 4X 30,PLAN,5.7,Observation,Flock-4,2022-002
+2022-01-13,Falcon 9,Tevel-6,HSCIL,1.0,Communications,Herzliya,2022-002
+2022-01-13,Falcon 9,Flock 4X 27,PLAN,5.7,Observation,Flock-4,2022-002
+2022-01-13,Falcon 9,Tevel-5,HSCIL,1.0,Communications,Herzliya,2022-002
+2022-01-13,Falcon 9,Flock 4X 2,PLAN,5.7,Observation,Flock-4,2022-002
+2022-01-13,Falcon 9,MDASAT-1A,CPUT,3.0,Communications,CPUT,2022-002
+2022-01-13,Falcon 9,Flock 4X 44,PLAN,5.7,Observation,Flock-4,2022-002
+2022-01-13,Falcon 9,ION SVC-004 Elysian Eleonora,DORBIT,150.0,Tech Demo,DORBIT,2022-002
+2022-01-13,Falcon 9,FossaSat-2E6,FOSSA,0.5,Communications,Fossa,2022-002
+2022-01-13,Falcon 9,Pilot-1,CSHARK,0.5,Communications,CShark,2022-002
+2022-01-13,Falcon 9,Tevel-8,HSCIL,1.0,Communications,Herzliya,2022-002
+2022-01-13,Falcon 9,Tevel-3,HSCIL,1.0,Communications,Herzliya,2022-002
+2022-01-13,Falcon 9,FossaSat-2E4,FOSSA,0.5,Tech Demo,Fossa,2022-002
+2022-01-13,Falcon 9,Umbra-2,UMBRA,65.0,IMG-R,Umbra,2022-002
+2022-01-13,Falcon 9,Flock 4X 28,PLAN,5.7,Observation,Flock-4,2022-002
+2022-01-13,Falcon 9,WiseSat-1,WISEK,0.5,Communications,WiseKey,2022-002
+2022-01-13,Falcon 9,WiseSat-2,WISEK,0.5,Communications,WiseKey,2022-002
+2022-01-13,Falcon 9,Flock 4X 20,PLAN,5.7,Observation,Flock-4,2022-002
+2022-01-13,Falcon 9,Tevel-1,HSCIL,1.0,Communications,Herzliya,2022-002
+2022-01-13,Falcon 9,Flock 4X 8,PLAN,5.7,Observation,Flock-4,2022-002
+2022-01-13,Falcon 9,Flock 4X 12,PLAN,5.7,Observation,Flock-4,2022-002
+2022-01-13,Falcon 9,SATTLA-2B,ARIU,0.5,Tech Demo,AriU,2022-002
+2022-01-13,Falcon 9,Flock 4X 31,PLAN,5.7,Observation,Flock-4,2022-002
+2022-01-13,Falcon 9,Flock 4X 34,PLAN,5.7,Observation,Flock-4,2022-002
+2022-01-13,Falcon 9,Flock 4X 21,PLAN,5.7,Observation,Flock-4,2022-002
+2022-01-13,Falcon 9,Flock 4X 36,PLAN,5.7,Observation,Flock-4,2022-002
+2022-01-13,Falcon 9,MDASAT-1C,CPUT,3.0,Communications,CPUT,2022-002
+2022-01-13,Falcon 9,Flock 4X 10,PLAN,5.7,Observation,Flock-4,2022-002
+2022-01-13,Falcon 9,"FM154, LEMUR-2 Rohovithsa",SPIREL/ORORA,10.0,Observation,Orora,2022-002
+2022-01-13,Falcon 9,Flock 4X 6,PLAN,5.7,Observation,Flock-4,2022-002
+2022-01-13,Falcon 9,Flock 4X 23,PLAN,5.7,Observation,Flock-4,2022-002
+2022-01-13,Falcon 9,SATTLA-2A,ARIU,0.5,Tech Demo,AriU,2022-002
+2022-01-13,Falcon 9,Unicorn-2D,ALBAD,0.75,Observation,Alba,2022-002
+2022-01-13,Falcon 9,SanoSat-1,ORISP,0.2,Tech Demo,Orion Space,2022-002
+2022-01-13,Falcon 9,Sich-2-1,DKAU,170.0,Observation,Sich,2022-002
+2022-01-13,Falcon 9,Flock 4X 17,PLAN,5.7,Observation,Flock-4,2022-002
+2022-01-13,Falcon 9,Flock 4X 13,PLAN,5.7,Observation,Flock-4,2022-002
+2022-01-13,Falcon 9,Flock 4X 1,PLAN,5.7,Observation,Flock-4,2022-002
+2022-01-13,Falcon 9,Flock 4X 42,PLAN,5.7,Observation,Flock-4,2022-002
+2022-01-13,Falcon 9,Flock 4X 39,PLAN,5.7,Observation,Flock-4,2022-002
+2022-01-13,Falcon 9,Pion BR-1,PION,0.2,Tech Demo,Pion Labs,2022-002
+2022-01-13,Falcon 9,"FM149, LEMUR-2 Ramonamae",SPIREL/SPIRE,4.6,COM/MET-RO,Spire,2022-002
+2022-01-13,Falcon 9,"FM141, LEMUR-2 King-Julien",SPIREL/SPIRE,4.6,COM/MET-RO,Spire,2022-002
+2022-01-13,Falcon 9,Flock 4X 16,PLAN,5.7,Observation,Flock-4,2022-002
+2022-01-13,Falcon 9,Flock 4X 25,PLAN,5.7,Observation,Flock-4,2022-002
+2022-01-13,Falcon 9,Flock 4X 32,PLAN,5.7,Observation,Flock-4,2022-002
+2022-01-13,Falcon 9,Grizu-263A,ZBEU,0.2,Tech Demo,ZBEU,2022-002
+2022-01-13,Falcon 9,Flock 4X 26,PLAN,5.7,Observation,Flock-4,2022-002
+2022-01-13,Falcon 9,Flock 4X 43,PLAN,5.7,Observation,Flock-4,2022-002
+2022-01-13,Falcon 9,Flock 4X 38,PLAN,5.7,Observation,Flock-4,2022-002
+2022-02-14,PSLV,INSPIREsat-1,IISTT,8.1,Science,IIST,2022-013
+2022-02-14,PSLV,INS-2TD,ISRO,17.5,Tech Demo,INS,2022-013
+2022-02-19,Antares 230+,KITSUNE,KYUT,10.0,Tech Demo,Kyutech,2022-015
+2022-02-19,Antares 230+,NACHOS-1,LANL,6.0,EOSCI,LANL Sci,2022-015
+2022-02-19,Antares 230+,IHI-SAT,IHIC,5.0,Communications,IHI Cube,2022-015
+2022-02-28,Electron,StriX-Beta,SYNSP,150.0,IMG-R,Synspective,2022-020
+2022-03-15,Astra Rocket 3,SpaceBEE-116,SWARMX,0.284,Communications,Swarm,2022-026
+2022-03-15,Astra Rocket 3,SpaceBEENZ-12,SWARNZ,0.284,Communications,Swarm,2022-026
+2022-03-15,Astra Rocket 3,SpaceBEE-123,SWARMX,0.284,Communications,Swarm,2022-026
+2022-03-15,Astra Rocket 3,SpaceBEENZ-13,SWARNZ,0.284,Communications,Swarm,2022-026
+2022-03-15,Astra Rocket 3,SpaceBEE-112,SWARMX,0.284,Communications,Swarm,2022-026
+2022-03-15,Astra Rocket 3,SpaceBEE-113,SWARMX,0.284,Communications,Swarm,2022-026
+2022-03-15,Astra Rocket 3,SpaceBEE-124,SWARMX,0.284,Communications,Swarm,2022-026
+2022-03-15,Astra Rocket 3,SpaceBEE-117,SWARMX,0.284,Communications,Swarm,2022-026
+2022-03-15,Astra Rocket 3,SpaceBEE-122,SWARMX,0.284,Communications,Swarm,2022-026
+2022-03-15,Astra Rocket 3,SpaceBEE-127,SWARMX,0.284,Communications,Swarm,2022-026
+2022-03-15,Astra Rocket 3,SpaceBEE-125,SWARMX,0.284,Communications,Swarm,2022-026
+2022-03-15,Astra Rocket 3,S4 Crossover/Astra,NSL,10.0,Communications,NSL,2022-026
+2022-03-15,Astra Rocket 3,SpaceBEE-121,SWARMX,0.284,Communications,Swarm,2022-026
+2022-03-15,Astra Rocket 3,SpaceBEE-126,SWARMX,0.284,Communications,Swarm,2022-026
+2022-03-15,Astra Rocket 3,SpaceBEE-118,SWARMX,0.284,Communications,Swarm,2022-026
+2022-03-15,Astra Rocket 3,SpaceBEE-114,SWARMX,0.284,Communications,Swarm,2022-026
+2022-03-15,Astra Rocket 3,SpaceBEE-119,SWARMX,0.284,Communications,Swarm,2022-026
+2022-03-15,Astra Rocket 3,SpaceBEE-115,SWARMX,0.284,Communications,Swarm,2022-026
+2022-03-15,Astra Rocket 3,ORESAT0,PSAS,1.0,Tech Demo,PSAS,2022-026
+2022-03-15,Astra Rocket 3,SpaceBEENZ-14,SWARNZ,0.284,Communications,Swarm,2022-026
+2022-03-15,Astra Rocket 3,SpaceBEENZ-11,SWARNZ,0.284,Communications,Swarm,2022-026
+2022-03-15,Astra Rocket 3,SpaceBEE-120,SWARMX,0.284,Communications,Swarm,2022-026
+2022-04-01,Falcon 9,SpaceBEE-137,SWARMX,0.284,Communications,Swarm,2022-033
+2022-04-01,Falcon 9,SpaceBEE-131,SWARMX,0.284,Communications,Swarm,2022-033
+2022-04-01,Falcon 9,SpaceBEE-128,SWARMX,0.284,Communications,Swarm,2022-033
+2022-04-01,Falcon 9,SpaceBEE-133,SWARMX,0.284,Communications,Swarm,2022-033
+2022-04-01,Falcon 9,NuSat-26,URUGUS,41.5,Observation,Satelog,2022-033
+2022-04-01,Falcon 9,SpaceBEE-132,SWARMX,0.284,Communications,Swarm,2022-033
+2022-04-01,Falcon 9,SpaceBEE-135,SWARMX,0.284,Communications,Swarm,2022-033
+2022-04-01,Falcon 9,KSF2-B,KLEOS,10.0,Observation,Kleos,2022-033
+2022-04-01,Falcon 9,KSF2-C,KLEOS,10.0,Observation,Kleos,2022-033
+2022-04-01,Falcon 9,KSF2-D,KLEOS,10.0,Observation,Kleos,2022-033
+2022-04-01,Falcon 9,SUCHAI-3,UCH,4.0,Tech Demo,UChile,2022-033
+2022-04-01,Falcon 9,SUCHAI-2,UCH,4.0,Tech Demo,UChile,2022-033
+2022-04-01,Falcon 9,KSF2-A,KLEOS,10.0,Observation,Kleos,2022-033
+2022-04-01,Falcon 9,SpaceBEE-134,SWARMX,0.284,Communications,Swarm,2022-033
+2022-04-01,Falcon 9,PlantSat,UCH,4.0,Tech Demo,UChile,2022-033
+2022-04-01,Falcon 9,SpaceBEE-129,SWARMX,0.284,Communications,Swarm,2022-033
+2022-04-01,Falcon 9,SpaceBEE-136,SWARMX,0.284,Communications,Swarm,2022-033
+2022-04-01,Falcon 9,SpaceBEE-139,SWARMX,0.284,Communications,Swarm,2022-033
+2022-04-01,Falcon 9,ARCSAT,NDRE,10.0,Communications,NORSAT,2022-033
+2022-04-01,Falcon 9,NuSat-24,URUGUS,41.5,Observation,Satelog,2022-033
+2022-04-01,Falcon 9,Lynk Tower 1,LYNK,80.0,Communications,Lynk,2022-033
+2022-04-01,Falcon 9,ION SVC-005 Almighty Alexius,DORBIT,150.0,Tech Demo,DORBIT,2022-033
+2022-04-01,Falcon 9,Omni-L1,OMNISP,20.0,Communications,Omnispace LEO,2022-033
+2022-04-01,Falcon 9,Hawk-4B,HE360,31.0,Observation,H360,2022-033
+2022-04-01,Falcon 9,SpaceBEE-138,SWARMX,0.284,Communications,Swarm,2022-033
+2022-04-01,Falcon 9,Hawk-4A,HE360,31.0,Observation,H360,2022-033
+2022-04-01,Falcon 9,NuSat 23,URUGUS,41.5,Observation,Satelog,2022-033
+2022-04-01,Falcon 9,MP42,NANAV/OQT,40.0,Communications,Nanoav,2022-033
+2022-04-01,Falcon 9,Hawk-4C,HE360,31.0,Observation,H360,2022-033
+2022-04-01,Falcon 9,NuSat-25,URUGUS,41.5,Observation,Satelog,2022-033
+2022-04-01,Falcon 9,NuSat-27,URUGUS,41.5,Observation,Satelog,2022-033
+2022-04-01,Falcon 9,Shakuntala,PIXX,15.0,Observation,Pixxel,2022-033
+2022-04-01,Falcon 9,BRO-7,UNSEEN,10.0,Observation,Unseen,2022-033
+2022-04-01,Falcon 9,BDSAT,CEITEC/BDSEN,1.0,Tech Demo,CEITEC,2022-033
+2022-04-01,Falcon 9,SpaceBEE-130,SWARMX,0.284,Communications,Swarm,2022-033
+2022-04-01,Falcon 9,Gnomes-3,PLANQ,30.0,Communications,Planetiq,2022-033
+2022-04-01,Falcon 9,Alfacrux,UNB,1.0,Tech Demo,Brasilia,2022-033
+2022-04-02,Electron,Global-20,BSKG,55.0,Observation,BlackSky,2022-034
+2022-04-02,Electron,Global-18,BSKG,55.0,Observation,BlackSky,2022-034
+2022-05-02,Electron,AuroraSat-1,AURPT,2.0,Tech Demo,AuroraPT,2022-047
+2022-05-02,Electron,Copia,ASTRIX,1.0,Tech Demo,ASTRIX,2022-047
+2022-05-02,Electron,E-Space 3,ESPACE,10.0,Communications,E-Space,2022-047
+2022-05-02,Electron,E-Space 2,ESPACE,10.0,Communications,E-Space,2022-047
+2022-05-02,Electron,E-Space 1,ESPACE,10.0,Communications,E-Space,2022-047
+2022-05-02,Electron,BRO-6,UNSEEN,10.0,Observation,Unseen,2022-047
+2022-05-02,Electron,Unicorn-2,ALBA,0.75,Observation,Alba,2022-047
+2022-05-02,Electron,TRSI-2,TRSI/ACMEO,0.25,Tech Demo,MyRadar,2022-047
+2022-05-02,Electron,MyRadar 1,ACMEO,0.25,Observation,MyRadar,2022-047
+2022-05-02,Electron,TRSI-3,TRSI/ACMEO,0.25,Tech Demo,MyRadar,2022-047
+2022-05-02,Electron,SpaceBEE-154,SWARMX,0.284,Communications,Swarm,2022-047
+2022-05-02,Electron,SpaceBEE-155,SWARMX,0.284,Communications,Swarm,2022-047
+2022-05-02,Electron,SpaceBEE-152,SWARMX,0.284,Communications,Swarm,2022-047
+2022-05-02,Electron,SpaceBEE-151,SWARMX,0.284,Communications,Swarm,2022-047
+2022-05-02,Electron,SpaceBEE-147,SWARMX,0.284,Communications,Swarm,2022-047
+2022-05-02,Electron,SpaceBEE-145,SWARMX,0.284,Communications,Swarm,2022-047
+2022-05-02,Electron,SpaceBEE-146,SWARMX,0.284,Communications,Swarm,2022-047
+2022-05-02,Electron,SpaceBEE-143,SWARMX,0.284,Communications,Swarm,2022-047
+2022-05-02,Electron,SpaceBEENZ-15,SWARNZ,0.284,Communications,Swarm,2022-047
+2022-05-02,Electron,SpaceBEENZ-16,SWARNZ,0.284,Communications,Swarm,2022-047
+2022-05-02,Electron,SpaceBEENZ-18,SWARNZ,0.284,Communications,Swarm,2022-047
+2022-05-02,Electron,SpaceBEE-140,SWARMX,0.284,Communications,Swarm,2022-047
+2022-05-02,Electron,SpaceBEE-141,SWARMX,0.284,Communications,Swarm,2022-047
+2022-05-02,Electron,SpaceBEE-142,SWARMX,0.284,Communications,Swarm,2022-047
+2022-05-02,Electron,SpaceBEENZ-17,SWARNZ,0.284,Communications,Swarm,2022-047
+2022-05-02,Electron,SpaceBEENZ-22,SWARNZ,0.284,Communications,Swarm,2022-047
+2022-05-02,Electron,SpaceBEENZ-19,SWARNZ,0.284,Communications,Swarm,2022-047
+2022-05-02,Electron,SpaceBEENZ-21,SWARNZ,0.284,Communications,Swarm,2022-047
+2022-05-02,Electron,SpaceBEE-148,SWARMX,0.284,Communications,Swarm,2022-047
+2022-05-02,Electron,SpaceBEE-149,SWARMX,0.284,Communications,Swarm,2022-047
+2022-05-02,Electron,SpaceBEE-153,SWARMX,0.284,Communications,Swarm,2022-047
+2022-05-02,Electron,SpaceBEE-144,SWARMX,0.284,Communications,Swarm,2022-047
+2022-05-02,Electron,SpaceBEENZ-20,SWARNZ,0.284,Communications,Swarm,2022-047
+2022-05-02,Electron,SpaceBEE-150,SWARMX,0.284,Communications,Swarm,2022-047
+2022-05-25,Falcon 9,"FM156, LEMUR-2 Mimi1307",SPIREL,4.6,COM/MET-RO,Spire,2022-057
+2022-05-25,Falcon 9,CNCE5,MDA,4.0,Communications,STP2,2022-057
+2022-05-25,Falcon 9,CNCE4,MDA,4.0,Communications,STP2,2022-057
+2022-05-25,Falcon 9,Celestis 21-Varisat-1C,VARI,11.0,Communications,Varisat,2022-057
+2022-05-25,Falcon 9,Sherpa-Ac1,SFLIN,176.0,Tech Demo,SFLIN,2022-057
+2022-05-25,Falcon 9,Nusat-29,URUGUS,41.5,Observation,Satelog,2022-057
+2022-05-25,Falcon 9,Iceye-X17,ICEUS,80.0,IMG-R,ICEYE,2022-057
+2022-05-25,Falcon 9,PLATFORM-1,ENDUR,10.0,Tech Demo,Endurosat,2022-057
+2022-05-25,Falcon 9,Armsat1,GEOAM,15.5,Observation,Satlantis,2022-057
+2022-05-25,Falcon 9,Omni-L2,OMNISP,20.0,Communications,Omnispace LEO,2022-057
+2022-05-25,Falcon 9,CPOD FLT2,ARC/TERRAN,4.0,Tech Demo,Ames,2022-057
+2022-05-25,Falcon 9,FOSSASat-2E12,FOSSA,0.5,Communications,Fossa,2022-057
+2022-05-25,Falcon 9,SBUDNIC,BROWN/CNR,4.0,Tech Demo,Brown,2022-057
+2022-05-25,Falcon 9,Guardian-1,AISTS,15.0,Communications,Guardian,2022-057
+2022-05-25,Falcon 9,FOSSASat-2E13,FOSSA,0.5,Communications,Fossa,2022-057
+2022-05-25,Falcon 9,ION SCV-006 Thrilling Thomas,DORBIT,150.0,Tech Demo,DORBIT,2022-057
+2022-05-25,Falcon 9,VEERY-FS 1,CAREWX,0.2,Observation,CWX,2022-057
+2022-05-25,Falcon 9,FOSSASat-2E7,FOSSA,0.5,Communications,Fossa,2022-057
+2022-05-25,Falcon 9,FOSSASat-2E8,FOSSA,0.5,Communications,Fossa,2022-057
+2022-05-25,Falcon 9,Foresail-1,AALTO,4.0,Tech Demo,Aalto,2022-057
+2022-05-25,Falcon 9,SELFIESAT,ONTNU,1.8,Tech Demo,NTNU,2022-057
+2022-05-25,Falcon 9,CPOD FLT1 (Tyvak-0032),ARC/TERRAN,4.0,Tech Demo,Ames,2022-057
+2022-05-25,Falcon 9,ICEYE-X20,ICEYE/ICEUS?,80.0,IMG-R,ICEYE,2022-057
+2022-05-25,Falcon 9,OP15 FLT1 (TYVAK-0820),GEOOPT,10.0,MET-RO,CICERO,2022-057
+2022-05-25,Falcon 9,Hawk-5A,HE360,31.0,Observation,H360,2022-057
+2022-05-25,Falcon 9,"FM162, LEMUR-2 TennysonLily",SPIREL/MYRI,4.6,COM/MET-RO,Spire,2022-057
+2022-05-25,Falcon 9,ICEYE-X18/Carcara 2,FAB/ICEYE,80.0,IMG-R,ICEYE,2022-057
+2022-05-25,Falcon 9,"FM155, LEMUR-2 VanDenDries",SPIREL/MYRI,4.6,COM/MET-RO,Spire,2022-057
+2022-05-25,Falcon 9,"FM163, LEMUR-2 Karen_B",SPIREL,4.6,COM/MET-RO,Spire,2022-057
+2022-05-25,Falcon 9,GHGSat-C3,GHG,15.0,EOSCI,GHG,2022-057
+2022-05-25,Falcon 9,Planetum-1,SPMNC/PLNTM,1.0,Communications,SpaceManic,2022-057
+2022-05-25,Falcon 9,Connecta T1.1,PLNSST,4.0,Communications,Plan S,2022-057
+2022-05-25,Falcon 9,"FM161, LEMUR-2 Hancom-1",HANCOM,11.0,Observation,Hancom,2022-057
+2022-05-25,Falcon 9,Centauri 5,FLEET,10.0,Communications,Fleet,2022-057
+2022-05-25,Falcon 9,BRONCOSAT-1,BRONC,1.0,Tech Demo,UC Pomona,2022-057
+2022-05-25,Falcon 9,GHGSat-C5,GHG,15.0,EOSCI,GHG,2022-057
+2022-05-25,Falcon 9,AMS,MITLL,15.0,Tech Demo,MIT Cube,2022-057
+2022-05-25,Falcon 9,GHGSat-C4,GHG,15.0,EOSCI,GHG,2022-057
+2022-05-25,Falcon 9,Nusat-28,URUGUS,41.5,Observation,Satelog,2022-057
+2022-05-25,Falcon 9,Nusat-30,URUGUS,41.5,Observation,Satelog,2022-057
+2022-05-25,Falcon 9,ICEYE-X18/Carcara 1,FAB/ICEYE,80.0,IMG-R,ICEYE,2022-057
+2022-05-25,Falcon 9,FOSSASat-2E11,FOSSA,0.5,Communications,Fossa,2022-057
+2022-05-25,Falcon 9,SPiN-1,SPIND,1.0,Tech Demo,SPIN,2022-057
+2022-05-25,Falcon 9,Nusat-31,URUGUS,41.5,Observation,Satelog,2022-057
+2022-05-25,Falcon 9,Umbra-03,UMBRA,65.0,IMG-R,Umbra,2022-057
+2022-05-25,Falcon 9,Hawk-5C,HE360,31.0,Observation,H360,2022-057
+2022-05-25,Falcon 9,Iceye-X24,ICEUS,80.0,IMG-R,ICEYE,2022-057
+2022-05-25,Falcon 9,Hawk-5B,HE360,31.0,Observation,H360,2022-057
+2022-05-25,Falcon 9,PTD-3 (Tyvak-0125),ARC/TERRAN,10.0,Tech Demo,Ames,2022-057
+2022-05-25,Falcon 9,OP15 FLT2 (TYVAK-0821),GEOOPT,10.0,MET-RO,CICERO,2022-057
+2022-06-19,Falcon 9,USA 331,NROC,300.0,SIG?*,NRO Star P,2022-064
+2022-06-19,Falcon 9,USA 328,NROC,300.0,SIG?*,NRO Star P,2022-064
+2022-06-19,Falcon 9,USA 329,NROC,300.0,SIG?*,NRO Star P,2022-064
+2022-06-19,Falcon 9,USA 330,NROC,300.0,SIG?*,NRO Star P,2022-064
+2022-06-21,Nuri,RANDEV,KAIST,4.0,Tech Demo,KAIST Cube,2022-065
+2022-06-21,Nuri,SNUGLITE-II,SNU,4.0,Tech Demo,SNU,2022-065
+2022-06-21,Nuri,MIMAN,YONS,4.0,Tech Demo,Yonsei,2022-065
+2022-06-21,Nuri,PVSAT,KARI,162.0,Tech Demo,Nuri,2022-065
+2022-06-21,Nuri,STEP Cube Lab-II,CHOSU,10.0,Tech Demo,Chosun,2022-065
+2022-06-21,Nuri,AP-JOEY,KARI,1.0,Tech Demo,Nuri,2022-065
+2022-06-28,Electron,Capstone,ADVSP/ARC,25.0,Other,Ames Lunar,2022-070
+2022-06-28,Electron,Lunar Photon,RLABN,275.0,Other,Photon,2022-070
+2022-06-30,PSLV,NeuSAR,DSTA/STELEC,155.0,IMG-R,DSTA SAR,2022-072
+2022-06-30,PSLV,SCOOB-I,NTU,3.0,Observation,NTU,2022-072
+2022-06-30,PSLV,PSLV-C53 R/B,ISRO,50.0,Tech Demo,ISRO Aux,2022-072
+2022-07-01,Atlas 5,USA 337,AFRL,100.0,TECH*,ESPASAT,2022-073
+2022-07-02,LauncherOne,Slingshot 1,AERO,19.0,Tech Demo,Aerocube,2022-074
+2022-07-02,LauncherOne,CTIM-FD,CLASP,10.0,Observation,UCO,2022-074
+2022-07-02,LauncherOne,MISR-B 1,SOCOM,10.0,IMG?,MISR,2022-074
+2022-07-02,LauncherOne,GPX-2,LARCN,3.4,Tech Demo,LARC Cube,2022-074
+2022-07-02,LauncherOne,NACHOS-2,LANL,6.0,EOSCI,LANL Sci,2022-074
+2022-07-02,LauncherOne,Recurve,AFRL,20.0,Tech Demo,AFRL Cube,2022-074
+2022-07-02,LauncherOne,Gunsmoke-L,SMDC,10.0,Communications,Gunsmoke,2022-074
+2022-07-13,Vega,MTCube-2,MONTP,1.0,Tech Demo,Montpellier,2022-080
+2022-07-13,Vega,Celesta,MONTP/CERN,1.0,Tech Demo,Montpellier,2022-080
+2022-07-13,Vega,Alpha,ARCAD,1.0,Tech Demo,ArcaD,2022-080
+2022-07-13,Vega,LARES 2,ASI,295.0,Tech Demo,ASI,2022-080
+2022-07-13,Vega,GREENCUBE,ENEA/UNF2,4.0,BIO/TECH,ROSAP,2022-080
+2022-07-13,Vega,ASTROBIO,ROSAP,4.0,Tech Demo,ROSAP,2022-080
+2022-07-13,Electron,USA 334,NROC,100.0,COM?,NRO TS,2022-079
+2022-07-13,Vega,TRISAT-R,UMARB,4.0,Observation,Maribor,2022-080
+2022-07-15,Falcon 9,TUMnanosat,TUMD,1.0,Tech Demo,TU Moldova,2022-081
+2022-07-15,Falcon 9,HSU-SAT1,FSI/HSU,1.0,Tech Demo,HSU,2022-081
+2022-07-15,Falcon 9,D3,ERAU,2.0,Tech Demo,USALA,2022-081
+2022-07-15,Falcon 9,BeaverCube,MIT,5.0,Tech Demo,MIT Cube,2022-081
+2022-07-15,Falcon 9,CLICK A,ARC,5.0,Tech Demo,Ames,2022-081
+2022-07-15,Falcon 9,CapSat-1,WEISS,1.0,Tech Demo,Weiss,2022-081
+2022-07-15,Falcon 9,Jagsat,USALA,2.0,Tech Demo,ERAU,2022-081
+2022-07-15,Falcon 9,FUTABA,KYUT,1.0,Tech Demo,Kyutech,2022-081
+2022-08-04,Electron,USA 335,NROC,100.0,COM?,NRO TS,2022-091
+2022-09-05,Falcon 9,Sherpa-LTC2,BOHB/SFLIN,180.0,Communications,SFLIN,2022-107
+2022-09-15,Electron,StriX-1,SYNSP,150.0,IMG-R,Synspective,2022-113
+2022-10-01,Firefly Alpha,TechEdSat-15,ARC/SJSU,4.0,Tech Demo,TES,2022-122
+2022-10-01,Firefly Alpha,ASTROLAND-2,AMEA,0.375,Communications,AMEA,2022-122
+2022-10-01,Firefly Alpha,TIS Serenity,TIS,3.0,Communications,TIS,2022-122
+2022-10-01,Firefly Alpha,ASTROLAND-1,AMEA,0.375,Communications,AMEA,2022-122
+2022-10-07,Electron,OTB-3-GAzelle,GACO,118.0,Tech Demo,Gen Atomic,2022-127
+2022-11-01,Falcon Heavy,USA 551,AFRL,100.0,Tech Demo,ESPASAT,2022-144
+2022-11-01,Falcon Heavy,USA 552,AFRL,100.0,Tech Demo,ESPASAT,2022-144
+2022-11-01,Falcon Heavy,USA 553,AFRL,100.0,Tech Demo,ESPASAT,2022-144
+2022-11-01,Falcon Heavy,USA 546,AFRL,100.0,Tech Demo,ESPASAT,2022-144
+2022-11-01,Falcon Heavy,USA 556,AFRL,100.0,Tech Demo,ESPASAT,2022-144
+2022-11-01,Falcon Heavy,USA 557,AFRL,100.0,Tech Demo,ESPASAT,2022-144
+2022-11-01,Falcon Heavy,USA 547,AFRL,100.0,Tech Demo,ESPASAT,2022-144
+2022-11-01,Falcon Heavy,USA 344,AFRL,100.0,Tech Demo,ESPASAT,2022-144
+2022-11-01,Falcon Heavy,USA 340,SFSSC/MILLES,100.0,Tech Demo,ESPASAT,2022-144
+2022-11-01,Falcon Heavy,USA 341,AFRL/MILLES,100.0,Tech Demo,ESPASAT,2022-144
+2022-11-01,Falcon Heavy,LINUSS2,LMSSD,21.5,Tech Demo,LM Tech,2022-144
+2022-11-01,Falcon Heavy,LINUSS1,LMSSD,21.5,Tech Demo,LM Tech,2022-144
+2022-11-01,Falcon Heavy,USA 548,AFRL,100.0,Tech Demo,ESPASAT,2022-144
+2022-11-01,Falcon Heavy,USA 399,AFRL,100.0,Tech Demo,ESPASAT,2022-144
+2022-11-04,Electron,MATS,SNSB,54.0,EOSCI,SSC,2022-147
+2022-11-07,Antares 230+,SpaceTuna1,KINDAI,1.0,Tech Demo,Kindai,2022-149
+2022-11-07,Antares 230+,PearlAfricaSat-1,MSTIU,1.0,Tech Demo,Uganda,2022-149
+2022-11-07,Antares 230+,TAKA,KYUT,2.0,Tech Demo,Kyutech,2022-149
+2022-11-07,Antares 230+,ZIMSAT-1,ZINGSA,1.0,Tech Demo,ZINGA,2022-149
+2022-11-26,Falcon 9,LORIS,DALU,2.0,Observation,DalU,2022-159
+2022-11-26,Falcon 9,SPORT,ITA/GSFC,10.0,Tech Demo,ITA,2022-159
+2022-11-26,Falcon 9,TJREVERB,TJHS,2.6,Tech Demo,TJHS,2022-159
+2022-11-26,Falcon 9,DANTESat,SPMIND,4.0,Tech Demo,SpMind,2022-159
+2022-11-26,Falcon 9,ORCASat,UVIC,2.0,Tech Demo,UVic,2022-159
+2022-11-26,Falcon 9,NUTSAT,NFU/NSPO,2.0,Tech Demo,NFU,2022-159
+2022-11-26,Falcon 9,MARIO,UMI,4.0,Tech Demo,UMI,2022-159
+2022-11-26,Falcon 9,PetitSat,GSFC,10.0,Science,GSFC Cube,2022-159
+2022-11-26,Falcon 9,Surya Satellite-1 (SS-1),SURYA,1.0,Tech Demo,Surya,2022-159
+2022-11-26,PSLV,INS-2B,BTDITT/ISRO,18.0,Tech Demo,INS,2022-158
+2022-11-26,Falcon 9,OPTIMAL-1,ARKE/FUKUIU,4.0,Tech Demo,ArkEdge,2022-159
+2022-11-26,Falcon 9,HSKSAT,HARSEI,4.0,Tech Demo,HaradaSeiki,2022-159
+2022-11-26,PSLV,Thybolt-1,DHRUVA,0.725,Communications,Dhruva,2022-158
+2022-11-26,PSLV,Anand,PIXX,16.5,Observation,Pixxel,2022-158
+2022-11-26,PSLV,Astrocast-0304,ACAST,4.5,Communications,Astrocast,2022-158
+2022-11-26,PSLV,Thybolt 2,DHRUVA,0.725,Communications,Dhruva,2022-158
+2022-11-26,PSLV,Astrocast-0302,ACAST,4.5,Communications,Astrocast,2022-158
+2022-11-26,PSLV,Astrocast-0301,ACAST,4.5,Communications,Astrocast,2022-158
+2022-11-26,PSLV,Astrocast-0303,ACAST,4.5,Communications,Astrocast,2022-158
+2022-12-11,Falcon 9,Lunar Flashlight,JPL,14.0,Other,JPL Deep Cube,2022-168
+2023-01-03,Falcon 9,SpaceBEE-167,SWARMX,0.284,Communications,Swarm,2023-001
+2023-01-03,Falcon 9,SpaceBEE-164,SWARMX,0.284,Communications,Swarm,2023-001
+2023-01-03,Falcon 9,SpaceBEE-166,SWARMX,0.284,Communications,Swarm,2023-001
+2023-01-03,Falcon 9,CHIMERA LEO 1,EPICU/EPIC,270.0,Tech Demo,Epic,2023-001
+2023-01-03,Falcon 9,SpaceBEE-163,SWARMX,0.284,Communications,Swarm,2023-001
+2023-01-03,Falcon 9,"FM169, LEMUR-2 Fuentetaja-01",SPIREL,4.6,COM/MET-RO,Spire,2023-001
+2023-01-03,Falcon 9,KSF3-A,KLEOS,10.0,Observation,Kleos,2023-001
+2023-01-03,Falcon 9,PolyITAN-HP-30,KPI,2.0,Tech Demo,ITAN,2023-001
+2023-01-03,Falcon 9,Gama-Alpha,NANAV/GAMA,10.0,Tech Demo,GAMA,2023-001
+2023-01-03,Falcon 9,Flock 4Y 27,PLAN,5.7,Observation,Flock-4,2023-001
+2023-01-03,Falcon 9,Flock 4Y 34,PLAN,5.7,Observation,Flock-4,2023-001
+2023-01-03,Falcon 9,Huygens,NLR/NDRE,10.0,Observation,NLR,2023-001
+2023-01-03,Falcon 9,Flock 4Y 23,PLAN,5.7,Observation,Flock-4,2023-001
+2023-01-03,Falcon 9,Flock 4Y 13,PLAN,5.7,Observation,Flock-4,2023-001
+2023-01-03,Falcon 9,Flock 4Y 36,PLAN,5.7,Observation,Flock-4,2023-001
+2023-01-03,Falcon 9,Flock 4Y 21,PLAN,5.7,Observation,Flock-4,2023-001
+2023-01-03,Falcon 9,KSF3-D,KLEOS,10.0,Observation,Kleos,2023-001
+2023-01-03,Falcon 9,SpaceBEE-165,SWARMX,0.284,Communications,Swarm,2023-001
+2023-01-03,Falcon 9,SpaceBEE-156,SWARMX,0.284,Communications,Swarm,2023-001
+2023-01-03,Falcon 9,SpaceBEE-161,SWARMX,0.284,Communications,Swarm,2023-001
+2023-01-03,Falcon 9,YAM-5,LOFT,87.0,Tech Demo,LOFT,2023-001
+2023-01-03,Falcon 9,Astrocast-0404,ACAST,4.5,Communications,Astrocast,2023-001
+2023-01-03,Falcon 9,Astrocast-0403,ACAST,4.5,Communications,Astrocast,2023-001
+2023-01-03,Falcon 9,Astrocast-0402,ACAST,4.5,Communications,Astrocast,2023-001
+2023-01-03,Falcon 9,Astrocast-0401,ACAST,4.5,Communications,Astrocast,2023-001
+2023-01-03,Falcon 9,Zeus-1,QOSMO,4.0,Tech Demo,Qosmo,2023-001
+2023-01-03,Falcon 9,AAC-AIS-SAT1,CLAAC,4.0,Communications,Kelpie,2023-001
+2023-01-03,Falcon 9,SpaceBEE-162,SWARMX,0.284,Communications,Swarm,2023-001
+2023-01-03,Falcon 9,FUTURA-SM3,SPMIND,10.0,Tech Demo,SpMind,2023-001
+2023-01-03,Falcon 9,Sharjah-Sat-1,SHARJ,4.0,Tech Demo,Sharjah,2023-001
+2023-01-03,Falcon 9,KuwaitSat-1,KWU,3.0,Tech Demo,Kuwait U,2023-001
+2023-01-03,Falcon 9,SpaceBEE-157,SWARMX,0.284,Communications,Swarm,2023-001
+2023-01-03,Falcon 9,SpaceBEE-159,SWARMX,0.284,Communications,Swarm,2023-001
+2023-01-03,Falcon 9,SpaceBEE-158,SWARMX,0.284,Communications,Swarm,2023-001
+2023-01-03,Falcon 9,BDSAT-2,CEITEC/BDSEN,1.172,Tech Demo,CEITEC,2023-001
+2023-01-03,Falcon 9,SpaceBEE-160,SWARMX,0.284,Communications,Swarm,2023-001
+2023-01-03,Falcon 9,FUTURA-SM1,SPMIND,4.0,Tech Demo,SpMind,2023-001
+2023-01-03,Falcon 9,Flock 4Y 31,PLAN,5.7,Observation,Flock-4,2023-001
+2023-01-03,Falcon 9,Flock 4Y 24,PLAN,5.7,Observation,Flock-4,2023-001
+2023-01-03,Falcon 9,TAUSat3,TAU,4.0,Tech Demo,TAU,2023-001
+2023-01-03,Falcon 9,"FM167, LEMUR-2 MMolo",SPIREL,4.6,COM/MET-RO,Spire,2023-001
+2023-01-03,Falcon 9,"FM164, LEMUR-2 Emmaculate",SPIREL/MYRI,8.3,COM/MET-RO,Spire,2023-001
+2023-01-03,Falcon 9,Umbra-05,UMBRA,65.0,IMG-R,Umbra,2023-001
+2023-01-03,Falcon 9,Flock 4Y 3,PLAN,5.7,Observation,Flock-4,2023-001
+2023-01-03,Falcon 9,Lynk Tower 4,LYNK,80.0,Communications,Lynk,2023-001
+2023-01-03,Falcon 9,Flock 4Y 28,PLAN,5.7,Observation,Flock-4,2023-001
+2023-01-03,Falcon 9,Flock 4Y 7,PLAN,5.7,Observation,Flock-4,2023-001
+2023-01-03,Falcon 9,Flock 4Y 17,PLAN,5.7,Observation,Flock-4,2023-001
+2023-01-03,Falcon 9,Flock 4Y 29,PLAN,5.7,Observation,Flock-4,2023-001
+2023-01-03,Falcon 9,Flock 4Y 10,PLAN,5.7,Observation,Flock-4,2023-001
+2023-01-03,Falcon 9,Flock 4Y 5,PLAN,5.7,Observation,Flock-4,2023-001
+2023-01-03,Falcon 9,Flock 4Y 25,PLAN,5.7,Observation,Flock-4,2023-001
+2023-01-03,Falcon 9,Flock 4Y 19,PLAN,5.7,Observation,Flock-4,2023-001
+2023-01-03,Falcon 9,Flock 4Y 30,PLAN,5.7,Observation,Flock-4,2023-001
+2023-01-03,Falcon 9,Flock 4Y 18,PLAN,5.7,Observation,Flock-4,2023-001
+2023-01-03,Falcon 9,Flock 4Y 22,PLAN,5.7,Observation,Flock-4,2023-001
+2023-01-03,Falcon 9,Flock 4Y 32,PLAN,5.7,Observation,Flock-4,2023-001
+2023-01-03,Falcon 9,Flock 4Y 2,PLAN,5.7,Observation,Flock-4,2023-001
+2023-01-03,Falcon 9,"FM168, LEMUR-2 SteveAlbers",SPIREL,4.6,COM/MET-RO,Spire,2023-001
+2023-01-03,Falcon 9,SharedSat 2211,ENDUR,10.0,Tech Demo,Endurosat,2023-001
+2023-01-03,Falcon 9,Birkeland,NLR/NDRE,10.0,Observation,NLR,2023-001
+2023-01-03,Falcon 9,"FM165, LEMUR-2 Disclaimer",SPIREL,4.6,COM/MET-RO,Spire,2023-001
+2023-01-03,Falcon 9,KSF3-B,KLEOS,10.0,Observation,Kleos,2023-001
+2023-01-03,Falcon 9,"FM166, LEMUR-2 PhilAri",SPIREL/ESA,4.6,COM/MET-RO,Spire,2023-001
+2023-01-03,Falcon 9,Connecta T1.2,PLNSST,4.0,Communications,Plan S,2023-001
+2023-01-03,Falcon 9,BRO-8,UNSEEN,10.0,Observation,Unseen,2023-001
+2023-01-03,Falcon 9,Menut,OCOSB/IEEC,10.0,Observation,OpenCosmos B,2023-001
+2023-01-03,Falcon 9,STAR VIBE,SCANW,10.0,Observation,Scanway,2023-001
+2023-01-03,Falcon 9,KSF3-C,KLEOS,10.0,Observation,Kleos,2023-001
+2023-01-03,Falcon 9,Flock 4Y 1,PLAN,5.7,Observation,Flock-4,2023-001
+2023-01-03,Falcon 9,Flock 4Y 16,PLAN,5.7,Observation,Flock-4,2023-001
+2023-01-03,Falcon 9,Flock 4Y 14,PLAN,5.7,Observation,Flock-4,2023-001
+2023-01-03,Falcon 9,Flock 4Y 33,PLAN,5.7,Observation,Flock-4,2023-001
+2023-01-03,Falcon 9,NSL-2,NSLC/CLAAC,10.0,Communications,NSLComm,2023-001
+2023-01-03,Falcon 9,Flock 4Y 6,PLAN,5.7,Observation,Flock-4,2023-001
+2023-01-03,Falcon 9,Flock 4Y 12,PLAN,5.7,Observation,Flock-4,2023-001
+2023-01-03,Falcon 9,Nusat-32,URUGUS,41.5,Observation,Satelog,2023-001
+2023-01-03,Falcon 9,Flock 4Y 20,PLAN,5.7,Observation,Flock-4,2023-001
+2023-01-03,Falcon 9,ICEYE-X27,ICEUS,90.0,IMG-R,ICEYE,2023-001
+2023-01-03,Falcon 9,Flock 4Y 26,PLAN,5.7,Observation,Flock-4,2023-001
+2023-01-03,Falcon 9,Skykraft 1 Carrier,SKYKR,100.0,Tech Demo,SkyKraft,2023-001
+2023-01-03,Falcon 9,Flock 4Y 8,PLAN,5.7,Observation,Flock-4,2023-001
+2023-01-03,Falcon 9,Skykraft 1C,SKYKR,50.0,Communications,Skykraft,2023-001
+2023-01-03,Falcon 9,Flock 4Y 15,PLAN,5.7,Observation,Flock-4,2023-001
+2023-01-03,Falcon 9,ION SCV-007 Glorious Gratia,DORBIT,150.0,Tech Demo,DORBIT,2023-001
+2023-01-03,Falcon 9,Orbiter SN1,LAUN,200.0,Tech Demo,Launcher,2023-001
+2023-01-03,Falcon 9,Skykraft 1B,SKYKR,50.0,Communications,Skykraft,2023-001
+2023-01-03,Falcon 9,Flock 4Y 9,PLAN,5.7,Observation,Flock-4,2023-001
+2023-01-03,Falcon 9,Flock 4Y 35,PLAN,5.7,Observation,Flock-4,2023-001
+2023-01-03,Falcon 9,Flock 4Y 11,PLAN,5.7,Observation,Flock-4,2023-001
+2023-01-03,Falcon 9,Sternula-1,STERN,10.0,Communications,Sternula,2023-001
+2023-01-03,Falcon 9,Nusat-34,URUGUS,41.5,Observation,Satelog,2023-001
+2023-01-03,Falcon 9,Lynk Tower 3,LYNK,80.0,Communications,Lynk,2023-001
+2023-01-03,Falcon 9,Nusat-33,URUGUS,41.5,Observation,Satelog,2023-001
+2023-01-03,Falcon 9,Nusat-35,URUGUS,41.5,Observation,Satelog,2023-001
+2023-01-03,Falcon 9,ICEYE-X21,ICEYE,80.0,IMG-R,ICEYE,2023-001
+2023-01-03,Falcon 9,SPHERE-1,SONY,10.0,Observation,Sony,2023-001
+2023-01-03,Falcon 9,ION SCV-008 Fierce Francis.,DORBIT,150.0,Tech Demo,DORBIT,2023-001
+2023-01-03,Falcon 9,Skykraft 1D,SKYKR,50.0,Communications,Skykraft,2023-001
+2023-01-03,Falcon 9,Umbra-04,UMBRA,65.0,IMG-R,Umbra,2023-001
+2023-01-03,Falcon 9,Flock 4Y 4,PLAN,5.7,Observation,Flock-4,2023-001
+2023-01-03,Falcon 9,ZA-008 (AgriSat-1),EOSDA,178.0,Observation,EOS-DA,2023-001
+2023-01-03,Falcon 9,Skykraft 1A,SKYKR,50.0,Communications,Skykraft,2023-001
+2023-01-24,Electron,Hawk 6A,HE360,31.0,Observation,H360,2023-011
+2023-01-24,Electron,Hawk 6C,HE360,31.0,Observation,H360,2023-011
+2023-01-24,Electron,Hawk 6B,HE360,31.0,Observation,H360,2023-011
+2023-01-31,Falcon 9,EBAD Test Mass,EBAD,10.0,Tech Demo,EBAD,2023-014
+2023-01-31,Falcon 9,ION SCV-009 Eclectic Elena,DORBIT,150.0,Tech Demo,DORBIT,2023-014
+2023-02-10,SSLV,Azaadisat-2,SKI,9.0,Tech Demo,SKI,2023-019
+2023-02-10,SSLV,EOS-7,ISRO,156.0,Observation,EOS,2023-019
+2023-02-10,SSLV,Janus-1,ANTAR,10.0,Tech Demo,Antaris,2023-019
+2023-03-15,Falcon 9,ARKSAT-1,UARK,1.0,Tech Demo,UARK,2023-033
+2023-03-15,Falcon 9,AuroraSat,AURRI,2.0,Tech Demo,AurRI,2023-033
+2023-03-15,Falcon 9,YukonSat,YUKON,2.0,Tech Demo,Yukon,2023-033
+2023-03-15,Falcon 9,LightCube,ASU,1.0,Tech Demo,ASU,2023-033
+2023-03-15,Falcon 9,NEUDOSE,MCMU,2.0,Tech Demo,MCMU,2023-033
+2023-03-15,Falcon 9,EX-Alta 2,ALB,2.0,Tech Demo,Alberta,2023-033
+2023-03-16,Electron,Capella 9,CAPSP,112.0,IMG-R,Capella,2023-035
+2023-03-16,Electron,Capella 10,CAPSP,112.0,IMG-R,Capella,2023-035
+2023-03-24,Electron,Global-5,BSKG,55.0,Observation,BlackSky,2023-041
+2023-03-24,Electron,Global-19,BSKG,55.0,Observation,BlackSky,2023-041
+2023-03-28,Shavit,'Ofeq-13,DDRD/U9900,300.0,IMG-R,Ofeq,2023-044
+2023-04-15,Falcon 9,Sapling Giganteum,STANSI,1.0,Tech Demo,Stanford,2023-054
+2023-04-15,Falcon 9,AAC-HSI-SAT1,CLAAC/WYV,10.0,Observation,EPIC VIEW,2023-054
+2023-04-15,Falcon 9,Revela,ARCAD,4.0,Observation,ArcaD,2023-054
+2023-04-15,Falcon 9,VIREO,C3S,4.0,Tech Demo,C3S,2023-054
+2023-04-15,Falcon 9,DISCO-1,AARH,1.0,Communications,Aarhus,2023-054
+2023-04-15,Falcon 9,IRIS-C,NCKU,3.0,Communications,NCKU,2023-054
+2023-04-15,Falcon 9,LLITED A,AERO,2.0,Tech Demo,Aerocube,2023-054
+2023-04-15,Falcon 9,LLITED B,AERO,2.0,Tech Demo,Aerocube,2023-054
+2023-04-15,Falcon 9,Kepler 21,KEPLER,15.0,Communications,Kepler,2023-054
+2023-04-15,Falcon 9,Kepler 20,KEPLER,15.0,Communications,Kepler,2023-054
+2023-04-15,Falcon 9,ELO 3,CLAAC/EUTSA,12.0,Communications,ELO,2023-054
+2023-04-15,Falcon 9,VCUB-1,VISTE,10.0,Observation,VCUB,2023-054
+2023-04-15,Falcon 9,LacunaSat-3C?,LACU/NANAVU,4.0,Tech Demo,Lacuna,2023-054
+2023-04-15,Falcon 9,RoseyCubesat-1,OSM,1.0,Tech Demo,OSM Cube,2023-054
+2023-04-15,Falcon 9,Nusat-38,URUGUS,41.5,Observation,Satelog,2023-054
+2023-04-15,Falcon 9,Connecta T2.1,PLNSST,10.0,Communications,Plan S,2023-054
+2023-04-15,Falcon 9,DEWASAT-2,DEWA,10.0,Communications,DEWA,2023-054
+2023-04-15,Falcon 9,InspireSat-7,LATMOS,3.0,Science,UVSQ,2023-054
+2023-04-15,Falcon 9,Sateliot-0,STIOT,7.407,Tech Demo,Sateliot,2023-054
+2023-04-15,Falcon 9,SSS-2B,TUBTU/APSCO,4.0,Tech Demo,Uzay Cube,2023-054
+2023-04-15,Falcon 9,BRO-9,UNSEEN,10.0,Observation,Unseen,2023-054
+2023-04-15,Falcon 9,GHGSat-C,GHG,15.0,EOSCI,GHG,2023-054
+2023-04-15,Falcon 9,Lemur-2 SpaceGus,OEWF/SPIREL,11.6,COM/MET-RO,OEWF,2023-054
+2023-04-15,Falcon 9,CIRBE,UCO,5.5,Science,UCO,2023-054
+2023-04-15,Falcon 9,Lemur-2 OnReflection,SPIRE,11.6,COM/MET-RO,Spire,2023-054
+2023-04-15,Falcon 9,It's About Time,TRPT,4.0,Communications,TrustPoint,2023-054
+2023-04-15,Falcon 9,Nusat-36,URUGUS,41.5,Observation,Satelog,2023-054
+2023-04-15,Falcon 9,Hawk 7A,HE360,31.0,Observation,H360,2023-054
+2023-04-15,Falcon 9,ION SCV-010 Masterful Matt.,DORBIT,150.0,Tech Demo,DORBIT,2023-054
+2023-04-15,Falcon 9,Hawk 7B,HE360,31.0,Observation,H360,2023-054
+2023-04-15,Falcon 9,KILICSAT,GUMUSH/UTAA,4.0,Communications,Gumush,2023-054
+2023-04-15,Falcon 9,GHOST-1,ORBSK,85.0,Observation,GHOST,2023-054
+2023-04-15,Falcon 9,GHOST-2,ORBSK,85.0,Observation,GHOST,2023-054
+2023-04-15,Falcon 9,Umbra-06,UMBRA,65.0,IMG-R,Umbra,2023-054
+2023-04-15,Falcon 9,Tomorrow-R1,TOMIO,85.0,IMG-R,Tomorrow,2023-054
+2023-04-15,Falcon 9,Hawk 7C,HE360,31.0,Observation,H360,2023-054
+2023-04-15,Falcon 9,Nusat-39,URUGUS,41.5,Observation,Satelog,2023-054
+2023-04-15,Falcon 9,GHGSat-C7,GHG,15.0,EOSCI,GHG,2023-054
+2023-04-15,Falcon 9,Brokkr-1,ORBAS/AFORGE,10.0,Tech Demo,AstroForge,2023-054
+2023-04-15,Falcon 9,Nusat-37,URUGUS,41.5,Observation,Satelog,2023-054
+2023-04-15,Falcon 9,GHGSat-C6,GHG,15.0,EOSCI,GHG,2023-054
+2023-04-15,Falcon 9,FACSAT-2 Chiribiquete,EMAVI,10.0,Observation,FAC,2023-054
+2023-04-15,Falcon 9,Lemur-2 Romeo-N-LEO,SPIRE,4.6,COM/MET-RO,Spire,2023-054
+2023-04-15,Falcon 9,Pleiadas Yearling,BRONC,1.0,Tech Demo,UC Pomona,2023-054
+2023-04-15,Falcon 9,NORSAT-TD,NSC,35.0,COM/TECH,NORSAT,2023-054
+2023-04-15,Falcon 9,Taifa-1,KESA/SAYARI,4.0,Observation,Kenya SA,2023-054
+2023-04-22,PSLV,POEM-2,ISRO,50.0,Tech Demo,ISRO Aux,2023-057
+2023-04-22,PSLV,LUMELITE-4,NUS,16.0,Tech Demo,NUS,2023-057
+2023-05-01,Falcon Heavy,GS-1,GRSP,22.0,Communications,G-Space,2023-060
+2023-05-08,Electron,TROPICS-05,MITLL,4.0,EOSCI,MIT Cube,2023-062
+2023-05-08,Electron,TROPICS-06,MITLL,4.0,EOSCI,MIT Cube,2023-062
+2023-05-25,Nuri,NEXTSAT-2,KAIST,180.0,AST/TECH,KAIST NEXT,2023-072
+2023-05-25,Nuri,KASI SAT-D,KASI,10.0,AST/SCI,KASI,2023-072
+2023-05-25,Nuri,KASI SAT-B,KASI,10.0,AST/SCI,KASI,2023-072
+2023-05-25,Nuri,KASI SAT-A,KASI,10.0,AST/SCI,KASI,2023-072
+2023-05-25,Nuri,KSAT3U,KAIRSP,6.0,Tech Demo,Kairo,2023-072
+2023-05-25,Nuri,JAC,JUSTEK,3.2,Observation,JUSTEK,2023-072
+2023-05-25,Nuri,LUMIR-T1,LUMIR,7.0,Tech Demo,LUMIR,2023-072
+2023-05-26,Electron,TROPICS-03,MITLL,4.0,EOSCI,MIT Cube,2023-073
+2023-05-26,Electron,TROPICS-07,MITLL,4.0,EOSCI,MIT Cube,2023-073
+2023-06-05,Falcon 9,Maya-6,DOST/UPD,1.0,Tech Demo,DOST Cube,2023-080
+2023-06-05,Falcon 9,Maya-5,DOST/UPD,1.0,Tech Demo,DOST Cube,2023-080
+2023-06-05,Falcon 9,ESSENCE,YORK/CSA,4.0,Tech Demo,YorkU,2023-080
+2023-06-05,Falcon 9,Moonlighter,AERO/SFSSC,4.0,Tech Demo,Aerocube,2023-080
+2023-06-05,Falcon 9,Ukpik-1,UWO/CSA,2.0,Tech Demo,UWO,2023-080
+2023-06-05,Falcon 9,RADSAT-SK,SASK/CSA,2.0,Tech Demo,Sask,2023-080
+2023-06-05,Falcon 9,Iris,UMANI/CSA,4.0,Tech Demo,Manitoba,2023-080
+2023-06-05,Falcon 9,SC-ODIN,CONCOR/CSA,4.0,Tech Demo,Concordia,2023-080
+2023-06-12,Falcon 9,SpaceBEE-177,SWARMX,0.284,Communications,Swarm,2023-084
+2023-06-12,Falcon 9,SpaceBEE-169,SWARMX,0.284,Communications,Swarm,2023-084
+2023-06-12,Falcon 9,Skykraft 3A,SKYKR,50.0,Communications,Skykraft,2023-084
+2023-06-12,Falcon 9,SpaceBEE-171,SWARMX,0.284,Communications,Swarm,2023-084
+2023-06-12,Falcon 9,SpaceBEE-172,SWARMX,0.284,Communications,Swarm,2023-084
+2023-06-12,Falcon 9,Lemur-2 Naziyah,SPIRE,10.0,COM/MET-RO,Spire,2023-084
+2023-06-12,Falcon 9,Lemur-2 Aadam-Aliyah,SPIRE,10.0,COM/MET-RO,Spire,2023-084
+2023-06-12,Falcon 9,SpaceBEE-174,SWARMX,0.284,Communications,Swarm,2023-084
+2023-06-12,Falcon 9,SpaceBEE-176,SWARMX,0.284,Communications,Swarm,2023-084
+2023-06-12,Falcon 9,SpaceBEE-170,SWARMX,0.284,Communications,Swarm,2023-084
+2023-06-12,Falcon 9,SpaceBEE-178,SWARMX,0.284,Communications,Swarm,2023-084
+2023-06-12,Falcon 9,SpaceBEE-173,SWARMX,0.284,Communications,Swarm,2023-084
+2023-06-12,Falcon 9,SpaceBEE-168,SWARMX,0.284,Communications,Swarm,2023-084
+2023-06-12,Falcon 9,Pleiades Squared,BRONC,1.0,Tech Demo,UC Pomona,2023-084
+2023-06-12,Falcon 9,Ayris-2,NANAV,10.0,Tech Demo,Ayris,2023-084
+2023-06-12,Falcon 9,AII-Delta,AUINS/SPQAA,10.0,Observation,AII,2023-084
+2023-06-12,Falcon 9,Ayris-1,NANAV,10.0,Tech Demo,Ayris,2023-084
+2023-06-12,Falcon 9,ELO 4,CLAAC/EUTSA,12.0,Communications,ELO,2023-084
+2023-06-12,Falcon 9,Spei Satelles,TORP/VATC,3.0,Tech Demo,Torino,2023-084
+2023-06-12,Falcon 9,URESAT,URE/AMEA,0.5,Communications,AMEA,2023-084
+2023-06-12,Falcon 9,MRC-100,BME,0.5,Observation,BUTE,2023-084
+2023-06-12,Falcon 9,Unicorn-2I,ALBAD,0.75,Observation,Alba,2023-084
+2023-06-12,Falcon 9,AAC-HSI-SAT2,CLAAC/WYV,10.0,Observation,EPIC VIEW,2023-084
+2023-06-12,Falcon 9,AAC-AIS-SAT2,CLAAC,4.0,Communications,Kelpie,2023-084
+2023-06-12,Falcon 9,Skykraft 3D,SKYKR,50.0,Communications,Skykraft,2023-084
+2023-06-12,Falcon 9,SpaceBEE-175,SWARMX,0.284,Communications,Swarm,2023-084
+2023-06-12,Falcon 9,MISR-A,SOCOM,10.0,Observation,MISR,2023-084
+2023-06-12,Falcon 9,MISR-B,SOCOM,10.0,Observation,MISR,2023-084
+2023-06-12,Falcon 9,SpaceBEE-179,SWARMX,0.284,Communications,Swarm,2023-084
+2023-06-12,Falcon 9,MDQSAT-1C,INNO,0.5,Communications,Innova,2023-084
+2023-06-12,Falcon 9,Nusat-41,URUGUS,41.5,Observation,Satelog,2023-084
+2023-06-12,Falcon 9,Nusat-40,URUGUS,41.5,Observation,Satelog,2023-084
+2023-06-12,Falcon 9,AFRL-XVI,AFRL/VIA,23.0,Communications,AFRL Tech,2023-084
+2023-06-12,Falcon 9,MDQSAT-1D,INNO,0.5,Communications,Innova,2023-084
+2023-06-12,Falcon 9,TIGER-4,OQT,10.0,Communications,OQT,2023-084
+2023-06-12,Falcon 9,FEROX 2,FOSSA,2.0,Communications,Fossa,2023-084
+2023-06-12,Falcon 9,EIVE,IRSS,10.0,Tech Demo,FLP,2023-084
+2023-06-12,Falcon 9,FEROX 1,FOSSA,2.0,Communications,Fossa,2023-084
+2023-06-12,Falcon 9,Lemur-2 Embrionovis,SPIRE/ORORA,10.0,Observation,Orora,2023-084
+2023-06-12,Falcon 9,GEI-SAT Precursor,SATLAN,20.0,Observation,Satlantis,2023-084
+2023-06-12,Falcon 9,Otter Pup,STFISH,50.0,Tech Demo,Starfish,2023-084
+2023-06-12,Falcon 9,FEROX 3,FOSSA,2.0,Communications,Fossa,2023-084
+2023-06-12,Falcon 9,SATLLA-2I,ARIU,0.5,Tech Demo,AriU,2023-084
+2023-06-12,Falcon 9,Istanbul,HELLO,0.25,Communications,Hello,2023-084
+2023-06-12,Falcon 9,Skykraft 3 Carrier,SKYKR,100.0,Communications,Skykraft,2023-084
+2023-06-12,Falcon 9,Skykraft 3C,SKYKR,50.0,Communications,Skykraft,2023-084
+2023-06-12,Falcon 9,Skykraft 3B,SKYKR,50.0,Communications,Skykraft,2023-084
+2023-06-12,Falcon 9,Outpost Mission 1,OUTP,3.0,Tech Demo,Outpost,2023-084
+2023-06-12,Falcon 9,Gregoire,ASPLB,100.0,Observation,Aerospacelab,2023-084
+2023-06-12,Falcon 9,ICEYE-X30,ICEUS,90.0,IMG-R,ICEYE,2023-084
+2023-06-12,Falcon 9,FEROX 4,FOSSA,2.0,Communications,Fossa,2023-084
+2023-06-12,Falcon 9,ICEYE-X23,ICEYE,90.0,IMG-R,ICEYE,2023-084
+2023-06-12,Falcon 9,ICEYE-X26,ICEUS,90.0,IMG-R,ICEYE,2023-084
+2023-06-12,Falcon 9,Tomorrow-R2,TOMIO,85.0,IMG-R,Tomorrow,2023-084
+2023-06-12,Falcon 9,ICEYE-X25,ICEYE,90.0,IMG-R,ICEYE,2023-084
+2023-06-12,Falcon 9,ABA First Runner,AZBST,80.0,Observation,Azista,2023-084
+2023-06-12,Falcon 9,Droid-001,TURION,32.0,Tech Demo,Turion,2023-084
+2023-06-12,Falcon 9,Nusat-42,URUGUS,41.5,Observation,Satelog,2023-084
+2023-06-12,Falcon 9,MUSAT-1,MUON,59.0,Observation,Muon,2023-084
+2023-06-12,Falcon 9,ROM-2,ROMSP,0.25,Tech Demo,ROM,2023-084
+2023-06-12,Falcon 9,GHOSt-3,ORBSK,85.0,Observation,GHOST,2023-084
+2023-06-12,Falcon 9,Orbiter SN3,LAUN,200.0,Tech Demo,Launcher,2023-084
+2023-06-12,Falcon 9,ION SCV-011 Savvy Simon,DORBIT,150.0,Tech Demo,DORBIT,2023-084
+2023-06-12,Falcon 9,Blackjack Aces-1,DARPA,200.0,Communications,BJ Aces,2023-084
+2023-06-12,Falcon 9,Photon-04,VARDA,275.0,Tech Demo,Photon,2023-084
+2023-06-12,Falcon 9,Blackjack Aces-3,DARPA,200.0,Communications,BJ Aces,2023-084
+2023-06-12,Falcon 9,QPS-SAR-6 AMAERU-III,QPS,120.0,IMG-R,QPS,2023-084
+2023-06-12,Falcon 9,Blackjack Aces-4,DARPA,200.0,Communications,BJ Aces,2023-084
+2023-06-12,Falcon 9,Fasat-Delta,IMAG/FACH,86.0,Observation,Runner,2023-084
+2023-06-12,Falcon 9,SSTL MWIR Pathfinder,SATVU,130.0,Observation,SatVu,2023-084
+2023-06-12,Falcon 9,Nusat-43,URUGUS,41.5,Observation,Satelog,2023-084
+2023-06-12,Falcon 9,Blackjack Aces-2,DARPA,200.0,Communications,BJ Aces,2023-084
+2023-07-18,Electron,LEO 3,TCANL,30.0,Communications,Vantage,2023-100
+2023-07-18,Electron,Lemur-2 Mano,SPIRE,5.0,COM/MET-RO,Spire,2023-100
+2023-07-18,Electron,Starling 3,ARC,12.0,Tech Demo,Ames,2023-100
+2023-07-18,Electron,Starling 1,ARC,12.0,Tech Demo,Ames,2023-100
+2023-07-18,Electron,Lemur-2 Deverill-M-T,SPIRE,5.0,COM/MET-RO,Spire,2023-100
+2023-07-18,Electron,Starling 2,ARC,12.0,Tech Demo,Ames,2023-100
+2023-07-18,Electron,Starling 4,ARC,12.0,Tech Demo,Ames,2023-100
+2023-07-30,PSLV,VELOX-AM,NTU,23.0,Tech Demo,NTU,2023-109
+2023-07-30,PSLV,NuLIoN,NUSP,3.0,Communications,NuSpace,2023-109
+2023-07-30,PSLV,Galassia-2,NUS,3.5,EOSCI,NUS,2023-109
+2023-07-30,PSLV,ARCADE,NTU,24.0,Tech Demo,NTU,2023-109
+2023-07-30,PSLV,SCOOB-II,NTU,4.0,Tech Demo,NTU,2023-109
+2023-07-30,PSLV,ORB-12 STRIDER,ALIENA,13.0,Tech Demo,OrbAstro,2023-109
+2023-08-23,Electron,Capella 11,CAPSP,180.0,IMG-R,Capella,2023-126
+2023-09-15,Firefly Alpha,Victus Nox,SFSSC,100.0,Observation,Safari,2023-142
+2023-10-09,Vega,PVCC,ESA,20.0,Observation,PROBA,2023-155
+2023-10-09,Vega,MACSAT,OQT,10.0,Communications,OQT,2023-155
+2023-10-09,Vega,PRETTY,TUG,4.0,EOSCI,TUG,2023-155
+2023-10-09,Vega,CSC-1,ISISBV,10.0,Tech Demo,ISISBV,2023-155
+2023-10-09,Vega,CSC-2,ISISBV,10.0,Tech Demo,ISISBV,2023-155
+2023-10-09,Vega,N3SS,CNES,5.0,Observation,CNES Cube,2023-155
+2023-10-09,Vega,ANSER-FLW-1,INTA,4.0,Observation,INTA,2023-155
+2023-10-09,Vega,ANSER-FLW-2,INTA,4.0,Observation,INTA,2023-155
+2023-10-09,Vega,FORMOSAT-7R,TASA,241.0,EOSCI,ROCSAT,2023-155
+2023-11-10,Falcon 9,BEAK,TOK/ISAS,5.0,Tech Demo,Tokyo,2023-173
+2023-11-10,Falcon 9,Clark sat-1,CMIHS,1.0,Tech Demo,CMIHS,2023-173
+2023-11-11,Falcon 9,Flock 4Q 7,PLAN,5.7,Observation,Flock-4,2023-174
+2023-11-11,Falcon 9,Lemur 2 Mango2B,SPIRE/JACOBS,4.6,COM/MET-RO,Spire,2023-174
+2023-11-11,Falcon 9,Elliot,SPIREG/GHG,20.0,EOSCI,GHG,2023-174
+2023-11-11,Falcon 9,Lemur 2 Mango2A,SPIRE/JACOBS,4.6,COM/MET-RO,Spire,2023-174
+2023-11-11,Falcon 9,Outpost Mission 2,OUTP,3.0,Tech Demo,Outpost,2023-174
+2023-11-11,Falcon 9,Lemur-2 The-Cleaner,SPIRE/SIENV,10.0,COM/MET-RO,Vindler,2023-174
+2023-11-11,Falcon 9,Lemur-2 Marapamasm,SPIRE,4.6,COM/MET-RO,Spire,2023-174
+2023-11-11,Falcon 9,BRO-10,UNSEEN,10.0,Observation,Unseen,2023-174
+2023-11-11,Falcon 9,PICO-1A-5,APOGEO,0.5,Communications,GPAP,2023-174
+2023-11-11,Falcon 9,Flock 4Q 21,PLAN,5.7,Observation,Flock-4,2023-174
+2023-11-11,Falcon 9,Flock 4Q 13,PLAN,5.7,Observation,Flock-4,2023-174
+2023-11-11,Falcon 9,Flock 4Q 4,PLAN,5.7,Observation,Flock-4,2023-174
+2023-11-11,Falcon 9,PICO-1A-3,APOGEO,0.5,Communications,GPAP,2023-174
+2023-11-11,Falcon 9,Flock 4Q 5,PLAN,5.7,Observation,Flock-4,2023-174
+2023-11-11,Falcon 9,Flock 4Q 15,PLAN,5.7,Observation,Flock-4,2023-174
+2023-11-11,Falcon 9,Barry-1,ROGUE,5.0,Tech Demo,Rogue,2023-174
+2023-11-11,Falcon 9,Flock 4Q 10,PLAN,5.7,Observation,Flock-4,2023-174
+2023-11-11,Falcon 9,Observer-1A,NARAST,24.0,Observation,Nara Space,2023-174
+2023-11-11,Falcon 9,Flock 4Q 9,PLAN,5.7,Observation,Flock-4,2023-174
+2023-11-11,Falcon 9,ProtoMethee,PROM,30.0,Observation,Promethee,2023-174
+2023-11-11,Falcon 9,Flock 4Q 2,PLAN,5.7,Observation,Flock-4,2023-174
+2023-11-11,Falcon 9,PLATFORM-5,ENDUR,5.0,Tech Demo,Endurosat,2023-174
+2023-11-11,Falcon 9,AAC-AIS-SAT3,CLAAC/AACCS,5.0,Communications,Ymir,2023-174
+2023-11-11,Falcon 9,NinjaSat,RIKEN/MITSUI,10.0,Observation,RIKEN,2023-174
+2023-11-11,Falcon 9,KAFASAT,KAFA,4.0,Observation,KAFA,2023-174
+2023-11-11,Falcon 9,Crypto3,CRYPTO,2.0,Communications,Crypto,2023-174
+2023-11-11,Falcon 9,EXO-0,EXOTR,20.0,Tech Demo,Exotrail,2023-174
+2023-11-11,Falcon 9,EPIC Hyper-3,CLAAC/WYV,10.0,Observation,EPIC VIEW,2023-174
+2023-11-11,Falcon 9,Lemur-2-NanaZ,SPIRE,4.6,Observation,Spire,2023-174
+2023-11-11,Falcon 9,OSW Cazorla,ODYSS,3.0,Science,OSW,2023-174
+2023-11-11,Falcon 9,PICO-1A-7,APOGEO,0.5,Communications,GPAP,2023-174
+2023-11-11,Falcon 9,Time We'll Tell,TRPT,4.0,Communications,TrustPoint,2023-174
+2023-11-11,Falcon 9,SpaceANT-D,SPCIN,0.25,Communications,SpaceIn,2023-174
+2023-11-11,Falcon 9,OMNI-LER1,ITTANK,5.0,Communications,ITTank,2023-174
+2023-11-11,Falcon 9,Unicorn-2K,ALBAD,0.75,Observation,Alba,2023-174
+2023-11-11,Falcon 9,HERON Mk.II,UTAT,5.0,Tech Demo,UTAT,2023-174
+2023-11-11,Falcon 9,HADES-D,AMEA,0.375,Observation,AMEA,2023-174
+2023-11-11,Falcon 9,Unicorn-2J,ALBAD,0.75,Observation,Alba,2023-174
+2023-11-11,Falcon 9,Intuition-1,KPL,10.0,Observation,KP Labs,2023-174
+2023-11-11,Falcon 9,PICO-1A-1,APOGEO,0.5,Communications,GPAP,2023-174
+2023-11-11,Falcon 9,PICO-1A-6,APOGEO,0.5,Communications,GPAP,2023-174
+2023-11-11,Falcon 9,PICO-1A-2,APOGEO,0.5,Communications,GPAP,2023-174
+2023-11-11,Falcon 9,PICO-1A-8,APOGEO,0.5,Communications,GPAP,2023-174
+2023-11-11,Falcon 9,PICO-1A-3,APOGEO,0.5,Communications,GPAP,2023-174
+2023-11-11,Falcon 9,PEARL-1C,FOXC,8.8,Communications,Foxconn,2023-174
+2023-11-11,Falcon 9,Vanguard,SPIREG/GHG,20.0,EOSCI,GHG,2023-174
+2023-11-11,Falcon 9,Flock 4Q 34,PLAN,5.7,Observation,Flock-4,2023-174
+2023-11-11,Falcon 9,Hello Test 2,HELLO,0.5,Communications,Hello,2023-174
+2023-11-11,Falcon 9,Flock 4Q 24,PLAN,5.7,Observation,Flock-4,2023-174
+2023-11-11,Falcon 9,Flock 4Q 17,PLAN,5.7,Observation,Flock-4,2023-174
+2023-11-11,Falcon 9,Flock 4Q 27,PLAN,5.7,Observation,Flock-4,2023-174
+2023-11-11,Falcon 9,AETHER-1,KEPLER,125.0,Communications,Kepler,2023-174
+2023-11-11,Falcon 9,Flock 4Q 28,PLAN,5.7,Observation,Flock-4,2023-174
+2023-11-11,Falcon 9,Flock 4Q 8,PLAN,5.7,Observation,Flock-4,2023-174
+2023-11-11,Falcon 9,Flock 4Q 19,PLAN,5.7,Observation,Flock-4,2023-174
+2023-11-11,Falcon 9,TIGER-5,OQT,10.0,Communications,OQT,2023-174
+2023-11-11,Falcon 9,GENMAT-1,GENMAT,8.8,Observation,GenMat,2023-174
+2023-11-11,Falcon 9,Flock 4Q 12,PLAN,5.7,Observation,Flock-4,2023-174
+2023-11-11,Falcon 9,Flock 4Q 6,PLAN,5.7,Observation,Flock-4,2023-174
+2023-11-11,Falcon 9,Flock 4Q 36,PLAN,5.7,Observation,Flock-4,2023-174
+2023-11-11,Falcon 9,Flock 4Q 11,PLAN,5.7,Observation,Flock-4,2023-174
+2023-11-11,Falcon 9,Flock 4Q 26,PLAN,5.7,Observation,Flock-4,2023-174
+2023-11-11,Falcon 9,Djibouti-1A,CERD/MONTP,1.0,Tech Demo,CERD,2023-174
+2023-11-11,Falcon 9,PEARL-1H,FOXC,8.8,Communications,Foxconn,2023-174
+2023-11-11,Falcon 9,Flock 4Q 16,PLAN,5.7,Observation,Flock-4,2023-174
+2023-11-11,Falcon 9,Flock 4Q 1,PLAN,5.7,Observation,Flock-4,2023-174
+2023-11-11,Falcon 9,IRIS-C2,NCKU,3.0,Communications,NCKU,2023-174
+2023-11-11,Falcon 9,BRO-11,UNSEEN,10.0,Observation,Unseen,2023-174
+2023-11-11,Falcon 9,Lemur-2 Good-Vibes,SPIRE/SIENV,10.0,COM/MET-RO,Spire,2023-174
+2023-11-11,Falcon 9,PLATERO,OCOSB/ANDU,10.0,IMG/COM,OpenCosmos B,2023-174
+2023-11-11,Falcon 9,Veronika/OM9VER,TUKE/SPMNC,1.0,Observation,TUKE,2023-174
+2023-11-11,Falcon 9,Connecta T3.2,PLNSST,5.0,Communications,Plan S,2023-174
+2023-11-11,Falcon 9,Lemur-2 Dilightful,SPIRE/SIENV,10.0,COM/MET-RO,Spire,2023-174
+2023-11-11,Falcon 9,Juba,SPIREG/GHG,20.0,EOSCI,GHG,2023-174
+2023-11-11,Falcon 9,OrbAstro PC1,ORBAS,10.0,Tech Demo,OrbAstro,2023-174
+2023-11-11,Falcon 9,TIGER-6,OQT,10.0,Communications,OQT,2023-174
+2023-11-11,Falcon 9,Lemur-2 Sanita-Vetra,SPIRE/SIENV,10.0,COM/MET-RO,Vindler,2023-174
+2023-11-11,Falcon 9,MANTIS,OCOS/ESA,14.5,Observation,OpenCosmos UK,2023-174
+2023-11-11,Falcon 9,SPIP,ASPLB,120.0,Observation,Aerospacelab,2023-174
+2023-11-11,Falcon 9,ICEYE-X35,ICEYE,90.0,IMG-R,ICEYE,2023-174
+2023-11-11,Falcon 9,Impulse-1 Mira,IMPUL,250.0,Tech Demo,Impulse,2023-174
+2023-11-11,Falcon 9,ION SCV013 Ultimate Hugo,DORBIT,150.0,Tech Demo,DORBIT,2023-174
+2023-11-11,Falcon 9,AETHER-2,KEPLER,125.0,Communications,Kepler,2023-174
+2023-11-11,Falcon 9,Flock 4Q 31,PLAN,5.7,Observation,Flock-4,2023-174
+2023-11-11,Falcon 9,Umbra-07,UMBRA,84.0,IMG-R,Umbra,2023-174
+2023-11-11,Falcon 9,Pelican 3001,PLAN,160.0,Observation,Pelican,2023-174
+2023-11-11,Falcon 9,SpaceVan 1,EXOTR,125.0,Tech Demo,Exotrail,2023-174
+2023-11-11,Falcon 9,ICEYE-X34,ICEUS,90.0,IMG-R,ICEYE,2023-174
+2023-11-11,Falcon 9,ICEYE-X32,ICEYE,90.0,IMG-R,ICEYE,2023-174
+2023-11-11,Falcon 9,Umbra-08,UMBRA,84.0,IMG-R,Umbra,2023-174
+2023-11-11,Falcon 9,Falconsat-10,USAFA,140.0,Tech Demo,FalconSat,2023-174
+2023-11-11,Falcon 9,Flock 4Q 25,PLAN,5.7,Observation,Flock-4,2023-174
+2023-11-11,Falcon 9,Connecta T3.1,PLNSST,5.0,Communications,Plan S,2023-174
+2023-11-11,Falcon 9,ICEYE-X31,ICEYE,90.0,IMG-R,ICEYE,2023-174
+2023-11-11,Falcon 9,Flock 4Q 20,PLAN,5.7,Observation,Flock-4,2023-174
+2023-11-11,Falcon 9,Flock 4Q 3,PLAN,5.7,Observation,Flock-4,2023-174
+2023-11-11,Falcon 9,Flock 4Q 14,PLAN,5.7,Observation,Flock-4,2023-174
+2023-11-11,Falcon 9,Flock 4Q 32,PLAN,5.7,Observation,Flock-4,2023-174
+2023-11-11,Falcon 9,Hello Test 1,HELLO,0.5,Communications,Hello,2023-174
+2023-11-11,Falcon 9,Flock 4Q 33,PLAN,5.7,Observation,Flock-4,2023-174
+2023-11-11,Falcon 9,Flock 4Q 35,PLAN,5.7,Observation,Flock-4,2023-174
+2023-11-11,Falcon 9,Flock 4Q 30,PLAN,5.7,Observation,Flock-4,2023-174
+2023-11-11,Falcon 9,Flock 4Q 22,PLAN,5.7,Observation,Flock-4,2023-174
+2023-11-11,Falcon 9,Flock 4Q 18,PLAN,5.7,Observation,Flock-4,2023-174
+2023-11-11,Falcon 9,PICO-1A-9,APOGEO,0.5,Communications,GPAP,2023-174
+2023-11-11,Falcon 9,Flock 4Q 23,PLAN,5.7,Observation,Flock-4,2023-174
+2023-11-11,Falcon 9,Flock 4Q 29,PLAN,5.7,Observation,Flock-4,2023-174
+2023-12-01,Falcon 9,NanoFF 2,TUB,2.7,Tech Demo,TUB X,2023-185
+2023-12-01,Falcon 9,Unicorn-2N,ALBAD,0.75,Observation,Alba,2023-185
+2023-12-01,Falcon 9,NanoFF 1,TUB,2.7,Tech Demo,TUB X,2023-185
+2023-12-01,Falcon 9,GNOMES-4,PLANQ,30.0,Communications,Planetiq,2023-185
+2023-12-01,Falcon 9,MDQubesat-2,INNO,0.5,Communications,Innova,2023-185
+2023-12-01,Falcon 9,Unicorn-2N,ALBAD,0.75,Observation,Alba,2023-185
+2023-12-01,Falcon 9,ALISIO-1,IAC,10.0,Observation,ALISIO,2023-185
+2023-12-01,Falcon 9,EIRSAT-1,UCDB,2.0,Science,UC Dublin,2023-185
+2023-12-01,Falcon 9,ENSO,MONTP,1.0,Tech Demo,Montpellier,2023-185
+2023-12-01,Falcon 9,ION SCV-0015 Daring Diego,DORBIT,150.0,Tech Demo,DORBIT,2023-185
+2023-12-01,Falcon 9,SpIRIT,MELB,11.5,Observation,Melbourne,2023-185
+2023-12-01,Falcon 9,Lilium 1,UNISTW/NCKU,4.0,Tech Demo,NCKU,2023-185
+2023-12-01,Falcon 9,uHETsat,SITAEL,70.0,Tech Demo,SITAEL,2023-185
+2023-12-01,Falcon 9,Bane,YORKSS,150.0,Tech Demo,York Bane,2023-185
+2023-12-01,Falcon 9,KOYOH,KANA,43.0,Tech Demo,Kanayama,2023-185
+2023-12-01,Falcon 9,Unicorn-2M,ALBAD,0.75,Observation,Alba,2023-185
+2023-12-01,Falcon 9,Hayasat-1,BAZMQ,1.0,Tech Demo,BazoomQ,2023-185
+2023-12-04,ADD TV2,SS-20000,HANWHA,80.0,IMG-R,Hanwha SAR,2023-188
+2023-12-15,Electron,QPS-SAR-5 Tsukoyomi-I,QPS,120.0,IMG-R,QPS,2023-196
+2023-12-22,Firefly Alpha,Tyvak-1015 (TANTRUM),LMSSD,250.0,Tech Demo,LM Tech,2023-202
+2024-01-01,PSLV,POEM-3,ISRO,50.0,Tech Demo,ISRO Aux,2024-001
+2024-01-31,Electron,Lemur,SPIRE/NSTAR,25.0,Observation,Lemur SSA,2024-022
+2024-01-31,Electron,Lemur,SPIRE/NSTAR,25.0,Observation,Lemur SSA,2024-022
+2024-01-31,Electron,Lemur,SPIRE/NSTAR,25.0,Observation,Lemur SSA,2024-022
+2024-01-31,Electron,Lemur,SPIRE/NSTAR,25.0,Observation,Lemur SSA,2024-022
+2024-02-17,H3,TIRSAT,JSS,5.0,Observation,METI Cube,2024-032
+2024-02-17,H3,CE-SAT-IE,CANON,70.0,Observation,Canon,2024-032
+2024-02-18,Electron,ADRAS-J,ASTSC,150.0,Tech Demo,Astroscale,2024-034
+2024-03-04,Falcon 9,RIRI,ASPLB,200.0,Observation,Aerospacelab,2024-043
+2024-03-04,Falcon 9,FIFI,ASPLB,200.0,Observation,Aerospacelab,2024-043
+2024-03-04,Falcon 9,Meson-1,ATOMOS,100.0,Tech Demo,Atomos,2024-043
+2024-03-04,Falcon 9,GHOSt-4,ORBSK,85.0,Observation,GHOST,2024-043
+2024-03-04,Falcon 9,LizzieSat,SIDUS,100.0,Tech Demo,Sidus,2024-043
+2024-03-04,Falcon 9,LOULOU,ASPLB,200.0,Observation,Aerospacelab,2024-043
+2024-03-04,Falcon 9,Jackal-02,TANOM,275.0,Tech Demo,True Anomaly,2024-043
+2024-03-04,Falcon 9,PY4 SV2,ARC,1.0,Tech Demo,Ames,2024-043
+2024-03-04,Falcon 9,M3,UMROL,3.6,Tech Demo,MUST (Rolla),2024-043
+2024-03-04,Falcon 9,Sentry,QUSP,10.0,Tech Demo,Quantum Space,2024-043
+2024-03-04,Falcon 9,TIGER-7,OQT,10.0,Communications,OQT,2024-043
+2024-03-04,Falcon 9,Veery-0E,CAREWX,1.0,Observation,CWX,2024-043
+2024-03-04,Falcon 9,PY4 SV4,ARC,1.0,Tech Demo,Ames,2024-043
+2024-03-04,Falcon 9,AEROS,CEIIA/EDISF,4.5,Observation,Aeros CEIIA,2024-043
+2024-03-04,Falcon 9,GHOSt-5,ORBSK,85.0,Observation,GHOST,2024-043
+2024-03-04,Falcon 9,Lemur 2 Rocinante,SPIREG/HUBN,22.0,Communications,Hubble Net,2024-043
+2024-03-04,Falcon 9,Hammer,OCOS,10.0,Observation,OpenCosmos UK,2024-043
+2024-03-04,Falcon 9,PY4 SV1,ARC,1.0,Tech Demo,Ames,2024-043
+2024-03-04,Falcon 9,Apex Aries 1,APEX,200.0,Tech Demo,Apex,2024-043
+2024-03-04,Falcon 9,Lemur 2 Johnny Truong,SPIREG/HUBN,22.0,Communications,Hubble Net,2024-043
+2024-03-04,Falcon 9,Jackal-01,TANOM,275.0,Tech Demo,True Anomaly,2024-043
+2024-03-04,Falcon 9,Optimus,SPMACH,270.0,Tech Demo,Space Machines,2024-043
+2024-03-04,Falcon 9,PE-FLT1 (Tyvak-0261),TYVAK,26.0,Tech Demo,Tyvak,2024-043
+2024-03-04,Falcon 9,PE-FLT2 (Tyvak-0262),TYVAK,26.0,Tech Demo,Tyvak,2024-043
+2024-03-04,Falcon 9,ICEYE-X36,ICEUS,90.0,IMG-R,ICEYE,2024-043
+2024-03-04,Falcon 9,ICEYE-X37,ICEUS,90.0,IMG-R,ICEYE,2024-043
+2024-03-04,Falcon 9,ICEYE-X38,ICEYE,90.0,IMG-R,ICEYE,2024-043
+2024-03-04,Falcon 9,MUSAT2,MUON,67.0,Observation,Muon,2024-043
+2024-03-04,Falcon 9,HORACIO,SATLAN,20.0,Observation,Satlantis,2024-043
+2024-03-04,Falcon 9,BRO-12,UNSEEN,15.0,Observation,Unseen,2024-043
+2024-03-04,Falcon 9,PY4 SV3,ARC,1.0,Tech Demo,Ames,2024-043
+2024-03-04,Falcon 9,IRIS-F1,SATORO/NCKU,4.0,Tech Demo,NCKU,2024-043
+2024-03-04,Falcon 9,ONDOSAT-OWL-1,ONDO,0.25,Communications,ONDO,2024-043
+2024-03-04,Falcon 9,SONATE-2,WURZ,12.0,Tech Demo,UWE,2024-043
+2024-03-04,Falcon 9,BRO-13,UNSEEN,15.0,Observation,Unseen,2024-043
+2024-03-04,Falcon 9,PYXIS,AXEL,145.0,Observation,AXEL,2024-043
+2024-03-04,Falcon 9,YAM-6,LOFT,87.0,Tech Demo,LOFT,2024-043
+2024-03-04,Falcon 9,OrbAstro-TR2,ORBAS,10.0,Tech Demo,OrbAstro,2024-043
+2024-03-04,Falcon 9,ROSE,ASPLB,200.0,Observation,Aerospacelab,2024-043
+2024-03-04,Falcon 9,Lynk Tower 6,LYNK,85.0,Communications,Lynk,2024-043
+2024-03-04,Falcon 9,NewSat-44,URUGUS,41.5,Observation,Satelog,2024-043
+2024-03-04,Falcon 9,Lynk Tower 5,LYNK,85.0,Communications,Lynk,2024-043
+2024-03-04,Falcon 9,TIGER-8,OQT,10.0,Communications,OQT,2024-043
+2024-03-04,Falcon 9,LaCE-2,NIWCP,10.0,Tech Demo,Spawar,2024-043
+2024-03-04,Falcon 9,ONDOSAT-OWL-2,ONDO,0.25,Communications,ONDO,2024-043
+2024-03-04,Falcon 9,RROCI-2,SFSSC/ORISS,19.0,Observation,OriSS,2024-043
+2024-03-04,Falcon 9,Lemur-2 CharlieRose,SPIRE/MYRI,7.6,COM/MET-RO,Spire,2024-043
+2024-03-04,Falcon 9,Lemur-2 Feldhus,SPIRE/MYRI,7.6,COM/MET-RO,Spire,2024-043
+2024-03-04,Falcon 9,CONTECSAT-1,CONTEC,20.0,Observation,Contec,2024-043
+2024-03-04,Falcon 9,CBAS-LACE 1,NIWCP,10.0,Tech Demo,Spawar,2024-043
+2024-03-12,Electron,StriX-3,SYNSP,150.0,IMG-R,Synspective,2024-047
+2024-03-21,Falcon 9,SNOoPI,GSFC/PURDUE,12.0,EOSCI,GSFC Cube,2024-054
+2024-03-21,Electron,AEROCUBE 16B,AERO,10.0,Tech Demo,NRO TS,2024-053
+2024-03-21,Falcon 9,Burstcube,GSFC,12.0,Observation,GSFC Cube,2024-054
+2024-03-21,Falcon 9,HyTI,UHI,12.0,Observation,UHI,2024-054
+2024-03-21,Falcon 9,QMSAT,UDES,2.0,Tech Demo,UDES,2024-054
+2024-03-21,Falcon 9,Killick-1,MUNF,2.0,EOSCI,MUNF,2024-054
+2024-03-21,Falcon 9,Kashiwa,CHIBA,1.0,Communications,Chiba,2024-054
+2024-03-21,Falcon 9,Violet,UNBRUN,2.0,EOSCI,UNBrun,2024-054
+2024-03-21,Falcon 9,MicroOrbiter-1,MICORB,1.0,Communications,MicroOrbiter,2024-054
+2024-03-21,Falcon 9,Big Red Sat,UNL,1.0,Tech Demo,UNL,2024-054
+2024-03-21,Electron,AEROCUBE 16A,AERO,10.0,Tech Demo,NRO TS,2024-053
+2024-03-21,Electron,Mola,USNPS,10.0,Tech Demo,NRO TS,2024-053
+2024-03-21,Electron,USA 352,NROC,100.0,Tech Demo,NRO TS,2024-053
+2024-03-21,Falcon 9,CURTIS,KYUT,5.0,Tech Demo,Kyutech,2024-054
+2024-04-07,Falcon 9,TSAT-1A,TASL,42.0,Observation,TASL,2024-066
+2024-04-07,Falcon 9,Hawk-8A,HE360,31.0,Observation,H360,2024-066
+2024-04-07,Falcon 9,Capella-14 (Acadia),CAPSP,180.0,IMG-R,Capella,2024-066
+2024-04-07,Falcon 9,Hawk-8B,HE360,31.0,Observation,H360,2024-066
+2024-04-07,Falcon 9,Hawk-9A,HE360,31.0,Observation,H360,2024-066
+2024-04-07,Falcon 9,QPS-SAR-7 TSUKUYOMI-II,QPS,120.0,IMG-R,QPS,2024-066
+2024-04-07,Falcon 9,Hawk-9C,HE360,31.0,Observation,H360,2024-066
+2024-04-07,Falcon 9,Hawk-8C,HE360,31.0,Observation,H360,2024-066
+2024-04-07,Falcon 9,Hawk-9B,HE360,31.0,Observation,H360,2024-066
+2024-04-07,Falcon 9,Centauri 6,FLEET,20.0,Communications,Fleet,2024-066
+2024-04-23,Electron,NEONSAT-01,KAIST,100.0,Observation,Neonsat,2024-077
+2024-04-23,Electron,ACS 3,ARC,16.1,Tech Demo,Ames,2024-077
+2024-05-25,Electron,Prefire-2,JPL,10.0,EOSCI,JPL Cube,2024-099
+2024-06-05,Electron,Prefire-1,JPL,10.0,EOSCI,JPL Cube,2024-108
+2024-06-20,Electron,Kineis IoT 5,KINEIS,28.0,Communications,Kineis,2024-114
+2024-06-20,Electron,Kineis IoT 4,KINEIS,28.0,Communications,Kineis,2024-114
+2024-06-20,Electron,Kineis IoT 3,KINEIS,28.0,Communications,Kineis,2024-114
+2024-06-20,Electron,Kineis IoT 2,KINEIS,28.0,Communications,Kineis,2024-114
+2024-06-20,Electron,Kineis IoT 1,KINEIS,28.0,Communications,Kineis,2024-114
+2024-07-04,Firefly Alpha,R5-S4,JSC,7.44,Tech Demo,JSC Cube,2024-125
+2024-07-04,Firefly Alpha,KUbesat-1,UKS,3.0,Science,Kansas,2024-125
+2024-07-04,Firefly Alpha,TechEdSat-11,ARC/SJSU,10.0,Tech Demo,TES,2024-125
+2024-07-04,Firefly Alpha,MESAT-1,UME,3.0,Science,Maine,2024-125
+2024-07-04,Firefly Alpha,SOC-i,UWA,2.0,Tech Demo,U Wash,2024-125
+2024-07-04,Firefly Alpha,CatSat,UAZ,12.0,Tech Demo,Arizona,2024-125
+2024-07-04,Firefly Alpha,Serenity,TIS,3.0,Communications,TIS,2024-125
+2024-07-04,Firefly Alpha,R5-S2,JSC,7.26,Tech Demo,JSC Cube,2024-125
+2024-07-09,Ariane 6,Robusta-3A,MONTP,5.0,Tech Demo,Montpellier,2024-128
+2024-07-09,Ariane 6,Curium One,PTS,24.0,Tech Demo,PTS,2024-128
+2024-07-09,Ariane 6,Replicator,ORBMAT,5.0,Tech Demo,OrbMat,2024-128
+2024-07-09,Ariane 6,OOV-Cube,TUB,17.0,Tech Demo,TUB X,2024-128
+2024-07-09,Ariane 6,ISTsat-1,ISTL,1.0,Tech Demo,ISTL,2024-128
+2024-07-09,Ariane 6,GRBBeta,TUKE,2.0,Observation,TUKE,2024-128
+2024-07-09,Ariane 6,3Cat-4,UPC,1.0,Tech Demo,UPC,2024-128
+2024-07-09,Ariane 6,CURIE A,UCB/NASA,5.0,Science,UCB,2024-128
+2024-07-30,Atlas 5,USA 568,SFSSC,100.0,EW*,USSF GEO Unk,2024-134
+2024-07-30,Atlas 5,USA 567,SFSSC,100.0,EW*,USSF GEO Unk,2024-134
+2024-07-30,Atlas 5,USA 566,SFSSC,100.0,EW*,USSF GEO Unk,2024-134
+2024-07-30,Atlas 5,USA 569,SFSSC,100.0,EW*,USSF GEO Unk,2024-134
+2024-08-02,Electron,StriX-4,SYNSP,150.0,IMG-R,Synspective,2024-137
+2024-08-04,Falcon 9,Binar-4,CURTIN,1.0,Tech Demo,Curtin,2024-139
+2024-08-04,Falcon 9,Emma,COSGIR,1.0,Tech Demo,CosmoGirls,2024-139
+2024-08-04,Falcon 9,SAKURA,CHIBA,1.0,Tech Demo,Chiba,2024-139
+2024-08-04,Falcon 9,Wisseed Sat,WISS,1.0,Tech Demo,Wisseed,2024-139
+2024-08-04,Falcon 9,Binar-3,CURTIN,1.0,Tech Demo,Curtin,2024-139
+2024-08-04,Falcon 9,SaganSat0,KYUT,1.0,Tech Demo,Kyutech,2024-139
+2024-08-04,Falcon 9,CySat 1,IOWASU,4.0,EOSCI,Iowa State,2024-139
+2024-08-04,Falcon 9,DORA,ASU,4.0,Tech Demo,ASU,2024-139
+2024-08-04,Falcon 9,Binar-2,CURTIN,1.0,Tech Demo,Curtin,2024-139
+2024-08-11,Electron,Capella 13,CAPSP,180.0,IMG-R,Capella,2024-142
+2024-08-16,Falcon 9,Foresight-1 (ICEYE-X40),ALYAH,80.0,IMG-R,ICEYE,2024-149
+2024-08-16,Falcon 9,UM5Sat-EOSAT,UM5R,5.0,Observation,UM5R,2024-149
+2024-08-16,Falcon 9,UM5Sat-Ribat,UM5R,5.0,Tech Demo,UM5R,2024-149
+2024-08-16,Falcon 9,BRO-15,UNSEEN,15.0,Observation,Unseen,2024-149
+2024-08-16,Falcon 9,Sateliot-3,STIOT,7.407,Communications,Sateliot,2024-149
+2024-08-16,Falcon 9,BRO-14,UNSEEN,15.0,Observation,Unseen,2024-149
+2024-08-16,Falcon 9,Sateliot-1,STIOT,7.407,Communications,Sateliot,2024-149
+2024-08-16,Falcon 9,ICEYE-X33,ICEUS/ICEYE,80.0,IMG-R,ICEYE,2024-149
+2024-08-16,Falcon 9,PICO-1B1+,APOGEO,0.5,Communications,GPAP,2024-149
+2024-08-16,Falcon 9,ICEYE-X39,FAB/ICEYE,80.0,IMG-R,ICEYE,2024-149
+2024-08-16,Falcon 9,Hawk-10B,HE360,31.0,Observation,H360,2024-149
+2024-08-16,Falcon 9,Capella-15 (Acadia),CAPSP,180.0,IMG-R,Capella,2024-149
+2024-08-16,Falcon 9,AWS,ESA,125.0,EOSCI,ESA ES,2024-149
+2024-08-16,Falcon 9,Amateru 4,QPS,120.0,IMG-R,QPS,2024-149
+2024-08-16,Falcon 9,Umbra-09,UMBRA,84.0,IMG-R,Umbra,2024-149
+2024-08-16,Falcon 9,Hawk-10A,HE360,31.0,Observation,H360,2024-149
+2024-08-16,Falcon 9,ICEYE-X43,FAB/ICEYE,80.0,IMG-R,ICEYE,2024-149
+2024-08-16,Falcon 9,TROOP-F2,NSL,10.0,Tech Demo,NSLX,2024-149
+2024-08-16,Falcon 9,Sateliot-4,STIOT,7.407,Communications,Sateliot,2024-149
+2024-08-16,Falcon 9,Umbra-10,UMBRA,84.0,IMG-R,Umbra,2024-149
+2024-08-16,Falcon 9,Flock 4BE 35,PLAN,5.7,Observation,Flock-4,2024-149
+2024-08-16,Falcon 9,PICO-1B1+,APOGEO,0.5,Communications,GPAP,2024-149
+2024-08-16,Falcon 9,Flock 4BE 12,PLAN,5.7,Observation,Flock-4,2024-149
+2024-08-16,Falcon 9,Lemur 2 Marhisyam,SPIRE,7.6,COM/MET-RO,Spire,2024-149
+2024-08-16,Falcon 9,AAC-AIS-SAT4,CLAAC,4.0,Communications,Kelpie,2024-149
+2024-08-16,Falcon 9,"FM197, LEMUR-2 SIERRINI",SPIREL/MYRI,7.6,COM/MET-RO,Spire,2024-149
+2024-08-16,Falcon 9,"FM198, LEMUR-2 SQUIRRELCOMM",SPIREL/MYRI,7.6,COM/MET-RO,Spire,2024-149
+2024-08-16,Falcon 9,"FM196, LEMUR-2 LLOYD",SPIREL/MYRI,7.6,COM/MET-RO,Spire,2024-149
+2024-08-16,Falcon 9,"FM199, LEMUR-2 AHMED-ASRAR",SPIREL/MYRI,7.6,COM/MET-RO,Spire,2024-149
+2024-08-16,Falcon 9,Hawk-10C,HE360,31.0,Observation,H360,2024-149
+2024-08-16,Falcon 9,GNOMES-5,PLANQ,41.0,Communications,Planetiq,2024-149
+2024-08-16,Falcon 9,ION SCV Magnificent Mo,DORBIT,150.0,Tech Demo,DORBIT,2024-149
+2024-08-16,Falcon 9,Flock 4BE 5,PLAN,5.7,Observation,Flock-4,2024-149
+2024-08-16,Falcon 9,PICO-1B1+,APOGEO,0.5,Communications,GPAP,2024-149
+2024-08-16,Falcon 9,PICO-1B1+,APOGEO,0.5,Communications,GPAP,2024-149
+2024-08-16,Falcon 9,PICO-1B1+,APOGEO,0.5,Communications,GPAP,2024-149
+2024-08-16,Falcon 9,PICO-1B1+,APOGEO,0.5,Communications,GPAP,2024-149
+2024-08-16,Falcon 9,PICO-1B1+,APOGEO,0.5,Communications,GPAP,2024-149
+2024-08-16,Falcon 9,PTD-4,ARC/TERRAN,10.0,Tech Demo,Ames,2024-149
+2024-08-16,Falcon 9,PICO-1B1+,APOGEO,0.5,Communications,GPAP,2024-149
+2024-08-16,Falcon 9,Flock 4BE 19,PLAN,5.7,Observation,Flock-4,2024-149
+2024-08-16,Falcon 9,Hyperfield-1A,KUVA,12.0,Observation,Reaktor,2024-149
+2024-08-16,Falcon 9,Flock 4BE 3,PLAN,5.7,Observation,Flock-4,2024-149
+2024-08-16,Falcon 9,PICO-1B1+,APOGEO,0.5,Communications,GPAP,2024-149
+2024-08-16,Falcon 9,Nightjar,TASA,5.0,Communications,TASA Cube,2024-149
+2024-08-16,Falcon 9,Kanyini,SMCRC,12.0,Communications,Smartsat CRC,2024-149
+2024-08-16,Falcon 9,Lemur 2 Stella,SPIRE,7.6,COM/MET-RO,Spire,2024-149
+2024-08-16,Falcon 9,Flock 4BE 32,PLAN,5.7,Observation,Flock-4,2024-149
+2024-08-16,Falcon 9,TYCHE,UKSC,150.0,Observation,SSTL,2024-149
+2024-08-16,Falcon 9,Flock 4BE 34,PLAN,5.7,Observation,Flock-4,2024-149
+2024-08-16,Falcon 9,Flock 4BE 22,PLAN,5.7,Observation,Flock-4,2024-149
+2024-08-16,Falcon 9,Newsat-50,URUGUS,41.5,Observation,Satelog,2024-149
+2024-08-16,Falcon 9,Flock 4BE 17,PLAN,5.7,Observation,Flock-4,2024-149
+2024-08-16,Falcon 9,Flock 4BE 15,PLAN,5.7,Observation,Flock-4,2024-149
+2024-08-16,Falcon 9,Flock 4BE 23,PLAN,5.7,Observation,Flock-4,2024-149
+2024-08-16,Falcon 9,Flock 4BE 20,PLAN,5.7,Observation,Flock-4,2024-149
+2024-08-16,Falcon 9,Flock 4BE 31,PLAN,5.7,Observation,Flock-4,2024-149
+2024-08-16,Falcon 9,Flock 4BE 36,PLAN,5.7,Observation,Flock-4,2024-149
+2024-08-16,Falcon 9,Tomorrow-S2,TOMIO,12.0,Observation,Tomorrow S,2024-149
+2024-08-16,Falcon 9,Flock 4BE 26,PLAN,5.7,Observation,Flock-4,2024-149
+2024-08-16,Falcon 9,Flock 4BE 16,PLAN,5.7,Observation,Flock-4,2024-149
+2024-08-16,Falcon 9,Flock 4BE 4,PLAN,5.7,Observation,Flock-4,2024-149
+2024-08-16,Falcon 9,Flock 4BE 7,PLAN,5.7,Observation,Flock-4,2024-149
+2024-08-16,Falcon 9,Flock 4BE 18,PLAN,5.7,Observation,Flock-4,2024-149
+2024-08-16,Falcon 9,Sateliot-2,STIOT,7.407,Communications,Sateliot,2024-149
+2024-08-16,Falcon 9,Satoro-T2,SATORO,4.0,Tech Demo,Satoro,2024-149
+2024-08-16,Falcon 9,QUBE,ZFT,4.0,Communications,ZFT,2024-149
+2024-08-16,Falcon 9,Connecta T4.3,PLNSST,10.0,Communications,Plan S,2024-149
+2024-08-16,Falcon 9,Rock,ARRAY,1.83,Tech Demo,Array Labs,2024-149
+2024-08-16,Falcon 9,Lopen,ARRAY,1.83,Tech Demo,Array Labs,2024-149
+2024-08-16,Falcon 9,Newsat-48,URUGUS,41.5,Observation,Satelog,2024-149
+2024-08-16,Falcon 9,Connecta T4.1,PLNSST,10.0,Communications,Plan S,2024-149
+2024-08-16,Falcon 9,PHISAT-2,OCOS/ESA,9.0,Tech Demo,ESA Cube,2024-149
+2024-08-16,Falcon 9,Waratah Seed WS-1,USYD,10.0,Tech Demo,Sydney,2024-149
+2024-08-16,SSLV,SR-0 Demosat,SRICK/SKI,0.2,Tech Demo,SKI,2024-147
+2024-08-16,SSLV,EOS-08,ISRO,176.0,Observation,EOS,2024-147
+2024-08-16,Falcon 9,WREN-1,C3S,10.0,Tech Demo,C3S,2024-149
+2024-08-16,Falcon 9,Tomorrow-S1,TOMIO,12.0,Observation,Tomorrow S,2024-149
+2024-08-16,Falcon 9,Lemur-2 Tomatokechup,SPIREG/HUBN,22.0,Communications,Hubble Net,2024-149
+2024-08-16,Falcon 9,Flock 4BE 30,PLAN,5.7,Observation,Flock-4,2024-149
+2024-08-16,Falcon 9,Flock 4BE 25,PLAN,5.7,Observation,Flock-4,2024-149
+2024-08-16,Falcon 9,Flock 4BE 11,PLAN,5.7,Observation,Flock-4,2024-149
+2024-08-16,Falcon 9,Connecta T4.4,PLNSST,10.0,Communications,Plan S,2024-149
+2024-08-16,Falcon 9,PTD-R (Tyvak-0127),ARC/TERRAN,10.0,Tech Demo,Ames,2024-149
+2024-08-16,Falcon 9,Connecta T4.2,PLNSST,10.0,Communications,Plan S,2024-149
+2024-08-16,Falcon 9,GNA-3,FOI,4.0,Communications,GNA,2024-149
+2024-08-16,Falcon 9,CUAVA-2,USYD/UNSW,10.0,Tech Demo,Sydney,2024-149
+2024-08-16,Falcon 9,Ernst,FRAUN,20.0,Tech Demo,Fraunhofer,2024-149
+2024-08-16,Falcon 9,GaindeSat,SENSAT/MONTP,1.0,Tech Demo,Montpellier,2024-149
+2024-08-16,Falcon 9,TORO,TASA,5.0,Observation,TASA Cube,2024-149
+2024-08-16,Falcon 9,Newsat-49,URUGUS,41.5,Observation,Satelog,2024-149
+2024-08-16,Falcon 9,HYPSO-2,NTNU,10.0,Observation,NSC,2024-149
+2024-08-16,Falcon 9,Iperdrone.0,ASI,12.0,Tech Demo,ASI Cube,2024-149
+2024-08-16,Falcon 9,Flock 4BE 28,PLAN,5.7,Observation,Flock-4,2024-149
+2024-08-16,Falcon 9,OreSat0.5,PSAS,2.0,Tech Demo,PSAS,2024-149
+2024-08-16,Falcon 9,Flock 4BE 1,PLAN,5.7,Observation,Flock-4,2024-149
+2024-08-16,Falcon 9,Flock 4BE 14,PLAN,5.7,Observation,Flock-4,2024-149
+2024-08-16,Falcon 9,Deimos,AETH,2.0,Observation,Aethero,2024-149
+2024-08-16,Falcon 9,Flock 4BE 8,PLAN,5.7,Observation,Flock-4,2024-149
+2024-08-16,Falcon 9,Flock 4BE 33,PLAN,5.7,Observation,Flock-4,2024-149
+2024-08-16,Falcon 9,Flock 4BE 10,PLAN,5.7,Observation,Flock-4,2024-149
+2024-08-16,Falcon 9,YAM-7,LOFT/HYDRO,91.0,Tech Demo,LOFT,2024-149
+2024-08-16,Falcon 9,Flock 4BE 24,PLAN,5.7,Observation,Flock-4,2024-149
+2024-08-16,Falcon 9,LUR-1,AVS,57.0,Observation,AVS,2024-149
+2024-08-16,Falcon 9,Tanager 4001,PLAN,150.0,EOSCI,Tanager,2024-149
+2024-08-16,Falcon 9,Flock 4BE 6,PLAN,5.7,Observation,Flock-4,2024-149
+2024-08-16,Falcon 9,Flock 4BE 29,PLAN,5.7,Observation,Flock-4,2024-149
+2024-08-16,Falcon 9,CAKRA-1,KOMI,8.0,Communications,Cakra,2024-149
+2024-08-16,Falcon 9,EAGLEEYE,CREO,55.0,Observation,Creotech,2024-149
+2024-08-16,Falcon 9,Lemu Nge,LEMU,10.0,Observation,Lemu,2024-149
+2024-08-16,Falcon 9,Flock 4BE 13,PLAN,5.7,Observation,Flock-4,2024-149
+2024-08-16,Falcon 9,Flock 4BE 27,PLAN,5.7,Observation,Flock-4,2024-149
+2024-08-16,Falcon 9,Flock 4BE 9,PLAN,5.7,Observation,Flock-4,2024-149
+2024-08-16,Falcon 9,Flock 4BE 2,PLAN,5.7,Observation,Flock-4,2024-149
+2024-09-20,Electron,Kineis-3B,KINEIS,28.0,Communications,Kineis,2024-172
+2024-09-20,Electron,Kineis-3A,KINEIS,28.0,Communications,Kineis,2024-172
+2024-09-20,Electron,Kineis-3D,KINEIS,28.0,Communications,Kineis,2024-172
+2024-09-20,Electron,Kineis-3C,KINEIS,28.0,Communications,Kineis,2024-172
+2024-09-20,Electron,Kineis-3E,KINEIS,28.0,Communications,Kineis,2024-172
+2024-11-05,Electron,Protosat-1,ESPRW,100.0,Communications,E-Space,2024-201
+2024-11-05,Falcon 9,Yodaka,ARKE,10.0,Tech Demo,ArkEdge,2024-200
+2024-11-05,Falcon 9,DENDEN-01,KANSAI,1.0,Tech Demo,Kansai,2024-200
+2024-11-05,Falcon 9,LignoSat,KYO,1.0,Tech Demo,Kyoto,2024-200
+2024-11-05,Falcon 9,Yomogi,CHIBA,1.0,Tech Demo,Chiba,2024-200
+2024-11-05,Falcon 9,Onglaisat,TASA/TOK,10.0,Tech Demo,TASA Cube,2024-200
+2024-11-25,Electron,Kineis-5C,KINEIS,28.0,Communications,Kineis,2024-219
+2024-11-25,Electron,Kineis-5B,KINEIS,28.0,Communications,Kineis,2024-219
+2024-11-25,Electron,Kineis-5A,KINEIS,28.0,Communications,Kineis,2024-219
+2024-11-25,Electron,Kineis-5E,KINEIS,28.0,Communications,Kineis,2024-219
+2024-11-25,Electron,Kineis-5D,KINEIS,28.0,Communications,Kineis,2024-219
+2024-12-05,PSLV,PROBA-3 OSC,ESA,200.0,TECH/AST,PROBA,2024-233
+2024-12-21,Falcon 9,XCUBE-1,XPL,12.0,Tech Demo,XPL,2024-247
+2024-12-21,Electron,StriX-2,SYNSP,150.0,IMG-R,Synspective,2024-248
+2024-12-21,Falcon 9,ONDOSAT-OWL-4,ONDO,0.25,Communications,ONDO,2024-247
+2024-12-21,Falcon 9,ONDOSAT-OWL-10,ONDO,0.25,Communications,ONDO,2024-247
+2024-12-21,Falcon 9,ONDOSAT-OWL-12,ONDO,0.25,Communications,ONDO,2024-247
+2024-12-21,Falcon 9,DJIBOUTI-1B,CERD/MONTP,1.0,Tech Demo,CERD,2024-247
+2024-12-21,Falcon 9,CTC-0,SPCOIN,9.75,Communications,SpaceCoin,2024-247
+2024-12-21,Falcon 9,ONDOSAT-OWL-8,ONDO,0.25,Communications,ONDO,2024-247
+2024-12-21,Falcon 9,Pleiades-Orpheus,BRONC,1.0,Tech Demo,UC Pomona,2024-247
+2024-12-21,Falcon 9,ONDOSAT-OWL-6,ONDO,0.25,Communications,ONDO,2024-247
+2024-12-21,Falcon 9,ONDOSAT-OWL-7,ONDO,0.25,Communications,ONDO,2024-247
+2024-12-21,Falcon 9,Hawk-11B,HE360,31.0,Observation,H360,2024-247
+2024-12-21,Falcon 9,Think Orbital F2,THINK,20.0,Tech Demo,Think,2024-247
+2024-12-21,Falcon 9,Hawk-11C,HE360,31.0,Observation,H360,2024-247
+2024-12-21,Falcon 9,Hawk-11A,HE360,31.0,Observation,H360,2024-247
+2024-12-21,Falcon 9,LizzieSat-2,SIDUS,100.0,Tech Demo,Sidus,2024-247
+2024-12-21,Falcon 9,ICEYE-X49,ICEYE,80.0,IMG-R,ICEYE,2024-247
+2024-12-21,Falcon 9,ONDOSAT-OWL-11,ONDO,0.25,Communications,ONDO,2024-247
+2024-12-21,Falcon 9,Tomorrow-S4,TOMIO,12.0,Observation,Tomorrow S,2024-247
+2024-12-21,Falcon 9,GITAI-SC1,GITAI,20.0,Tech Demo,GITAI,2024-247
+2024-12-21,Falcon 9,TANSTAAFL-2,TANOM,275.0,Tech Demo,True Anomaly,2024-247
+2024-12-21,Falcon 9,ONDOSAT-OWL-9,ONDO,0.25,Communications,ONDO,2024-247
+2024-12-21,Falcon 9,ONDOSAT-OWL-5,ONDO,0.25,Communications,ONDO,2024-247
+2024-12-21,Falcon 9,LasarSat-1,LASAR,1.0,Tech Demo,Lasar,2024-247
+2024-12-21,Falcon 9,Tomorrow-S3,TOMIO,12.0,Observation,Tomorrow S,2024-247
+2024-12-21,Falcon 9,ONDOSAT-OWL-3,ONDO,0.25,Communications,ONDO,2024-247
+2024-12-21,Falcon 9,CroCube,CRO,1.0,Tech Demo,CroCube,2024-247
+2024-12-21,Falcon 9,ICEYE-X47,ICEYE,80.0,IMG-R,ICEYE,2024-247
+2024-12-30,PSLV,POEM-4,ISRO,50.0,Tech Demo,ISRO Aux,2024-253
+2024-12-30,PSLV,SPADEX-B,ISRO,220.0,Tech Demo,ISRO Sci,2024-253
+2024-12-30,PSLV,SPADEX-A,ISRO,220.0,Tech Demo,ISRO Sci,2024-253
+2025-01-14,Falcon 9,BlueBon,SATRV/TPIX,15.0,Observation,TelePIX,2025-009
+2025-01-14,Falcon 9,LOGSATS-2,PATIN,5.0,Communications,PatInv,2025-009
+2025-01-14,Falcon 9,HADES-R,AMEA/HYDRA,0.375,Communications,AMEA,2025-009
+2025-01-14,Falcon 9,FUSION 1,SEIREN,5.0,Observation,Seiren,2025-009
+2025-01-14,Falcon 9,HYDRA-T,AMEA/HYDRA,0.375,Communications,U Lux,2025-009
+2025-01-14,Falcon 9,Skylink-1,HELLO,0.75,Communications,Hello,2025-009
+2025-01-14,Falcon 9,Hype AGH,AGHU,0.25,Tech Demo,AGHU,2025-009
+2025-01-14,Falcon 9,Lemur-2 Wilson,SPIRE,7.6,COM/MET-RO,Spire,2025-009
+2025-01-14,Falcon 9,Poquito,ULUX,0.25,Tech Demo,U Lux,2025-009
+2025-01-14,Falcon 9,FOSSASAT F0018,FOSSA,4.0,Communications,Fossa,2025-009
+2025-01-14,Falcon 9,Flock 4g-17,PLAN,5.7,Observation,Flock-4,2025-009
+2025-01-14,Falcon 9,IRIS-F2,NCKU,4.0,Tech Demo,NCKU,2025-009
+2025-01-14,Falcon 9,Flock 4g-35,PLAN,5.7,Observation,Flock-4,2025-009
+2025-01-14,Falcon 9,FOREST-3,ORORA,15.0,Observation,Orora,2025-009
+2025-01-14,Falcon 9,Flock 4g-18,PLAN,5.7,Observation,Flock-4,2025-009
+2025-01-14,Falcon 9,Flock 4g-30,PLAN,5.7,Observation,Flock-4,2025-009
+2025-01-14,Falcon 9,Flock 4g-15,PLAN,5.7,Observation,Flock-4,2025-009
+2025-01-14,Falcon 9,Elevation-1,ALMAG/XDLINX,10.0,Communications,Almagest,2025-009
+2025-01-14,Falcon 9,FOSSASAT F0019,FOSSA,4.0,Communications,Fossa,2025-009
+2025-01-14,Falcon 9,Connecta IOT-8,PLNSST,10.0,Communications,Plan S,2025-009
+2025-01-14,Falcon 9,Flock 4g-36,PLAN,5.7,Observation,Flock-4,2025-009
+2025-01-14,Falcon 9,Flock 4g-33,PLAN,5.7,Observation,Flock-4,2025-009
+2025-01-14,Falcon 9,Lemur-2 Star-Fox,SPIRE,7.6,COM/MET-RO,Spire,2025-009
+2025-01-14,Falcon 9,Foresight 2,SP42,80.0,IMG-R,ICEYE,2025-009
+2025-01-14,Falcon 9,Foresight 1R,SP42,80.0,IMG-R,ICEYE,2025-009
+2025-01-14,Falcon 9,PoSAT-2,LUSO,5.0,Communications,Luso,2025-009
+2025-01-14,Falcon 9,Impulse-2 Mira,IMPUL,250.0,Tech Demo,Impulse,2025-009
+2025-01-14,Falcon 9,SEDNA-2,CLAAC,10.0,Communications,Kelpie,2025-009
+2025-01-14,Falcon 9,ALAINSAT-1,UAEU,4.0,EOSCI,UAEU,2025-009
+2025-01-14,Falcon 9,FOSSASAT F0020,FOSSA,4.0,Communications,Fossa,2025-009
+2025-01-14,Falcon 9,PROMETHEUS-1,MINHO,0.25,Tech Demo,Minho,2025-009
+2025-01-14,Falcon 9,Connecta IOT-7,PLNSST,10.0,Communications,Plan S,2025-009
+2025-01-14,Falcon 9,Centauri 8,FLEET,25.0,Communications,Fleet,2025-009
+2025-01-14,Falcon 9,SatGus,CRUNCH,20.0,Observation,Crunch,2025-009
+2025-01-14,Falcon 9,LEMUR 2 Mynameisjeff,SPIRE,7.6,COM/MET-RO,Spire,2025-009
+2025-01-14,Falcon 9,HEO-1,ASI/ARGOT,65.0,Observation,Argotec,2025-009
+2025-01-14,Falcon 9,LEMUR 2 Rountripper,SPIRE,7.6,COM/MET-RO,Spire,2025-009
+2025-01-14,Falcon 9,Connecta IOT-6,PLNSST,10.0,Communications,Plan S,2025-009
+2025-01-14,Falcon 9,Centauri-7,FLEET,25.0,Communications,Fleet,2025-009
+2025-01-14,Falcon 9,LEMUR 2 Alisia,SPIRE,7.6,COM/MET-RO,Spire,2025-009
+2025-01-14,Falcon 9,Iceye-X45,ICEUS,80.0,IMG-R,ICEYE,2025-009
+2025-01-14,Falcon 9,Firefly 2,PIXX,60.0,Observation,Pixxel,2025-009
+2025-01-14,Falcon 9,Connecta IOT-5,PLNSST,10.0,Communications,Plan S,2025-009
+2025-01-14,Falcon 9,NORSAT-4,NSC,35.0,COM/TECH,NORSAT,2025-009
+2025-01-14,Falcon 9,Firefly 1,PIXX,60.0,Observation,Pixxel,2025-009
+2025-01-14,Falcon 9,Iceye-X41,ICEUS,80.0,IMG-R,ICEYE,2025-009
+2025-01-14,Falcon 9,Lemur-2 Arianna,SPIRE,7.6,COM/MET-RO,Spire,2025-009
+2025-01-14,Falcon 9,Firefly 3,PIXX,60.0,Observation,Pixxel,2025-009
+2025-01-14,Falcon 9,Skylink-2,HELLO,0.75,Communications,Hello,2025-009
+2025-01-14,Falcon 9,Flock 4G 24,PLAN,5.7,Observation,Flock-4,2025-009
+2025-01-14,Falcon 9,Flock 4g-10,PLAN,5.7,Observation,Flock-4,2025-009
+2025-01-14,Falcon 9,Flock 4g-20,PLAN,5.7,Observation,Flock-4,2025-009
+2025-01-14,Falcon 9,GARAI A,SATLAN,115.0,Observation,Satlantis,2025-009
+2025-01-14,Falcon 9,Flock 4G 28,PLAN,5.7,Observation,Flock-4,2025-009
+2025-01-14,Falcon 9,Flock 4g-26,PLAN,5.7,Observation,Flock-4,2025-009
+2025-01-14,Falcon 9,SIGI 1,MBS/REFLEX,109.0,Communications,MBS,2025-009
+2025-01-14,Falcon 9,PELICAN 3009,PLAN,160.0,Observation,Pelican,2025-009
+2025-01-14,Falcon 9,ION SCV Eminent Emmanuel,DORBIT,150.0,Tech Demo,DORBIT,2025-009
+2025-01-14,Falcon 9,Flock 4g-11,PLAN,5.7,Observation,Flock-4,2025-009
+2025-01-14,Falcon 9,ION SCV Amazing Antonius,DORBIT,150.0,Tech Demo,DORBIT,2025-009
+2025-01-14,Falcon 9,Ray 1.0,INVER,44.0,Tech Demo,Inversion,2025-009
+2025-01-14,Falcon 9,SkyBee-1,CNSTR,110.0,Observation,constellr,2025-009
+2025-01-14,Falcon 9,Flock 4g-7,PLAN,5.7,Observation,Flock-4,2025-009
+2025-01-14,Falcon 9,Otter,USNPS,10.0,Tech Demo,NPS,2025-009
+2025-01-14,Falcon 9,Flock 4g-9,PLAN,5.7,Observation,Flock-4,2025-009
+2025-01-14,Falcon 9,Flock 4g-13,PLAN,5.7,Observation,Flock-4,2025-009
+2025-01-14,Falcon 9,Saturnin-1,VZCR/VZLU,14.0,Observation,VZLU,2025-009
+2025-01-14,Falcon 9,IRIS-F3,NCKU,4.0,Tech Demo,NCKU,2025-009
+2025-01-14,Falcon 9,AE1d,ARKE,10.0,Tech Demo,ArkEdge,2025-009
+2025-01-14,Falcon 9,SCOT-Digantara,DIGAN/ORBAS,10.0,Observation,Digantara,2025-009
+2025-01-14,Falcon 9,InnoCube,TUB,4.0,Tech Demo,TUB X,2025-009
+2025-01-14,Falcon 9,Veery-0F,CAREWX,1.0,Observation,CWX,2025-009
+2025-01-14,Falcon 9,HCT-SAT1,HCT/MBRSC,1.0,Tech Demo,HCT,2025-009
+2025-01-14,Falcon 9,Flock 4g-8,PLAN,5.7,Observation,Flock-4,2025-009
+2025-01-14,Falcon 9,GESAT Gen1,ABSEN/NANAV,30.0,EOSCI,Nanoav,2025-009
+2025-01-14,Falcon 9,BALKAN-1,ENDUR,32.0,Observation,Endurosat,2025-009
+2025-01-14,Falcon 9,EDISON-1,SPINV/ESA,15.0,Tech Demo,Space Inv,2025-009
+2025-01-14,Falcon 9,Buzzzer-1,UNSEEN,10.0,Observation,Unseen,2025-009
+2025-01-14,Falcon 9,Flock 4g-16,PLAN,5.7,Observation,Flock-4,2025-009
+2025-01-14,Falcon 9,Flock 4g-3,PLAN,5.7,Observation,Flock-4,2025-009
+2025-01-14,Falcon 9,Flock 4g-12,PLAN,5.7,Observation,Flock-4,2025-009
+2025-01-14,Falcon 9,Flock 4g-27,PLAN,5.7,Observation,Flock-4,2025-009
+2025-01-14,Falcon 9,FGN-100-d1,FERG,102.0,Communications,Ulug Bey,2025-009
+2025-01-14,Falcon 9,PARUS-T1,TASA/PYRAS,4.0,Tech Demo,TASA Cube,2025-009
+2025-01-14,Falcon 9,TROLL,TRLS,10.0,Tech Demo,TRLS,2025-009
+2025-01-14,Falcon 9,Flock 4g-4,PLAN,5.7,Observation,Flock-4,2025-009
+2025-01-14,Falcon 9,Flock 4g-6,PLAN,5.7,Observation,Flock-4,2025-009
+2025-01-14,Falcon 9,NewSat-45,UZMA/URUGUS,41.5,Observation,Satelog,2025-009
+2025-01-14,Falcon 9,BRO-16,UNSEEN,15.0,Observation,Unseen,2025-009
+2025-01-14,Falcon 9,Pioneer-02,VARDA,275.0,Tech Demo,Photon,2025-009
+2025-01-14,Falcon 9,Lyra-1,ECHOAU,74.0,Communications,Sirion,2025-009
+2025-01-14,Falcon 9,Jay D2,DRDC/UTIAS,35.0,Observation,Jay,2025-009
+2025-01-14,Falcon 9,Flock 4g-1,PLAN,5.7,Observation,Flock-4,2025-009
+2025-01-14,Falcon 9,Flock 4g-14,PLAN,5.7,Observation,Flock-4,2025-009
+2025-01-14,Falcon 9,Jay C,DRDC/UTIAS,35.0,Observation,Jay,2025-009
+2025-01-14,Falcon 9,Jay D1,DRDC/UTIAS,35.0,Observation,Jay,2025-009
+2025-01-14,Falcon 9,Flock 4g-5,PLAN,5.7,Observation,Flock-4,2025-009
+2025-01-14,Falcon 9,PAUSAT-1,PAU,30.0,Observation,PAU,2025-009
+2025-01-14,Falcon 9,Flock 4g-2,PLAN,5.7,Observation,Flock-4,2025-009
+2025-01-14,Falcon 9,Flock 4g-23,PLAN,5.7,Observation,Flock-4,2025-009
+2025-01-14,Falcon 9,Flock 4g-29,PLAN,5.7,Observation,Flock-4,2025-009
+2025-01-14,Falcon 9,Flock 4g-31,PLAN,5.7,Observation,Flock-4,2025-009
+2025-01-14,Falcon 9,Flock 4g-32,PLAN,5.7,Observation,Flock-4,2025-009
+2025-01-14,Falcon 9,ANSER-L-S,INTA,4.0,Observation,INTA,2025-009
+2025-01-14,Falcon 9,Flock 4g-22,PLAN,5.7,Observation,Flock-4,2025-009
+2025-01-14,Falcon 9,Flock 4G 25,PLAN,5.7,Observation,Flock-4,2025-009
+2025-01-14,Falcon 9,LIME,NOVI,4.0,Tech Demo,NOVI,2025-009
+2025-01-14,Falcon 9,AE1c,ARKE,10.0,Tech Demo,ArkEdge,2025-009
+2025-01-14,Falcon 9,Flock 4G 34,PLAN,5.7,Observation,Flock-4,2025-009
+2025-01-14,Falcon 9,Flock 4G 21,PLAN,5.7,Observation,Flock-4,2025-009
+2025-02-08,Electron,Kineis-2B,KINEIS,28.0,Communications,Kineis,2025-028
+2025-02-08,Electron,Kineis-2D,KINEIS,28.0,Communications,Kineis,2025-028
+2025-02-08,Electron,Kineis-2E,KINEIS,28.0,Communications,Kineis,2025-028
+2025-02-08,Electron,Kineis-2C,KINEIS,28.0,Communications,Kineis,2025-028
+2025-02-08,Electron,Kineis-2A,KINEIS,28.0,Communications,Kineis,2025-028
+2025-02-18,Electron,Global Gen 3-1,BSKG,138.0,Observation,BlackSky,2025-033
+2025-02-27,Falcon 9,Odin,AFORGE,105.0,Other,AstroForge,2025-038
+2025-02-27,Falcon 9,Lunar Trailblazer,CIT/JPL,210.0,Other,Caltech Deep,2025-038
+2025-03-12,Falcon 9,PUNCH-WFI02,SWRI/GSFC,64.0,Observation,SMEX,2025-047
+2025-03-12,Falcon 9,PUNCH-WFI03,SWRI/GSFC,64.0,Observation,SMEX,2025-047
+2025-03-12,Falcon 9,PUNCH-WFI01,SWRI/GSFC,64.0,Observation,SMEX,2025-047
+2025-03-12,Falcon 9,PUNCH-NFI00,SWRI/GSFC,64.0,Observation,SMEX,2025-047
+2025-03-15,Falcon 9,LEMUR 2 Deloitte-1,DELSP/SPIRE,10.0,COM/MET-RO,Deloitte,2025-052
+2025-03-15,Falcon 9,ICEYE-X46,ICEYE,80.0,IMG-R,ICEYE,2025-052
+2025-03-15,Falcon 9,ICEYE-X51,ICEUS,80.0,IMG-R,ICEYE,2025-052
+2025-03-15,Falcon 9,FireSat0,MUON,135.0,Observation,Muon,2025-052
+2025-03-15,Falcon 9,ARVAKER I,NSC,100.0,Observation,Space Norway,2025-052
+2025-03-15,Falcon 9,YAM-8,LOFT,150.0,Tech Demo,LOFT,2025-052
+2025-03-15,Falcon 9,ICEYE-X48,ICEUS,80.0,IMG-R,ICEYE,2025-052
+2025-03-15,Falcon 9,UVSQ-Sat NG,LATMOS,12.0,EOSCI,UVSQ,2025-052
+2025-03-15,Falcon 9,HYVRID,YONS,5.0,Tech Demo,Yonsei,2025-052
+2025-03-15,Falcon 9,ICEYE-X50,ICEYE,80.0,IMG-R,ICEYE,2025-052
+2025-03-15,Falcon 9,Lemur-2 EmersonRose,SPIRE,10.0,COM/MET-RO,Spire,2025-052
+2025-03-15,Falcon 9,HERMES Pathfinder H3,ASI,5.0,Observation,ASI Hermes,2025-052
+2025-03-15,Falcon 9,SOAP,USPACE,16.0,Tech Demo,U-Space,2025-052
+2025-03-15,Falcon 9,Lemur-2 TheFalconer,SPIRE,10.0,COM/MET-RO,Spire,2025-052
+2025-03-15,Falcon 9,Lemur-2 Balto,SPIRE,10.0,COM/MET-RO,Spire,2025-052
+2025-03-15,Falcon 9,EZIE-B,APL/JPL,10.0,Science,APL Cube,2025-052
+2025-03-15,Falcon 9,HYDRA-W,HYDRA,0.375,Communications,AMEA,2025-052
+2025-03-15,Falcon 9,Unicorn-2Q,ALBAD,0.75,Observation,Alba,2025-052
+2025-03-15,Falcon 9,HADES-ICM,HYDRA/ICH,0.375,Communications,AMEA,2025-052
+2025-03-15,Falcon 9,HERMES Pathfinder H4,ASI,5.0,Observation,ASI Hermes,2025-052
+2025-03-15,Falcon 9,HERMES Pathfinder H5,ASI,5.0,Observation,ASI Hermes,2025-052
+2025-03-15,Falcon 9,Unicorn-2O,ALBAD,0.75,Observation,Alba,2025-052
+2025-03-15,Falcon 9,Unicorn-2P,ALBAD,0.75,Observation,Alba,2025-052
+2025-03-15,Falcon 9,Lemur-2 Marache-Fran,SPIRE,10.0,COM/MET-RO,Spire,2025-052
+2025-03-15,Falcon 9,EZIE 3,APL/JPL,10.0,Science,APL Cube,2025-052
+2025-03-15,Falcon 9,HERMES Pathfinder H6,ASI,5.0,Observation,ASI Hermes,2025-052
+2025-03-15,Falcon 9,EZIE-A,APL/JPL,10.0,Science,APL Cube,2025-052
+2025-03-15,Falcon 9,ION Marvelous Mathias,DORBIT,150.0,Tech Demo,DORBIT,2025-052
+2025-03-15,Falcon 9,RAPSat-1A,NSL,3.2,Tech Demo,Thinsat,2025-052
+2025-03-15,Falcon 9,Etihad-Sat,MBRSC,220.0,IMG-R,UAE,2025-052
+2025-03-15,Falcon 9,Tomorrow-S6,TOMIO,12.0,Observation,Tomorrow S,2025-052
+2025-03-15,Falcon 9,Pioneer-03,VARDA,275.0,Tech Demo,Photon,2025-052
+2025-03-15,Falcon 9,DROID.002,TURION,90.0,Tech Demo,Turion,2025-052
+2025-03-15,Falcon 9,AeroCube 18B,AERO,10.0,Tech Demo,Aerocube,2025-052
+2025-03-15,Falcon 9,ORCA-2b,GIT/DARPA2,20.0,Other,ORCA,2025-052
+2025-03-15,Falcon 9,AeroCube 18A,AERO,10.0,Tech Demo,Aerocube,2025-052
+2025-03-15,Falcon 9,M-SEL,MITRE,32.0,Tech Demo,MITRE,2025-052
+2025-03-15,Falcon 9,Tevel 2-5,TAU/ISA,1.0,Communications,Herzliya,2025-052
+2025-03-15,Falcon 9,Lemur-2 Lia-Martin,SPIRE,10.0,COM/MET-RO,Spire,2025-052
+2025-03-15,Falcon 9,Tevel 2-7,TAU/ISA,1.0,Communications,Herzliya,2025-052
+2025-03-15,Falcon 9,Botsat-1,BIUST,5.0,Tech Demo,BIUST,2025-052
+2025-03-15,Falcon 9,Tevel 2-8,TAU/ISA,1.0,Communications,Herzliya,2025-052
+2025-03-15,Falcon 9,Tevel 2-2,TAU/ISA,1.0,Communications,Herzliya,2025-052
+2025-03-15,Falcon 9,Tevel 2-9,TAU/ISA,1.0,Communications,Herzliya,2025-052
+2025-03-15,Falcon 9,IOD1 CNS,STCAL,20.0,Communications,Startical,2025-052
+2025-03-15,Falcon 9,NUSHSat 1,NUSHS,1.0,Tech Demo,NUSHS,2025-052
+2025-03-15,Falcon 9,JINJUSat-1,KTL,2.0,Observation,KTL,2025-052
+2025-03-15,Falcon 9,Tevel 2-6,TAU/ISA,1.0,Communications,Herzliya,2025-052
+2025-03-15,Falcon 9,Sphinx,VESTGO/ADIG,32.0,Tech Demo,ADIG Tech,2025-052
+2025-03-15,Electron,Susanoo-I,QPS,120.0,IMG-R,QPS,2025-050
+2025-03-15,Falcon 9,AlMunther,BNSSA,3.0,Tech Demo,Bahrain,2025-052
+2025-03-15,Falcon 9,OTP-2,ROGUE,11.0,Tech Demo,Rogue,2025-052
+2025-03-15,Falcon 9,Tomorrow-S5,TOMIO,12.0,Observation,Tomorrow S,2025-052
+2025-03-15,Falcon 9,LizzieSat-3 (LS-3),SIDUS,100.0,Tech Demo,Sidus,2025-052
+2025-03-15,Falcon 9,Lemur-2 Leia-Philip,SPIRE,10.0,COM/MET-RO,Spire,2025-052
+2025-03-15,Falcon 9,Bucanneer-MM,UNSW/DSTO,10.0,Tech Demo,UNSWC,2025-052
+2025-03-15,Falcon 9,PANDORE,USPACE,16.0,Tech Demo,U-Space,2025-052
+2025-03-15,Falcon 9,Tevel 2-4,TAU/ISA,1.0,Communications,Herzliya,2025-052
+2025-03-15,Falcon 9,OrbAstro-TR5,ORBAS/LIFTE,10.0,Tech Demo,OrbAstro,2025-052
+2025-03-15,Falcon 9,HERMES Pathfinder H2,ASI,5.0,Observation,ASI Hermes,2025-052
+2025-03-15,Falcon 9,HERMES Pathfinder H1,ASI,5.0,Observation,ASI Hermes,2025-052
+2025-03-15,Falcon 9,NILA,HEX20,5.0,Tech Demo,HEX20,2025-052
+2025-03-15,Falcon 9,Tevel 2-3,TAU/ISA,1.0,Communications,Herzliya,2025-052
+2025-03-15,Falcon 9,Tevel 2-1,TAU/ISA,1.0,Communications,Herzliya,2025-052
+2025-03-18,Electron,Kineis-4B,KINEIS,28.0,Communications,Kineis,2025-056
+2025-03-18,Electron,Kineis-4C,KINEIS,28.0,Communications,Kineis,2025-056
+2025-03-18,Electron,Kineis-4E,KINEIS,28.0,Communications,Kineis,2025-056
+2025-03-18,Electron,Kineis-4A,KINEIS,28.0,Communications,Kineis,2025-056
+2025-03-18,Electron,Kineis-4D,KINEIS,28.0,Communications,Kineis,2025-056
+2025-03-26,Electron,OTC-P1-4,ORORA,15.0,Observation,Orora,2025-061
+2025-03-26,Electron,OTC-P1-5,ORORA,15.0,Observation,Orora,2025-061
+2025-03-26,Electron,OTC-P1-1,ORORA,15.0,Observation,Orora,2025-061
+2025-03-26,Electron,OTC-P1-2,ORORA,15.0,Observation,Orora,2025-061
+2025-03-26,Electron,OTC-P1-3,ORORA,15.0,Observation,Orora,2025-061
+2025-03-26,Electron,OTC-P1-6,ORORA,15.0,Observation,Orora,2025-061
+2025-03-26,Electron,OTC-P1-8,ORORA,15.0,Observation,Orora,2025-061
+2025-03-26,Electron,OTC-P1-7,ORORA,15.0,Observation,Orora,2025-061
+2025-04-16,Minotaur 4,USA 522,NROC,250.0,SIG?*,NRO TS,2025-077
+2025-04-16,Minotaur 4,USA 521 (NROL-174),NROC,250.0,SIG?*,NRO TS,2025-077
+2025-04-22,Falcon 9,Tomorrow-S7,TOMIO,12.0,Observation,Tomorrow S,2025-081
+2025-05-17,Electron,Wadatsumi-I,QPS,120.0,IMG-R,QPS,2025-104
+2025-06-02,Electron,Global-32,BSKG,138.0,Observation,BlackSky,2025-118
+2025-06-11,Electron,Yamatsumi-I,QPS,120.0,IMG-R,QPS,2025-125
+2025-06-23,Falcon 9,GRUS-3 Alpha,AXEL,150.0,Observation,AXEL,2025-135
+2025-06-23,Falcon 9,ICEYE-X57,ICEUS,80.0,IMG-R,ICEYE,2025-135
+2025-06-23,Falcon 9,Lyra 1-03,ECHOAU,74.0,Communications,Sirion,2025-135
+2025-06-23,Falcon 9,IRIDE-MS2-HEO-6,ASI/ARGOT,65.0,Observation,Argotec,2025-135
+2025-06-23,Falcon 9,IRIDE-MS2-HEO-5,ASI/ARGOT,65.0,Observation,Argotec,2025-135
+2025-06-23,Falcon 9,VanZyl-2,HYDRO,130.0,Observation,Muon,2025-135
+2025-06-23,Falcon 9,ICEYE-X52,ICEYE,80.0,IMG-R,ICEYE,2025-135
+2025-06-23,Falcon 9,YAM-10,LOFT/EDA,150.0,Tech Demo,LOFT,2025-135
+2025-06-23,Falcon 9,ICEYE-X54,ICEYE,80.0,IMG-R,ICEYE,2025-135
+2025-06-23,Falcon 9,IRIDE-MS2-HEO-2,ASI/ARGOT,65.0,Observation,Argotec,2025-135
+2025-06-23,Falcon 9,ION Charismatic Carlus,DORBIT,150.0,Tech Demo,DORBIT,2025-135
+2025-06-23,Falcon 9,ICEYE-X55,ICEYE,80.0,IMG-R,ICEYE,2025-135
+2025-06-23,Falcon 9,Sejong-2,HANCOM,11.0,Observation,Hancom,2025-135
+2025-06-23,Falcon 9,Capella 17,CAPSP,180.0,IMG-R,Capella,2025-135
+2025-06-23,Falcon 9,ICEYE-X53,ICEYE,80.0,IMG-R,ICEYE,2025-135
+2025-06-23,Falcon 9,IRIDE-MS2-HEO-9,ASI/ARGOT,65.0,Observation,Argotec,2025-135
+2025-06-23,Falcon 9,IRIDE-MS2-HEO-8,ASI/ARGOT,65.0,Observation,Argotec,2025-135
+2025-06-23,Falcon 9,BIFROST-DNK,FMI/FMV,50.0,Observation,FMI,2025-135
+2025-06-23,Falcon 9,Satoro-T3,SATORO,4.0,Tech Demo,Satoro,2025-135
+2025-06-23,Falcon 9,PARUS-T2,TASA,4.0,Tech Demo,TASA Cube,2025-135
+2025-06-23,Falcon 9,AE2a,ARKE,10.0,Observation,ArkEdge,2025-135
+2025-06-23,Falcon 9,Stitch,HUBN/ENDUR,22.0,Communications,Hubble Net,2025-135
+2025-06-23,Falcon 9,Scooby,HUBN/SPIREG,22.0,Communications,Hubble Net,2025-135
+2025-06-23,Falcon 9,Lemur-2,SPIRE/LACU,5.0,COM/MET-RO,Spire,2025-135
+2025-06-23,Falcon 9,IRIDE-MS2-HEO-3,ASI/ARGOT,65.0,Observation,Argotec,2025-135
+2025-06-23,Falcon 9,Lemur-2,SPIRE/LACU,5.0,COM/MET-RO,Spire,2025-135
+2025-06-23,Falcon 9,IRIDE-MS2-HEO-4,ASI/ARGOT,65.0,Observation,Argotec,2025-135
+2025-06-23,Falcon 9,ARVAKER 2,NSC,100.0,Observation,Space Norway,2025-135
+2025-06-23,Falcon 9,ICEYE-X56,ICEYE,80.0,IMG-R,ICEYE,2025-135
+2025-06-23,Falcon 9,Shaggy,HUBN/SPIREG,22.0,Communications,Hubble Net,2025-135
+2025-06-23,Falcon 9,York T1DES,SDA/YORKSS,100.0,Communications,York Bane,2025-135
+2025-06-23,Falcon 9,Pulsar IOV,XONA,149.0,Communications,Xona,2025-135
+2025-06-23,Falcon 9,ARCSTONE,LARCN,5.0,Observation,LARC Cube,2025-135
+2025-06-23,Falcon 9,MMS-1,GILM,100.0,EOSCI,Gilmour EO,2025-135
+2025-06-23,Falcon 9,Startical IOD-2,STCAL,100.0,Communications,Startical,2025-135
+2025-06-23,Falcon 9,Otter Pup 2,STFISH,40.0,Tech Demo,Starfish,2025-135
+2025-06-23,Falcon 9,WISESAT-3,WISEK,4.0,Communications,WiseKey,2025-135
+2025-06-23,Falcon 9,Winnebago-4,VARDA,250.0,Science,Varda,2025-135
+2025-06-23,Falcon 9,ARVAKER 3,NSC,100.0,Observation,Space Norway,2025-135
+2025-06-23,Falcon 9,Connecta IOT-9,PLNSST,10.0,Communications,Plan S,2025-135
+2025-06-23,Falcon 9,TPA-1,TPA,5.0,Tech Demo,APSS,2025-135
+2025-06-23,Falcon 9,RIDU-Sat 1,UNHAN,1.0,Tech Demo,RIDU,2025-135
+2025-06-23,Falcon 9,HORIS-1,ACMEO,1.0,Observation,MyRadar,2025-135
+2025-06-23,Falcon 9,DUTHSat-2,DUTH,10.0,Science,DUTH,2025-135
+2025-06-23,Falcon 9,Pierre,GHG,15.0,EOSCI,GHG,2025-135
+2025-06-23,Falcon 9,Good Ancestor Kilakila,SBKHZ/GAF,2.0,Communications,GAF,2025-135
+2025-06-23,Falcon 9,UND ROADS 1,UND,5.4,Tech Demo,UND,2025-135
+2025-06-23,Falcon 9,SkyBee-AO2,CNSTR,110.0,Observation,constellr,2025-135
+2025-06-23,Falcon 9,Lilo,HUBN/ENDUR,22.0,Communications,Hubble Net,2025-135
+2025-06-23,Falcon 9,ForgeStar-1,SPFORG,30.0,Science,Space Forge,2025-135
+2025-06-23,Falcon 9,Connecta IOT-11,PLNSST,10.0,Communications,Plan S,2025-135
+2025-06-23,Falcon 9,Quick3,DLR/NANAV,5.0,Tech Demo,Jena,2025-135
+2025-06-23,Falcon 9,PADRE,UCB/GSFC,20.0,Observation,UCB,2025-135
+2025-06-23,Falcon 9,Connecta IOT-10,PLNSST,10.0,Communications,Plan S,2025-135
+2025-06-23,Falcon 9,ADDCUBE,NARAST,10.0,Communications,Nara Space,2025-135
+2025-06-23,Falcon 9,Lemur-2 Krish,SPIRE/MCON,10.0,COM/MET-RO,Spire,2025-135
+2025-06-23,Falcon 9,AE3Va,ARKE,10.0,Communications,ArkEdge,2025-135
+2025-06-23,Falcon 9,Time Flies,TRPT,4.0,Communications,TrustPoint,2025-135
+2025-06-23,Falcon 9,HORIS-2,ACMEO,1.0,Observation,MyRadar,2025-135
+2025-06-23,Falcon 9,MOBIUS-1,GALAX,10.0,Observation,Galaxia,2025-135
+2025-06-23,Falcon 9,Connecta IOT-12,PLNSST,10.0,Communications,Plan S,2025-135
+2025-06-23,Falcon 9,SATMAR,ALENSP,10.0,Communications,Alen,2025-135
+2025-06-23,Falcon 9,BRO-18,UNSEEN,15.0,Observation,Unseen,2025-135
+2025-06-23,Falcon 9,UND ROADS 2,UND,5.4,Tech Demo,UND,2025-135
+2025-06-23,Falcon 9,Valmay,GHG,15.0,EOSCI,GHG,2025-135
+2025-06-23,Falcon 9,JACK-001,COSMW,4.0,Observation,Cosmoworks,2025-135
+2025-06-23,Falcon 9,Hyperfield-1B,KUVA,12.0,Observation,Reaktor,2025-135
+2025-06-23,Falcon 9,ION Passionate Paula,DORBIT,150.0,Tech Demo,DORBIT,2025-135
+2025-06-26,Electron,Kestrel-0A,HE360,12.0,Observation,H360,2025-138
+2025-06-26,Electron,Hawk 12A,HE360,31.0,Observation,H360,2025-138
+2025-06-26,Electron,Hawk 12B,HE360,31.0,Observation,H360,2025-138
+2025-06-26,Electron,Hawk 12C,HE360,31.0,Observation,H360,2025-138
+2025-06-28,Electron,LYRA-4,ECHOAU,74.0,Communications,Sirion,2025-140
+2025-07-23,Falcon 9,Skykraft 4E,SKYKR,50.0,Communications,Skykraft,2025-154
+2025-07-23,Falcon 9,TRACERS T2,NASA/UIA,200.0,Science,SMEX,2025-154
+2025-07-23,Falcon 9,LIDE,TYVI/PICO,15.0,Tech Demo,Tyvak Intl,2025-154
+2025-07-23,Falcon 9,TRACERS T1,NASA/UIA,200.0,Science,SMEX,2025-154
+2025-07-23,Falcon 9,EPIC Athena,LARCN/STP,110.0,Tech Demo,STP2,2025-154
+2025-07-23,Falcon 9,Skykraft 4D,SKYKR,50.0,Communications,Skykraft,2025-154
+2025-07-23,Falcon 9,Skykraft 4A,SKYKR,50.0,Communications,Skykraft,2025-154
+2025-07-23,Falcon 9,Skykraft 4C,SKYKR,50.0,Communications,Skykraft,2025-154
+2025-07-23,Falcon 9,REAL,DART,5.0,Science,Dartmouth,2025-154
+2025-07-23,Falcon 9,Skykraft 4B,SKYKR,50.0,Communications,Skykraft,2025-154
+2025-07-23,Falcon 9,Bard,APL/NASA,140.0,Communications,York Bane,2025-154
+2025-07-26,Vega,CO3D F2,CNES,285.0,Science,CO3D,2025-156
+2025-07-26,Vega,CO3D F1,CNES,285.0,Science,CO3D,2025-156
+2025-07-26,Vega,CO3D F4,CNES,285.0,Science,CO3D,2025-156
+2025-07-26,Vega,CO3D F3,CNES,285.0,Science,CO3D,2025-156
+2025-07-26,Vega,MicroCarb,CNES,180.0,Science,Myriade,2025-156
+2025-08-05,Electron,QPS-SAR-12 KUSHINADA-I,QPS,120.0,IMG-R,QPS,2025-169
+2025-08-13,Vulcan,USA 571,USSF,100.0,EW*,USSF GEO Unk,2025-173
+2025-08-22,Falcon 9,LIMASAT,AFRL?,20.0,Tech Demo,NRO X,2025-183
+2025-08-23,Electron,BASIL,ESPACE,30.0,Communications,E-Space,2025-185
+2025-08-23,Electron,FOURIER,ESPACE,30.0,Communications,E-Space,2025-185
+2025-08-23,Electron,DRESDEN,ESPACE,30.0,Communications,E-Space,2025-185
+2025-08-23,Electron,STARK,ESPACE,30.0,Communications,E-Space,2025-185
+2025-08-23,Electron,DOJO,ESPACE,30.0,Communications,E-Space,2025-185
+2025-08-26,Falcon 9,Firefly 6,PIXX,60.0,Observation,Pixxel,2025-188
+2025-08-26,Falcon 9,Firefly 4,PIXX,60.0,Observation,Pixxel,2025-188
+2025-08-26,Falcon 9,Firefly 5,PIXX,60.0,Observation,Pixxel,2025-188
+2025-08-26,Falcon 9,Capella 16?,CAPSP,180.0,IMG-R,Capella,2025-188
+2025-08-26,Falcon 9,Pelican 3,PLAN,160.0,Observation,Pelican,2025-188
+2025-08-26,Falcon 9,LEAP-1,DHRUVA,25.0,Tech Demo,Dhruva,2025-188
+2025-08-26,Falcon 9,Pelican 4,PLAN,160.0,Observation,Pelican,2025-188
+2025-09-02,Shavit,'Ofeq-19,DDRD/U9900,300.0,IMG-R,Ofeq,2025-193
+2025-09-24,Falcon 9,Carruthers Geocorona Obs,GSFC,240.0,Science,SOLTP,2025-215
+2025-10-14,Electron,StriX-5,SYNSP,150.0,IMG-R,Synspective,2025-229
+2025-10-26,H3-24W,Tenkoh-2,NIHON,10.0,Tech Demo,Nihon,2025-241
+2025-11-02,Falcon 9,Semi-1N,UNKTR,12.0,Communications,Semi,2025-248
+2025-11-02,Falcon 9,Semi-1,UNKTR,12.0,Communications,Semi,2025-248
+2025-11-02,Falcon 9,Semi-3,UNKTR,12.0,Communications,Semi,2025-248
+2025-11-02,Falcon 9,TAURUS 3,TURKS,0.452,Communications,Gumush,2025-248
+2025-11-02,Falcon 9,Tomorrow-S9,TOMIO,12.0,Observation,Tomorrow S,2025-248
+2025-11-02,Falcon 9,Tomorrow-S8,TOMIO,12.0,Observation,Tomorrow S,2025-248
+2025-11-02,Falcon 9,TAURUS 4,TURKS,0.452,Communications,Gumush,2025-248
+2025-11-02,Falcon 9,TAURUS 2,TURKS,0.452,Communications,Gumush,2025-248
+2025-11-02,Falcon 9,Lemur-2 Affie-Wauwie,SPIRE,7.6,COM/MET-RO,Spire,2025-248
+2025-11-02,Falcon 9,CEVROSAT,CEVRO,48.0,Tech Demo,CEVRO,2025-248
+2025-11-02,Falcon 9,Foresight-3,SP42,80.0,IMG-R,ICEYE,2025-248
+2025-11-02,Falcon 9,FGN-100-d2,FERG,102.0,Communications,Ulug Bey,2025-248
+2025-11-02,Falcon 9,Foresight-4,SP42,80.0,IMG-R,ICEYE,2025-248
+2025-11-02,Falcon 9,TAURUS 1,TURKS,0.452,Communications,Gumush,2025-248
+2025-11-02,Falcon 9,Foresight-5,SP42,80.0,IMG-R,ICEYE,2025-248
+2025-11-02,Falcon 9,Starcloud-1,STARCL,50.0,Tech Demo,Starcloud,2025-248
+2025-11-05,Electron,Yachihoko-I,QPS,120.0,IMG-R,QPS,2025-252
+2025-11-13,New Glenn 7x2,Viasat CPS Demo,VIA,10.0,Communications,Viasat,2025-260
+2025-11-20,Electron,Global-33,BSKG,138.0,Observation,BlackSky,2025-267
+2025-11-26,Nuri,Hana,SNU,3.6,Tech Demo,SNU,2025-274
+2025-11-26,Nuri,INHA-RoSAT,SNU,5.3,Tech Demo,INHA,2025-274
+2025-11-26,Nuri,JACK-004,COSMW,5.0,Observation,Cosmoworks,2025-274
+2025-11-26,Nuri,PERSAT01,QUAT,3.0,Observation,Quaternion,2025-274
+2025-11-26,Nuri,E3 TESTER KARI-1,KARI,17.0,Tech Demo,KARI Cube,2025-274
+2025-11-26,Nuri,ETRISat,ETRI,9.0,Communications,ETRI,2025-274
+2025-11-26,Nuri,JACK-003,COSMW,5.0,Observation,Cosmoworks,2025-274
+2025-11-26,Nuri,Sejong-4,HANCOM,7.0,Observation,Hancom,2025-274
+2025-11-26,Nuri,CAS500-3,UZURO,5.0,Tech Demo,KAIST NEXT,2025-274
+2025-11-26,Nuri,Bicheon,SPLINT,11.0,Tech Demo,Space Lintech,2025-274
+2025-11-26,Nuri,SPIRONE,SEJU,2.0,EOSCI,Sejong,2025-274
+2025-11-26,Nuri,K-HERO,KAIST,4.0,Tech Demo,KAIST Cube,2025-274
+2025-11-28,Falcon 9,Phasma-Dirac,LIBRE/ELKED,5.0,Observation,Libre,2025-276
+2025-11-28,Falcon 9,W-5,VARDA,250.0,Science,Varda,2025-276
+2025-11-28,Falcon 9,Umbra-11,UMBRA,84.0,IMG-R,Umbra,2025-276
+2025-11-28,Falcon 9,PIAST-S1,WAT,12.0,Observation,PIAST,2025-276
+2025-11-28,Falcon 9,ICEYE-X59,ELKED,120.0,IMG-R,ICEYE,2025-276
+2025-11-28,Falcon 9,ICEYE-X58,ICEYE,120.0,IMG-R,ICEYE,2025-276
+2025-11-28,Falcon 9,ICEYE-X60,ELKED,120.0,IMG-R,ICEYE,2025-276
+2025-11-28,Falcon 9,ICEYE-X61,ICEYE,120.0,IMG-R,ICEYE,2025-276
+2025-11-28,Falcon 9,ICEYE-X62,MON/WKL,120.0,IMG-R,ICEYE,2025-276
+2025-11-28,Falcon 9,MAUVE,BLSKSP,24.0,Observation,Blue Skies,2025-276
+2025-11-28,Falcon 9,AC1-002,BAEG/INSBAE,140.0,SIG/IMG,Azalea,2025-276
+2025-11-28,Falcon 9,CTC-1C,SPCOIN/ARROW,21.0,Communications,SpaceCoin,2025-276
+2025-11-28,Falcon 9,AC1-001,BAEG/INSBAE,140.0,SIG/IMG,Azalea,2025-276
+2025-11-28,Falcon 9,Flock 4h-34,PLAN,5.7,Observation,Flock-4,2025-276
+2025-11-28,Falcon 9,Mercury One,PROTE,50.0,Tech Demo,Proteus,2025-276
+2025-11-28,Falcon 9,Black Kite 1,TASA/RAPTEK,15.0,Communications,TASA Cube,2025-276
+2025-11-28,Falcon 9,Yvonne Brill,URUGUS,41.5,Observation,Satelog,2025-276
+2025-11-28,Falcon 9,Flock 4h-16,PLAN,5.7,Observation,Flock-4,2025-276
+2025-11-28,Falcon 9,Flock 4h-35,PLAN,5.7,Observation,Flock-4,2025-276
+2025-11-28,Falcon 9,Flock 4h-33,PLAN,5.7,Observation,Flock-4,2025-276
+2025-11-28,Falcon 9,Flock 4h-32,PLAN,5.7,Observation,Flock-4,2025-276
+2025-11-28,Falcon 9,PIAST-S2,WAT,12.0,Observation,PIAST,2025-276
+2025-11-28,Falcon 9,Flock 4h-31,PLAN,5.7,Observation,Flock-4,2025-276
+2025-11-28,Falcon 9,Flock 4h-30,PLAN,5.7,Observation,Flock-4,2025-276
+2025-11-28,Falcon 9,Flock 4h-29,PLAN,5.7,Observation,Flock-4,2025-276
+2025-11-28,Falcon 9,Flock 4h-28,PLAN,5.7,Observation,Flock-4,2025-276
+2025-11-28,Falcon 9,Melina Furman,URUGUS,41.5,Observation,Satelog,2025-276
+2025-11-28,Falcon 9,PIAST-M,WAT,12.0,Observation,PIAST,2025-276
+2025-11-28,Falcon 9,Lemur-2 Teodor,SPIRE,7.6,COM/MET-RO,Spire,2025-276
+2025-11-28,Falcon 9,AE5RA,ARKE,10.0,Observation,ArkEdge,2025-276
+2025-11-28,Falcon 9,WISESAT-6,WISEK/FOSSA,4.0,Communications,WiseKey,2025-276
+2025-11-28,Falcon 9,Lemur-2 Lacunasat,SPIRE/LACU,5.0,Tech Demo,Lacuna,2025-276
+2025-11-28,Falcon 9,Lemur-2 Hotspur-Tom,SPIRE,7.6,COM/MET-RO,Spire,2025-276
+2025-11-28,Falcon 9,Lemur-2 Vukasin,SPIRE/LACU,5.0,Tech Demo,Lacuna,2025-276
+2025-11-28,Falcon 9,Lemur-2 Tartiflette,SPIRE,7.6,COM/MET-RO,Spire,2025-276
+2025-11-28,Falcon 9,Lemur-2 Starlight,SPIRE,7.6,COM/MET-RO,Spire,2025-276
+2025-11-28,Falcon 9,Lemur-2 Finnian,SPIRE/LACU,5.0,Tech Demo,Lacuna,2025-276
+2025-11-28,Falcon 9,Lacuna-4,SPIRE/LACU,5.0,Tech Demo,Lacuna,2025-276
+2025-11-28,Falcon 9,WISESAT-7,WISEK/FOSSA,4.0,Communications,WiseKey,2025-276
+2025-11-28,Falcon 9,WISESAT-5,WISEK/FOSSA,4.0,Communications,WiseKey,2025-276
+2025-11-28,Falcon 9,Foresail-1 Prime,AALTO,4.0,Tech Demo,Aalto,2025-276
+2025-11-28,Falcon 9,Luna-1,ASELSN,12.0,Communications,Aselsan,2025-276
+2025-11-28,Falcon 9,Lemur-2 Laila,SPIRE,7.6,COM/MET-RO,Spire,2025-276
+2025-11-28,Falcon 9,Veery-0G,CAREWX,1.0,Observation,CWX,2025-276
+2025-11-28,Falcon 9,PHI-1,MBRSC,20.0,Tech Demo,UAE PHI,2025-276
+2025-11-28,Falcon 9,CTC-1A,SPCOIN/ARROW,21.0,Communications,SpaceCoin,2025-276
+2025-11-28,Falcon 9,IHI-SAT-2,IHIC,12.0,Communications,IHI Cube,2025-276
+2025-11-28,Falcon 9,Gyeonggisat-1,NARAST,25.0,Observation,Nara Space,2025-276
+2025-11-28,Falcon 9,Lilium 3,NCKU,12.0,Tech Demo,NCKU,2025-276
+2025-11-28,Falcon 9,Speqtre,RAL/SPEQ,20.0,Tech Demo,RAL,2025-276
+2025-11-28,Falcon 9,Flock 4h-27,PLAN,5.7,Observation,Flock-4,2025-276
+2025-11-28,Falcon 9,Accenture-1,ACCRE/OCOS,12.0,Observation,OpenCosmos UK,2025-276
+2025-11-28,Falcon 9,T.Microsat-1,TASA/TRON,15.0,Communications,TASA Cube,2025-276
+2025-11-28,Falcon 9,AE5RC,ARKE,10.0,Observation,ArkEdge,2025-276
+2025-11-28,Falcon 9,Nahla,ASPLB,200.0,Observation,Aerospacelab,2025-276
+2025-11-28,Falcon 9,HydroGNSS-2,ESA,65.0,EOSCI,ESA Earth,2025-276
+2025-11-28,Falcon 9,HydroGNSS-1,ESA,65.0,EOSCI,ESA Earth,2025-276
+2025-11-28,Falcon 9,AE5RB,ARKE,10.0,Observation,ArkEdge,2025-276
+2025-11-28,Falcon 9,Ororatech Gena-OT-1,ORORA/UBWM,15.0,Tech Demo,Orora,2025-276
+2025-11-28,Falcon 9,Flock 4h-26,PLAN,5.7,Observation,Flock-4,2025-276
+2025-11-28,Falcon 9,Flock 4h-19,PLAN,5.7,Observation,Flock-4,2025-276
+2025-11-28,Falcon 9,Flock 4h-24,PLAN,5.7,Observation,Flock-4,2025-276
+2025-11-28,Falcon 9,Flock 4h-25,PLAN,5.7,Observation,Flock-4,2025-276
+2025-11-28,Falcon 9,TRYAD 1,AUBU/UAH,12.0,Science,Auburn,2025-276
+2025-11-28,Falcon 9,SPiN 2,SPINL,5.0,Tech Demo,SPIN,2025-276
+2025-11-28,Falcon 9,AC1-003,BAEG/INSBAE,140.0,SIG/IMG,Azalea,2025-276
+2025-11-28,Falcon 9,WISDOM A,C3S,5.0,Tech Demo,C3S,2025-276
+2025-11-28,Falcon 9,PW-6U,SATRV,12.0,Observation,SatRev,2025-276
+2025-11-28,Falcon 9,Lemur-2 Stas-Gorbuk,SPIRE,7.6,COM/MET-RO,Spire,2025-276
+2025-11-28,Falcon 9,LEO Express 3,IMPUL,250.0,Tech Demo,Impulse,2025-276
+2025-11-28,Falcon 9,MICE-1,PRISMA/ELKED,5.0,Communications,Prisma,2025-276
+2025-11-28,Falcon 9,6GStarLab,I2CAT,12.0,Communications,OpenCosmos B,2025-276
+2025-11-28,Falcon 9,ION Galactic Giorgius,DORBIT,150.0,Tech Demo,DORBIT,2025-276
+2025-11-28,Falcon 9,CTC-1B,SPCOIN/ARROW,21.0,Communications,SpaceCoin,2025-276
+2025-11-28,Falcon 9,Otter,DLR,5.0,Communications,DLR Micro,2025-276
+2025-11-28,Falcon 9,Lilium 2,NCKU,12.0,Tech Demo,NCKU,2025-276
+2025-11-28,Falcon 9,Lemur-2 DeanAndMeave,SPIRE,7.6,COM/MET-RO,Spire,2025-276
+2025-11-28,Falcon 9,ANISCSAT,AZER,0.25,Tech Demo,Azerspace,2025-276
+2025-11-28,Falcon 9,Sari 2,SAUDSA,0.25,Tech Demo,Saudi Small,2025-276
+2025-11-28,Falcon 9,Sari 1,SAUDSA,0.25,Tech Demo,Saudi Small,2025-276
+2025-11-28,Falcon 9,BRO-20,UNSEEN,15.0,Observation,Unseen,2025-276
+2025-11-28,Falcon 9,TORO2,TASA/PYRAS,15.0,Observation,TASA Cube,2025-276
+2025-11-28,Falcon 9,BRO-17,UNSEEN,15.0,Observation,Unseen,2025-276
+2025-11-28,Falcon 9,WISDOM B,C3S,5.0,Tech Demo,C3S,2025-276
+2025-11-28,Falcon 9,Hunity,BME,0.75,Tech Demo,BUTE,2025-276
+2025-11-28,Falcon 9,HCT-SAT2,HCT/MBRSC,1.0,Tech Demo,HCT,2025-276
+2025-11-28,Falcon 9,Phasma-Lamarr,LIBRE/ELKED,5.0,Observation,Libre,2025-276
+2025-11-28,Falcon 9,Pelican 5,PLAN,160.0,Observation,Pelican,2025-276
+2025-11-28,Falcon 9,ION Stellar Stephanus,DORBIT,150.0,Tech Demo,DORBIT,2025-276
+2025-11-28,Falcon 9,TRYAD 2,AUBU/UAH,12.0,Science,Auburn,2025-276
+2025-11-28,Falcon 9,YAM-9,LOFT/EDA,150.0,Tech Demo,LOFT,2025-276
+2025-11-28,Falcon 9,Beatrice Tinsley,URUGUS,41.5,Observation,Satelog,2025-276
+2025-11-28,Falcon 9,IRIDE-MS1-Eaglet-2-2,ASI/OHBI,25.0,Tech Demo,OHBI,2025-276
+2025-11-28,Falcon 9,Flock 4h-23,PLAN,5.7,Observation,Flock-4,2025-276
+2025-11-28,Falcon 9,Flock 4h-22,PLAN,5.7,Observation,Flock-4,2025-276
+2025-11-28,Falcon 9,Flock 4h-21,PLAN,5.7,Observation,Flock-4,2025-276
+2025-11-28,Falcon 9,Flock 4h-20,PLAN,5.7,Observation,Flock-4,2025-276
+2025-11-28,Falcon 9,Flock 4h-18,PLAN,5.7,Observation,Flock-4,2025-276
+2025-11-28,Falcon 9,Flock 4h-17,PLAN,5.7,Observation,Flock-4,2025-276
+2025-11-28,Falcon 9,Flock 4h-16,PLAN,5.7,Observation,Flock-4,2025-276
+2025-11-28,Falcon 9,Flock 4h-15,PLAN,5.7,Observation,Flock-4,2025-276
+2025-11-28,Falcon 9,Flock 4h-13,PLAN,5.7,Observation,Flock-4,2025-276
+2025-11-28,Falcon 9,Flock 4h-12,PLAN,5.7,Observation,Flock-4,2025-276
+2025-11-28,Falcon 9,IRIDE-MS1-Eaglet-2-1,ASI/OHBI,25.0,Tech Demo,OHBI,2025-276
+2025-11-28,Falcon 9,Flock 4h-10,PLAN,5.7,Observation,Flock-4,2025-276
+2025-11-28,Falcon 9,Flock 4h-9,PLAN,5.7,Observation,Flock-4,2025-276
+2025-11-28,Falcon 9,Flock 4h-8,PLAN,5.7,Observation,Flock-4,2025-276
+2025-11-28,Falcon 9,Flock 4h-11,PLAN,5.7,Observation,Flock-4,2025-276
+2025-11-28,Falcon 9,Flock 4h-6,PLAN,5.7,Observation,Flock-4,2025-276
+2025-11-28,Falcon 9,IRIDE-MS1-Eaglet-2-3,ASI/OHBI,25.0,Tech Demo,OHBI,2025-276
+2025-11-28,Falcon 9,IRIDE-MS1-Eaglet-2-4,ASI/OHBI,25.0,Tech Demo,OHBI,2025-276
+2025-11-28,Falcon 9,Flock 4h-7,PLAN,5.7,Observation,Flock-4,2025-276
+2025-11-28,Falcon 9,IRIDE-MS1-Eaglet-2-6,ASI/OHBI,25.0,Tech Demo,OHBI,2025-276
+2025-11-28,Falcon 9,IRIDE-MS1-Eaglet-2-7,ASI/OHBI,25.0,Tech Demo,OHBI,2025-276
+2025-11-28,Falcon 9,IRIDE-MS1-Eaglet-2-8,ASI/OHBI,25.0,Tech Demo,OHBI,2025-276
+2025-11-28,Falcon 9,IRIDE-MS1-Eaglet-2-5,ASI/OHBI,25.0,Tech Demo,OHBI,2025-276
+2025-11-28,Falcon 9,Flock 4h-1,PLAN,5.7,Observation,Flock-4,2025-276
+2025-11-28,Falcon 9,Flock 4h-2,PLAN,5.7,Observation,Flock-4,2025-276
+2025-11-28,Falcon 9,Flock 4h-3,PLAN,5.7,Observation,Flock-4,2025-276
+2025-11-28,Falcon 9,Flock 4h-4,PLAN,5.7,Observation,Flock-4,2025-276
+2025-11-28,Falcon 9,Flock 4h-5,PLAN,5.7,Observation,Flock-4,2025-276
+2025-11-28,Falcon 9,Pelican 6,PLAN,160.0,Observation,Pelican,2025-276
+2025-11-28,Falcon 9,Flock 4h-14,PLAN,5.7,Observation,Flock-4,2025-276
+2025-12-14,Electron,RAISE-4,JAXA,110.0,Tech Demo,JAXA Tech,2025-297
+2025-12-18,Electron,DiskSat C,STP,3.0,Tech Demo,Aerocube,2025-305
+2025-12-18,Electron,DiskSat B,STP,3.0,Tech Demo,Aerocube,2025-305
+2025-12-18,Electron,DiskSat D,STP,3.0,Tech Demo,Aerocube,2025-305
+2025-12-18,Electron,DiskSat A,STP,3.0,Tech Demo,Aerocube,2025-305
+2025-12-21,Electron,QPS-SAR-15,QPS,120.0,IMG-R,QPS,2025-307

@@ -3,7 +3,7 @@ import standard_chart_generation as scg
 # For Jacob Keeton https://x.com/CKalitin/status/2047190844718105019
 # --- Launch cadence comparison ---
 scg.launch_cadence_cumulative(
-    output_prefix='western',
+    output_prefix='clsc-talk',
     output_name='launch_cadence_cumulative_10_years',
     chart_title='Cumulative Orbital Launches Since First Flight',
     max_years=10,
@@ -12,7 +12,7 @@ scg.launch_cadence_cumulative(
 
 # For this guy https://x.com/moqtadalsadr/status/2049684195903971339?s=20
 scg.launch_cadence_cumulative(
-    output_prefix='western',
+    output_prefix='clsc-talk',
     output_name='launch_cadence_cumulative_20_years',
     chart_title='Cumulative Orbital Launches Since First Flight',
     max_years=20,
@@ -21,7 +21,7 @@ scg.launch_cadence_cumulative(
 
 scg.western_launches_vs_mass(
     chart_title_prefix='Western',
-    output_prefix='western',
+    output_prefix='clsc-talk',
     output_name='western_launches_vs_mass_200kg_by_lv',
     data_filter='all',
     group_by='lv',
@@ -39,7 +39,7 @@ scg.western_launches_vs_mass(
 scg.western_orbits_addressable_by_mass(
     chart_title_prefix='Western',
     chart_title="Launches Addressable by NordSpace's Titan",
-    output_prefix='western',
+    output_prefix='clsc-talk',
     output_name='nordspace_titan_addressable_by_mass',
     leo_max_kg=5000,
     meo_max_kg=3000,
@@ -64,7 +64,7 @@ scg.western_orbits_addressable_by_mass(
 # --- Electron launches ---
 scg.electron_launches(
     chart_title_prefix='Electron',
-    output_prefix='western',
+    output_prefix='clsc-talk',
     output_name_by_category='electron_launches_by_category',
     start_year=2017,
     org_top_n=10,
@@ -76,7 +76,7 @@ scg.electron_launches(
 
 scg.electron_launches(
     chart_title_prefix='Electron',
-    output_prefix='western',
+    output_prefix='clsc-talk',
     output_name_by_org='electron_launches_by_org_no_hypersonic',
     output_name_by_category='electron_launches_by_category_no_hypersonic',
     start_year=2017,
@@ -88,7 +88,7 @@ scg.electron_launches(
 # --- Small sat 2018-2025 (megaconstellations excluded) ---
 scg.western_small_sat_by_category(
     chart_title_prefix='Western',
-    output_prefix='western',
+    output_prefix='clsc-talk',
     output_name='western_small_sat_by_year_and_category_2018_2025',
     max_mass_kg=300,
     start_year=2018,
@@ -123,7 +123,7 @@ scg.western_small_sat_by_category(
 # --- Small sat by category ---
 scg.western_small_sat_by_category(
     chart_title_prefix='Western',
-    output_prefix='western',
+    output_prefix='clsc-talk',
     output_name='western_small_sat_by_year_and_category',
     max_mass_kg=300,
     start_year=2000,
@@ -154,7 +154,7 @@ scg.western_small_sat_by_category(
 # --- Commercial western ---
 scg.western_payload_pie(
     chart_title_prefix='Commercial Western',
-    output_prefix='western',
+    output_prefix='clsc-talk',
     output_name_count='western_payload_category_count_pie',
     output_name_mass='western_payload_category_mass_pie',
     data_filter='commercial',
@@ -165,7 +165,7 @@ scg.western_payload_pie(
 
 scg.western_launches_vs_mass(
     chart_title_prefix='Commercial Western',
-    output_prefix='western',
+    output_prefix='clsc-talk',
     output_name='western_launches_vs_mass_by_category',
     data_filter='commercial',
     group_by='category',
@@ -179,7 +179,7 @@ scg.western_launches_vs_mass(
 
 scg.western_launches_vs_mass(
     chart_title_prefix='Western',
-    output_prefix='western',
+    output_prefix='clsc-talk',
     output_name='western_launches_vs_mass_by_lv',
     data_filter='all',
     group_by='lv',
@@ -193,7 +193,7 @@ scg.western_launches_vs_mass(
 
 scg.commercial_western_rideshare_by_lv(
     chart_title_prefix='Commercial Western',
-    output_prefix='western',
+    output_prefix='clsc-talk',
     mass_step_size_kg=1000,
     start_year=2020,
     date_range='2020-2026',
@@ -201,7 +201,7 @@ scg.commercial_western_rideshare_by_lv(
 
 scg.western_launches_vs_mass(
     chart_title_prefix='Western',
-    output_prefix='western',
+    output_prefix='clsc-talk',
     output_name='western_launches_vs_mass_200kg_by_orbit',
     data_filter='all',
     group_by='orbit',
@@ -215,7 +215,7 @@ scg.western_launches_vs_mass(
 
 scg.western_launches_vs_mass(
     chart_title_prefix='Western',
-    output_prefix='western',
+    output_prefix='clsc-talk',
     output_name='western_small_sat_mass_distribution_by_lv',
     data_filter='all',
     group_by='lv',
@@ -232,7 +232,7 @@ scg.western_launches_vs_mass(
 # --- Western by orbit (all launches) ---
 scg.western_launches_vs_mass(
     chart_title_prefix='Western',
-    output_prefix='western',
+    output_prefix='clsc-talk',
     output_name='western_launches_vs_mass_by_orbit',
     data_filter='all',
     group_by='orbit',
@@ -248,7 +248,7 @@ scg.western_launches_vs_mass(
 # --- Western gov/mil ---
 scg.western_payload_pie(
     chart_title_prefix='Western Gov/Mil',
-    output_prefix='western',
+    output_prefix='clsc-talk',
     output_name_count='western_govmil_payload_category_count_pie',
     output_name_mass='western_govmil_payload_category_mass_pie',
     data_filter='govmil',
@@ -260,7 +260,7 @@ scg.western_payload_pie(
 
 scg.western_launches_vs_mass(
     chart_title_prefix='Western Gov/Mil',
-    output_prefix='western',
+    output_prefix='clsc-talk',
     output_name='western_govmil_launches_vs_mass_by_category',
     data_filter='govmil',
     group_by='category',
@@ -277,7 +277,7 @@ scg.western_launches_vs_mass(
 # --- Net western (all launches combined) ---
 scg.western_launches_vs_mass(
     chart_title_prefix='Western',
-    output_prefix='western',
+    output_prefix='clsc-talk',
     output_name='western_net_launches_by_orbit',
     data_filter='all',
     group_by='orbit',
@@ -289,7 +289,7 @@ scg.western_launches_vs_mass(
 
 scg.western_launches_vs_mass(
     chart_title_prefix='Western',
-    output_prefix='western',
+    output_prefix='clsc-talk',
     output_name='western_net_launches_vs_mass_by_category',
     data_filter='net',
     group_by='category',

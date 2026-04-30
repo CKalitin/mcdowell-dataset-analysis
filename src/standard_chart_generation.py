@@ -2800,9 +2800,9 @@ def commercial_western_rideshare_by_lv(
         end_year (int, optional): Inclusive end year filter.
         date_range (str, optional): Display label for subtitle.
     """
-    output_name_bar   = f"{output_prefix}_rideshare_launches_vs_mass_by_lv"
-    output_name_count = f"{output_prefix}_rideshare_lv_count_pie"
-    output_name_mass  = f"{output_prefix}_rideshare_lv_mass_pie"
+    output_name_bar   = f"western_rideshare_launches_vs_mass_by_lv"
+    output_name_count = f"western_rideshare_lv_count_pie"
+    output_name_mass  = f"western_rideshare_lv_mass_pie"
 
     dataset = mda.McdowellDataset("./datasets")
 
